@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ATOUCHÉ COMMAND</title>
+<title>ATTACHÉ COMMAND</title>
 <style>
 :root{--bg:#000;--p:#070707;--ln:#232323;--ln2:#333;--amb:#ffb000;--amb2:#a87400;--txt:#e6e0cc;--mut:#857d6a;--up:#3ddc5c;--dn:#ff4d4d;--gn:#2ea36b;--pu:#a06ae0;--yl:#ffd84d;--bl:#3d8bff;--fs:12px;--fs-s:11px}
 *{box-sizing:border-box}html,body{overflow-x:hidden}
@@ -27,7 +27,7 @@ svg{display:block;width:100%;height:auto}svg text{font-family:inherit}
 @media(max-width:760px){.dpd-g{grid-template-columns:minmax(0,1fr)}.dpd-sc .rw{grid-template-columns:48px 50px minmax(0,1fr) 40px}}
 @media(max-width:760px){#gtRow,.g,.g3{grid-template-columns:minmax(0,1fr)}main{padding:4px}}
 </style></head><body>
-<div class="top"><span class="brand">ATOUCHÉ COMMAND</span><small id="built"></small>
+<div class="top"><span class="brand">ATTACHÉ COMMAND</span><small id="built"></small>
 <nav class="zl"><a href="../">◄ DESK</a><a href="#z-orb">ORB</a><a href="#z-hr">HOURLY</a><a href="#z-reads">READS</a><a href="#z-gg">GAMMA</a><a href="#z-ut">UNDERTOW</a><a href="#z-flow">FLOW</a><a href="#z-lv">LEVELS</a><a href="../study/" title="Study Room">&#128274; STUDY ROOM</a></nav></div>
 <main><!--GAUGE--><style>
 #biasG{background:#000;border:1px solid #333;border-left:4px solid #3ddc5c;font-family:ui-monospace,Menlo,Consolas,monospace;color:#ffb000;padding:8px 12px;margin:8px 0;font-size:12px}
@@ -83,7 +83,7 @@ svg{display:block;width:100%;height:auto}svg text{font-family:inherit}
 <section class="zone" id="z-lv"><div class="zh"><b>LEVELS</b><small>ES · dark pool · SPY · key levels</small></div>
 <div class="g"><div class="pn" style="--c:var(--gn)"><div class="ph"><span>ES MAJOR LEVELS · IRON LADDER · THE PIT</span><small id="esH"></small></div><div id="esB"></div></div>
 <div class="pn" style="--c:var(--pu)"><div class="ph"><span>DARK POOL LEVELS · SPY</span><small id="dpH"></small></div><div id="dpB"></div></div>
-<div class="pn" style="--c:var(--yl)"><div class="ph"><span>ATOUCHÉ SPY · MAJOR LEVELS</span><small id="spyH"></small></div><div id="spyB"></div></div>
+<div class="pn" style="--c:var(--yl)"><div class="ph"><span>ATTACHÉ SPY · MAJOR LEVELS</span><small id="spyH"></small></div><div id="spyB"></div></div>
 <div class="pn" style="--c:var(--yl)"><div class="ph"><span>SPY CONTEXT</span><small id="ctxH"></small></div><div id="ctxB"></div></div>
 <div class="full g" style="grid-template-columns:minmax(0,2fr) minmax(0,1fr)" id="gtRow"><div class="pn"><div class="ph"><span>THE GAUNTLET · KEY LEVELS · SPY</span><small id="gtH"></small></div><div id="gtB"></div></div><div class="pn"><div class="ph"><span>THE BATTLE MAP</span><small id="bmH"></small></div><div id="bmB"></div></div></div></div></section>
 <div class="mut" style="font-size:10px;padding:8px 0">Paper/research only. Not financial advice.</div>
@@ -148,7 +148,7 @@ function gauge(name,score,lbl,tip,col){if(score==null)return `<div class="pn" st
  const a=Math.PI*(1-(score+1)/2),x=50+38*Math.cos(a),y=48-38*Math.sin(a),c=score>.15?'var(--up)':score<-.15?'var(--dn)':'var(--amb)';
  return `<div class="pn" style="padding:4px;--c:${col||'var(--amb)'}" title="${E(tip)}"><div class="ph" style="font-size:10px;margin:0"><span>${name}</span></div><svg viewBox="0 0 100 58"><path d="M12 48A38 38 0 0 1 88 48" fill="none" stroke="#222" stroke-width="7"/><path d="M12 48A38 38 0 0 1 31 15" fill="none" stroke="#4a1010" stroke-width="7"/><path d="M69 15A38 38 0 0 1 88 48" fill="none" stroke="#0f3a1a" stroke-width="7"/><line x1="50" y1="48" x2="${x}" y2="${y}" stroke="${c}" stroke-width="2.5"/><circle cx="50" cy="48" r="3" fill="${c}"/><text x="50" y="57" fill="${c}" font-size="9" text-anchor="middle">${E(lbl)}</text></svg></div>`}
 (()=>{const G=[],g0=(D.gamma||[]).find(x=>x.s=='SPY'),cc=g0&&g0.c,im=((D.im||{}).SPY||{}).daily;
- const pb=D.plan&&D.plan.bias;G.push(gauge('ATOUCHÉ BIAS',pb?({LONG:.7,SHORT:-.7,NEUTRAL:0})[pb.direction]??0:null,pb?pb.direction:'',pb?pb.reason:''));
+ const pb=D.plan&&D.plan.bias;G.push(gauge('ATTACHÉ BIAS',pb?({LONG:.7,SHORT:-.7,NEUTRAL:0})[pb.direction]??0:null,pb?pb.direction:'',pb?pb.reason:''));
  G.push(gauge('FIRST BLADE',D.sp&&D.sp.bias?kw(D.sp.bias):null,D.sp?D.sp.bias:'',D.sp?`${D.sp.bias} · pivot ${D.sp.pivot}`:''));
  const ll=(D.ll||[]).find(x=>/key level/.test(x.kind));G.push(gauge('LAST LIGHT',ll&&spot?Math.max(-1,Math.min(1,(spot-parseFloat(ll.raw))/3)):null,ll?`key ${ll.raw}`:'',ll?`spot ${spot} vs key level ${ll.raw} (${ll.kind})`:''));
  G.push(gauge('GAMMA MAP',cc&&cc.regime?(cc.regime=='NEG'?-.5:.5):null,cc?cc.regime+' γ':'',cc?`regime ${cc.regime} · flip ${cc.flip} · CW ${cc.call_wall} · PW ${cc.put_wall}`:''));
