@@ -292,6 +292,22 @@ def compute_symbol(sym: str, now: datetime):
     em_w = straddle(week_cands[0] if week_cands else future[min(1, len(future)-1)]) if future else None
     mon_cands = [e for e in exps if e >= mon]
     em_m = straddle(mon_cands[0] if mon_cands else exps[-1]) if exps else None
+    # Annual: prefer expiry ~250-400d out; else furthest; label with year
+    ann_cands = [e for e in exps if 200 <= (e - today).days <= 420]
+    if not ann_cands:
+        ann_cands = [e for e in exps if (e - today).days >= 120]
+    em_a = straddle(ann_cands[-1] if ann_cands else (exps[-1] if exps else None)) if exps else None
+    if em_a is None and em_m and em_m.get("mv"):
+        # rough annualize monthly move
+        mv = round(em_m["mv"] * (252/21) ** 0.5, 2)
+        em_a = {"mv": mv, "lo": round(S - mv, 2), "hi": round(S + mv, 2),
+                "exp": f"{today.year + (1 if today.month>=10 else 0)}", "pct": round(100*mv/S, 2), "approx": True}
+    if em_a and not em_a.get("approx"):
+        try:
+            y = int(em_a["exp"][:4])
+            em_a = dict(em_a, label=f"Annual {y}")
+        except Exception:
+            em_a = dict(em_a, label="Annual")
 
     setup = detect_setup(S, king_g["k"] if king_g else None, call_w, put_w, zero_g, regime,
                          bool(king_g and king_g["contested"]), by_gex_all)
@@ -331,7 +347,7 @@ def compute_symbol(sym: str, now: datetime):
         "king": {"gex": king_g, "vex": king_v, "week_gex": king_g_w, "next_gex": king_g_n},
         "walls": {"call": call_w, "call_v": round(call_v,2), "put": put_w, "put_v": round(put_v,2), "zero_g": zero_g},
         "regime": regime,
-        "em": {"daily": em_d, "weekly": em_w, "monthly": em_m},
+        "em": {"daily": em_d, "weekly": em_w, "monthly": em_m, "annual": em_a},
         "setup": setup,
         "scanner": {
             "pull": pull, "strength": strength, "em_mult": em_mult,
@@ -360,16 +376,47 @@ def market_state(now):
     if 960<=t<1200: return "ah"
     return "closed"
 
-def fetch_bars(sym, key, sec):
+def fetch_bars(sym, key, sec, timeframe="5Min", limit=100):
     # Alpaca doesn't have index options underlyings as stocks the same way; skip SPXW/NDXP -> use SPY/QQQ? use underlying ETF
     map_sym = {"SPXW":"SPY","NDXP":"QQQ","SPX":"SPY","NDX":"QQQ"}.get(sym, sym)
-    url=f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe=5Min&limit=100&adjustment=raw&feed=iex"
+    if timeframe.endswith("Day") or timeframe=="1Day":
+        start=(datetime.now(timezone.utc)-timedelta(days=160)).strftime("%Y-%m-%d")
+    else:
+        start=(datetime.now(timezone.utc)-timedelta(days=5)).strftime("%Y-%m-%dT00:00:00Z")
+    url=(f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
+         f"&start={start}&limit={limit}&adjustment=raw&feed=iex")
     try:
         j=fetch_json(url, headers={"APCA-API-KEY-ID":key,"APCA-API-SECRET-KEY":sec}, timeout=20)
         bars=j.get("bars") or []
         return [{"t":b["t"],"o":b["o"],"h":b["h"],"l":b["l"],"c":b["c"],"v":b["v"]} for b in bars]
     except Exception as e:
         return {"error": str(e)[:120]}
+
+def sma(vals, n):
+    if len(vals) < n: return None
+    return round(sum(vals[-n:]) / n, 4)
+
+def ema(vals, n):
+    if not vals: return None
+    if len(vals) < n:
+        return round(sum(vals)/len(vals), 4)
+    k = 2 / (n + 1)
+    e = sum(vals[:n]) / n
+    for c in vals[n:]:
+        e = c * k + e * (1 - k)
+    return round(e, 4)
+
+def mas_from_bars(bars5, bars_d):
+    c5 = [b["c"] for b in (bars5 or [])]
+    cd = [b["c"] for b in (bars_d or [])]
+    return {
+        "sma5_d": sma(cd, 5),
+        "ema21_d": ema(cd, 21),
+        "sma55_d": sma(cd, 55),
+        "sma34_5m": sma(c5, 34),
+        "n_daily": len(cd),
+        "n_5m": len(c5),
+    }
 
 def load_env_alpaca():
     for p in Path("/home/box/sand-data/agents").glob("*/secrets/alpaca-paper.env"):
@@ -405,6 +452,15 @@ def main():
                 pack=fut.result(); pack["market"]=mkt
                 # append history point
                 hist=list(prior_hist.get(s) or [])
+                # top exposure nodes for Antaeus bubble reconstruction / replay
+                lad = (pack.get("ladder") or {}).get("all") or {}
+                strikes = lad.get("strikes") or []
+                gexs = lad.get("gex") or []
+                vexs = lad.get("vex") or []
+                nodes = sorted(
+                    [{"k": k, "gex": g, "vex": v} for k, g, v in zip(strikes, gexs, vexs)],
+                    key=lambda n: -abs(n["gex"]),
+                )[:36]
                 hist.append({
                     "t": now.astimezone(PT).isoformat(timespec="seconds"),
                     "spot": pack["spot"],
@@ -412,6 +468,8 @@ def main():
                     "zero_g": pack["walls"]["zero_g"],
                     "king": (pack["king"]["gex"] or {}).get("k"),
                     "net_gex": pack["net"]["gex"],
+                    "net_vex": pack["net"]["vex"],
+                    "nodes": [{"k": n["k"], "gex": round(n["gex"], 2), "vex": round(n["vex"], 2)} for n in nodes],
                 })
                 pack["history"]=hist[-80:]
                 prior_hist[s]=pack["history"]
@@ -420,16 +478,70 @@ def main():
             except Exception as e:
                 errors[s]=str(e)[:200]; print("ERR", s, e, file=sys.stderr)
 
-    # bars for board (parallel)
+    # bars for board (parallel) — 5m + daily
     env=load_env_alpaca(); bars_ok=0
+    bars5_map={}; barsd_map={}
     if env:
         key,sec=env["ALPACA_API_KEY"], env["ALPACA_API_SECRET"]
         with ThreadPoolExecutor(max_workers=8) as pool:
-            futs={pool.submit(fetch_bars, s, key, sec): s for s in BOARD}
-            for fut in as_completed(futs):
-                s=futs[fut]; b=fut.result()
-                (OUT/"bars"/f"{s}.json").write_text(json.dumps({"sym":s,"bars":b if isinstance(b,list) else [], "error": None if isinstance(b,list) else b}))
-                if isinstance(b,list) and b: bars_ok+=1
+            futs5={pool.submit(fetch_bars, s, key, sec, "5Min", 100): s for s in BOARD}
+            futsd={pool.submit(fetch_bars, s, key, sec, "1Day", 80): s for s in BOARD}
+            for fut in as_completed(futs5):
+                s=futs5[fut]; b=fut.result(); bars5_map[s]=b
+            for fut in as_completed(futsd):
+                s=futsd[fut]; b=fut.result(); barsd_map[s]=b
+        for s in BOARD:
+            b5=bars5_map.get(s); bd=barsd_map.get(s)
+            mas = mas_from_bars(b5 if isinstance(b5,list) else [], bd if isinstance(bd,list) else [])
+            (OUT/"bars"/f"{s}.json").write_text(json.dumps({
+                "sym":s,
+                "bars": b5 if isinstance(b5,list) else [],
+                "daily": bd if isinstance(bd,list) else [],
+                "mas": mas,
+                "error": None if isinstance(b5,list) else b5
+            }, separators=(",",":")))
+            if isinstance(b5,list) and b5: bars_ok+=1
+
+    # session baselines for Δ-since-open / %-badges (earliest stored grid of the ET day)
+    base_dir = OUT/"baselines"; base_dir.mkdir(exist_ok=True)
+    day = now.astimezone(ET).date().isoformat()
+    for s,pack in results.items():
+        bp = base_dir/f"{s}.json"
+        base=None
+        try:
+            prevb=json.loads(bp.read_text())
+            if prevb.get("day")==day: base=prevb
+        except Exception:
+            prevb=None
+        if base is None:
+            # first snapshot of session → freeze current grid as baseline
+            g=pack.get("grid") or {}
+            base={
+                "day": day,
+                "label": f"baseline {now.astimezone(PT).strftime('%Y-%m-%d %H:%M PT')} (earliest stored)",
+                "asof_pt": pack.get("asof_pt"),
+                "spot": pack.get("spot"),
+                "grid": {
+                    "strikes": g.get("strikes"),
+                    "exps": g.get("exps"),
+                    "gex": g.get("gex"), "vex": g.get("vex"),
+                    "dex": g.get("dex"), "charm": g.get("charm"),
+                },
+            }
+            bp.write_text(json.dumps(base, separators=(",",":")))
+        pack["baseline"]= {
+            "day": base["day"], "label": base["label"], "asof_pt": base.get("asof_pt"),
+            "spot": base.get("spot"),
+            # keep full grid for delta math
+            "grid": base.get("grid"),
+        }
+        # attach MAs if we have bars for this board symbol
+        if s in bars5_map or s in BOARD:
+            bfile = OUT/"bars"/f"{s}.json"
+            try:
+                bj=json.loads(bfile.read_text()); pack["mas"]=bj.get("mas")
+            except Exception:
+                pass
 
     # write per-ticker
     for s,pack in results.items():
