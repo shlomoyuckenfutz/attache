@@ -379,16 +379,31 @@ def market_state(now):
 def fetch_bars(sym, key, sec, timeframe="5Min", limit=100):
     # Alpaca doesn't have index options underlyings as stocks the same way; skip SPXW/NDXP -> use SPY/QQQ? use underlying ETF
     map_sym = {"SPXW":"SPY","NDXP":"QQQ","SPX":"SPY","NDX":"QQQ"}.get(sym, sym)
+    headers={"APCA-API-KEY-ID":key,"APCA-API-SECRET-KEY":sec}
     if timeframe.endswith("Day") or timeframe=="1Day":
         start=(datetime.now(timezone.utc)-timedelta(days=160)).strftime("%Y-%m-%d")
-    else:
-        start=(datetime.now(timezone.utc)-timedelta(days=5)).strftime("%Y-%m-%dT00:00:00Z")
-    url=(f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
-         f"&start={start}&limit={limit}&adjustment=raw&feed=iex")
+        url=(f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
+             f"&start={start}&limit={max(limit,200)}&adjustment=raw&feed=iex")
+        try:
+            j=fetch_json(url, headers=headers, timeout=20)
+            bars=j.get("bars") or []
+            return [{"t":b["t"],"o":b["o"],"h":b["h"],"l":b["l"],"c":b["c"],"v":b["v"]} for b in bars][-limit:]
+        except Exception as e:
+            return {"error": str(e)[:120]}
+    # 5m: paginate so we keep the NEWEST session bars (Alpaca returns ascending from start)
+    start=(datetime.now(timezone.utc)-timedelta(days=3)).strftime("%Y-%m-%dT00:00:00Z")
+    out=[]; page_token=None
     try:
-        j=fetch_json(url, headers={"APCA-API-KEY-ID":key,"APCA-API-SECRET-KEY":sec}, timeout=20)
-        bars=j.get("bars") or []
-        return [{"t":b["t"],"o":b["o"],"h":b["h"],"l":b["l"],"c":b["c"],"v":b["v"]} for b in bars]
+        for _ in range(8):
+            url=(f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
+                 f"&start={start}&limit=10000&adjustment=raw&feed=iex")
+            if page_token: url += f"&page_token={page_token}"
+            j=fetch_json(url, headers=headers, timeout=25)
+            bars=j.get("bars") or []
+            out.extend({"t":b["t"],"o":b["o"],"h":b["h"],"l":b["l"],"c":b["c"],"v":b["v"]} for b in bars)
+            page_token=j.get("next_page_token")
+            if not page_token or not bars: break
+        return out[-max(limit, 200):] if out else []
     except Exception as e:
         return {"error": str(e)[:120]}
 
@@ -484,7 +499,7 @@ def main():
     if env:
         key,sec=env["ALPACA_API_KEY"], env["ALPACA_API_SECRET"]
         with ThreadPoolExecutor(max_workers=8) as pool:
-            futs5={pool.submit(fetch_bars, s, key, sec, "5Min", 100): s for s in BOARD}
+            futs5={pool.submit(fetch_bars, s, key, sec, "5Min", 300): s for s in BOARD}
             futsd={pool.submit(fetch_bars, s, key, sec, "1Day", 80): s for s in BOARD}
             for fut in as_completed(futs5):
                 s=futs5[fut]; b=fut.result(); bars5_map[s]=b
