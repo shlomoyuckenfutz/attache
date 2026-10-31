@@ -280,9 +280,18 @@ def compute_symbol(sym: str, now: datetime):
                 mv=(c[0]["mid"]+p[0]["mid"])*0.85
                 return {"mv":round(mv,2),"lo":round(S-mv,2),"hi":round(S+mv,2),"exp":ex.isoformat(),"pct":round(100*mv/S,2)}
         return None
-    em_d = straddle(exps[0]) if exps else None
-    em_w = straddle(min([e for e in exps if e>=fri], default=exps[0])) if exps else None
-    em_m = straddle(min([e for e in exps if e>=mon], default=exps[-1])) if exps else None
+    # After RTH close on an expiry day, today's chain is worthless — use next session for Daily,
+    # and the upcoming Friday (strictly after today if today is Friday post-close) for Weekly.
+    et_now = now.astimezone(ET)
+    after_close = (et_now.hour*60+et_now.minute) >= 16*60 or et_now.weekday() >= 5
+    future = [e for e in exps if e > today] if after_close else [e for e in exps if e >= today]
+    if not future: future = list(exps)
+    em_d = straddle(future[0]) if future else None
+    fri_target = fri if (not after_close or today < fri) else (fri + timedelta(7))
+    week_cands = [e for e in exps if e >= fri_target]
+    em_w = straddle(week_cands[0] if week_cands else future[min(1, len(future)-1)]) if future else None
+    mon_cands = [e for e in exps if e >= mon]
+    em_m = straddle(mon_cands[0] if mon_cands else exps[-1]) if exps else None
 
     setup = detect_setup(S, king_g["k"] if king_g else None, call_w, put_w, zero_g, regime,
                          bool(king_g and king_g["contested"]), by_gex_all)
