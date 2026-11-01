@@ -151,6 +151,7 @@ html,body{overflow-x:hidden;max-width:100%}
 .ux-more:hover{border-color:var(--amb2)}tr.ux-h{display:none}
 .ux-tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
 img,svg,canvas,video{max-width:100%;height:auto}
+/* Phone / narrow: no page-level horizontal overflow. Desktop unchanged. */
 @media(max-width:700px){
 #ub{gap:6px;padding:6px 10px}
 #ub nav{width:100%;padding-bottom:2px}
@@ -158,8 +159,28 @@ img,svg,canvas,video{max-width:100%;height:auto}
 a,button,summary,.ux-more,nav.zl a{min-height:40px}
 nav.zl{display:flex;flex-wrap:nowrap;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch}
 nav.zl a{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:4px 9px}
-pre{white-space:pre-wrap;word-break:break-word}
+pre{white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere}
 .top{flex-wrap:wrap}
+/* grid/flex min-content was expanding main past the viewport (wide tables) */
+main,body,#ub{max-width:100%;width:100%;box-sizing:border-box}
+main{grid-template-columns:minmax(0,1fr)!important;overflow-x:clip}
+main>*,.zone,.pn,.dk,.card,.zg,.g,.g3,.brief,.scr,.ux-tw,.dpx,.tile,.w2{min-width:0!important;max-width:100%}
+/* panels stack to one column */
+.zg,.g,.g3,.brief,.dk .dkg,.dpx .dg,.eqs,.oc,.il-g,.hr-wrap,.mc-g,.dpd-g,.gauges,.sp-g,#gtRow,#z-levels .zg,.nw ol,.bg-m{grid-template-columns:minmax(0,1fr)!important}
+.w2{grid-column:auto!important}
+/* wide tables scroll inside their box, not the page */
+.ux-tw,.scr,.dk,.hr-card,table.sheet{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+table{max-width:100%}
+td.w{min-width:0!important}
+img,svg,canvas,video{max-width:100%!important;height:auto}
+.nt,td,th,p,li,.mut,small,.cap,.nw li .h{overflow-wrap:anywhere;word-break:break-word}
+.nw li .h,.tile .s,td,th{white-space:normal}
+.lad{grid-template-columns:minmax(0,1fr) minmax(0,2fr)!important}
+.fb-lv,.vz-kp,.sp-g{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:430px){
+.brief,.eqs,.sp-g,.fb-lv,.vz-kp{grid-template-columns:minmax(0,1fr)!important}
+.lad{grid-template-columns:minmax(0,1fr)!important}
 }
 @media(max-width:420px){
 /* wrap fallback when many tabs still overflow a phone — keep original compact padding */
