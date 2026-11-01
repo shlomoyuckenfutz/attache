@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-01 13:44 PT",
+ "asof": "2026-11-01 13:59 PT",
  "window_days": 5,
  "bars": "SPY 1m (free feed, RTH 09:30-16:00 ET), read-only local copy",
  "rules": "SPY levels auto-extracted from post text (promos/RTs skipped). Graded on the rest of that RTH session (or next session if posted outside RTH). touch = within $0.25; respected = moves ≥$1 back on the approach side within 30 min before a 1m close ≥$1 through; broken = closes ≥$1 through first. hit_rate = respected/touched.",
@@ -8,20 +8,6 @@
   "2026-10-20": "Volt touched 644 of 1070 · Inside the expected range 1058 of 1070 · Closed between the walls 829 of 1070"
  },
  "sources": [
-  {
-   "handle": "SRC_PLAN_B",
-   "levels_posted": 8,
-   "touched": 5,
-   "respected": 2,
-   "broken": 2,
-   "hit_rate": 0.4,
-   "touch_rate": 0.625,
-   "avg_reaction_pts": 1.62,
-   "promo_pct": 38.0,
-   "posts_per_day": 31,
-   "weight": 0.7,
-   "greyed": false
-  },
   {
    "handle": "TraderJonesy",
    "levels_posted": 17,
@@ -51,17 +37,17 @@
    "greyed": true
   },
   {
-   "handle": "VoltickIO",
-   "levels_posted": 10,
-   "touched": 6,
+   "handle": "SRC_PLAN_B",
+   "levels_posted": 8,
+   "touched": 5,
    "respected": 1,
    "broken": 3,
-   "hit_rate": 0.167,
-   "touch_rate": 0.6,
-   "avg_reaction_pts": 1.14,
-   "promo_pct": 0.0,
-   "posts_per_day": 11,
-   "weight": 1.0,
+   "hit_rate": 0.2,
+   "touch_rate": 0.625,
+   "avg_reaction_pts": 1.4,
+   "promo_pct": 38.0,
+   "posts_per_day": 31,
+   "weight": 0.7,
    "greyed": true
   },
   {
@@ -90,6 +76,20 @@
    "promo_pct": 23.8,
    "posts_per_day": 6,
    "weight": 0.5,
+   "greyed": true
+  },
+  {
+   "handle": "VoltickIO",
+   "levels_posted": 10,
+   "touched": 6,
+   "respected": 0,
+   "broken": 4,
+   "hit_rate": 0.0,
+   "touch_rate": 0.6,
+   "avg_reaction_pts": 0.61,
+   "promo_pct": 0.0,
+   "posts_per_day": 11,
+   "weight": 1.0,
    "greyed": true
   },
   {
