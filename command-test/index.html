@@ -173,8 +173,10 @@ main>*,.zone,.pn,.dk,.card,.zg,.g,.g3,.brief,.scr,.ux-tw,.dpx,.tile,.w2{min-widt
 table{max-width:100%}
 td.w{min-width:0!important}
 img,svg,canvas,video{max-width:100%!important;height:auto}
-.nt,td,th,p,li,.mut,small,.cap,.nw li .h{overflow-wrap:anywhere;word-break:break-word}
-.nw li .h,.tile .s,td,th{white-space:normal}
+.nt,p,li,.mut,small,.cap,.nw li .h,.tile .s{overflow-wrap:anywhere;word-break:break-word}
+.nw li .h,.tile .s{white-space:normal}
+/* tables keep intrinsic width; .ux-tw/.scr provide overflow-x:auto */
+.ux-tw td,.ux-tw th,.scr td,.scr th{white-space:nowrap}
 .lad{grid-template-columns:minmax(0,1fr) minmax(0,2fr)!important}
 .fb-lv,.vz-kp,.sp-g{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
