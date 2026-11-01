@@ -1,8 +1,7 @@
-# Attaché Dark Pool
+# Dark Pool (LIVE)
 
-Dedicated Dark Pool organizer page. Live at
-https://shlomoyuckenfutz.github.io/attache/darkpool/
-Locked with StaticCrypt (same Study password). **Not linked from main nav**
-(linked from Hub LIVE). TEST copy remains at `/darkpool-test/`.
+Published as **plain unencrypted HTML** (no StaticCrypt password).
 
-Reads [`../data/spy_dark_pool.json`](../data/spy_dark_pool.json) at runtime.
+Source: `/workspace/desk/orb-research/darkpool_src/darkpool_live_plain.html`
+
+Do **not** re-encrypt this live page. The TEST copy at `/darkpool-test/` remains locked.
