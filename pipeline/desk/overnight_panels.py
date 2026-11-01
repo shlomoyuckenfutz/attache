@@ -111,7 +111,13 @@ def cal_panel(D):
 def ledger_panel(N, D):
     if not N: return '<div class="dp"><h3>NIGHT LEDGER</h3><div class="m">No issue parsed.</div></div>'
     es = ((D.get("on") or {}).get("ES") or {}).get("last")
-    lv = "".join(f'<tr><td class="n b">{f(l["spy"])}</td><td class="n">{f(l["es"])}</td><td class="n {cls((l["es"]-es) if es else None)}">{sg(l["es"]-es) if es else "—"}</td><td>{e(l["kind"])}</td><td>{"<span class=\"tg out\">IN TAKE</span>" if l["in_take"] else ""}</td></tr>' for l in N.get("levels", []))
+    _lv_bits = []
+    for l in N.get("levels", []):
+        _tag = '<span class="tg out">IN TAKE</span>' if l["in_take"] else ""
+        _delta = sg(l["es"]-es) if es else "—"
+        _cls = cls((l["es"]-es) if es else None)
+        _lv_bits.append(f'<tr><td class="n b">{f(l["spy"])}</td><td class="n">{f(l["es"])}</td><td class="n {_cls}">{_delta}</td><td>{e(l["kind"])}</td><td>{_tag}</td></tr>')
+    lv = "".join(_lv_bits)
     hr = N.get("hit_rate"); hist = N.get("history", [])
     hh = " ".join(f'<span class="tg {"on" if x["hit"] else "off" if x["hit"] is False else "in"}" title="{e(x["date"])} call {e(x["call"])} → {x["pct"] if x["pct"] is not None else "pending"}%">{e(x["date"][5:])} {e(x["call"][0])}</span>' for x in hist)
     d = N.get("direction", "—")
