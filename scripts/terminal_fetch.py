@@ -255,16 +255,25 @@ def sec_recent_forms(ticker: str, cik: str, forms=("10-K", "10-Q", "8-K", "4", "
     dates = recent.get("filingDate") or []
     acc = recent.get("accessionNumber") or []
     primary = recent.get("primaryDocument") or []
+    # Per-form caps so Form 4 flood does not hide 10-K/10-Q/8-K/13F
+    caps = {"10-K": 2, "10-Q": 2, "8-K": 4, "4": 4, "4/A": 2, "13F-HR": 3, "13F-HR/A": 2}
+    counts = {}
     items = []
-    wanted = set(forms)
+
+    def want(f: str) -> bool:
+        if f in forms or f in caps:
+            return True
+        if "4" in forms and f in ("4", "4/A"):
+            return True
+        if "13F-HR" in forms and f.startswith("13F"):
+            return True
+        return False
+
     for i, f in enumerate(forms_l):
-        if f not in wanted and not (f.startswith("4") and "4" in wanted):
-            # Form 4 variants
-            if not (f == "4" or f == "4/A"):
-                if f not in wanted:
-                    continue
-        if len(items) >= 12:
-            break
+        if not want(f):
+            continue
+        if counts.get(f, 0) >= caps.get(f, 2):
+            continue
         accession = (acc[i] if i < len(acc) else "").replace("-", "")
         doc = primary[i] if i < len(primary) else ""
         url = ""
@@ -279,6 +288,7 @@ def sec_recent_forms(ticker: str, cik: str, forms=("10-K", "10-Q", "8-K", "4", "
                 "url": url,
             }
         )
+        counts[f] = counts.get(f, 0) + 1
     return {
         "ticker": ticker,
         "name": d.get("name"),

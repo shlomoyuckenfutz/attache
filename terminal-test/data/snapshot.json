@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated_at": "2026-10-31 17:46:25 PDT",
-  "generated_at_epoch": 1793493985,
+  "generated_at": "2026-10-31 17:50:12 PDT",
+  "generated_at_epoch": 1793494212,
   "timezone": "America/Los_Angeles",
   "watchlist": [
     "SPY",
@@ -26,7 +26,7 @@
   "quotes": {
     "ok": true,
     "error": null,
-    "fetched_at": "2026-10-31 17:45:28 PDT",
+    "fetched_at": "2026-10-31 17:49:17 PDT",
     "data": {
       "quotes": [
         {
@@ -434,10 +434,10 @@
         {
           "label": "BTC",
           "symbol": "BTC-USD",
-          "last": 77497.83,
+          "last": 77525.15,
           "prev": 77440.93,
-          "change": 56.90000000000873,
-          "change_pct": 0.07347535728200673,
+          "change": 84.22000000000116,
+          "change_pct": 0.10875385923180568,
           "spark": [
             0.0,
             0.0309,
@@ -448,8 +448,8 @@
             1.0,
             0.8386,
             0.7593,
-            null,
-            0.7282
+            0.838,
+            0.9075
           ],
           "currency": "USD",
           "ok": true,
@@ -458,22 +458,22 @@
         {
           "label": "ETH",
           "symbol": "ETH-USD",
-          "last": 2255.97,
+          "last": 2257.17,
           "prev": 2252.5913,
-          "change": 3.3786999999997533,
-          "change_pct": 0.14999170066934706,
+          "change": 4.578700000000026,
+          "change_pct": 0.2032636812545634,
           "spark": [
             0.0,
-            0.189,
-            0.03,
+            0.1716,
+            0.0272,
             0.0,
-            0.0438,
-            0.2212,
-            1.0,
-            0.871,
-            0.818,
-            null,
-            0.8249
+            0.0398,
+            0.2009,
+            0.908,
+            0.7908,
+            0.7427,
+            0.887,
+            1.0
           ],
           "currency": "USD",
           "ok": true,
@@ -912,7 +912,7 @@
   "filings": {
     "ok": true,
     "error": null,
-    "fetched_at": "2026-10-31 17:45:30 PDT",
+    "fetched_at": "2026-10-31 17:49:18 PDT",
     "data": {
       "companies": [
         {
@@ -950,59 +950,66 @@
             },
             {
               "ticker": "AAPL",
-              "form": "4",
-              "filed": "2026-10-15",
-              "accession": "0001140361-26-039785",
-              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126039785/xslF345X06/form4.xml"
+              "form": "10-Q",
+              "filed": "2026-07-31",
+              "accession": "0000320193-26-000020",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000020/aapl-20260627.htm"
             },
             {
               "ticker": "AAPL",
-              "form": "4",
-              "filed": "2026-10-08",
-              "accession": "0001140361-26-039158",
-              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126039158/xslF345X06/form4.xml"
+              "form": "8-K",
+              "filed": "2026-07-30",
+              "accession": "0000320193-26-000018",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000018/aapl-20260730.htm"
             },
             {
               "ticker": "AAPL",
-              "form": "4",
-              "filed": "2026-10-05",
-              "accession": "0001140361-26-038674",
-              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038674/xslF345X06/form4.xml"
+              "form": "10-Q",
+              "filed": "2026-05-01",
+              "accession": "0000320193-26-000013",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000013/aapl-20260328.htm"
             },
             {
               "ticker": "AAPL",
-              "form": "4",
-              "filed": "2026-10-05",
-              "accession": "0001140361-26-038672",
-              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038672/xslF345X06/form4.xml"
+              "form": "8-K",
+              "filed": "2026-04-30",
+              "accession": "0000320193-26-000011",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000011/aapl-20260430.htm"
             },
             {
               "ticker": "AAPL",
-              "form": "4",
-              "filed": "2026-10-05",
-              "accession": "0001140361-26-038669",
-              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038669/xslF345X06/form4.xml"
+              "form": "8-K",
+              "filed": "2026-04-20",
+              "accession": "0001140361-26-015711",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126015711/ef20071035_8k.htm"
             },
             {
               "ticker": "AAPL",
-              "form": "4",
-              "filed": "2026-10-05",
-              "accession": "0001140361-26-038667",
-              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038667/xslF345X06/form4.xml"
+              "form": "8-K",
+              "filed": "2026-02-24",
+              "accession": "0001140361-26-006577",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126006577/ef20060722_8k.htm"
             },
             {
               "ticker": "AAPL",
-              "form": "4",
-              "filed": "2026-10-01",
-              "accession": "0001140361-26-038307",
-              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038307/xslF345X06/form4.xml"
+              "form": "10-K",
+              "filed": "2025-10-31",
+              "accession": "0000320193-25-000079",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
             },
             {
               "ticker": "AAPL",
-              "form": "4",
-              "filed": "2026-09-29",
-              "accession": "0001140361-26-038028",
-              "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038028/xslF345X06/form4.xml"
+              "form": "10-K",
+              "filed": "2024-11-01",
+              "accession": "0000320193-24-000123",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm"
+            },
+            {
+              "ticker": "AAPL",
+              "form": "4/A",
+              "filed": "2022-08-22",
+              "accession": "0000320193-22-000078",
+              "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000078/xslF345X03/wf-form4a_166120817922787.xml"
             }
           ]
         },
@@ -1048,52 +1055,87 @@
             },
             {
               "ticker": "NVDA",
-              "form": "4",
-              "filed": "2026-09-18",
-              "accession": "0001283854-26-000010",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000128385426000010/xslF345X06/wk-form4_1789766082.xml"
+              "form": "8-K",
+              "filed": "2026-09-03",
+              "accession": "0001045810-26-000078",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"
             },
             {
               "ticker": "NVDA",
-              "form": "4",
-              "filed": "2026-09-18",
-              "accession": "0001696841-26-000012",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000012/xslF345X06/wk-form4_1789766007.xml"
+              "form": "10-Q",
+              "filed": "2026-08-26",
+              "accession": "0001045810-26-000075",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
             },
             {
               "ticker": "NVDA",
-              "form": "4",
-              "filed": "2026-09-18",
-              "accession": "0001588670-26-000014",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000158867026000014/xslF345X06/wk-form4_1789765959.xml"
+              "form": "8-K",
+              "filed": "2026-08-26",
+              "accession": "0001045810-26-000073",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/nvda-20260826.htm"
             },
             {
               "ticker": "NVDA",
-              "form": "4",
-              "filed": "2026-09-18",
-              "accession": "0001197649-26-000012",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764926000012/xslF345X06/wk-form4_1789765856.xml"
+              "form": "8-K",
+              "filed": "2026-08-17",
+              "accession": "0001045810-26-000069",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
             },
             {
               "ticker": "NVDA",
-              "form": "4",
-              "filed": "2026-09-11",
-              "accession": "0002152188-26-000005",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000215218826000005/xslF345X06/wk-form4_1789160684.xml"
+              "form": "13F-HR",
+              "filed": "2026-08-14",
+              "accession": "0001045810-26-000065",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000065/xslForm13F_X02/primary_doc.xml"
             },
             {
               "ticker": "NVDA",
-              "form": "4",
-              "filed": "2026-09-08",
-              "accession": "0001199039-26-000014",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000014/xslF345X06/wk-form4_1788901755.xml"
+              "form": "8-K",
+              "filed": "2026-07-02",
+              "accession": "0001045810-26-000060",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000060/nvda-20260628.htm"
             },
             {
               "ticker": "NVDA",
-              "form": "4",
-              "filed": "2026-09-04",
-              "accession": "0001197647-26-000009",
-              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000009/xslF345X06/wk-form4_1788555631.xml"
+              "form": "10-Q",
+              "filed": "2026-05-20",
+              "accession": "0001045810-26-000052",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000052/nvda-20260426.htm"
+            },
+            {
+              "ticker": "NVDA",
+              "form": "13F-HR",
+              "filed": "2026-05-15",
+              "accession": "0001045810-26-000042",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000042/xslForm13F_X02/primary_doc.xml"
+            },
+            {
+              "ticker": "NVDA",
+              "form": "10-K",
+              "filed": "2026-02-25",
+              "accession": "0001045810-26-000021",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+            },
+            {
+              "ticker": "NVDA",
+              "form": "13F-HR",
+              "filed": "2026-02-17",
+              "accession": "0001045810-26-000011",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000011/xslForm13F_X02/primary_doc.xml"
+            },
+            {
+              "ticker": "NVDA",
+              "form": "10-K",
+              "filed": "2025-02-26",
+              "accession": "0001045810-25-000023",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm"
+            },
+            {
+              "ticker": "NVDA",
+              "form": "4/A",
+              "filed": "2023-12-01",
+              "accession": "0001045810-23-000242",
+              "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000242/xslF345X05/wk-form4a_1701480208.xml"
             }
           ]
         },
@@ -1102,13 +1144,6 @@
           "name": "MICROSOFT CORP",
           "cik": "0000789019",
           "filings": [
-            {
-              "ticker": "MSFT",
-              "form": "424B2",
-              "filed": "2026-10-29",
-              "accession": "0001193125-26-437008",
-              "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526437008/d150456d424b2.htm"
-            },
             {
               "ticker": "MSFT",
               "form": "8-K",
@@ -1160,31 +1195,52 @@
             },
             {
               "ticker": "MSFT",
-              "form": "4",
-              "filed": "2026-09-17",
-              "accession": "0000789019-26-000222",
-              "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000222/xslF345X06/form4.xml"
+              "form": "8-K",
+              "filed": "2026-09-02",
+              "accession": "0001193125-26-380280",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526380280/d291965d8k.htm"
             },
             {
               "ticker": "MSFT",
-              "form": "4",
-              "filed": "2026-09-17",
-              "accession": "0000789019-26-000221",
-              "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000221/xslF345X06/form4.xml"
+              "form": "10-K",
+              "filed": "2026-07-29",
+              "accession": "0001193125-26-323660",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
             },
             {
               "ticker": "MSFT",
-              "form": "4",
-              "filed": "2026-09-17",
-              "accession": "0000789019-26-000220",
-              "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000220/xslF345X06/form4.xml"
+              "form": "8-K",
+              "filed": "2026-07-29",
+              "accession": "0001193125-26-323632",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323632/msft-20260729.htm"
             },
             {
               "ticker": "MSFT",
-              "form": "4",
-              "filed": "2026-09-15",
-              "accession": "0000789019-26-000214",
-              "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000214/xslF345X06/form4.xml"
+              "form": "10-Q",
+              "filed": "2026-04-29",
+              "accession": "0001193125-26-191507",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526191507/msft-20260331.htm"
+            },
+            {
+              "ticker": "MSFT",
+              "form": "10-K",
+              "filed": "2025-07-30",
+              "accession": "0000950170-25-100235",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"
+            },
+            {
+              "ticker": "MSFT",
+              "form": "4/A",
+              "filed": "2024-12-02",
+              "accession": "0001062993-24-019893",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000106299324019893/xslF345X05/form4a.xml"
+            },
+            {
+              "ticker": "MSFT",
+              "form": "4/A",
+              "filed": "2022-12-13",
+              "accession": "0001062993-22-023843",
+              "url": "https://www.sec.gov/Archives/edgar/data/789019/000106299322023843/xslF345X03/form4a.xml"
             }
           ]
         },
@@ -1244,13 +1300,6 @@
             },
             {
               "ticker": "TSLA",
-              "form": "8-K",
-              "filed": "2026-07-02",
-              "accession": "0001628280-26-046717",
-              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026046717/tsla-20260702.htm"
-            },
-            {
-              "ticker": "TSLA",
               "form": "4",
               "filed": "2026-06-17",
               "accession": "0001104659-26-075213",
@@ -1272,10 +1321,31 @@
             },
             {
               "ticker": "TSLA",
-              "form": "4",
-              "filed": "2026-05-04",
-              "accession": "0001104659-26-055079",
-              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926055079/xslF345X06/tm2613330-1_4seq1.xml"
+              "form": "10-K",
+              "filed": "2026-01-29",
+              "accession": "0001628280-26-003952",
+              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm"
+            },
+            {
+              "ticker": "TSLA",
+              "form": "10-K",
+              "filed": "2025-01-30",
+              "accession": "0001628280-25-003063",
+              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828025003063/tsla-20241231.htm"
+            },
+            {
+              "ticker": "TSLA",
+              "form": "4/A",
+              "filed": "2023-01-03",
+              "accession": "0001771364-23-000001",
+              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000177136423000001/xslF345X03/edgardoc.xml"
+            },
+            {
+              "ticker": "TSLA",
+              "form": "4/A",
+              "filed": "2022-06-03",
+              "accession": "0000899243-22-021041",
+              "url": "https://www.sec.gov/Archives/edgar/data/1318605/000089924322021041/xslF345X03/doc4a.xml"
             }
           ]
         },
@@ -1307,34 +1377,6 @@
             },
             {
               "ticker": "META",
-              "form": "424B5",
-              "filed": "2026-10-28",
-              "accession": "0001193125-26-436410",
-              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526436410/d94886d424b5.htm"
-            },
-            {
-              "ticker": "META",
-              "form": "424B5",
-              "filed": "2026-10-28",
-              "accession": "0001193125-26-436405",
-              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526436405/d133631d424b5.htm"
-            },
-            {
-              "ticker": "META",
-              "form": "424B5",
-              "filed": "2026-10-26",
-              "accession": "0001193125-26-431043",
-              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526431043/d133631d424b5.htm"
-            },
-            {
-              "ticker": "META",
-              "form": "424B5",
-              "filed": "2026-10-26",
-              "accession": "0001193125-26-431040",
-              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000119312526431040/d94886d424b5.htm"
-            },
-            {
-              "ticker": "META",
               "form": "10-Q",
               "filed": "2026-10-22",
               "accession": "0001628280-26-066773",
@@ -1363,10 +1405,38 @@
             },
             {
               "ticker": "META",
-              "form": "4",
-              "filed": "2026-10-07",
-              "accession": "0000950103-26-015324",
-              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015324/xslF345X06/ownership.xml"
+              "form": "10-Q",
+              "filed": "2026-07-30",
+              "accession": "0001628280-26-050705",
+              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm"
+            },
+            {
+              "ticker": "META",
+              "form": "8-K",
+              "filed": "2026-07-29",
+              "accession": "0001628280-26-050596",
+              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-20260729.htm"
+            },
+            {
+              "ticker": "META",
+              "form": "8-K",
+              "filed": "2026-05-29",
+              "accession": "0001628280-26-039193",
+              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026039193/meta-20260527.htm"
+            },
+            {
+              "ticker": "META",
+              "form": "10-K",
+              "filed": "2026-01-29",
+              "accession": "0001628280-26-003942",
+              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm"
+            },
+            {
+              "ticker": "META",
+              "form": "10-K",
+              "filed": "2025-01-30",
+              "accession": "0001326801-25-000017",
+              "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm"
             }
           ]
         },
@@ -1405,13 +1475,6 @@
             },
             {
               "ticker": "AMZN",
-              "form": "424B5",
-              "filed": "2026-09-11",
-              "accession": "0001104659-26-107122",
-              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926107122/tm2624614-3_424b5.htm"
-            },
-            {
-              "ticker": "AMZN",
               "form": "4",
               "filed": "2026-09-09",
               "accession": "0001284323-26-000002",
@@ -1433,13 +1496,6 @@
             },
             {
               "ticker": "AMZN",
-              "form": "424B5",
-              "filed": "2026-09-09",
-              "accession": "0001104659-26-106115",
-              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926106115/tm2624614-1_424b5.htm"
-            },
-            {
-              "ticker": "AMZN",
               "form": "4",
               "filed": "2026-09-03",
               "accession": "0001936006-26-000024",
@@ -1447,17 +1503,52 @@
             },
             {
               "ticker": "AMZN",
-              "form": "4",
-              "filed": "2026-08-27",
-              "accession": "0001043298-26-000002",
-              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000104329826000002/xslF345X06/wk-form4_1787862279.xml"
+              "form": "13F-HR",
+              "filed": "2026-08-06",
+              "accession": "0001104659-26-092052",
+              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926092052/xslForm13F_X02/primary_doc.xml"
             },
             {
               "ticker": "AMZN",
-              "form": "4",
-              "filed": "2026-08-25",
-              "accession": "0001374545-26-000010",
-              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000137454526000010/xslF345X06/wk-form4_1787692115.xml"
+              "form": "10-Q",
+              "filed": "2026-07-31",
+              "accession": "0001018724-26-000026",
+              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm"
+            },
+            {
+              "ticker": "AMZN",
+              "form": "8-K",
+              "filed": "2026-07-30",
+              "accession": "0001018724-26-000024",
+              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260730.htm"
+            },
+            {
+              "ticker": "AMZN",
+              "form": "13F-HR",
+              "filed": "2026-05-05",
+              "accession": "0001104659-26-055638",
+              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926055638/xslForm13F_X02/primary_doc.xml"
+            },
+            {
+              "ticker": "AMZN",
+              "form": "13F-HR",
+              "filed": "2026-02-10",
+              "accession": "0001104659-26-012626",
+              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926012626/xslForm13F_X02/primary_doc.xml"
+            },
+            {
+              "ticker": "AMZN",
+              "form": "10-K",
+              "filed": "2026-02-06",
+              "accession": "0001018724-26-000004",
+              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm"
+            },
+            {
+              "ticker": "AMZN",
+              "form": "10-K",
+              "filed": "2025-02-07",
+              "accession": "0001018724-25-000004",
+              "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm"
             }
           ]
         }
@@ -1493,59 +1584,10 @@
         },
         {
           "ticker": "AAPL",
-          "form": "4",
-          "filed": "2026-10-15",
-          "accession": "0001140361-26-039785",
-          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126039785/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "AAPL",
-          "form": "4",
-          "filed": "2026-10-08",
-          "accession": "0001140361-26-039158",
-          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126039158/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "AAPL",
-          "form": "4",
-          "filed": "2026-10-05",
-          "accession": "0001140361-26-038674",
-          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038674/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "AAPL",
-          "form": "4",
-          "filed": "2026-10-05",
-          "accession": "0001140361-26-038672",
-          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038672/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "AAPL",
-          "form": "4",
-          "filed": "2026-10-05",
-          "accession": "0001140361-26-038669",
-          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038669/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "AAPL",
-          "form": "4",
-          "filed": "2026-10-05",
-          "accession": "0001140361-26-038667",
-          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038667/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "AAPL",
-          "form": "4",
-          "filed": "2026-10-01",
-          "accession": "0001140361-26-038307",
-          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038307/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "AAPL",
-          "form": "4",
-          "filed": "2026-09-29",
-          "accession": "0001140361-26-038028",
-          "url": "https://www.sec.gov/Archives/edgar/data/320193/000114036126038028/xslF345X06/form4.xml"
+          "form": "4/A",
+          "filed": "2022-08-22",
+          "accession": "0000320193-22-000078",
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019322000078/xslF345X03/wf-form4a_166120817922787.xml"
         },
         {
           "ticker": "NVDA",
@@ -1584,52 +1626,10 @@
         },
         {
           "ticker": "NVDA",
-          "form": "4",
-          "filed": "2026-09-18",
-          "accession": "0001283854-26-000010",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000128385426000010/xslF345X06/wk-form4_1789766082.xml"
-        },
-        {
-          "ticker": "NVDA",
-          "form": "4",
-          "filed": "2026-09-18",
-          "accession": "0001696841-26-000012",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000169684126000012/xslF345X06/wk-form4_1789766007.xml"
-        },
-        {
-          "ticker": "NVDA",
-          "form": "4",
-          "filed": "2026-09-18",
-          "accession": "0001588670-26-000014",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000158867026000014/xslF345X06/wk-form4_1789765959.xml"
-        },
-        {
-          "ticker": "NVDA",
-          "form": "4",
-          "filed": "2026-09-18",
-          "accession": "0001197649-26-000012",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764926000012/xslF345X06/wk-form4_1789765856.xml"
-        },
-        {
-          "ticker": "NVDA",
-          "form": "4",
-          "filed": "2026-09-11",
-          "accession": "0002152188-26-000005",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000215218826000005/xslF345X06/wk-form4_1789160684.xml"
-        },
-        {
-          "ticker": "NVDA",
-          "form": "4",
-          "filed": "2026-09-08",
-          "accession": "0001199039-26-000014",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119903926000014/xslF345X06/wk-form4_1788901755.xml"
-        },
-        {
-          "ticker": "NVDA",
-          "form": "4",
-          "filed": "2026-09-04",
-          "accession": "0001197647-26-000009",
-          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000119764726000009/xslF345X06/wk-form4_1788555631.xml"
+          "form": "4/A",
+          "filed": "2023-12-01",
+          "accession": "0001045810-23-000242",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581023000242/xslF345X05/wk-form4a_1701480208.xml"
         },
         {
           "ticker": "MSFT",
@@ -1661,31 +1661,17 @@
         },
         {
           "ticker": "MSFT",
-          "form": "4",
-          "filed": "2026-09-17",
-          "accession": "0000789019-26-000222",
-          "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000222/xslF345X06/form4.xml"
+          "form": "4/A",
+          "filed": "2024-12-02",
+          "accession": "0001062993-24-019893",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000106299324019893/xslF345X05/form4a.xml"
         },
         {
           "ticker": "MSFT",
-          "form": "4",
-          "filed": "2026-09-17",
-          "accession": "0000789019-26-000221",
-          "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000221/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "MSFT",
-          "form": "4",
-          "filed": "2026-09-17",
-          "accession": "0000789019-26-000220",
-          "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000220/xslF345X06/form4.xml"
-        },
-        {
-          "ticker": "MSFT",
-          "form": "4",
-          "filed": "2026-09-15",
-          "accession": "0000789019-26-000214",
-          "url": "https://www.sec.gov/Archives/edgar/data/789019/000078901926000214/xslF345X06/form4.xml"
+          "form": "4/A",
+          "filed": "2022-12-13",
+          "accession": "0001062993-22-023843",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000106299322023843/xslF345X03/form4a.xml"
         },
         {
           "ticker": "TSLA",
@@ -1717,10 +1703,17 @@
         },
         {
           "ticker": "TSLA",
-          "form": "4",
-          "filed": "2026-05-04",
-          "accession": "0001104659-26-055079",
-          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926055079/xslF345X06/tm2613330-1_4seq1.xml"
+          "form": "4/A",
+          "filed": "2023-01-03",
+          "accession": "0001771364-23-000001",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000177136423000001/xslF345X03/edgardoc.xml"
+        },
+        {
+          "ticker": "TSLA",
+          "form": "4/A",
+          "filed": "2022-06-03",
+          "accession": "0000899243-22-021041",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000089924322021041/xslF345X03/doc4a.xml"
         },
         {
           "ticker": "META",
@@ -1742,16 +1735,94 @@
           "filed": "2026-10-21",
           "accession": "0000950103-26-015980",
           "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015980/xslF345X06/ownership.xml"
+        },
+        {
+          "ticker": "META",
+          "form": "4",
+          "filed": "2026-10-14",
+          "accession": "0000950103-26-015598",
+          "url": "https://www.sec.gov/Archives/edgar/data/1326801/000095010326015598/xslF345X06/ownership.xml"
+        },
+        {
+          "ticker": "AMZN",
+          "form": "4",
+          "filed": "2026-10-05",
+          "accession": "0001936006-26-000026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000026/xslF345X06/wk-form4_1791230893.xml"
+        },
+        {
+          "ticker": "AMZN",
+          "form": "4",
+          "filed": "2026-09-09",
+          "accession": "0001284323-26-000002",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000128432326000002/xslF345X06/wk-form4_1788987268.xml"
+        },
+        {
+          "ticker": "AMZN",
+          "form": "4",
+          "filed": "2026-09-09",
+          "accession": "0001595602-26-000007",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000159560226000007/xslF345X06/wk-form4_1788986939.xml"
+        },
+        {
+          "ticker": "AMZN",
+          "form": "4",
+          "filed": "2026-09-03",
+          "accession": "0001936006-26-000024",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000193600626000024/xslF345X06/wk-form4_1788468119.xml"
         }
       ],
-      "thirteen_f": [],
+      "thirteen_f": [
+        {
+          "ticker": "NVDA",
+          "form": "13F-HR",
+          "filed": "2026-08-14",
+          "accession": "0001045810-26-000065",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000065/xslForm13F_X02/primary_doc.xml"
+        },
+        {
+          "ticker": "NVDA",
+          "form": "13F-HR",
+          "filed": "2026-05-15",
+          "accession": "0001045810-26-000042",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000042/xslForm13F_X02/primary_doc.xml"
+        },
+        {
+          "ticker": "NVDA",
+          "form": "13F-HR",
+          "filed": "2026-02-17",
+          "accession": "0001045810-26-000011",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000011/xslForm13F_X02/primary_doc.xml"
+        },
+        {
+          "ticker": "AMZN",
+          "form": "13F-HR",
+          "filed": "2026-08-06",
+          "accession": "0001104659-26-092052",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926092052/xslForm13F_X02/primary_doc.xml"
+        },
+        {
+          "ticker": "AMZN",
+          "form": "13F-HR",
+          "filed": "2026-05-05",
+          "accession": "0001104659-26-055638",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926055638/xslForm13F_X02/primary_doc.xml"
+        },
+        {
+          "ticker": "AMZN",
+          "form": "13F-HR",
+          "filed": "2026-02-10",
+          "accession": "0001104659-26-012626",
+          "url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926012626/xslForm13F_X02/primary_doc.xml"
+        }
+      ],
       "note": "Form 4 = insider filings; 13F = institutional holdings reports. Numbers moved summarized where filing metadata available."
     }
   },
   "macro": {
     "ok": true,
     "error": null,
-    "fetched_at": "2026-10-31 17:45:36 PDT",
+    "fetched_at": "2026-10-31 17:49:24 PDT",
     "data": {
       "series": [
         {
@@ -1859,7 +1930,7 @@
   "news": {
     "ok": true,
     "error": null,
-    "fetched_at": "2026-10-31 17:46:07 PDT",
+    "fetched_at": "2026-10-31 17:49:54 PDT",
     "data": {
       "news": [
         {
@@ -2284,7 +2355,7 @@
   "options": {
     "ok": true,
     "error": null,
-    "fetched_at": "2026-10-31 17:46:25 PDT",
+    "fetched_at": "2026-10-31 17:50:12 PDT",
     "data": {
       "chains": [
         {
@@ -2460,22 +2531,22 @@
   "desk": {
     "ok": true,
     "error": null,
-    "fetched_at": "2026-10-31 17:46:25 PDT",
+    "fetched_at": "2026-10-31 17:50:12 PDT",
     "data": {
       "bullets": [
         "Risk-off session: SPY -1.77% and QQQ -3.47% are both down hard.",
         "Vol expanding: VIX +12.91%.",
         "10Y yield near 4.929 (-1.20%).",
         "Watchlist movers: NVDA -4.22%, MSFT -1.55%, META -1.53%.",
-        "Crypto: BTC +0.07%, ETH +0.15%.",
+        "Crypto: BTC +0.11%, ETH +0.20%.",
         "Macro flags: CPI 336.298 (\u0394 +2.17); Core PCE 130.902 (\u0394 +0.413).",
         "SPY options (2026-11-02): balanced 25\u0394 skew (put\u2212call IV +0.012; P/C OI 1.68).",
         "QQQ options (2026-11-02): put-heavy skew (put\u2212call IV +0.024; P/C OI 1.63).",
-        "Fresh 8-Ks: MSFT 8-K 2026-10-28, MSFT 8-K 2026-10-28, TSLA 8-K 2026-10-21, TSLA 8-K 2026-10-02, TSLA 8-K 2026-09-29.",
+        "Fresh 8-Ks: AAPL 8-K 2026-07-30, AAPL 8-K 2026-04-30, AAPL 8-K 2026-04-20, AAPL 8-K 2026-02-24, NVDA 8-K 2026-09-03.",
         "Upcoming earnings (watchlist): AAPL 2026-11-02 time-after-hours.",
         "Ask Head Shlomo in chat for deeper answers."
       ],
-      "generated": "2026-10-31 17:46:25 PDT"
+      "generated": "2026-10-31 17:50:12 PDT"
     }
   },
   "from_reference": {
