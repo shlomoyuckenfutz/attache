@@ -167,7 +167,7 @@ pre{white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere}
 main,body,#ub{max-width:100%;width:100%;box-sizing:border-box}
 main{grid-template-columns:minmax(0,1fr)!important}
 main>*,.zone,.pn,.dk,.card,.zg,.g,.g3,.brief,.scr,.ux-tw,.dpx,.tile,.w2,#biasG,.nw{min-width:0!important;max-width:100%;box-sizing:border-box}
-.zg,.g,.g3,.brief,.dk .dkg,.dpx .dg,.eqs,.oc,.il-g,.hr-wrap,.mc-g,.dpd-g,.gauges,.sp-g,#gtRow,#z-levels .zg,.nw ol{grid-template-columns:minmax(0,1fr)!important}
+.zg,.g,.g3,.brief,.dk .dkg,.eqs,.oc,.il-g,.hr-wrap,.mc-g,.dpd-g,.gauges,.sp-g,#gtRow,#z-levels .zg,.nw ol{grid-template-columns:minmax(0,1fr)!important}
 .w2,.w3{grid-column:auto!important}
 /* Wire headlines wrap at sane size */
 .nw,.nw li,.nw li .h{font-size:13px!important}
@@ -199,7 +199,11 @@ td.w{min-width:0!important;white-space:normal!important;overflow-wrap:anywhere}
 img,svg,canvas,video{max-width:100%!important;height:auto}
 .nt,p,li,.mut,small,.cap,.tile .s,.ph small{overflow-wrap:anywhere;word-break:break-word;white-space:normal}
 .lad{grid-template-columns:minmax(0,1fr)!important}
+/* Dark Pool level cards: keep original multi-col; scroll sideways if needed — do not stack to 1fr */
+.dpx{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.dpx .dg{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))!important;min-width:0}
 }
+
 @media(max-width:430px){
 .brief,.eqs,.sp-g,.fb-lv,.vz-kp{grid-template-columns:minmax(0,1fr)!important}
 }
@@ -219,6 +223,64 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
 <span class="ts">UPDATED <b id="ts"></b><span class="cur"></span></span></div>
 <div class="qs" id="qs"></div>
 <div class="warn"><b>PAPER TRADING</b> · no real money · backtest edge is <b>marginal</b> (see NOTES) · research data 2020-01-01 onward · <span id="tkN"></span></div>
+
+<style id="cmd-top-polish">
+/* Scoped polish: built → Bias/Bands (#brief) only. Do not touch nav size or other panels. */
+.top{padding:8px 12px;gap:8px;align-items:center;background:linear-gradient(180deg,#0c0c0c 0%,#000 100%)}
+.top .brand{border-radius:6px;letter-spacing:2px}
+.top small,#built{color:#857d6a;font-size:11px;letter-spacing:.02em}
+/* nav.zl size intentionally unchanged */
+#tkr.tkr{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;padding:10px 12px;border-top:1px solid #1a1a1a;background:#050505}
+#tkr.tkr>span:first-child{color:#857d6a;font-size:10px;font-weight:700;letter-spacing:.12em;margin-right:2px}
+#tkr.tkr button{font:inherit;font-weight:700;font-size:12px;background:#0a0a0a;color:var(--amb);border:1px solid #3a2e14;padding:6px 14px;cursor:pointer;margin:0;border-radius:0;line-height:1.2;min-height:0}
+#tkr.tkr button:first-of-type{border-radius:9px 0 0 9px}
+#tkr.tkr button:nth-of-type(3){border-radius:0 9px 9px 0}
+#tkr.tkr button+button{border-left-width:0}
+#tkr.tkr button.on{background:var(--amb);color:#000;box-shadow:0 0 14px rgba(255,176,0,.28);border-color:var(--amb)}
+#tkr.tkr .ts{margin-left:auto;color:#857d6a;font-size:11px}
+#tkr.tkr .ts b{color:#e6e0cc;font-weight:600}
+#qs.qs{display:flex;flex-wrap:wrap;gap:8px;padding:8px 12px 4px;border:0;background:transparent}
+#qs.qs>div{flex:1 1 140px;min-width:0;padding:10px 12px;border:1px solid #2a2418;border-radius:11px;background:linear-gradient(165deg,#16120a 0%,#080808 70%);color:#857d6a;font-size:11px;white-space:nowrap;box-sizing:border-box}
+#qs.qs>div b{display:inline-block;color:#f2ead8;font-weight:800;font-size:18px;letter-spacing:-.02em;margin:0 8px 0 6px;font-variant-numeric:tabular-nums;vertical-align:-1px}
+#qs.qs>div span.up,#qs.qs>div span.dn{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700;font-variant-numeric:tabular-nums}
+#qs.qs>div span.up{background:#0c2416;color:var(--up);border:1px solid #1d4a30}
+#qs.qs>div span.dn{background:#2a0e0e;color:var(--dn);border:1px solid #5a2020}
+#qs.qs>div span.mut{opacity:.75;font-size:10px;margin-left:4px}
+.warn{margin:6px 12px 10px;padding:8px 12px;color:#9a917c;font-size:11.5px;line-height:1.4;border:1px solid #3a2e14;border-left:3px solid var(--amb);border-radius:10px;background:linear-gradient(90deg,#161000,#080800 55%);border-bottom-color:#3a2e14}
+.warn b{color:var(--amb);font-weight:700;letter-spacing:.04em}
+#brief.brief{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;padding:4px 12px 14px;box-sizing:border-box}
+#brief .tile{background:linear-gradient(165deg,#14110c 0%,#090909 72%);border:1px solid #2c261c;border-top:1px solid #2c261c;border-left:3px solid var(--c,var(--amb));border-radius:12px;padding:12px 14px;min-width:0;box-shadow:0 1px 0 rgba(255,176,0,.04)}
+#brief .tile h4{margin:0 0 8px;font-size:10px;color:#857d6a;font-weight:700;letter-spacing:.08em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;gap:8px}
+#brief .tile h4>span,#brief .tile h4 .pill{display:inline-flex;align-items:center;margin-left:auto;padding:2px 8px;border-radius:999px;border:1px solid #333;background:#120e08;color:#cbb89a;font-size:10px;font-weight:600;letter-spacing:.02em;text-transform:none;white-space:nowrap;flex:0 0 auto}
+#brief .tile .v{font-size:20px;font-weight:800;color:#f2ead8;line-height:1.2;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+#brief .tile .s{color:#857d6a;font-size:11.5px;white-space:normal;overflow:visible;text-overflow:clip;line-height:1.35;margin-top:4px}
+#brief .tile .s b{color:#e6e0cc;font-weight:700}
+#brief .tile .badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.06em;border:1px solid currentColor;line-height:1.2}
+#brief .tile .chg{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:700;margin-left:6px;font-variant-numeric:tabular-nums;vertical-align:2px}
+#brief .tile .chg.up{background:#0c2416;color:var(--up);border:1px solid #1d4a30}
+#brief .tile .chg.dn{background:#2a0e0e;color:var(--dn);border:1px solid #5a2020}
+#brief .tile ol{margin:0;padding:0;list-style:none;display:grid;gap:4px;font-variant-numeric:tabular-nums}
+#brief .tile li{display:grid;grid-template-columns:minmax(52px,auto) minmax(0,1fr) auto;gap:8px;align-items:center;font-size:12.5px;padding:3px 0;border-bottom:1px solid #1a1610}
+#brief .tile li:last-child{border-bottom:0}
+#brief .tile li b{color:#f2ead8;font-weight:700;font-variant-numeric:tabular-nums}
+#brief .tile li .mut{color:#857d6a;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#brief .tile li .pill,#brief .tile .lpill{display:inline-flex;align-items:center;padding:1px 7px;border-radius:999px;border:1px solid #3a2e14;background:#1a1408;color:var(--amb);font-size:10px;font-weight:700;white-space:nowrap}
+@media(max-width:1180px){#brief.brief{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){
+  #brief.brief{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;padding:4px 8px 12px}
+  #qs.qs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:8px;gap:8px}
+  #qs.qs>div{flex:0 0 auto;min-width:168px}
+  .warn{margin:6px 8px 10px}
+  #tkr.tkr{padding:8px}
+  #tkr.tkr .ts{margin-left:0;width:100%}
+  #brief .tile{padding:12px}
+  #brief .tile .v{font-size:18px}
+  #brief .tile .s{white-space:normal;overflow-wrap:anywhere}
+}
+@media(max-width:430px){
+  #brief.brief{grid-template-columns:minmax(0,1fr);gap:10px}
+}
+</style>
 <section class="brief" id="brief"></section>
 <main><style>
 .nw{border:1px solid #232323;background:#000;font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
@@ -686,7 +748,7 @@ let TK='SPY';
    h+=`<div style="min-width:0"><div class="grp">${lab} · exp ${e(g.exp||'–')}</div>`+(g.L.length?bar(g.L,px)+'<table><tr><th>Src</th><th class="r">Lower</th><th class="r">Upper</th><th class="r">± pts</th><th class="r">±%</th><th class="r">Price in band</th></tr>'+g.L.map(x=>`<tr title="${x.note}"><td><span class="fl" style="${x.tag==='CALC'?'background:var(--cy)':''}">${x.tag}</span></td><td class="r">${n(x.lo)}</td><td class="r">${n(x.hi)}</td><td class="r">${n(x.mv)}</td><td class="r">${n(100*x.mv/x.ref,2)}</td><td class="r">${pos(x,px)}</td></tr>`).join('')+'</table>'+g.L.map(x=>`<div class="nt"><b>${x.tag}</b> ${x.note}</div>`).join(''):`<div class="mut">No data${g.err?' · '+e(g.err):''}</div>`)+'</div>'});
   B.innerHTML=h+'</div>'+(window.ftImplied?'<div class="grp">ES ≈ BAND (SPX straddle + basis)</div>'+ftImplied():'')+'<div class="nt">POSTED = third-party levels posted for this session (SPY only); CALC = our ATM straddle from free indicative option quotes (free quotes fallback). Weekly CALC is today\'s remaining straddle for Friday expiry anchored on Monday open, so it shrinks through the week; POSTED weekly is fixed from the prior Friday. Not advice.</div>';
   $('#imH').textContent=`calc ${C.generated_pt||'–'} · price ${px??'–'}`};
- window.imTile=t=>{const px=((D.quotes||{})[t]||{}).last,r=['daily','weekly'].map(k=>{const g=imGet(t,k),x=g.L[0];return x?`<li><b>${k==='daily'?'D':'W'} ${n(x.lo)}–${n(x.hi)}</b><span class="mut">±${n(x.mv)}</span><span>${x.tag}</span></li>`:`<li><b>${k==='daily'?'D':'W'} –</b></li>`}).join('');return `<ol>${r}</ol>`};
+ window.imTile=t=>{const px=((D.quotes||{})[t]||{}).last,r=['daily','weekly'].map(k=>{const g=imGet(t,k),x=g.L[0];return x?`<li><b>${k==='daily'?'D':'W'} ${n(x.lo)}–${n(x.hi)}</b><span class="mut">±${n(x.mv)}</span><span class="pill">${x.tag}</span></li>`:`<li><b>${k==='daily'?'D':'W'} –</b></li>`}).join('');return `<ol>${r}</ol>`};
 })();
 // FIRST BLADE symbol switcher: SPY | QQQ | SPX | /ES (client-side)
 (()=>{const X=D.fbx||{},S=D["SRC D"]||{},Q=D.quotes||{},b=(id)=>{const n=document.getElementById(id);return n||{textContent:'',innerHTML:'',style:{}}},B=document.getElementById('spB'),H=document.getElementById('spH');if(!B||!H)return;
@@ -793,12 +855,12 @@ window.SRC=window.SRC||(()=>{const m={};let i=0;return h=>m[h]||(m[h]='SRC '+Str
   O=(D.orb||[])[0]||{},ES=D.es||{},DP=D.dp||{},nr=(o,n)=>((o.levels||[]).slice().sort((a,b)=>Math.abs(a.distance)-Math.abs(b.distance)).slice(0,n));
   const bc={LONG:'var(--up)',SHORT:'var(--dn)'}[b.direction]||'var(--amb)';
   const T=[
-   [`NEWS BIAS<span>${e(P.date||'')}</span>`,bc,`<div class="v" style="color:${bc}">${e(b.direction||'–')}</div><div class="s" title="${e(b.reason)}">${e(b.reason||'No plan yet')}</div>`],
+   [`NEWS BIAS<span>${e(P.date||'')}</span>`,bc,`<div class="v"><span class="badge" style="color:${bc};border-color:${bc};background:color-mix(in srgb,${bc} 16%,#000)">${e(b.direction||'–')}</span></div><div class="s" title="${e(b.reason)}">${e(b.reason||'No plan yet')}</div>`],
    [`GAMMA · ${e(g.symbol||t)}<span>${e(((g.sources||[]).map(s=>s.posted_pt||'').sort().pop()||(D.gamma||{}).date||'').slice(0,16))}</span>`,c.regime==='NEG'?'var(--dn)':c.regime==='POS'?'var(--up)':'var(--mut)',`<div class="v">${c.regime?c.regime+' GAMMA':'n/a'}</div><div class="s">flip <b>${c.flip??'–'}</b> · CW <b>${c.call_wall??'–'}</b> · PW <b>${c.put_wall??'–'}</b></div>`],
-   [`TOP CONFLUENCE · ${t}<span>spot ${sp??'–'}</span>`,'var(--amb)',CB.length?'<ol>'+CB.map(x=>`<li><b>${x.price}</b><span class="mut">${x.lo}–${x.hi}</span><span>${x.n_sources} src</span></li>`).join('')+'</ol>':'<div class="s">No bands yet</div>'],
+   [`TOP CONFLUENCE · ${t}<span>spot ${sp??'–'}</span>`,'var(--amb)',CB.length?'<ol>'+CB.map(x=>`<li><b>${x.price}</b><span class="mut">${x.lo}–${x.hi}</span><span class="pill">${x.n_sources} src</span></li>`).join('')+'</ol>':'<div class="s">No bands yet</div>'],
    [`ORB15 · ${e(O.date||'')}<span>SPY</span>`,O.status==='Win'?'var(--up)':O.status==='Loss'?'var(--dn)':'var(--mut)',O.high!=null?`<div class="v">${f(O.low)}–${f(O.high)}</div><div class="s">mid <b>${f(O.mid)}</b> · w ${f(O.width)} · ${e(O.side||'')} <b>${e(O.status||'')}</b></div>`:`<div class="v">–</div><div class="s">${e(O.status||'no range')}</div>`],
-   [`NEAREST ES<span>${ES.price??'–'}</span>`,'var(--gn)','<ol>'+nr(ES,3).map(x=>`<li><b>${x.level}</b><span class="mut">${sgn(-x.distance,1)}</span><span>${x.touches}t</span></li>`).join('')+'</ol>'],
-   [`FUTURES · ES<span>${e(((D.fut||{}).quotes||{}).ES?.asof||'')}</span>`,'var(--gn)',(()=>{const F=D.fut||{},q=(F.quotes||{}).ES,n=(F.ladder||[]).filter(r=>r.dist!=null).sort((a,b)=>Math.abs(a.dist)-Math.abs(b.dist)).slice(0,2);return q?`<div class="v"><a href="#futures" style="color:var(--gn)">${f(q.last)}</a> <span class="${ud(q.chg)}" style="font-size:var(--fs)">${sgn(q.chg,2)}</span></div><div class="s">nearest ${n.map(r=>`<b>${r.price}</b> (${sgn(r.dist,2)})`).join(' · ')}</div>`:'<div class="s">No ES quote</div>'})()],
+   [`NEAREST ES<span>${ES.price??'–'}</span>`,'var(--gn)','<ol>'+nr(ES,3).map(x=>`<li><b>${x.level}</b><span class="mut">${sgn(-x.distance,1)}</span><span class="pill">${x.touches}t</span></li>`).join('')+'</ol>'],
+   [`FUTURES · ES<span>${e(((D.fut||{}).quotes||{}).ES?.asof||'')}</span>`,'var(--gn)',(()=>{const F=D.fut||{},q=(F.quotes||{}).ES,n=(F.ladder||[]).filter(r=>r.dist!=null).sort((a,b)=>Math.abs(a.dist)-Math.abs(b.dist)).slice(0,2);return q?`<div class="v"><a href="#futures" style="color:var(--gn)">${f(q.last)}</a><span class="chg ${ud(q.chg)}">${sgn(q.chg,2)}</span></div><div class="s">nearest ${n.map(r=>`<b>${r.price}</b> (${sgn(r.dist,2)})`).join(' · ')}</div>`:'<div class="s">No ES quote</div>'})()],
    [`BLAST RADIUS · ${t}<span>${e(((D.im||{}).calc||{}).session_for||'')}</span>`,'var(--cy)',window.imTile?imTile(t):'']];
   $('#brief').innerHTML=T.map(([h,col,v])=>`<div class="tile" style="--c:${col}"><h4>${h}</h4>${v}</div>`).join('')};
  window.collapse=(root,N)=>{if(!root)return;root.querySelectorAll('table').forEach(tb=>{if(tb.dataset.cl)return;const R=[...tb.querySelectorAll('tr')].slice(1);if(R.length<=N)return;tb.dataset.cl=1;
