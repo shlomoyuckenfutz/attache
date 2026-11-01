@@ -2,7 +2,7 @@
 """Board dealer-exposure collector for Attaché HEAT app.
 Fetches CBOE delayed options for the chip board (+ SPX for Trinity),
 computes GEX/VEX/DEX/Charm grids (strike × expiry), walls, King, EM, setups,
-scanner scores, Alpaca 5m bars for Antaeus. Writes under orb-dash-site/exposure/data/.
+scanner scores, Alpaca 5m bars for Attaché. Writes under orb-dash-site/exposure/data/.
 FREE sources only. No routines created here — invoke on a schedule yourself.
 
 Usage:
@@ -467,7 +467,7 @@ def main():
                 pack=fut.result(); pack["market"]=mkt
                 # append history point
                 hist=list(prior_hist.get(s) or [])
-                # top exposure nodes for Antaeus bubble reconstruction / replay
+                # top exposure nodes for Attaché bubble reconstruction / replay
                 lad = (pack.get("ladder") or {}).get("all") or {}
                 strikes = lad.get("strikes") or []
                 gexs = lad.get("gex") or []
