@@ -1,7 +1,7 @@
 {
   "session": "2026-10-30",
-  "curated_pt": "2026-10-30 14:01 PT",
-  "note": "Sweep 10/30 close; free public X only",
+  "curated_pt": "2026-11-01 11:05 PT",
+  "note": "Sweep 11/1 midday (weekend); free public X only",
   "levels": [
     {
       "handle": "VoltickIO",
@@ -242,6 +242,90 @@
       "scope": "near",
       "life_days": 1,
       "url": "https://x.com/SRC_LEVELS_A/status/2116194902153588895"
+    },
+    {
+      "handle": "GEXEdgeIO",
+      "post_id": "2116944813291610536",
+      "posted_pt": "2026-11-01 09:25",
+      "symbol": "SPY",
+      "raw": "749.83",
+      "kind": "Key support",
+      "type": "TA",
+      "scope": "near",
+      "life_days": 5,
+      "url": "https://x.com/GEXEdgeIO/status/2116944813291610536"
+    },
+    {
+      "handle": "GEXEdgeIO",
+      "post_id": "2116944813291610536",
+      "posted_pt": "2026-11-01 09:25",
+      "symbol": "SPY",
+      "raw": "729.20",
+      "kind": "Next support",
+      "type": "TA",
+      "scope": "far",
+      "life_days": 5,
+      "url": "https://x.com/GEXEdgeIO/status/2116944813291610536"
+    },
+    {
+      "handle": "GEXEdgeIO",
+      "post_id": "2116944813291610536",
+      "posted_pt": "2026-11-01 09:25",
+      "symbol": "SPY",
+      "raw": "715.95",
+      "kind": "Major support",
+      "type": "TA",
+      "scope": "far",
+      "life_days": 5,
+      "url": "https://x.com/GEXEdgeIO/status/2116944813291610536"
+    },
+    {
+      "handle": "GEXEdgeIO",
+      "post_id": "2116944813291610536",
+      "posted_pt": "2026-11-01 09:25",
+      "symbol": "SPY",
+      "raw": "779.29",
+      "kind": "Resistance",
+      "type": "TA",
+      "scope": "far",
+      "life_days": 5,
+      "url": "https://x.com/GEXEdgeIO/status/2116944813291610536"
+    },
+    {
+      "handle": "GEXEdgeIO",
+      "post_id": "2116944813291610536",
+      "posted_pt": "2026-11-01 09:25",
+      "symbol": "SPY",
+      "raw": "781.62",
+      "kind": "Oct 6 high",
+      "type": "TA",
+      "scope": "far",
+      "life_days": 5,
+      "url": "https://x.com/GEXEdgeIO/status/2116944813291610536"
+    },
+    {
+      "handle": "CheddarFlow",
+      "post_id": "2116947251385733559",
+      "posted_pt": "2026-11-01 09:35",
+      "symbol": "SPY",
+      "raw": "760",
+      "kind": "Lost level / resistance",
+      "type": "TA",
+      "scope": "near",
+      "life_days": 2,
+      "url": "https://x.com/CheddarFlow/status/2116947251385733559"
+    },
+    {
+      "handle": "SuperLuckeee",
+      "post_id": "2116950605214155120",
+      "posted_pt": "2026-11-01 09:48",
+      "symbol": "SPY",
+      "raw": "720",
+      "kind": "Dip-buy area",
+      "type": "TA",
+      "scope": "far",
+      "life_days": 5,
+      "url": "https://x.com/SuperLuckeee/status/2116950605214155120"
     }
   ]
 }

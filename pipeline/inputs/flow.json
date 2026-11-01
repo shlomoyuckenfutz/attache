@@ -1,5 +1,5 @@
 {
-  "generated_at_pt": "2026-10-30 14:01 PT",
+  "generated_at_pt": "2026-11-01 11:05 PT",
   "window_days": 3,
   "groups": {
     "set1": {
@@ -1914,6 +1914,88 @@
         {
           "level": "SPY last",
           "size": "771.21"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "GEXEdgeIO",
+      "post_id": "2116944813291610536",
+      "url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
+      "posted_at_utc": "2026-11-01T17:25:49.000Z",
+      "posted_at_pt": "2026-11-01 09:25 PT",
+      "caption": "2 months ago, $SPY spiked 4% back to $781 after hitting $750 level.\n\nOn Friday, $SPY tested this exact level again.\n\nHere's what happens next:\n\nHold it \u2192 retest again\nLose it \u2192 729, then 716.",
+      "source_note": "Nov outlook cheatsheet (image): SPY daily Fri close 755.72; Oct 6 high 781.62; resistance 779.29; key support 749.83 (Sep held); next support 729.20; major support 715.95; base 702.32. Close below 749.83 \u2192 729.20 then 715.95. Catalysts: Nov 3 midterms, Nov 6 jobs, Nov 10 CPI, Nov 17 NVDA earnings (est.), post-vote US-Iran strike risk.",
+      "images": [
+        "img/GEXEdgeIO_2116944813291610536_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "781.62",
+          "kind": "Oct 6 high"
+        },
+        {
+          "ticker": "SPY",
+          "level": "779.29",
+          "kind": "Resistance"
+        },
+        {
+          "ticker": "SPY",
+          "level": "755.72",
+          "kind": "Fri close"
+        },
+        {
+          "ticker": "SPY",
+          "level": "749.83",
+          "kind": "Key support (hold = retest)"
+        },
+        {
+          "ticker": "SPY",
+          "level": "729.20",
+          "kind": "Next support (close < 749.83)"
+        },
+        {
+          "ticker": "SPY",
+          "level": "715.95",
+          "kind": "Major support"
+        },
+        {
+          "ticker": "SPY",
+          "level": "702.32",
+          "kind": "Base"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "CheddarFlow",
+      "post_id": "2116947251385733559",
+      "url": "https://x.com/CheddarFlow/status/2116947251385733559",
+      "posted_at_utc": "2026-11-01T17:35:30.000Z",
+      "posted_at_pt": "2026-11-01 09:35 PT",
+      "caption": "$SPY just lost 760, and the flow is backing it up for lower \ud83d\udea8",
+      "source_note": "Chart image: '760 IS GONE \u00b7 Bears now in control'; SPY 755.72 last; line 759.42; lower line 737.34.",
+      "images": [
+        "img/CheddarFlow_2116947251385733559_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "760",
+          "kind": "Lost \u2014 bears in control"
+        },
+        {
+          "ticker": "SPY",
+          "level": "759.42",
+          "kind": "Chart line [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "737.34",
+          "kind": "Lower chart line [image]"
         }
       ]
     }
