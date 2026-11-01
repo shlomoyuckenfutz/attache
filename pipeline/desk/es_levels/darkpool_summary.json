@@ -1,0 +1,159 @@
+{
+ "symbol": "SPY",
+ "price": 762.57,
+ "asof_et": "2026-10-30 23:44",
+ "run_et": "2026-10-31 00:00",
+ "data_from_et": "2026-10-01 04:00",
+ "bars": 19730,
+ "new_events": 1,
+ "new_breaks": [],
+ "new_proximity_alerts": [],
+ "near": [],
+ "levels": [
+  {
+   "level": 757.12,
+   "distance": 5.45,
+   "near": false,
+   "touches": 9,
+   "bounces": 2,
+   "breaks": 3,
+   "last_touch_et": "2026-10-30 19:59"
+  },
+  {
+   "level": 758.02,
+   "distance": 4.55,
+   "near": false,
+   "touches": 7,
+   "bounces": 2,
+   "breaks": 3,
+   "last_touch_et": "2026-10-30 12:40"
+  },
+  {
+   "level": 759.57,
+   "distance": 3.0,
+   "near": false,
+   "touches": 19,
+   "bounces": 8,
+   "breaks": 9,
+   "last_touch_et": "2026-10-30 10:51"
+  },
+  {
+   "level": 762.27,
+   "distance": 0.3,
+   "near": false,
+   "touches": 116,
+   "bounces": 29,
+   "breaks": 45,
+   "last_touch_et": "2026-10-30 07:07"
+  },
+  {
+   "level": 764.37,
+   "distance": -1.8,
+   "near": false,
+   "touches": 115,
+   "bounces": 29,
+   "breaks": 46,
+   "last_touch_et": "2026-10-29 19:50"
+  },
+  {
+   "level": 765.4,
+   "distance": -2.83,
+   "near": false,
+   "touches": 126,
+   "bounces": 28,
+   "breaks": 54,
+   "last_touch_et": "2026-10-29 18:04"
+  },
+  {
+   "level": 765.59,
+   "distance": -3.02,
+   "near": false,
+   "touches": 112,
+   "bounces": 30,
+   "breaks": 52,
+   "last_touch_et": "2026-10-29 16:41"
+  },
+  {
+   "level": 767.12,
+   "distance": -4.55,
+   "near": false,
+   "touches": 149,
+   "bounces": 42,
+   "breaks": 54,
+   "last_touch_et": "2026-10-29 16:27"
+  },
+  {
+   "level": 767.41,
+   "distance": -4.84,
+   "near": false,
+   "touches": 173,
+   "bounces": 43,
+   "breaks": 70,
+   "last_touch_et": "2026-10-29 16:27"
+  },
+  {
+   "level": 768.61,
+   "distance": -6.04,
+   "near": false,
+   "touches": 110,
+   "bounces": 45,
+   "breaks": 48,
+   "last_touch_et": "2026-10-29 16:01"
+  },
+  {
+   "level": 769.45,
+   "distance": -6.88,
+   "near": false,
+   "touches": 199,
+   "bounces": 47,
+   "breaks": 86,
+   "last_touch_et": "2026-10-29 15:56"
+  },
+  {
+   "level": 769.73,
+   "distance": -7.16,
+   "near": false,
+   "touches": 193,
+   "bounces": 59,
+   "breaks": 70,
+   "last_touch_et": "2026-10-29 15:59"
+  },
+  {
+   "level": 770.33,
+   "distance": -7.76,
+   "near": false,
+   "touches": 156,
+   "bounces": 44,
+   "breaks": 60,
+   "last_touch_et": "2026-10-29 12:00"
+  },
+  {
+   "level": 771.22,
+   "distance": -8.65,
+   "near": false,
+   "touches": 137,
+   "bounces": 38,
+   "breaks": 54,
+   "last_touch_et": "2026-10-29 05:09"
+  },
+  {
+   "level": 772.42,
+   "distance": -9.85,
+   "near": false,
+   "touches": 63,
+   "bounces": 21,
+   "breaks": 28,
+   "last_touch_et": "2026-10-28 16:05"
+  },
+  {
+   "level": 773.38,
+   "distance": -10.81,
+   "near": false,
+   "touches": 72,
+   "bounces": 23,
+   "breaks": 26,
+   "last_touch_et": "2026-10-28 16:04"
+  }
+ ],
+ "note": "Delayed 1-min SPY bars incl. extended hours, ~16 min delayed (free plan). Paper/research only."
+}

@@ -1,0 +1,6 @@
+cache/
+desk/equity_orb15/data/*.parquet
+desk/python/data/*.parquet
+desk/secrets/study_password.txt
+**/__pycache__/
+*.pyc

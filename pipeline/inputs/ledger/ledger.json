@@ -1,0 +1,210 @@
+{
+ "date": "2026-10-30",
+ "title": "Friday 10/30 SPY Post-Market Note (session close)",
+ "base": "My take: Base case for next week: something broke \u2014 regime change under negative gamma. Expect bounces to be sold while VIX term structure stays in backwardation.",
+ "alternative": "The alternative path (not my lean): midterm chop pins SPY back into 760\u2013765 and resets the gamma book; only believe it if 760 is reclaimed and held with VIX compressing.",
+ "trigger": "\u2014",
+ "direction": "DOWN",
+ "levels": [
+  {
+   "spy": 765.0,
+   "es": 7718.54,
+   "kind": "GAMMA/GEX",
+   "n": 1,
+   "in_take": true
+  },
+  {
+   "spy": 762.27,
+   "es": 7691.0,
+   "kind": "DARK POOL",
+   "n": 2,
+   "in_take": true
+  },
+  {
+   "spy": 760.0,
+   "es": 7668.09,
+   "kind": "DARK POOL",
+   "n": 4,
+   "in_take": true
+  },
+  {
+   "spy": 755.72,
+   "es": 7624.91,
+   "kind": "PRICE",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 755.0,
+   "es": 7617.64,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": true
+  },
+  {
+   "spy": 754.07,
+   "es": 7608.26,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": true
+  },
+  {
+   "spy": 750.0,
+   "es": 7567.2,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": true
+  },
+  {
+   "spy": 746.77,
+   "es": 7534.61,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": true
+  },
+  {
+   "spy": 690.49,
+   "es": 6966.76,
+   "kind": "GAMMA/GEX",
+   "n": 1,
+   "in_take": false
+  }
+ ],
+ "factor": 0.099112,
+ "history": [
+  {
+   "date": "2026-10-07",
+   "call": "UP",
+   "next": "2026-10-08",
+   "pct": -0.42,
+   "hit": false
+  },
+  {
+   "date": "2026-10-08",
+   "call": "UP",
+   "next": "2026-10-09",
+   "pct": 0.6,
+   "hit": true
+  },
+  {
+   "date": "2026-10-09",
+   "call": "DOWN",
+   "next": "2026-10-12",
+   "pct": -0.06,
+   "hit": true
+  },
+  {
+   "date": "2026-10-12",
+   "call": "DOWN",
+   "next": "2026-10-13",
+   "pct": -0.01,
+   "hit": true
+  },
+  {
+   "date": "2026-10-13",
+   "call": "DOWN",
+   "next": "2026-10-14",
+   "pct": -1.08,
+   "hit": true
+  },
+  {
+   "date": "2026-10-14",
+   "call": "UP",
+   "next": "2026-10-15",
+   "pct": 0.28,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "call": "FLAT",
+   "next": "2026-10-16",
+   "pct": -1.11,
+   "hit": false
+  },
+  {
+   "date": "2026-10-16",
+   "call": "UP",
+   "next": "2026-10-19",
+   "pct": 0.42,
+   "hit": true
+  },
+  {
+   "date": "2026-10-19",
+   "call": "UP",
+   "next": "2026-10-20",
+   "pct": 0.34,
+   "hit": true
+  },
+  {
+   "date": "2026-10-20",
+   "call": "DOWN",
+   "next": "2026-10-21",
+   "pct": 0.53,
+   "hit": false
+  },
+  {
+   "date": "2026-10-21",
+   "call": "DOWN",
+   "next": "2026-10-22",
+   "pct": -1.18,
+   "hit": true
+  },
+  {
+   "date": "2026-10-22",
+   "call": "UP",
+   "next": "2026-10-23",
+   "pct": -0.52,
+   "hit": false
+  },
+  {
+   "date": "2026-10-23",
+   "call": "UP",
+   "next": "2026-10-26",
+   "pct": 0.71,
+   "hit": true
+  },
+  {
+   "date": "2026-10-26",
+   "call": "FLAT",
+   "next": "2026-10-27",
+   "pct": 0.56,
+   "hit": false
+  },
+  {
+   "date": "2026-10-27",
+   "call": "DOWN",
+   "next": "2026-10-28",
+   "pct": 0.34,
+   "hit": false
+  },
+  {
+   "date": "2026-10-28",
+   "call": "DOWN",
+   "next": "2026-10-29",
+   "pct": -0.38,
+   "hit": true
+  },
+  {
+   "date": "2026-10-29",
+   "call": "DOWN",
+   "next": "2026-10-30",
+   "pct": -1.77,
+   "hit": true
+  },
+  {
+   "date": "2026-10-30",
+   "call": "DOWN",
+   "next": null,
+   "pct": null,
+   "hit": null
+  }
+ ],
+ "hit_rate": {
+  "hits": 11,
+  "n": 17,
+  "rate": 64.7
+ },
+ "built": "2026-10-30",
+ "intraday": [],
+ "intraday_date": null
+}

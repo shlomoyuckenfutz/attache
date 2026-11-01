@@ -1,0 +1,187 @@
+{
+ "generated_at_pt": "2026-10-30 20:59 PT",
+ "generated_utc": "2026-10-31T03:59:58+00:00",
+ "breaking_minutes": 30,
+ "items": [
+  {
+   "ts_utc": "2026-10-31T03:54:16.000Z",
+   "time_pt": "20:54",
+   "date_pt": "10/30",
+   "headline": "Alaska Election Dispute Escalates as Authorities Seek Separation of Ballots for Two…",
+   "tag": "POLICY",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-10-31T03:53:13.000Z",
+   "time_pt": "20:53",
+   "date_pt": "10/30",
+   "headline": "Fitch Affirms France at 'A+' While Revising Outlook to Negative",
+   "tag": "EARNINGS",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-10-31T03:52:30.000Z",
+   "time_pt": "20:52",
+   "date_pt": "10/30",
+   "headline": "Fitch Reconfirms Abu Dhabi’s 'AA' Sovereign Rating with Stable Outlook",
+   "tag": "EARNINGS",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-10-31T03:41:58.000Z",
+   "time_pt": "20:41",
+   "date_pt": "10/30",
+   "headline": "Slovakia Retains 'A-' Rating as Fitch Reaffirms Stable Outlook",
+   "tag": "EARNINGS",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-10-31T03:36:55.000Z",
+   "time_pt": "20:36",
+   "date_pt": "10/30",
+   "headline": "Fitch Cites Economic Slowdown, Higher Borrowing Costs and Wider Deficit in France…",
+   "tag": "EARNINGS",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-10-31T03:18:27.000Z",
+   "time_pt": "20:18",
+   "date_pt": "10/30",
+   "headline": "KCNA: International Sanctions Fail to Influence North Korea",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T03:10:47.000Z",
+   "time_pt": "20:10",
+   "date_pt": "10/30",
+   "headline": "Fitch Warns France Has Limited Capacity to Cushion Economy Against Renewed Energy…",
+   "tag": "ENERGY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T03:04:19.000Z",
+   "time_pt": "20:04",
+   "date_pt": "10/30",
+   "headline": "KCNA: International Sanctions Cannot Force North Korea to Abandon Its Nuclear Status",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T03:01:27.000Z",
+   "time_pt": "20:01",
+   "date_pt": "10/30",
+   "headline": "US, South Korea and Japan Reiterate Commitment to North Korea’s Complete…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T02:51:19.000Z",
+   "time_pt": "19:51",
+   "date_pt": "10/30",
+   "headline": "Russia Reiterates Ukraine Settlement Stance, Says It Cannot Accept Military…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T02:47:56.000Z",
+   "time_pt": "19:47",
+   "date_pt": "10/30",
+   "headline": "Russia’s Lavrov Says Zelenskiy’s Long-Range Strike Comments Undermine Prospects for…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T02:42:42.000Z",
+   "time_pt": "19:42",
+   "date_pt": "10/30",
+   "headline": "Russia Says US Sanctions and Arms Supplies to Ukraine Continue to Hinder Bilateral…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T02:34:26.000Z",
+   "time_pt": "19:34",
+   "date_pt": "10/30",
+   "headline": "Trump Says He Will Consider Nicki Minaj for White House Press Secretary Position -…",
+   "tag": "POLICY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T02:08:55.000Z",
+   "time_pt": "19:08",
+   "date_pt": "10/30",
+   "headline": "Zambia Secures Caa1 Rating Upgrade from Moody’s, Outlook Remains Positive",
+   "tag": "EARNINGS",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T02:08:19.000Z",
+   "time_pt": "19:08",
+   "date_pt": "10/30",
+   "headline": "Zambia Secures Moody’s Upgrade to Caa1 Following Material Improvement in Debt…",
+   "tag": "EARNINGS",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-31T02:05:50.000Z",
+   "time_pt": "19:05",
+   "date_pt": "10/30",
+   "headline": "Zambia’s Positive Outlook Signals Further Gains in Debt and Interest Burdens…",
+   "tag": "EARNINGS",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-30T21:53:28.000Z",
+   "time_pt": "14:53",
+   "date_pt": "10/30",
+   "headline": "The PC industry's painful path to an AI future",
+   "tag": "TECH",
+   "src": "SRC W1",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-30T20:02:21.000Z",
+   "time_pt": "13:02",
+   "date_pt": "10/30",
+   "headline": "Yes, clocks are still falling back this year despite Trump's daylight saving push",
+   "tag": "POLICY",
+   "src": "SRC W1",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-30T20:00:54.000Z",
+   "time_pt": "13:00",
+   "date_pt": "10/30",
+   "headline": "Rail merger dispute could help decide the U.S. Senate",
+   "tag": "POLICY",
+   "src": "SRC W1",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-10-30T19:30:02.000Z",
+   "time_pt": "12:30",
+   "date_pt": "10/30",
+   "headline": "Trump DOJ loses last-minute California ballot bid",
+   "tag": "POLICY",
+   "src": "SRC W1",
+   "breaking": false
+  }
+ ]
+}

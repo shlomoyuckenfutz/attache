@@ -1,0 +1,112 @@
+{
+ "score": -21,
+ "label": "NEUTRAL",
+ "px": 757.12,
+ "asof": "10-30 16:59 PT",
+ "feed": "delayed",
+ "built": "10-30 21:01 PT",
+ "votes": [
+  {
+   "k": "VWAP",
+   "d": "price vs session VWAP",
+   "v": 1,
+   "x": "757.12 vs 755.76",
+   "w": 1.5
+  },
+  {
+   "k": "EMA",
+   "d": "9 vs 21 EMA on 5m + slope",
+   "v": 1,
+   "x": "9=756.68 21=756.41",
+   "w": 1.0
+  },
+  {
+   "k": "ORB15",
+   "d": "price vs today's 15-min opening range",
+   "v": -1,
+   "x": "BELOW LOW 759.44\u2013761.46",
+   "w": 1.5
+  },
+  {
+   "k": "ON RANGE",
+   "d": "price vs overnight / pre-market high-low",
+   "v": -1,
+   "x": "760.90\u2013769.97",
+   "w": 1.0
+  },
+  {
+   "k": "GAMMA FLIP",
+   "d": "SPY price vs gamma flip consensus",
+   "v": -1,
+   "x": "757.12 vs flip 770.87",
+   "w": 1.5
+  },
+  {
+   "k": "DEALER DELTA",
+   "d": "SPY dealer-pressure delta lean (\u22121\u2026+1; \u00b10.10 dead zone)",
+   "v": -1,
+   "x": "-0.67",
+   "w": 0.75
+  },
+  {
+   "k": "FB \u00b7 SPY",
+   "d": "price vs First Blade pivot",
+   "v": 1,
+   "x": "757.12 vs pivot 755.84",
+   "w": 1.0
+  },
+  {
+   "k": "FB \u00b7 LEAN",
+   "d": "First Blade stated lean",
+   "v": -1,
+   "x": "bearish",
+   "w": 0.5
+  },
+  {
+   "k": "IRON LADDER",
+   "d": "/ES vs nearest key support/resistance",
+   "v": 1,
+   "x": "ES 7614.5 \u00b7 S 7585 / R 7625",
+   "w": 1.0
+  },
+  {
+   "k": "DARK POOL",
+   "d": "dark-pool levels holding below vs overhead (\u00b11%)",
+   "v": -1,
+   "x": "0 below / 4 above",
+   "w": 1.5
+  },
+  {
+   "k": "GAUNTLET",
+   "d": "confluence weight below vs above (\u00b11%)",
+   "v": 1,
+   "x": "5 below / 3 above",
+   "w": 1.0
+  },
+  {
+   "k": "BLAST RADIUS",
+   "d": "position inside daily implied-move band (thirds)",
+   "v": -1,
+   "x": "761.37\u2013769.09",
+   "w": 1.0
+  },
+  {
+   "k": "RIPTIDE",
+   "d": "index options flow call vs put premium (2d)",
+   "v": 0,
+   "x": "no recent prints",
+   "w": 1.0
+  },
+  {
+   "k": "NEWS",
+   "d": "news-plan bias",
+   "v": -1,
+   "x": "SHORT",
+   "w": 1.0
+  }
+ ],
+ "news": {
+  "dir": "SHORT",
+  "why": "Fri Mode-1 red: ES lost 7677\u20137803 on 7703 failure; SPY lost 762.27 + 760 put wall into ~\u221217B short gamma. Regime bearish/neg-gamma. Mon bounce possible \u2014 fade into 7665/760 unless reclaimed and held."
+ }
+}

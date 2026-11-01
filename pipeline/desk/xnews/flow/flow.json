@@ -1,0 +1,1921 @@
+{
+  "generated_at_pt": "2026-10-30 14:01 PT",
+  "window_days": 3,
+  "groups": {
+    "set1": {
+      "label": "Set 1"
+    }
+  },
+  "anchors": {
+    "voltick": {
+      "set1": {
+        "post_id": "2116153316065603814",
+        "label": "Morning SPY levels \u00b7 Oct 30 (Volt 765, flip 770.4, EM \u00b15.05)"
+      }
+    }
+  },
+  "sentiment": {
+    "cheddar": {
+      "asof_pt": "2026-10-30 08:20 PT",
+      "spy_put_wall": 760,
+      "spy_call_wall": null,
+      "net_gex": "-16.8B",
+      "note": "Lost 760 put wall (-2.8B); dealers -16.8B short gamma; next puts 755/750; EM \u00b16.15",
+      "derived": true
+    }
+  },
+  "entries": [
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2116153316065603814",
+      "url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_at_utc": "2026-10-30T13:00:41.000Z",
+      "posted_at_pt": "2026-10-30 06:00 PT",
+      "caption": "$SPY Levels \u00b7 Oct 30\n\n\u2605 Volt 765 \u00b7 today's expiration\nCeiling 800\n\u26a1 Flip 770.4\nExpected move \u00b15.05 \u00b7 pre-open reference\n\nOther levels are all expirations.\n\nNegative gamma. The tape tends to slip.\n\nEducational, not advice.",
+      "source_note": "Morning SPY levels Oct 30: Volt765 CW800 Flip770.4 EM\u00b15.05 NegGEX; image all-exp put wall at 765 (-2.4B), large neg at 760/755/750",
+      "images": [
+        "img/VoltickIO_2116153316065603814_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "765",
+          "kind": "Volt / Put Wall (today + all-exp)"
+        },
+        {
+          "ticker": "SPY",
+          "level": "800",
+          "kind": "Call Wall"
+        },
+        {
+          "ticker": "SPY",
+          "level": "770.4",
+          "kind": "Gamma Flip"
+        },
+        {
+          "ticker": "SPY",
+          "level": "760",
+          "kind": "Neg GEX node [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "755",
+          "kind": "Neg GEX node [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "750",
+          "kind": "Neg GEX / Floor [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "\u00b15.05",
+          "kind": "Expected move"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2116161996265787646",
+      "url": "https://x.com/VoltickIO/status/2116161996265787646",
+      "posted_at_utc": "2026-10-30T13:35:10.000Z",
+      "posted_at_pt": "2026-10-30 06:35 PT",
+      "caption": "$SPY opened at 759.9 \u00b7 Oct 30\n\nInside today's expected range, 758.2 to 764.22.\n\n\u2605 Volt (today) 760 \u00b7 ceiling 800 \u00b7 flip \u26a1 770.24\n\nEducational, not advice.",
+      "source_note": "Open print 759.9 inside EM 758.2-764.22; Volt today shifted to 760",
+      "images": [
+        "img/VoltickIO_2116161996265787646_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "759.9",
+          "kind": "Open"
+        },
+        {
+          "ticker": "SPY",
+          "level": "758.2",
+          "kind": "EM low"
+        },
+        {
+          "ticker": "SPY",
+          "level": "764.22",
+          "kind": "EM high"
+        },
+        {
+          "ticker": "SPY",
+          "level": "760",
+          "kind": "Volt (today)"
+        },
+        {
+          "ticker": "SPY",
+          "level": "770.24",
+          "kind": "Flip"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "cheddar",
+      "handle": "CheddarFlow",
+      "post_id": "2116188394556387766",
+      "url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_at_utc": "2026-10-30T15:20:04.000Z",
+      "posted_at_pt": "2026-10-30 08:20 PT",
+      "caption": "$SPY just lost the 760 put wall \ud83d\udea8\n\nBiggest gamma strike on the board, -2.8B, and spot is now trading under it with dealers -16.8B short gamma\n\nNext big put strikes below are 755 and 750",
+      "source_note": "Lost 760 put wall; Net GEX -16.8B; next puts 755/750; EM \u00b16.15 (765.18/752.88)",
+      "images": [
+        "img/CheddarFlow_2116188394556387766_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "760",
+          "kind": "Put Wall lost (-2.8B)"
+        },
+        {
+          "ticker": "SPY",
+          "level": "755",
+          "kind": "Next put strike"
+        },
+        {
+          "ticker": "SPY",
+          "level": "750",
+          "kind": "Next put strike"
+        },
+        {
+          "ticker": "SPY",
+          "level": "765",
+          "kind": "1D Max / heavy neg GEX (-1.7B) [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "-16.8B",
+          "kind": "Net GEX short"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2116238324117733848",
+      "url": "https://x.com/QuantData/status/2116238324117733848",
+      "posted_at_utc": "2026-10-30T18:38:28.000Z",
+      "posted_at_pt": "2026-10-30 11:38 PT",
+      "caption": "\ud83d\udea8 $ES_F just hit the negative GEX node at the 7,560 strike.",
+      "source_note": "ES hit 7560 neg GEX node; earlier MVC 7574, zone 7584, target 7610",
+      "images": [
+        "img/QuantData_2116238324117733848_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "ES",
+          "level": "7560",
+          "kind": "Neg GEX node hit"
+        },
+        {
+          "ticker": "ES",
+          "level": "7574",
+          "kind": "MVC"
+        },
+        {
+          "ticker": "ES",
+          "level": "7584",
+          "kind": "Zone"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "GEXEdgeIO",
+      "post_id": "2115832316690055332",
+      "url": "https://x.com/GEXEdgeIO/status/2115832316690055332",
+      "posted_at_utc": "2026-10-29T15:45:09.000Z",
+      "posted_at_pt": "2026-10-29 08:45 PT",
+      "caption": "$SPY is under the gamma flip, and all 3 markets are negative.  \n\nNet GEX: \u2212$904M. Dealers are chasing moves, not fading them.  \n\n772 \u2192 Call wall (+$188M), the squeeze ceiling target\n771.33 \u2192 Gamma flip, the line that decides the day \n770 \u2192 Pin magnet, where price sits now",
+      "source_note": "Oct29: under flip; Net -904M; CW772 Flip771.33 Pin770. No fresh Oct30 GEX table posted.",
+      "images": [
+        "img/GEXEdgeIO_2115832316690055332_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "772",
+          "kind": "Call wall"
+        },
+        {
+          "ticker": "SPY",
+          "level": "771.33",
+          "kind": "Gamma flip"
+        },
+        {
+          "ticker": "SPY",
+          "level": "770",
+          "kind": "Pin magnet"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "quantdata",
+      "handle": "QuantData",
+      "post_id": "2115177434370703420",
+      "url": "https://x.com/QuantData/status/2115177434370703420",
+      "posted_at_utc": "2026-10-27T20:22:53.000Z",
+      "posted_at_pt": "2026-10-27 13:22 PT",
+      "caption": "\ud83d\udea8 BOOOOM!!! Rejection at the $771.22 Dark Pool level on $SPY.",
+      "source_note": "SPY DP rejection 771.22",
+      "images": [
+        "img/QuantData_2115177434370703420_0.png"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "771.22",
+          "kind": "Dark Pool rejection"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "quantdata",
+      "handle": "QuantData",
+      "post_id": "2115147839739469872",
+      "url": "https://x.com/QuantData/status/2115147839739469872",
+      "posted_at_utc": "2026-10-27T18:25:17.000Z",
+      "posted_at_pt": "2026-10-27 11:25 PT",
+      "caption": "$SPY just rejected off the $769.73 Dark Pool level \ud83d\udc47",
+      "source_note": "SPY DP rejection 769.73",
+      "images": [
+        "img/QuantData_2115147839739469872_0.png"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "769.73",
+          "kind": "Dark Pool rejection"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "quantdata",
+      "handle": "QuantData",
+      "post_id": "2115139156477173969",
+      "url": "https://x.com/QuantData/status/2115139156477173969",
+      "posted_at_utc": "2026-10-27T17:50:46.000Z",
+      "posted_at_pt": "2026-10-27 10:50 PT",
+      "caption": "\ud83d\udea8 $SPY is now trading at the node with the most Negative Gamma Exposure.\n\n$770 is also the MVC (most valuable contract) on $SPY.",
+      "source_note": "SPY Neg-GEX node + MVC at 770",
+      "images": [
+        "img/QuantData_2115139156477173969_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "770",
+          "kind": "Most Neg GEX / MVC"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "quantdata",
+      "handle": "QuantData",
+      "post_id": "2115168974816383119",
+      "url": "https://x.com/QuantData/status/2115168974816383119",
+      "posted_at_utc": "2026-10-27T19:49:16.000Z",
+      "posted_at_pt": "2026-10-27 12:49 PT",
+      "caption": "$ES_F is back up to the 7,771 Call Wall/MVC....\ud83e\udd2f",
+      "source_note": "ES Call Wall/MVC 7771",
+      "images": [
+        "img/QuantData_2115168974816383119_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "ES",
+          "level": "7771",
+          "kind": "Call Wall / MVC"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "CheddarFlow",
+      "post_id": "2115160299326095401",
+      "url": "https://x.com/CheddarFlow/status/2115160299326095401",
+      "posted_at_utc": "2026-10-27T19:14:47.000Z",
+      "posted_at_pt": "2026-10-27 12:14 PT",
+      "caption": "$SPY is stuck to its $2B+ 770 all-expiry call wall\n\nIt's also the 0DTE call wall, so it's acting as a magnet intraday",
+      "source_note": "SPY $2B+ 770 call wall magnet",
+      "images": [
+        "img/CheddarFlow_2115160299326095401_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "770",
+          "kind": "$2B+ all-exp + 0DTE call wall"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2115159349673005084",
+      "url": "https://x.com/VoltickIO/status/2115159349673005084",
+      "posted_at_utc": "2026-10-27T19:11:01.000Z",
+      "posted_at_pt": "2026-10-27 12:11 PT",
+      "caption": "FOMC tomorrow \ud83d\udc40",
+      "source_note": "FOMC board teaser for Wed",
+      "images": [
+        "img/VoltickIO_2115159349673005084_0.jpg"
+      ],
+      "rows": []
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2115066231330132302",
+      "url": "https://x.com/VoltickIO/status/2115066231330132302",
+      "posted_at_utc": "2026-10-27T13:01:00.000Z",
+      "posted_at_pt": "2026-10-27 06:01 PT",
+      "caption": "$SPY Levels \u00b7 Oct 27\n\n\u2605 Volt 767 \u00b7 today's expiration\nCeiling 800\nFloor 750\n\u26a1 Flip 770.1\nExpected move \u00b13.64 \u00b7 pre-open reference\n\nOther levels are all expirations.\n\nNegative gamma. The tape tends to slip.\n\nEducational, not advice.",
+      "source_note": "Morning SPY levels card (all-exp + 0DTE volt)",
+      "images": [
+        "img/VoltickIO_2115066231330132302_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "767",
+          "kind": "Volt (0DTE)"
+        },
+        {
+          "ticker": "SPY",
+          "level": "800",
+          "kind": "Ceiling / call wall"
+        },
+        {
+          "ticker": "SPY",
+          "level": "750",
+          "kind": "Floor / put wall"
+        },
+        {
+          "ticker": "SPY",
+          "level": "770.1",
+          "kind": "Flip"
+        },
+        {
+          "ticker": "SPY",
+          "level": "\u00b13.64",
+          "kind": "Expected move"
+        },
+        {
+          "ticker": "SPY",
+          "note": "Negative gamma \u2014 tape tends to slip"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2115074881411002709",
+      "url": "https://x.com/VoltickIO/status/2115074881411002709",
+      "posted_at_utc": "2026-10-27T13:35:22.000Z",
+      "posted_at_pt": "2026-10-27 06:35 PT",
+      "caption": "$SPY opened at 767.43 \u00b7 Oct 27\n\nInside today's expected range, 763.67 to 770.97.\n\n\u2605 Volt (today) 767 \u00b7 ceiling 800 \u00b7 floor 750 \u00b7 flip \u26a1 769.99\n\nEducational, not advice.",
+      "source_note": "Open confirmation card",
+      "images": [
+        "img/VoltickIO_2115074881411002709_0.png"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "767.43",
+          "kind": "Open"
+        },
+        {
+          "ticker": "SPY",
+          "level": "763.67\u2013770.97",
+          "kind": "Expected range"
+        },
+        {
+          "ticker": "SPY",
+          "level": "767",
+          "kind": "Volt (today)"
+        },
+        {
+          "ticker": "SPY",
+          "level": "800",
+          "kind": "Ceiling"
+        },
+        {
+          "ticker": "SPY",
+          "level": "750",
+          "kind": "Floor"
+        },
+        {
+          "ticker": "SPY",
+          "level": "769.99",
+          "kind": "Flip"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2115120121895362979",
+      "url": "https://x.com/VoltickIO/status/2115120121895362979",
+      "posted_at_utc": "2026-10-27T16:35:08.000Z",
+      "posted_at_pt": "2026-10-27 09:35 PT",
+      "caption": "Where today's size printed \u00b7 Oct 27\n\nEach OTM print, and the level it landed on:\n\n$SPX 7,400P $362K \u00b7 below the flip \u26a1 7,712 \u00b7 sticky side\nGOOGL 330C $286K \u00b7 above the flip \u26a1 316.03 \u00b7 sticky side\nMETA 630C $269K \u00b7 2 strikes above the put wall 625\n\nEducational, not advice.",
+      "source_note": "OTM size prints vs pre-open levels",
+      "images": [
+        "img/VoltickIO_2115120121895362979_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPX",
+          "strike": "7400P",
+          "premium": "$362K",
+          "vs": "below flip 7712 sticky"
+        },
+        {
+          "ticker": "GOOGL",
+          "strike": "330C",
+          "premium": "$286K",
+          "vs": "above flip 316.03 sticky"
+        },
+        {
+          "ticker": "META",
+          "strike": "630C",
+          "premium": "$269K",
+          "vs": "2 strikes above put wall 625"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2115175565686948216",
+      "url": "https://x.com/VoltickIO/status/2115175565686948216",
+      "posted_at_utc": "2026-10-27T20:15:27.000Z",
+      "posted_at_pt": "2026-10-27 13:15 PT",
+      "caption": "Today's Scorecard \u00b7 Oct 27\n\n1147 boards, sealed 9:12 AM ET before the open.\nGraded against the close:\n\nVolt touched \u00b7 18 of 54\nInside the expected range \u00b7 48 of 54\nClosed between the walls \u00b7 45 of 54\n\n111 of 162 checks, misses included.\n\nEducational, not advice.",
+      "source_note": "EOD sealed scorecard",
+      "images": [],
+      "rows": [
+        {
+          "metric": "Volt touched",
+          "score": "18/54"
+        },
+        {
+          "metric": "Inside expected range",
+          "score": "48/54"
+        },
+        {
+          "metric": "Closed between walls",
+          "score": "45/54"
+        },
+        {
+          "metric": "Total checks",
+          "score": "111/162"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2114703791203496038",
+      "url": "https://x.com/VoltickIO/status/2114703791203496038",
+      "posted_at_utc": "2026-10-26T13:00:47.000Z",
+      "posted_at_pt": "2026-10-26 06:00 PT",
+      "caption": "$SPY Levels \u00b7 Oct 26\n\n\u2605 Volt 755 (also the floor) \u00b7 today's expiration\nCeiling 800\n\u26a1 Flip 771.1\nExpected move \u00b15.66 \u00b7 pre-open reference\n\nOther levels are all expirations.\n\nNegative gamma. The tape tends to slip.\n\nEducational, not advice. https://t.co/Rul6yM3YgU",
+      "source_note": "Voltick morning SPY GEX map",
+      "images": [
+        "img/VoltickIO_2114703791203496038_1.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "view": "GEX \u00b7 per-strike map",
+          "time": "Oct 26, 9:00 AM ET",
+          "price": "$762.3 +2.33 (+0.31%)",
+          "net_gex": "-$11,478.1M",
+          "flags": "negative gamma \u00b7 moves tend to get amplified",
+          "levels": "Volt \u2605 $755 (also the floor) \u00b7 call wall $800 \u00b7 flip $771"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "777",
+          "gex": "$78.8M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "776",
+          "gex": "$81.3M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "775",
+          "gex": "$241.3M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "774",
+          "gex": "$34.8M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "773",
+          "gex": "$55.4M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "772",
+          "gex": "$75.3M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "771",
+          "gex": "$47.7M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "770",
+          "gex": "$183.8M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "769",
+          "gex": "$3.0M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "768",
+          "gex": "$119.2M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "767",
+          "gex": "-$482.2M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "766",
+          "gex": "-$110.5M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "765",
+          "gex": "-$371.3M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "764",
+          "gex": "$88.2M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "763",
+          "gex": "$188.5M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "762",
+          "gex": "-$382.4M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "761",
+          "gex": "$16.8M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "760",
+          "gex": "-$1,089.6M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "759",
+          "gex": "-$236.8M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "758",
+          "gex": "-$285.7M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "757",
+          "gex": "-$255.5M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "756",
+          "gex": "-$180.5M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "755",
+          "gex": "-$3,798.4M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "754",
+          "gex": "-$159.6M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "753",
+          "gex": "-$492.5M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "752",
+          "gex": "-$164.0M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "751",
+          "gex": "-$107.1M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "750",
+          "gex": "-$2,095.1M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "749",
+          "gex": "-$95.3M"
+        },
+        {
+          "ticker": "SPY",
+          "strike": "748",
+          "gex": "-$167.6M"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2114712500168270246",
+      "url": "https://x.com/VoltickIO/status/2114712500168270246",
+      "posted_at_utc": "2026-10-26T13:35:24.000Z",
+      "posted_at_pt": "2026-10-26 06:35 PT",
+      "caption": "$SPY opened at 762.77 \u00b7 Oct 26\n\nInside today's expected range, 758.2 to 767.7.\n\n\u2605 Volt (today) 755 \u00b7 ceiling 800 \u00b7 flip \u26a1 770.67\n\nEducational, not advice. https://t.co/0lkO9lHWyx",
+      "source_note": "Voltick open gamma levels card (all expirations, 15-min delayed)",
+      "images": [
+        "img/VoltickIO_2114712500168270246_1.png"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "ceiling": "$800",
+          "ceiling_note": "call wall \u00b7 +4.88% from spot",
+          "gamma_flip": "$770.67",
+          "flip_note": "positive gamma above \u00b7 negative gamma below \u00b7 +1.04% from spot",
+          "spot": "$762.77 +0.37%",
+          "volt_floor": "$755",
+          "volt_note": "put wall \u00b7 strongest node \u00b7 -1.02% from spot",
+          "expected_move": "\u00b14.75",
+          "em_note": "today \u00b1 \u00b7 0.62% of price",
+          "regime": "Negative gamma."
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "Tradytics",
+      "post_id": "2115073009862181030",
+      "url": "https://x.com/Tradytics/status/2115073009862181030",
+      "posted_at_utc": "2026-10-27T13:27:56.000Z",
+      "posted_at_pt": "2026-10-27 06:27 PT",
+      "caption": "Almost time!\n\nHere are our early $SPY levels to keep an eye on. https://t.co/LL5H9dOFv3 https://t.co/kn2tobfu7N",
+      "source_note": "Early SPY levels chart (level - size)",
+      "images": [
+        "img/Tradytics_2115073009862181030_1.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "773.18",
+          "size": "14.95B"
+        },
+        {
+          "ticker": "SPY",
+          "level": "771.12",
+          "size": "7.9B"
+        },
+        {
+          "ticker": "SPY",
+          "level": "769.07",
+          "size": "10.44B"
+        },
+        {
+          "ticker": "SPY",
+          "level": "767.01",
+          "size": "7.9B"
+        },
+        {
+          "ticker": "SPY",
+          "level": "764.95",
+          "size": "6.77B"
+        },
+        {
+          "ticker": "SPY",
+          "level": "762.89",
+          "size": "16.17B"
+        },
+        {
+          "ticker": "SPY",
+          "spot_label": "767.18",
+          "time": "03:50"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "cheddar",
+      "handle": "CheddarFlow",
+      "post_id": "2115079739824038088",
+      "url": "https://x.com/CheddarFlow/status/2115079739824038088",
+      "posted_at_utc": "2026-10-27T13:54:40.000Z",
+      "posted_at_pt": "2026-10-27 06:54 PT",
+      "caption": "Someone just bought $23 MILLION+ of $TSLA calls IN JUST 5 minutes\n\nTwo prints, right at the open\n\nOpen interest on that strike was only 222... https://t.co/IQpWKestON",
+      "source_note": "Flow table, two TSLA call prints",
+      "images": [
+        "img/CheddarFlow_2115079739824038088_1.jpg"
+      ],
+      "rows": [
+        {
+          "time": "09:36:08 AM",
+          "ticker": "TSLA",
+          "expiry": "04/16/2027",
+          "strike": "390",
+          "cp": "Call",
+          "side": "Ask",
+          "b_s": "BUY",
+          "spot": "400.26",
+          "size": "2,152",
+          "price": "$55.6",
+          "premium": "$12M",
+          "type": "Sweep",
+          "vol": "4,323",
+          "oi": "222",
+          "conds": "AUTO OPENING UNUSUAL"
+        },
+        {
+          "time": "09:31:21 AM",
+          "ticker": "TSLA",
+          "expiry": "04/16/2027",
+          "strike": "390",
+          "cp": "Call",
+          "side": "Ask",
+          "b_s": "BUY",
+          "spot": "395.54",
+          "size": "2,150",
+          "price": "$53.6",
+          "premium": "$11.5M",
+          "type": "Split",
+          "vol": "2,152",
+          "oi": "222",
+          "conds": "?"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "Tradytics",
+      "post_id": "2115083386863878266",
+      "url": "https://x.com/Tradytics/status/2115083386863878266",
+      "posted_at_utc": "2026-10-27T14:09:10.000Z",
+      "posted_at_pt": "2026-10-27 07:09 PT",
+      "caption": "Mixed flow to start the session. Let's give it some time! https://t.co/x8DvORnTMB",
+      "source_note": "Market Net Flow chart (SPY price vs cumulative call/put net premium, 09:25-09:57 ET); chart lines only, no table values",
+      "images": [
+        "img/Tradytics_2115083386863878266_1.jpg"
+      ],
+      "rows": []
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "CheddaFreeze",
+      "post_id": "2115095239899652473",
+      "url": "https://x.com/CheddaFreeze/status/2115095239899652473",
+      "posted_at_utc": "2026-10-27T14:56:00.000Z",
+      "posted_at_pt": "2026-10-27 07:56 PT",
+      "caption": "$SPY Levels & Data: 10/27\n\nField Goal Ranges (765-772) | largest pull 767\n\nBreak above/below, next ranges marked https://t.co/CS01LZvQGY",
+      "source_note": "SPY 5m chart with DP/GEX levels (created Oct 27 10:55 ET) + GEX Levels for SPY 10/27 bar chart (data by tradytics)",
+      "images": [
+        "img/CheddaFreeze_2115095239899652473_1.jpg",
+        "img/CheddaFreeze_2115095239899652473_2.jpg"
+      ],
+      "rows": [
+        {
+          "level": "769.68",
+          "label": "+GEX"
+        },
+        {
+          "level": "769.36",
+          "label": "PH DP Print"
+        },
+        {
+          "level": "769.05",
+          "label": "PH DP Print"
+        },
+        {
+          "level": "769.04",
+          "label": "PH DP Print"
+        },
+        {
+          "level": "769.03",
+          "label": "PH DP Print"
+        },
+        {
+          "level": "769.00",
+          "label": "-DELTA & -GEX"
+        },
+        {
+          "level": "768.36",
+          "label": "4.40B DP"
+        },
+        {
+          "level": "768.00",
+          "label": "-GEX"
+        },
+        {
+          "level": "767.00",
+          "label": "+DELTA & -GEX"
+        },
+        {
+          "level": "766.10",
+          "label": "+GEX"
+        },
+        {
+          "level": "765.15",
+          "label": "19.01B DP"
+        },
+        {
+          "level": "765.00",
+          "label": "-DELTA & -GEX"
+        },
+        {
+          "level": "763.00",
+          "label": "-DELTA"
+        },
+        {
+          "level": "762.53",
+          "label": "11.38B DP"
+        },
+        {
+          "level": "762.00",
+          "label": "-GEX"
+        },
+        {
+          "level": "766.0",
+          "label": "Highest GEX (bar chart)"
+        },
+        {
+          "level": "767.0",
+          "label": "Lowest GEX (bar chart)"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2115099861452283930",
+      "url": "https://x.com/QuantData/status/2115099861452283930",
+      "posted_at_utc": "2026-10-27T15:14:00.000Z",
+      "posted_at_pt": "2026-10-27 08:14 PT",
+      "caption": "\ud83d\udea8 Another awesome display of Dark Pool levels at work with $SPY bouncing off the $765.59 zone this morning near perfectly.\n\nYou can't make this up...\ud83d\udc47 https://t.co/jq2k78zxjS",
+      "source_note": "SPY 5m chart (10/27 11:10 AM) with dark pool level lines; Hi 769.36",
+      "images": [
+        "img/QuantData_2115099861452283930_1.jpg"
+      ],
+      "rows": [
+        {
+          "level": "770.33"
+        },
+        {
+          "level": "769.73"
+        },
+        {
+          "level": "768.61"
+        },
+        {
+          "level": "767.12"
+        },
+        {
+          "level": "765.59"
+        },
+        {
+          "level": "764.37"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2115100393789407442",
+      "url": "https://x.com/QuantData/status/2115100393789407442",
+      "posted_at_utc": "2026-10-27T15:16:00.000Z",
+      "posted_at_pt": "2026-10-27 08:16 PT",
+      "caption": "\ud83d\udea8 Wow...\n\nSingle-leg, short-dated calls now lead puts by $17M+ intraday on $SPY. https://t.co/uVW2xVFKJa",
+      "source_note": "Net Drift (Premium) - SPY, Oct 27, 2026",
+      "images": [
+        "img/QuantData_2115100393789407442_1.jpg"
+      ],
+      "rows": [
+        {
+          "calls": "$17.27 M",
+          "puts": "(-$72 K)",
+          "net": "$17.34 M",
+          "SPY": "$769.37"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2115107076972191751",
+      "url": "https://x.com/QuantData/status/2115107076972191751",
+      "posted_at_utc": "2026-10-27T15:43:00.000Z",
+      "posted_at_pt": "2026-10-27 08:43 PT",
+      "caption": "\ud83d\udea8 $ES_F is trading at it the Put Wall at the 7,756 strike. Keep a close eye on a potential bounce up to the Call Wall/MVC positioned at 7,771. https://t.co/jLsCTEMQ1N",
+      "source_note": "Footprint - ESZ6 5 Min with GEX (All Expiries)",
+      "images": [
+        "img/QuantData_2115107076972191751_1.jpg"
+      ],
+      "rows": [
+        {
+          "level": "7,771.25",
+          "label": "CW+MVC",
+          "gex": "10.03 B"
+        },
+        {
+          "level": "7,756.25",
+          "label": "PW",
+          "gex": "7.09 B"
+        },
+        {
+          "level": "7,744.25",
+          "label": "ZG"
+        },
+        {
+          "last": "7,760.75",
+          "range": "7,712.50 - 7,761.25",
+          "change": "+22.25",
+          "CVD": "+8,581"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2115108192187523446",
+      "url": "https://x.com/QuantData/status/2115108192187523446",
+      "posted_at_utc": "2026-10-27T15:47:00.000Z",
+      "posted_at_pt": "2026-10-27 08:47 PT",
+      "caption": "\ud83d\udea8 $SPY is now trading at the $770.33 Dark Pool level. Keep a close eye on price here. https://t.co/nUwdEo79WA",
+      "source_note": "SPY 5m chart (10/27 11:45 AM) with dark pool level lines; Hi 770.42",
+      "images": [
+        "img/QuantData_2115108192187523446_1.jpg"
+      ],
+      "rows": [
+        {
+          "level": "771.22"
+        },
+        {
+          "level": "770.33"
+        },
+        {
+          "level": "769.73"
+        },
+        {
+          "level": "768.61"
+        },
+        {
+          "level": "767.12"
+        },
+        {
+          "level": "765.59"
+        },
+        {
+          "level": "764.37"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "cheddar",
+      "handle": "CheddarFlow",
+      "post_id": "2115106466432524298",
+      "url": "https://x.com/CheddarFlow/status/2115106466432524298",
+      "posted_at_utc": "2026-10-27T15:40:00.000Z",
+      "posted_at_pt": "2026-10-27 08:40 PT",
+      "caption": "Somebody wants protection on oil & gas\n\n3 straight put buys on $XOP in 90 seconds, $464K+ at the ask\n\nOpen interest was 6. Volume is now 4,459 https://t.co/8KNdAS0wtJ",
+      "source_note": "cheddarflow.com flow table",
+      "images": [
+        "img/CheddarFlow_2115106466432524298_1.jpg"
+      ],
+      "rows": [
+        {
+          "time": "10:55:27 AM",
+          "ticker": "XOP",
+          "expiry": "11/20/2026",
+          "strike": "197.5",
+          "cp": "Put",
+          "side": "Ask",
+          "b/s": "BUY",
+          "spot": "200.65",
+          "size": "215",
+          "price": "$5.7",
+          "premium": "$122.5K",
+          "type": "Sweep",
+          "vol": "4,459",
+          "oi": "6",
+          "conds": "AUTO OPENING UNUSUAL"
+        },
+        {
+          "time": "10:55:02 AM",
+          "ticker": "XOP",
+          "expiry": "11/20/2026",
+          "strike": "197.5",
+          "cp": "Put",
+          "side": "Ask",
+          "b/s": "BUY",
+          "spot": "200.59",
+          "size": "233",
+          "price": "$5.7",
+          "premium": "$132.8K",
+          "type": "Block",
+          "vol": "3,786",
+          "oi": "6",
+          "conds": "AUTO OPENING UNUSUAL"
+        },
+        {
+          "time": "10:53:58 AM",
+          "ticker": "XOP",
+          "expiry": "11/20/2026",
+          "strike": "197.5",
+          "cp": "Put",
+          "side": "Ask",
+          "b/s": "BUY",
+          "spot": "200.58",
+          "size": "366",
+          "price": "$5.69",
+          "premium": "$208.6K",
+          "type": "Sweep",
+          "vol": "1,993",
+          "oi": "6",
+          "conds": "AUTO OPENING ?"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "Tradytics",
+      "post_id": "2115104436427092241",
+      "url": "https://x.com/Tradytics/status/2115104436427092241",
+      "posted_at_utc": "2026-10-27T15:32:00.000Z",
+      "posted_at_pt": "2026-10-27 08:32 PT",
+      "caption": "A bullish cross on flow and $SPY moved up after that morning dip. https://t.co/aUUCwlblIK https://t.co/XEAk1DI0XS",
+      "source_note": "Market net flow chart; chart lines only, no table values",
+      "images": [
+        "img/Tradytics_2115104436427092241_1.jpg"
+      ],
+      "rows": []
+    },
+    {
+      "group": "set1",
+      "section": "cheddar",
+      "handle": "CheddarFlow",
+      "post_id": "2115126925697908737",
+      "url": "https://x.com/CheddarFlow/status/2115126925697908737",
+      "posted_at_utc": "2026-10-27T17:02:10.000Z",
+      "posted_at_pt": "2026-10-27 10:02 PT",
+      "caption": "$SPY sitting right under 770\n\nIt's the biggest call wall on the board for every expiration AND today's 0DTE\n\nDealers just flipped back to short gamma (\u22121.6B), so if 770 breaks, it can run https://t.co/WjyE7KXAI7",
+      "source_note": "SPY GEX by strike table (header: spot 769.41, prev close 765.37, net gamma -1.6B, call gamma 21.7B, put gamma -23.3B, 1 day expected move \u00b1$6.05 (0.79%) max 775.46 / min 763.36)",
+      "images": [
+        "img/CheddarFlow_2115126925697908737_1.jpg"
+      ],
+      "rows": [
+        {
+          "strike": "778.00",
+          "label": "",
+          "net_gex": "182M",
+          "call_gex": "276.6M",
+          "put_gex": "-94.6M",
+          "call_oi": "26,576",
+          "put_oi": "10,788",
+          "total_oi": "37,364"
+        },
+        {
+          "strike": "777.00",
+          "label": "",
+          "net_gex": "170.8M",
+          "call_gex": "315.2M",
+          "put_gex": "-144.3M",
+          "call_oi": "31,840",
+          "put_oi": "14,161",
+          "total_oi": "46,001"
+        },
+        {
+          "strike": "776.00",
+          "label": "",
+          "net_gex": "246.1M",
+          "call_gex": "315.7M",
+          "put_gex": "-69.6M",
+          "call_oi": "33,918",
+          "put_oi": "8,004",
+          "total_oi": "41,922"
+        },
+        {
+          "strike": "775.00",
+          "label": "1D Max Move",
+          "net_gex": "503.7M",
+          "call_gex": "902.1M",
+          "put_gex": "-398.3M",
+          "call_oi": "114,193",
+          "put_oi": "63,456",
+          "total_oi": "177,649"
+        },
+        {
+          "strike": "774.00",
+          "label": "",
+          "net_gex": "165.1M",
+          "call_gex": "309.4M",
+          "put_gex": "-144.3M",
+          "call_oi": "19,469",
+          "put_oi": "12,549",
+          "total_oi": "32,018"
+        },
+        {
+          "strike": "773.00",
+          "label": "",
+          "net_gex": "209.7M",
+          "call_gex": "363.5M",
+          "put_gex": "-153.8M",
+          "call_oi": "20,419",
+          "put_oi": "12,437",
+          "total_oi": "32,856"
+        },
+        {
+          "strike": "772.00",
+          "label": "",
+          "net_gex": "437.1M",
+          "call_gex": "635.4M",
+          "put_gex": "-198.2M",
+          "call_oi": "24,753",
+          "put_oi": "14,435",
+          "total_oi": "39,188"
+        },
+        {
+          "strike": "771.00",
+          "label": "",
+          "net_gex": "489.7M",
+          "call_gex": "783.2M",
+          "put_gex": "-293.5M",
+          "call_oi": "23,048",
+          "put_oi": "18,194",
+          "total_oi": "41,242"
+        },
+        {
+          "strike": "770.00",
+          "label": "Call Wall",
+          "net_gex": "1.3B",
+          "call_gex": "2.4B",
+          "put_gex": "-1.1B",
+          "call_oi": "130,077",
+          "put_oi": "112,439",
+          "total_oi": "242,516"
+        },
+        {
+          "strike": "769.00",
+          "label": "Spot Price",
+          "net_gex": "373.2M",
+          "call_gex": "752.6M",
+          "put_gex": "-379.5M",
+          "call_oi": "17,501",
+          "put_oi": "17,676",
+          "total_oi": "35,177"
+        },
+        {
+          "strike": "768.00",
+          "label": "",
+          "net_gex": "680.8M",
+          "call_gex": "1B",
+          "put_gex": "-348.3M",
+          "call_oi": "26,661",
+          "put_oi": "16,620",
+          "total_oi": "43,281"
+        },
+        {
+          "strike": "767.00",
+          "label": "",
+          "net_gex": "-761.3M",
+          "call_gex": "733.3M",
+          "put_gex": "-1.5B",
+          "call_oi": "28,927",
+          "put_oi": "40,101",
+          "total_oi": "69,028"
+        },
+        {
+          "strike": "766.00",
+          "label": "",
+          "net_gex": "56.7M",
+          "call_gex": "426.3M",
+          "put_gex": "-369.5M",
+          "call_oi": "23,545",
+          "put_oi": "21,877",
+          "total_oi": "45,422"
+        },
+        {
+          "strike": "765.00",
+          "label": "",
+          "net_gex": "-1.1B",
+          "call_gex": "618.8M",
+          "put_gex": "-1.7B",
+          "call_oi": "72,553",
+          "put_oi": "144,452",
+          "total_oi": "217,005"
+        },
+        {
+          "strike": "764.00",
+          "label": "",
+          "net_gex": "-112.8M",
+          "call_gex": "161.8M",
+          "put_gex": "-274.6M",
+          "call_oi": "12,521",
+          "put_oi": "20,564",
+          "total_oi": "33,085"
+        },
+        {
+          "strike": "763.00",
+          "label": "1D Min Move",
+          "net_gex": "28.4M",
+          "call_gex": "262.8M",
+          "put_gex": "-234.4M",
+          "call_oi": "22,759",
+          "put_oi": "21,085",
+          "total_oi": "43,844"
+        },
+        {
+          "strike": "762.00",
+          "label": "",
+          "net_gex": "-198.1M",
+          "call_gex": "233.9M",
+          "put_gex": "-432.1M",
+          "call_oi": "22,270",
+          "put_oi": "43,116",
+          "total_oi": "65,386"
+        },
+        {
+          "strike": "761.00",
+          "label": "",
+          "net_gex": "-75M",
+          "call_gex": "77.6M",
+          "put_gex": "-152.6M",
+          "call_oi": "8,715",
+          "put_oi": "16,363",
+          "total_oi": "25,078"
+        },
+        {
+          "strike": "760.00",
+          "label": "",
+          "net_gex": "-999.8M",
+          "call_gex": "384.8M",
+          "put_gex": "-1.4B",
+          "call_oi": "73,067",
+          "put_oi": "?",
+          "total_oi": "?"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "cheddar",
+      "handle": "CheddarFlow",
+      "post_id": "2115118889411506330",
+      "url": "https://x.com/CheddarFlow/status/2115118889411506330",
+      "posted_at_utc": "2026-10-27T16:30:14.000Z",
+      "posted_at_pt": "2026-10-27 09:30 PT",
+      "caption": "$GOOGL $9.3M worth of calls across 11 prints \n\nEvery one of them bought on the ask https://t.co/anjcCXywLT",
+      "source_note": "GOOGL flow table (sentiment Bullish, put to call 0.000, call flow $9.3M 3,585, put flow $0 0)",
+      "images": [
+        "img/CheddarFlow_2115118889411506330_1.jpg"
+      ],
+      "rows": [
+        {
+          "time": "12:00:11 PM",
+          "ticker": "GOOGL",
+          "expiry": "01/21/2028",
+          "strike": "390",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "321.06",
+          "size": "270",
+          "price": "$31.4",
+          "premium": "$847.8K",
+          "type": "Split",
+          "vol": "2,037",
+          "oi": "690",
+          "conds": "AUTO"
+        },
+        {
+          "time": "12:00:08 PM",
+          "ticker": "GOOGL",
+          "expiry": "01/21/2028",
+          "strike": "390",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "321.04",
+          "size": "390",
+          "price": "$31.4",
+          "premium": "$1.2M",
+          "type": "Split",
+          "vol": "1,767",
+          "oi": "690",
+          "conds": "AUTO"
+        },
+        {
+          "time": "12:00:08 PM",
+          "ticker": "GOOGL",
+          "expiry": "01/21/2028",
+          "strike": "390",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "321.01",
+          "size": "270",
+          "price": "$31.4",
+          "premium": "$847.8K",
+          "type": "Split",
+          "vol": "1,377",
+          "oi": "690",
+          "conds": "AUTO"
+        },
+        {
+          "time": "12:00:04 PM",
+          "ticker": "GOOGL",
+          "expiry": "01/21/2028",
+          "strike": "390",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "321.33",
+          "size": "250",
+          "price": "$31.4",
+          "premium": "$785K",
+          "type": "Split",
+          "vol": "1,107",
+          "oi": "690",
+          "conds": "AUTO"
+        },
+        {
+          "time": "12:00:00 PM",
+          "ticker": "GOOGL",
+          "expiry": "01/21/2028",
+          "strike": "390",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "320.6",
+          "size": "555",
+          "price": "$31.4",
+          "premium": "$1.7M",
+          "type": "Sweep",
+          "vol": "737",
+          "oi": "690",
+          "conds": "AUTO"
+        },
+        {
+          "time": "11:59:59 AM",
+          "ticker": "GOOGL",
+          "expiry": "01/21/2028",
+          "strike": "385",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "320.54",
+          "size": "159",
+          "price": "$32.8",
+          "premium": "$521.5K",
+          "type": "Sweep",
+          "vol": "1,516",
+          "oi": "359",
+          "conds": "AUTO UNUSUAL"
+        },
+        {
+          "time": "11:59:53 AM",
+          "ticker": "GOOGL",
+          "expiry": "01/21/2028",
+          "strike": "385",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "320.54",
+          "size": "262",
+          "price": "$32.8",
+          "premium": "$859.4K",
+          "type": "Sweep",
+          "vol": "1,332",
+          "oi": "359",
+          "conds": "AUTO UNUSUAL"
+        },
+        {
+          "time": "11:46:22 AM",
+          "ticker": "GOOGL",
+          "expiry": "01/21/2028",
+          "strike": "385",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "320.34",
+          "size": "160",
+          "price": "$32.8",
+          "premium": "$524.8K",
+          "type": "Split",
+          "vol": "160",
+          "oi": "359",
+          "conds": "AUTO"
+        },
+        {
+          "time": "11:40:55 AM",
+          "ticker": "GOOGL",
+          "expiry": "10/30/2026",
+          "strike": "310",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "320.5",
+          "size": "500",
+          "price": "$15.5",
+          "premium": "$775K",
+          "type": "Block",
+          "vol": "1,271",
+          "oi": "416",
+          "conds": "AUTO OPENING UNUSUAL"
+        },
+        {
+          "time": "10:41:38 AM",
+          "ticker": "GOOGL",
+          "expiry": "03/19/2027",
+          "strike": "330",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "319.65",
+          "size": "270",
+          "price": "$24.95",
+          "premium": "$673.6K",
+          "type": "Split",
+          "vol": "385",
+          "oi": "1,538",
+          "conds": "AUTO"
+        },
+        {
+          "time": "10:14:54 AM",
+          "ticker": "GOOGL",
+          "expiry": "11/20/2026",
+          "strike": "325",
+          "cp": "Call",
+          "side": "Ask",
+          "bs": "BUY",
+          "spot": "317.97",
+          "size": "499",
+          "price": "$10.5",
+          "premium": "$524K",
+          "type": "Split",
+          "vol": "611",
+          "oi": "3,398",
+          "conds": "AUTO"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2115123889185464650",
+      "url": "https://x.com/QuantData/status/2115123889185464650",
+      "posted_at_utc": "2026-10-27T16:50:06.000Z",
+      "posted_at_pt": "2026-10-27 09:50 PT",
+      "caption": "\ud83e\udd2f You can't make this up...\n\n$ES_F rejected right at the Call Wall/MVC, positioned at the 7,771 strike, the same one we called out nearly an hour ago to watch... https://t.co/n385ERlehz https://t.co/LLc9NFgGyI",
+      "source_note": "ESZ6 5-min footprint with GEX (all expiries) levels",
+      "images": [
+        "img/QuantData_2115123889185464650_1.jpg"
+      ],
+      "rows": [
+        {
+          "symbol": "ESZ6",
+          "last": "7,752.25",
+          "range": "7,712.50 \u2013 7,772.00",
+          "change": "+19.50",
+          "cvd": "+11,189",
+          "cw_mvc": "7,766.25 CW+MVC",
+          "pw": "7,751.25 PW",
+          "zg": "7,745.50 ZG",
+          "imbalance": "171 buy 121 sell"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2115114150657417350",
+      "url": "https://x.com/QuantData/status/2115114150657417350",
+      "posted_at_utc": "2026-10-27T16:11:25.000Z",
+      "posted_at_pt": "2026-10-27 09:11 PT",
+      "caption": "\ud83d\udc40 $ES_F is trading right in the 7,771 zone we mentioned earlier. https://t.co/RBfNu4NU03 https://t.co/ubH7aklQxo",
+      "source_note": "ESZ6 5-min footprint with GEX (all expiries) levels",
+      "images": [
+        "img/QuantData_2115114150657417350_1.jpg"
+      ],
+      "rows": [
+        {
+          "symbol": "ESZ6",
+          "last": "7,764.25",
+          "range": "7,712.50 \u2013 7,772.00",
+          "change": "+29.50",
+          "cvd": "+12,824",
+          "pw": "7,761.25 PW",
+          "zg": "7,748.00 ZG",
+          "imbalance": "169 buy 110 sell"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2115118923142021415",
+      "url": "https://x.com/QuantData/status/2115118923142021415",
+      "posted_at_utc": "2026-10-27T16:30:22.000Z",
+      "posted_at_pt": "2026-10-27 09:30 PT",
+      "caption": "\ud83d\udea8 $CRWV is the top stock with the most unusual/OTM options activity today with net calls leading puts by $3.8M+ intraday. https://t.co/2cpbZm5wIe",
+      "source_note": "Contract statistics gainers/losers table plus CRWV exposure forecast, net drift (calls $2.38M, puts -$1.45M, net $3.84M, CRWV $59.25) and GEX interval map",
+      "images": [
+        "img/QuantData_2115118923142021415_1.jpg"
+      ],
+      "rows": [
+        {
+          "rank": "1",
+          "ticker": "CRWV",
+          "bearish_premium": "$17.27 M",
+          "bullish_premium": "$20.41 M",
+          "volume": "196.10 K",
+          "pct": "9.77%"
+        },
+        {
+          "rank": "2",
+          "ticker": "IREN",
+          "bearish_premium": "$7.52 M",
+          "bullish_premium": "$9.70 M",
+          "volume": "142.25 K",
+          "pct": "7.08%"
+        },
+        {
+          "rank": "3",
+          "ticker": "INTC",
+          "bearish_premium": "$18.33 M",
+          "bullish_premium": "$20.21 M",
+          "volume": "96.70 K",
+          "pct": "4.82%"
+        },
+        {
+          "rank": "4",
+          "ticker": "HOOD",
+          "bearish_premium": "$8.96 M",
+          "bullish_premium": "$8.58 M",
+          "volume": "96.60 K",
+          "pct": "4.81%"
+        },
+        {
+          "rank": "5",
+          "ticker": "NBIS",
+          "bearish_premium": "$22.58 M",
+          "bullish_premium": "$25.86 M",
+          "volume": "81.96 K",
+          "pct": "4.08%"
+        },
+        {
+          "rank": "6",
+          "ticker": "BE",
+          "bearish_premium": "$15.05 M",
+          "bullish_premium": "$16.24 M",
+          "volume": "65.90 K",
+          "pct": "3.28%"
+        },
+        {
+          "rank": "7",
+          "ticker": "JBLU",
+          "bearish_premium": "$610.86 K",
+          "bullish_premium": "$492.33 K",
+          "volume": "65.11 K",
+          "pct": "3.24%"
+        },
+        {
+          "rank": "8",
+          "ticker": "MRNA",
+          "bearish_premium": "$13.59 M",
+          "bullish_premium": "$13.10 M",
+          "volume": "62.18 K",
+          "pct": "3.10%"
+        },
+        {
+          "rank": "9",
+          "ticker": "APLD",
+          "bearish_premium": "$1.06 M",
+          "bullish_premium": "$1.39 M",
+          "volume": "55.59 K",
+          "pct": "2.77%"
+        },
+        {
+          "rank": "10",
+          "ticker": "WULF",
+          "bearish_premium": "$1.59 M",
+          "bullish_premium": "$1.13 M",
+          "volume": "50 K",
+          "pct": "2.49%"
+        },
+        {
+          "rank": "11",
+          "ticker": "ENVX",
+          "bearish_premium": "$152.98 K",
+          "bullish_premium": "$738.35 K",
+          "volume": "44.17 K",
+          "pct": "2.20%"
+        },
+        {
+          "rank": "12",
+          "ticker": "RIVN",
+          "bearish_premium": "$574.26 K",
+          "bullish_premium": "$978.85 K",
+          "volume": "39.87 K",
+          "pct": "1.99%"
+        },
+        {
+          "rank": "13",
+          "ticker": "MARA",
+          "bearish_premium": "$437.62 K",
+          "bullish_premium": "$661.37 K",
+          "volume": "38.51 K",
+          "pct": "1.92%"
+        },
+        {
+          "rank": "14",
+          "ticker": "SKHY",
+          "bearish_premium": "$4.52 M",
+          "bullish_premium": "$3.48 M",
+          "volume": "36.58 K",
+          "pct": "1.82%"
+        },
+        {
+          "rank": "15",
+          "ticker": "CIFR",
+          "bearish_premium": "$707.65 K",
+          "bullish_premium": "$589.35 K",
+          "volume": "33.96 K",
+          "pct": "1.69%"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "_Shark_Trading",
+      "post_id": "2115115357903994986",
+      "url": "https://x.com/_Shark_Trading/status/2115115357903994986",
+      "posted_at_utc": "2026-10-27T16:16:12.000Z",
+      "posted_at_pt": "2026-10-27 09:16 PT",
+      "caption": "$SPY  - Someone loading Puts Right here. \ud83d\udc40 https://t.co/8zVzP9kf8C",
+      "source_note": "SPY chart crop with dark pool levels and a put print marker",
+      "images": [
+        "img/_Shark_Trading_2115115357903994986_1.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "print": "Bought 770P \u00b7 $3.7M",
+          "change": "\u25b26578%",
+          "dp_upper": "DP $14.2B 770.27",
+          "dp_lower": "DP $23.5B 769.49"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "voltick",
+      "handle": "VoltickIO",
+      "post_id": "2115428494062817384",
+      "url": "https://x.com/VoltickIO/status/2115428494062817384",
+      "posted_at_utc": "2026-10-28T13:00:30Z",
+      "posted_at_pt": "2026-10-28 06:00 PT",
+      "caption": "$SPY Levels \u00b7 Oct 28\n\n\u2605 Volt 772 \u00b7 today's expiration\nCeiling 800\nFloor 750\n\u26a1 Flip 770.8\nExpected move \u00b16.14 \u00b7 pre-open reference\n\nOther levels are all expirations.\n\nPositive gamma. The tape tends to stick.\n\nEducational, not advice.",
+      "source_note": "Voltick SPY GEX per-strike map, all expirations, Oct 28 9:00 AM ET",
+      "images": [
+        "img/VoltickIO_2115428494062817384_1.jpg"
+      ],
+      "rows": [
+        {
+          "strike": "786",
+          "net_gex": "$80.6M"
+        },
+        {
+          "strike": "785",
+          "net_gex": "$446.3M"
+        },
+        {
+          "strike": "784",
+          "net_gex": "$105.8M"
+        },
+        {
+          "strike": "783",
+          "net_gex": "$396.4M"
+        },
+        {
+          "strike": "782",
+          "net_gex": "$190.4M"
+        },
+        {
+          "strike": "781",
+          "net_gex": "$220.9M"
+        },
+        {
+          "strike": "780",
+          "net_gex": "$1,095.0M"
+        },
+        {
+          "strike": "779",
+          "net_gex": "$178.4M"
+        },
+        {
+          "strike": "778",
+          "net_gex": "$298.6M"
+        },
+        {
+          "strike": "777",
+          "net_gex": "$241.4M"
+        },
+        {
+          "strike": "776",
+          "net_gex": "$223.7M"
+        },
+        {
+          "strike": "775",
+          "net_gex": "$624.0M"
+        },
+        {
+          "strike": "774",
+          "net_gex": "$261.4M"
+        },
+        {
+          "strike": "773",
+          "net_gex": "$123.8M"
+        },
+        {
+          "strike": "772",
+          "net_gex": "$290.4M"
+        },
+        {
+          "strike": "771 (spot)",
+          "net_gex": "$179.0M"
+        },
+        {
+          "strike": "770",
+          "net_gex": "$139.3M"
+        },
+        {
+          "strike": "769",
+          "net_gex": "-$116.9M"
+        },
+        {
+          "strike": "768",
+          "net_gex": "-$65.5M"
+        },
+        {
+          "strike": "767",
+          "net_gex": "-$269.9M"
+        },
+        {
+          "strike": "766",
+          "net_gex": "-$222.7M"
+        },
+        {
+          "strike": "765",
+          "net_gex": "-$1,057.4M"
+        },
+        {
+          "strike": "764",
+          "net_gex": "-$89.6M"
+        },
+        {
+          "strike": "763",
+          "net_gex": "-$5.1M"
+        },
+        {
+          "strike": "762",
+          "net_gex": "-$94.9M"
+        },
+        {
+          "strike": "761",
+          "net_gex": "-$99.9M"
+        },
+        {
+          "strike": "760",
+          "net_gex": "-$892.7M"
+        },
+        {
+          "strike": "759",
+          "net_gex": "-$126.4M"
+        },
+        {
+          "strike": "758",
+          "net_gex": "-$251.6M"
+        },
+        {
+          "strike": "757",
+          "net_gex": "-$132.5M"
+        },
+        {
+          "strike": "summary",
+          "net_gex": "$597.5M positive gamma",
+          "note": "Volt $800 (also the ceiling) \u00b7 put wall $750 \u00b7 flip $771 \u00b7 SPY $771.31 +1.65 (+0.21%) \u00b7 Oct 28, 9:00 AM ET"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "Tradytics",
+      "post_id": "2115429157941456981",
+      "url": "https://x.com/Tradytics/status/2115429157941456981",
+      "posted_at_utc": "2026-10-28T13:03:08Z",
+      "posted_at_pt": "2026-10-28 06:03 PT",
+      "caption": "Since a lot of brokers are now allowing early options trading, we'll start putting these out a bit earlier.\n\nHere are our early $SPY levels to keep an eye on!",
+      "source_note": "Early SPY gamma levels chart (level - size)",
+      "images": [
+        "img/Tradytics_2115429157941456981_1.jpg"
+      ],
+      "rows": [
+        {
+          "level": "776.21",
+          "size": "1.06B"
+        },
+        {
+          "level": "774.28",
+          "size": "6.55B"
+        },
+        {
+          "level": "772.35",
+          "size": "15.4B"
+        },
+        {
+          "level": "770.42",
+          "size": "6.55B"
+        },
+        {
+          "level": "768.49",
+          "size": "8.8B"
+        },
+        {
+          "level": "766.56",
+          "size": "7.54B"
+        },
+        {
+          "level": "SPY last",
+          "size": "771.21"
+        }
+      ]
+    }
+  ]
+}

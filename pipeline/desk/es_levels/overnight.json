@@ -1,0 +1,1266 @@
+{
+ "generated_et": "2026-10-31 00:00 ET",
+ "groups": [
+  {
+   "name": "INDICES",
+   "rows": [
+    {
+     "name": "S&P 500",
+     "code": "ES",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 7614.5,
+      "prev": 7710.0,
+      "chg": -95.5,
+      "pct": -1.238651,
+      "hi": 7754.25,
+      "lo": 7558.25,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Nasdaq 100",
+     "code": "NQ",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 28543.0,
+      "prev": 29218.25,
+      "chg": -675.25,
+      "pct": -2.311056,
+      "hi": 29562.0,
+      "lo": 28232.75,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "DJIA",
+     "code": "YM",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 51928.0,
+      "prev": 52509.0,
+      "chg": -581.0,
+      "pct": -1.106477,
+      "hi": 52662.0,
+      "lo": 51701.0,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Russell 2000",
+     "code": "RTY",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 2821.899902,
+      "prev": 2868.0,
+      "chg": -46.100098,
+      "pct": -1.607395,
+      "hi": 2869.5,
+      "lo": 2795.399902,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Nikkei 225",
+     "code": "NIY",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 62445.0,
+      "prev": 64115.0,
+      "chg": -1670.0,
+      "pct": -2.604695,
+      "hi": 64130.0,
+      "lo": 61845.0,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Euro Stoxx 50",
+     "code": "SX5E",
+     "status": "PROXY",
+     "note": "cash index",
+     "q": {
+      "last": 6131.310059,
+      "prev": 6207.330078,
+      "chg": -76.02002,
+      "pct": -1.224681,
+      "hi": 6179.290039,
+      "lo": 6123.0,
+      "flag": "",
+      "asof": "10/30 12:30",
+      "stale": false
+     }
+    },
+    {
+     "name": "DAX",
+     "code": "DAX",
+     "status": "PROXY",
+     "note": "cash index",
+     "q": {
+      "last": 25818.210938,
+      "prev": 26052.730469,
+      "chg": -234.519531,
+      "pct": -0.900173,
+      "hi": 26026.199219,
+      "lo": 25779.150391,
+      "flag": "",
+      "asof": "10/30 12:30",
+      "stale": false
+     }
+    },
+    {
+     "name": "VIX",
+     "code": "VIX",
+     "status": "PROXY",
+     "note": "spot index",
+     "q": {
+      "last": 19.42,
+      "prev": 17.209999,
+      "chg": 2.210001,
+      "pct": 12.841378,
+      "hi": 23.93,
+      "lo": 18.030001,
+      "flag": "",
+      "asof": "10/30 16:15",
+      "stale": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "RATES",
+   "rows": [
+    {
+     "name": "30-Day Fed Funds",
+     "code": "ZQ",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 96.120003,
+      "prev": 95.919998,
+      "chg": 0.200005,
+      "pct": 0.208512,
+      "hi": 96.125,
+      "lo": 95.919998,
+      "flag": "HI",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "3-Month SOFR",
+     "code": "SR3",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 95.855003,
+      "prev": 95.855003,
+      "chg": 0.0,
+      "pct": 0.0,
+      "hi": 95.885002,
+      "lo": 95.839996,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "2Y Note",
+     "code": "ZT",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 102.257812,
+      "prev": 102.238281,
+      "chg": 0.019531,
+      "pct": 0.019104,
+      "hi": 102.332031,
+      "lo": 102.1875,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "5Y Note",
+     "code": "ZF",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 104.890625,
+      "prev": 104.789062,
+      "chg": 0.101562,
+      "pct": 0.096921,
+      "hi": 105.015625,
+      "lo": 104.71875,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "10Y Note",
+     "code": "ZN",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 106.640625,
+      "prev": 106.53125,
+      "chg": 0.109375,
+      "pct": 0.102669,
+      "hi": 106.859375,
+      "lo": 106.40625,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Ultra 10Y",
+     "code": "TN",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 108.125,
+      "prev": 108.015625,
+      "chg": 0.109375,
+      "pct": 0.101258,
+      "hi": 108.453125,
+      "lo": 107.875,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "30Y Bond",
+     "code": "ZB",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 107.625,
+      "prev": 107.75,
+      "chg": -0.125,
+      "pct": -0.116009,
+      "hi": 108.40625,
+      "lo": 107.375,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Ultra Bond",
+     "code": "UB",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 109.09375,
+      "prev": 109.28125,
+      "chg": -0.1875,
+      "pct": -0.171576,
+      "hi": 110.03125,
+      "lo": 108.78125,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "ENERGY",
+   "rows": [
+    {
+     "name": "Crude WTI",
+     "code": "CL",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 102.949997,
+      "prev": 102.860001,
+      "chg": 0.089996,
+      "pct": 0.087494,
+      "hi": 104.989998,
+      "lo": 102.43,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Brent",
+     "code": "BZ",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 112.330002,
+      "prev": 111.540001,
+      "chg": 0.790001,
+      "pct": 0.708267,
+      "hi": 114.290001,
+      "lo": 111.050003,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Natural Gas",
+     "code": "NG",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 2.883,
+      "prev": 2.905,
+      "chg": -0.022,
+      "pct": -0.757318,
+      "hi": 2.928,
+      "lo": 2.83,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Gasoline RBOB",
+     "code": "RB",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 3.1144,
+      "prev": 3.1011,
+      "chg": 0.0133,
+      "pct": 0.428878,
+      "hi": 3.1824,
+      "lo": 3.0881,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Gasoil",
+     "code": "GO",
+     "status": "NA",
+     "note": "",
+     "q": null
+    },
+    {
+     "name": "Heating Oil",
+     "code": "HO",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 4.655,
+      "prev": 4.584,
+      "chg": 0.071,
+      "pct": 1.548868,
+      "hi": 4.7182,
+      "lo": 4.57,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Coal Newcastle",
+     "code": "NCF",
+     "status": "NA",
+     "note": "",
+     "q": null
+    },
+    {
+     "name": "Uranium",
+     "code": "URA",
+     "status": "PROXY",
+     "note": "uranium ETF",
+     "q": {
+      "last": 34.0,
+      "prev": 35.05,
+      "chg": -1.05,
+      "pct": -2.99572,
+      "hi": 35.7286,
+      "lo": 33.014999,
+      "flag": "",
+      "asof": "10/30 19:55",
+      "stale": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "METALS",
+   "rows": [
+    {
+     "name": "Gold",
+     "code": "GC",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 3884.899902,
+      "prev": 4033.300049,
+      "chg": -148.400146,
+      "pct": -3.679373,
+      "hi": 4038.199951,
+      "lo": 3879.300049,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Silver",
+     "code": "SI",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 49.134998,
+      "prev": 52.220001,
+      "chg": -3.085003,
+      "pct": -5.907704,
+      "hi": 52.314999,
+      "lo": 48.895,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Platinum",
+     "code": "PL",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 1434.5,
+      "prev": 1488.699951,
+      "chg": -54.199951,
+      "pct": -3.640757,
+      "hi": 1493.5,
+      "lo": 1422.400024,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Palladium",
+     "code": "PA",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 977.5,
+      "prev": 1003.5,
+      "chg": -26.0,
+      "pct": -2.590932,
+      "hi": 1005.0,
+      "lo": 961.5,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Copper",
+     "code": "HG",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 6.5095,
+      "prev": 6.5895,
+      "chg": -0.08,
+      "pct": -1.214052,
+      "hi": 6.598,
+      "lo": 6.4505,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Aluminum",
+     "code": "ALI",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 3166.0,
+      "prev": 3182.0,
+      "chg": -16.0,
+      "pct": -0.502828,
+      "hi": 3192.5,
+      "lo": 3160.0,
+      "flag": "",
+      "asof": "10/30 16:10",
+      "stale": false
+     }
+    },
+    {
+     "name": "Iron Ore",
+     "code": "TIO",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 90.709999,
+      "prev": 90.709999,
+      "chg": 0.0,
+      "pct": 0.0,
+      "hi": 90.709999,
+      "lo": 90.709999,
+      "flag": "",
+      "asof": "10/30 D",
+      "stale": false
+     }
+    },
+    {
+     "name": "Steel HRC",
+     "code": "HRC",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 1402.0,
+      "prev": 1391.0,
+      "chg": 11.0,
+      "pct": 0.790798,
+      "hi": 1406.0,
+      "lo": 1394.0,
+      "flag": "",
+      "asof": "10/30 16:25",
+      "stale": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "GRAINS",
+   "rows": [
+    {
+     "name": "Soybeans",
+     "code": "ZS",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 1234.0,
+      "prev": 1234.5,
+      "chg": -0.5,
+      "pct": -0.040502,
+      "hi": 1242.0,
+      "lo": 1230.75,
+      "flag": "",
+      "asof": "10/30 14:15",
+      "stale": false
+     }
+    },
+    {
+     "name": "Soybean Meal",
+     "code": "ZM",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 324.700012,
+      "prev": 329.200012,
+      "chg": -4.5,
+      "pct": -1.36695,
+      "hi": 330.299988,
+      "lo": 324.399994,
+      "flag": "",
+      "asof": "10/30 14:15",
+      "stale": false
+     }
+    },
+    {
+     "name": "Soybean Oil",
+     "code": "ZL",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 65.809998,
+      "prev": 65.690002,
+      "chg": 0.119995,
+      "pct": 0.182669,
+      "hi": 66.650002,
+      "lo": 65.639999,
+      "flag": "",
+      "asof": "10/30 14:15",
+      "stale": false
+     }
+    },
+    {
+     "name": "Corn",
+     "code": "ZC",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 447.5,
+      "prev": 451.25,
+      "chg": -3.75,
+      "pct": -0.831025,
+      "hi": 452.25,
+      "lo": 447.5,
+      "flag": "LO",
+      "asof": "10/30 14:15",
+      "stale": false
+     }
+    },
+    {
+     "name": "Wheat",
+     "code": "ZW",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 603.25,
+      "prev": 603.25,
+      "chg": 0.0,
+      "pct": 0.0,
+      "hi": 610.0,
+      "lo": 598.25,
+      "flag": "",
+      "asof": "10/30 14:15",
+      "stale": false
+     }
+    },
+    {
+     "name": "Rough Rice",
+     "code": "ZR",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 17.889999,
+      "prev": 17.91,
+      "chg": -0.02,
+      "pct": -0.111672,
+      "hi": 18.145,
+      "lo": 17.795,
+      "flag": "",
+      "asof": "10/30 14:15",
+      "stale": false
+     }
+    },
+    {
+     "name": "Canola",
+     "code": "RS",
+     "status": "NA",
+     "note": "",
+     "q": null
+    },
+    {
+     "name": "Oats",
+     "code": "ZO",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 344.0,
+      "prev": 343.0,
+      "chg": 1.0,
+      "pct": 0.291545,
+      "hi": 345.25,
+      "lo": 341.75,
+      "flag": "",
+      "asof": "10/30 14:15",
+      "stale": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "SOFTS & MEATS",
+   "rows": [
+    {
+     "name": "Coffee",
+     "code": "KC",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 287.149994,
+      "prev": 286.549988,
+      "chg": 0.600006,
+      "pct": 0.20939,
+      "hi": 291.5,
+      "lo": 283.299988,
+      "flag": "",
+      "asof": "10/30 13:25",
+      "stale": false
+     }
+    },
+    {
+     "name": "Cocoa",
+     "code": "CC",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 5454.0,
+      "prev": 5459.0,
+      "chg": -5.0,
+      "pct": -0.091592,
+      "hi": 5541.0,
+      "lo": 5356.0,
+      "flag": "",
+      "asof": "10/30 13:25",
+      "stale": false
+     }
+    },
+    {
+     "name": "Sugar",
+     "code": "SB",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 19.370001,
+      "prev": 19.52,
+      "chg": -0.15,
+      "pct": -0.768441,
+      "hi": 19.4,
+      "lo": 19.209999,
+      "flag": "",
+      "asof": "10/30 12:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Cotton",
+     "code": "CT",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 78.129997,
+      "prev": 78.220001,
+      "chg": -0.090004,
+      "pct": -0.115065,
+      "hi": 78.470001,
+      "lo": 78.129997,
+      "flag": "LO",
+      "asof": "10/30 11:30",
+      "stale": false
+     }
+    },
+    {
+     "name": "Lumber",
+     "code": "LBR",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 515.0,
+      "prev": 516.5,
+      "chg": -1.5,
+      "pct": -0.290416,
+      "hi": 519.5,
+      "lo": 509.0,
+      "flag": "",
+      "asof": "10/30 15:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Live Cattle",
+     "code": "LE",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 220.774994,
+      "prev": 226.25,
+      "chg": -5.475006,
+      "pct": -2.419892,
+      "hi": 225.75,
+      "lo": 220.475006,
+      "flag": "",
+      "asof": "10/30 14:00",
+      "stale": false
+     }
+    },
+    {
+     "name": "Feeder Cattle",
+     "code": "GF",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 331.424988,
+      "prev": 346.075012,
+      "chg": -14.650024,
+      "pct": -4.233193,
+      "hi": 345.799988,
+      "lo": 331.200012,
+      "flag": "LO",
+      "asof": "10/30 14:00",
+      "stale": false
+     }
+    },
+    {
+     "name": "Lean Hogs",
+     "code": "HE",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 59.0,
+      "prev": 60.025002,
+      "chg": -1.025002,
+      "pct": -1.707624,
+      "hi": 60.049999,
+      "lo": 58.599998,
+      "flag": "",
+      "asof": "10/30 14:00",
+      "stale": false
+     }
+    }
+   ]
+  },
+  {
+   "name": "CURRENCIES",
+   "rows": [
+    {
+     "name": "USD Index",
+     "code": "DX",
+     "status": "PROXY",
+     "note": "spot index",
+     "q": {
+      "last": 101.963997,
+      "prev": 101.765999,
+      "chg": 0.197998,
+      "pct": 0.194562,
+      "hi": 102.088997,
+      "lo": 101.543999,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "EUR",
+     "code": "6E",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 1.11795,
+      "prev": 1.12005,
+      "chg": -0.0021,
+      "pct": -0.187491,
+      "hi": 1.12345,
+      "lo": 1.1156,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "JPY",
+     "code": "6J",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 0.006367,
+      "prev": 0.006363,
+      "chg": 4e-06,
+      "pct": 0.055011,
+      "hi": 0.006392,
+      "lo": 0.006355,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "GBP",
+     "code": "6B",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 1.3392,
+      "prev": 1.3378,
+      "chg": 0.0014,
+      "pct": 0.104649,
+      "hi": 1.3434,
+      "lo": 1.3375,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "CAD",
+     "code": "6C",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 0.717,
+      "prev": 0.71635,
+      "chg": 0.00065,
+      "pct": 0.090736,
+      "hi": 0.71865,
+      "lo": 0.7162,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "CHF",
+     "code": "6S",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 1.21835,
+      "prev": 1.21925,
+      "chg": -0.0009,
+      "pct": -0.073809,
+      "hi": 1.2265,
+      "lo": 1.2173,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "AUD",
+     "code": "6A",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 0.7026,
+      "prev": 0.70215,
+      "chg": 0.00045,
+      "pct": 0.064091,
+      "hi": 0.70365,
+      "lo": 0.70075,
+      "flag": "",
+      "asof": "10/30 16:55",
+      "stale": false
+     }
+    },
+    {
+     "name": "Bitcoin",
+     "code": "BTC",
+     "status": "LIVE",
+     "note": "",
+     "q": {
+      "last": 77505.0,
+      "prev": 76825.0,
+      "chg": 680.0,
+      "pct": 0.885129,
+      "hi": 77650.0,
+      "lo": 76820.0,
+      "flag": "",
+      "asof": "10/30 22:25",
+      "stale": false
+     }
+    }
+   ]
+  }
+ ],
+ "strip": {
+  "ES": {
+   "last": 7614.5,
+   "asof": "10/30 16:55",
+   "on_hi": 7754.25,
+   "on_lo": 7558.25,
+   "rth_hi": 7767.25,
+   "rth_lo": 7725.25,
+   "rth_date": "10/29",
+   "asia_hi": 7713.0,
+   "asia_lo": 7665.25,
+   "lon_hi": 7693.75,
+   "lon_lo": 7664.0,
+   "lon_open": true,
+   "sess_start": "10/29 18:00"
+  },
+  "NQ": {
+   "last": 28543.0,
+   "asof": "10/30 16:55",
+   "on_hi": 29562.0,
+   "on_lo": 28232.75,
+   "rth_hi": 29677.0,
+   "rth_lo": 29405.0,
+   "rth_date": "10/29",
+   "asia_hi": 29180.0,
+   "asia_lo": 28821.5,
+   "lon_hi": 29011.0,
+   "lon_lo": 28756.25,
+   "lon_open": true,
+   "sess_start": "10/29 18:00"
+  }
+ },
+ "nightwatch": [
+  {
+   "name": "KOSPI index",
+   "code": "KOSPI",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 5730.740234,
+    "prev": 5671.169922,
+    "chg": 59.570312,
+    "pct": 1.050406,
+    "hi": 5766.720215,
+    "lo": 5644.100098,
+    "flag": "",
+    "asof": "10/30 02:00",
+    "stale": false
+   }
+  },
+  {
+   "name": "Nikkei 225",
+   "code": "N225",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 63290.109375,
+    "prev": 63073.609375,
+    "chg": 216.5,
+    "pct": 0.34325,
+    "hi": 63348.890625,
+    "lo": 62891.800781,
+    "flag": "",
+    "asof": "10/30 02:30",
+    "stale": false
+   }
+  },
+  {
+   "name": "USD/JPY spot",
+   "code": "USDJPY",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 157.518997,
+    "prev": 157.412994,
+    "chg": 0.106003,
+    "pct": 0.067341,
+    "hi": 157.746002,
+    "lo": 156.957001,
+    "flag": "",
+    "asof": "10/30 16:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "US 30Y yield",
+   "code": "US30Y",
+   "status": "LIVE",
+   "note": "",
+   "yld": true,
+   "q": {
+    "last": 5.309,
+    "prev": 5.329,
+    "chg": -0.02,
+    "pct": -0.375305,
+    "hi": 5.329,
+    "lo": 5.277,
+    "flag": "",
+    "asof": "10/30 14:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "US 20Y yield",
+   "code": "US20Y",
+   "status": "LIVE",
+   "note": "",
+   "yld": true,
+   "q": {
+    "last": 5.34,
+    "prev": 5.35,
+    "chg": -0.01,
+    "pct": -0.186916,
+    "hi": null,
+    "lo": null,
+    "flag": "",
+    "asof": "10/30 D",
+    "stale": false
+   }
+  },
+  {
+   "name": "US 10Y yield",
+   "code": "US10Y",
+   "status": "LIVE",
+   "note": "",
+   "yld": true,
+   "q": {
+    "last": 4.94,
+    "prev": 4.98,
+    "chg": -0.04,
+    "pct": -0.803213,
+    "hi": null,
+    "lo": null,
+    "flag": "",
+    "asof": "10/30 D",
+    "stale": false
+   }
+  },
+  {
+   "name": "WTI front month",
+   "code": "CL1!",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 102.949997,
+    "prev": 102.860001,
+    "chg": 0.089996,
+    "pct": 0.087494,
+    "hi": 104.989998,
+    "lo": 102.43,
+    "flag": "",
+    "asof": "10/30 16:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "Brent",
+   "code": "BRENT",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 112.330002,
+    "prev": 111.540001,
+    "chg": 0.790001,
+    "pct": 0.708267,
+    "hi": 114.290001,
+    "lo": 111.050003,
+    "flag": "",
+    "asof": "10/30 16:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "CBOE 10Y yield index",
+   "code": "TNX",
+   "status": "LIVE",
+   "note": "",
+   "yld": true,
+   "q": {
+    "last": 4.929,
+    "prev": 4.989,
+    "chg": -0.06,
+    "pct": -1.202645,
+    "hi": 4.958,
+    "lo": 4.908,
+    "flag": "",
+    "asof": "10/30 14:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "US Dollar Index",
+   "code": "DXY",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 101.963997,
+    "prev": 101.765999,
+    "chg": 0.197998,
+    "pct": 0.194562,
+    "hi": 102.088997,
+    "lo": 101.543999,
+    "flag": "",
+    "asof": "10/30 16:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "2-Year Note futures",
+   "code": "ZT",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 102.257812,
+    "prev": 102.238281,
+    "chg": 0.019531,
+    "pct": 0.019104,
+    "hi": 102.332031,
+    "lo": 102.1875,
+    "flag": "",
+    "asof": "10/30 16:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "10-Year Note futures",
+   "code": "ZN",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 106.640625,
+    "prev": 106.53125,
+    "chg": 0.109375,
+    "pct": 0.102669,
+    "hi": 106.859375,
+    "lo": 106.40625,
+    "flag": "",
+    "asof": "10/30 16:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "Euro-Bund (German 10Y yield)",
+   "code": "BUND",
+   "status": "PROXY",
+   "note": "German 10Y govt yield, daily",
+   "yld": true,
+   "q": {
+    "last": 3.38,
+    "prev": 3.39,
+    "chg": -0.01,
+    "pct": -0.294985,
+    "hi": null,
+    "lo": null,
+    "flag": "",
+    "asof": "10/30 D",
+    "stale": false
+   }
+  },
+  {
+   "name": "VIX short-term futures ETN",
+   "code": "VXX",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 18.95,
+    "prev": 17.9301,
+    "chg": 1.0199,
+    "pct": 5.6882,
+    "hi": 20.434999,
+    "lo": 18.08,
+    "flag": "",
+    "asof": "10/30 19:55",
+    "stale": false
+   }
+  },
+  {
+   "name": "VIX",
+   "code": "VIX",
+   "status": "LIVE",
+   "note": "",
+   "yld": false,
+   "q": {
+    "last": 19.42,
+    "prev": 17.209999,
+    "chg": 2.210001,
+    "pct": 12.841378,
+    "hi": 23.93,
+    "lo": 18.030001,
+    "flag": "",
+    "asof": "10/30 16:15",
+    "stale": false
+   }
+  }
+ ]
+}

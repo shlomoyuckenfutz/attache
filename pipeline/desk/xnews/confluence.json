@@ -1,0 +1,744 @@
+{
+ "date": "2026-10-30",
+ "updated_pt": "2026-10-30 21:00 PT",
+ "spot": {
+  "SPY": 757.12,
+  "SPX": 7595.6,
+  "QQQ": 705.44,
+  "asof_et": "2026-10-30 19:59:00-04:00"
+ },
+ "ratios": {
+  "SPX": 10.03227,
+  "QQQ": 0.93174,
+  "SPY": 1.0
+ },
+ "band_half_width": {
+  "SPY": 0.5,
+  "QQQ": 0.5,
+  "SPX": 5.0,
+  "NQ": 25.0
+ },
+ "note": "Bands = levels within ±half-width (SPY/QQQ ±0.50, SPX ±5). ≈ = converted from another symbol with the posted same-time ratio. NQ levels are native only.",
+ "symbols": {
+  "SPY": [
+   {
+    "price": 800.0,
+    "lo": 800.0,
+    "hi": 800.0,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "800",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Call Wall",
+      "scope": "far",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 770.4,
+    "lo": 770.4,
+    "hi": 770.4,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "770.4",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Gamma Flip",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 765.0,
+    "lo": 765.0,
+    "hi": 765.0,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Volt / Put Wall",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 762.27,
+    "lo": 762.27,
+    "hi": 762.27,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "762.27",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Dark pool line in sand",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2115928352964133024",
+      "posted_pt": "2026-10-29 15:06",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 760.0,
+    "lo": 760.0,
+    "hi": 760.0,
+    "n_sources": 2,
+    "weight": 2.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "760",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Neg GEX node [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "760",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Put Wall lost",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 755.0,
+    "lo": 754.07,
+    "hi": 755.0,
+    "n_sources": 3,
+    "weight": 2.5,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "754.07",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Double dark pool",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
+      "posted_pt": "2026-10-30 10:53",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "755",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Neg GEX node [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "755",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Next put strike",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 750.0,
+    "lo": 750.0,
+    "hi": 750.0,
+    "n_sources": 2,
+    "weight": 2.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Floor / Neg GEX [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Next put strike",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 746.77,
+    "lo": 746.77,
+    "hi": 746.77,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "746.77",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Air pocket target if 754 fails",
+      "scope": "far",
+      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
+      "posted_pt": "2026-10-30 10:53",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   }
+  ],
+  "QQQ": [
+   {
+    "price": 745.39,
+    "lo": 745.39,
+    "hi": 745.39,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "800",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Call Wall",
+      "scope": "far",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 717.81,
+    "lo": 717.81,
+    "hi": 717.81,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "770.4",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Gamma Flip",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 712.78,
+    "lo": 712.78,
+    "hi": 712.78,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Volt / Put Wall",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 710.24,
+    "lo": 710.24,
+    "hi": 710.24,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "762.27",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Dark pool line in sand",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2115928352964133024",
+      "posted_pt": "2026-10-29 15:06",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 708.12,
+    "lo": 708.12,
+    "hi": 708.12,
+    "n_sources": 2,
+    "weight": 2.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "760",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Neg GEX node [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "760",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Put Wall lost",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 703.46,
+    "lo": 702.6,
+    "hi": 703.46,
+    "n_sources": 3,
+    "weight": 2.5,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "754.07",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Double dark pool",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
+      "posted_pt": "2026-10-30 10:53",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "755",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Neg GEX node [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "755",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Next put strike",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 698.8,
+    "lo": 698.8,
+    "hi": 698.8,
+    "n_sources": 2,
+    "weight": 2.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Floor / Neg GEX [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Next put strike",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 695.79,
+    "lo": 695.79,
+    "hi": 695.79,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "746.77",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Air pocket target if 754 fails",
+      "scope": "far",
+      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
+      "posted_pt": "2026-10-30 10:53",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   }
+  ],
+  "SPX": [
+   {
+    "price": 8025.81,
+    "lo": 8025.81,
+    "hi": 8025.81,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "800",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Call Wall",
+      "scope": "far",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7728.86,
+    "lo": 7728.86,
+    "hi": 7728.86,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "770.4",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Gamma Flip",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7674.68,
+    "lo": 7674.68,
+    "hi": 7674.68,
+    "n_sources": 1,
+    "weight": 1.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Volt / Put Wall",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7647.3,
+    "lo": 7647.3,
+    "hi": 7647.3,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "762.27",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Dark pool line in sand",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2115928352964133024",
+      "posted_pt": "2026-10-29 15:06",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7624.52,
+    "lo": 7624.52,
+    "hi": 7624.52,
+    "n_sources": 2,
+    "weight": 2.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "760",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Neg GEX node [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "760",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Put Wall lost",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7574.36,
+    "lo": 7565.03,
+    "hi": 7574.36,
+    "n_sources": 3,
+    "weight": 2.5,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "754.07",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Double dark pool",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
+      "posted_pt": "2026-10-30 10:53",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "755",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Neg GEX node [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "755",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Next put strike",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7524.2,
+    "lo": 7524.2,
+    "hi": 7524.2,
+    "n_sources": 2,
+    "weight": 2.0,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "VoltickIO",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Floor / Neg GEX [image]",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "posted_pt": "2026-10-30 06:00",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Next put strike",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "posted_pt": "2026-10-30 08:20",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7491.8,
+    "lo": 7491.8,
+    "hi": 7491.8,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "746.77",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Air pocket target if 754 fails",
+      "scope": "far",
+      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
+      "posted_pt": "2026-10-30 10:53",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   }
+  ]
+ },
+ "native_only": {
+  "NQ": []
+ }
+}

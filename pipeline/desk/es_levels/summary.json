@@ -1,0 +1,238 @@
+{
+ "symbol": "ES=F",
+ "price": 7614.5,
+ "asof_et": "2026-10-30 16:59",
+ "run_et": "2026-10-31 00:00",
+ "data_from_et": "2026-08-21 00:05",
+ "m1_from_et": "2026-10-23 00:09",
+ "bars": 19840,
+ "new_events": 1,
+ "new_breaks": [],
+ "new_proximity_alerts": [],
+ "near": [
+  7616
+ ],
+ "levels": [
+  {
+   "level": 7620,
+   "source": "everett",
+   "key": false,
+   "distance": -5.5,
+   "near": false,
+   "touches": 29,
+   "bounces": 9,
+   "breaks": 15,
+   "last_touch_et": "2026-10-30 16:41"
+  },
+  {
+   "level": 7680,
+   "source": "everett",
+   "key": true,
+   "distance": -65.5,
+   "near": false,
+   "touches": 190,
+   "bounces": 68,
+   "breaks": 58,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7720,
+   "source": "everett",
+   "key": false,
+   "distance": -105.5,
+   "near": false,
+   "touches": 131,
+   "bounces": 42,
+   "breaks": 58,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7730,
+   "source": "everett",
+   "key": false,
+   "distance": -115.5,
+   "near": false,
+   "touches": 157,
+   "bounces": 53,
+   "breaks": 60,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7766,
+   "source": "everett",
+   "key": false,
+   "distance": -151.5,
+   "near": false,
+   "touches": 212,
+   "bounces": 61,
+   "breaks": 74,
+   "last_touch_et": "2026-10-29 11:30"
+  },
+  {
+   "level": 7782,
+   "source": "everett",
+   "key": false,
+   "distance": -167.5,
+   "near": false,
+   "touches": 98,
+   "bounces": 44,
+   "breaks": 34,
+   "last_touch_et": "2026-10-28 16:10"
+  },
+  {
+   "level": 7800,
+   "source": "everett",
+   "key": false,
+   "distance": -185.5,
+   "near": false,
+   "touches": 50,
+   "bounces": 12,
+   "breaks": 26,
+   "last_touch_et": "2026-10-28 16:00"
+  },
+  {
+   "level": 7820,
+   "source": "everett",
+   "key": false,
+   "distance": -205.5,
+   "near": false,
+   "touches": 31,
+   "bounces": 13,
+   "breaks": 10,
+   "last_touch_et": "2026-10-28 16:01"
+  },
+  {
+   "level": 7575,
+   "source": "mancini",
+   "key": false,
+   "distance": 39.5,
+   "near": false,
+   "touches": 7,
+   "bounces": 3,
+   "breaks": 2,
+   "last_touch_et": "2026-10-30 15:17"
+  },
+  {
+   "level": 7585,
+   "source": "mancini",
+   "key": false,
+   "distance": 29.5,
+   "near": false,
+   "touches": 10,
+   "bounces": 4,
+   "breaks": 6,
+   "last_touch_et": "2026-10-30 15:41"
+  },
+  {
+   "level": 7616,
+   "source": "mancini",
+   "key": false,
+   "distance": -1.5,
+   "near": true,
+   "touches": 35,
+   "bounces": 15,
+   "breaks": 13,
+   "last_touch_et": "2026-10-30 16:59"
+  },
+  {
+   "level": 7625,
+   "source": "mancini",
+   "key": false,
+   "distance": -10.5,
+   "near": false,
+   "touches": 32,
+   "bounces": 12,
+   "breaks": 11,
+   "last_touch_et": "2026-10-30 16:12"
+  },
+  {
+   "level": 7626,
+   "source": "mancini",
+   "key": false,
+   "distance": -11.5,
+   "near": false,
+   "touches": 27,
+   "bounces": 11,
+   "breaks": 11,
+   "last_touch_et": "2026-10-30 16:14"
+  },
+  {
+   "level": 7645,
+   "source": "mancini",
+   "key": false,
+   "distance": -30.5,
+   "near": false,
+   "touches": 51,
+   "bounces": 22,
+   "breaks": 17,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7649,
+   "source": "mancini",
+   "key": false,
+   "distance": -34.5,
+   "near": false,
+   "touches": 65,
+   "bounces": 24,
+   "breaks": 21,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7663,
+   "source": "mancini",
+   "key": false,
+   "distance": -48.5,
+   "near": false,
+   "touches": 120,
+   "bounces": 40,
+   "breaks": 33,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7665,
+   "source": "mancini",
+   "key": false,
+   "distance": -50.5,
+   "near": false,
+   "touches": 124,
+   "bounces": 37,
+   "breaks": 43,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7677,
+   "source": "mancini",
+   "key": false,
+   "distance": -62.5,
+   "near": false,
+   "touches": 177,
+   "bounces": 58,
+   "breaks": 62,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7686,
+   "source": "mancini",
+   "key": false,
+   "distance": -71.5,
+   "near": false,
+   "touches": 193,
+   "bounces": 55,
+   "breaks": 74,
+   "last_touch_et": "2026-10-30 15:03"
+  },
+  {
+   "level": 7703,
+   "source": "mancini",
+   "key": false,
+   "distance": -88.5,
+   "near": false,
+   "touches": 156,
+   "bounces": 57,
+   "breaks": 54,
+   "last_touch_et": "2026-10-30 15:03"
+  }
+ ],
+ "note": "Delayed futures feed (ES continuous), ~10 min delayed; 5m bars then 1m for last ~7d. Paper/research only."
+}

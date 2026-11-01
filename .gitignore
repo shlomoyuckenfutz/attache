@@ -1,0 +1,7 @@
+
+# pipeline runtime
+pipeline/cache/
+pipeline/desk/secrets/study_password.txt
+pipeline/desk/equity_orb15/data/*.parquet
+pipeline/desk/python/data/*.parquet
+**/__pycache__/

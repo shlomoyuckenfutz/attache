@@ -1,0 +1,49 @@
+{
+ "as_of": "2026-10-20 after close (market closed; extended tape ended 8:00pm ET); site data 15-min delayed; page read ~5:40pm PT",
+ "source_url": "https://voltick.io/?t=QQQ (Single board, all dates); also https://voltick.io/levels/QQQ and https://voltick.io/weekly",
+ "price": 717.63,
+ "flip": 739.97,
+ "volts": [
+  700,
+  710,
+  695,
+  711,
+  720,
+  700,
+  700,
+  705,
+  700,
+  695,
+  713,
+  725,
+  700,
+  720,
+  690,
+  680,
+  700,
+  670,
+  750,
+  725,
+  700,
+  730
+ ],
+ "volts_note": "volts[0]=700 is the all-dates Volt (put wall/floor). Then per-expiry Volts: 10/21=710, 10/22=695, 10/23=711, 10/26=720, 10/27=700, 10/28=700, 10/29=705, 10/30=700, 11/02=695, 11/06=713, 11/13=725, 11/20=700, 11/27=720, 12/18=690, 1/15/27=680, 2/19/27=700, 3/19/27=670, 6/17/27=750, 9/17/27=725, 12/17/27=700, 1/21/28=730; 11/03 has none",
+ "reversal_nodes": [
+  {
+   "level": 760,
+   "note": "'Reversal' = heaviest level pulling opposite to the Volt; also the call wall/ceiling"
+  }
+ ],
+ "coil_levels": [
+  {
+   "level": 720,
+   "note": "\u25c6 Coil + \u2016 Surge Wall"
+  },
+  {
+   "level": 710,
+   "note": "\u25c6 Coil (with \u2295 cross-check marker; = 10/21 Volt)"
+  }
+ ],
+ "weekly_board": [],
+ "notes": "Signed in, free+member view reachable. Negative gamma across all expirations. Call wall 760, put wall/floor 700, flip ~739.9-740 (below flip = negative gamma side). Surge (flow) at 717 today, opposite flow near 720; Session Read building $725 (+173%), $720 (+28%); fading $719, $717. Per-expiry flips: 10/21 721.1, 10/22 726.8, 10/23 731.1, 10/26 734.2, 10/27 724.7, 10/28 724.6, 10/29 725.5, 10/30 753.0. Per-expiry Surge: 10/21 717, 10/22 722, 10/23 725, 10/26 720, 10/27 722, 10/28 725, 10/29 690, 10/30 729. Expected move band ~\u00b112.9 (ATM IV 34.8%); IB 9:30-10:30 H 722.70 / L 710.40 inside, no break. QQQ record last 89 sessions: Volt touched 22%, EM band held 47%, closed inside walls 83%. FOMC decision Wed 10/21 2:00pm ET. No 'weekly board with hold ratings (%)' for QQQ was found: /weekly is a cross-board overview (QQQ: floor 700, flip 739.97, Volt 700, ceiling 760) with no per-level hold %; weekly_board left empty. Only the first ~50 strike rows are rendered on the single board so extra reversal/coil markers outside ~695-742 may exist."
+}

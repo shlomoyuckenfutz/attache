@@ -1,0 +1,91 @@
+{
+  "session": "2026-10-30",
+  "em": {
+    "lo": 752.88,
+    "hi": 765.18,
+    "note": "Cheddar 1D EM after 760 put-wall break; Voltick pre-open EM 758.2-764.22"
+  },
+  "SPY": [
+    {
+      "handle": "VoltickIO",
+      "scope": "06:00 PT card + all-exp per-strike image",
+      "volt": "765",
+      "flip": "770.4",
+      "call_wall": "800",
+      "put_wall": "765",
+      "king_node": "765",
+      "expected_move": "\u00b15.05",
+      "net_gex": "-$12.8B",
+      "regime": "negative gamma",
+      "posted_pt": "2026-10-30 06:00",
+      "url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "note": "Open 759.9 in 758.2-764.22; Volt today shifted to 760 at open. Scorecard Volt39/54 EM36/54 walls37/54 (112/162).",
+      "extra": "Text Volt 765 is today's expiration; image values are all expirations; put wall coincides with Volt at 765"
+    },
+    {
+      "handle": "CheddarFlow",
+      "scope": "all-exp GEX after put-wall break",
+      "volt": null,
+      "flip": null,
+      "call_wall": null,
+      "put_wall": "760",
+      "king_node": "760",
+      "expected_move": "\u00b16.15 (max 765.18 / min 752.88)",
+      "net_gex": "-16.8B short gamma",
+      "regime": "short gamma",
+      "posted_pt": "2026-10-30 08:20",
+      "url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "note": "Lost 760 put wall (-2.8B); next big puts 755 (-1.7B) and 750 (-2.3B)"
+    },
+    {
+      "handle": "SRC_LEDGER",
+      "scope": "10/29 short note lean into 10/30",
+      "volt": null,
+      "flip": null,
+      "call_wall": null,
+      "put_wall": "762.27",
+      "king_node": "762.27",
+      "expected_move": null,
+      "net_gex": null,
+      "regime": null,
+      "posted_pt": "2026-10-29 15:06",
+      "url": "https://x.com/SRC_LEDGER/status/2115928352964133024",
+      "note": "Base: test DP 762.27 line in sand; alt pin 769.36. Intraday 10/30: DP 757.43 bounce setup; later 754.07/754.05 air pocket to 746.77"
+    },
+    {
+      "handle": "QuantData",
+      "scope": "ES GEX nodes intraday 10/30",
+      "volt": null,
+      "flip": null,
+      "call_wall": null,
+      "put_wall": null,
+      "king_node": "7560",
+      "expected_move": null,
+      "net_gex": "neg node 7560 hit",
+      "regime": "negative gamma",
+      "posted_pt": "2026-10-30 11:38",
+      "url": "https://x.com/QuantData/status/2116238324117733848",
+      "note": "ES 7610 target \u2192 7584 zone \u2192 MVC 7574 \u2192 7560 neg node hit; puts lead calls $23M+"
+    },
+    {
+      "handle": "GEXEdgeIO",
+      "scope": "SPY GEX Oct 29 (no fresh Oct30 table)",
+      "volt": null,
+      "flip": "771.33",
+      "call_wall": "772",
+      "put_wall": "770",
+      "king_node": "770",
+      "expected_move": null,
+      "net_gex": "-904M",
+      "regime": "under flip / all 3 mkts neg",
+      "posted_pt": "2026-10-29 08:45",
+      "url": "https://x.com/GEXEdgeIO/status/2115832316690055332",
+      "note": "Stale vs 10/30 tape; last published GEX update was Oct 29"
+    }
+  ],
+  "notes": {
+    "GEXEdgeIO": "STALE \u2014 last public GEX table Oct 29 (spot ~770); no fresh Oct 30 table found",
+    "VoltickIO_logged_in": "NEEDS MANUAL PULL \u2014 public scorecard/posts used; Amped logged-in dashboard not accessed (no login)",
+    "asof_pt": "2026-10-30 21:00 PT"
+  }
+}

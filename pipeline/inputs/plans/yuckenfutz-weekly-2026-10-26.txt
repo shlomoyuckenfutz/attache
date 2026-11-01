@@ -1,0 +1,72 @@
+YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Oct 26 to Fri Oct 30, 2026
+Paper/plan only — not investment advice · Spots = Fri close unless noted · gamma = full open-interest book
+Fri close: SPY 759.97 · QQQ 704.88 · /ES 7659.75 · /NQ 29117.75
+Cash close Fri: S&P 7,624 (−0.52%) · Nasdaq 25,955 (−0.21%) · Dow 52,215 (−1.23%)
+Sunday overnight (as of 3:40 PM PT): /ES 7692.50 (range 7680.50–7695) · /NQ ~29293 (range 29228.25–29304), both green and inside Friday's range
+
+BIAS (WEEK)
+Chop-or-correct week. Sellers own the short term: the ES range shelf at 7677 was flushed, SPY closed under 760 and the big 762.27 block, QQQ lost 707 and its 20-week average. The monthly is still higher-lows until ES 7575 breaks. Monday bounce odds are high (VIX spike setup, and futures opened green right back over 7677), but treat it as a bounce into resistance until ES clears 7705–10 and holds. Everything is negative gamma under the flips, so expect bigger ranges and don't chase green candles.
+SPY pivot for the week is 758.52 (daily uptrend broke, extended down into inverted H&S support). Holds Monday → bullish-neutral for a bounce. Fails → 754.62 → 750.04.
+Macro: Brent ~116.72 (up ~6% on the week, near a 6-month high) on Middle East / Hormuz risk keeps inflation fear alive and pressures risk. Fed is at 3.75–4.00% after the Sept hike. Tech: sell the AI/tech earnings pops until the tape changes.
+
+SCENARIOS
+- Bull: ES holds 7675–77 and accepts above 7705–10 → 7731 → 7751–55 gap fill (reclaim of 7751 = real bullish shift) → 7803. SPY 765–765.27 → 768.6–769.05 → 770 call wall → 773.9. QQQ 710 → 715–718 → 720 wall. NQ ~29320 → ~29520 → ~29740.
+- Bear: rejection at ES 7690–7710 then loss of 7675 → 7656 → 7649 → 7636/7635 → 7616 → 7575 (break of 7575 ends the monthly up-structure). SPY under 758.52 → 757–755 (754.62) → 753–751 → 750.04 / 750 put wall → 748–747 (prior FOMC lows). QQQ 699 → 695 → 685. NQ ~28875 → ~28710 → ~28295.
+- FOMC (Wed, 11 AM PT statement, 11:30 presser): hawkish → SPY 745–750 by Friday, ES ~7520–7560. Dovish → stay of execution, chop back inside the range (SPY 760–770, ES 7677–7755), not new highs. Weekly close under SPY 760 → correction risk opens up into November.
+
+KEY LEVELS
+
+/ES
+- Resistance: 7697 (Fri high) · 7705–7710 (must clear) · 7731 · 7751–7755 (gap fill) · 7803 · 7835 magnet · 7890 range top
+- Pivot: 7690 (last week's most-traded price) / 7675–7677 (last week's value low, Fri opening-range high, 5-touch shelf)
+- Support: 7656 · 7649 · 7636/7635 · 7616 · 7575 (Sept low, line in the sand)
+
+SPY (spot 759.97)
+- Resistance: 762.27 · 763.34 · 765–765.27 (bounce target, heavy calls) · 768.58–769.05 · 770 call wall · 773.91 · 774.7 gamma flip
+- Pivot: 758.52 (weekly pivot) · 760 / 760.29 (gamma pin, H&S neckline) just above it
+- Support: 757.43 · 757–755 (100 DMA, 20-week SMA, 755 put wall, 754.62) · 753–751 (20-week EMA) · 750.04 / 750 put wall / magnet · 748–747 (prior FOMC lows)
+- Gamma: flip 774.7 (well under it) · call wall 770 · put wall 750 · net −$14.0B
+- Options idea: over 758.52 → 760–765 weekly calls · under 758.52 → 755–750 weekly puts
+- /ES equivalents (~0.0992): 758.52 ≈ ~7646 · 765.27 ≈ ~7714 · 769.05 ≈ ~7752 · 754.62 ≈ ~7607 · 750.04 ≈ ~7561
+
+QQQ (spot 704.88)
+- Resistance: 707.27 · 710 · 715–718 (20-week SMA ~718) · 720 call wall · 730.5 gamma flip
+- Support: 700 put wall / magnet · 699.07 · 695 · 685.22 · 676 (200 DMA)
+- Gamma: flip 730.5 · call wall 720 · put wall 700 · net −$5.8B
+
+/NQ (thin — most levels derived from QQQ at ~41.3x, marked ~)
+- Resistance: 29304 (overnight high) · 29320–29326 (bearish daily FVG + Fri high) · ~29520 (gap midpoint, ≈QQQ 715–718) · ~29740 (≈QQQ 720 wall)
+- Support: 29228 (overnight low) · ~28915 (≈QQQ 700 wall) · ~28875 (≈QQQ 699) · 28987 (Fri low) · ~28710 (≈QQQ 695) · ~28295 (≈QQQ 685)
+
+SPX (for reference, Fri cash close 7,624): flip ~7748 · call wall 8000 · put walls 7700 / 7600 · magnet 7500 · net −$54B
+
+KEY NAMES (earnings week)
+- META pivot 634.29: hold → 660.81 → 686.42 · lose → 615.89 → 600.82
+- GOOGL pivot 319.96 (reports Wed after close): hold → 327.92 → 335.52 · lose → 314.08 → 306.31
+- AMZN pivot 248.81 (reports Thu after close): hold → 254.99 → 259.66 · lose → 244.25 → 238.17
+- Bias on all three: bullish-neutral only if the pivot holds early week; fade earnings pops per the tech thesis
+
+DAY BY DAY
+- Mon 10/26: Bounce day expected. Overnight already back over 7677. Map: 7690 → 7697 → 7705–10; SPY must hold 758.52, then 762.27 → 765.27; NQ test of 29320. Fade a rejection at 7705–10 / 29320 back to 7677. Only lean long above 7710 with acceptance.
+- Tue 10/27: Flat/chop pre-FOMC (Durable Goods, Consumer Confidence, New Home Sales; BA, KO, V earnings). Level to level, smaller size.
+- Wed 10/28: FOMC 11 AM PT (range 3.75–4.00%), presser 11:30. No new entries 10:45–11:45 PT. MSFT and GOOGL after the close (sell-the-pop setup). This is the day the week gets decided.
+- Thu 10/29: GDP + PCE + Claims at 5:30 AM PT; AMZN after the close (watch 248.81). Follow-through or reversal of the Fed move. Bear path has red here.
+- Fri 10/30: ECI, XOM/CVX earnings, month-end. Positioning points to a ~755 SPY finish if nothing changes. Expect a bounce attempt into the close if the week sells.
+
+TRIGGERS / IF-THEN
+1. ES holds 7675–77 and reclaims 7705–10 → 7731 → 7751–55; add only on acceptance over 7710 (not the first poke)
+2. ES rejected 7690–7710 and loses 7677 → short toward 7656 → 7649; under 7649 → 7636 → 7616
+3. Flush into 7636/7635 that recovers → bounce long back to 7656/7677, level to level
+4. SPY holds 758.52 Monday → 762.27 → 765.27 → 769.05; failure at 765 → back to 760 pin
+5. SPY loses 758.52 → 754.62 → 750.04; that's the bear path confirming
+6. SPY weekly close under 760 with QQQ still under 718 → correction mode, sell rips
+7. QQQ/NQ: reject 710 / ~29320 → 700 / ~28915; acceptance over 718 / ~29520 → 720 wall
+8. Under ES 7575 → bear regime, no hero longs
+9. Brent breaks out over ~117 → lean bear across the board; Brent rejection → supports the bounce
+
+SKIP
+- Chasing Monday's green into 7705–10 / 29320 without acceptance
+- Any new entry in the 15 min either side of the FOMC statement
+- Buying AI/tech earnings pops after MSFT/GOOGL/AMZN prints
+- Knife-catching SPY 750 / ES ~7560 on a full-speed elevator
+- Swing size this week: day-trade week, take profits level to level

@@ -1,0 +1,71 @@
+name: attache-refresh
+
+on:
+  schedule:
+    # US market window every 15 min (PDT mapping): 6:00 AM–1:15 PM PT = 13:00–20:15 UTC Mon–Fri.
+    # DST note: when Pacific is PST (UTC-8), wall-clock coverage shifts one hour later in PT
+    # (7:00 AM–2:15 PM PT). Re-bump crons after the fall-back if strict 6:00–1:15 PT is required year-round.
+    - cron: '0,15,30,45 13-19 * * 1-5'   # 13:00–19:45 UTC
+    - cron: '0,15 20 * * 1-5'             # 20:00 and 20:15 UTC
+    # Hourly otherwise (nights, early morning, weekends). Overlaps market window; concurrency dedupes.
+    - cron: '5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: attache-refresh
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Python deps
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Class-A refresh
+        env:
+          ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+          ATOUCHE_STUDY_PASSWORD: ${{ secrets.ATOUCHE_STUDY_PASSWORD }}
+        run: bash pipeline/refresh.sh
+
+      - name: Commit & push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "attache-refresh"
+          git config user.email "attache-refresh@users.noreply.github.com"
+          # Never commit runtime secrets or rolling bar cache
+          rm -f pipeline/desk/secrets/study_password.txt
+          git add -A
+          git reset -- pipeline/desk/secrets/study_password.txt \
+                       pipeline/cache \
+                       pipeline/desk/equity_orb15/data/*.parquet \
+                       pipeline/desk/python/data/*.parquet 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No site changes to commit"
+            exit 0
+          fi
+          git commit -m "attache-refresh: class-A update [skip ci]"
+          git push origin HEAD:main

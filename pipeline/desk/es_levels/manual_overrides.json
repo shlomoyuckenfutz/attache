@@ -1,0 +1,30 @@
+{
+ "note": "Manual IRON LADDER pins (Everett). Applied after source levels on every build; pinned roles override above/below logic. pinned.key = KEY levels (always flagged KEY).",
+ "pinned": {
+  "support": [
+   7620,
+   7680,
+   7705,
+   7719,
+   7729,
+   7766,
+   7782
+  ],
+  "resistance": [
+   7801,
+   7820,
+   7834,
+   7847,
+   7862,
+   7870,
+   7879,
+   7887
+  ],
+  "key": [
+   7680
+  ]
+ },
+ "pinned_only": true,
+ "dedupe_pts": 2,
+ "stale_pct": 3.0
+}

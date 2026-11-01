@@ -1,0 +1,1497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="robots" content="noindex,nofollow"/>
+<title>ATTACHÉ // DEALER HEAT</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script src="https://unpkg.com/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+<style>
+
+:root{
+  --bg:#000; --panel:#070707; --panel2:#0c0c0c; --ln:#232323; --ln2:#333;
+  --amb:#ffb000; --amb2:#a87400; --txt:#e6e0cc; --mut:#857d6a; --mut2:#6a6354;
+  --up:#3ddc5c; --dn:#ff4d4d; --neg:#c084fc; --pos:#3ddc5c; --acc:#22c7e8;
+  --cy:#22c7e8; --hd:#120d00; --king:#ffd24a; --spot:#22c7e8;
+  --rad:0; --gap:8px; --pad:8px;
+  --fs-xs:10px; --fs-sm:11px; --fs:12px; --fs-md:14px; --fs-lg:18px; --fs-xl:26px;
+  --fs-s:11px; --fs-l:15px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--amb);font:var(--fs)/1.45 'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+a{color:var(--cy);text-decoration:none}a:hover{text-decoration:underline}
+
+/* Header bar — match Terminal */
+.top,.topnav{
+  position:sticky;top:0;z-index:20;background:#000;border-bottom:1px solid var(--amb2);
+  padding:6px 10px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0;
+}
+.brand{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:3px;color:#000;background:var(--amb);padding:1px 8px}
+.brand h1{margin:0;font-size:var(--fs);letter-spacing:3px;color:#000;font-weight:700}
+.badge{background:#000;color:var(--amb);font-weight:700;font-size:var(--fs-xs);padding:1px 6px;border:1px solid var(--amb2);letter-spacing:.08em;border-radius:0}
+.top>small,.topnav>small{color:var(--mut)}
+.chip-bar,.tickers{
+  display:flex;flex-wrap:nowrap;gap:0;overflow:auto;border-bottom:1px solid var(--ln);
+  background:#050505;padding:0;white-space:nowrap;
+}
+.tabs{display:flex;flex-wrap:wrap;gap:4px;margin-left:0;background:transparent;border:0;border-radius:0;padding:0}
+.tabs button{
+  appearance:none;border:1px solid var(--ln2);background:#0a0a0a;color:var(--mut);
+  border-radius:0;padding:3px 10px;font:inherit;font-weight:600;cursor:pointer;min-height:26px;
+}
+.tabs button.on{background:var(--amb);color:#000;border-color:var(--amb)}
+.tabs button:hover:not(.on){color:var(--amb);border-color:var(--amb2)}
+.ts{margin-left:auto;color:var(--mut);font-size:var(--fs-sm)}.ts b{color:var(--txt);font-weight:500}
+.sub{color:var(--mut);font-size:var(--fs-sm);margin:0;padding:4px 10px;border-bottom:1px solid var(--ln)}
+
+.wrap{max-width:none;margin:0;padding:8px;display:flex;flex-direction:column;gap:8px}
+.panel{
+  background:var(--panel);border:1px solid var(--ln);border-radius:0;padding:0;margin:0;
+  box-shadow:none;overflow:hidden;
+}
+.panel>.row,.panel>.price-card,.panel>.walls,.panel>.range,.panel>.setup,
+.panel>.scan,.panel>.ant-head,.panel>.ant-howto,.panel>.ant-legend,
+.panel>.ant-mas,.panel>.ant-scrub,.panel>.ant-outlook,.panel>.ant-note,
+.panel>.guide,.panel>.recap,.panel>.placeholder,.panel>.loading,.panel>.empty,
+.panel>#gridWrap,.panel>#plotly3d,.panel>#antHost,
+.panel>.grid-legend,.panel>.hm-em-legend,.panel>.note,.panel>.chips,
+.panel>.search,.panel>#loadNote,.panel>.seg,.panel>.zoom{
+  /* content padding via children */
+}
+/* panel body padding for direct content blocks */
+.panel > .row,
+.panel > .chips,
+.panel > .note,
+.panel > .sub,
+.panel > .price-card,
+.panel > .walls,
+.panel > .range,
+.panel > .setup,
+.panel > .grid-legend,
+.panel > .hm-em-legend,
+.panel > .scan,
+.panel > .placeholder,
+.panel > .loading,
+.panel > .empty,
+.panel > .ant-head,
+.panel > .ant-howto,
+.panel > .ant-legend,
+.panel > .ant-mas,
+.panel > .ant-scrub,
+.panel > .ant-outlook,
+.panel > .ant-note,
+.panel > .guide,
+.panel > .recap,
+.panel > h2,
+.panel > p,
+.panel > .seg,
+.panel > .zoom,
+.panel > #loadNote{padding-left:8px;padding-right:8px}
+.panel > .row{padding-top:8px}
+.panel > .chips{padding-bottom:8px}
+.panel > .walls,.panel > .range{padding:8px}
+.panel > .price-card{padding:8px}
+.panel > .scan{padding:8px}
+.panel > .ant-head{padding:8px 8px 0}
+.panel > .ant-howto,.panel > .ant-legend,.panel > .ant-mas{margin-left:8px;margin-right:8px}
+.panel > .ant-scrub,.panel > .ant-outlook,.panel > .ant-note{margin:8px}
+.panel > #gridWrap,.panel > #plotly3d,.panel > #antHost{margin:0 8px 8px;border-radius:0}
+.panel > .grid-legend,.panel > .hm-em-legend,.panel > .note{padding-bottom:6px}
+.panel.guide,.panel.recap{padding:10px}
+.panel.price-card{display:grid;grid-template-columns:1.15fr 1fr;gap:12px;padding:8px}
+/* faux panel header strip when first child is a labeled block */
+.ph{
+  display:flex;justify-content:space-between;gap:8px;align-items:baseline;
+  background:var(--hd);border-bottom:1px solid var(--ln);padding:4px 8px;
+  font-weight:700;letter-spacing:.5px;text-transform:uppercase;font-size:var(--fs);color:var(--amb);
+}
+.ph small{color:var(--mut);font-weight:400;text-transform:none;letter-spacing:0}
+
+.row{display:flex;flex-wrap:wrap;gap:var(--gap);align-items:center}
+.search{display:flex;gap:6px;flex:1;min-width:200px;padding-top:8px}
+.search input{
+  flex:1;background:#0a0a0a;border:1px solid var(--ln2);color:var(--txt);
+  border-radius:0;padding:6px 8px;font:inherit;
+}
+.btn, .chip, .seg button{
+  appearance:none;border:1px solid var(--ln2);background:#0a0a0a;color:var(--amb);
+  border-radius:0;padding:4px 10px;font:inherit;cursor:pointer;min-height:28px;
+  transition:border-color .12s,color .12s,background .12s;font-weight:600;font-size:var(--fs-sm);
+}
+.btn:hover,.chip:hover,.seg button:hover{border-color:var(--amb2);color:var(--amb)}
+.btn.primary{background:var(--amb);color:#000;border-color:var(--amb);font-weight:700}
+.chips{
+  display:flex;flex-wrap:nowrap;gap:0;margin:0;max-height:none;overflow:auto;
+  border:1px solid var(--ln);border-left:0;border-right:0;background:#050505;
+  padding:0!important;
+}
+.chip{
+  padding:4px 10px;font-size:var(--fs-sm);border-radius:0;border:0;
+  border-right:1px solid var(--ln);background:transparent;color:var(--mut);min-height:28px;
+}
+.chip.on,.seg button.on{background:var(--amb);color:#000;border-color:var(--amb);font-weight:700}
+.chip.on{border-right:1px solid var(--amb2)}
+
+@media(max-width:860px){.price-card,.panel.price-card{grid-template-columns:1fr}}
+.px .sym{font-size:13px;font-weight:700;letter-spacing:.08em;color:var(--mut)}
+.px .price{font-size:var(--fs-xl);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em;color:var(--txt)}
+.px .chg{font-size:var(--fs-md);font-weight:700;font-variant-numeric:tabular-nums;margin-top:2px}
+.px .chg.up{color:var(--up)}.px .chg.dn{color:var(--dn)}
+.regime{display:inline-flex;align-items:center;gap:6px;padding:3px 8px;border-radius:0;font-size:var(--fs-sm);font-weight:700}
+.regime.neg{background:#1a0808;color:var(--dn);border:1px solid #5a2020}
+.regime.pos{background:#081a0e;color:var(--up);border:1px solid #205a30}
+.em{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.em span{border:1px solid var(--ln2);border-radius:0;padding:3px 8px;color:var(--mut);font-size:var(--fs-sm);background:#0a0a0a}
+.em span.d{border-color:var(--amb2);color:var(--amb)}.em span.w{border-color:#5a4a20;color:#e6c86a}
+.em span.m{border-color:#5a3a20;color:#f0a060}.em span.a{border-color:#5a2030;color:#f090a0}
+.em b{color:var(--txt);font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+@media(max-width:700px){.stats{grid-template-columns:1fr}}
+.stat{background:var(--panel2);border:1px solid var(--ln);border-radius:0;padding:8px}
+.stat .lbl{color:var(--mut);font-size:var(--fs-xs);letter-spacing:.1em;font-weight:700;text-transform:uppercase}
+.stat .val{font-size:var(--fs-lg);font-weight:700;margin-top:4px;font-variant-numeric:tabular-nums;color:var(--txt)}
+.stat .val.dn{color:var(--dn)}.stat .val.up{color:var(--up)}.stat .val.king{color:var(--king)}
+.setup{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch;margin-top:8px}
+.setup .box{flex:1;min-width:220px;background:var(--panel2);border:1px solid var(--ln);border-radius:0;padding:8px}
+.setup .tag{font-size:20px;font-weight:700;letter-spacing:.03em;color:var(--amb)}
+.trinity{min-width:190px;background:#100c00;border:1px solid var(--amb2);border-radius:0;padding:8px}
+.trinity .t{color:var(--amb);font-weight:700;font-size:13px}
+.walls{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.walls .w{background:var(--panel2);border:1px solid var(--ln);border-radius:0;padding:8px;text-align:center}
+.walls .w .lbl{color:var(--mut);font-size:var(--fs-xs);letter-spacing:.1em;font-weight:700;text-transform:uppercase}
+.walls .w .n{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:4px;color:var(--txt)}
+.walls .w.call .n{color:var(--up)}.walls .w.put .n{color:var(--dn)}.walls .w.zg .n{color:var(--txt)}
+.range{margin-top:10px}
+.range .bar{position:relative;height:10px;border-radius:0;background:linear-gradient(90deg,#5a2020,#1a1a1a,var(--amb2));border:1px solid var(--ln2)}
+.range .dot{position:absolute;top:50%;width:10px;height:10px;border-radius:0;background:var(--amb);border:1px solid #000;transform:translate(-50%,-50%);box-shadow:0 0 6px rgba(255,176,0,.45)}
+.seg{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:6px 0}
+.seg label{color:var(--mut2);margin-right:4px;font-size:var(--fs-xs);letter-spacing:.08em;font-weight:700;text-transform:uppercase}
+.seg.group{background:#0a0a0a;border:1px solid var(--ln);border-radius:0;padding:2px;display:inline-flex;flex-wrap:wrap}
+.seg.group button{border:0;background:transparent;border-radius:0;min-height:26px;padding:4px 10px;color:var(--mut)}
+.seg.group button.on{background:var(--amb);color:#000}
+.zoom{display:inline-flex;gap:3px;margin-left:auto}
+.zoom button{min-width:36px;font-weight:700}
+/* Heatmap compact control toolbar */
+.hm-toolbar{
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;
+  padding:6px 8px;row-gap:6px;
+}
+.hm-toolbar .seg{margin:0;flex-wrap:nowrap;gap:4px;align-items:center}
+.hm-toolbar .seg label{
+  margin:0 2px 0 0;font-size:9px;letter-spacing:.1em;line-height:1;white-space:nowrap;
+  color:var(--mut2);
+}
+.hm-toolbar .seg.group{flex-wrap:nowrap}
+.hm-toolbar .seg.group button{
+  min-height:28px;height:28px;padding:4px 10px;font-size:var(--fs-sm);line-height:1;
+}
+.hm-toolbar select{
+  height:28px;min-height:28px;padding:2px 6px;font-size:var(--fs-sm);margin-left:2px;
+}
+.hm-toolbar .zoom{margin-left:auto;align-items:center}
+.hm-toolbar .zoom .btn{
+  min-height:28px;height:28px;padding:4px 10px;min-width:36px;
+}
+.hm-meta{
+  display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;
+  padding:0 8px 6px;
+}
+.hm-meta .note{margin:0;flex:1 1 200px;min-width:0;line-height:1.3;padding:0}
+.hm-meta .grid-legend{margin:0;flex:1 1 220px;min-width:140px;padding:0}
+#gridWrap{overflow:auto;max-height:72vh;border:1px solid var(--ln);border-radius:0;background:#050505;position:relative}
+.grid-legend{display:flex;align-items:center;gap:10px;margin:8px 0;font-size:var(--fs-xs);color:var(--mut)}
+.grid-legend .scale{flex:1;height:6px;border-radius:0;background:linear-gradient(90deg,#5a2020,#1a1a1a,var(--amb))}
+table.hm{border-collapse:separate;border-spacing:0;width:max-content;min-width:100%;font-size:11px;font-variant-numeric:tabular-nums}
+table.hm th,table.hm td{border-right:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;padding:4px 6px;text-align:right;position:relative;min-width:72px;height:26px;color:var(--txt)}
+table.hm th.stk,table.hm td.stk{position:sticky;left:0;z-index:2;background:#0a0a0a;text-align:left;font-weight:700;min-width:64px;border-right:1px solid var(--ln2);color:var(--amb)}
+table.hm thead th{position:sticky;top:0;z-index:3;background:#101010;color:var(--amb);text-align:center;font-weight:700;letter-spacing:.04em;text-transform:uppercase;font-size:var(--fs-xs)}
+table.hm thead th.stk{z-index:4}
+table.hm tr.spot td{box-shadow:inset 0 0 0 1px var(--spot);background:rgba(34,199,232,.10)}
+table.hm tr.spot td.stk{color:var(--cy)}
+table.hm td.king{box-shadow:inset 0 0 0 2px var(--king),0 0 10px rgba(255,210,74,.2);background:rgba(255,210,74,.12)!important}
+table.hm .pct{display:block;font-size:9px;color:var(--mut2);margin-top:1px;line-height:1}
+table.hm .pct.up{color:var(--up)}.table.hm .pct.dn,table.hm .pct.dn{color:var(--dn)}
+table.hm td.em-mark::before{content:attr(data-em);position:absolute;left:2px;top:1px;font-size:8px;color:var(--amb);font-weight:800}
+#plotly3d{height:520px;border:1px solid var(--ln);border-radius:0;margin-top:8px;background:#050505}
+.scan{display:flex;flex-direction:column;gap:6px}
+.scard{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;background:var(--panel2);border:1px solid var(--ln);border-radius:0;padding:8px;cursor:pointer;transition:border-color .12s}
+.scard:hover{border-color:var(--amb2)}
+.pull{width:44px;height:44px;border-radius:0;display:flex;align-items:center;justify-content:center;background:#100c00;color:var(--amb);font-weight:700;border:1px solid var(--amb2);font-size:13px}
+.bar{height:6px;background:#1a1a1a;border-radius:0;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--amb),var(--up))}
+.placeholder{border:1px dashed var(--ln2);border-radius:0;padding:28px;text-align:center;color:var(--mut);background:#050505}
+.placeholder b{color:var(--txt);display:block;margin-bottom:6px;font-size:var(--fs-md)}
+.guide h2,.recap h2{color:var(--amb);font-size:13px;letter-spacing:.08em;margin:0 0 8px;text-transform:uppercase}
+.guide h3{color:var(--cy);font-size:12px;margin:14px 0 6px}
+.guide p,.guide li{color:var(--mut)}
+.guide .tagpill{display:inline-block;padding:2px 8px;border-radius:0;border:1px solid var(--ln2);margin:2px 4px 2px 0;color:var(--txt)}
+#tip{position:fixed;z-index:80;display:none;background:#0a0a0a;border:1px solid var(--amb2);padding:8px 10px;border-radius:0;max-width:280px;pointer-events:none;box-shadow:0 8px 24px rgba(0,0,0,.6);font-size:var(--fs-sm);line-height:1.4;color:var(--txt)}
+.hidden{display:none!important}
+#antHost{height:580px;border:1px solid var(--ln);border-radius:0;background:#050505;position:relative;overflow:hidden}
+#antChart{position:absolute;inset:0;z-index:1}
+#antOverlay{position:absolute;inset:0;z-index:2;pointer-events:none}
+.ant-panels{position:absolute;inset:8px 8px auto 8px;display:flex;justify-content:space-between;gap:8px;pointer-events:none;z-index:4}
+.ant-card{background:rgba(0,0,0,.88);border:1px solid var(--ln2);border-radius:0;padding:8px 10px;backdrop-filter:none;min-width:168px;box-shadow:none}
+.ant-card .ttl{font-size:10px;letter-spacing:.08em;color:var(--mut);font-weight:700;margin-bottom:4px;text-transform:uppercase}
+.div-row{display:flex;justify-content:space-between;gap:14px;font-size:11px;margin:3px 0;font-variant-numeric:tabular-nums;color:var(--txt)}
+.div-row .ok{color:var(--up)}.div-row .bad{color:var(--dn)}.div-row .na{color:var(--mut2)}
+.ant-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:8px}
+.ant-head h2{margin:0;font-size:15px;letter-spacing:.06em;color:var(--amb);text-transform:uppercase}
+.ant-howto{border:1px solid var(--ln);border-radius:0;background:#0a0a0a;margin:8px 0}
+.ant-howto summary{cursor:pointer;padding:8px 10px;color:var(--amb);font-weight:700;list-style:none;background:var(--hd);border-bottom:1px solid var(--ln)}
+.ant-howto summary::-webkit-details-marker{display:none}
+.ant-howto .body{padding:8px 10px;color:var(--mut);font-size:var(--fs-sm);line-height:1.5}
+.ant-legend{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:8px 0;font-size:11px;color:var(--mut)}
+.ant-legend i{display:inline-block;width:10px;height:10px;border-radius:0;margin-right:5px;vertical-align:-1px}
+.ant-legend .dot-pos{background:#22d3ee}.ant-legend .dot-neg{background:#a855f7}
+.ant-legend .dot-king{background:var(--king)}.ant-legend .dot-ctr{background:#fff}
+.ant-legend .dot-path{width:16px;height:0;border-top:2px dotted var(--king);border-radius:0;vertical-align:middle}
+.ant-mas{display:flex;flex-wrap:wrap;gap:10px;font-size:11px;color:var(--mut);font-variant-numeric:tabular-nums}
+.ant-mas b{color:var(--txt);font-weight:700}
+.ant-scrub{display:flex;align-items:center;gap:10px;margin-top:8px;padding:6px 8px;background:#0a0a0a;border:1px solid var(--ln);border-radius:0}
+.ant-scrub input[type=range]{flex:1;accent-color:var(--amb)}
+.ant-outlook{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}
+.ant-outlook .cell{background:#0a0a0a;border:1px solid var(--ln);border-radius:0;padding:8px}
+.ant-outlook .cell .lbl{font-size:10px;letter-spacing:.08em;color:var(--mut);font-weight:700;text-transform:uppercase}
+.ant-outlook .cell .val{font-size:15px;font-weight:700;margin-top:4px;font-variant-numeric:tabular-nums;color:var(--txt)}
+.ant-note{font-size:10px;color:var(--mut2);margin-top:8px}
+.foot,.ft{margin-top:8px;color:var(--mut);font-size:var(--fs-xs);border-top:1px solid var(--ln);padding:8px 10px}
+.err{color:var(--dn)}
+select{background:#0a0a0a;border:1px solid var(--ln2);color:var(--txt);border-radius:0;padding:5px 8px;font:inherit}
+.empty{padding:24px;text-align:center;color:var(--mut)}
+.loading{padding:20px;color:var(--mut);text-align:center}
+.note{font-size:var(--fs-xs);color:var(--mut);margin:6px 0}
+
+#antHost a, #antChart a{display:none!important}
+.tz-badge{position:absolute;left:8px;bottom:36px;z-index:5;font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--amb);background:rgba(0,0,0,.85);border:1px solid var(--amb2);border-radius:0;padding:2px 6px;pointer-events:none}
+table.hm tr.em-bound td{box-shadow:inset 0 1px 0 rgba(255,176,0,.55), inset 0 -1px 0 rgba(255,176,0,.25)}
+table.hm tr.em-bound td.stk{color:var(--amb)}
+.hm-em-legend{font-size:10px;color:var(--mut);margin:4px 0 0}
+@media(max-width:768px){
+  .hm-toolbar{gap:6px 8px;row-gap:8px}
+  .hm-toolbar .seg.group button,
+  .hm-toolbar .zoom .btn{
+    min-height:36px;height:36px;padding:6px 10px;
+  }
+  .hm-toolbar select{height:36px;min-height:36px;padding:4px 8px}
+  .hm-toolbar .zoom{margin-left:0}
+}
+@media(max-width:700px){
+  .stats{grid-template-columns:1fr 1fr}
+  .walls{grid-template-columns:1fr}
+  .scard{grid-template-columns:44px 1fr;gap:8px}
+  .scard .pull{grid-row:span 2}
+  #plotly3d{height:380px}
+  .em span{font-size:10px;padding:3px 6px}
+  .price-card,.panel.price-card{gap:8px}
+  .ant-panels{flex-direction:column;align-items:stretch}
+  .ant-card{min-width:0}
+  .chips{flex-wrap:wrap}
+}
+@media(max-width:520px){
+  .wrap{padding:6px}
+  .tabs button{padding:4px 8px;font-size:11px}
+  .px .price{font-size:22px}
+  #antHost{height:440px}
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top" id="topBar">
+    <span class="brand">ATTACHÉ</span>
+    <small>DEALER HEAT</small>
+    <span class="badge">OPTIONS</span>
+    <nav class="tabs" id="mainTabs">
+      <button data-view="heatmap" class="on">Heatmap</button>
+      <button data-view="attache">Attaché</button>
+      <button data-view="scanner">Scanner</button>
+      <button data-view="guide">Guide</button>
+      <button data-view="recap">Recap</button>
+    </nav>
+    <span class="ts" id="metaLine">loading…</span>
+  </header>
+
+  <section id="view-heatmap">
+    <div class="panel">
+      <div class="row">
+        <div class="search"><input id="tickerIn" value="SPY" placeholder="Ticker (board or free-text)"/><button class="btn primary" id="loadBtn">Load</button></div>
+      </div>
+      <div class="chips" id="chipRow"></div>
+      <div class="note" id="loadNote"></div>
+    </div>
+    <div class="panel price-card">
+      <div class="px">
+        <div class="sym" id="hmSym">—</div>
+        <div class="price" id="hmPrice">—</div>
+        <div class="chg" id="hmChg">—</div>
+        <div id="hmTs" class="sub"></div>
+        <div style="margin-top:8px"><span class="regime neg" id="hmRegime">—</span></div>
+        <div class="em" id="hmEm"></div>
+      </div>
+      <div>
+        <div class="stats" id="hmStats"></div>
+        <div class="setup">
+          <div class="box"><div class="lbl" style="color:var(--mut);font-size:10px;letter-spacing:.08em">SETUP</div><div class="tag" id="hmSetup">—</div><div class="sub" id="hmSetupD"></div></div>
+          <div class="trinity" id="hmTrinity">—</div>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="walls" id="hmWalls"></div>
+      <div class="range"><div class="sub" id="hmRangeLbl"></div><div class="bar" id="hmRange"><div class="dot" id="hmDot"></div></div></div>
+    </div>
+    <div class="panel">
+      <div class="hm-toolbar" role="toolbar" aria-label="Heatmap controls">
+        <div class="seg"><label>METRIC</label><span class="seg group" id="metricSeg">
+          <button data-m="gex" class="on">GEX</button><button data-m="vex">VEX</button><button data-m="dex">DEX</button><button data-m="charm">Charm</button>
+        </span></div>
+        <div class="seg"><label>EXPIRY</label><span class="seg group" id="expSeg">
+          <button data-e="all" class="on">All exp</button><button data-e="week">This week</button><button data-e="next">Next exp</button>
+        </span>
+        <select id="expDate"><option value="">Date…</option></select></div>
+        <div class="seg"><label>VIEW</label><span class="seg group" id="viewSeg">
+          <button data-v="grid" class="on">Grid</button><button data-v="3d">3D Surface</button>
+        </span></div>
+        <div class="seg"><label>MODE</label><span class="seg group" id="modeSeg">
+          <button data-mode="value" class="on">Value</button><button data-mode="delta">Δ since open</button>
+        </span></div>
+        <div class="seg"><label>FEED</label><span class="seg group" id="feedSeg">
+          <button data-feed="live" class="on">Live</button><button data-feed="velocity">Velocity</button>
+        </span></div>
+        <span class="zoom">
+          <button class="btn" id="zoomOut" title="Zoom out">−</button>
+          <button class="btn" id="zoomIn" title="Zoom in">+</button>
+          <button class="btn" id="zoomReset">Reset</button>
+        </span>
+      </div>
+      <div class="hm-meta">
+        <div class="note" id="modeNote"></div>
+        <div class="grid-legend"><span>−</span><div class="scale"></div><span>+</span><span id="legendMax" style="margin-left:8px"></span></div>
+      </div>
+      <div id="gridWrap"><div id="gridHost" class="loading">Loading grid…</div></div>
+      <div id="plotly3d" class="hidden"></div>
+    </div>
+  </section>
+
+  <section id="view-attache" class="hidden">
+    <div class="panel">
+      <div class="ant-head">
+        <h2>Attaché</h2>
+        <div class="sub" id="antMeta" style="margin:0">—</div>
+      </div>
+      <details class="ant-howto">
+        <summary>? How to read Attaché</summary>
+        <div class="body">
+          Candles are Alpaca 5-minute bars for the session. Colored bubbles mark dealer exposure nodes at each strike — cyan/teal = positive γ, purple = negative γ, gold = King.
+          The white line is the exposure-weighted center. Path to King projects from last print toward the King strike.
+          The right-edge cone is the daily expected-move (±1σ / ±2σ) from the options straddle. Divergence summarizes short-horizon momentum vs the King regime.
+          When book snapshots are sparse, bubble sizes are reconstructed across candles from available snapshots and labeled as approximate.
+        </div>
+      </details>
+      <div class="row" style="margin-top:8px">
+        <div class="search"><input id="antIn" value="SPY"/><button class="btn primary" id="antLoad">Load</button></div>
+        <div class="seg"><label>METRIC</label><span class="seg group" id="antMetric">
+          <button data-m="gex" class="on">GEX</button><button data-m="vex">VEX</button><button data-m="combined">Combined</button>
+        </span></div>
+        <div class="seg"><label>EXPIRY</label><span class="seg group" id="antExp">
+          <button data-e="all" class="on">All exp</button><button data-e="next">Next exp</button><button data-e="week">This week</button>
+        </span>
+        <select id="antDate"><option value="">Date…</option></select></div>
+        <label class="chip" style="display:inline-flex;align-items:center;gap:6px"><input type="checkbox" id="pathKing" checked/> Path to King</label>
+        <button class="btn" id="antReset">Reset view</button>
+        <select id="antSession"><option value="latest">Latest session</option></select>
+      </div>
+      <div class="ant-mas" id="antMas"></div>
+      <div class="ant-legend" id="antLegend">
+        <span><i class="dot-pos"></i>Positive γ</span>
+        <span><i class="dot-neg"></i>Negative γ</span>
+        <span><i class="dot-king"></i>King</span>
+        <span><i class="dot-ctr"></i>Center</span>
+        <span><i class="dot-path"></i>Path to King</span>
+      </div>
+      <div class="note" id="antBubbleNote"></div>
+    </div>
+    <div class="panel" style="padding:10px">
+      <div id="antHost">
+        <div id="antChart"></div>
+        <canvas id="antOverlay"></canvas>
+        <div class="tz-badge" id="antTz">ET</div>
+        <div class="ant-panels">
+          <div class="ant-card" id="antSetupCard">—</div>
+          <div class="ant-card" id="antDivCard">—</div>
+        </div>
+      </div>
+      <div class="ant-scrub">
+        <button class="btn primary" id="antReplay">Replay</button>
+        <input type="range" id="antSlider" min="0" max="0" value="0"/>
+        <span id="antSliderLbl" class="sub" style="min-width:88px;text-align:right">—</span>
+      </div>
+      <div id="antOutlook" style="margin-top:10px"></div>
+    </div>
+  </section>
+
+  <section id="view-scanner" class="hidden">
+    <div class="panel">
+      <h2 style="margin:0;color:var(--amb);letter-spacing:.08em;font-size:14px">King Node Scanner</h2>
+      <div class="sub" id="scanMeta"></div>
+      <div class="seg"><label>SCAN</label><span class="seg group" id="scanSlot">
+        <button data-slot="open">9:35 open</button><button data-slot="close" class="on">3:50 close</button>
+      </span></div>
+    </div>
+    <div class="scan" id="scanHost"></div>
+  </section>
+
+  <section id="view-guide" class="hidden">
+    <div class="panel guide">
+      <h2>GUIDE &amp; DEFINITIONS</h2>
+      <p>Attaché Dealer Heat is a board for dealer-signed options exposure using free delayed quotes. Not advice.</p>
+      <h3>Quick start</h3>
+      <ul>
+        <li><b>King</b> — strike with the largest absolute exposure for the active metric (usually GEX).</li>
+        <li><b>Contested</b> — second strike within ~10% of King abs value.</li>
+        <li><b>Trinity</b> — SPX / SPY / QQQ agreement on whether spot is above (bearish toward) or below (bullish toward) each King.</li>
+        <li><b>Heatmap grid</b> — rows = strikes (high on top), columns = expirations (nearest left). Cells = signed $ exposure. Small badges = % vs session baseline.</li>
+      </ul>
+      <h3>Metrics</h3>
+      <p><b>GEX</b> = γ · OI · 100 · S² · 0.01 (calls +, puts −). <b>VEX</b> ≈ ν · OI · 100. <b>DEX</b> = Δ · OI · 100 · S. <b>Charm</b> ≈ BS ∂Δ/∂t · OI · 100 · S.</p>
+      <p><b>Expected move</b> = 0.85 × ATM straddle for daily / weekly / monthly / annual expiries. Heatmap strike axis marks <b>D/W/M/A</b> hi/lo bounds; chips above show the ranges.</p>
+      <h3>Setup tags (8)</h3>
+      <p>
+        <span class="tagpill">Trend</span><span class="tagpill">Rug Pull</span><span class="tagpill">Reverse Rug / Slingshot</span>
+        <span class="tagpill">Gatekeeper</span><span class="tagpill">Whipsaw</span><span class="tagpill">Floor Bounce</span>
+        <span class="tagpill">Beach Ball</span><span class="tagpill">Rainbow Road</span> Else <b>NO CLEAR SETUP</b>.
+      </p>
+      <h3>Views</h3>
+      <p><b>Heatmap</b> · <b>Attaché</b> · <b>Scanner</b> · <b>Recap</b>. Data ~15-min delayed · CBOE. SPXW/NDXP = weekly roots. Attaché charts use <b>America/New_York (ET)</b> session times.</p>
+    </div>
+  </section>
+
+  <section id="view-recap" class="hidden">
+    <div class="panel recap">
+      <h2>SESSION RECAP</h2>
+      <div class="row"><label class="sub">Session</label><select id="recapSel"></select></div>
+      <div id="recapHost" style="margin-top:10px"></div>
+    </div>
+  </section>
+
+  <div class="foot">
+    Attaché dealer-exposure board · free delayed data · research only · not advice.
+    Formulas in Guide. No third-party branding.
+  </div>
+</div>
+<div id="tip"></div>
+<script>
+(() => {
+  const BOARD = ["SPY","QQQ","SPXW","IWM","NDXP","DIA","SMH","TLT","GLD","SLV","XLE","TQQQ","SOXL","IBIT","NVDA","AAPL","TSLA","MSFT","AMZN","META","GOOGL","AVGO","NFLX","ORCL","AMD","MU","INTC","TSM","ARM","PLTR","COIN","MSTR","HOOD","SOFI","SMCI","CRWD","UBER","SHOP","RBLX","JPM","BAC","WMT","COST","XOM","BA","LLY","GME","RIVN","MARA","BABA"];
+  const state = {
+    view:'heatmap', sym:'SPY', metric:'gex', exp:'all', expDate:'',
+    viz:'grid', mode:'value', feed:'live', zoom:1,
+    antMetric:'gex', antExp:'all', antSym:'SPY', pathKing:true,
+    scanSlot:'close',
+    board:null, pack:null, scanner:null, recap:null, bars:null, packAnt:null,
+    antIdx:0, antChart:null
+  };
+  const $ = id => document.getElementById(id);
+  const tip = $('tip');
+
+  function fmt(v){
+    if(v==null||isNaN(v)) return '—';
+    const a=Math.abs(v), neg=v<0;
+    let s;
+    if(a>=1e9) s=(a/1e9).toFixed(2)+'B';
+    else if(a>=1e6) s=(a/1e6).toFixed(2)+'M';
+    else if(a>=1e3) s=(a/1e3).toFixed(1)+'K';
+    else s=a.toFixed(0);
+    return (neg?'-':'')+'$'+s;
+  }
+  function etParts(ms){
+    const d=new Date(ms);
+    const parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit',hour12:false,hourCycle:'h23'}).formatToParts(d);
+    const get=t=>(parts.find(p=>p.type===t)||{}).value;
+    return {h:+get('hour'), m:+get('minute'), label: `${String(get('hour')).padStart(2,'0')}:${String(get('minute')).padStart(2,'0')}`};
+  }
+  function etTimeLabel(sec){
+    return etParts(sec*1000).label + ' ET';
+  }
+  function etTickLabel(sec){
+    if(sec==null||!isFinite(sec)) return '';
+    return etParts(sec*1000).label;
+  }
+  function toUnix(t){
+    if(typeof t==='number') return t;
+    if(t && typeof t==='object' && t.year){
+      // business day — treat as noon UTC that calendar day (should not appear for intraday)
+      return Math.floor(Date.UTC(t.year, (t.month||1)-1, t.day||1, 12, 0, 0)/1000);
+    }
+    const n=Number(t); return isFinite(n)?n:Math.floor(Date.now()/1000);
+  }
+  function isRthEt(ms){
+    const {h,m}=etParts(ms);
+    const t=h*60+m;
+    return t>=9*60+30 && t<=16*60; // 9:30–16:00 ET inclusive
+  }
+  function lwcTimeOpts(){
+    return {
+      localization:{
+        locale:'en-US',
+        timeFormatter: (t)=> etTimeLabel(typeof t==='number'?t:t)
+      },
+      timeScale:{
+        borderColor:'#333', timeVisible:true, secondsVisible:false,
+        tickMarkFormatter: (t)=> etTickLabel(typeof t==='number'?t:t)
+      },
+      leftPriceScale:{ visible:false },
+      rightPriceScale:{ borderColor:'#1c2433', scaleMargins:{top:0.06, bottom:0.08} }
+    };
+  }
+  function fmtCell(v){
+    if(v==null||Math.abs(v)<500) return '–';
+    return fmt(v).replace('$','');
+  }
+  function colorScale(v,maxAbs){
+    if(!maxAbs) return '#0a0a0a';
+    const x=Math.max(-1,Math.min(1,v/maxAbs));
+    if(Math.abs(x)<0.02) return '#121212';
+    if(x<0){const a=-x; return `rgb(${Math.round(40+a*180)},${Math.round(16+a*20)},${Math.round(16+a*20)})`;}
+    const a=x; return `rgb(${Math.round(20+a*40)},${Math.round(60+a*160)},${Math.round(30+a*40)})`;
+  }
+  function nearest(arr,x){let b=arr[0]; arr.forEach(v=>{if(Math.abs(v-x)<Math.abs(b-x))b=v;}); return b;}
+  function setSeg(root, attr, key){
+    root.querySelectorAll('button').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        root.querySelectorAll('button').forEach(b=>b.classList.remove('on'));
+        btn.classList.add('on');
+        state[key]=btn.dataset[attr];
+        render();
+      });
+    });
+  }
+  function showTip(ev, html){
+    tip.style.display='block';
+    tip.style.left=Math.min(ev.clientX+12, innerWidth-260)+'px';
+    tip.style.top=Math.min(ev.clientY+12, innerHeight-100)+'px';
+    tip.innerHTML=html;
+  }
+  function hideTip(){ tip.style.display='none'; }
+
+  $('mainTabs').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{
+    state.view=b.dataset.view;
+    $('mainTabs').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));
+    ['heatmap','attache','scanner','guide','recap'].forEach(v=>$('view-'+v).classList.toggle('hidden', v!==state.view));
+    render();
+  }));
+
+  const chipRow=$('chipRow');
+  BOARD.forEach(s=>{
+    const b=document.createElement('button');
+    b.className='chip'+(s==='SPY'?' on':'');
+    b.textContent=s; b.dataset.sym=s;
+    b.onclick=()=>{ state.sym=s; $('tickerIn').value=s; loadTicker(s); chipRow.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.sym===s)); };
+    chipRow.appendChild(b);
+  });
+  $('loadBtn').onclick=()=>{ const s=($('tickerIn').value||'').trim().toUpperCase(); if(!s) return; state.sym=s; loadTicker(s); };
+  $('antLoad').onclick=()=>{ state.antSym=($('antIn').value||'SPY').trim().toUpperCase(); loadAttache(); };
+  $('pathKing').onchange=e=>{ state.pathKing=e.target.checked; drawAttacheOverlayOnly(); };
+
+  setSeg($('metricSeg'),'m','metric');
+  setSeg($('expSeg'),'e','exp');
+  setSeg($('viewSeg'),'v','viz');
+  setSeg($('modeSeg'),'mode','mode');
+  setSeg($('feedSeg'),'feed','feed');
+  setSeg($('antMetric'),'m','antMetric');
+  setSeg($('antExp'),'e','antExp');
+  setSeg($('scanSlot'),'slot','scanSlot');
+  $('expDate').onchange=e=>{ state.expDate=e.target.value; state.exp=e.target.value?'date':'all'; renderHeatmap(); };
+  $('zoomIn').onclick=()=>{ state.zoom=Math.min(2.2, state.zoom+0.15); drawGrid(state.pack); };
+  $('zoomOut').onclick=()=>{ state.zoom=Math.max(0.6, state.zoom-0.15); drawGrid(state.pack); };
+  $('zoomReset').onclick=()=>{ state.zoom=1; drawGrid(state.pack); };
+
+  async function jget(url){
+    const r=await fetch(url+(url.includes('?')?'&':'?')+'t='+Date.now());
+    if(!r.ok) throw new Error(url+' '+r.status);
+    return r.json();
+  }
+
+  async function init(){
+    try{
+      state.board=await jget('data/board.json');
+      state.scanner=await jget('data/scanner.json');
+      try{ state.recap=await jget('data/recap.json'); }catch(e){}
+      $('metaLine').textContent=`${state.board.meta.delay} · updated ${state.board.meta.updated_pt} · market ${state.board.meta.market} · ${state.board.meta.n_ok} tickers`;
+      await loadTicker('SPY');
+      renderScanner(); renderRecap();
+      await loadAttache();
+    }catch(e){
+      $('metaLine').innerHTML='<span class="err">Failed to load board: '+e+'</span>';
+    }
+  }
+
+  async function loadTicker(sym){
+    $('loadNote').textContent='';
+    try{
+      let pack;
+      try{ pack=await jget('data/t/'+sym+'.json'); }
+      catch(e){
+        $('hmSym').textContent=sym;
+        $('hmSetup').textContent='not in board';
+        // test client CBOE
+        try{
+          const path=(sym==='SPXW'||sym==='SPX')?'_SPX':(sym==='NDXP'||sym==='NDX')?'_NDX':sym;
+          const r=await fetch('https://cdn.cboe.com/api/global/delayed_quotes/options/'+path+'.json',{mode:'cors'});
+          if(!r.ok) throw new Error('cboe '+r.status);
+          await r.json();
+          $('hmSetupD').textContent='CBOE CORS OK for '+sym+', but live client compute is not enabled here. Ask collector to add this ticker on demand.';
+          $('loadNote').textContent='Free-text: CBOE reachable · run collector for '+sym+' to materialize a pack.';
+        }catch(e2){
+          $('hmSetupD').textContent='Ticker not in board · CBOE client fetch unavailable ('+e2.message+'). Run collector on demand to add it.';
+          $('loadNote').textContent='Free-text unavailable (CORS/network). Collector on-demand required.';
+        }
+        state.pack=null; return;
+      }
+      state.pack=pack;
+      chipRow.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on', c.dataset.sym===sym));
+      renderHeatmap();
+    }catch(e){
+      $('hmSetup').textContent='load error';
+      $('hmSetupD').textContent=String(e);
+    }
+  }
+
+  function trinityHTML(t){
+    if(!t) return '—';
+    const dirs=t.dirs||{};
+    const arrow=d=>d==='BEAR'?'↓':d==='BULL'?'↑':'·';
+    return `<div class="t">TRINITY ${t.agree}/${t.total}</div>
+      <div style="font-weight:800;margin:4px 0">${t.side}</div>
+      <div class="sub">SPX${arrow(dirs.SPX)} · SPY${arrow(dirs.SPY)} · QQQ${arrow(dirs.QQQ)}</div>`;
+  }
+
+  function emHTML(em){
+    if(!em) return '';
+    const bits=[];
+    const add=(k,cls,label)=>{
+      const e=em[k]; if(!e) return;
+      const lab=label||(k[0].toUpperCase()+k.slice(1));
+      bits.push(`<span class="${cls}"><b>${lab}</b> ±$${e.mv} <b>${e.lo}–${e.hi}</b> · ${(e.exp||'').toString().slice(0,10)}</span>`);
+    };
+    add('daily','d','Daily'); add('weekly','w','Weekly'); add('monthly','m','Monthly');
+    if(em.annual){
+      const e=em.annual;
+      const lab=e.label||('Annual '+String(e.exp||'').slice(0,4));
+      bits.push(`<span class="a"><b>${lab}</b> ±$${e.mv} <b>${e.lo}–${e.hi}</b>${e.approx?' · approx':''}</span>`);
+    }
+    return bits.join('');
+  }
+
+  function renderHeatmap(){
+    const p=state.pack; if(!p) return;
+    const b=state.board||{};
+    $('hmSym').textContent=p.sym;
+    $('hmPrice').textContent='$'+Number(p.spot).toLocaleString(undefined,{maximumFractionDigits:2});
+    const chg=p.chg, cp=p.chg_pct;
+    const el=$('hmChg');
+    el.textContent=`${chg>=0?'+':''}${Number(chg).toFixed(2)} (${cp>=0?'+':''}${Number(cp).toFixed(2)}%)`;
+    el.className='chg '+(cp>=0?'up':'dn');
+    $('hmTs').textContent=`${(p.market||'').toUpperCase()} · ${p.asof_pt} · ~15m delayed`;
+    const reg=$('hmRegime');
+    if(p.regime==='negative'){ reg.className='regime neg'; reg.textContent='● Negative gamma · expect bigger moves'; }
+    else { reg.className='regime pos'; reg.textContent='● Positive gamma · expect mean reversion'; }
+    $('hmEm').innerHTML=emHTML(p.em);
+
+    const metric=state.metric;
+    const net=p.net||{};
+    const king=(p.king&&p.king.gex)||{};
+    const kingLabel=`${king.k!=null?king.k:'—'}${king.contested?' — contested':''}`;
+    const alt=metric==='gex'?'vex':'gex';
+    $('hmStats').innerHTML=`
+      <div class="stat"><div class="lbl">NET ${metric.toUpperCase()}</div><div class="val ${net[metric]<0?'dn':'up'}">${fmt(net[metric])}</div></div>
+      <div class="stat"><div class="lbl">NET ${alt.toUpperCase()}</div><div class="val ${net[alt]<0?'dn':'up'}">${fmt(net[alt])}</div></div>
+      <div class="stat"><div class="lbl">ALL-EXP KING</div><div class="val king">${kingLabel}</div></div>`;
+    $('hmSetup').textContent=(p.setup&&p.setup.tag)||'NO CLEAR SETUP';
+    $('hmSetupD').textContent=(p.setup&&p.setup.detail)||'';
+    $('hmTrinity').innerHTML=trinityHTML(b.trinity);
+
+    const w=p.walls||{};
+    $('hmWalls').innerHTML=`
+      <div class="w call"><div class="lbl">CALL WALL</div><div class="n">${w.call??'—'}</div><div class="sub">${fmt(w.call_v)}</div></div>
+      <div class="w put"><div class="lbl">PUT WALL</div><div class="n">${w.put??'—'}</div><div class="sub">${fmt(w.put_v)}</div></div>
+      <div class="w zg"><div class="lbl">ZERO γ</div><div class="n">${w.zero_g??'—'}</div><div class="sub">${w.zero_g!=null?(p.spot<w.zero_g?'spot below':'spot above'):''}</div></div>`;
+    if(w.put!=null && w.call!=null && w.call!==w.put){
+      const pct=Math.max(0,Math.min(1,(p.spot-w.put)/(w.call-w.put)));
+      $('hmDot').style.left=(pct*100)+'%';
+      $('hmRangeLbl').textContent=`Spot ${p.spot} · ${Math.round(pct*100)}% of the way from put wall to call wall`;
+    } else {
+      $('hmRangeLbl').textContent='Wall range unavailable';
+      $('hmDot').style.left='50%';
+    }
+    const sel=$('expDate');
+    const exps=(p.grid&&p.grid.exps)||[];
+    const cur=sel.value;
+    sel.innerHTML='<option value="">Date…</option>'+exps.map(e=>`<option value="${e}">${e.slice(5)}</option>`).join('');
+    if(cur) sel.value=cur;
+
+    if(state.viz==='3d'){
+      $('gridWrap').classList.add('hidden'); $('plotly3d').classList.remove('hidden');
+      draw3d(p);
+    } else {
+      $('plotly3d').classList.add('hidden'); $('gridWrap').classList.remove('hidden');
+      drawGrid(p);
+    }
+  }
+
+  function filteredMatrix(p){
+    const g=p.grid; if(!g) return null;
+    let expIdx=g.exps.map((_,i)=>i);
+    if(state.exp==='week'){
+      const today=new Date();
+      expIdx=g.exps.map((e,i)=>({e,i})).filter(x=>{
+        const d=new Date(x.e+'T00:00:00');
+        const fri=new Date(today); fri.setDate(today.getDate()+((5-today.getDay()+7)%7));
+        return d<=fri;
+      }).map(x=>x.i);
+      if(!expIdx.length) expIdx=[0];
+    } else if(state.exp==='next'){ expIdx=[0]; }
+    else if(state.exp==='date' && state.expDate){
+      const i=g.exps.indexOf(state.expDate); expIdx=i>=0?[i]:[0];
+    }
+    const metric=state.metric;
+    let M=(g[metric]||g.gex).map(row=>row.slice());
+    const base=p.baseline&&p.baseline.grid;
+    let baseM=null;
+    if(base && base[metric] && base.strikes && base.exps){
+      // align baseline to current strike/exp indices
+      const bStrikeIdx=new Map(base.strikes.map((k,i)=>[k,i]));
+      const bExpIdx=new Map(base.exps.map((e,i)=>[e,i]));
+      baseM=g.strikes.map(k=>{
+        const bi=bStrikeIdx.get(k);
+        return g.exps.map(e=>{
+          const ei=bExpIdx.get(e);
+          if(bi==null||ei==null) return null;
+          return base[metric][bi][ei];
+        });
+      });
+    }
+    let matrix=M.map(row=>expIdx.map(i=>row[i]));
+    let pctMatrix=null;
+    if(baseM){
+      pctMatrix=M.map((row,si)=>expIdx.map(ei=>{
+        const cur=row[ei], b=baseM[si][ei];
+        if(b==null||Math.abs(b)<1) return null;
+        return 100*(cur-b)/Math.abs(b);
+      }));
+    }
+    if(state.mode==='delta'){
+      if(baseM){
+        matrix=M.map((row,si)=>expIdx.map(ei=>{
+          const b=baseM[si][ei];
+          return b==null?0:(row[ei]-b);
+        }));
+      }
+    }
+    // velocity: color cells by signed Δ vs baseline while keeping value labels
+    if(state.feed==='velocity' && baseM && state.mode!=='delta'){
+      matrix=M.map((row,si)=>expIdx.map(ei=>{
+        const b=baseM[si][ei];
+        return b==null?0:(row[ei]-b);
+      }));
+    }
+    return {
+      strikes:g.strikes,
+      exps:expIdx.map(i=>g.exps[i]),
+      matrix,
+      pctMatrix: pctMatrix?pctMatrix.map(row=>expIdx.map((_,j)=>row[j]!==undefined?pctMatrix[g.strikes.indexOf(g.strikes[row.__si])] : null)):null,
+      pctFull: pctMatrix,
+      pctIdx: expIdx,
+      kingK:(p.king.gex||{}).k,
+      baselineLabel: (p.baseline&&p.baseline.label)||null
+    };
+  }
+
+  function drawGrid(p){
+    const f=filteredMatrix(p); if(!f){ $('gridHost').textContent='no grid'; return; }
+    // fix pct extraction
+    const g=p.grid;
+    const base=p.baseline&&p.baseline.grid;
+    let pctAt=(si,ej)=>{
+      if(!base||!base[state.metric]) return null;
+      const k=f.strikes[si], e=f.exps[ej];
+      const bi=base.strikes.indexOf(k), ei=base.exps.indexOf(e);
+      if(bi<0||ei<0) return null;
+      const b=base[state.metric][bi][ei], cur=(g[state.metric]||g.gex)[si][g.exps.indexOf(e)];
+      if(b==null||Math.abs(b)<1) return null;
+      return 100*(cur-b)/Math.abs(b);
+    };
+
+    let maxAbs=0;
+    f.matrix.forEach(row=>row.forEach(v=>{ maxAbs=Math.max(maxAbs, Math.abs(v||0)); }));
+    $('legendMax').textContent=`scale ±${fmtCell(maxAbs)} · zoom ${state.zoom.toFixed(2)}×`;
+    if(state.mode==='delta'){
+      $('modeNote').textContent=f.baselineLabel
+        ? `Δ since open vs ${f.baselineLabel}`
+        : 'Δ since open: no baseline yet — collector will freeze the earliest snapshot of the session.';
+    } else {
+      $('modeNote').textContent=f.baselineLabel?`%-badges vs ${f.baselineLabel}`:'';
+    }
+    if(state.feed==='velocity'){
+      $('modeNote').textContent += ( $('modeNote').textContent?' · ':'') + 'Velocity: badges emphasize change vs baseline';
+    }
+
+    const spot=p.spot;
+    let spotK=f.strikes[0];
+    f.strikes.forEach(k=>{ if(Math.abs(k-spot)<Math.abs(spotK-spot)) spotK=k; });
+    const em=p.em||{};
+    const emAt={};
+    const mark=(key,lab)=>{
+      if(!em[key]) return;
+      emAt[nearest(f.strikes, em[key].hi)] = (emAt[nearest(f.strikes, em[key].hi)]||'')+lab+'↑ ';
+      emAt[nearest(f.strikes, em[key].lo)] = (emAt[nearest(f.strikes, em[key].lo)]||'')+lab+'↓ ';
+    };
+    mark('daily','D'); mark('weekly','W'); mark('monthly','M'); mark('annual','A');
+
+    const cellW=Math.round(72*state.zoom);
+    const fs=Math.max(9, Math.round(11*Math.min(state.zoom,1.3)));
+    let html=`<table class="hm" style="font-size:${fs}px"><thead><tr><th class="stk">Strike</th>${f.exps.map(e=>`<th style="min-width:${cellW}px">${e.slice(5)}</th>`).join('')}</tr></thead><tbody>`;
+    const order=f.strikes.slice().reverse();
+    order.forEach(k=>{
+      const si=f.strikes.indexOf(k);
+      const isSpot=k===spotK;
+      const isKing=f.kingK!=null && k===f.kingK;
+      const emLab=emAt[k];
+      html+=`<tr class="${isSpot?'spot':''}${emLab?' em-bound':''}">`;
+      html+=`<td class="stk${isKing?' king':''}${emLab?' em-mark':''}" ${emLab?`data-em="${emLab.trim()}"`:''}>${Number.isInteger(k)?k:k}${isKing?' ★':''}${emLab?` <span style="color:var(--amb);font-size:9px">${emLab.trim()}</span>`:''}</td>`;
+      f.matrix[si].forEach((v,ei)=>{
+        const pct=pctAt(si,ei);
+        let pctHtml='';
+        if(pct!=null && isFinite(pct)){
+          const cls=pct>=0?'up':'dn';
+          pctHtml=`<span class="pct ${cls}">${pct>=0?'+':''}${pct.toFixed(0)}%</span>`;
+        }
+        const cls=isKing?'king':'';
+        html+=`<td class="${cls}" style="background:${colorScale(v,maxAbs)};min-width:${cellW}px" data-k="${k}" data-e="${f.exps[ei]}" data-v="${v}" data-pct="${pct??''}">${fmtCell(v)}${pctHtml}</td>`;
+      });
+      html+='</tr>';
+    });
+    html+='</tbody></table>';
+    // cleanup mistaken attribute on stk - rewrite cleaner
+    $('gridHost').innerHTML=html + `<div class="hm-em-legend">EM bounds on strike axis: <b>D</b> daily · <b>W</b> weekly · <b>M</b> monthly · <b>A</b> annual (↑ hi / ↓ lo)</div>`;
+    const spotRow=$('gridHost').querySelector('tr.spot');
+    if(spotRow) try{ spotRow.scrollIntoView({block:'center', inline:'nearest'}); }catch(e){}
+    $('gridHost').querySelectorAll('td[data-v]').forEach(td=>{
+      td.onmousemove=ev=>{
+        const pct=td.dataset.pct;
+        showTip(ev, `<b>${p.sym}</b> ${td.dataset.k} · ${td.dataset.e}<br>${state.metric.toUpperCase()} <b>${fmt(+td.dataset.v)}</b>${pct!==''&&pct!=null?`<br>vs baseline <b>${(+pct>=0?'+':'')+(+pct).toFixed(1)}%</b>`:''}`);
+      };
+      td.onmouseleave=hideTip;
+      td.ontouchstart=ev=>{
+        const t=ev.touches[0];
+        showTip({clientX:t.clientX, clientY:t.clientY}, `<b>${p.sym}</b> ${td.dataset.k} · ${td.dataset.e}<br>${fmt(+td.dataset.v)}`);
+      };
+    });
+  }
+
+  function draw3d(p){
+    if(!window.Plotly) return;
+    const f=filteredMatrix(p); if(!f) return;
+    const z=f.exps.map((_,j)=>f.strikes.map((_,i)=>f.matrix[i][j]));
+    Plotly.newPlot('plotly3d', [{
+      type:'surface',
+      x:f.strikes,
+      y:f.exps.map((_,i)=>i),
+      z,
+      colorscale:[[0,'#5a2020'],[0.35,'#3a1515'],[0.5,'#1a1a1a'],[0.65,'#3a3010'],[1,'#ffb000']],
+      showscale:true,
+      colorbar:{
+        title:{text:state.metric.toUpperCase(),font:{color:'#ffb000',size:12}},
+        tickfont:{color:'#857d6a',size:10},
+        bgcolor:'rgba(0,0,0,.92)', bordercolor:'#333', borderwidth:1,
+        len:0.72, thickness:14, outlinewidth:0,
+        tickformat:'.3s'
+      },
+      hovertemplate:'Strike %{x}<br>Exp %{customdata}<br>'+state.metric.toUpperCase()+' %{z:.3s}<extra></extra>',
+      customdata:f.exps.map((_,j)=>f.strikes.map(()=>f.exps[j]))
+    }], {
+      paper_bgcolor:'#000', plot_bgcolor:'#000',
+      title:{text:`${p.sym} · 3D ${state.metric.toUpperCase()}${state.mode==='delta'?' Δ':''}`, font:{color:'#e6e0cc', size:13}},
+      scene:{
+        camera:{eye:{x:1.55,y:-1.65,z:0.95}, center:{x:0,y:0,z:-0.05}},
+        aspectmode:'manual',
+        aspectratio:{x:1.15, y:1.0, z:0.7},
+        xaxis:{title:{text:'Strike',font:{size:11}}, color:'#857d6a', gridcolor:'#232323', zerolinecolor:'#333', showspikes:false},
+        yaxis:{title:{text:'Expiry',font:{size:11}}, color:'#857d6a', gridcolor:'#232323', tickvals:f.exps.map((_,i)=>i), ticktext:f.exps.map(e=>e.slice(5)), showspikes:false},
+        zaxis:{title:{text:state.metric.toUpperCase(),font:{size:11}}, color:'#857d6a', gridcolor:'#232323', showspikes:false, tickformat:'.3s'},
+        bgcolor:'#000'
+      },
+      margin:{t:44,b:10,l:0,r:10}
+    }, {displayModeBar:true, displaylogo:false, modeBarButtonsToRemove:['toImage','sendDataToCloud','hoverClosest3d'], responsive:true});
+  }
+
+  function renderScanner(){
+    const store=state.scanner||{};
+    const slot=store[state.scanSlot]||store.close||store.open;
+    const host=$('scanHost');
+    if(!slot){
+      host.innerHTML=`<div class="placeholder"><b>${state.scanSlot==='open'?'9:35 open scan not captured yet':'Close scan unavailable'}</b>
+        Collector tags open near the bell and close after 15:50 ET. This slot will fill on the next qualifying run.</div>`;
+      $('scanMeta').textContent='';
+      return;
+    }
+    $('scanMeta').textContent=`${slot.asof_pt} · ${slot.slot} scan · ${slot.n} symbols`;
+    // if requesting open but only close exists
+    if(state.scanSlot==='open' && !store.open){
+      host.innerHTML=`<div class="placeholder"><b>Open scan placeholder</b>
+        No 9:35 open snapshot stored yet. Showing an empty slot — close scan is available on the other tab.</div>`;
+      return;
+    }
+    host.innerHTML=slot.cards.map(c=>{
+      const moved=c.king_moved==null?'':(c.king_moved>0?' ↑':c.king_moved<0?' ↓':'');
+      return `<div class="scard" data-sym="${c.sym}">
+        <div><div style="font-weight:800">#${c.rank} ${c.sym}</div><div class="sub">$${c.spot} · ${c.chg_pct>=0?'+':''}${c.chg_pct}%</div></div>
+        <div>
+          <div>King <b style="color:var(--king)">${c.king??'—'}</b>${c.contested?' <span style="color:var(--king)">contested</span>':''}${moved}
+            <span class="sub">${c.king_v!=null?fmt(c.king_v):''}</span></div>
+          <div class="sub">Distance ${c.dist_pct??'—'}% · ${c.dist_pts??'—'} pts · vs EM ${c.em_mult!=null?(c.em_mult+'×'):'—'}</div>
+          <div><span class="regime ${c.regime==='negative'?'neg':'pos'}" style="padding:2px 8px">${c.regime==='negative'?'Negative γ':'Positive γ'}</span>
+            <span class="sub" style="margin-left:6px">${c.setup||''}</span></div>
+          <div class="bar"><i style="width:${Math.max(2,Math.min(100,c.strength||0))}%"></i></div>
+        </div>
+        <div class="pull">${c.pull}</div>
+      </div>`;
+    }).join('');
+    host.querySelectorAll('.scard').forEach(card=>card.onclick=()=>{
+      state.view='heatmap'; state.sym=card.dataset.sym; $('tickerIn').value=state.sym;
+      $('mainTabs').querySelectorAll('button').forEach(x=>x.classList.toggle('on', x.dataset.view==='heatmap'));
+      ['heatmap','attache','scanner','guide','recap'].forEach(v=>$('view-'+v).classList.toggle('hidden', v!=='heatmap'));
+      chipRow.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on', c.dataset.sym===state.sym));
+      loadTicker(state.sym);
+    });
+  }
+
+  function renderRecap(){
+    const rec=state.recap; const sel=$('recapSel'); const host=$('recapHost');
+    if(!rec||!rec.sessions||!rec.sessions.length){ host.innerHTML='<div class="placeholder"><b>No sessions yet</b>Collector seeds recap on each run.</div>'; return; }
+    const sessions=rec.sessions.slice().reverse();
+    sel.innerHTML=sessions.map(s=>`<option value="${s.date}">${s.date} · ${s.asof_pt||''}</option>`).join('');
+    const draw=()=>{
+      const s=sessions.find(x=>x.date===sel.value)||sessions[0];
+      const cards=Object.entries(s.tickers||{}).map(([sym,t])=>{
+        const end=t.end||{}; const start=t.start||{}; const mv=t.moves||{};
+        return `<div class="panel" style="padding:10px;margin:0">
+          <div style="display:flex;justify-content:space-between"><b>${sym}</b><span class="${t.chg_pct<0?'dn':'up'}">$${t.spot} ${t.chg_pct>=0?'+':''}${t.chg_pct}%</span></div>
+          <div class="sub">GEX King ${start.gex_king??'—'} → ${end.gex_king??'—'} (${mv.gex_king||0} moves)</div>
+          <div class="sub">VEX King ${start.vex_king??'—'} → ${end.vex_king??'—'} (${mv.vex_king||0})</div>
+          <div class="sub">Call ${start.call_wall??'—'} → ${end.call_wall??'—'} · Put ${start.put_wall??'—'} → ${end.put_wall??'—'} · 0γ ${start.zero_g??'—'} → ${end.zero_g??'—'}</div>
+          <div class="sub">Setup: <b style="color:var(--txt)">${(t.setup&&t.setup.tag)||'—'}</b> · ${t.regime||'—'}</div>
+        </div>`;
+      }).join('');
+      host.innerHTML=`<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px">${cards}</div>`;
+    };
+    sel.onchange=draw; draw();
+  }
+
+  function computeDivergence(bars){
+    // returns [{tf,label,dir}] using simple momentum of closes
+    if(!bars||bars.length<5) return [
+      {tf:'5m',dir:null},{tf:'30m',dir:null},{tf:'2h',dir:null},{tf:'D',dir:null},{tf:'W',dir:null}
+    ];
+    const closes=bars.map(b=>b.c);
+    const last=closes[closes.length-1];
+    function dir(n){
+      if(closes.length<=n) return null;
+      const prev=closes[closes.length-1-n];
+      const chg=(last-prev)/prev;
+      if(Math.abs(chg)<0.0008) return 'NO';
+      return chg>0?'BULL':'BEAR';
+    }
+    // 5m bars: 1 bar=5m, 6=30m, 24=2h; D/W from longer lookback approx
+    return [
+      {tf:'5m', dir:dir(1)},
+      {tf:'30m', dir:dir(6)},
+      {tf:'2h', dir:dir(24)},
+      {tf:'D', dir:dir(Math.min(closes.length-1, 78))}, // ~session
+      {tf:'W', dir:dir(Math.min(closes.length-1, closes.length-1))},
+    ];
+  }
+
+  // ——— Attaché (lightweight-charts candles + canvas bubble overlay) ———
+  function antDestroy(){
+    if(state.antChart){ try{ state.antChart.remove(); }catch(e){} state.antChart=null; }
+    state._antCandle=null; state._antSeries={}; state._antRo=null;
+  }
+
+  function sessionBars(bars){
+    if(!bars||!bars.length) return [];
+    const byDay=new Map();
+    bars.forEach(b=>{
+      const d=new Date(b.t);
+      const key=d.toLocaleDateString('en-CA',{timeZone:'America/New_York'});
+      if(!byDay.has(key)) byDay.set(key,[]);
+      byDay.get(key).push(b);
+    });
+    const days=[...byDay.keys()].sort();
+    const latest=days[days.length-1];
+    const day=(byDay.get(latest)||bars).slice();
+    const rth=day.filter(b=>isRthEt(new Date(b.t).getTime()));
+    return rth.length? rth : day; // fall back if filter empty (holiday/partial)
+  }
+
+  function buildBubbleFrames(p, bars, metric){
+    // Produce per-candle node list. Prefer history[].nodes; else reconstruct from current ladder scaled by net_gex path.
+    const hist=(p.history||[]).slice();
+    const ladKey=state.antExp==='next'?'next':(state.antExp==='week'?'week':'all');
+    const lad=(p.ladder&&p.ladder[ladKey])||(p.ladder&&p.ladder.all)||{strikes:[],gex:[],vex:[]};
+    const strikes=lad.strikes||[];
+    const gex=lad.gex||[], vex=lad.vex||[];
+    const curNodes=strikes.map((k,i)=>({k, gex:gex[i]||0, vex:vex[i]||0}));
+    const curNet=metric==='vex'?(p.net&&p.net.vex)||1:(p.net&&p.net.gex)||1;
+    const valOf=n=> metric==='combined' ? (n.gex*0.7+n.vex*0.3) : (metric==='vex'?n.vex:n.gex);
+
+    const snapTimes=hist.map(h=>new Date(h.t).getTime()).filter(t=>!isNaN(t));
+    const hasNodes=hist.some(h=>h.nodes&&h.nodes.length);
+    let mode='live';
+    if(hasNodes && hist.length>=2) mode='snapshots';
+    else if(hist.length>=1) mode='reconstructed';
+
+    function nodesAt(tMs, spotHint){
+      if(!hist.length){
+        const spot=spotHint??p.spot;
+        return curNodes.map(n=>{
+          const dist=Math.abs(n.k-spot);
+          const prox=1/(1+dist*dist/((p.spot||spot)*0.012)**2);
+          const boost=0.5+1.0*prox;
+          return {k:n.k, gex:n.gex*boost, vex:n.vex*boost};
+        });
+      }
+      let lo=hist[0], hi=hist[hist.length-1];
+      for(let i=0;i<hist.length;i++){
+        const tm=new Date(hist[i].t).getTime();
+        if(tm<=tMs) lo=hist[i];
+        if(tm>=tMs){ hi=hist[i]; break; }
+      }
+      const t0=new Date(lo.t).getTime(), t1=new Date(hi.t).getTime();
+      const a=(t1===t0)?1: Math.max(0,Math.min(1,(tMs-t0)/(t1-t0)));
+      const spot0=lo.spot??p.spot, spot1=hi.spot??p.spot;
+      const spot=(spotHint!=null)? spotHint : (spot0*(1-a)+spot1*a);
+      if(lo.nodes&&hi.nodes&&lo.nodes.length){
+        const map=new Map();
+        lo.nodes.forEach(n=>map.set(n.k,{k:n.k,gex:n.gex,vex:n.vex}));
+        hi.nodes.forEach(n=>{
+          const p0=map.get(n.k)||{k:n.k,gex:0,vex:0};
+          map.set(n.k,{k:n.k, gex:p0.gex*(1-a)+n.gex*a, vex:p0.vex*(1-a)+n.vex*a});
+        });
+        // still reweight toward candle/spot so center moves intraday
+        return [...map.values()].map(n=>{
+          const dist=Math.abs(n.k-spot);
+          const prox=1/(1+dist*dist/((p.spot||spot)*0.012)**2);
+          const boost=0.55+0.9*prox;
+          return {k:n.k, gex:n.gex*boost, vex:n.vex*boost};
+        });
+      }
+      const net0=lo.net_gex??curNet, net1=hi.net_gex??curNet;
+      const net=net0*(1-a)+net1*a;
+      const scale=(curNet? net/curNet : 1);
+      return curNodes.map(n=>{
+        const dist=Math.abs(n.k-spot);
+        const prox=1/(1+dist*dist/((p.spot||spot)*0.012)**2);
+        const boost=0.5+1.0*prox;
+        return {k:n.k, gex:n.gex*scale*boost, vex:n.vex*scale*boost};
+      });
+    }
+
+    const kingK=(p.king&&p.king.gex&&p.king.gex.k!=null)? +p.king.gex.k : null;
+    const frames=bars.map(b=>{
+      const tMs=new Date(b.t).getTime();
+      let nodes=nodesAt(tMs, b.c).map(n=>({...n}));
+      if(kingK!=null && !nodes.some(n=>Math.abs(n.k-kingK)<1e-6)){
+        // inject King so the gold row is continuous even when not in top-N
+        const near=nodes[0]||{gex:0,vex:0};
+        nodes.push({k:kingK, gex:near.gex*1.2, vex:near.vex*1.2, king:true});
+      } else if(kingK!=null){
+        nodes=nodes.map(n=> Math.abs(n.k-kingK)<1e-6 ? {...n, king:true} : n);
+      }
+      return {t:b.t, tMs, o:b.o,h:b.h,l:b.l,c:b.c, nodes};
+    });
+    return {frames, mode, hasNodes};
+  }
+
+  async function loadAttache(){
+    const sym=state.antSym||'SPY';
+    try{
+      state.packAnt=await jget('data/t/'+sym+'.json');
+      try{ state.bars=await jget('data/bars/'+sym+'.json'); }catch(e){ state.bars={bars:[],daily:[],mas:{}}; }
+      const rawBars=(state.bars&&state.bars.bars)||[];
+      state._antBars=sessionBars(rawBars);
+      // session dropdown
+      const sess=$('antSession');
+      const day=state._antBars.length? new Date(state._antBars[0].t).toLocaleDateString('en-CA',{timeZone:'America/New_York'}) : '—';
+      sess.innerHTML=`<option value="latest">Latest session · ${day}</option>`;
+      // date dropdown from grid
+      const exps=(state.packAnt.grid&&state.packAnt.grid.exps)||[];
+      $('antDate').innerHTML='<option value="">Date…</option>'+exps.map(e=>`<option value="${e}">${e}</option>`).join('');
+
+      const kg=state.packAnt.king.gex||{};
+      const mas=state.bars.mas||state.packAnt.mas||{};
+      state._mas=mas;
+      $('antMeta').textContent=`${sym} · ${state.packAnt.asof_pt} · book ${(state.packAnt.history||[]).length} snaps`;
+      const pull=kg.share!=null? (100*kg.share).toFixed(1)+'%': '';
+      $('antMas').innerHTML=`
+        <span>SMA 5 (D) <b>${mas.sma5_d!=null?Number(mas.sma5_d).toFixed(2):'—'}</b></span>
+        <span>EMA 21 (D) <b>${mas.ema21_d!=null?Number(mas.ema21_d).toFixed(2):'—'}</b></span>
+        <span>SMA 34 (5m) <b>${mas.sma34_5m!=null?Number(mas.sma34_5m).toFixed(2):'—'}</b></span>
+        <span>SMA 55 (D) <b>${mas.sma55_d!=null?Number(mas.sma55_d).toFixed(2):'—'}</b></span>
+        <span class="chip" style="background:rgba(255,210,74,.12);border-color:rgba(255,210,74,.45);color:var(--king)">All-exp King <b>${kg.k??'—'}</b>${pull?' · '+pull:''}${kg.contested?' · contested':''}</span>`;
+
+      const bubblePack=buildBubbleFrames(state.packAnt, state._antBars, state.antMetric==='combined'?'gex':state.antMetric);
+      state._antBubbles=bubblePack;
+      if(bubblePack.mode==='snapshots'){
+        $('antBubbleNote').textContent=`Bubbles from ${ (state.packAnt.history||[]).filter(h=>h.nodes).length } book snapshots with top-node history.`;
+      } else if(bubblePack.mode==='reconstructed'){
+        $('antBubbleNote').textContent=`Bubbles reconstructed across candles from ${(state.packAnt.history||[]).length||1} book snapshot(s) — approximate until the collector accumulates intraday node history.`;
+      } else {
+        $('antBubbleNote').textContent='Bubbles from live book (single snapshot).';
+      }
+
+      const n=Math.max(0, state._antBars.length-1);
+      $('antSlider').max=n; $('antSlider').value=n; state.antIdx=n;
+
+      const em=state.packAnt.em&&state.packAnt.em.daily;
+      const prev=(state.packAnt.prev_close && Math.abs(state.packAnt.prev_close-state.packAnt.spot)>0.05)
+        ? state.packAnt.prev_close : (state.packAnt.spot-(state.packAnt.chg||0));
+      if(em){
+        $('antOutlook').innerHTML=`<div class="ant-outlook">
+          <div class="cell"><div class="lbl">PRIOR CLOSE</div><div class="val">$${Number(prev).toFixed(2)}</div></div>
+          <div class="cell"><div class="lbl">±1σ</div><div class="val">$${(prev-em.mv).toFixed(2)} – $${(prev+em.mv).toFixed(2)}</div></div>
+          <div class="cell"><div class="lbl">±2σ</div><div class="val">$${(prev-2*em.mv).toFixed(2)} – $${(prev+2*em.mv).toFixed(2)}</div></div>
+        </div>
+        <div class="ant-note">Probabilistic range from options pricing. Not a forecast. Not advice.</div>`;
+      } else {
+        $('antOutlook').innerHTML='<div class="sub">Range outlook unavailable</div>';
+      }
+      state.pathKing = $('pathKing').checked;
+      drawAttache();
+    }catch(e){
+      $('antMeta').innerHTML='<span class="err">'+e+'</span>';
+    }
+  }
+
+  $('antSlider').oninput=e=>{ state.antIdx=+e.target.value; drawAttacheOverlayOnly(); updateAntScrubLabel(); };
+  $('antReset').onclick=()=>{ if(state.antChart) state.antChart.timeScale().fitContent(); };
+  $('antDate').onchange=e=>{
+    if(e.target.value){ state.antExp='date'; /* date filter uses next ladder for now */ }
+    drawAttache();
+  };
+  let replayTimer=null;
+  $('antReplay').onclick=()=>{
+    const n=state._antBars?state._antBars.length:0;
+    if(n<2){ $('antSliderLbl').textContent='need bars'; return; }
+    if(replayTimer){ clearInterval(replayTimer); replayTimer=null; $('antReplay').textContent='Replay'; return; }
+    state.antIdx=0; $('antReplay').textContent='Stop';
+    replayTimer=setInterval(()=>{
+      state.antIdx++;
+      if(state.antIdx>=n){ clearInterval(replayTimer); replayTimer=null; $('antReplay').textContent='Replay'; state.antIdx=n-1; }
+      $('antSlider').value=state.antIdx;
+      drawAttacheOverlayOnly(); updateAntScrubLabel();
+    }, 80);
+  };
+  function updateAntScrubLabel(){
+    const bars=state._antBars||[];
+    const i=Math.min(state.antIdx||0, Math.max(0,bars.length-1));
+    if(!bars.length){ $('antSliderLbl').textContent='—'; return; }
+    const d=new Date(bars[i].t);
+    $('antSliderLbl').textContent=d.toLocaleTimeString('en-US',{timeZone:'America/New_York',hour:'numeric',minute:'2-digit'});
+  }
+
+  function drawAttache(){
+    const p=state.packAnt; if(!p) return;
+    if(!window.LightweightCharts){ $('antChart').innerHTML='<div class="empty">Chart library failed to load</div>'; return; }
+    const host=$('antHost');
+    const chartEl=$('antChart');
+    const overlay=$('antOverlay');
+    const bars=state._antBars||[];
+    antDestroy();
+    chartEl.innerHTML='';
+
+    const chart=LightweightCharts.createChart(chartEl,{
+      layout:{ background:{color:'#000'}, textColor:'#857d6a', fontSize:11, attributionLogo:false },
+      grid:{ vertLines:{color:'#1a1a1a'}, horzLines:{color:'#1a1a1a'} },
+      leftPriceScale:{ visible:false },
+      rightPriceScale:{ borderColor:'#1c2433', scaleMargins:{top:0.06, bottom:0.10}, entireTextOnly:true },
+      localization:{
+        locale:'en-US',
+        timeFormatter:(t)=> etTimeLabel(toUnix(t))
+      },
+      timeScale:{
+        borderColor:'#333', timeVisible:true, secondsVisible:false, rightOffset:6,
+        tickMarkFormatter:(t)=> etTickLabel(toUnix(t))
+      },
+      crosshair:{ mode:0 },
+      width: host.clientWidth,
+      height: host.clientHeight,
+      handleScroll: true,
+      handleScale: true
+    });
+    state.antChart=chart;
+    const candle=chart.addCandlestickSeries({
+      upColor:'#3ddc5c', downColor:'#ff4d4d', borderUpColor:'#3ddc5c', borderDownColor:'#ff4d4d',
+      wickUpColor:'#3ddc5c', wickDownColor:'#ff4d4d'
+    });
+    state._antCandle=candle;
+
+    // LWC wants business day or UTCTimestamp
+    const toT=t=>{
+      const ms=new Date(t).getTime();
+      return Math.floor(ms/1000);
+    };
+    const cdata=[]; const seen=new Set();
+    bars.forEach(b=>{
+      const t=toT(b.t); if(seen.has(t)) return; seen.add(t);
+      cdata.push({time:t, open:b.o, high:b.h, low:b.l, close:b.c});
+    });
+    candle.setData(cdata);
+
+    // MA lines as constant price lines (daily) + SMA34 series from 5m
+    const mas=state._mas||{};
+    const addPL=(price,color,title)=>{
+      if(price==null) return;
+      candle.createPriceLine({ price:+price, color, lineWidth:1, lineStyle:0, axisLabelVisible:true, title });
+    };
+    addPL(mas.sma5_d, '#e8eef8', 'SMA5');
+    addPL(mas.ema21_d, '#22c7e8', 'EMA21');
+    addPL(mas.sma55_d, '#ffb000', 'SMA55');
+    // SMA34 as line series over 5m
+    if(bars.length>=34){
+      const line=chart.addLineSeries({ color:'#3ddc5c', lineWidth:1, priceLineVisible:false, lastValueVisible:false, title:'SMA34' });
+      const out=[]; let sum=0;
+      bars.forEach((b,i)=>{
+        sum+=b.c;
+        if(i>=34) sum-=bars[i-34].c;
+        if(i>=33){
+          const t=toT(b.t);
+          out.push({time:t, value:sum/34});
+        }
+      });
+      // dedupe
+      const m=new Map(); out.forEach(x=>m.set(x.time,x));
+      line.setData([...m.values()]);
+      state._antSeries.sma34=line;
+    }
+
+    const king=(p.king.gex||{}).k;
+    if(king!=null){
+      candle.createPriceLine({ price:+king, color:'#ffd24a', lineWidth:2, lineStyle:2, axisLabelVisible:true, title:'King '+king });
+    }
+
+    // setup + divergence cards
+    const t=state.board&&state.board.trinity;
+    $('antSetupCard').innerHTML=`<div class="ttl">SETUP</div>
+      <div style="font-weight:800;font-size:14px">${(p.setup&&p.setup.tag)||'NO CLEAR SETUP'}</div>
+      <div class="sub">${(p.setup&&p.setup.detail)||''}</div>
+      <div style="margin-top:8px;color:var(--acc);font-weight:800">${t?`TRINITY ${t.agree}/${t.total}`:''}</div>
+      <div class="sub">${t?t.side:''}</div>
+      ${t&&t.dirs?`<div class="sub">SPX${t.dirs.SPX==='BEAR'?'↓':'↑'} SPY${t.dirs.SPY==='BEAR'?'↓':'↑'} QQQ${t.dirs.QQQ==='BEAR'?'↓':'↑'}</div>`:''}`;
+    const divs=computeDivergence(bars);
+    $('antDivCard').innerHTML=`<div class="ttl">DIVERGENCE</div>`+
+      divs.map(d=>{
+        const cls=d.dir==='BEAR'?'bad':d.dir==='BULL'?'ok':'na';
+        return `<div class="div-row"><span>${d.tf}</span><span class="${cls}">${d.dir||'n/a'}</span></div>`;
+      }).join('');
+
+    chart.timeScale().fitContent();
+    // sync overlay
+    const redraw=()=>drawAttacheOverlayOnly();
+    chart.timeScale().subscribeVisibleLogicalRangeChange(redraw);
+    chart.subscribeCrosshairMove(redraw);
+    if(state._antRo) try{ state._antRo.disconnect(); }catch(e){}
+    state._antRo=new ResizeObserver(()=>{
+      chart.applyOptions({width:host.clientWidth, height:host.clientHeight});
+      redraw();
+    });
+    state._antRo.observe(host);
+    // rebuild bubbles for metric
+    state._antBubbles=buildBubbleFrames(p, bars, state.antMetric==='combined'?'gex':state.antMetric);
+    updateAntScrubLabel();
+    // allow layout
+    requestAnimationFrame(()=>drawAttacheOverlayOnly());
+  }
+
+  function drawAttacheOverlayOnly(){
+    const p=state.packAnt; if(!p||!state.antChart||!state._antCandle) return;
+    const host=$('antHost');
+    const cv=$('antOverlay');
+    const W=host.clientWidth, H=host.clientHeight;
+    const dpr=Math.min(devicePixelRatio||1, 2);
+    cv.width=W*dpr; cv.height=H*dpr;
+    cv.style.width=W+'px'; cv.style.height=H+'px';
+    const ctx=cv.getContext('2d');
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    ctx.clearRect(0,0,W,H);
+
+    const chart=state.antChart;
+    const series=state._antCandle;
+    const ts=chart.timeScale();
+    const bars=state._antBars||[];
+    const idx=Math.min(state.antIdx||0, Math.max(0,bars.length-1));
+    const visible=bars.slice(0, idx+1);
+    const bubblePack=state._antBubbles||{frames:[]};
+    const frames=bubblePack.frames||[];
+    const metric=state.antMetric==='combined'?'gex':state.antMetric;
+    const valOf=n=> state.antMetric==='combined' ? (n.gex*0.7+n.vex*0.3) : (metric==='vex'?n.vex:n.gex);
+
+    // max abs across visible frames for sizing
+    let maxAbs=1;
+    frames.slice(0, idx+1).forEach(f=> (f.nodes||[]).forEach(n=>{ maxAbs=Math.max(maxAbs, Math.abs(valOf(n))); }));
+
+    const toT=t=>Math.floor(new Date(t).getTime()/1000);
+    const xOf=t=>{
+      const x=ts.timeToCoordinate(toT(t));
+      return x;
+    };
+    const yOf=price=>{
+      const y=series.priceToCoordinate(+price);
+      return y;
+    };
+
+    // EM cone at right
+    const em=p.em&&p.em.daily;
+    const prev=(p.prev_close && Math.abs(p.prev_close-p.spot)>0.05)?p.prev_close:(p.spot-(p.chg||0));
+    if(em && visible.length){
+      const xR=W-8;
+      const xL=Math.max(W*0.72, (xOf(visible[Math.max(0,visible.length-12)].t)??W*0.75));
+      const yMid=yOf(prev);
+      const bands=[
+        {lo:prev-2*em.mv, hi:prev+2*em.mv, fill:'rgba(255,77,77,0.10)', label:'2σ'},
+        {lo:prev-em.mv, hi:prev+em.mv, fill:'rgba(255,176,0,0.12)', label:'1σ'},
+      ];
+      // pin / fast-move shading: if spot near 1σ edge, warm tint
+      const spot=visible[visible.length-1].c;
+      const fast=Math.abs(spot-prev)>em.mv*0.85;
+      if(fast){
+        ctx.fillStyle='rgba(255,93,122,0.06)';
+        ctx.fillRect(xL, 0, xR-xL, H);
+      }
+      bands.forEach(b=>{
+        const y1=yOf(b.hi), y2=yOf(b.lo);
+        if(y1==null||y2==null) return;
+        ctx.beginPath();
+        ctx.moveTo(xL, yMid?? (y1+y2)/2);
+        ctx.lineTo(xR, y1);
+        ctx.lineTo(xR, y2);
+        ctx.closePath();
+        ctx.fillStyle=b.fill;
+        ctx.fill();
+      });
+      // labels with ticks
+      ctx.font='600 10px ui-sans-serif,system-ui';
+      [[prev+2*em.mv,'±2σ'],[prev+em.mv,'±1σ'],[prev-em.mv,'±1σ'],[prev-2*em.mv,'±2σ']].forEach(([px,lab])=>{
+        const y=yOf(px); if(y==null) return;
+        ctx.strokeStyle='rgba(255,176,0,0.55)';
+        ctx.beginPath(); ctx.moveTo(xR-78,y); ctx.lineTo(xR-4,y); ctx.stroke();
+        ctx.fillStyle='#ffb000';
+        ctx.fillText(lab+' '+px.toFixed(2), xR-76, y-3);
+      });
+      // prior-close marker
+      if(yMid!=null){
+        ctx.fillStyle='rgba(255,255,255,0.7)';
+        ctx.font='600 10px ui-sans-serif,system-ui';
+        ctx.fillText('PC '+prev.toFixed(2), xL+4, yMid-4);
+      }
+    }
+
+    // Bubbles: one per visible candle per significant node
+    const step=Math.max(1, Math.floor(visible.length/60)); // density cap for perf
+    for(let i=0;i<visible.length;i+=step){
+      const f=frames[i]; if(!f) continue;
+      const x=xOf(f.t); if(x==null) continue;
+      (f.nodes||[]).forEach(n=>{
+        const v=valOf(n); if(Math.abs(v)<maxAbs*0.04) return;
+        const y=yOf(n.k); if(y==null) return;
+        const king=(p.king.gex||{}).k;
+        const isKing=!!(n.king || (king!=null && Math.abs(n.k-king)<1e-6));
+        const r=(isKing?3.4:2.2)+(isKing?12:10)*(Math.abs(v)/maxAbs);
+        let col;
+        if(isKing) col='rgba(255,210,74,0.92)';
+        else col=v>=0?'rgba(34,211,238,0.55)':'rgba(168,85,247,0.55)';
+        ctx.beginPath();
+        ctx.fillStyle=col;
+        ctx.arc(x, y, r, 0, Math.PI*2);
+        ctx.fill();
+      });
+    }
+
+    // Exposure-weighted center (white) across visible frames
+    ctx.beginPath();
+    ctx.strokeStyle='rgba(255,255,255,0.95)';
+    ctx.lineWidth=2.0;
+    ctx.shadowColor='rgba(255,255,255,0.35)'; ctx.shadowBlur=4;
+    let started=false;
+    for(let i=0;i<visible.length;i++){
+      const f=frames[i]; if(!f||!f.nodes||!f.nodes.length) continue;
+      let num=0,den=0;
+      f.nodes.forEach(n=>{ const a=Math.abs(valOf(n)); num+=n.k*a; den+=a; });
+      if(den<=0) continue;
+      const x=xOf(f.t), y=yOf(num/den);
+      if(x==null||y==null) continue;
+      if(!started){ ctx.moveTo(x,y); started=true; } else ctx.lineTo(x,y);
+    }
+    if(started) ctx.stroke();
+    ctx.shadowBlur=0;
+
+    // Path to King projection
+    if(state.pathKing && visible.length){
+      const king=(p.king.gex||{}).k;
+      if(king!=null){
+        const last=visible[visible.length-1];
+        const x0=xOf(last.t), y0=yOf(last.c), y1=yOf(king);
+        if(x0!=null && y0!=null && y1!=null){
+          ctx.setLineDash([4,5]);
+          ctx.strokeStyle='rgba(255,210,74,0.85)';
+          ctx.lineWidth=1.5;
+          ctx.beginPath();
+          ctx.moveTo(x0,y0);
+          ctx.lineTo(Math.min(W-10, x0+(W-x0)*0.85), y1);
+          ctx.stroke();
+          ctx.setLineDash([]);
+          // glow near king
+          ctx.fillStyle='rgba(255,210,74,0.12)';
+          ctx.fillRect(0, y1-6, W, 12);
+        }
+      }
+    }
+
+    // King label glow already via price line; reinforce gold beam soft glow
+    const king=(p.king.gex||{}).k;
+    if(king!=null){
+      const y=yOf(king);
+      if(y!=null){
+        const grd=ctx.createLinearGradient(0,y-10,0,y+10);
+        grd.addColorStop(0,'rgba(255,210,74,0)');
+        grd.addColorStop(0.5,'rgba(255,210,74,0.18)');
+        grd.addColorStop(1,'rgba(255,210,74,0)');
+        ctx.fillStyle=grd;
+        ctx.fillRect(0,y-10,W,20);
+      }
+    }
+  }
+
+  function render(){
+    if(state.view==='heatmap') renderHeatmap();
+    if(state.view==='scanner') renderScanner();
+    if(state.view==='recap') renderRecap();
+    if(state.view==='attache') drawAttache();
+  }
+
+  window.addEventListener('resize', ()=>{
+    if(state.view==='heatmap' && state.pack){
+      if(state.viz==='3d') draw3d(state.pack);
+    }
+    if(state.view==='attache') drawAttache();
+  });
+
+  init();
+})();
+</script></body></html>

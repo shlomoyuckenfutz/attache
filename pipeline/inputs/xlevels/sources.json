@@ -1,0 +1,249 @@
+[
+  {
+    "handle": "QuantData",
+    "id": "1254906887490936845",
+    "verified": "business",
+    "type": "DP/flow/GEX",
+    "weight": 1.0,
+    "section": "flow",
+    "cadence": "3x trading days (06:45, 10:00, 13:30 PT)",
+    "group": "set1"
+  },
+  {
+    "handle": "unusual_whales",
+    "id": "1200616796295847936",
+    "verified": "blue",
+    "type": "news/flow",
+    "weight": 0.5,
+    "section": "flow",
+    "cadence": "3x trading days; last 24h only, max 10 flow screenshots; headlines",
+    "group": "set1"
+  },
+  {
+    "handle": "Basssem666",
+    "id": "1744545786069762048",
+    "verified": "blue",
+    "type": "TA levels",
+    "weight": 0.8,
+    "section": "flow",
+    "cadence": "13:30 PT EOD + Sunday 18:00 PT weekly",
+    "group": "set1"
+  },
+  {
+    "handle": "GAndersonTrades",
+    "id": "1498180598053146624",
+    "verified": "blue",
+    "type": "ICT bias",
+    "weight": 0.6,
+    "section": "flow",
+    "cadence": "13:30 PT + Sunday 18:00 PT (QQQ weekly)",
+    "group": "set1"
+  },
+  {
+    "handle": "TraderJonesy",
+    "id": "1586379350089293824",
+    "verified": "blue",
+    "type": "implied_move",
+    "weight": 1.0,
+    "section": "flow",
+    "cadence": "13:30 PT daily implied + Sunday 18:00 PT weekly",
+    "group": "set1",
+    "type_prev": "implied moves"
+  },
+  {
+    "handle": "SRC_PLAN_B",
+    "id": "4706746513",
+    "verified": "blue",
+    "type": "TA pivots",
+    "weight": 0.7,
+    "section": "flow",
+    "cadence": "06:45 PT (pre-open pivots)",
+    "group": "set1"
+  },
+  {
+    "handle": "TradeSniperSara",
+    "id": "979566308",
+    "verified": "blue",
+    "type": "TheStrat",
+    "weight": 0.5,
+    "section": "flow",
+    "cadence": "13:30 PT (only $SPY/$SPX price posts)",
+    "group": "set1"
+  },
+  {
+    "handle": "FlowbyBobby",
+    "id": "1970226151542136833",
+    "verified": "blue",
+    "type": "GEX heatmaps",
+    "weight": 0.8,
+    "section": "flow",
+    "cadence": "3x trading days (06:45, 10:00, 13:30 PT)",
+    "group": "set1"
+  },
+  {
+    "handle": "SuperLuckeee",
+    "id": "1061650783333040129",
+    "verified": "blue",
+    "type": "TA/promo",
+    "weight": 0.5,
+    "section": "flow",
+    "cadence": "06:45 PT (only $SPY/$SPX price posts)",
+    "group": "set1"
+  },
+  {
+    "handle": "CheddarFlow",
+    "id": "1004137473679679488",
+    "verified": "blue",
+    "type": "flow/GEX/DP",
+    "weight": 1.0,
+    "section": "cheddar",
+    "cadence": "3x trading days (06:45, 10:00, 13:30 PT); Cheddar recap at 13:30",
+    "group": "set1"
+  },
+  {
+    "handle": "VoltickIO",
+    "id": "1320839153072902146",
+    "verified": "none (verified by bio+watermark)",
+    "type": "GEX levels",
+    "weight": 1.0,
+    "section": "voltick",
+    "cadence": "06:45 PT (06:00 levels post) + 10:00 + 13:30 (scorecard)",
+    "group": "set1"
+  },
+  {
+    "handle": "SRC_LEVELS_A",
+    "section": "plan",
+    "type": "es_levels",
+    "cadence": "pre-open + evening",
+    "group": "set1",
+    "weight": 1.0
+  },
+  {
+    "handle": "market_sleuth",
+    "id": "1566053821519912961",
+    "verified": "blue",
+    "type": "TA levels",
+    "weight": 0.5,
+    "section": "flow",
+    "cadence": "13:30 PT EOD (VIX/volume/range commentary; sparse SPY levels)",
+    "group": "set1"
+  },
+  {
+    "handle": "yuriymatso",
+    "id": "1122679579",
+    "verified": "blue",
+    "type": "TA levels",
+    "weight": 0.7,
+    "section": "flow",
+    "cadence": "13:30 PT EOD + Sunday 18:00 PT (ES/NQ chart levels, breadth/vol stats)",
+    "group": "set1"
+  },
+  {
+    "handle": "PatternProfits",
+    "id": "1815059672769933312",
+    "verified": "blue",
+    "type": "ES/SPY levels map (IM, walls, VA)",
+    "weight": 0.8,
+    "section": "flow",
+    "cadence": "06:15 PT pre-open levels map + 14:10 PT closing debrief",
+    "group": "set2",
+    "followers": 7511,
+    "added": "2026-10-20",
+    "consistency_10d": "10/10"
+  },
+  {
+    "handle": "CheddaFreeze",
+    "id": "1324031638062436355",
+    "verified": "none",
+    "type": "TA ranges + gamma",
+    "weight": 0.6,
+    "section": "flow",
+    "cadence": "08:20 PT \"SPY Levels & Data\" + EOD chart",
+    "group": "set2",
+    "followers": 6451,
+    "added": "2026-10-20",
+    "consistency_10d": "9/10"
+  },
+  {
+    "handle": "Tradytics",
+    "id": "3197275843",
+    "verified": "blue",
+    "type": "GEX levels",
+    "weight": 0.8,
+    "section": "flow",
+    "cadence": "06:15 PT early SPY gamma levels + 16:00 PT next-day gamma look",
+    "group": "set2",
+    "followers": 52956,
+    "added": "2026-10-20",
+    "consistency_10d": "9/10 (\u2265)"
+  },
+  {
+    "handle": "OptionKing33996",
+    "id": "1898802674163662849",
+    "verified": "blue",
+    "type": "0DTE trade plan",
+    "weight": 0.4,
+    "section": "flow",
+    "cadence": "06:25 PT SPY trade plan (calls above/puts below) + target hits",
+    "group": "set2",
+    "followers": 7727,
+    "added": "2026-10-20",
+    "consistency_10d": "8/10 (\u2265)"
+  },
+  {
+    "handle": "uga1018",
+    "id": "39062260",
+    "verified": "blue",
+    "type": "pivot + expected move",
+    "weight": 0.4,
+    "section": "flow",
+    "cadence": "05:45 PT key levels (pivot, exp move) + 13:20 PT levels recap",
+    "group": "set2",
+    "followers": 107,
+    "added": "2026-10-20",
+    "consistency_10d": "8/10"
+  },
+  {
+    "handle": "_Shark_Trading",
+    "id": "1154616462230925317",
+    "verified": "blue",
+    "type": "DP/GEX intraday",
+    "weight": 0.5,
+    "section": "flow",
+    "cadence": "intraday 07:00-13:00 PT SPY/SPX dark-pool and gamma levels, live trades",
+    "group": "set2",
+    "followers": 50081,
+    "added": "2026-10-20",
+    "consistency_10d": "8/10 (\u2265)"
+  },
+  {
+    "handle": "KCTrades777",
+    "id": "1635414252881162241",
+    "verified": "none",
+    "type": "TA levels/zones (chart)",
+    "weight": 0.3,
+    "section": "flow",
+    "cadence": "06:10 PT premarket SPY/SPX chart levels (image) + intraday recaps",
+    "group": "set2",
+    "followers": 55162,
+    "added": "2026-10-20",
+    "consistency_10d": "8/10"
+  },
+  {
+    "handle": "GEXEdgeIO",
+    "id": "2051098849641738240",
+    "verified": "none",
+    "type": "GEX levels",
+    "weight": 0.8,
+    "section": "flow",
+    "cadence": "3x trading days",
+    "group": "set1",
+    "added": "2026-10-28"
+  },
+  {
+    "handle": "Smash",
+    "id": "",
+    "kind": "levels",
+    "note": "ES hinge; name scrubbed"
+  }
+]
