@@ -1,6 +1,7 @@
 {
   "label": "Dark Pool",
   "symbol": "SPY",
+  "updated": "2026-10-31",
   "asof_note": "From Everett chart screenshot 2026-10-31; purple DP labels only",
   "convert": {
     "spy_per_spx": 0.0997,

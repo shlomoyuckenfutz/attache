@@ -25,3 +25,10 @@ cp daily/index.html /workspace/orb-dash-site/daily/
 6. Commit and push this repo.
 
 Do not put ORB5/ORB30 wording on the site. Keep annotation lines off the candles (edge ticks only).
+
+## Dark Pool TEST page
+
+Locked organizer (not in nav): [`darkpool-test/`](darkpool-test/) →
+https://shlomoyuckenfutz.github.io/attache/darkpool-test/
+See that folder's README for rebuild/encrypt steps.
+
