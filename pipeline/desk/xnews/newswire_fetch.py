@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """THE WIRE: market news wire feed for the Attaché desk (paper/research only).
 
-X reads happen in the refresh routine through the read-only 'x' MCP namespace (no API keys live on the box).
-Per refresh use at most 2 calls of x.search_posts_all (print them with --plan):
-  1) query "from:FirstSquawk -is:retweet -is:reply"  max_results 25  -> save output to xnews/newswire/raw_squawk.txt
-  2) query "from:axios -is:retweet -is:reply"        max_results 15  -> save output to xnews/newswire/raw_axios.txt
-  common args: sort_order=recency, post.fields=created_at,author_id, since_id=<printed by --plan> (skip a call if nothing new is needed)
-Then: python3 newswire_fetch.py [raw files...]   (defaults to newswire/raw_*.txt)
+Bot sweep writes X search payloads to pipeline/inputs/newswire_raw.json (synced into xnews/newswire/).
+Actions then runs: python3 newswire_fetch.py  (reads newswire/newswire_raw.json, or raw_*.txt fallback).
+Manual/legacy: save x.search_posts_all dumps to newswire/raw_*.txt then run this script.
 It merges into newswire/cache.json (72h), drops non-market items, tags impact, rewrites headlines short, and writes
 xnews/newswire.json (top 20, newest first). Output carries NO handles, names or links: only SRC tags (W1, W2 by
 order in newswire_handles.json). newswire_handles.json is kept separate from handles.json (trading plan list).
@@ -82,11 +79,45 @@ def plan():
         if since: a['since_id'] = since
         print(json.dumps({'tool': 'x.search_posts_all', 'save_to': str(N / f), 'arguments': a}))
 
+def load_raw_bundle(path):
+    """Load bot-written pipeline/inputs/newswire_raw.json (or desk copy).
+    Shape: {sources: {Handle: {data, includes, ...}}} or a bare X API payload.
+    Also accepts a list of such payloads.
+    """
+    d = json.loads(Path(path).read_text(encoding='utf-8'))
+    out = []
+    if isinstance(d, dict) and 'sources' in d:
+        for handle, payload in d['sources'].items():
+            users = {u['id']: u.get('username', '') for u in payload.get('includes', {}).get('users', [])}
+            for t in payload.get('data', []) or []:
+                h = users.get(t.get('author_id'), '') or handle
+                out.append({'id': t['id'], 'at': t['created_at'], 'src': SRC.get(h.lower(), 'SRC W?'), 'text': t.get('text', '')})
+        return out
+    # bare payload or list
+    payloads = d if isinstance(d, list) else [d]
+    for payload in payloads:
+        users = {u['id']: u.get('username', '') for u in payload.get('includes', {}).get('users', [])}
+        for t in payload.get('data', []) or []:
+            h = users.get(t.get('author_id'), '') or (re.search(r'x\.com/([^/]+)/status', t.get('url', '')) or [None, ''])[1]
+            out.append({'id': t['id'], 'at': t['created_at'], 'src': SRC.get(h.lower(), 'SRC W?'), 'text': t.get('text', '')})
+    return out
+
 def main(files):
     now = datetime.now(timezone.utc)
     c = json.loads(CACHE.read_text()) if CACHE.exists() else {}
-    for f in files or sorted(glob.glob(str(N / 'raw_*.txt'))):
-        for p in load_raw(f): c[p['id']] = p
+    files = list(files) if files else []
+    # Prefer bot-written bundle if present (synced from pipeline/inputs/newswire_raw.json)
+    bundle = N / 'newswire_raw.json'
+    if not files and bundle.exists():
+        for p in load_raw_bundle(bundle): c[p['id']] = p
+    elif not files:
+        files = sorted(glob.glob(str(N / 'raw_*.txt')))
+    for f in files:
+        fp = Path(f)
+        if fp.name == 'newswire_raw.json' or fp.suffix == '.json' and 'newswire_raw' in fp.name:
+            for p in load_raw_bundle(fp): c[p['id']] = p
+        else:
+            for p in load_raw(f): c[p['id']] = p
     cut = now - timedelta(hours=72)
     c = {k: v for k, v in c.items() if datetime.fromisoformat(v['at'].replace('Z', '+00:00')) >= cut}
     CACHE.write_text(json.dumps(c))

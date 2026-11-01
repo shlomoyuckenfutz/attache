@@ -2,11 +2,10 @@ name: attache-refresh
 
 on:
   schedule:
-    # US market window every 15 min (PDT mapping): 6:00 AM–1:15 PM PT = 13:00–20:15 UTC Mon–Fri.
-    # DST note: when Pacific is PST (UTC-8), wall-clock coverage shifts one hour later in PT
-    # (7:00 AM–2:15 PM PT). Re-bump crons after the fall-back if strict 6:00–1:15 PT is required year-round.
-    - cron: '0,15,30,45 13-19 * * 1-5'   # 13:00–19:45 UTC
-    - cron: '0,15 20 * * 1-5'             # 20:00 and 20:15 UTC
+    # US market window every 15 min: 6:00 AM–1:15 PM PT Mon–Fri.
+    # PST (UTC-8, after fall-back): 14:00–21:15 UTC. Re-bump to 13:00–20:15 UTC when PDT returns (spring forward).
+    - cron: '0,15,30,45 14-20 * * 1-5'   # 14:00–20:45 UTC = 6:00–12:45 PT (PST)
+    - cron: '0,15 21 * * 1-5'             # 21:00 and 21:15 UTC = 1:00 and 1:15 PM PT (PST)
     # Hourly otherwise (nights, early morning, weekends). Overlaps market window; concurrency dedupes.
     - cron: '5 * * * *'
   workflow_dispatch:

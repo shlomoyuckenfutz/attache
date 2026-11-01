@@ -20,6 +20,8 @@ copy_if "$IN/xlevels/handles.json"    "$DESK/xnews/handles.json"
 copy_if "$IN/xlevels/newswire_handles.json" "$DESK/xnews/newswire_handles.json"
 copy_if "$IN/xlevels/sources.json"    "$DESK/xnews/sources.json"
 copy_if "$IN/xlevels/week_raw_posts.json" "$DESK/xnews/week_raw/posts.json"
+# THE WIRE raw X pulls (bot writes; Actions runs newswire_fetch.py)
+copy_if "$IN/newswire_raw.json"     "$DESK/xnews/newswire/newswire_raw.json"
 copy_if "$IN/spartan/plan_b.json" "$DESK/xnews/spartan/plan_b.json"
 copy_if "$IN/implied_move/implied_move.json" "$DESK/xnews/implied_move/implied_move.json"
 copy_if "$IN/darkpool_levels.json"  "$DESK/es_levels/darkpool_levels.json"

@@ -1,184 +1,184 @@
 {
- "generated_at_pt": "2026-10-30 20:59 PT",
- "generated_utc": "2026-10-31T03:59:58+00:00",
+ "generated_at_pt": "2026-11-01 12:54 PT",
+ "generated_utc": "2026-11-01T20:54:08+00:00",
  "breaking_minutes": 30,
  "items": [
   {
-   "ts_utc": "2026-10-31T03:54:16.000Z",
-   "time_pt": "20:54",
-   "date_pt": "10/30",
-   "headline": "Alaska Election Dispute Escalates as Authorities Seek Separation of Ballots for Two…",
-   "tag": "POLICY",
+   "ts_utc": "2026-11-01T20:41:40.000Z",
+   "time_pt": "12:41",
+   "date_pt": "11/01",
+   "headline": "TWO OIL TANKERS STRUCK MINES ON AN “UNAUTHORIZED ROUTE” IN THE STRAIT OF HORMUZ -…",
+   "tag": "ENERGY",
    "src": "SRC W2",
    "breaking": true
   },
   {
-   "ts_utc": "2026-10-31T03:53:13.000Z",
-   "time_pt": "20:53",
-   "date_pt": "10/30",
-   "headline": "Fitch Affirms France at 'A+' While Revising Outlook to Negative",
-   "tag": "EARNINGS",
-   "src": "SRC W2",
-   "breaking": true
-  },
-  {
-   "ts_utc": "2026-10-31T03:52:30.000Z",
-   "time_pt": "20:52",
-   "date_pt": "10/30",
-   "headline": "Fitch Reconfirms Abu Dhabi’s 'AA' Sovereign Rating with Stable Outlook",
-   "tag": "EARNINGS",
-   "src": "SRC W2",
-   "breaking": true
-  },
-  {
-   "ts_utc": "2026-10-31T03:41:58.000Z",
-   "time_pt": "20:41",
-   "date_pt": "10/30",
-   "headline": "Slovakia Retains 'A-' Rating as Fitch Reaffirms Stable Outlook",
-   "tag": "EARNINGS",
-   "src": "SRC W2",
-   "breaking": true
-  },
-  {
-   "ts_utc": "2026-10-31T03:36:55.000Z",
-   "time_pt": "20:36",
-   "date_pt": "10/30",
-   "headline": "Fitch Cites Economic Slowdown, Higher Borrowing Costs and Wider Deficit in France…",
-   "tag": "EARNINGS",
-   "src": "SRC W2",
-   "breaking": true
-  },
-  {
-   "ts_utc": "2026-10-31T03:18:27.000Z",
-   "time_pt": "20:18",
-   "date_pt": "10/30",
-   "headline": "KCNA: International Sanctions Fail to Influence North Korea",
+   "ts_utc": "2026-11-01T19:43:29.000Z",
+   "time_pt": "11:43",
+   "date_pt": "11/01",
+   "headline": "TAIWAN ACCUSED CHINA OF HARASSMENT AFTER A CHINESE COAST GUARD VESSEL ENTERED…",
    "tag": "GEO",
    "src": "SRC W2",
    "breaking": false
   },
   {
-   "ts_utc": "2026-10-31T03:10:47.000Z",
-   "time_pt": "20:10",
-   "date_pt": "10/30",
-   "headline": "Fitch Warns France Has Limited Capacity to Cushion Economy Against Renewed Energy…",
+   "ts_utc": "2026-11-01T19:29:28.000Z",
+   "time_pt": "11:29",
+   "date_pt": "11/01",
+   "headline": "ISRAEL’S ELECTION CHIEF NOAM SOHLBERG SAYS THE ELECTION RESULTS WILL STAND DESPITE…",
+   "tag": "EARNINGS",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T19:29:06.000Z",
+   "time_pt": "11:29",
+   "date_pt": "11/01",
+   "headline": "ALTA, WHICH FACILITATED RUSSIAN FINANCIAL TRANSACTIONS FOLLOWING MOSCOW’S 2022…",
+   "tag": "FED",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T19:29:04.000Z",
+   "time_pt": "11:29",
+   "date_pt": "11/01",
+   "headline": "SERBIA’S CENTRAL BANK HAS SHUT DOWN ALTA BANK, A LENDER POPULAR AMONG RUSSIANS…",
+   "tag": "FED",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T19:28:47.000Z",
+   "time_pt": "11:28",
+   "date_pt": "11/01",
+   "headline": "THE QATARI LNG CARRIER AL MAYEDA, BOUND FOR PAKISTAN, WAS STRUCK BY PROJECTILES IN…",
    "tag": "ENERGY",
    "src": "SRC W2",
    "breaking": false
   },
   {
-   "ts_utc": "2026-10-31T03:04:19.000Z",
-   "time_pt": "20:04",
-   "date_pt": "10/30",
-   "headline": "KCNA: International Sanctions Cannot Force North Korea to Abandon Its Nuclear Status",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-10-31T03:01:27.000Z",
-   "time_pt": "20:01",
-   "date_pt": "10/30",
-   "headline": "US, South Korea and Japan Reiterate Commitment to North Korea’s Complete…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-10-31T02:51:19.000Z",
-   "time_pt": "19:51",
-   "date_pt": "10/30",
-   "headline": "Russia Reiterates Ukraine Settlement Stance, Says It Cannot Accept Military…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-10-31T02:47:56.000Z",
-   "time_pt": "19:47",
-   "date_pt": "10/30",
-   "headline": "Russia’s Lavrov Says Zelenskiy’s Long-Range Strike Comments Undermine Prospects for…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-10-31T02:42:42.000Z",
-   "time_pt": "19:42",
-   "date_pt": "10/30",
-   "headline": "Russia Says US Sanctions and Arms Supplies to Ukraine Continue to Hinder Bilateral…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-10-31T02:34:26.000Z",
-   "time_pt": "19:34",
-   "date_pt": "10/30",
-   "headline": "Trump Says He Will Consider Nicki Minaj for White House Press Secretary Position -…",
+   "ts_utc": "2026-11-01T19:13:52.000Z",
+   "time_pt": "11:13",
+   "date_pt": "11/01",
+   "headline": "TRUMP SAYS STEVENS HAS A HUGE FOLLOWING AND VIRTUALLY UNPARALLELED RESPECT FROM THE…",
    "tag": "POLICY",
    "src": "SRC W2",
    "breaking": false
   },
   {
-   "ts_utc": "2026-10-31T02:08:55.000Z",
-   "time_pt": "19:08",
-   "date_pt": "10/30",
-   "headline": "Zambia Secures Caa1 Rating Upgrade from Moody’s, Outlook Remains Positive",
-   "tag": "EARNINGS",
+   "ts_utc": "2026-11-01T19:13:47.000Z",
+   "time_pt": "11:13",
+   "date_pt": "11/01",
+   "headline": "TRUMP SAYS CONGRESSWOMAN HALEY STEVENS, A DEMOCRAT WHO NARROWLY LOST THE PRIMARY TO…",
+   "tag": "POLICY",
    "src": "SRC W2",
    "breaking": false
   },
   {
-   "ts_utc": "2026-10-31T02:08:19.000Z",
-   "time_pt": "19:08",
-   "date_pt": "10/30",
-   "headline": "Zambia Secures Moody’s Upgrade to Caa1 Following Material Improvement in Debt…",
-   "tag": "EARNINGS",
+   "ts_utc": "2026-11-01T18:50:43.000Z",
+   "time_pt": "10:50",
+   "date_pt": "11/01",
+   "headline": "CANADIAN PRIME MINISTER MARK CARNEY SAID HE HAD A CONSTRUCTIVE DISCUSSION WITH…",
+   "tag": "POLICY",
    "src": "SRC W2",
    "breaking": false
   },
   {
-   "ts_utc": "2026-10-31T02:05:50.000Z",
-   "time_pt": "19:05",
-   "date_pt": "10/30",
-   "headline": "Zambia’s Positive Outlook Signals Further Gains in Debt and Interest Burdens…",
-   "tag": "EARNINGS",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-10-30T21:53:28.000Z",
-   "time_pt": "14:53",
-   "date_pt": "10/30",
-   "headline": "The PC industry's painful path to an AI future",
-   "tag": "TECH",
+   "ts_utc": "2026-11-01T18:13:04.000Z",
+   "time_pt": "10:13",
+   "date_pt": "11/01",
+   "headline": "Trump has frank call with Netanyahu about next move in Iran war",
+   "tag": "GEO",
    "src": "SRC W1",
    "breaking": false
   },
   {
-   "ts_utc": "2026-10-30T20:02:21.000Z",
-   "time_pt": "13:02",
-   "date_pt": "10/30",
-   "headline": "Yes, clocks are still falling back this year despite Trump's daylight saving push",
+   "ts_utc": "2026-11-01T17:50:20.000Z",
+   "time_pt": "09:50",
+   "date_pt": "11/01",
+   "headline": "MITSUBISHI HEAVY WILL BOOST U.S. GAS TURBINE PRODUCTION",
+   "tag": "EQUITY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T17:48:14.000Z",
+   "time_pt": "09:48",
+   "date_pt": "11/01",
+   "headline": "US JUDGE REJECTS TRUMP ADMINISTRATION'S EARLY LEGAL CHALLENGE TO ALASKA SENATE RACE",
+   "tag": "POLICY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T17:48:09.000Z",
+   "time_pt": "09:48",
+   "date_pt": "11/01",
+   "headline": "DEMOCRAT HALEY STEVENS BACKS REPUBLICAN MIKE ROGERS IN CRUCIAL US SENATE RACE IN…",
+   "tag": "POLICY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T16:48:58.000Z",
+   "time_pt": "08:48",
+   "date_pt": "11/01",
+   "headline": "Zelensky: We offered Washington to purchase Patriot missiles and confirmed our…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T16:48:47.000Z",
+   "time_pt": "08:48",
+   "date_pt": "11/01",
+   "headline": "Zelensky: If Washington wants us not to target Russian oil refineries, then Moscow…",
+   "tag": "ENERGY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T16:48:32.000Z",
+   "time_pt": "08:48",
+   "date_pt": "11/01",
+   "headline": "SANA from a source in Syrian General Intelligence: Foiling a terrorist plot to…",
+   "tag": "ENERGY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T16:48:07.000Z",
+   "time_pt": "08:48",
+   "date_pt": "11/01",
+   "headline": "Yemeni Govt Forces: We carried out 1272 strikes on reinforcements of the…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T16:07:08.000Z",
+   "time_pt": "08:07",
+   "date_pt": "11/01",
+   "headline": "Trump to Fox News: There are matters that have not yet been settled in Iran",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T12:39:19.000Z",
+   "time_pt": "04:39",
+   "date_pt": "11/01",
+   "headline": "Trump's election probes find an opening in Georgia",
    "tag": "POLICY",
    "src": "SRC W1",
    "breaking": false
   },
   {
-   "ts_utc": "2026-10-30T20:00:54.000Z",
-   "time_pt": "13:00",
-   "date_pt": "10/30",
-   "headline": "Rail merger dispute could help decide the U.S. Senate",
-   "tag": "POLICY",
-   "src": "SRC W1",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-10-30T19:30:02.000Z",
-   "time_pt": "12:30",
-   "date_pt": "10/30",
-   "headline": "Trump DOJ loses last-minute California ballot bid",
+   "ts_utc": "2026-10-31T19:55:07.000Z",
+   "time_pt": "12:55",
+   "date_pt": "10/31",
+   "headline": "Judge tosses Trump lawsuit against WSJ, Murdoch over Epstein story",
    "tag": "POLICY",
    "src": "SRC W1",
    "breaking": false

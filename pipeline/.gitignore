@@ -4,3 +4,4 @@ desk/python/data/*.parquet
 desk/secrets/study_password.txt
 **/__pycache__/
 *.pyc
+desk/xnews/newswire/cache.json

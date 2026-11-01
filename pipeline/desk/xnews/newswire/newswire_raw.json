@@ -1,0 +1,448 @@
+{
+  "pulled_at_pt": "2026-11-01 12:53 PT",
+  "pulled_utc": "2026-11-01T20:53:32+00:00",
+  "handles": [
+    "axios",
+    "FirstSquawk"
+  ],
+  "sources": {
+    "FirstSquawk": {
+      "data": [
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T20:41:40.000Z",
+          "edit_history_tweet_ids": [
+            "2116994100356608148"
+          ],
+          "id": "2116994100356608148",
+          "text": "TWO OIL TANKERS STRUCK MINES ON AN “UNAUTHORIZED ROUTE” IN THE STRAIT OF HORMUZ - IRAN’S STATE MEDIA",
+          "url": "https://x.com/FirstSquawk/status/2116994100356608148"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T19:43:29.000Z",
+          "edit_history_tweet_ids": [
+            "2116979459626840226"
+          ],
+          "id": "2116979459626840226",
+          "text": "TAIWAN ACCUSED CHINA OF HARASSMENT AFTER A CHINESE COAST GUARD VESSEL ENTERED RESTRICTED WATERS NEAR THE PRATAS ISLANDS IN THE SOUTH CHINA SEA ON SATURDAY. TAIWANESE AND CHINESE SHIPS CAME WITHIN ONE NAUTICAL MILE OF EACH OTHER DURING THE STANDOFF, BEFORE TAIPEI DEMANDED THAT",
+          "url": "https://x.com/FirstSquawk/status/2116979459626840226"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T19:29:28.000Z",
+          "edit_history_tweet_ids": [
+            "2116975933378998670"
+          ],
+          "id": "2116975933378998670",
+          "text": "ISRAEL’S ELECTION CHIEF NOAM SOHLBERG SAYS THE ELECTION RESULTS WILL STAND DESPITE SERIOUS SUSPICIONS OF FOREIGN FUNDING AIMED AT INFLUENCING THE VOTE\n\nIN A JOINT STATEMENT WITH ATTORNEY GENERAL GALI BAHARAV-MIARA AND SHIN BET CHIEF DAVID ZINI, SOHLBERG SAID THE ALLEGATIONS WERE",
+          "url": "https://x.com/FirstSquawk/status/2116975933378998670"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T19:29:06.000Z",
+          "edit_history_tweet_ids": [
+            "2116975842392002867"
+          ],
+          "id": "2116975842392002867",
+          "text": "ALTA, WHICH FACILITATED RUSSIAN FINANCIAL TRANSACTIONS FOLLOWING MOSCOW’S 2022 INVASION OF UKRAINE AND HAD PREVIOUSLY FACED SCRUTINY FROM THE ECB, IS NOW THE SUBJECT OF CALLS FROM SERBIAN PROSECUTORS AND THE INCOMING STUDENT-LED MOVEMENT FOR AN INVESTIGATION INTO ITS OPERATIONS",
+          "url": "https://x.com/FirstSquawk/status/2116975842392002867"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T19:29:04.000Z",
+          "edit_history_tweet_ids": [
+            "2116975829867773954"
+          ],
+          "id": "2116975829867773954",
+          "text": "SERBIA’S CENTRAL BANK HAS SHUT DOWN ALTA BANK, A LENDER POPULAR AMONG RUSSIANS, OVER DETERIORATING FINANCES AND SUSPECTED MONEY LAUNDERING, WITH THE MOVE COMING DAYS AFTER ALEKSANDAR VUCIC’S ELECTION DEFEAT AND AMID REPORTS OF LARGE WITHDRAWALS AND TRANSFERS ABROAD - FT",
+          "url": "https://x.com/FirstSquawk/status/2116975829867773954"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T19:28:47.000Z",
+          "edit_history_tweet_ids": [
+            "2116975758795255839"
+          ],
+          "id": "2116975758795255839",
+          "text": "THE QATARI LNG CARRIER AL MAYEDA, BOUND FOR PAKISTAN, WAS STRUCK BY PROJECTILES IN THE GULF, WITH BLOOMBERG REPORTING IRAN HAD CLEARED THE VOYAGE HOURS EARLIER AND NO ONE HAVING CLAIMED THE ATTACK",
+          "url": "https://x.com/FirstSquawk/status/2116975758795255839"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T19:28:31.000Z",
+          "edit_history_tweet_ids": [
+            "2116975694362358071"
+          ],
+          "id": "2116975694362358071",
+          "text": "NETANYAHU IS PRESSING TRUMP TO RESUME STRIKES ON IRAN IMMEDIATELY AFTER TUESDAY’S U.S. MIDTERM ELECTIONS, BUT TRUMP WANTS TO GIVE DIPLOMACY MORE TIME - AXIOS",
+          "url": "https://x.com/FirstSquawk/status/2116975694362358071"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T19:13:52.000Z",
+          "edit_history_tweet_ids": [
+            "2116972005690139121"
+          ],
+          "id": "2116972005690139121",
+          "text": "TRUMP SAYS STEVENS HAS A HUGE FOLLOWING AND VIRTUALLY UNPARALLELED RESPECT FROM THE PEOPLE OF MICHIGAN, ESPECIALLY ITS AFRICAN AMERICAN AND JEWISH POPULATIONS, AND THAT SHE “SAID WHAT FEW PEOPLE ARE WILLING TO SAY,” SHOWING “GREAT AND ALMOST UNPRECEDENTED LOYALTY” AND BRAVERY -",
+          "url": "https://x.com/FirstSquawk/status/2116972005690139121"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T19:13:47.000Z",
+          "edit_history_tweet_ids": [
+            "2116971987713343753"
+          ],
+          "id": "2116971987713343753",
+          "text": "TRUMP SAYS CONGRESSWOMAN HALEY STEVENS, A DEMOCRAT WHO NARROWLY LOST THE PRIMARY TO ABDUL MOHAMED EL-SAYED AND HAD BEEN COURTED BY DEMOCRATS TO HELP IN THEIR MICHIGAN SENATE CAMPAIGN AGAINST MIKE ROGERS, HAS JUST ENDORSED MIKE ROGERS FOR SENATE - TRUTH SOCIAL",
+          "url": "https://x.com/FirstSquawk/status/2116971987713343753"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T18:50:43.000Z",
+          "edit_history_tweet_ids": [
+            "2116966181643149787"
+          ],
+          "id": "2116966181643149787",
+          "text": "CANADIAN PRIME MINISTER MARK CARNEY SAID HE HAD A CONSTRUCTIVE DISCUSSION WITH PRESIDENT DONALD TRUMP ON A POTENTIAL TRADE DEAL, WITH NEGOTIATORS EXPECTED TO WORK TOWARD AN AGREEMENT IN THE COMING WEEKS. TALKS INCLUDE POSSIBLE RELIEF FROM US TARIFFS ON CANADIAN STEEL AND",
+          "url": "https://x.com/FirstSquawk/status/2116966181643149787"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T18:15:18.000Z",
+          "edit_history_tweet_ids": [
+            "2116957269468553284"
+          ],
+          "id": "2116957269468553284",
+          "text": "UKMTO REPORTS AN INCIDENT IN THE STRAIT OF HORMUZ, WITH THE CAPTAIN OF A MERCHANT SHIP REPORTING THAT ANOTHER VESSEL WAS HIT BY AN UNIDENTIFIED PROJECTILE",
+          "url": "https://x.com/FirstSquawk/status/2116957269468553284"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T17:50:20.000Z",
+          "edit_history_tweet_ids": [
+            "2116950983947514040"
+          ],
+          "id": "2116950983947514040",
+          "text": "MITSUBISHI HEAVY WILL BOOST U.S. GAS TURBINE PRODUCTION - NIKKEI",
+          "url": "https://x.com/FirstSquawk/status/2116950983947514040"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T17:50:11.000Z",
+          "edit_history_tweet_ids": [
+            "2116950946014265574"
+          ],
+          "id": "2116950946014265574",
+          "text": "BINANCE SAYS THAT 12 HOURS AFTER WITHDRAWALS RESUMED, THERE WAS A 2.1% NET OUTFLOW, WITH MOST WITHDRAWALS OCCURRING IN THE FIRST COUPLE OF HOURS",
+          "url": "https://x.com/FirstSquawk/status/2116950946014265574"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T17:48:14.000Z",
+          "edit_history_tweet_ids": [
+            "2116950455070884014"
+          ],
+          "id": "2116950455070884014",
+          "text": "US JUDGE REJECTS TRUMP ADMINISTRATION'S EARLY LEGAL CHALLENGE TO ALASKA SENATE RACE",
+          "url": "https://x.com/FirstSquawk/status/2116950455070884014"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T17:48:09.000Z",
+          "edit_history_tweet_ids": [
+            "2116950433667441081"
+          ],
+          "id": "2116950433667441081",
+          "text": "DEMOCRAT HALEY STEVENS BACKS REPUBLICAN MIKE ROGERS IN CRUCIAL US SENATE RACE IN MICHIGAN - SOCIAL MEDIA POST",
+          "url": "https://x.com/FirstSquawk/status/2116950433667441081"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T17:46:13.000Z",
+          "edit_history_tweet_ids": [
+            "2116949949971833263"
+          ],
+          "id": "2116949949971833263",
+          "text": "DEMOCRATIC SENATOR CHRIS MURPHY HOSPITALIZED AFTER STROKE: SENATOR’S CHIEF OF STAFF, POLITICO",
+          "url": "https://x.com/FirstSquawk/status/2116949949971833263"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T17:33:20.000Z",
+          "edit_history_tweet_ids": [
+            "2116946706571157953"
+          ],
+          "id": "2116946706571157953",
+          "text": "Iraqi: We are prepared for defense and diplomacy, and the choice depends on the extent of the United States' adherence to rationality",
+          "url": "https://x.com/FirstSquawk/status/2116946706571157953"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T17:33:10.000Z",
+          "edit_history_tweet_ids": [
+            "2116946664233873658"
+          ],
+          "id": "2116946664233873658",
+          "text": "Israeli Broadcasting Authority: The Knesset Director General calls on party leaders to meet at the Presidential Residence on Wednesday",
+          "url": "https://x.com/FirstSquawk/status/2116946664233873658"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T16:49:13.000Z",
+          "edit_history_tweet_ids": [
+            "2116935605120852136"
+          ],
+          "id": "2116935605120852136",
+          "text": "Iranian Presidency: Foreign Minister submitted a report to the government regarding developments in the negotiations with America through intermediaries",
+          "url": "https://x.com/FirstSquawk/status/2116935605120852136"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T16:48:58.000Z",
+          "edit_history_tweet_ids": [
+            "2116935543175135259"
+          ],
+          "id": "2116935543175135259",
+          "text": "Zelensky: We offered Washington to purchase Patriot missiles and confirmed our readiness to secure the necessary funding.",
+          "url": "https://x.com/FirstSquawk/status/2116935543175135259"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T16:48:47.000Z",
+          "edit_history_tweet_ids": [
+            "2116935496618443230"
+          ],
+          "id": "2116935496618443230",
+          "text": "Zelensky: If Washington wants us not to target Russian oil refineries, then Moscow must stop its attacks on Ukraine's energy system.",
+          "url": "https://x.com/FirstSquawk/status/2116935496618443230"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T16:48:32.000Z",
+          "edit_history_tweet_ids": [
+            "2116935432437211299"
+          ],
+          "id": "2116935432437211299",
+          "text": "SANA from a source in Syrian General Intelligence: Foiling a terrorist plot to target the Homs refinery",
+          "url": "https://x.com/FirstSquawk/status/2116935432437211299"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T16:48:24.000Z",
+          "edit_history_tweet_ids": [
+            "2116935396827525246"
+          ],
+          "id": "2116935396827525246",
+          "text": "Israeli airstrike on the outskirts of Aita al-Jabal town, southern Lebanon",
+          "url": "https://x.com/FirstSquawk/status/2116935396827525246"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T16:48:07.000Z",
+          "edit_history_tweet_ids": [
+            "2116935326031843384"
+          ],
+          "id": "2116935326031843384",
+          "text": "Yemeni Government Forces: We carried out 1272 strikes on reinforcements of the Houthi_group as part of Operation Dawn of Yemen over the last 24 hours",
+          "url": "https://x.com/FirstSquawk/status/2116935326031843384"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-01T16:07:08.000Z",
+          "edit_history_tweet_ids": [
+            "2116925014603923858"
+          ],
+          "id": "2116925014603923858",
+          "text": "Trump to Fox News: There are matters that have not yet been settled in Iran",
+          "url": "https://x.com/FirstSquawk/status/2116925014603923858"
+        }
+      ],
+      "includes": {
+        "users": [
+          {
+            "id": "3295423333",
+            "name": "First Squawk",
+            "username": "FirstSquawk"
+          }
+        ]
+      },
+      "meta": {
+        "newest_id": "2116994100356608148",
+        "next_token": "b26v89c19zqg8o3juzly3imyq2me3wp2uxggbka64msu5",
+        "oldest_id": "2116925014603923858",
+        "result_count": 25
+      }
+    },
+    "axios": {
+      "data": [
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T19:39:27.000Z",
+          "edit_history_tweet_ids": [
+            "2116978445825569212"
+          ],
+          "id": "2116978445825569212",
+          "text": "\"Petty, selfish, unhinged\": Haley Stevens' staff and colleagues erupt at her \"betrayal\" https://t.co/63BjFF7BBF",
+          "url": "https://x.com/axios/status/2116978445825569212"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T18:51:52.000Z",
+          "edit_history_tweet_ids": [
+            "2116966469422497978"
+          ],
+          "id": "2116966469422497978",
+          "text": "DOJ's Alaska ballot-confusion suit dismissed by judge https://t.co/WjpPMNAzxp",
+          "url": "https://x.com/axios/status/2116966469422497978"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T18:48:34.000Z",
+          "edit_history_tweet_ids": [
+            "2116965640883880040"
+          ],
+          "id": "2116965640883880040",
+          "text": "Sen. Chris Murphy hospitalized after suffering stroke https://t.co/wmkqz7UYt8",
+          "url": "https://x.com/axios/status/2116965640883880040"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T18:13:04.000Z",
+          "edit_history_tweet_ids": [
+            "2116956707196674490"
+          ],
+          "id": "2116956707196674490",
+          "text": "Trump has frank call with Netanyahu about next move in Iran war https://t.co/tRhA0B7xkg",
+          "url": "https://x.com/axios/status/2116956707196674490"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T17:45:01.000Z",
+          "edit_history_tweet_ids": [
+            "2116949646945996813"
+          ],
+          "id": "2116949646945996813",
+          "text": "LATEST: Stevens endorses Republican Mike Rogers https://t.co/DLvbjgnBFI",
+          "url": "https://x.com/axios/status/2116949646945996813"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T17:34:57.000Z",
+          "edit_history_tweet_ids": [
+            "2116947115402199168"
+          ],
+          "id": "2116947115402199168",
+          "text": "Haley Stevens appears with Mike Rogers amid Michigan Democratic feud https://t.co/Geu579taCK",
+          "url": "https://x.com/axios/status/2116947115402199168"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T17:20:09.000Z",
+          "edit_history_tweet_ids": [
+            "2116943390235566199"
+          ],
+          "id": "2116943390235566199",
+          "text": "BREAKING: Democrat Haley Stevens appears with Mike Rogers at Michigan church https://t.co/uV9czMFg7O",
+          "url": "https://x.com/axios/status/2116943390235566199"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T13:47:53.000Z",
+          "edit_history_tweet_ids": [
+            "2116889969432150442"
+          ],
+          "id": "2116889969432150442",
+          "text": "NEW: Right after Tuesday's midterms, OpenAIwill unleash a policy and PR blitz to try to get in sync with the new Washington, including an effort to rebrand data centers as \"AI compute campuses.\" https://t.co/2dirpieQm6",
+          "url": "https://x.com/axios/status/2116889969432150442"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T12:56:27.000Z",
+          "edit_history_tweet_ids": [
+            "2116877027437342978"
+          ],
+          "id": "2116877027437342978",
+          "text": "Why Florida Republicans are \"white-knuckled\" about Tuesday https://t.co/5U3L9zur4A",
+          "url": "https://x.com/axios/status/2116877027437342978"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T12:39:19.000Z",
+          "edit_history_tweet_ids": [
+            "2116872715747328498"
+          ],
+          "id": "2116872715747328498",
+          "text": "Trump's election probes find an opening in Georgia https://t.co/k3mxGue0Uf",
+          "url": "https://x.com/axios/status/2116872715747328498"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T12:22:07.000Z",
+          "edit_history_tweet_ids": [
+            "2116868387485687940"
+          ],
+          "id": "2116868387485687940",
+          "text": "Dems and GOP quietly bankroll dozens of third-party spoilers https://t.co/MeGtmceS5F",
+          "url": "https://x.com/axios/status/2116868387485687940"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-01T11:14:23.000Z",
+          "edit_history_tweet_ids": [
+            "2116851339695145078"
+          ],
+          "id": "2116851339695145078",
+          "text": "Fight over race questions intensifies ahead of 2030 Census deadline https://t.co/44OpYkWC9q",
+          "url": "https://x.com/axios/status/2116851339695145078"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-10-31T19:55:07.000Z",
+          "edit_history_tweet_ids": [
+            "2116620001054539965"
+          ],
+          "id": "2116620001054539965",
+          "text": "Judge tosses Trump lawsuit against WSJ, Murdoch over Epstein story https://t.co/ACybgzsuGD",
+          "url": "https://x.com/axios/status/2116620001054539965"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-10-31T17:38:24.000Z",
+          "edit_history_tweet_ids": [
+            "2116585594692231430"
+          ],
+          "id": "2116585594692231430",
+          "text": "The AI boom's political reckoning https://t.co/JRpoYdRPMP",
+          "url": "https://x.com/axios/status/2116585594692231430"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-10-31T17:33:14.000Z",
+          "edit_history_tweet_ids": [
+            "2116584292679618805"
+          ],
+          "id": "2116584292679618805",
+          "text": "The daunting economic decision on data centers https://t.co/LZTJGPq1WL",
+          "url": "https://x.com/axios/status/2116584292679618805"
+        }
+      ],
+      "includes": {
+        "users": [
+          {
+            "id": "800707492346925056",
+            "name": "Axios",
+            "username": "axios"
+          }
+        ]
+      },
+      "meta": {
+        "newest_id": "2116978445825569212",
+        "next_token": "b26v89c19zqg8o3juzly3a5utsu6ab4jruet9m1azldvh",
+        "oldest_id": "2116584292679618805",
+        "result_count": 15
+      }
+    }
+  }
+}

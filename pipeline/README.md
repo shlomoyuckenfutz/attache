@@ -16,6 +16,7 @@ GitHub Actions runs `refresh.sh` on a schedule. Bot-only inputs (X / LLM / brows
 | Mancini ES levels | `pipeline/inputs/mancini/levels_a.json` |
 | Dark Pool levels | `pipeline/inputs/spy_dark_pool.json` **and** `pipeline/inputs/darkpool_levels.json` |
 | Weekly plan text | `pipeline/inputs/plans/yuckenfutz-weekly-YYYY-MM-DD.txt` |
+| Newswire raw (X MCP) | `pipeline/inputs/newswire_raw.json` (Actions runs `newswire_fetch.py` → patches THE WIRE) |
 
 Do **not** commit secrets. `desk/secrets/study_password.txt` is runtime-only (from Actions secret `ATOUCHE_STUDY_PASSWORD`).
 
