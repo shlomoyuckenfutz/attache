@@ -1,8 +1,35 @@
 {
- "generated_at_pt": "2026-11-01 14:34 PT",
- "generated_utc": "2026-11-01T22:34:12+00:00",
+ "generated_at_pt": "2026-11-01 14:40 PT",
+ "generated_utc": "2026-11-01T22:40:51+00:00",
  "breaking_minutes": 30,
  "items": [
+  {
+   "ts_utc": "2026-11-01T21:20:29.000Z",
+   "time_pt": "13:20",
+   "date_pt": "11/01",
+   "headline": "NORTH KOREA SAYS US-SOUTH KOREA IRON MACE DRILL WAS NUCLEAR WAR REHEARSAL TARGETING…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T20:57:35.000Z",
+   "time_pt": "12:57",
+   "date_pt": "11/01",
+   "headline": "TRUMP SAYS THE U.S. IS VERY NEAR TO SECURING A DEAL WITH CANADA AND HAS THE IDEA OF…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-01T20:55:37.000Z",
+   "time_pt": "12:55",
+   "date_pt": "11/01",
+   "headline": "TALKS PROGRESSED POSITIVELY AND MEDIATORS ARE WORKING TO BRIDGE REMAINING GAPS AND…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": false
+  },
   {
    "ts_utc": "2026-11-01T20:41:40.000Z",
    "time_pt": "12:41",
@@ -154,33 +181,6 @@
    "headline": "Yemeni Govt Forces: We carried out 1272 strikes on reinforcements of the…",
    "tag": "GEO",
    "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-01T16:07:08.000Z",
-   "time_pt": "08:07",
-   "date_pt": "11/01",
-   "headline": "Trump to Fox News: There are matters that have not yet been settled in Iran",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-01T12:39:19.000Z",
-   "time_pt": "04:39",
-   "date_pt": "11/01",
-   "headline": "Trump's election probes find an opening in Georgia",
-   "tag": "POLICY",
-   "src": "SRC W1",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-10-31T19:55:07.000Z",
-   "time_pt": "12:55",
-   "date_pt": "10/31",
-   "headline": "Judge tosses Trump lawsuit against WSJ, Murdoch over Epstein story",
-   "tag": "POLICY",
-   "src": "SRC W1",
    "breaking": false
   }
  ]
