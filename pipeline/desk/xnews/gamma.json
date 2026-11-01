@@ -1,6 +1,6 @@
 {
  "date": "2026-10-30",
- "updated_pt": "2026-11-01 09:41 PT",
+ "updated_pt": "2026-11-01 10:37 PT",
  "symbols": [
   {
    "symbol": "SPY",
@@ -91,8 +91,8 @@
     "spot": 755.69,
     "regime": "negative gamma",
     "regime_votes": {
-     "under flip / all 3 mkts neg": 1,
      "negative gamma": 2,
+     "under flip / all 3 mkts neg": 1,
      "short gamma": 1
     }
    },
