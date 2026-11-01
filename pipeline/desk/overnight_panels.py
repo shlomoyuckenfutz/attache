@@ -131,8 +131,9 @@ def build(B):
     D = L("es_levels/overnight_details.json"); N = L("xnews/bento/ledger.json")
     if not D: return "", CSS
     gen = e(D.get("generated_et", ""))
+    ledger = ledger_panel(N, D).replace('<div class="dp">', '<div class="dp full">', 1)
     return (f'<h2>OVERNIGHT DETAIL <span class="m" style="letter-spacing:0;font-weight:400">· built {gen}</span></h2><div class="dgrid">{on_panel(D)}{curve_panel(D, B)}'
-            f'{pulse_panel(D)}{cal_panel(D)}{ledger_panel(N, D).replace('<div class="dp">', '<div class="dp full">', 1)}</div>'), CSS
+            f'{pulse_panel(D)}{cal_panel(D)}{ledger}</div>'), CSS
 
 def chart(k, s):
     if not s or not s.get("bars"): return f'<div class="sc"><div class="st">/{k} OVERNIGHT</div><div class="m">N/A</div></div>'
