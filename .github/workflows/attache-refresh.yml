@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 1
+          fetch-depth: 0  # full history so pull --rebase can land cleanly
 
       - name: Setup Python 3.12
         uses: actions/setup-python@v5
@@ -67,4 +67,16 @@ jobs:
             exit 0
           fi
           git commit -m "attache-refresh: class-A update [skip ci]"
-          git push origin HEAD:main
+          # Race-safe push: another dispatch / schedule / manual push may land first.
+          # concurrency queues overlap; still rebase+retry so 'fetch first' is not fatal.
+          for i in 1 2 3 4 5; do
+            if git push origin HEAD:main; then
+              echo "Pushed on attempt $i"
+              exit 0
+            fi
+            echo "Push rejected (attempt $i) — pull --rebase and retry"
+            git pull --rebase origin main
+            sleep $((i * 2))
+          done
+          echo "Push failed after retries" >&2
+          exit 1
