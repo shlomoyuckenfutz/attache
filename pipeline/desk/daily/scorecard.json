@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-02",
+  "prior_week": [
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-28",
+    "2026-10-29",
+    "2026-10-30"
+  ],
+  "plan_week": [
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06"
+  ],
+  "have_actual": true,
+  "symbols_prior": {
+    "nq": {
+      "high": 30178.0,
+      "low": 28232.75,
+      "last": 28534.0,
+      "path": "BEAR",
+      "phase1": "HIT",
+      "phase1_zone": [
+        30150.0,
+        30273.0
+      ],
+      "phase1_high": 30178.0,
+      "phase2": "HIT",
+      "phase2_zone": [
+        29580.0,
+        29330.0
+      ],
+      "days": [
+        {
+          "date": "2026-10-26",
+          "hi": 29589.5,
+          "lo": 29024.25,
+          "last": 29322.5,
+          "event": false
+        },
+        {
+          "date": "2026-10-27",
+          "hi": 29964.75,
+          "lo": 29288.0,
+          "last": 29951.75,
+          "event": false
+        },
+        {
+          "date": "2026-10-28",
+          "hi": 30178.0,
+          "lo": 29482.5,
+          "last": 29649.25,
+          "event": true
+        },
+        {
+          "date": "2026-10-29",
+          "hi": 29735.0,
+          "lo": 28821.5,
+          "last": 28996.75,
+          "event": false
+        },
+        {
+          "date": "2026-10-30",
+          "hi": 29011.0,
+          "lo": 28232.75,
+          "last": 28534.0,
+          "event": false
+        }
+      ],
+      "n_bars": 212
+    },
+    "qqq": {
+      "high": 730.2,
+      "low": 683.4500122070312,
+      "last": 692.74,
+      "path": "BULL",
+      "phase1": "HIT",
+      "phase1_zone": [
+        725.0,
+        730.0
+      ],
+      "phase1_high": 730.2,
+      "phase2": "HIT",
+      "phase2_zone": [
+        715.0,
+        708.0
+      ],
+      "days": [
+        {
+          "date": "2026-10-26",
+          "hi": 715.25,
+          "lo": 705.58,
+          "last": 714.44,
+          "event": false
+        },
+        {
+          "date": "2026-10-27",
+          "hi": 722.86,
+          "lo": 713.59,
+          "last": 722.26,
+          "event": false
+        },
+        {
+          "date": "2026-10-28",
+          "hi": 730.2,
+          "lo": 716.7,
+          "last": 718.0,
+          "event": true
+        },
+        {
+          "date": "2026-10-29",
+          "hi": 718.07,
+          "lo": 702.5,
+          "last": 704.3,
+          "event": false
+        },
+        {
+          "date": "2026-10-30",
+          "hi": 698.63,
+          "lo": 683.45,
+          "last": 692.74,
+          "event": false
+        }
+      ],
+      "n_bars": 106
+    }
+  },
+  "symbols_plan": {},
+  "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned Yahoo bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
+}

@@ -1,0 +1,228 @@
+{
+  "date": "2026-11-02",
+  "asof_pt": "2026-10-30 21:00 PT",
+  "bias": {
+    "direction": "SHORT",
+    "reason": "Fri Mode-1 red: ES lost 7677\u20137803 on 7703 failure; SPY lost 762.27 + 760 put wall into ~\u221217B short gamma. Regime bearish/neg-gamma. Mon bounce possible \u2014 fade into 7665/760 unless reclaimed and held."
+  },
+  "key_levels": [
+    {
+      "price": 7677,
+      "note": "ES old range shelf LOST \u2014 must recover for sustained green"
+    },
+    {
+      "price": 7665,
+      "note": "ES bounce target / fade zone"
+    },
+    {
+      "price": 7649,
+      "note": "ES 7645\u201349 reclaim band"
+    },
+    {
+      "price": 7626,
+      "note": "ES next on Mode-1 rip"
+    },
+    {
+      "price": 7616,
+      "note": "ES 7616 support (\u2194 SPX 7582 / SPY 755.9) \u2014 Fri basis ES\u2212SPX +34.5"
+    },
+    {
+      "price": 7585,
+      "note": "ES 7585 support (\u2194 SPX 7550.5 / SPY 752.8) \u2014 grind / Fri-tagged"
+    },
+    {
+      "price": 7575,
+      "note": "ES Mode-1 reclaim trigger (late Fri +45); monthly line"
+    },
+    {
+      "price": 7560,
+      "note": "ES neg GEX node"
+    },
+    {
+      "price": 7558,
+      "note": "ES Fri session low"
+    },
+    {
+      "price": 7703,
+      "note": "ES bear-case trigger that fired (now resistance)"
+    },
+    {
+      "price": 7803,
+      "note": "ES prior range top (Wed high) \u2014 far"
+    },
+    {
+      "price": 765,
+      "note": "SPY magnet / 1D max overhead"
+    },
+    {
+      "price": 762.27,
+      "note": "SPY dark pool LOST Fri \u2014 first real resistance"
+    },
+    {
+      "price": 760,
+      "note": "SPY put wall LOST Fri (\u22122.8B)"
+    },
+    {
+      "price": 757.43,
+      "note": "SPY double dark pool bounce/reclaim"
+    },
+    {
+      "price": 755.72,
+      "note": "SPY Fri close / pivot"
+    },
+    {
+      "price": 755,
+      "note": "SPY put node / Neg GEX"
+    },
+    {
+      "price": 754.07,
+      "note": "SPY double dark pool; fail \u2192 air pocket"
+    },
+    {
+      "price": 750,
+      "note": "SPY floor / heavy Neg GEX"
+    },
+    {
+      "price": 746.77,
+      "note": "SPY air-pocket target if 754 fails"
+    },
+    {
+      "price": 700,
+      "note": "QQQ first reclaim"
+    },
+    {
+      "price": 695,
+      "note": "QQQ near resistance"
+    },
+    {
+      "price": 685,
+      "note": "QQQ support / next down"
+    },
+    {
+      "price": 690.49,
+      "note": "QQQ Fri close"
+    },
+    {
+      "price": 7755,
+      "note": "ES gap-fill / expansion magnet (bull stretch)"
+    },
+    {
+      "price": 7731,
+      "note": "ES resistance on Fri-selloff retrace"
+    },
+    {
+      "price": 775,
+      "note": "SPY FOMC-week high area (bull expansion)"
+    },
+    {
+      "price": 770,
+      "note": "SPY call wall / gamma flip (bull magnet)"
+    },
+    {
+      "price": 715,
+      "note": "QQQ expansion toward 20-wk"
+    },
+    {
+      "price": 710,
+      "note": "QQQ first expansion shelf"
+    },
+    {
+      "price": 29740,
+      "note": "NQ ~720-wall eq / expansion"
+    },
+    {
+      "price": 30160,
+      "note": "NQ toward Wed AH high (bull stretch)"
+    },
+    {
+      "price": 7540,
+      "note": "ES Mon flush undercut (below Fri low 7558) \u2014 bull path lower low"
+    },
+    {
+      "price": 752,
+      "note": "SPY Mon flush toward 750 (bull path lower low)"
+    },
+    {
+      "price": 688,
+      "note": "QQQ Mon flush under Fri close (bull path lower low)"
+    },
+    {
+      "price": 28100,
+      "note": "NQ Mon flush below Fri low 28233 (bull path lower low)"
+    },
+    {
+      "price": 755.9,
+      "note": "SPY 755.9 support \u2248 ES 7616 (SPY/SPX 0.09970 \u00b7 Fri SPY 755.72 / SPX 7580)"
+    },
+    {
+      "price": 752.8,
+      "note": "SPY 752.8 support \u2248 ES 7585 (same basis)"
+    },
+    {
+      "price": 7582,
+      "note": "SPX 7582 support \u2248 ES 7616 (ES\u2212SPX basis +34.5 from Fri 7614.50 vs 7580)"
+    },
+    {
+      "price": 7550.5,
+      "note": "SPX 7550.5 support \u2248 ES 7585 (same basis)"
+    }
+  ],
+  "actionable": [
+    "Fri recap: Mode-1 red \u2014 7703 failure lost ES 7677\u20137803; SPY flushed 762.27 and 760 into deep short gamma. Late 7575 reclaim ripped +45 to ~7614.5 settle. VIX 19.42 (hi 23.93), term structure backwardated.",
+    "PRIMARY Mon: Flush-first \u2014 ES 7575\u21927540 (under Fri low) / SPY 752\u2192750 before any bounce. After lower low: ES 7616\u21927677\u21927703/7751\u201355; SPY 760\u2192770/775 later in week. Fade premature green into 7665/760 pre-undercut.",
+    "PRIMARY downside if 7575 fails again: ES 7560 \u2192 7558 \u2192 7520\u201330; SPY fail 754.07 \u2192 750 then 746.77.",
+    "SPY structure: under 760/762.27. Reclaim 757.43 \u2192 760 for bounce legs; lose 754.07 = air pocket. Net GEX ~\u2212$17B near-exp, regime NEGATIVE.",
+    "Catalysts: ISM Manufacturing Mon 7 AM PT; US midterms Tue 11/3 + JOLTS; ADP/ISM Services Wed; Claims Thu; October jobs Fri 11/6. Weekend digest of INTC/AMZN/Mag7 AI-spend scare."
+  ],
+  "sources_count": 6,
+  "overnight_bias": "BEARISH CONTROL / MODE-1 BOUNCE WATCH",
+  "path": {
+    "bull": "Markets don't usually bottom on a Friday \u2014 Mon/early-Tue flush first (ES 7575\u21927540 under Fri low; SPY 752\u2192750; QQQ 690\u2192688; NQ 28295\u2192~28100), THEN late-week bounce: ES 7616/7677\u21927703/7731/7751\u201355; SPY 760\u2192765\u2192770\u2192775; QQQ 700\u2192707\u2192710\u2192715; NQ 28915\u219229320\u219229740\u219230100",
+    "bear": "ES lose 7575 \u2192 7560/7558 \u2192 7520; SPY lose 754.07 \u2192 750/746.77 air pocket"
+  },
+  "friday_recap": {
+    "SPY": {
+      "o": 761.38,
+      "h": 761.46,
+      "l": 750.36,
+      "c": 755.72,
+      "chg": -1.77
+    },
+    "QQQ": {
+      "o": 697.21,
+      "h": 698.63,
+      "l": 683.45,
+      "c": 690.49,
+      "chg": -3.47
+    },
+    "SPX": {
+      "o": 7631.07,
+      "h": 7637.48,
+      "l": 7527.56,
+      "c": 7580.07,
+      "chg": -1.82
+    },
+    "ES": {
+      "o": 7709.25,
+      "h": 7713.0,
+      "l": 7558.25,
+      "c": 7614.5,
+      "chg": -1.8
+    },
+    "NQ": {
+      "o": 29180.0,
+      "h": 29180.0,
+      "l": 28232.75,
+      "c": 28543.0,
+      "chg": -3.45
+    },
+    "VIX": {
+      "o": 18.43,
+      "h": 23.93,
+      "l": 18.03,
+      "c": 19.42,
+      "chg": 12.91
+    },
+    "drivers": "AI cash-burn scare after AMZN/INTC (+ prior GOOGL); flight to safety; SPY put wall 760 lost; net GEX ~-16.8B short gamma"
+  }
+}
