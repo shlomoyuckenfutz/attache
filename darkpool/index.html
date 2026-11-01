@@ -491,10 +491,12 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
       const meta=rowMeta&&(rowMeta[p]||rowMeta[Number(p)]);
       const cn=lm.color||'purple'; const prior=lm.status==='prior';
       const col=nr?'#ffffff':colorFor(cn);
+      /* Right-edge labels/ticks: prior lavender full opacity; current bright purple; green/teal unchanged */
+      const labCol=nr?'#ffffff':(cn==='green'||cn==='teal')?colorFor(cn):(prior?'#c4b5fd':'#c48cff');
       const y=yAt(p);
       svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${R(y)}" y2="${R(y)}" stroke="${col}" stroke-opacity="${prior?0.28:0.5}" stroke-width="1" ${prior?'stroke-dasharray="3 3"':''}/>`;
-      svg+=`<line x1="${pad.l+plotW}" x2="${pad.l+plotW+5}" y1="${R(y)}" y2="${R(y)}" stroke="${col}" stroke-opacity="${prior?0.45:0.9}" stroke-width="1.5"/>`;
-      return {p,nr,col,prior,yTick:y,yLab:y,title:meta?`SPY ${fmt(p)} · SPX ${fmt(meta.spx)} · ES ${fmt(meta.es)} · ${lm.status||''}`:`SPY ${fmt(p)}`};
+      svg+=`<line x1="${pad.l+plotW}" x2="${pad.l+plotW+5}" y1="${R(y)}" y2="${R(y)}" stroke="${labCol}" stroke-opacity="1" stroke-width="1.5"/>`;
+      return {p,nr,col,labCol,prior,yTick:y,yLab:y,title:meta?`SPY ${fmt(p)} · SPX ${fmt(meta.spx)} · ES ${fmt(meta.es)} · ${lm.status||''}`:`SPY ${fmt(p)}`};
     });
     // candles
     if(cs) cs.forEach((c,i)=>{
@@ -535,8 +537,8 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
     labels.splice(labels.indexOf(spotLab),1);
     const fsz=mob?8:10;
     labels.forEach(lb=>{
-      svg+=`<path d="M ${tx0} ${R(lb.yTick)} L ${tx0+4} ${R(lb.yTick)} L ${labX-2} ${lb.yLab}" fill="none" stroke="${lb.col}" stroke-opacity="${lb.prior?0.45:0.85}"/>`;
-      svg+=`<text class="dlbl" data-title="${lb.title}" x="${labX}" y="${lb.yLab+3}" fill="${lb.col}" fill-opacity="${lb.prior?0.55:1}" font-size="${fsz}" font-weight="${lb.nr?700:500}">${fmt(lb.p)}</text>`;
+      svg+=`<path d="M ${tx0} ${R(lb.yTick)} L ${tx0+4} ${R(lb.yTick)} L ${labX-2} ${lb.yLab}" fill="none" stroke="${lb.labCol}" stroke-opacity="1"/>`;
+      svg+=`<text class="dlbl" data-title="${lb.title}" x="${labX}" y="${lb.yLab+3}" fill="${lb.labCol}" fill-opacity="1" font-size="${fsz}" font-weight="${lb.nr?700:(lb.prior?500:700)}">${fmt(lb.p)}</text>`;
     });
     // spot tag on axis
     svg+=`<path d="M ${tx0} ${R(ySpot)} L ${labX-2} ${spotLab.yLab}" stroke="#fff"/><rect x="${labX-3}" y="${spotLab.yLab-7}" width="${pad.r-8}" height="14" fill="#fff"/><text x="${labX}" y="${spotLab.yLab+4}" fill="#000" font-size="${mob?9:10}" font-weight="700">${fmt(spot)}</text>`;
