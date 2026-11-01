@@ -67,6 +67,8 @@ run "exposure_collector" env PUSH=0 python3 scripts/exposure_collector.py
 run "make_daily_charts" python3 make_daily_charts.py
 
 # 11) Build HTML pages
+mkdir -p overnight weekly/charts/prior weekly/charts/plan daily/charts
+
 run "build_overnight" python3 build_overnight.py
 run "build_weekly" python3 build_weekly.py --patch-desk "$ORB_SITE/command/index.html"
 run "build_daily" python3 build_daily.py --patch-desk "$ORB_SITE/command/index.html"

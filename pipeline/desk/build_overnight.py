@@ -83,6 +83,7 @@ tr:hover td{{background:#0c0c0c}}.px{{color:#000;background:var(--amb2);font-siz
 <p class="m">Session = current Globex session (from 18:00 ET) for futures; current trading day for cash/ETF rows. Change vs prior session close. PROXY = nearest freely available instrument (cash index, spot index or ETF). N/A = no free feed. Delayed data; research only, not advice.</p></main>
 <script>document.querySelectorAll('tbody tr:not(.gh)').forEach(function(t){{if(t.cells[1])t.title=t.cells[1].textContent.trim()}});</script>
 </body></html>'''
+(R / "overnight").mkdir(parents=True, exist_ok=True)
 (R / "overnight/index.html").write_text(html)
 try:
     import ui_shell as _ui; _ui.inject('overnight', str(R / "overnight/index.html"))  # permanent: shared top bar/polish baked into every build
