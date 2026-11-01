@@ -5,14 +5,17 @@ https://shlomoyuckenfutz.github.io/attache/darkpool-test/
 Locked with StaticCrypt (same Study password). **Not linked from main nav.**
 
 Reads [`../data/spy_dark_pool.json`](../data/spy_dark_pool.json) at runtime.
+Levels are tagged `current` (Nov 2–6 plan) or `prior` (older desk seeds / notes).
 
 ## Contents
 
 1. Dark Pool Position panel (spot, nearest above/below, distance cards, crossed stamps)
 2. Full level table SPY / SPX / ES (ratio + basis from `convert` in JSON)
-3. PRICE LADDER — baked SPY 5m candles with purple **edge ticks only** on the
-   right axis (no annotation lines across candles); de-overlapped labels;
-   spot dashed; SPX/ES on hover
+3. PRICE LADDER — baked SPY **daily** candles (Alpaca IEX, ~6m) with purple
+   **edge ticks only** on the right axis (no annotation lines across candles);
+   current levels bright / prior dim; de-overlapped labels; spot dashed;
+   SPX/ES on hover (ratio 0.099698, ES basis 33.93); full-width primary chart;
+   y-range forced to include every Dark Pool level
 4. LEVEL STATS — per-level touch / bounce / break over ~30d of 5m bars
    (sortable table + bounce-vs-break bar); definitions on page
 5. CONVERSION — verified SPY÷SPX ratio + ES−SPX basis (Yahoo Fri closes)
