@@ -99,7 +99,11 @@ def cal_panel(D):
     fd = "".join(f'<tr><td class="n">{e(r["time_pt"])}</td><td colspan="4">{e(r["title"])}</td></tr>' for r in C.get("fed", [])) or '<tr><td colspan="5" class="m">No Fed speakers listed.</td></tr>'
     au = "".join(f'<tr><td class="n">{e(r["time_pt"])}</td><td>{e(r["date"])} · {e(r["term"])} {e(r["type"])}{" (reopen)" if r["reopen"] else ""}</td><td class="m">{"NEXT SESSION" if r["next"] else ""}</td><td class="n" colspan="2">{f(r["size"],1)}B</td></tr>' for r in C.get("auctions", [])) \
          or '<tr><td colspan="5" class="m">No auctions in the next week.</td></tr>'
-    ex = "".join(f'<div class="q"><i>{e(r["date"])}</i> {e(r["what"])} {"<span class=\"tg out\">NEXT SESSION</span>" if r["today"] else "<span class=\"m\">in " + str(r["days"]) + "d</span>"}</div>' for r in C.get("expiries", []))
+    _ex_bits = []
+    for r in C.get("expiries", []):
+        tag = '<span class="tg out">NEXT SESSION</span>' if r["today"] else ('<span class="m">in ' + str(r["days"]) + 'd</span>')
+        _ex_bits.append(f'<div class="q"><i>{e(r["date"])}</i> {e(r["what"])} {tag}</div>')
+    ex = "".join(_ex_bits)
     warn = "" if C.get("ok", True) else '<div class="m">Economic calendar feed unavailable this run.</div>'
     return (f'<div class="dp"><h3>TODAY\'S CALENDAR · {e(ns)}</h3>{warn}<table><tr><th class="n">PT</th><th>US RELEASE</th><th>IMPACT</th><th class="n">CONS</th><th class="n">PRIOR</th></tr>{ec}'
             f'<tr><th class="n">PT</th><th colspan="4">FED SPEAKERS</th></tr>{fd}<tr><th class="n">PT</th><th>TREASURY AUCTIONS (7D)</th><th></th><th class="n" colspan="2">SIZE</th></tr>{au}</table>'

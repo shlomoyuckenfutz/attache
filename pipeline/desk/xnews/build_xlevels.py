@@ -89,7 +89,7 @@ G["disagree_threshold"] = 1.0
 (X / "gamma.json").write_text(json.dumps(G, indent=1, ensure_ascii=False))
 
 # ---- scorecard.json: auto-extract SPY levels from week posts, grade on RTH 1m bars
-posts = json.loads((X / "week_raw" / "posts.json").read_text())
+posts = json.loads((X / "week_raw" / "posts.json").read_text()) if (X / "week_raw" / "posts.json").exists() else []
 LV = re.compile(r"(?<![\d.])\$?(7[4-9]\d(?:\.\d{1,2})?)(?![\d.,]|\s?(?:[cCpP]\b|calls?|puts?|strike|%|[kKmMbB]\b))")
 SKIP = re.compile(r"(opened at|close[d]? (?:at|around)|is at|trading (?:at|around)|right now|finished around|reaching)\s*\$?$", re.I)
 def week_levels(h):
