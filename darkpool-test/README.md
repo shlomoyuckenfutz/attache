@@ -8,14 +8,18 @@ Reads [`../data/spy_dark_pool.json`](../data/spy_dark_pool.json) at runtime.
 
 ## Contents
 
-1. Dark Pool Position panel (spot, nearest above/below, distance cards)
-2. Full level table SPY / SPX / ES (`SPX = SPY ÷ 0.0997`, `ES = SPX + 34.5`)
+1. Dark Pool Position panel (spot, nearest above/below, distance cards, crossed stamps)
+2. Full level table SPY / SPX / ES (ratio + basis from `convert` in JSON)
 3. PRICE LADDER — baked SPY 5m candles with purple **edge ticks only** on the
    right axis (no annotation lines across candles); de-overlapped labels;
    spot dashed; SPX/ES on hover
 4. LEVEL STATS — per-level touch / bounce / break over ~30d of 5m bars
    (sortable table + bounce-vs-break bar); definitions on page
-5. Levels last updated + how-to-update note
+5. CONVERSION — verified SPY÷SPX ratio + ES−SPX basis (Yahoo Fri closes)
+6. LEVEL SCORECARD — distance + bounce/break + session cross stamps
+7. TIME ABOVE / BELOW — latest session heat strips per level
+8. CLUSTERS — zones of levels within $1, distance from spot
+9. Levels last updated + how-to-update note
 
 No source names on the page — label levels **Dark Pool** only.
 
