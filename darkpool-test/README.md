@@ -11,11 +11,11 @@ Levels are tagged `current` (Nov 2–6 plan) or `prior` (older desk seeds / note
 
 1. Dark Pool Position panel (spot, nearest above/below, distance cards, crossed stamps)
 2. Full level table SPY / SPX / ES (ratio + basis from `convert` in JSON)
-3. PRICE LADDER — baked SPY **daily** candles (Alpaca IEX, ~6m) with purple
+3. PRICE LADDER — baked SPY **4H** candles (Alpaca IEX 30m→RTH 4H, ~3m) with purple
    **edge ticks only** on the right axis (no annotation lines across candles);
    current levels bright / prior dim; de-overlapped labels; spot dashed;
    SPX/ES on hover (ratio 0.099698, ES basis 33.93); full-width primary chart;
-   y-range forced to include every Dark Pool level
+   y-range fits candles; off-chart levels listed in chips; level lines behind candles; clusters as cards
 4. LEVEL STATS — per-level touch / bounce / break over ~30d of 5m bars
    (sortable table + bounce-vs-break bar); definitions on page
 5. CONVERSION — verified SPY÷SPX ratio + ES−SPX basis (Yahoo Fri closes)
