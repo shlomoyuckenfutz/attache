@@ -1,5 +1,5 @@
 {
- "generated_et": "2026-11-01 13:39 ET",
+ "generated_et": "2026-11-01 14:04 ET",
  "groups": [
   {
    "name": "INDICES",
@@ -945,14 +945,14 @@
      "status": "LIVE",
      "note": "",
      "q": {
-      "last": 76970.0,
+      "last": 78050.0,
       "prev": 77505.0,
-      "chg": -535.0,
-      "pct": -0.690278,
+      "chg": 545.0,
+      "pct": 0.70318,
       "hi": 78275.0,
       "lo": 76970.0,
-      "flag": "LO",
-      "asof": "11/01 13:00",
+      "flag": "",
+      "asof": "11/01 13:50",
       "stale": false
      }
     }

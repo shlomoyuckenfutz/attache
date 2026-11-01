@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "asof_pt": "2026-11-01 06:00 PT",
+  "asof_pt": "2026-11-01 11:05 PT",
   "bias": {
     "direction": "SHORT",
     "reason": "Fri Mode-1 red: ES lost 7677\u20137803 on 7703 failure; SPY lost 762.27 + 760 put wall into ~\u221217B short gamma. Regime bearish/neg-gamma. Mon bounce possible \u2014 fade into 7665/760 unless reclaimed and held."
@@ -165,6 +165,22 @@
     {
       "price": 7550.5,
       "note": "SPX 7550.5 support \u2248 ES 7585 (same basis)"
+    },
+    {
+      "price": 749.83,
+      "note": "SPY key daily support (Sep low that launched run to 781.62) \u2014 hold = retest"
+    },
+    {
+      "price": 729.2,
+      "note": "SPY next support on daily close below 749.83"
+    },
+    {
+      "price": 715.95,
+      "note": "SPY major daily support"
+    },
+    {
+      "price": 779.29,
+      "note": "SPY daily resistance under 781.62 Oct 6 high"
     }
   ],
   "actionable": [
@@ -173,7 +189,9 @@
     "PRIMARY downside if 7575 fails again: ES 7560 \u2192 7558 \u2192 7520\u201330; SPY fail 754.07 \u2192 750 then 746.77.",
     "SPY structure: under 760/762.27. Reclaim 757.43 \u2192 760 for bounce legs; lose 754.07 = air pocket. Net GEX ~\u2212$17B near-exp, regime NEGATIVE.",
     "Catalysts: ISM Manufacturing Mon 7 AM PT; US midterms Tue 11/3 + JOLTS; ADP/ISM Services Wed; Claims Thu; October jobs Fri 11/6. Weekend digest of INTC/AMZN/Mag7 AI-spend scare.",
-    "Weekend wire (Sun 11/1): OPEC+ held December output quotas unchanged; Qatar condemned an attack on an LNG carrier in the Gulf; Iran\u2013Qatar mediated talks in Doha ongoing, no final result; coalition strikes on Houthi targets; Russia hit Ukraine energy grid in four regions. Energy/geo headline risk into the Sunday futures open \u2014 no change to levels."
+    "Weekend wire (Sun 11/1): OPEC+ held December output quotas unchanged; Qatar condemned an attack on an LNG carrier in the Gulf; Iran\u2013Qatar mediated talks in Doha ongoing, no final result; coalition strikes on Houthi targets; Russia hit Ukraine energy grid in four regions. Energy/geo headline risk into the Sunday futures open \u2014 no change to levels.",
+    "Midday wire (Sun 11/1): UKMTO incident in the Strait of Hormuz \u2014 a vessel hit by an unidentified projectile; Trump\u2013Netanyahu call on next move in Iran war, Trump says Iran matters 'not yet settled'; Canada\u2013US trade talks constructive (steel tariff relief in play) ahead of Tue midterms. Geo/oil risk tilts the Sunday open defensive \u2014 News Bias: risk-off, levels unchanged.",
+    "Weekend level read: SPY 750 area (749.83) is the line \u2014 hold = retest higher; daily close below \u2192 729.20 then 715.95. Overhead: 760 lost (now resistance), 779.29/781.62 far. Deeper dip-buy interest cited near 720."
   ],
   "sources_count": 6,
   "overnight_bias": "BEARISH CONTROL / MODE-1 BOUNCE WATCH",
