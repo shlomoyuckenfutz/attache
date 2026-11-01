@@ -118,37 +118,27 @@ table.lv .pri td:first-child,table.lv td .badge{opacity:1}
   body{--fs:13px;--fs-s:12px;--fs-l:14px;font-size:13px}
   .wrap{padding:8px 8px 28px;max-width:100%;overflow-x:hidden}
   .ladder{grid-template-columns:1fr;gap:6px;max-width:100%;min-width:0}
-  .lad-rail{min-height:360px;max-width:100%;width:100%;overflow:hidden;box-sizing:border-box}
-  .lad-rail svg{min-height:360px;max-width:100%;width:100%;height:auto;display:block}
+  /* Taller chart on phones so candles/labels breathe */
+  .lad-rail{min-height:560px;max-width:100%;width:100%;overflow:hidden;box-sizing:border-box}
+  .lad-rail svg{min-height:560px;max-width:100%;width:100%;height:auto;display:block}
   .lad-legend{flex-direction:column;flex-wrap:nowrap;gap:6px;max-width:100%}
   .lad-legend .chip{flex:1 1 auto;width:100%;max-width:100%;box-sizing:border-box;min-width:0}
   .lad-legend .chip b{margin-right:6px}
   .lad-legend .chip-list{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
   .lad-legend .chip-row{display:flex;flex-wrap:wrap;gap:4px 8px;max-width:100%}
   .lad-legend .pxc{display:inline-block;padding:1px 5px;border:1px solid #3a2752;border-radius:3px;margin:0;white-space:nowrap;font-size:12px}
-  .dpx .dg{grid-template-columns:minmax(0,1fr)}
+  /* Restore original multi-col level cards; scroll sideways if needed — do not restyle into a stack */
+  .dpx{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  .dpx .dg{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
   .bbbar{width:64px}
+  /* Level table: original layout, horizontal scroll only */
   .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
-  table.lv,table.st{min-width:0;width:100%;font-size:12px}
-  table.lv th,table.lv td,table.st th,table.st td{padding:4px 5px;font-size:12px}
-  table.lv th:nth-child(6),table.lv td.side-cell{white-space:nowrap}
-  table.lv .side-full{display:none}
-  table.lv .side-short{display:inline}
-  table.lv th:nth-child(4),table.lv td:nth-child(4),
-  table.lv th:nth-child(7),table.lv td:nth-child(7),
-  table.lv th:nth-child(8),table.lv td:nth-child(8){display:none} /* hide SPX, Δ SPY, Δ % on phones; keep # SPY STATUS ES SIDE */
-  table.lv th:first-child,table.lv td:first-child,
-  table.lv th:nth-child(2),table.lv td:nth-child(2){position:sticky;left:0;background:#0a0610;z-index:1}
+  table.lv,table.st{min-width:420px}
   h2{font-size:14px;overflow-wrap:anywhere}
   .sub{overflow-wrap:anywhere;word-break:break-word}
   .top{flex-wrap:wrap;gap:6px;max-width:100%;box-sizing:border-box}
   .top .brand,.top .meta{max-width:100%;overflow-wrap:anywhere;word-break:break-word;white-space:normal}
   .meta{font-size:12px;line-height:1.35}
-}
-
-@media(min-width:721px){
-  table.lv .side-short{display:none}
-  table.lv .side-full{display:inline}
 }
 </style>
 </head>
@@ -185,7 +175,7 @@ pre{white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere}
 main,body,#ub{max-width:100%;width:100%;box-sizing:border-box}
 main{grid-template-columns:minmax(0,1fr)!important}
 main>*,.zone,.pn,.dk,.card,.zg,.g,.g3,.brief,.scr,.ux-tw,.dpx,.tile,.w2,#biasG,.nw{min-width:0!important;max-width:100%;box-sizing:border-box}
-.zg,.g,.g3,.brief,.dk .dkg,.dpx .dg,.eqs,.oc,.il-g,.hr-wrap,.mc-g,.dpd-g,.gauges,.sp-g,#gtRow,#z-levels .zg,.nw ol{grid-template-columns:minmax(0,1fr)!important}
+.zg,.g,.g3,.brief,.dk .dkg,.eqs,.oc,.il-g,.hr-wrap,.mc-g,.dpd-g,.gauges,.sp-g,#gtRow,#z-levels .zg,.nw ol{grid-template-columns:minmax(0,1fr)!important}
 .w2,.w3{grid-column:auto!important}
 /* Wire headlines wrap at sane size */
 .nw,.nw li,.nw li .h{font-size:13px!important}
@@ -217,7 +207,11 @@ td.w{min-width:0!important;white-space:normal!important;overflow-wrap:anywhere}
 img,svg,canvas,video{max-width:100%!important;height:auto}
 .nt,p,li,.mut,small,.cap,.tile .s,.ph small{overflow-wrap:anywhere;word-break:break-word;white-space:normal}
 .lad{grid-template-columns:minmax(0,1fr)!important}
+/* Dark Pool level cards: keep original multi-col; scroll sideways if needed — do not stack to 1fr */
+.dpx{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.dpx .dg{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))!important;min-width:0}
 }
+
 @media(max-width:430px){
 .brief,.eqs,.sp-g,.fb-lv,.vz-kp{grid-template-columns:minmax(0,1fr)!important}
 }
@@ -431,7 +425,7 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
       const nr=spy===nb||spy===na;
       const st=r.status||'current', col=r.color||'purple';
       const pri=st==='prior' && col!=='green' && col!=='teal';
-      return `<tr class="${nr?'nr':''}${pri?' pri':''}" title="${(r.note||'').replace(/"/g,'&quot;')} · src ${r.source_date||''}"><td>${i+1}</td><td style="color:${colorFor(col)};font-weight:700">${fmt(spy)}</td><td>${badgeFor(st,col)}</td><td>${fmt(r.spx)}</td><td>${fmt(r.es)}</td><td class="${side==='ABOVE'?'ab':'bl'} side-cell"><span class="side-full">${side==='ABOVE'?'▲ ABOVE':'▼ BELOW'}${nr?(spy===na?' · nearest ▲':' · nearest ▼'):''}</span><span class="side-short">${side==='ABOVE'?'▲':'▼'} ${Math.abs(d).toFixed(2)}</span></td><td class="${d>=0?'ab':'bl'}">${d>0?'+':''}${fmt(d)}</td><td class="${pct>=0?'ab':'bl'}">${pct>0?'+':''}${fmt(pct)}%</td></tr>`;
+      return `<tr class="${nr?'nr':''}${pri?' pri':''}" title="${(r.note||'').replace(/"/g,'&quot;')} · src ${r.source_date||''}"><td>${i+1}</td><td style="color:${colorFor(col)};font-weight:700">${fmt(spy)}</td><td>${badgeFor(st,col)}</td><td>${fmt(r.spx)}</td><td>${fmt(r.es)}</td><td class="${side==='ABOVE'?'ab':'bl'}">${side==='ABOVE'?'▲ ABOVE':'▼ BELOW'}${nr?(spy===na?' · nearest ▲':' · nearest ▼'):''}</td><td class="${d>=0?'ab':'bl'}">${d>0?'+':''}${fmt(d)}</td><td class="${pct>=0?'ab':'bl'}">${pct>0?'+':''}${fmt(pct)}%</td></tr>`;
     }).join('');
   };
 
@@ -442,12 +436,20 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
     const metas=(levelMetas||[]).map(normLevel).filter(Boolean);
     const bySpy={}; metas.forEach(m=>{ bySpy[m.spy]=m; });
     const Lall=metas.map(m=>m.spy).filter(x=>!Number.isNaN(x)).sort((a,b)=>a-b);
-    const cs=(candles&&candles.length)?candles:null;
+    let cs=(candles&&candles.length)?candles:null;
     const K=window.__k||0.099698, EO=window.__eo||33.93;
     const W=Math.max(el.clientWidth||640,300);
     const mob=W<560;
-    const H=mob?Math.max(460,Math.round(W*1.25)):Math.max(480,Math.min(640,Math.round(W*0.5)));
-    const pad={l:6,r:mob?62:84,t:12,b:28};
+    /* Mobile: last 30 calendar days from the final bar; desktop keeps full range */
+    if(cs&&mob){
+      const last=cs[cs.length-1].t.slice(0,10);
+      const cut=new Date(last+'T12:00:00Z'); cut.setUTCDate(cut.getUTCDate()-30);
+      const cutS=cut.toISOString().slice(0,10);
+      cs=cs.filter(c=>c.t.slice(0,10)>=cutS);
+      if(!cs.length) cs=candles.slice(-40);
+    }
+    const H=mob?Math.max(560,Math.round(W*1.55)):Math.max(480,Math.min(640,Math.round(W*0.5)));
+    const pad={l:6,r:mob?58:84,t:12,b:28};
     const plotW=W-pad.l-pad.r, plotH=H-pad.t-pad.b;
     let yLo, yHi;
     if(cs){ yLo=Math.min(...cs.map(c=>c.l),spot); yHi=Math.max(...cs.map(c=>c.h),spot); }
@@ -491,6 +493,7 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
       const col=nr?'#ffffff':colorFor(cn);
       const y=yAt(p);
       svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${R(y)}" y2="${R(y)}" stroke="${col}" stroke-opacity="${prior?0.28:0.5}" stroke-width="1" ${prior?'stroke-dasharray="3 3"':''}/>`;
+      svg+=`<line x1="${pad.l+plotW}" x2="${pad.l+plotW+5}" y1="${R(y)}" y2="${R(y)}" stroke="${col}" stroke-opacity="${prior?0.45:0.9}" stroke-width="1.5"/>`;
       return {p,nr,col,prior,yTick:y,yLab:y,title:meta?`SPY ${fmt(p)} · SPX ${fmt(meta.spx)} · ES ${fmt(meta.es)} · ${lm.status||''}`:`SPY ${fmt(p)}`};
     });
     // candles
@@ -503,21 +506,40 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
     // spot
     const ySpot=yAt(spot);
     svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${R(ySpot)}" y2="${R(ySpot)}" stroke="#ffffffcc" stroke-dasharray="5 3"/>`;
-    // de-overlap labels
-    labels.push({spotTag:true,p:spot,yTick:ySpot,yLab:ySpot});
+    // de-overlap labels — keep ALL purple ticks; thin/skip colliding text on mobile
+    labels.forEach(lb=>{ lb.pri = lb.nr ? 3 : (lb.prior ? 0 : 2); });
+    labels.push({spotTag:true,p:spot,yTick:ySpot,yLab:ySpot,pri:4});
     labels.sort((a,b)=>a.yTick-b.yTick);
-    const gap=mob?11:12, yMin=pad.t+5, yMax=pad.t+plotH-3;
+    const gap=mob?13:12, yMin=pad.t+5, yMax=pad.t+plotH-3;
     labels.forEach((lb,i)=>{ const g=(l)=>l.spotTag?gap+4:gap; lb.yLab=Math.max(yMin, i?Math.max(lb.yTick,labels[i-1].yLab+Math.max(g(lb),g(labels[i-1]))):lb.yTick); });
     for(let i=labels.length-1;i>=0;i--){ const lim=i===labels.length-1?yMax:labels[i+1].yLab-((labels[i].spotTag||labels[i+1].spotTag)?gap+4:gap); if(labels[i].yLab>lim) labels[i].yLab=lim; }
-    const tx0=pad.l+plotW, labX=tx0+12;
+    // If still overlapping after push, drop lowest-priority non-spot labels (ticks stay)
+    if(mob){
+      const keep=labels.slice();
+      for(let pass=0;pass<8;pass++){
+        let dropped=false;
+        for(let i=1;i<keep.length;i++){
+          const a=keep[i-1], b=keep[i];
+          if(Math.abs(b.yLab-a.yLab)<gap-1){
+            const victim = (a.spotTag||(a.pri||0)>=(b.pri||0)) ? b : a;
+            if(victim.spotTag) continue;
+            keep.splice(keep.indexOf(victim),1); dropped=true; break;
+          }
+        }
+        if(!dropped) break;
+      }
+      labels.length=0; keep.forEach(x=>labels.push(x));
+    }
+    const tx0=pad.l+plotW, labX=tx0+10;
     const spotLab=labels.find(l=>l.spotTag);
     labels.splice(labels.indexOf(spotLab),1);
+    const fsz=mob?8:10;
     labels.forEach(lb=>{
-      svg+=`<path d="M ${tx0} ${R(lb.yTick)} L ${tx0+5} ${R(lb.yTick)} L ${labX-2} ${lb.yLab}" fill="none" stroke="${lb.col}" stroke-opacity="${lb.prior?0.5:0.9}"/>`;
-      svg+=`<text class="dlbl" data-title="${lb.title}" x="${labX}" y="${lb.yLab+3.3}" fill="${lb.col}" fill-opacity="${lb.prior?0.6:1}" font-size="${mob?9:10}" font-weight="${lb.nr?700:500}">${fmt(lb.p)}</text>`;
+      svg+=`<path d="M ${tx0} ${R(lb.yTick)} L ${tx0+4} ${R(lb.yTick)} L ${labX-2} ${lb.yLab}" fill="none" stroke="${lb.col}" stroke-opacity="${lb.prior?0.45:0.85}"/>`;
+      svg+=`<text class="dlbl" data-title="${lb.title}" x="${labX}" y="${lb.yLab+3}" fill="${lb.col}" fill-opacity="${lb.prior?0.55:1}" font-size="${fsz}" font-weight="${lb.nr?700:500}">${fmt(lb.p)}</text>`;
     });
     // spot tag on axis
-    svg+=`<path d="M ${tx0} ${R(ySpot)} L ${labX-2} ${spotLab.yLab}" stroke="#fff"/><rect x="${labX-3}" y="${spotLab.yLab-7}" width="${pad.r-10}" height="14" fill="#fff"/><text x="${labX}" y="${spotLab.yLab+4}" fill="#000" font-size="10" font-weight="700">${fmt(spot)}</text>`;
+    svg+=`<path d="M ${tx0} ${R(ySpot)} L ${labX-2} ${spotLab.yLab}" stroke="#fff"/><rect x="${labX-3}" y="${spotLab.yLab-7}" width="${pad.r-8}" height="14" fill="#fff"/><text x="${labX}" y="${spotLab.yLab+4}" fill="#000" font-size="${mob?9:10}" font-weight="700">${fmt(spot)}</text>`;
     // crosshair
     svg+=`<g id="xh" style="display:none;pointer-events:none"><line id="xhH" x1="${pad.l}" x2="${pad.l+plotW}" stroke="#c48cff" stroke-dasharray="2 2"/><line id="xhV" y1="${pad.t}" y2="${pad.t+plotH}" stroke="#c48cff55" stroke-dasharray="2 2"/></g>`;
     svg+=`<rect id="xhHit" x="${pad.l}" y="${pad.t}" width="${plotW}" height="${plotH}" fill="transparent"/>`;
