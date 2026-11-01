@@ -10,8 +10,12 @@ Reads [`../data/spy_dark_pool.json`](../data/spy_dark_pool.json) at runtime.
 
 1. Dark Pool Position panel (spot, nearest above/below, distance cards)
 2. Full level table SPY / SPX / ES (`SPX = SPY ÷ 0.0997`, `ES = SPX + 34.5`)
-3. Simple price ladder with purple edge ticks (no candle overlays)
-4. Levels last updated + how-to-update note
+3. PRICE LADDER — baked SPY 5m candles with purple **edge ticks only** on the
+   right axis (no annotation lines across candles); de-overlapped labels;
+   spot dashed; SPX/ES on hover
+4. LEVEL STATS — per-level touch / bounce / break over ~30d of 5m bars
+   (sortable table + bounce-vs-break bar); definitions on page
+5. Levels last updated + how-to-update note
 
 No source names on the page — label levels **Dark Pool** only.
 
@@ -33,5 +37,11 @@ git push
 `/workspace/desk/orb-research/secrets/study_password.txt`
 (never print it; do not rely on `ATOUCHE_STUDY_PASSWORD`).
 
-JSON-only level updates do **not** need re-encrypt — just edit and push
-`data/spy_dark_pool.json`, then reload the page.
+JSON-only level / bars / stats updates do **not** need re-encrypt — just edit
+and push `data/spy_dark_pool.json`, then reload the page.
+
+## Stats definitions (also on page)
+
+- **Touch** — 5m bar high/low within $0.10 of level
+- **Bounce** — rejected and moved ≥$0.50 away without closing through
+- **Break** — 5m close through and holds 2+ subsequent bars on through side
