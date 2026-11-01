@@ -511,7 +511,7 @@ window.VZ=(()=>{const es=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<'
  if(!done){h+=`<tr class="px"><td>ES=F NOW</td><td></td><td></td><td>${px}</td></tr>`;h2+=`<tr class="px"><td>SPY NOW</td><td></td><td></td><td>${sp??'n/a'}</td></tr>`}
  const th=(a)=>`<table class="il-t"><tr class="mut"><th>${a} ${L.date}</th><th>type</th><th class="tn">T5</th><th class="tn">T30</th></tr>`;
  b('mcB').innerHTML=`<div class="il-g"><div><div class="il-h">ES LADDER · SRC A · SRC B pending</div>${th('ES')}${h}</table></div><div><div class="il-h">SPY LADDER · ES ×${CK?Number(CK).toFixed(6):'n/a'}</div>${th('SPY')}${h2}</table></div></div><div class="nt">${e(TT.note||TT.error||'')}${TT.sessions?` Window ${TT.sessions[0]} → ${TT.sessions[1]}.`:''}</div><div class="nt">POSTED levels only. Paper/research only.</div>`})();
-const $=s=>document.querySelector(s),L=D.live;
+const $=s=>document.querySelector(s)||document.createElement('div'),L=D.live;
 const sgn=(x,d=2,s='')=>x==null?'–':(x>0?'+':x<0?'-':'')+Math.abs(x).toFixed(d)+s;
 const ud=x=>x==null?'':x>0?'up':x<0?'dn':'';
 const usd=x=>x==null?'–':(x<0?'-$':x>0?'+$':'$')+Math.abs(x).toFixed(2);
