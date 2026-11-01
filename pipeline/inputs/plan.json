@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "asof_pt": "2026-10-30 21:00 PT",
+  "asof_pt": "2026-11-01 06:00 PT",
   "bias": {
     "direction": "SHORT",
     "reason": "Fri Mode-1 red: ES lost 7677\u20137803 on 7703 failure; SPY lost 762.27 + 760 put wall into ~\u221217B short gamma. Regime bearish/neg-gamma. Mon bounce possible \u2014 fade into 7665/760 unless reclaimed and held."
@@ -172,7 +172,8 @@
     "PRIMARY Mon: Flush-first \u2014 ES 7575\u21927540 (under Fri low) / SPY 752\u2192750 before any bounce. After lower low: ES 7616\u21927677\u21927703/7751\u201355; SPY 760\u2192770/775 later in week. Fade premature green into 7665/760 pre-undercut.",
     "PRIMARY downside if 7575 fails again: ES 7560 \u2192 7558 \u2192 7520\u201330; SPY fail 754.07 \u2192 750 then 746.77.",
     "SPY structure: under 760/762.27. Reclaim 757.43 \u2192 760 for bounce legs; lose 754.07 = air pocket. Net GEX ~\u2212$17B near-exp, regime NEGATIVE.",
-    "Catalysts: ISM Manufacturing Mon 7 AM PT; US midterms Tue 11/3 + JOLTS; ADP/ISM Services Wed; Claims Thu; October jobs Fri 11/6. Weekend digest of INTC/AMZN/Mag7 AI-spend scare."
+    "Catalysts: ISM Manufacturing Mon 7 AM PT; US midterms Tue 11/3 + JOLTS; ADP/ISM Services Wed; Claims Thu; October jobs Fri 11/6. Weekend digest of INTC/AMZN/Mag7 AI-spend scare.",
+    "Weekend wire (Sun 11/1): OPEC+ held December output quotas unchanged; Qatar condemned an attack on an LNG carrier in the Gulf; Iran\u2013Qatar mediated talks in Doha ongoing, no final result; coalition strikes on Houthi targets; Russia hit Ukraine energy grid in four regions. Energy/geo headline risk into the Sunday futures open \u2014 no change to levels."
   ],
   "sources_count": 6,
   "overnight_bias": "BEARISH CONTROL / MODE-1 BOUNCE WATCH",
