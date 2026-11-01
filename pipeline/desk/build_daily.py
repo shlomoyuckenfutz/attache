@@ -125,6 +125,74 @@ def weekly_frame_levels():
         if rows: out[key] = rows
     return out
 
+def conversion_ratios():
+    """SPY↔SPX↔ES ratios from site dark-pool convert block (Fri closes), else current defaults.
+    Prefer closes when present so the ratio matches the latest session prints already on disk."""
+    spy_per, es_minus = 0.099698, 33.93  # Fri 2026-10-30 closes (SPY 755.72 / SPX 7580.07; ES−SPX)
+    root = Path(__file__).resolve().parent
+    cands = [
+        root.parent.parent / "data" / "spy_dark_pool.json",  # site/data when run from pipeline/desk
+        Path("/workspace/orb-dash-site/data/spy_dark_pool.json"),
+        root / "es_levels" / "darkpool_levels.json",
+    ]
+    for cand in cands:
+        if not cand.exists():
+            continue
+        try:
+            d = json.loads(cand.read_text())
+        except Exception:
+            continue
+        conv = d.get("convert") or d
+        closes = (conv.get("closes") or {}) if isinstance(conv, dict) else {}
+        try:
+            if closes.get("SPY") and closes.get("SPX"):
+                spy_per = float(closes["SPY"]) / float(closes["SPX"])
+            elif conv.get("spy_per_spx") is not None:
+                spy_per = float(conv["spy_per_spx"])
+            elif d.get("spy_per_spx") is not None:
+                spy_per = float(d["spy_per_spx"])
+        except Exception:
+            pass
+        try:
+            if closes.get("ES") is not None and closes.get("SPX") is not None:
+                es_minus = float(closes["ES"]) - float(closes["SPX"])
+            elif conv.get("es_minus_spx") is not None:
+                es_minus = float(conv["es_minus_spx"])
+            elif d.get("es_minus_spx") is not None:
+                es_minus = float(d["es_minus_spx"])
+        except Exception:
+            pass
+        break
+    return round(spy_per, 6), round(es_minus, 2)
+
+
+def fill_spx(by: dict) -> dict:
+    """Ensure KEY LEVELS SPX is populated from existing SPY (preferred) or ES levels.
+    plan.json historically omits leading SPX rows — section would render empty.
+    Never invent prices: only convert levels already bucketed into SPY/ES."""
+    spy_per, es_minus = conversion_ratios()
+    explicit = list(by.get("SPX") or [])
+    derived = []
+    for px, kind, _note in by.get("SPY") or []:
+        spx = round(float(px) / spy_per, 2)
+        derived.append((spx, kind, f"SPX {spx:g} ≈ SPY {float(px):g} (÷{spy_per:g})"))
+    if not derived:
+        for px, kind, _note in by.get("ES") or []:
+            spx = round(float(px) - es_minus, 2)
+            derived.append((spx, kind, f"SPX {spx:g} ≈ ES {float(px):g} (−{es_minus:g})"))
+    if not derived:
+        return by
+    out = list(explicit)
+    have = [float(p) for p, _, _ in explicit]
+    for px, kind, note in derived:
+        if any(abs(px - h) <= 1.0 for h in have):
+            continue
+        out.append((px, kind, note))
+        have.append(px)
+    by["SPX"] = out
+    return by
+
+
 def derive_paths(plan, smash_text=""):
     acts = " ".join(plan.get("actionable") or [])
     blob = sanitize_text(acts + "\n" + smash_text)
@@ -242,6 +310,7 @@ def page(plan, site: Path):
     for k, rows in wf.items():
         if not by.get(k):
             by[k] = rows
+    by = fill_spx(by)
     smash = ""
     sp = HERE / "smash_note.md"
     if not sp.exists():
