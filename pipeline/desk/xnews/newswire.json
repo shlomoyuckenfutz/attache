@@ -1,8 +1,44 @@
 {
- "generated_at_pt": "2026-11-01 14:40 PT",
- "generated_utc": "2026-11-01T22:40:51+00:00",
+ "generated_at_pt": "2026-11-01 14:55 PT",
+ "generated_utc": "2026-11-01T22:55:32+00:00",
  "breaking_minutes": 30,
  "items": [
+  {
+   "ts_utc": "2026-11-01T22:49:57.000Z",
+   "time_pt": "14:49",
+   "date_pt": "11/01",
+   "headline": "ZELENSKIY SAYS RUSSIA HAS RECENTLY ALSO SAID IT WANTS SECURITY GUARANTEES, BUT THAT…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-11-01T22:49:36.000Z",
+   "time_pt": "14:49",
+   "date_pt": "11/01",
+   "headline": "ZELENSKIY SAYS THERE WERE INDICATIONS THAT Pres. TRUMP WOULD INVITE UKRAINE TO THE…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-11-01T22:49:28.000Z",
+   "time_pt": "14:49",
+   "date_pt": "11/01",
+   "headline": "ZELENSKIY SAYS HE IS READY TO MEET PUTIN IN TURKEY, EXPRESSING HOPE THAT Pres.…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-11-01T22:48:53.000Z",
+   "time_pt": "14:48",
+   "date_pt": "11/01",
+   "headline": "GOLDMAN RAISES DECEMBER 2026 BRENT FORECAST TO $105/BBL FROM $90/BBL",
+   "tag": "ENERGY",
+   "src": "SRC W2",
+   "breaking": true
+  },
   {
    "ts_utc": "2026-11-01T21:20:29.000Z",
    "time_pt": "13:20",
@@ -144,42 +180,6 @@
    "date_pt": "11/01",
    "headline": "DEMOCRAT HALEY STEVENS BACKS REPUBLICAN MIKE ROGERS IN CRUCIAL US SENATE RACE IN…",
    "tag": "POLICY",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-01T16:48:58.000Z",
-   "time_pt": "08:48",
-   "date_pt": "11/01",
-   "headline": "Zelensky: We offered Washington to purchase Patriot missiles and confirmed our…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-01T16:48:47.000Z",
-   "time_pt": "08:48",
-   "date_pt": "11/01",
-   "headline": "Zelensky: If Washington wants us not to target Russian oil refineries, then Moscow…",
-   "tag": "ENERGY",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-01T16:48:32.000Z",
-   "time_pt": "08:48",
-   "date_pt": "11/01",
-   "headline": "SANA from a source in Syrian General Intelligence: Foiling a terrorist plot to…",
-   "tag": "ENERGY",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-01T16:48:07.000Z",
-   "time_pt": "08:48",
-   "date_pt": "11/01",
-   "headline": "Yemeni Govt Forces: We carried out 1272 strikes on reinforcements of the…",
-   "tag": "GEO",
    "src": "SRC W2",
    "breaking": false
   }
