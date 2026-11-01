@@ -383,7 +383,7 @@ def card(title, direction, reason):
     p = reason
     p = (p[:220].rsplit(" ", 1)[0] + "…") if len(p) > 220 else p
     dcol = "#3ddc5c" if "BULL" in direction or direction == "LONG" else "#ff4d4d" if "BEAR" in direction or direction == "SHORT" else "#ffb000"
-    return (f'{MK}<a href="daily/" style="display:block;margin:8px 10px;padding:8px 12px;border:1px solid #a87400;border-radius:6px;background:#0b0800;'
+    return (f'{MK}<a href="../daily/" style="display:block;margin:8px 10px;padding:8px 12px;border:1px solid #a87400;border-radius:6px;background:#0b0800;'
             f'color:#e6e0cc;text-decoration:none;font:12px/1.5 \'IBM Plex Mono\',ui-monospace,monospace"><span style="color:#000;background:#ffb000;'
             f'padding:1px 8px;font-weight:700;letter-spacing:.15em;font-size:11px">DAILY PLAN</span> '
             f'<b style="color:{dcol}">{html.escape(direction)}</b> <b style="color:#ffb000">{html.escape(title.split("—")[-1].strip())}</b>'

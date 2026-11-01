@@ -142,7 +142,7 @@ def card(title, secs):
     bias = next((s for s in secs if s["h"].startswith("BIAS")), None)
     p = next((b["p"] for b in (bias or {"blocks": []})["blocks"] if "p" in b), "")
     p = (p[:260].rsplit(" ", 1)[0] + "…") if len(p) > 260 else p
-    return (f'{MK}<a href="weekly/" style="display:block;margin:8px 10px;padding:8px 12px;border:1px solid #a87400;border-radius:6px;background:#0b0800;'
+    return (f'{MK}<a href="../weekly/" style="display:block;margin:8px 10px;padding:8px 12px;border:1px solid #a87400;border-radius:6px;background:#0b0800;'
             f'color:#e6e0cc;text-decoration:none;font:12px/1.5 \'IBM Plex Mono\',ui-monospace,monospace"><span style="color:#000;background:#ffb000;'
             f'padding:1px 8px;font-weight:700;letter-spacing:.15em;font-size:11px">WEEKLY PLAN</span> <b style="color:#ffb000">{html.escape(title.split("—")[-1].strip())}</b>'
             f'<div style="margin-top:4px">{html.escape(p)}</div><div style="color:#22c7e8;margin-top:4px">Open full plan: levels, scenarios, day by day, triggers →</div></a>{MK}')
