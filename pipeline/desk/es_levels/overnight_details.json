@@ -1,28 +1,28 @@
 {
- "generated_et": "2026-11-02 15:50 ET",
- "next_session": "Mon 11/02",
+ "generated_et": "2026-11-02 16:29 ET",
+ "next_session": "Tue 11/03",
  "on": {
   "ES": {
-   "last": 7578.5,
+   "last": 7588.5,
    "on_hi": 7693.75,
-   "on_lo": 7575.75,
-   "on_mid": 7634.75,
+   "on_lo": 7570.75,
+   "on_mid": 7632.25,
    "rth_close": 7612.75,
    "rth_hi": 7754.25,
    "rth_lo": 7558.25,
    "rth_date": "10/30",
-   "gap": -34.25,
-   "gap_pct": -0.45,
+   "gap": -24.25,
+   "gap_pct": -0.319,
    "pos": "INSIDE",
-   "on_vol": 1676412,
+   "on_vol": 1906533,
    "avg_vol": 318153,
-   "vol_ratio": 5.27,
-   "on_range": 118.0,
+   "vol_ratio": 5.99,
+   "on_range": 123.0,
    "avg_range": 48.12,
-   "range_pct": 245.2,
+   "range_pct": 255.6,
    "n_hist": 10,
-   "elapsed_h": 21.7,
-   "asof": "11/02 15:40",
+   "elapsed_h": 22.3,
+   "asof": "11/02 16:19",
    "sess_start": "11/01 18:00",
    "bars": [
     [
@@ -1834,33 +1834,89 @@
     [
      "11/02 15:40",
      7581.0,
-     7581.25,
-     7575.75,
-     7578.5
+     7582.5,
+     7574.5,
+     7581.0
+    ],
+    [
+     "11/02 15:45",
+     7580.75,
+     7592.5,
+     7580.5,
+     7589.75
+    ],
+    [
+     "11/02 15:50",
+     7590.25,
+     7591.5,
+     7573.75,
+     7584.25
+    ],
+    [
+     "11/02 15:55",
+     7584.0,
+     7584.0,
+     7570.75,
+     7576.25
+    ],
+    [
+     "11/02 16:00",
+     7576.5,
+     7582.0,
+     7575.25,
+     7579.0
+    ],
+    [
+     "11/02 16:05",
+     7579.0,
+     7586.0,
+     7578.75,
+     7585.0
+    ],
+    [
+     "11/02 16:10",
+     7585.25,
+     7587.0,
+     7583.25,
+     7585.5
+    ],
+    [
+     "11/02 16:15",
+     7585.5,
+     7588.75,
+     7584.0,
+     7587.5
+    ],
+    [
+     "11/02 16:19",
+     7588.5,
+     7588.5,
+     7588.5,
+     7588.5
     ]
    ]
   },
   "NQ": {
-   "last": 28122.75,
+   "last": 28246.0,
    "on_hi": 28891.25,
-   "on_lo": 28108.25,
-   "on_mid": 28499.75,
+   "on_lo": 28101.75,
+   "on_mid": 28496.5,
    "rth_close": 28527.5,
    "rth_hi": 29562.0,
    "rth_lo": 28232.75,
    "rth_date": "10/30",
-   "gap": -404.75,
-   "gap_pct": -1.419,
+   "gap": -281.5,
+   "gap_pct": -0.987,
    "pos": "OUTSIDE (L)",
-   "on_vol": 666993,
+   "on_vol": 729317,
    "avg_vol": 181605,
-   "vol_ratio": 3.67,
-   "on_range": 783.0,
+   "vol_ratio": 4.02,
+   "on_range": 789.5,
    "avg_range": 337.85,
-   "range_pct": 231.8,
+   "range_pct": 233.7,
    "n_hist": 10,
-   "elapsed_h": 21.7,
-   "asof": "11/02 15:40",
+   "elapsed_h": 22.2,
+   "asof": "11/02 16:15",
    "sess_start": "11/01 18:00",
    "bars": [
     [
@@ -3672,9 +3728,58 @@
     [
      "11/02 15:40",
      28139.5,
-     28139.5,
-     28108.25,
-     28122.75
+     28158.75,
+     28101.75,
+     28143.75
+    ],
+    [
+     "11/02 15:45",
+     28145.25,
+     28209.25,
+     28138.25,
+     28203.0
+    ],
+    [
+     "11/02 15:50",
+     28204.25,
+     28212.0,
+     28107.0,
+     28175.0
+    ],
+    [
+     "11/02 15:55",
+     28173.75,
+     28173.75,
+     28102.5,
+     28138.75
+    ],
+    [
+     "11/02 16:00",
+     28138.25,
+     28205.0,
+     28136.0,
+     28189.0
+    ],
+    [
+     "11/02 16:05",
+     28185.5,
+     28230.0,
+     28174.0,
+     28218.75
+    ],
+    [
+     "11/02 16:10",
+     28219.25,
+     28242.5,
+     28209.25,
+     28224.0
+    ],
+    [
+     "11/02 16:15",
+     28223.5,
+     28251.5,
+     28221.25,
+     28246.0
     ]
    ]
   }
@@ -3724,116 +3829,116 @@
  },
  "pulse": {
   "XLK": {
-   "last": 174.38,
-   "prev": 179.55,
-   "chg": -5.17,
-   "pct": -2.88,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 174.58,
+   "prev": 174.26,
+   "chg": 0.32,
+   "pct": 0.18,
+   "sess": "AH",
+   "asof": "11/02 16:26"
   },
   "XLF": {
-   "last": 57.53,
-   "prev": 56.53,
-   "chg": 1.0,
-   "pct": 1.76,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 57.61,
+   "prev": 57.54,
+   "chg": 0.06,
+   "pct": 0.1,
+   "sess": "AH",
+   "asof": "11/02 16:27"
   },
   "XLE": {
-   "last": 67.52,
-   "prev": 70.0,
-   "chg": -2.48,
-   "pct": -3.54,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 67.46,
+   "prev": 67.27,
+   "chg": 0.19,
+   "pct": 0.28,
+   "sess": "AH",
+   "asof": "11/02 16:20"
   },
   "XLV": {
-   "last": 185.07,
-   "prev": 184.9,
-   "chg": 0.18,
-   "pct": 0.09,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 184.68,
+   "prev": 184.65,
+   "chg": 0.03,
+   "pct": 0.01,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "XLY": {
-   "last": 118.08,
-   "prev": 115.39,
-   "chg": 2.69,
-   "pct": 2.33,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 118.54,
+   "prev": 118.14,
+   "chg": 0.4,
+   "pct": 0.34,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "SMH": {
-   "last": 509.34,
-   "prev": 522.83,
-   "chg": -13.49,
-   "pct": -2.58,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 510.2,
+   "prev": 508.07,
+   "chg": 2.13,
+   "pct": 0.42,
+   "sess": "AH",
+   "asof": "11/02 16:29"
   },
   "NVDA": {
-   "last": 202.49,
-   "prev": 204.81,
-   "chg": -2.32,
-   "pct": -1.13,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 202.43,
+   "prev": 202.2,
+   "chg": 0.23,
+   "pct": 0.12,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "AAPL": {
-   "last": 337.67,
-   "prev": 344.8,
-   "chg": -7.13,
-   "pct": -2.07,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 336.47,
+   "prev": 339.11,
+   "chg": -2.64,
+   "pct": -0.78,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "MSFT": {
-   "last": 506.91,
-   "prev": 521.9,
-   "chg": -14.99,
-   "pct": -2.87,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 507.66,
+   "prev": 507.13,
+   "chg": 0.53,
+   "pct": 0.1,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "AMZN": {
-   "last": 246.42,
-   "prev": 240.41,
-   "chg": 6.01,
-   "pct": 2.5,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 246.82,
+   "prev": 245.8,
+   "chg": 1.02,
+   "pct": 0.41,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "META": {
-   "last": 607.73,
-   "prev": 614.98,
-   "chg": -7.25,
-   "pct": -1.18,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 608.5,
+   "prev": 606.54,
+   "chg": 1.96,
+   "pct": 0.32,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "GOOGL": {
-   "last": 279.91,
-   "prev": 279.76,
-   "chg": 0.15,
-   "pct": 0.05,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 280.06,
+   "prev": 279.03,
+   "chg": 1.03,
+   "pct": 0.37,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "TSLA": {
-   "last": 402.98,
-   "prev": 399.81,
-   "chg": 3.17,
-   "pct": 0.79,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 404.07,
+   "prev": 403.95,
+   "chg": 0.12,
+   "pct": 0.03,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   },
   "AVGO": {
-   "last": 323.95,
-   "prev": 326.17,
-   "chg": -2.22,
-   "pct": -0.68,
-   "sess": "RTH",
-   "asof": "11/02 15:50"
+   "last": 322.19,
+   "prev": 322.41,
+   "chg": -0.22,
+   "pct": -0.07,
+   "sess": "AH",
+   "asof": "11/02 16:25"
   }
  },
  "earn": {
@@ -3857,36 +3962,43 @@
  "cal": {
   "econ": [
    {
-    "time_pt": "06:45",
-    "title": "Final Manufacturing PMI",
-    "impact": "Low",
-    "fc": "56.0",
-    "prev": "56.0"
-   },
-   {
     "time_pt": "07:00",
-    "title": "ISM Manufacturing PMI",
+    "title": "JOLTS Job Openings",
     "impact": "Medium",
-    "fc": "54.5",
-    "prev": "54.5"
+    "fc": "7.11M",
+    "prev": "7.08M"
    },
    {
     "time_pt": "07:00",
-    "title": "Construction Spending m/m",
+    "title": "Factory Orders m/m",
     "impact": "Low",
-    "fc": "0.4%",
-    "prev": "0.9%"
+    "fc": "1.2%",
+    "prev": "0.1%"
    },
    {
-    "time_pt": "07:00",
-    "title": "ISM Manufacturing Prices",
+    "time_pt": "07:10",
+    "title": "RCM/TIPP Economic Optimism",
     "impact": "Low",
-    "fc": "77.2",
-    "prev": "77.9"
+    "fc": "46.2",
+    "prev": "46.8"
    },
    {
-    "time_pt": "11:00",
-    "title": "Loan Officer Survey",
+    "time_pt": "07:15",
+    "title": "Omdia Total Vehicle Sales",
+    "impact": "Low",
+    "fc": "15.9M",
+    "prev": "16.0M"
+   },
+   {
+    "time_pt": "07:16",
+    "title": "Congressional Elections",
+    "impact": "High",
+    "fc": "",
+    "prev": ""
+   },
+   {
+    "time_pt": "13:30",
+    "title": "API Weekly Statistical Bulletin",
     "impact": "Low",
     "fc": "",
     "prev": ""
@@ -3896,7 +4008,7 @@
   "auctions": [
    {
     "date": "Tue 11/03",
-    "next": false,
+    "next": true,
     "time_pt": "08:30",
     "term": "6-Week",
     "type": "Bill",
@@ -3929,31 +4041,67 @@
     "type": "Bill",
     "reopen": true,
     "size": null
+   },
+   {
+    "date": "Mon 11/09",
+    "next": false,
+    "time_pt": "\u2014",
+    "term": "3-Year",
+    "type": "Note",
+    "reopen": false,
+    "size": null
+   },
+   {
+    "date": "Mon 11/09",
+    "next": false,
+    "time_pt": "\u2014",
+    "term": "13-Week",
+    "type": "Bill",
+    "reopen": true,
+    "size": null
+   },
+   {
+    "date": "Mon 11/09",
+    "next": false,
+    "time_pt": "\u2014",
+    "term": "26-Week",
+    "type": "Bill",
+    "reopen": true,
+    "size": null
+   },
+   {
+    "date": "Mon 11/09",
+    "next": false,
+    "time_pt": "\u2014",
+    "term": "6-Week",
+    "type": "Bill",
+    "reopen": true,
+    "size": null
    }
   ],
   "expiries": [
    {
     "what": "VIX expiration (AM settle 06:30 PT)",
     "date": "Wed 11/18",
-    "days": 16,
+    "days": 15,
     "today": false
    },
    {
     "what": "Monthly equity OPEX",
     "date": "Fri 11/20",
-    "days": 18,
+    "days": 17,
     "today": false
    },
    {
     "what": "VIX expiration (AM settle 06:30 PT)",
     "date": "Wed 12/16",
-    "days": 44,
+    "days": 43,
     "today": false
    },
    {
     "what": "Monthly equity OPEX",
     "date": "Fri 12/18",
-    "days": 46,
+    "days": 45,
     "today": false
    }
   ],
