@@ -1,9 +1,9 @@
 {
   "date": "2026-11-02",
-  "asof_pt": "2026-11-01 14:58 PT",
+  "asof_pt": "2026-11-02 05:58 PT",
   "bias": {
     "direction": "SHORT",
-    "reason": "Fri Mode-1 red into neg-gamma: ES lost 7677\u20137803; SPY lost 762.27/760. Week open filter ES 7648 \u2014 below it favors weakness toward 7575. Fade green into 7665/760/771 unless 7648 then 7725 reclaimed and held. SPY 749.83/750 is the line."
+    "reason": "Pre-market bounce: ES reclaimed 7628 Sun night and is rallying off the late-Fri 7577\u201375 failed breakdown (Sep 16 low) into the 7648 week-open filter; NQ futures +1%. Structure still below 7648/7665\u20137677 after Fri Mode-1 red, so fade green into 7665/760/771 unless 7648 then 7677 is accepted and held. Supports 7628/7616; SPY 749.83/750 is the line."
   },
   "key_levels": [
     {
@@ -305,9 +305,67 @@
     {
       "price": 7670,
       "note": "ES upside T2 (daily one-time-down ends)"
+    },
+    {
+      "price": 7577,
+      "note": "ES failed-breakdown long trigger (Sep 16 low, 7577\u201375) \u2014 recovery of 7577 first of interest"
+    },
+    {
+      "price": 7698,
+      "note": "ES rip target 7698\u20137703 after 7665 react / 7677"
+    },
+    {
+      "price": 7620,
+      "note": "ES/SPX fut bull hold \u2014 above \u2192 7640 / 7650"
+    },
+    {
+      "price": 7590,
+      "note": "ES/SPX fut bear line \u2014 below \u2192 7570 / 7550"
+    },
+    {
+      "price": 764.51,
+      "note": "SPY positive gamma level (12.93B)"
+    },
+    {
+      "price": 762.76,
+      "note": "SPY positive gamma level (9.64B)"
+    },
+    {
+      "price": 760.74,
+      "note": "SPY positive gamma level (6.38B)"
+    },
+    {
+      "price": 757,
+      "note": "SPY puts below \u2192 755 / 753; calls above 760 \u2192 762 / 764"
+    },
+    {
+      "price": 763.37,
+      "note": "SPY Mon daily implied move upper (763.37\u2013765.28)"
+    },
+    {
+      "price": 748.07,
+      "note": "SPY Mon daily implied move lower (746.16\u2013748.07)"
+    },
+    {
+      "price": 772.32,
+      "note": "SPY weekly implied move upper (772.32\u2013776.47)"
+    },
+    {
+      "price": 739.12,
+      "note": "SPY weekly implied move lower (734.97\u2013739.12)"
+    },
+    {
+      "price": 789.22,
+      "note": "SPY Nov implied move upper (789.22\u2013797.60)"
+    },
+    {
+      "price": 722.22,
+      "note": "SPY Nov implied move lower (713.84\u2013722.22)"
     }
   ],
   "actionable": [
+    "Pre-market (Mon 11/2 ~5:58 AM PT): futures green \u2014 NQ +1%, S&P fut ~+0.5%; SPY ~758.8 pre-market inside a positive-gamma cluster (760.74 / 762.76 / 764.51 overhead). ES rally from late-Fri 7577 failed breakdown (+80); Sun night reclaimed 7628 and pressed 7648 (week-open filter). Plan: 7628/7616 supports; 7665 react, then 7677 \u2192 7698\u20137703. Fut map: hold 7620 \u2192 7640/7650; lose 7590 \u2192 7570/7550. SPY: calls above 760 \u2192 762/764; puts below 757 \u2192 755/753. Implied moves \u2014 Mon 746.16\u2013748.07 / 763.37\u2013765.28; week 734.97\u2013739.12 / 772.32\u2013776.47; Nov 713.84\u2013722.22 / 789.22\u2013797.60. Bias stays fade-the-pop below 7648/7665 until accepted; above 776 or a test under 750 changes the read.",
+    "Pre-market wire (Mon 11/2): Iran supreme leader grants govt authority for talks (IRNA); Brent falls to intraday low near $106; spot gold +~1% to $3,911; another tanker hit a mine in eastern Hormuz (Iran state media); FT says Netanyahu presses Trump for renewed Iran strikes; Marvell to buy Lumentum in $115B AI-connectivity deal; Oracle files $10B common stock offer; European gas \u22125.3%; elections-reaction focus into Tue midterms. News bias: risk-on tilt pre-market (Iran talks + oil off highs + mega AI deal), with Hormuz mine / strike headlines as the gap-down risk.",
     "Fri recap: Mode-1 red \u2014 7703 failure lost ES 7677\u20137803; SPY flushed 762.27 and 760 into ~\u221217B short gamma. Late 7575 reclaim ripped +45 to ~7614.5. VIX 19.42 (hi 23.93), backwardated.",
     "PRIMARY Mon: Week open filter ES 7648 \u2014 Fri settle 7614.50 already below. Weakness path: defend/fail 7575 \u2192 magnets 7540/7503 then 7470/7440. Strength path only if 7648 reclaimed and held \u2192 7725 \u2192 7770/7800. Fade premature green into 7665/760/771 pre-acceptance.",
     "Mon ES pivot 7628 (light sweep 14:58 PT): hold above \u2192 7648 / 7670 / 7690 (final upside); hold below \u2192 7596 / 7575 / 7541 (final downside, unfilled gap). Higher open: watch sellers defend 7628/7648. Lower open: watch buyers defend 7596/7575. 3-month HVN 7755 is the upside magnet. VIX tells: above 20.70 = weakness, below 18.14 = strength.",
@@ -368,7 +426,7 @@
     },
     "drivers": "AI cash-burn scare after AMZN/INTC (+ prior GOOGL); flight to safety; SPY put wall 760 lost; net GEX ~-16.8B short gamma"
   },
-  "asof": "2026-11-01T22:35:00-08:00",
+  "asof": "2026-11-02T05:58:00-08:00",
   "session": "2026-11-02",
   "title": "Yuckenfutz Tradez \u2014 Daily Plan \u2014 Mon Nov 2, 2026",
   "levels": [

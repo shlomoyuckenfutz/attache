@@ -1,47 +1,47 @@
 {
- "generated_pt": "2026-11-02 04:58 PT",
+ "generated_pt": "2026-11-02 05:59 PT",
  "session_for": "2026-11-02",
  "week_expiry": "2026-11-06",
  "method": "ATM straddle = call mid + put mid at strike nearest spot; bands = ref \u00b1 straddle; iv_move = spot*IV*sqrt(DTE/365); straddle_085 = 0.85\u00d7straddle (~1\u03c3)",
  "symbols": {
   "SPY": {
-   "spot": 756.0,
+   "spot": 760.34,
    "daily": {
     "expiry": "2026-11-02",
-    "strike": 756.0,
-    "call_mid": 3.88,
-    "put_mid": 2.97,
-    "straddle": 6.85,
-    "straddle_085": 5.83,
+    "strike": 760.0,
+    "call_mid": 2.0,
+    "put_mid": 5.12,
+    "straddle": 7.12,
+    "straddle_085": 6.05,
     "atm_iv": null,
-    "dte_cal": 0.334,
+    "dte_cal": 0.292,
     "iv_move": null,
     "source": "indicative:SPY",
-    "ref": 756.0,
+    "ref": 760.34,
     "ref_kind": "spot at calc",
-    "upper": 762.85,
-    "lower": 749.15,
-    "move_pct": 0.906
+    "upper": 767.46,
+    "lower": 753.22,
+    "move_pct": 0.936
    },
    "weekly": {
     "expiry": "2026-11-06",
-    "strike": 756.0,
-    "call_mid": 7.98,
-    "put_mid": 6.35,
-    "straddle": 14.33,
-    "straddle_085": 12.18,
-    "atm_iv": 0.2238,
-    "dte_cal": 4.334,
-    "iv_move": 18.43,
+    "strike": 760.0,
+    "call_mid": 5.66,
+    "put_mid": 8.12,
+    "straddle": 13.79,
+    "straddle_085": 11.72,
+    "atm_iv": 0.2172,
+    "dte_cal": 4.292,
+    "iv_move": 17.91,
     "source": "indicative:SPY",
     "ref": 755.72,
     "ref_kind": "prior Friday close",
-    "upper": 770.05,
-    "lower": 741.39,
-    "move_pct": 1.896,
+    "upper": 769.51,
+    "lower": 741.93,
+    "move_pct": 1.825,
     "prior_fri_close": 755.72,
-    "upper_from_fri": 770.05,
-    "lower_from_fri": 741.39
+    "upper_from_fri": 769.51,
+    "lower_from_fri": 741.93
    }
   },
   "SPX": {
@@ -54,7 +54,7 @@
     "straddle": 66.93,
     "straddle_085": 56.89,
     "atm_iv": null,
-    "dte_cal": 0.334,
+    "dte_cal": 0.292,
     "iv_move": null,
     "source": "indicative:SPXW",
     "ref": 7580.07,
@@ -71,7 +71,7 @@
     "straddle": 142.76,
     "straddle_085": 121.35,
     "atm_iv": null,
-    "dte_cal": 4.334,
+    "dte_cal": 4.292,
     "iv_move": null,
     "source": "indicative:SPXW",
     "ref": 7580.07,
@@ -85,43 +85,43 @@
    }
   },
   "QQQ": {
-   "spot": 690.71,
+   "spot": 696.53,
    "daily": {
     "expiry": "2026-11-02",
-    "strike": 691.0,
-    "call_mid": 5.25,
-    "put_mid": 4.84,
-    "straddle": 10.09,
-    "straddle_085": 8.58,
+    "strike": 697.0,
+    "call_mid": 2.48,
+    "put_mid": 8.21,
+    "straddle": 10.69,
+    "straddle_085": 9.08,
     "atm_iv": null,
-    "dte_cal": 0.334,
+    "dte_cal": 0.292,
     "iv_move": null,
     "source": "indicative:QQQ",
-    "ref": 690.71,
+    "ref": 696.53,
     "ref_kind": "spot at calc",
-    "upper": 700.8,
-    "lower": 680.62,
-    "move_pct": 1.461
+    "upper": 707.22,
+    "lower": 685.84,
+    "move_pct": 1.535
    },
    "weekly": {
     "expiry": "2026-11-06",
-    "strike": 691.0,
-    "call_mid": 11.59,
-    "put_mid": 10.73,
-    "straddle": 22.32,
-    "straddle_085": 18.97,
-    "atm_iv": 0.381,
-    "dte_cal": 4.334,
-    "iv_move": 28.68,
+    "strike": 697.0,
+    "call_mid": 8.39,
+    "put_mid": 13.75,
+    "straddle": 22.14,
+    "straddle_085": 18.81,
+    "atm_iv": 0.3805,
+    "dte_cal": 4.292,
+    "iv_move": 28.74,
     "source": "indicative:QQQ",
     "ref": 690.49,
     "ref_kind": "prior Friday close",
-    "upper": 712.81,
-    "lower": 668.17,
-    "move_pct": 3.232,
+    "upper": 712.63,
+    "lower": 668.35,
+    "move_pct": 3.206,
     "prior_fri_close": 690.49,
-    "upper_from_fri": 712.81,
-    "lower_from_fri": 668.17
+    "upper_from_fri": 712.63,
+    "lower_from_fri": 668.35
    }
   }
  },
@@ -422,25 +422,25 @@
    }
   },
   {
-   "generated_pt": "2026-11-02 04:58 PT",
+   "generated_pt": "2026-11-02 05:59 PT",
    "session_for": "2026-11-02",
    "week_expiry": "2026-11-06",
    "SPY": {
     "daily": {
-     "straddle": 6.85,
-     "upper": 762.85,
-     "lower": 749.15,
-     "ref": 756.0,
+     "straddle": 7.12,
+     "upper": 767.46,
+     "lower": 753.22,
+     "ref": 760.34,
      "atm_iv": null,
      "iv_move": null
     },
     "weekly": {
-     "straddle": 14.33,
-     "upper": 770.05,
-     "lower": 741.39,
+     "straddle": 13.79,
+     "upper": 769.51,
+     "lower": 741.93,
      "ref": 755.72,
-     "atm_iv": 0.2238,
-     "iv_move": 18.43
+     "atm_iv": 0.2172,
+     "iv_move": 17.91
     }
    },
    "SPX": {
@@ -463,20 +463,20 @@
    },
    "QQQ": {
     "daily": {
-     "straddle": 10.09,
-     "upper": 700.8,
-     "lower": 680.62,
-     "ref": 690.71,
+     "straddle": 10.69,
+     "upper": 707.22,
+     "lower": 685.84,
+     "ref": 696.53,
      "atm_iv": null,
      "iv_move": null
     },
     "weekly": {
-     "straddle": 22.32,
-     "upper": 712.81,
-     "lower": 668.17,
+     "straddle": 22.14,
+     "upper": 712.63,
+     "lower": 668.35,
      "ref": 690.49,
-     "atm_iv": 0.381,
-     "iv_move": 28.68
+     "atm_iv": 0.3805,
+     "iv_move": 28.74
     }
    }
   }
