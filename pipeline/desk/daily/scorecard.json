@@ -51,7 +51,7 @@
           "date": "2026-10-28",
           "hi": 30178.0,
           "lo": 29482.5,
-          "last": 29649.25,
+          "last": 29649.0,
           "event": true
         },
         {
@@ -131,7 +131,7 @@
     "nq": {
       "high": 28844.0,
       "low": 28683.25,
-      "last": 28789.25,
+      "last": 28759.5,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -149,11 +149,11 @@
           "date": "2026-11-02",
           "hi": 28844.0,
           "lo": 28683.25,
-          "last": 28789.25,
+          "last": 28759.5,
           "event": false
         }
       ],
-      "n_bars": 13
+      "n_bars": 14
     }
   },
   "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned Yahoo bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
