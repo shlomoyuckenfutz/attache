@@ -1,5 +1,5 @@
 {
-  "generated_at_pt": "2026-11-01 11:05 PT",
+  "generated_at_pt": "2026-11-02 05:58 PT",
   "window_days": 3,
   "groups": {
     "set1": {
@@ -1996,6 +1996,98 @@
           "ticker": "SPY",
           "level": "737.34",
           "kind": "Lower chart line [image]"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "Tradytics",
+      "post_id": "2117250432024404068",
+      "url": "https://x.com/Tradytics/status/2117250432024404068",
+      "posted_at_utc": "2026-11-02T13:40:14.000Z",
+      "posted_at_pt": "2026-11-02 05:40 PT",
+      "caption": "Happy Monday!\n\nHere are our early $SPY levels to keep an eye on.",
+      "source_note": "Image: SPY pre-market 758.76; gamma levels 764.51 (12.93B), 762.762 (9.64B), 760.74 (6.38B); chart lines 761, 760, 759, 757. Earlier PM post: SPY trading in positive gamma cluster.",
+      "images": [
+        "img/Tradytics_2117250432024404068_0.png"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "764.51",
+          "kind": "Gamma level 12.93B [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "762.762",
+          "kind": "Gamma level 9.64B [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "760.74",
+          "kind": "Gamma level 6.38B [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "760",
+          "kind": "Chart line [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "759",
+          "kind": "Chart line [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "757",
+          "kind": "Chart line support [image]"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "TraderJonesy",
+      "post_id": "2117044572274446530",
+      "url": "https://x.com/TraderJonesy/status/2117044572274446530",
+      "posted_at_utc": "2026-11-02T00:02:13.000Z",
+      "posted_at_pt": "2026-11-01 16:02 PT",
+      "caption": "IMPLIED MOVES FOR THE DAILY, WEEKLY, AND MONTHLY FOR THE S&P 500!!\n\nThe options market is pricing a $67 range on SPY for November. That's 4.4% either way from Friday's 755.72 close.\n\nMonday's daily implied move is $7.65, about 1%. Upper is 763.37 to 765.28. Lower is 746.16 to 748.07.\n\nThis week's implied move is $16.60. Upper is 772.32 to 776.47. Lower is 734.97 to 739.12.\n\nNovember's implied move is $33.50. Upper is 789.22 to 797.60. Lower is 713.84 to 722.22.",
+      "source_note": "SPY implied moves from 755.72: daily \u00b17.65, weekly \u00b116.60, Nov \u00b133.50; image labels 771.22 IVol Weekly, 767.10 Weekly Range, 734.12 Weekly Range, 730.00 IVol Weekly, 783.88 / 717.34 Monthly Range.",
+      "images": [
+        "img/TraderJonesy_2117044572274446530_0.jpg"
+      ],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "763.37\u2013765.28",
+          "kind": "Daily implied move upper"
+        },
+        {
+          "ticker": "SPY",
+          "level": "746.16\u2013748.07",
+          "kind": "Daily implied move lower"
+        },
+        {
+          "ticker": "SPY",
+          "level": "772.32\u2013776.47",
+          "kind": "Weekly implied move upper"
+        },
+        {
+          "ticker": "SPY",
+          "level": "734.97\u2013739.12",
+          "kind": "Weekly implied move lower"
+        },
+        {
+          "ticker": "SPY",
+          "level": "789.22\u2013797.60",
+          "kind": "Nov implied move upper"
+        },
+        {
+          "ticker": "SPY",
+          "level": "713.84\u2013722.22",
+          "kind": "Nov implied move lower"
         }
       ]
     }
