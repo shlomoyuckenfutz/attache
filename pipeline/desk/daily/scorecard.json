@@ -240,8 +240,8 @@
   "symbols_plan": {
     "es": {
       "high": 7693.75,
-      "low": 7585.5,
-      "last": 7606.75,
+      "low": 7581.75,
+      "last": 7583.0,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -258,17 +258,17 @@
         {
           "date": "2026-11-02",
           "hi": 7693.75,
-          "lo": 7585.5,
-          "last": 7606.75,
+          "lo": 7581.75,
+          "last": 7583.0,
           "event": false
         }
       ],
-      "n_bars": 26
+      "n_bars": 27
     },
     "nq": {
       "high": 28891.25,
-      "low": 28188.0,
-      "last": 28310.5,
+      "low": 28149.75,
+      "last": 28156.75,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -285,17 +285,17 @@
         {
           "date": "2026-11-02",
           "hi": 28891.25,
-          "lo": 28188.0,
-          "last": 28310.5,
+          "lo": 28149.75,
+          "last": 28156.75,
           "event": false
         }
       ],
-      "n_bars": 26
+      "n_bars": 27
     },
     "spy": {
       "high": 763.8599853515625,
-      "low": 753.1099853515625,
-      "last": 754.9000244140625,
+      "low": 752.02001953125,
+      "last": 752.489990234375,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -312,17 +312,17 @@
         {
           "date": "2026-11-02",
           "hi": 763.86,
-          "lo": 753.11,
-          "last": 754.9,
+          "lo": 752.02,
+          "last": 752.49,
           "event": false
         }
       ],
-      "n_bars": 13
+      "n_bars": 14
     },
     "qqq": {
       "high": 699.4299926757812,
-      "low": 682.4400024414062,
-      "last": 685.010009765625,
+      "low": 680.3599853515625,
+      "last": 681.1699829101562,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -339,12 +339,12 @@
         {
           "date": "2026-11-02",
           "hi": 699.43,
-          "lo": 682.44,
-          "last": 685.01,
+          "lo": 680.36,
+          "last": 681.17,
           "event": false
         }
       ],
-      "n_bars": 13
+      "n_bars": 14
     }
   },
   "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned Yahoo bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
