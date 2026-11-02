@@ -195,14 +195,14 @@
    "date": "2026-10-30",
    "call": "DOWN",
    "next": "2026-11-02",
-   "pct": 0.19,
-   "hit": false
+   "pct": -0.17,
+   "hit": true
   }
  ],
  "hit_rate": {
-  "hits": 11,
+  "hits": 12,
   "n": 18,
-  "rate": 61.1
+  "rate": 66.7
  },
  "built": "2026-11-02",
  "intraday": [],
