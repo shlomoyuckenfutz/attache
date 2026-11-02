@@ -66,8 +66,9 @@ run "ledger_parse" bash -c 'cd xnews/bento && python3 ledger_parse.py'
 # 9) HEAT / exposure data (CBOE + Alpaca bars) — no git push
 run "exposure_collector" env PUSH=0 python3 scripts/exposure_collector.py
 
-# 10) Daily/weekly charts (Yahoo)
-run "make_daily_charts" python3 make_daily_charts.py
+# 10) Daily/weekly charts (Yahoo) — FATAL if any symbol fails (no silent stale PNGs)
+echo "==> make_daily_charts"
+python3 make_daily_charts.py
 
 # 11) Build HTML pages
 mkdir -p overnight weekly/charts/prior weekly/charts/plan daily/charts

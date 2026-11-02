@@ -410,11 +410,7 @@ def patch_desk(f: Path, title, direction, reason):
 if __name__ == "__main__":
     site = site_dir()
     daily = site / "daily"; daily.mkdir(parents=True, exist_ok=True)
-    # charts first (non-fatal)
-    try:
-        subprocess.run([sys.executable, str(HERE / "make_daily_charts.py")], timeout=180, check=False)
-    except Exception as e:
-        print("charts failed, keeping last good:", e)
+    # Charts are built by refresh.sh via make_daily_charts.py (must succeed there).
     plan, _ = load_plan(site)
     h, title, direction, reason = page(plan, site)
     (daily / "index.html").write_text(h, encoding="utf-8")

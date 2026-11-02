@@ -148,9 +148,8 @@ def card(title, secs):
             f'<div style="margin-top:4px">{html.escape(p)}</div><div style="color:#22c7e8;margin-top:4px">Open full plan: levels, scenarios, day by day, triggers →</div></a>{MK}')
 
 if __name__ == "__main__":
-    import subprocess
-    try: subprocess.run(["python3", os.path.join(os.path.dirname(os.path.abspath(__file__)), "make_weekly_charts.py")], timeout=150)
-    except Exception as e: print("charts failed, keeping last good:", e)
+    # Charts are built by refresh.sh via make_daily_charts.py (must succeed there).
+    # Do not invoke a missing make_weekly_charts.py or swallow chart errors here.
     h, title, secs = page(src()); (W / "index.html").write_text(h, encoding="utf-8"); print("weekly ->", W / "index.html", len(secs), "sections")
     if len(sys.argv) > 2 and sys.argv[1] == "--patch-desk":
         f = Path(sys.argv[2]); s = f.read_text(); s = re.sub(re.escape(MK) + ".*?" + re.escape(MK), "", s, flags=re.S)

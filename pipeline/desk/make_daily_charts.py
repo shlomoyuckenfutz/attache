@@ -5,9 +5,9 @@ event/today cyan. Free Yahoo 30m (cleaned of seam/garbage-wick artifacts).
 Plan paths drawn ONLY on day columns with no actual bars (Everett: lines off candles).
 Level / zone fills stay; FOMC/event marker = edge ticks only.
 Archives under daily/charts/YYYY-MM-DD/. Also writes weekly/charts/ (+ prior/ + plan/).
-Keeps last good PNG on fail.
+Fails loudly if any chart cannot build (no silent stale PNGs).
 """
-import os, shutil, datetime as dt, json, urllib.request
+import os, sys, shutil, datetime as dt, json, urllib.request
 from pathlib import Path
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -28,13 +28,27 @@ COL = {"R": R, "S": S, "P": P}
 
 # SPY Dark Pool levels (purple edge ticks only — no lines through candles)
 def _load_dp():
+    """Return SPY dark-pool prices as floats.
+
+    data/spy_dark_pool.json stores objects {{"spy": float, ...}};
+    es_levels/darkpool_levels.json stores bare floats. Chart code needs floats.
+    """
     import json
     from pathlib import Path as _P
     for cand in (_P(__file__).resolve().parent.parent.parent / "data" / "spy_dark_pool.json",
                  _P(__file__).resolve().parent / "es_levels" / "darkpool_levels.json"):
-        if cand.exists():
-            d = json.loads(cand.read_text())
-            return list(d.get("levels") or [])
+        if not cand.exists():
+            continue
+        d = json.loads(cand.read_text())
+        out = []
+        for lv in (d.get("levels") or []):
+            if isinstance(lv, (int, float)):
+                out.append(float(lv))
+            elif isinstance(lv, dict) and lv.get("spy") is not None:
+                out.append(float(lv["spy"]))
+            else:
+                raise TypeError(f"dark-pool level must be float or {{'spy': float}}, got {type(lv).__name__}: {lv!r}")
+        return out
     return []
 DARK_POOL_SPY = _load_dp()
 DP_COLOR = "#c084fc"
@@ -90,41 +104,48 @@ PRIOR_EVENT = {  # Wed FOMC — edge ticks only
 PLAN_WEEK_FWD = [dt.date(2026, 11, 2), dt.date(2026, 11, 3), dt.date(2026, 11, 4),
                  dt.date(2026, 11, 5), dt.date(2026, 11, 6)]
 FWD_ZONES = {
-  "spy": {"bull": (770.0, 775.0), "bear": (750.0, 746.5),
-          "bull_lab": "770–775 call-wall / FOMC", "bear_lab": "air-pocket zone"},
-  "qqq": {"bull": (710.0, 715.0), "bear": (685.0, 676.0),
-          "bull_lab": "710–715 / 20-wk", "bear_lab": "air-pocket zone"},
-  "es":  {"bull": (7703.0, 7755.0), "bear": (7558.0, 7520.0),
-          "bull_lab": "7703–7755 late-week bounce", "bear_lab": "air-pocket zone"},
+  "spy": {"bull": (770.0, 775.0), "bear": (729.20, 716.0),
+          "bull_lab": "770–775 call-wall / FOMC", "bear_lab": "729.20 → 716 magnet"},
+  "qqq": {"bull": (710.0, 715.0), "bear": (678.0, 676.0),
+          "bull_lab": "710–715 / 20-wk", "bear_lab": "678 → 676 / 200 DMA"},
+  "es":  {"bull": (7703.0, 7755.0), "bear": (7470.0, 7440.0),
+          "bull_lab": "7703–7755 late-week bounce", "bear_lab": "7470 → 7440 magnet"},
   "nq":  {"bull": (29740.0, 30100.0), "bear": (28295.0, 27900.0),
-          "bull_lab": "29740–30100 late-week bounce", "bear_lab": "air-pocket zone"},
+          "bull_lab": "29740–30100 late-week bounce", "bear_lab": "28295 → 27900"},
 }
 FWD_SPEC = {
  "es": dict(sym="ES=F", title="/ES  ·  week of Nov 2 (plan)", fut=True, lv=[
    (7803,"R","prior range top"),(7731,"R","resistance"),(7703,"R","bear-trigger retake"),
-   (7677,"R","old shelf"),(7616,"S","support · ≈SPY 755.9"),(7585,"S","support · ≈SPY 752.8"),
-   (7575,"P","line in sand"),(7558,"S","Fri low"),(7540,"S","Mon flush undercut")],
-   zones=[(7751,7755,"R","gap fill"),(7645,7649,"R","bounce step")],
-   bull=[7575,7540,7560,7626,7677,7703,7755], bear=[7575,7560,7558,7525,7500]),
+   (7677,"R","old shelf"),(7665,"R","rejection shelf"),(7648,"R","week open filter"),
+   (7616,"S","support · ≈SPY 755.9"),(7585,"S","support · ≈SPY 752.8"),
+   (7575,"P","line in sand"),(7558,"S","Fri low"),(7540,"S","Mon flush undercut"),
+   (7503,"S","bear step"),(7470,"S","bear magnet"),(7440,"S","bear extension")],
+   zones=[(7751,7755,"R","gap fill"),(7645,7649,"R","bounce step"),(7665,7677,"R","reject under")],
+   bull=[7575,7540,7560,7626,7677,7703,7755],
+   bear=[7665,7648,7575,7540,7503,7470,7440]),
  "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 2 (plan)", fut=True, lv=[
    (30178,"R","Wed AH high"),(29740,"R","~720 wall eq"),(29320,"R","old high"),
    (28915,"R","≈QQQ 700"),(28543,"P","Fri settle"),
    (28295,"S","support"),(28233,"S","Fri low"),(27900,"S","bear target")],
    zones=[(28900,28930,"R","700-eq reclaim")],
-   bull=[28295,28100,28250,28915,29320,29740,30100], bear=[28295,28233,27900,27500]),
+   bull=[28295,28100,28250,28915,29320,29740,30100],
+   bear=[28295,27900]),
  "spy": dict(sym="SPY", title="SPY  ·  week of Nov 2 (plan)", fut=False, lv=[
    (775,"R","FOMC-week high area"),(770,"R","call wall / flip"),(765,"R","magnet"),
    (762.27,"R","LOST dark-pool"),(760,"R","LOST put wall"),
    (755.9,"S","≈ES 7616"),(755,"P","Fri close / put node"),
-   (752.8,"S","≈ES 7585"),(750,"S","put floor")],
+   (752.8,"S","≈ES 7585"),(749.83,"S","line in the sand"),(729.20,"S","bear magnet"),
+   (716,"S","bear extension")],
    zones=[(754,755,"P","pivot shelf")],
-   bull=[752,750,754,760,765,770,775], bear=[754.07,750,746.77,740]),
+   bull=[752,750,754,760,765,770,775],
+   bear=[749.83,729.20,716]),
  "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 2 (plan)", fut=False, lv=[
    (718,"R","20-wk top"),(715,"R","expansion"),(710,"R","resistance"),(707,"R","prior shelf"),
-   (690.49,"P","Fri close"),
-   (685,"S","support"),(683.45,"S","Fri low"),(676,"S","200 DMA")],
+   (692,"R","first reclaim"),(690.49,"P","Fri close"),
+   (685,"S","support"),(683.45,"S","Fri low"),(678,"S","bear step"),(676,"S","200 DMA")],
    zones=[(698,702,"R","700 reclaim"),(674,678,"S","200 DMA zone")],
-   bull=[690,688,692,700,707,710,715], bear=[685,683.45,676,670]),
+   bull=[690,688,692,700,707,710,715],
+   bear=[692,678,676]),
 }
 FWD_EVENT = {  # Fri jobs — edge ticks; Tue midterms noted in blurb not as a price line
   "day": dt.date(2026, 11, 6),
@@ -702,6 +723,7 @@ def main():
         d.mkdir(parents=True, exist_ok=True)
 
     scores = {}
+    failures = []
     # 1) Last week PLAN vs ACTUAL (Oct 26–30)
     print("=== PRIOR WEEK (Oct 26–30) PLAN vs ACTUAL ===")
     for k, sp in PRIOR_SPEC.items():
@@ -717,7 +739,9 @@ def main():
             if sc:
                 scores[k] = sc
         except Exception as e:
-            print("prior FAILED", k, e, "(keeping last good)")
+            msg = f"prior FAILED {k}: {e}"
+            print(msg, flush=True)
+            failures.append(msg)
 
     # 2) This week PLAN (Nov 2–6) — clean forward paths, no candles in plan slots yet
     print("=== FORWARD WEEK (Nov 2–6) PLAN ===")
@@ -733,7 +757,9 @@ def main():
             if sc:
                 fwd_scores[k] = sc
         except Exception as e:
-            print("plan FAILED", k, e, "(keeping last good)")
+            msg = f"plan FAILED {k}: {e}"
+            print(msg, flush=True)
+            failures.append(msg)
 
     (SITE / "daily" / "scorecard.json").write_text(json.dumps({
         "date": arch_date.isoformat(),
@@ -752,6 +778,9 @@ def main():
         pass
     print("daily/weekly charts ->", OUT, "archive", arch)
     print("weekly/charts (prior actual) + weekly/charts/plan (Nov 2 forward)")
+    if failures:
+        print("ERROR: chart build failed for:", "; ".join(failures), flush=True)
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":
