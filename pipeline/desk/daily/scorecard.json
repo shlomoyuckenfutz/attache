@@ -127,6 +127,34 @@
       "n_bars": 106
     }
   },
-  "symbols_plan": {},
+  "symbols_plan": {
+    "nq": {
+      "high": 28772.75,
+      "low": 28728.5,
+      "last": 28764.75,
+      "path": "BULL",
+      "phase1": "MISSED",
+      "phase1_zone": [
+        29740.0,
+        30100.0
+      ],
+      "phase1_high": 28772.75,
+      "phase2": "MISSED",
+      "phase2_zone": [
+        28295.0,
+        27900.0
+      ],
+      "days": [
+        {
+          "date": "2026-11-02",
+          "hi": 28772.75,
+          "lo": 28728.5,
+          "last": 28764.75,
+          "event": false
+        }
+      ],
+      "n_bars": 3
+    }
+  },
   "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned Yahoo bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
 }
