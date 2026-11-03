@@ -241,7 +241,7 @@
     "es": {
       "high": 7693.75,
       "low": 7546.0,
-      "last": 7584.25,
+      "last": 7585.25,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -266,16 +266,16 @@
           "date": "2026-11-03",
           "hi": 7604.75,
           "lo": 7553.0,
-          "last": 7584.25,
+          "last": 7585.25,
           "event": false
         }
       ],
-      "n_bars": 60
+      "n_bars": 61
     },
     "nq": {
       "high": 28891.25,
       "low": 28038.25,
-      "last": 28313.5,
+      "last": 28274.0,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -300,16 +300,16 @@
           "date": "2026-11-03",
           "hi": 28426.5,
           "lo": 28104.25,
-          "last": 28313.5,
+          "last": 28274.0,
           "event": false
         }
       ],
-      "n_bars": 60
+      "n_bars": 61
     },
     "spy": {
       "high": 763.8599853515625,
       "low": 751.5999755859375,
-      "last": 752.1400146484375,
+      "last": 753.8499755859375,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -329,14 +329,21 @@
           "lo": 751.6,
           "last": 752.14,
           "event": false
+        },
+        {
+          "date": "2026-11-03",
+          "hi": 753.93,
+          "lo": 752.41,
+          "last": 753.85,
+          "event": false
         }
       ],
-      "n_bars": 13
+      "n_bars": 15
     },
     "qqq": {
       "high": 699.4299926757812,
       "low": 680.3300170898438,
-      "last": 681.1300048828125,
+      "last": 686.4299926757812,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -356,9 +363,16 @@
           "lo": 680.33,
           "last": 681.13,
           "event": false
+        },
+        {
+          "date": "2026-11-03",
+          "hi": 686.43,
+          "lo": 683.18,
+          "last": 686.43,
+          "event": false
         }
       ],
-      "n_bars": 13
+      "n_bars": 15
     }
   },
   "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned Yahoo bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
