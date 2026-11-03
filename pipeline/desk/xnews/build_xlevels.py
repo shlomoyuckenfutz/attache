@@ -14,10 +14,21 @@ bars = pd.read_parquet(BARS)
 bars["t"] = pd.to_datetime(bars.ts, utc=True).dt.tz_convert("America/New_York")
 bars = bars.set_index("t").sort_index()
 rth = bars.between_time("09:30", "15:59")
-def spy_at(s): return float(bars.loc[:pd.Timestamp(s, tz="America/New_York")].close.iloc[-1])
+def spy_at(s):
+    """SPY close at-or-before timestamp s (ET). If s is before the rolling window, return None."""
+    ts = pd.Timestamp(s, tz="America/New_York")
+    sub = bars.loc[:ts]
+    if sub.empty:
+        return None
+    return float(sub.close.iloc[-1])
 SPOT = float(bars.close.iloc[-1]); SPOT_T = bars.index[-1]
-# Same-time ratios from posted spots (Voltick SPX card 7,742 @ ~10:45 ET 15-min delayed; Cheddar QQQ spot 718.38 @ 10:38 ET)
-R = {"SPX": 7742 / spy_at("2026-10-20 10:45"), "QQQ": 718.38 / spy_at("2026-10-20 10:38"), "SPY": 1.0}
+# Same-time ratios from posted spots (Voltick SPX card 7,742 @ ~10:45 ET 15-min delayed; Cheddar QQQ spot 718.38 @ 10:38 ET).
+# Calibration day can roll out of the Alpaca window — freeze last-known ratios so the build never crashes.
+_R_FALLBACK = {"SPX": 10.03227, "QQQ": 0.93174, "SPY": 1.0}  # confluence.json as of 2026-10-30
+R = {"SPY": 1.0}
+for _sym, _px, _when in (("SPX", 7742, "2026-10-20 10:45"), ("QQQ", 718.38, "2026-10-20 10:38")):
+    _spy = spy_at(_when)
+    R[_sym] = (_px / _spy) if _spy else _R_FALLBACK[_sym]
 raw = json.loads((X / "levels_raw.json").read_text())
 srcs = {s["handle"]: s for s in json.loads((X / "sources.json").read_text())}
 session = raw["session"]
