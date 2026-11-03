@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-03 17:21 PT",
+ "asof": "2026-11-03 17:47 PT",
  "window_days": 5,
  "bars": "SPY 1m (free feed, RTH 09:30-16:00 ET), read-only local copy",
  "rules": "SPY levels auto-extracted from post text (promos/RTs skipped). Graded on the rest of that RTH session (or next session if posted outside RTH). touch = within $0.25; respected = moves ≥$1 back on the approach side within 30 min before a 1m close ≥$1 through; broken = closes ≥$1 through first. hit_rate = respected/touched.",
@@ -9,17 +9,17 @@
  },
  "sources": [
   {
-   "handle": "SRC_PLAN_B",
-   "levels_posted": 8,
-   "touched": 1,
-   "respected": 1,
+   "handle": "TraderJonesy",
+   "levels_posted": 17,
+   "touched": 2,
+   "respected": 2,
    "broken": 0,
    "hit_rate": 1.0,
-   "touch_rate": 0.125,
-   "avg_reaction_pts": 1.42,
-   "promo_pct": 38.0,
-   "posts_per_day": 31,
-   "weight": 0.7,
+   "touch_rate": 0.118,
+   "avg_reaction_pts": 2.0,
+   "promo_pct": 0.0,
+   "posts_per_day": 10,
+   "weight": 1.0,
    "greyed": false
   },
   {
@@ -37,18 +37,18 @@
    "greyed": false
   },
   {
-   "handle": "TraderJonesy",
-   "levels_posted": 17,
-   "touched": 2,
-   "respected": 1,
-   "broken": 0,
-   "hit_rate": 0.5,
-   "touch_rate": 0.118,
-   "avg_reaction_pts": 1.66,
-   "promo_pct": 0.0,
-   "posts_per_day": 10,
-   "weight": 1.0,
-   "greyed": false
+   "handle": "SRC_PLAN_B",
+   "levels_posted": 8,
+   "touched": 1,
+   "respected": 0,
+   "broken": 1,
+   "hit_rate": 0.0,
+   "touch_rate": 0.125,
+   "avg_reaction_pts": 0.91,
+   "promo_pct": 38.0,
+   "posts_per_day": 31,
+   "weight": 0.7,
+   "greyed": true
   },
   {
    "handle": "QuantData",
