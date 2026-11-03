@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "updated_pt": "2026-11-03 05:52 PT",
+ "updated_pt": "2026-11-03 07:00 PT",
  "symbols": [
   {
    "symbol": "SPY",
@@ -92,8 +92,8 @@
     "regime": "negative gamma",
     "regime_votes": {
      "under flip / all 3 mkts neg": 1,
-     "negative gamma": 2,
-     "short gamma": 1
+     "short gamma": 1,
+     "negative gamma": 2
     }
    },
    "em_note": "Cheddar 1D EM after 760 put-wall break; Voltick pre-open EM 758.2-764.22"
