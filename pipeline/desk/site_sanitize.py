@@ -18,7 +18,7 @@ M = {h.lower(): tag(i) for i, h in enumerate(H)}
 ALIAS = {'voltick': 'VoltickIO', 'mancini': 'SRC_LEVELS_A', 'jonesy': 'TraderJonesy', 'spartan': 'SRC_PLAN_B',
          'cheddar': 'CheddarFlow', 'unusual whales': 'unusual_whales', 'whales': 'unusual_whales', 'sleuth': 'market_sleuth',
          'bobby': 'FlowbyBobby', 'shark': '_Shark_Trading', 'sniper': 'TradeSniperSara', 'anderson': 'GAndersonTrades', 'yuriy': 'yuriymatso',
-         'basssem': 'Basssem666', 'kctrades': 'KCTrades777', 'optionking': 'OptionKing33996', 'luckeee': 'SuperLuckeee', 'first squawk': 'FirstSquawk', 'firstsquawk': 'FirstSquawk', 'bento': 'SRC_LEDGER', 'valois': 'SRC_LEDGER'}
+         'basssem': 'Basssem666', 'bassem': 'Basssem666', 'smash': 'smashelito', 'smashlevel': 'smashelito', 'kctrades': 'KCTrades777', 'optionking': 'OptionKing33996', 'luckeee': 'SuperLuckeee', 'first squawk': 'FirstSquawk', 'firstsquawk': 'FirstSquawk', 'bento': 'SRC_LEDGER', 'valois': 'SRC_LEDGER'}
 for a, h in ALIAS.items(): M.setdefault(a, M[h.lower()])
 NAMES = sorted(M, key=len, reverse=True)
 RX = re.compile('@?(' + '|'.join(re.escape(n) for n in NAMES) + ')', re.I)

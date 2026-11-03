@@ -1,589 +1,589 @@
 {
- "date": "2026-11-03",
- "asof_pt": "2026-11-02 20:27 PT",
- "bias": {
-  "direction": "SHORT",
-  "reason": "Mon reversal confirmed into the close: ES tagged 7693.75 inside Fri's gap, rejected ~7682 call wall ~10:30 ET, broke 7600 and closed near lows (~7579.50). SPX 7,541.52 (−0.51%), Nasdaq −1.12%. Evening tape still soft (ES ~7568). Below 7600 favors 7575→7541→7515; buyers need 7600 then 7623 LVN / 7634-36. SPY 750 line (AH ~752); fade 755.62 / 759.50. Midterms Tue = chop risk; election straddle ±1.51% < Fri range."
- },
- "key_levels": [
-  {
-   "price": 7600,
-   "note": "ES Tue pivot — above → 7623/7648; below → 7575/7541/7515"
-  },
-  {
-   "price": 7623,
-   "note": "ES LVN between Mon/Fri distributions — buyers must reclaim"
-  },
-  {
-   "price": 7635,
-   "note": "ES reclaim band 7634–36 — must clear to rip (newsletter)"
-  },
-  {
-   "price": 7541,
-   "note": "ES unfilled true gap / DT2"
-  },
-  {
-   "price": 7515,
-   "note": "ES final intraday downside (FDT)"
-  },
-  {
-   "price": 7593,
-   "note": "ES zero gamma (GEX)"
-  },
-  {
-   "price": 7682,
-   "note": "ES call wall — Mon 10:30 ET rejection"
-  },
-  {
-   "price": 7693.75,
-   "note": "ES Mon high / 2-day balance high"
-  },
-  {
-   "price": 7485,
-   "note": "ES downside target below 7515"
-  },
-  {
-   "price": 755.62,
-   "note": "SPY new 2B dark pool — likely temp ceiling"
-  },
-  {
-   "price": 759.5,
-   "note": "SPY 100DMA relief-bounce target (flipped to resistance)"
-  },
-  {
-   "price": 763.34,
-   "note": "SPY dark pool (10/23) — Mon rejection high"
-  },
-  {
-   "price": 740.48,
-   "note": "SPY next dark pool below"
-  },
-  {
-   "price": 740,
-   "note": "SPY put wall >−1B"
-  },
-  {
-   "price": 730,
-   "note": "SPY put wall >−1B / ~200DMA target"
-  },
-  {
-   "price": 726,
-   "note": "SPY 200DMA (~726.31)"
-  },
-  {
-   "price": 759.23,
-   "note": "SPY Tue implied high (759.23–761.01)"
-  },
-  {
-   "price": 744.97,
-   "note": "SPY Tue implied low (744.97–743.19)"
-  },
-  {
-   "price": 669.25,
-   "note": "QQQ quarterly implied low (Tue daily low 669.49–666.59)"
-  },
-  {
-   "price": 7677,
-   "note": "ES old range shelf LOST — must recover for sustained green"
-  },
-  {
-   "price": 7665,
-   "note": "ES bounce target / fade zone"
-  },
-  {
-   "price": 7649,
-   "note": "ES 7645–49 reclaim band"
-  },
-  {
-   "price": 7626,
-   "note": "ES next on Mode-1 rip"
-  },
-  {
-   "price": 7616,
-   "note": "ES 7616 support (↔ SPX 7582 / SPY 755.9) — Fri basis ES−SPX +34.5"
-  },
-  {
-   "price": 7585,
-   "note": "ES 7585 support (↔ SPX 7550.5 / SPY 752.8) — grind / Fri-tagged"
-  },
-  {
-   "price": 7575,
-   "note": "ES Mode-1 reclaim trigger (late Fri +45); monthly line"
-  },
-  {
-   "price": 7560,
-   "note": "ES neg GEX node"
-  },
-  {
-   "price": 7558,
-   "note": "ES Fri session low"
-  },
-  {
-   "price": 7703,
-   "note": "ES bear-case trigger that fired (now resistance)"
-  },
-  {
-   "price": 7803,
-   "note": "ES prior range top (Wed high) — far"
-  },
-  {
-   "price": 765,
-   "note": "SPY magnet / 1D max overhead"
-  },
-  {
-   "price": 762.27,
-   "note": "SPY dark pool LOST Fri — first real resistance"
-  },
-  {
-   "price": 760,
-   "note": "SPY put wall LOST Fri (−2.8B)"
-  },
-  {
-   "price": 757.43,
-   "note": "SPY double dark pool bounce/reclaim"
-  },
-  {
-   "price": 755.72,
-   "note": "SPY Fri close / pivot"
-  },
-  {
-   "price": 755,
-   "note": "SPY put node / Neg GEX"
-  },
-  {
-   "price": 754.07,
-   "note": "SPY double dark pool; fail → air pocket"
-  },
-  {
-   "price": 750,
-   "note": "SPY floor / heavy Neg GEX"
-  },
-  {
-   "price": 746.77,
-   "note": "SPY air-pocket target if 754 fails"
-  },
-  {
-   "price": 700,
-   "note": "QQQ first reclaim"
-  },
-  {
-   "price": 695,
-   "note": "QQQ near resistance"
-  },
-  {
-   "price": 685,
-   "note": "QQQ support / next down"
-  },
-  {
-   "price": 690.49,
-   "note": "QQQ Fri close"
-  },
-  {
-   "price": 7755,
-   "note": "ES gap-fill / expansion magnet (bull stretch)"
-  },
-  {
-   "price": 7731,
-   "note": "ES resistance on Fri-selloff retrace"
-  },
-  {
-   "price": 775,
-   "note": "SPY FOMC-week high area (bull expansion)"
-  },
-  {
-   "price": 770,
-   "note": "SPY call wall / gamma flip (bull magnet)"
-  },
-  {
-   "price": 715,
-   "note": "QQQ expansion toward 20-wk"
-  },
-  {
-   "price": 710,
-   "note": "QQQ first expansion shelf"
-  },
-  {
-   "price": 29740,
-   "note": "NQ ~720-wall eq / expansion"
-  },
-  {
-   "price": 30160,
-   "note": "NQ toward Wed AH high (bull stretch)"
-  },
-  {
-   "price": 7540,
-   "note": "ES Mon flush undercut (below Fri low 7558) — bull path lower low"
-  },
-  {
-   "price": 752,
-   "note": "SPY Mon flush toward 750 (bull path lower low)"
-  },
-  {
-   "price": 688,
-   "note": "QQQ Mon flush under Fri close (bull path lower low)"
-  },
-  {
-   "price": 28100,
-   "note": "NQ Mon flush below Fri low 28233 (bull path lower low)"
-  },
-  {
-   "price": 755.9,
-   "note": "SPY 755.9 support ≈ ES 7616 (SPY/SPX 0.09970 · Fri SPY 755.72 / SPX 7580)"
-  },
-  {
-   "price": 752.8,
-   "note": "SPY 752.8 support ≈ ES 7585 (same basis)"
-  },
-  {
-   "price": 7582,
-   "note": "SPX 7582 support ≈ ES 7616 (ES−SPX basis +34.5 from Fri 7614.50 vs 7580)"
-  },
-  {
-   "price": 7550.5,
-   "note": "SPX 7550.5 support ≈ ES 7585 (same basis)"
-  },
-  {
-   "price": 749.83,
-   "note": "SPY key daily support (Sep low that launched run to 781.62) — hold = retest"
-  },
-  {
-   "price": 729.2,
-   "note": "SPY next support on daily close below 749.83"
-  },
-  {
-   "price": 715.95,
-   "note": "SPY major daily support"
-  },
-  {
-   "price": 779.29,
-   "note": "SPY daily resistance under 781.62 Oct 6 high"
-  },
-  {
-   "price": 7648,
-   "note": "ES week open filter — hold above = strength path; reject/fail = weakness toward 7575"
-  },
-  {
-   "price": 7725,
-   "note": "ES true gap / primary upside magnet after 7648 reclaim"
-  },
-  {
-   "price": 7770,
-   "note": "ES resistance / HTF VPOC shelf (between 7751–55 and 7800–03)"
-  },
-  {
-   "price": 7800,
-   "note": "ES weekly extreme high area (cluster with 7803)"
-  },
-  {
-   "price": 7503,
-   "note": "ES ~5% correction marker (under 7540 flush)"
-  },
-  {
-   "price": 7470,
-   "note": "ES NVPOC / next support if 7575 accepted lower"
-  },
-  {
-   "price": 7440,
-   "note": "ES weekly extreme low / HVN — deep bear rail"
-  },
-  {
-   "price": 771,
-   "note": "SPY preferred short zone on relief rally (rejection); under weekly 20 SMA ~757 still weak"
-  },
-  {
-   "price": 775.5,
-   "note": "SPY 775–776 sustained reclaim weakens bearish swing setup"
-  },
-  {
-   "price": 758.17,
-   "note": "SPY chart resistance / reclaim shelf (weekly map)"
-  },
-  {
-   "price": 763.07,
-   "note": "SPY overhead on bounce map"
-  },
-  {
-   "price": 767.07,
-   "note": "SPY bounce magnet toward weekly averages"
-  },
-  {
-   "price": 750.24,
-   "note": "SPY near 750 put/demand zone (chart)"
-  },
-  {
-   "price": 747.73,
-   "note": "SPY 747–745 long watch zone if defended"
-  },
-  {
-   "price": 745,
-   "note": "SPY long-setup floor / lose lows target (with 747–745)"
-  },
-  {
-   "price": 758.7,
-   "note": "SPY Mon reclaim for bulls (Fri plan)"
-  },
-  {
-   "price": 749.4,
-   "note": "SPY next large support area (Fri session)"
-  },
-  {
-   "price": 753.07,
-   "note": "SPY phantom / gamma step under 755"
-  },
-  {
-   "price": 746.69,
-   "note": "SPY next downside cluster after 750 tap"
-  },
-  {
-   "price": 716,
-   "note": "SPY/QQQ deep support cluster (lose 749.83 → 729 then ~716); QQQ 20-wk ~716–717 reclaim = stronger bottom evidence"
-  },
-  {
-   "price": 692,
-   "note": "QQQ Mon reclaim for bulls"
-  },
-  {
-   "price": 683.72,
-   "note": "QQQ support near Fri low 683.45"
-  },
-  {
-   "price": 678,
-   "note": "QQQ next if Fri lows lost"
-  },
-  {
-   "price": 699.07,
-   "note": "QQQ near resistance on bounce map"
-  },
-  {
-   "price": 709.04,
-   "note": "QQQ bounce shelf / alert level"
-  },
-  {
-   "price": 7663,
-   "note": "ES reclaim step after 7649 (toward 7677)"
-  },
-  {
-   "price": 7628,
-   "note": "ES Mon pivot — hold above → 7648/7670/7690; hold below → 7596/7575/7541"
-  },
-  {
-   "price": 7596,
-   "note": "ES first downside target below 7628 (buyers defend on lower open)"
-  },
-  {
-   "price": 7690,
-   "note": "ES final upside target for Mon"
-  },
-  {
-   "price": 7541,
-   "note": "ES final downside target / unfilled true gap"
-  },
-  {
-   "price": 7670,
-   "note": "ES upside T2 (daily one-time-down ends)"
-  },
-  {
-   "price": 7577,
-   "note": "ES failed-breakdown long trigger (Sep 16 low, 7577–75) — recovery of 7577 first of interest"
-  },
-  {
-   "price": 7698,
-   "note": "ES rip target 7698–7703 after 7665 react / 7677"
-  },
-  {
-   "price": 7620,
-   "note": "ES/SPX fut bull hold — above → 7640 / 7650"
-  },
-  {
-   "price": 7590,
-   "note": "ES/SPX fut bear line — below → 7570 / 7550"
-  },
-  {
-   "price": 764.51,
-   "note": "SPY positive gamma level (12.93B)"
-  },
-  {
-   "price": 762.76,
-   "note": "SPY positive gamma level (9.64B)"
-  },
-  {
-   "price": 760.74,
-   "note": "SPY positive gamma level (6.38B)"
-  },
-  {
-   "price": 757,
-   "note": "SPY puts below → 755 / 753; calls above 760 → 762 / 764"
-  },
-  {
-   "price": 763.37,
-   "note": "SPY Mon daily implied move upper (763.37–765.28)"
-  },
-  {
-   "price": 748.07,
-   "note": "SPY Mon daily implied move lower (746.16–748.07)"
-  },
-  {
-   "price": 772.32,
-   "note": "SPY weekly implied move upper (772.32–776.47)"
-  },
-  {
-   "price": 739.12,
-   "note": "SPY weekly implied move lower (734.97–739.12)"
-  },
-  {
-   "price": 789.22,
-   "note": "SPY Nov implied move upper (789.22–797.60)"
-  },
-  {
-   "price": 722.22,
-   "note": "SPY Nov implied move lower (713.84–722.22)"
-  }
- ],
- "actionable": [
-  "Mon recap (11/2): gap-up faded — S&P opened +0.45% (7,613.87), ES tagged 7693.75 inside Fri's gap and rejected the 7682 call wall ~10:30 ET, then broke 7620s/7600 into the close (~7579.50, range 7573.75–7693.75, −46.50). SPX closed 7,541.52 (−0.51%), Nasdaq 25,152.43 (−1.12%); NDX −10% from Oct peak, chip index −12% over 3 days. SPY ~753.5 after hours; closed below the 100DMA a 2nd day, rejected 763.34 dark pool on the high and 754.05/754.07 on the last candle. New 2B dark pool at 755.62.",
-  "Evening wire (Mon 11/2): Brent settled $104.77 (−$8.66, −7.6%), WTI ~$96.50 on Iran peace-talk hopes; Trump: 'no rush' to restart Iran war, 'no' to strikes after elections; gold +2.5% intraday to $3,957, yields lower. ISM Mfg 55.5 vs 54.5 est. After the close: IRGC claims MQ-9 shootdown / drone seizures near Hormuz; PBOC raises FX deposit reserve ratio 4%→6% — offshore yuan biggest drop since June (6.6642); Asia mixed, KOSPI lagging on US tech weakness; midterms Tue. News bias: risk-off for index/tech — oil collapse and Iran de-escalation failed to lift stocks as the semis/AI unwind and election event risk dominated; Hormuz drone headlines are the overnight gap risk.",
-  "Tue 11/3 map: ES 7600 pivot — break/hold above → 7623 / 7648 (then 7670/7690); hold below → 7575 / 7541 (unfilled gap) / 7515. VIX tells: <19.78 with hold above 7648 = strength; >22.54 with hold below 7515 = weakness. ES GEX: zero gamma 7593, call wall 7682. SPY: 750 expected short-term bottom zone (heavy put walls 750/740/730) → relief 755.62 → 759.50 (100DMA); next dark pool below 740.48; 767–771 puts on a pop, 745 calls if it holds, 740–738 next, 200DMA ~726–730. Tue implied — SPY 759.23–761.01 / 744.97–743.19; QQQ 692.69–695.59 / 669.49–666.59 (quarterly low 669.25). QQQ closed on its 200DMA; Fri 690P sweeps ~$4M.",
-  "Pre-market (Mon 11/2 ~5:58 AM PT): futures green — NQ +1%, S&P fut ~+0.5%; SPY ~758.8 pre-market inside a positive-gamma cluster (760.74 / 762.76 / 764.51 overhead). ES rally from late-Fri 7577 failed breakdown (+80); Sun night reclaimed 7628 and pressed 7648 (week-open filter). Plan: 7628/7616 supports; 7665 react, then 7677 → 7698–7703. Fut map: hold 7620 → 7640/7650; lose 7590 → 7570/7550. SPY: calls above 760 → 762/764; puts below 757 → 755/753. Implied moves — Mon 746.16–748.07 / 763.37–765.28; week 734.97–739.12 / 772.32–776.47; Nov 713.84–722.22 / 789.22–797.60. Bias stays fade-the-pop below 7648/7665 until accepted; above 776 or a test under 750 changes the read.",
-  "Pre-market wire (Mon 11/2): Iran supreme leader grants govt authority for talks (IRNA); Brent falls to intraday low near $106; spot gold +~1% to $3,911; another tanker hit a mine in eastern Hormuz (Iran state media); FT says Netanyahu presses Trump for renewed Iran strikes; Marvell to buy Lumentum in $115B AI-connectivity deal; Oracle files $10B common stock offer; European gas −5.3%; elections-reaction focus into Tue midterms. News bias: risk-on tilt pre-market (Iran talks + oil off highs + mega AI deal), with Hormuz mine / strike headlines as the gap-down risk.",
-  "Fri recap: Mode-1 red — 7703 failure lost ES 7677–7803; SPY flushed 762.27 and 760 into ~−17B short gamma. Late 7575 reclaim ripped +45 to ~7614.5. VIX 19.42 (hi 23.93), backwardated.",
-  "PRIMARY Mon: Week open filter ES 7648 — Fri settle 7614.50 already below. Weakness path: defend/fail 7575 → magnets 7540/7503 then 7470/7440. Strength path only if 7648 reclaimed and held → 7725 → 7770/7800. Fade premature green into 7665/760/771 pre-acceptance.",
-  "Mon ES pivot 7628 (light sweep 14:58 PT): hold above → 7648 / 7670 / 7690 (final upside); hold below → 7596 / 7575 / 7541 (final downside, unfilled gap). Higher open: watch sellers defend 7628/7648. Lower open: watch buyers defend 7596/7575. 3-month HVN 7755 is the upside magnet. VIX tells: above 20.70 = weakness, below 18.14 = strength.",
-  "SPY structure: 749.83/750 is the line (hold = retest; daily close below → 729.2 then 715.95/716). Bounce shorts preferred near 771 on rejection; 747–745 is the defended long watch. Reclaim 758.70 → 760 → 762.27 for bounce legs.",
-  "QQQ/NQ: reclaim 692 / ~28915 for bulls; lose Fri lows → 678 / ~28100. Stronger bottom evidence needs QQQ weekly close above 20-wk ~716–717 with SPY back above ~757 weekly 20 SMA.",
-  "Catalysts: Mon ISM Mfg 7 AM PT + AAPL/PLTR earnings; Tue midterms + JOLTS; Wed ADP/ISM Svc; Thu Claims/ULC; Fri NFP 5:30 AM PT; CPI week 11/10; NVDA ~11/17. Geo: Hormuz/Iran/oil gap risk.",
-  "Full-plan sweep (Sun 14:37 PT): folded week plans from ES auction map (7648/7725/7575/7440), SPY/QQQ weekly map (747–745 long / 771 short / 20-wk tests), GEX 750-line (729/716), Fri Mon levels (758.70/692 → 745/678), ES Fri range book (7649/7663/7677/7703), GEX walls (765/770.4). KT parked — excluded. sources_count reflects contributing plans.",
-  "Evening confirm (Mon 11/2 ~8:25 PM PT): Smash Tue plan — Smashlevel 7600; above→7623/7648; below→7575/7541/7515; VIX 22.54/19.78. Mancini: 7595 reclaim was long (+15); 7634-36 must reclaim to rip. Bassem: lows NOT in; SPY rejected ~763 / broke 758.17; next 750.24/747.73. QQQ near 680 MA200. Flow: QQQ $4M Fri-expiry puts + INTC puts; VVIX 124. Wire: SCOTUS rejected CA ballot bid; blue-tsunami polls; AAPL iPhone beat / JPM PT cut to $355; TWD weakest since Apr'25; RBA inflation elevated into 2027."
- ],
- "sources_count": 14,
- "overnight_bias": "BEARISH / NEG-GAMMA — ES 7600 PIVOT + SPY 750 LINE · MIDTERMS",
- "path": {
-  "bull": "Tue: reclaim/hold ES 7600 → 7623 LVN → 7648 (VIX <19.78 = strength) → 7670/7690; SPY 750 holds → 755.62 → 759.50 → 763. Two regimes: (1) Strength — reclaim/hold ES 7648 → 7725 gap → 7770/7800–03; SPY reclaim 758.70→760→762.27→771/775–776; QQQ 692→700→709→716–717. (2) Flush-then-rip — Mon/early-Tue lower low first (ES 7575→7540; SPY 752→750/749.83; QQQ 690→688/683) THEN bounce ES 7616→7677→7703/7725/7751–55; SPY 760→765→770→775. Trend only if ES holds 7703+ and SPY 770 on a closing basis.",
-  "bear": "Tue: hold below ES 7600 → 7575 → 7541 gap → 7515 (VIX >22.54 = weakness) → 7485/7467; SPY lose 750 → 745 → 740.48/740 → 730 put wall / 200DMA ~726–730. ES reject under 7648/7665–7677 and lose 7575 → 7560/7558 → 7520–30 → 7503 → 7470/7440. SPY lose 754.07/749.83 → 745 → 729.2 → 715.95/716. QQQ lose lows → 678. Fade relief into SPY 771 unless 775–776 held."
- },
- "friday_recap": {
-  "SPY": {
-   "o": 761.38,
-   "h": 761.46,
-   "l": 750.36,
-   "c": 755.72,
-   "chg": -1.77
-  },
-  "QQQ": {
-   "o": 697.21,
-   "h": 698.63,
-   "l": 683.45,
-   "c": 690.49,
-   "chg": -3.47
-  },
-  "SPX": {
-   "o": 7631.07,
-   "h": 7637.48,
-   "l": 7527.56,
-   "c": 7580.07,
-   "chg": -1.82
-  },
-  "ES": {
-   "o": 7709.25,
-   "h": 7713.0,
-   "l": 7558.25,
-   "c": 7614.5,
-   "chg": -1.8
-  },
-  "NQ": {
-   "o": 29180.0,
-   "h": 29180.0,
-   "l": 28232.75,
-   "c": 28543.0,
-   "chg": -3.45
-  },
-  "VIX": {
-   "o": 18.43,
-   "h": 23.93,
-   "l": 18.03,
-   "c": 19.42,
-   "chg": 12.91
-  },
-  "drivers": "AI cash-burn scare after AMZN/INTC (+ prior GOOGL); flight to safety; SPY put wall 760 lost; net GEX ~-16.8B short gamma"
- },
- "asof": "2026-11-02T20:27:03-08:00",
- "session": "2026-11-03",
- "title": "Yuckenfutz Tradez — Daily Plan — Tue Nov 3, 2026",
- "levels": [
-  {
-   "price": 755.62,
-   "note": "SPY new 2B dark pool (Mon)"
-  },
-  {
-   "price": 740.48,
-   "note": "SPY next dark pool below 750"
-  },
-  {
-   "price": 759.5,
-   "note": "SPY 100DMA (resistance)"
-  },
-  {
-   "price": 750,
-   "note": "SPY put wall >−1B / bounce zone"
-  },
-  {
-   "price": 7600,
-   "note": "ES Tue pivot"
-  },
-  {
-   "price": 749.83,
-   "note": "SPY key daily support (Sep low that launched run to 781.62) — hold = retest"
-  },
-  {
-   "price": 729.2,
-   "note": "SPY next support on daily close below 749.83"
-  },
-  {
-   "price": 715.95,
-   "note": "SPY major daily support"
-  },
-  {
-   "price": 779.29,
-   "note": "SPY daily resistance under 781.62 Oct 6 high"
-  },
-  {
-   "price": 746.69,
-   "note": "SPY next downside cluster after 750 whale target"
-  },
-  {
-   "price": 7675,
-   "note": "ES FDT / old shelf reclaim — sellers must fail to sustain under"
-  },
-  {
-   "price": 7712,
-   "note": "SPX flip / long-trigger stretch (opens 7742–7773)"
-  },
-  {
-   "price": 7500,
-   "note": "SPX put wall"
-  },
-  {
-   "price": 7450,
-   "note": "SPX stop zone under put wall"
-  },
-  {
-   "price": 7400,
-   "note": "SPX deeper stop zone"
-  },
-  {
-   "price": 680,
-   "note": "QQQ put wall"
-  },
-  {
-   "price": 713,
-   "note": "QQQ resistance / put-block reclaim"
-  },
-  {
-   "price": 729,
-   "note": "QQQ far flip low"
-  },
-  {
-   "price": 732,
-   "note": "QQQ far flip high"
-  }
- ]
+  "date": "2026-11-03",
+  "asof_pt": "2026-11-02 20:27 PT",
+  "bias": {
+    "direction": "SHORT",
+    "reason": "Mon reversal confirmed into the close: ES tagged 7693.75 inside Fri's gap, rejected ~7682 call wall ~10:30 ET, broke 7600 and closed near lows (~7579.50). SPX 7,541.52 (−0.51%), Nasdaq −1.12%. Evening tape still soft (ES ~7568). Below 7600 favors 7575→7541→7515; buyers need 7600 then 7623 LVN / 7634-36. SPY 750 line (AH ~752); fade 755.62 / 759.50. Midterms Tue = chop risk; election straddle ±1.51% < Fri range."
+  },
+  "key_levels": [
+    {
+      "price": 7600,
+      "note": "ES Tue pivot — above → 7623/7648; below → 7575/7541/7515"
+    },
+    {
+      "price": 7623,
+      "note": "ES LVN between Mon/Fri distributions — buyers must reclaim"
+    },
+    {
+      "price": 7635,
+      "note": "ES reclaim band 7634–36 — must clear to rip (newsletter)"
+    },
+    {
+      "price": 7541,
+      "note": "ES unfilled true gap / DT2"
+    },
+    {
+      "price": 7515,
+      "note": "ES final intraday downside (FDT)"
+    },
+    {
+      "price": 7593,
+      "note": "ES zero gamma (GEX)"
+    },
+    {
+      "price": 7682,
+      "note": "ES call wall — Mon 10:30 ET rejection"
+    },
+    {
+      "price": 7693.75,
+      "note": "ES Mon high / 2-day balance high"
+    },
+    {
+      "price": 7485,
+      "note": "ES downside target below 7515"
+    },
+    {
+      "price": 755.62,
+      "note": "SPY new 2B dark pool — likely temp ceiling"
+    },
+    {
+      "price": 759.5,
+      "note": "SPY 100DMA relief-bounce target (flipped to resistance)"
+    },
+    {
+      "price": 763.34,
+      "note": "SPY dark pool (10/23) — Mon rejection high"
+    },
+    {
+      "price": 740.48,
+      "note": "SPY next dark pool below"
+    },
+    {
+      "price": 740,
+      "note": "SPY put wall >−1B"
+    },
+    {
+      "price": 730,
+      "note": "SPY put wall >−1B / ~200DMA target"
+    },
+    {
+      "price": 726,
+      "note": "SPY 200DMA (~726.31)"
+    },
+    {
+      "price": 759.23,
+      "note": "SPY Tue implied high (759.23–761.01)"
+    },
+    {
+      "price": 744.97,
+      "note": "SPY Tue implied low (744.97–743.19)"
+    },
+    {
+      "price": 669.25,
+      "note": "QQQ quarterly implied low (Tue daily low 669.49–666.59)"
+    },
+    {
+      "price": 7677,
+      "note": "ES old range shelf LOST — must recover for sustained green"
+    },
+    {
+      "price": 7665,
+      "note": "ES bounce target / fade zone"
+    },
+    {
+      "price": 7649,
+      "note": "ES 7645–49 reclaim band"
+    },
+    {
+      "price": 7626,
+      "note": "ES next on Mode-1 rip"
+    },
+    {
+      "price": 7616,
+      "note": "ES 7616 support (↔ SPX 7582 / SPY 755.9) — Fri basis ES−SPX +34.5"
+    },
+    {
+      "price": 7585,
+      "note": "ES 7585 support (↔ SPX 7550.5 / SPY 752.8) — grind / Fri-tagged"
+    },
+    {
+      "price": 7575,
+      "note": "ES Mode-1 reclaim trigger (late Fri +45); monthly line"
+    },
+    {
+      "price": 7560,
+      "note": "ES neg GEX node"
+    },
+    {
+      "price": 7558,
+      "note": "ES Fri session low"
+    },
+    {
+      "price": 7703,
+      "note": "ES bear-case trigger that fired (now resistance)"
+    },
+    {
+      "price": 7803,
+      "note": "ES prior range top (Wed high) — far"
+    },
+    {
+      "price": 765,
+      "note": "SPY magnet / 1D max overhead"
+    },
+    {
+      "price": 762.27,
+      "note": "SPY dark pool LOST Fri — first real resistance"
+    },
+    {
+      "price": 760,
+      "note": "SPY put wall LOST Fri (−2.8B)"
+    },
+    {
+      "price": 757.43,
+      "note": "SPY double dark pool bounce/reclaim"
+    },
+    {
+      "price": 755.72,
+      "note": "SPY Fri close / pivot"
+    },
+    {
+      "price": 755,
+      "note": "SPY put node / Neg GEX"
+    },
+    {
+      "price": 754.07,
+      "note": "SPY double dark pool; fail → air pocket"
+    },
+    {
+      "price": 750,
+      "note": "SPY floor / heavy Neg GEX"
+    },
+    {
+      "price": 746.77,
+      "note": "SPY air-pocket target if 754 fails"
+    },
+    {
+      "price": 700,
+      "note": "QQQ first reclaim"
+    },
+    {
+      "price": 695,
+      "note": "QQQ near resistance"
+    },
+    {
+      "price": 685,
+      "note": "QQQ support / next down"
+    },
+    {
+      "price": 690.49,
+      "note": "QQQ Fri close"
+    },
+    {
+      "price": 7755,
+      "note": "ES gap-fill / expansion magnet (bull stretch)"
+    },
+    {
+      "price": 7731,
+      "note": "ES resistance on Fri-selloff retrace"
+    },
+    {
+      "price": 775,
+      "note": "SPY FOMC-week high area (bull expansion)"
+    },
+    {
+      "price": 770,
+      "note": "SPY call wall / gamma flip (bull magnet)"
+    },
+    {
+      "price": 715,
+      "note": "QQQ expansion toward 20-wk"
+    },
+    {
+      "price": 710,
+      "note": "QQQ first expansion shelf"
+    },
+    {
+      "price": 29740,
+      "note": "NQ ~720-wall eq / expansion"
+    },
+    {
+      "price": 30160,
+      "note": "NQ toward Wed AH high (bull stretch)"
+    },
+    {
+      "price": 7540,
+      "note": "ES Mon flush undercut (below Fri low 7558) — bull path lower low"
+    },
+    {
+      "price": 752,
+      "note": "SPY Mon flush toward 750 (bull path lower low)"
+    },
+    {
+      "price": 688,
+      "note": "QQQ Mon flush under Fri close (bull path lower low)"
+    },
+    {
+      "price": 28100,
+      "note": "NQ Mon flush below Fri low 28233 (bull path lower low)"
+    },
+    {
+      "price": 755.9,
+      "note": "SPY 755.9 support ≈ ES 7616 (SPY/SPX 0.09970 · Fri SPY 755.72 / SPX 7580)"
+    },
+    {
+      "price": 752.8,
+      "note": "SPY 752.8 support ≈ ES 7585 (same basis)"
+    },
+    {
+      "price": 7582,
+      "note": "SPX 7582 support ≈ ES 7616 (ES−SPX basis +34.5 from Fri 7614.50 vs 7580)"
+    },
+    {
+      "price": 7550.5,
+      "note": "SPX 7550.5 support ≈ ES 7585 (same basis)"
+    },
+    {
+      "price": 749.83,
+      "note": "SPY key daily support (Sep low that launched run to 781.62) — hold = retest"
+    },
+    {
+      "price": 729.2,
+      "note": "SPY next support on daily close below 749.83"
+    },
+    {
+      "price": 715.95,
+      "note": "SPY major daily support"
+    },
+    {
+      "price": 779.29,
+      "note": "SPY daily resistance under 781.62 Oct 6 high"
+    },
+    {
+      "price": 7648,
+      "note": "ES week open filter — hold above = strength path; reject/fail = weakness toward 7575"
+    },
+    {
+      "price": 7725,
+      "note": "ES true gap / primary upside magnet after 7648 reclaim"
+    },
+    {
+      "price": 7770,
+      "note": "ES resistance / HTF VPOC shelf (between 7751–55 and 7800–03)"
+    },
+    {
+      "price": 7800,
+      "note": "ES weekly extreme high area (cluster with 7803)"
+    },
+    {
+      "price": 7503,
+      "note": "ES ~5% correction marker (under 7540 flush)"
+    },
+    {
+      "price": 7470,
+      "note": "ES NVPOC / next support if 7575 accepted lower"
+    },
+    {
+      "price": 7440,
+      "note": "ES weekly extreme low / HVN — deep bear rail"
+    },
+    {
+      "price": 771,
+      "note": "SPY preferred short zone on relief rally (rejection); under weekly 20 SMA ~757 still weak"
+    },
+    {
+      "price": 775.5,
+      "note": "SPY 775–776 sustained reclaim weakens bearish swing setup"
+    },
+    {
+      "price": 758.17,
+      "note": "SPY chart resistance / reclaim shelf (weekly map)"
+    },
+    {
+      "price": 763.07,
+      "note": "SPY overhead on bounce map"
+    },
+    {
+      "price": 767.07,
+      "note": "SPY bounce magnet toward weekly averages"
+    },
+    {
+      "price": 750.24,
+      "note": "SPY near 750 put/demand zone (chart)"
+    },
+    {
+      "price": 747.73,
+      "note": "SPY 747–745 long watch zone if defended"
+    },
+    {
+      "price": 745,
+      "note": "SPY long-setup floor / lose lows target (with 747–745)"
+    },
+    {
+      "price": 758.7,
+      "note": "SPY Mon reclaim for bulls (Fri plan)"
+    },
+    {
+      "price": 749.4,
+      "note": "SPY next large support area (Fri session)"
+    },
+    {
+      "price": 753.07,
+      "note": "SPY phantom / gamma step under 755"
+    },
+    {
+      "price": 746.69,
+      "note": "SPY next downside cluster after 750 tap"
+    },
+    {
+      "price": 716,
+      "note": "SPY/QQQ deep support cluster (lose 749.83 → 729 then ~716); QQQ 20-wk ~716–717 reclaim = stronger bottom evidence"
+    },
+    {
+      "price": 692,
+      "note": "QQQ Mon reclaim for bulls"
+    },
+    {
+      "price": 683.72,
+      "note": "QQQ support near Fri low 683.45"
+    },
+    {
+      "price": 678,
+      "note": "QQQ next if Fri lows lost"
+    },
+    {
+      "price": 699.07,
+      "note": "QQQ near resistance on bounce map"
+    },
+    {
+      "price": 709.04,
+      "note": "QQQ bounce shelf / alert level"
+    },
+    {
+      "price": 7663,
+      "note": "ES reclaim step after 7649 (toward 7677)"
+    },
+    {
+      "price": 7628,
+      "note": "ES Mon pivot — hold above → 7648/7670/7690; hold below → 7596/7575/7541"
+    },
+    {
+      "price": 7596,
+      "note": "ES first downside target below 7628 (buyers defend on lower open)"
+    },
+    {
+      "price": 7690,
+      "note": "ES final upside target for Mon"
+    },
+    {
+      "price": 7541,
+      "note": "ES final downside target / unfilled true gap"
+    },
+    {
+      "price": 7670,
+      "note": "ES upside T2 (daily one-time-down ends)"
+    },
+    {
+      "price": 7577,
+      "note": "ES failed-breakdown long trigger (Sep 16 low, 7577–75) — recovery of 7577 first of interest"
+    },
+    {
+      "price": 7698,
+      "note": "ES rip target 7698–7703 after 7665 react / 7677"
+    },
+    {
+      "price": 7620,
+      "note": "ES/SPX fut bull hold — above → 7640 / 7650"
+    },
+    {
+      "price": 7590,
+      "note": "ES/SPX fut bear line — below → 7570 / 7550"
+    },
+    {
+      "price": 764.51,
+      "note": "SPY positive gamma level (12.93B)"
+    },
+    {
+      "price": 762.76,
+      "note": "SPY positive gamma level (9.64B)"
+    },
+    {
+      "price": 760.74,
+      "note": "SPY positive gamma level (6.38B)"
+    },
+    {
+      "price": 757,
+      "note": "SPY puts below → 755 / 753; calls above 760 → 762 / 764"
+    },
+    {
+      "price": 763.37,
+      "note": "SPY Mon daily implied move upper (763.37–765.28)"
+    },
+    {
+      "price": 748.07,
+      "note": "SPY Mon daily implied move lower (746.16–748.07)"
+    },
+    {
+      "price": 772.32,
+      "note": "SPY weekly implied move upper (772.32–776.47)"
+    },
+    {
+      "price": 739.12,
+      "note": "SPY weekly implied move lower (734.97–739.12)"
+    },
+    {
+      "price": 789.22,
+      "note": "SPY Nov implied move upper (789.22–797.60)"
+    },
+    {
+      "price": 722.22,
+      "note": "SPY Nov implied move lower (713.84–722.22)"
+    }
+  ],
+  "actionable": [
+    "Mon recap (11/2): gap-up faded — S&P opened +0.45% (7,613.87), ES tagged 7693.75 inside Fri's gap and rejected the 7682 call wall ~10:30 ET, then broke 7620s/7600 into the close (~7579.50, range 7573.75–7693.75, −46.50). SPX closed 7,541.52 (−0.51%), Nasdaq 25,152.43 (−1.12%); NDX −10% from Oct peak, chip index −12% over 3 days. SPY ~753.5 after hours; closed below the 100DMA a 2nd day, rejected 763.34 dark pool on the high and 754.05/754.07 on the last candle. New 2B dark pool at 755.62.",
+    "Evening wire (Mon 11/2): Brent settled $104.77 (−$8.66, −7.6%), WTI ~$96.50 on Iran peace-talk hopes; Trump: 'no rush' to restart Iran war, 'no' to strikes after elections; gold +2.5% intraday to $3,957, yields lower. ISM Mfg 55.5 vs 54.5 est. After the close: IRGC claims MQ-9 shootdown / drone seizures near Hormuz; PBOC raises FX deposit reserve ratio 4%→6% — offshore yuan biggest drop since June (6.6642); Asia mixed, KOSPI lagging on US tech weakness; midterms Tue. News bias: risk-off for index/tech — oil collapse and Iran de-escalation failed to lift stocks as the semis/AI unwind and election event risk dominated; Hormuz drone headlines are the overnight gap risk.",
+    "Tue 11/3 map: ES 7600 pivot — break/hold above → 7623 / 7648 (then 7670/7690); hold below → 7575 / 7541 (unfilled gap) / 7515. VIX tells: <19.78 with hold above 7648 = strength; >22.54 with hold below 7515 = weakness. ES GEX: zero gamma 7593, call wall 7682. SPY: 750 expected short-term bottom zone (heavy put walls 750/740/730) → relief 755.62 → 759.50 (100DMA); next dark pool below 740.48; 767–771 puts on a pop, 745 calls if it holds, 740–738 next, 200DMA ~726–730. Tue implied — SPY 759.23–761.01 / 744.97–743.19; QQQ 692.69–695.59 / 669.49–666.59 (quarterly low 669.25). QQQ closed on its 200DMA; Fri 690P sweeps ~$4M.",
+    "Pre-market (Mon 11/2 ~5:58 AM PT): futures green — NQ +1%, S&P fut ~+0.5%; SPY ~758.8 pre-market inside a positive-gamma cluster (760.74 / 762.76 / 764.51 overhead). ES rally from late-Fri 7577 failed breakdown (+80); Sun night reclaimed 7628 and pressed 7648 (week-open filter). Plan: 7628/7616 supports; 7665 react, then 7677 → 7698–7703. Fut map: hold 7620 → 7640/7650; lose 7590 → 7570/7550. SPY: calls above 760 → 762/764; puts below 757 → 755/753. Implied moves — Mon 746.16–748.07 / 763.37–765.28; week 734.97–739.12 / 772.32–776.47; Nov 713.84–722.22 / 789.22–797.60. Bias stays fade-the-pop below 7648/7665 until accepted; above 776 or a test under 750 changes the read.",
+    "Pre-market wire (Mon 11/2): Iran supreme leader grants govt authority for talks (IRNA); Brent falls to intraday low near $106; spot gold +~1% to $3,911; another tanker hit a mine in eastern Hormuz (Iran state media); FT says Netanyahu presses Trump for renewed Iran strikes; Marvell to buy Lumentum in $115B AI-connectivity deal; Oracle files $10B common stock offer; European gas −5.3%; elections-reaction focus into Tue midterms. News bias: risk-on tilt pre-market (Iran talks + oil off highs + mega AI deal), with Hormuz mine / strike headlines as the gap-down risk.",
+    "Fri recap: Mode-1 red — 7703 failure lost ES 7677–7803; SPY flushed 762.27 and 760 into ~−17B short gamma. Late 7575 reclaim ripped +45 to ~7614.5. VIX 19.42 (hi 23.93), backwardated.",
+    "PRIMARY Mon: Week open filter ES 7648 — Fri settle 7614.50 already below. Weakness path: defend/fail 7575 → magnets 7540/7503 then 7470/7440. Strength path only if 7648 reclaimed and held → 7725 → 7770/7800. Fade premature green into 7665/760/771 pre-acceptance.",
+    "Mon ES pivot 7628 (light sweep 14:58 PT): hold above → 7648 / 7670 / 7690 (final upside); hold below → 7596 / 7575 / 7541 (final downside, unfilled gap). Higher open: watch sellers defend 7628/7648. Lower open: watch buyers defend 7596/7575. 3-month HVN 7755 is the upside magnet. VIX tells: above 20.70 = weakness, below 18.14 = strength.",
+    "SPY structure: 749.83/750 is the line (hold = retest; daily close below → 729.2 then 715.95/716). Bounce shorts preferred near 771 on rejection; 747–745 is the defended long watch. Reclaim 758.70 → 760 → 762.27 for bounce legs.",
+    "QQQ/NQ: reclaim 692 / ~28915 for bulls; lose Fri lows → 678 / ~28100. Stronger bottom evidence needs QQQ weekly close above 20-wk ~716–717 with SPY back above ~757 weekly 20 SMA.",
+    "Catalysts: Mon ISM Mfg 7 AM PT + AAPL/PLTR earnings; Tue midterms + JOLTS; Wed ADP/ISM Svc; Thu Claims/ULC; Fri NFP 5:30 AM PT; CPI week 11/10; NVDA ~11/17. Geo: Hormuz/Iran/oil gap risk.",
+    "Full-plan sweep (Sun 14:37 PT): folded week plans from ES auction map (7648/7725/7575/7440), SPY/QQQ weekly map (747–745 long / 771 short / 20-wk tests), GEX 750-line (729/716), Fri Mon levels (758.70/692 → 745/678), ES Fri range book (7649/7663/7677/7703), GEX walls (765/770.4). KT parked — excluded. sources_count reflects contributing plans.",
+    "Evening confirm (Mon 11/2 ~8:25 PM PT): ES auction map Tue plan — ES level 7600; above→7623/7648; below→7575/7541/7515; VIX 22.54/19.78. ES profile: 7595 reclaim was long (+15); 7634-36 must reclaim to rip. SPY chart desk: lows NOT in; SPY rejected ~763 / broke 758.17; next 750.24/747.73. QQQ near 680 MA200. Flow: QQQ $4M Fri-expiry puts + INTC puts; VVIX 124. Wire: SCOTUS rejected CA ballot bid; blue-tsunami polls; AAPL iPhone beat / JPM PT cut to $355; TWD weakest since Apr'25; RBA inflation elevated into 2027."
+  ],
+  "sources_count": 14,
+  "overnight_bias": "BEARISH / NEG-GAMMA — ES 7600 PIVOT + SPY 750 LINE · MIDTERMS",
+  "path": {
+    "bull": "Tue: reclaim/hold ES 7600 → 7623 LVN → 7648 (VIX <19.78 = strength) → 7670/7690; SPY 750 holds → 755.62 → 759.50 → 763. Two regimes: (1) Strength — reclaim/hold ES 7648 → 7725 gap → 7770/7800–03; SPY reclaim 758.70→760→762.27→771/775–776; QQQ 692→700→709→716–717. (2) Flush-then-rip — Mon/early-Tue lower low first (ES 7575→7540; SPY 752→750/749.83; QQQ 690→688/683) THEN bounce ES 7616→7677→7703/7725/7751–55; SPY 760→765→770→775. Trend only if ES holds 7703+ and SPY 770 on a closing basis.",
+    "bear": "Tue: hold below ES 7600 → 7575 → 7541 gap → 7515 (VIX >22.54 = weakness) → 7485/7467; SPY lose 750 → 745 → 740.48/740 → 730 put wall / 200DMA ~726–730. ES reject under 7648/7665–7677 and lose 7575 → 7560/7558 → 7520–30 → 7503 → 7470/7440. SPY lose 754.07/749.83 → 745 → 729.2 → 715.95/716. QQQ lose lows → 678. Fade relief into SPY 771 unless 775–776 held."
+  },
+  "friday_recap": {
+    "SPY": {
+      "o": 761.38,
+      "h": 761.46,
+      "l": 750.36,
+      "c": 755.72,
+      "chg": -1.77
+    },
+    "QQQ": {
+      "o": 697.21,
+      "h": 698.63,
+      "l": 683.45,
+      "c": 690.49,
+      "chg": -3.47
+    },
+    "SPX": {
+      "o": 7631.07,
+      "h": 7637.48,
+      "l": 7527.56,
+      "c": 7580.07,
+      "chg": -1.82
+    },
+    "ES": {
+      "o": 7709.25,
+      "h": 7713.0,
+      "l": 7558.25,
+      "c": 7614.5,
+      "chg": -1.8
+    },
+    "NQ": {
+      "o": 29180.0,
+      "h": 29180.0,
+      "l": 28232.75,
+      "c": 28543.0,
+      "chg": -3.45
+    },
+    "VIX": {
+      "o": 18.43,
+      "h": 23.93,
+      "l": 18.03,
+      "c": 19.42,
+      "chg": 12.91
+    },
+    "drivers": "AI cash-burn scare after AMZN/INTC (+ prior GOOGL); flight to safety; SPY put wall 760 lost; net GEX ~-16.8B short gamma"
+  },
+  "asof": "2026-11-02T20:27:03-08:00",
+  "session": "2026-11-03",
+  "title": "Yuckenfutz Tradez — Daily Plan — Tue Nov 3, 2026",
+  "levels": [
+    {
+      "price": 755.62,
+      "note": "SPY new 2B dark pool (Mon)"
+    },
+    {
+      "price": 740.48,
+      "note": "SPY next dark pool below 750"
+    },
+    {
+      "price": 759.5,
+      "note": "SPY 100DMA (resistance)"
+    },
+    {
+      "price": 750,
+      "note": "SPY put wall >−1B / bounce zone"
+    },
+    {
+      "price": 7600,
+      "note": "ES Tue pivot"
+    },
+    {
+      "price": 749.83,
+      "note": "SPY key daily support (Sep low that launched run to 781.62) — hold = retest"
+    },
+    {
+      "price": 729.2,
+      "note": "SPY next support on daily close below 749.83"
+    },
+    {
+      "price": 715.95,
+      "note": "SPY major daily support"
+    },
+    {
+      "price": 779.29,
+      "note": "SPY daily resistance under 781.62 Oct 6 high"
+    },
+    {
+      "price": 746.69,
+      "note": "SPY next downside cluster after 750 whale target"
+    },
+    {
+      "price": 7675,
+      "note": "ES FDT / old shelf reclaim — sellers must fail to sustain under"
+    },
+    {
+      "price": 7712,
+      "note": "SPX flip / long-trigger stretch (opens 7742–7773)"
+    },
+    {
+      "price": 7500,
+      "note": "SPX put wall"
+    },
+    {
+      "price": 7450,
+      "note": "SPX stop zone under put wall"
+    },
+    {
+      "price": 7400,
+      "note": "SPX deeper stop zone"
+    },
+    {
+      "price": 680,
+      "note": "QQQ put wall"
+    },
+    {
+      "price": 713,
+      "note": "QQQ resistance / put-block reclaim"
+    },
+    {
+      "price": 729,
+      "note": "QQQ far flip low"
+    },
+    {
+      "price": 732,
+      "note": "QQQ far flip high"
+    }
+  ]
 }
