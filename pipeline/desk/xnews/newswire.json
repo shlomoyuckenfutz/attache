@@ -1,6 +1,6 @@
 {
- "generated_at_pt": "2026-11-02 20:31 PT",
- "generated_utc": "2026-11-03T04:31:45+00:00",
+ "generated_at_pt": "2026-11-02 20:52 PT",
+ "generated_utc": "2026-11-03T04:52:20+00:00",
  "breaking_minutes": 30,
  "items": [
   {
@@ -10,7 +10,7 @@
    "headline": "Thailand Raises Tax Rate On Fully Imported Electric Vehicles By 25 Percentage…",
    "tag": "POLICY",
    "src": "SRC W2",
-   "breaking": true
+   "breaking": false
   },
   {
    "ts_utc": "2026-11-03T04:16:43.000Z",
@@ -19,7 +19,7 @@
    "headline": "Saudi Arabia October Composite PMI Declines To 54.0, Signalling Slower Business…",
    "tag": "MACRO",
    "src": "SRC W2",
-   "breaking": true
+   "breaking": false
   },
   {
    "ts_utc": "2026-11-03T04:10:22.000Z",
@@ -28,7 +28,7 @@
    "headline": "US Court Blocks Trump Administration's Demand For States To Withhold Votes Of…",
    "tag": "POLICY",
    "src": "SRC W2",
-   "breaking": true
+   "breaking": false
   },
   {
    "ts_utc": "2026-11-03T03:45:33.000Z",
