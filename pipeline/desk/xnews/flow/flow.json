@@ -1,5 +1,5 @@
 {
-  "generated_at_pt": "2026-11-02 05:58 PT",
+  "generated_at_pt": "2026-11-02 18:10 PT",
   "window_days": 3,
   "groups": {
     "set1": {
@@ -2088,6 +2088,162 @@
           "ticker": "SPY",
           "level": "713.84\u2013722.22",
           "kind": "Nov implied move lower"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "QuantData",
+      "post_id": "2117359454161100881",
+      "url": "https://x.com/QuantData/status/2117359454161100881",
+      "posted_at_utc": "2026-11-02T20:53:27.000Z",
+      "posted_at_pt": "2026-11-02 12:53 PT",
+      "caption": "\ud83d\udea8 What an insane drop on $ES_F today after rejecting off that Put Wall this morning at 10:30am.\n\nHaving GEX overlayed on the Future's charts is INSANE!\n\nFollow the data.",
+      "source_note": "Image (ESZ6 5-min footprint w/ GEX all-exp): CW 7682.00 (rejection ~10:30 ET), zero gamma 7593.00, MVC 7572.00; last 7579.50, range 7573.75\u20137693.75, change \u221246.50.",
+      "images": [],
+      "rows": [
+        {
+          "ticker": "ES",
+          "level": "7682",
+          "kind": "Call Wall [image]"
+        },
+        {
+          "ticker": "ES",
+          "level": "7593",
+          "kind": "Zero Gamma [image]"
+        },
+        {
+          "ticker": "ES",
+          "level": "7572",
+          "kind": "MVC [image]"
+        },
+        {
+          "ticker": "ES",
+          "level": "7579.50",
+          "kind": "Last (4 PM ET) [image]"
+        },
+        {
+          "ticker": "ES",
+          "level": "7573.75\u20137693.75",
+          "kind": "Session range [image]"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "CheddarFlow",
+      "post_id": "2117342992428081520",
+      "url": "https://x.com/CheddarFlow/status/2117342992428081520",
+      "posted_at_utc": "2026-11-02T19:48:02.000Z",
+      "posted_at_pt": "2026-11-02 11:48 PT",
+      "caption": "Someone just bought $4M of $QQQ puts that expire THIS Friday\n\n3 sweeps in under 2 minutes, all above the ask",
+      "source_note": "Image: QQQ 11/06/2026 690P BUY sweeps above ask, spot ~690.55 \u2014 2,000 @ $9.45 ($1.9M), 682 @ $10.04 ($684.7K), 1,351 @ $10.08 ($1.4M); vol 8,091\u219210,194 vs OI 13,238.",
+      "images": [],
+      "rows": [
+        {
+          "ticker": "QQQ",
+          "level": "690P 11/06",
+          "kind": "Bearish put sweeps ~$4M above ask [image]"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "FlowbyBobby",
+      "post_id": "2117352650736128224",
+      "url": "https://x.com/FlowbyBobby/status/2117352650736128224",
+      "posted_at_utc": "2026-11-02T20:26:25.000Z",
+      "posted_at_pt": "2026-11-02 12:26 PT",
+      "caption": "Power hour maps so you are not trading blind $SPX",
+      "source_note": "Image (per-strike GEX, ~12:25 PT): SPXW 7572.05 \u2014 largest +node 7570 ($68.8M), negatives 7575 (\u2212$41.4M), 7590 (\u2212$35.1M); flux 7612.21. SPY 754.85 \u2014 largest +759 ($108.3M); negatives 756 (\u2212$145.6M), 753 (\u2212$138.5M), 755 (\u2212$120.5M); flux 758.93. QQQ 685.01 \u2014 +688 ($41.0M); negatives 685 (\u2212$47.7M), 689/690 (~\u2212$35M); flux 691.91.",
+      "images": [],
+      "rows": [
+        {
+          "ticker": "SPX",
+          "level": "7570",
+          "kind": "Largest +GEX node [image]"
+        },
+        {
+          "ticker": "SPX",
+          "level": "7612.21",
+          "kind": "Flux level [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "759",
+          "kind": "Largest +GEX node [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "756",
+          "kind": "Neg GEX (\u2212145.6M) [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "753",
+          "kind": "Neg GEX (\u2212138.5M) [image]"
+        },
+        {
+          "ticker": "SPY",
+          "level": "758.93",
+          "kind": "Flux level [image]"
+        },
+        {
+          "ticker": "QQQ",
+          "level": "688",
+          "kind": "+GEX node [image]"
+        },
+        {
+          "ticker": "QQQ",
+          "level": "685",
+          "kind": "Neg GEX [image]"
+        },
+        {
+          "ticker": "QQQ",
+          "level": "691.91",
+          "kind": "Flux level [image]"
+        }
+      ]
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "TraderJonesy",
+      "post_id": "2117432380738650270",
+      "url": "https://x.com/TraderJonesy/status/2117432380738650270",
+      "posted_at_utc": "2026-11-03T01:43:14.000Z",
+      "posted_at_pt": "2026-11-02 17:43 PT",
+      "caption": "Here's what the options market is pricing for Tuesday, 11/3/26.\n\n$SPY\nDaily high: 759.23 to 761.01\nDaily low: 744.97 to 743.19\nWeekly high: 772.32 to 776.47\nWeekly low: 739.12 to 734.97\n\n$QQQ\nDaily high: 692.69 to 695.59\nDaily low: 669.49 to 666.59\nWeekly high: 714.70 to 720.75\nWeekly low: 666.28 to 660.23\nQuarterly low: 669.25",
+      "source_note": "Tue 11/3 implied moves: SPY ~\u00b1$7 (~1%), QQQ ~\u00b1$11.60 (~1.7%); Election Day.",
+      "images": [],
+      "rows": [
+        {
+          "ticker": "SPY",
+          "level": "759.23\u2013761.01",
+          "kind": "Tue daily implied high"
+        },
+        {
+          "ticker": "SPY",
+          "level": "744.97\u2013743.19",
+          "kind": "Tue daily implied low"
+        },
+        {
+          "ticker": "QQQ",
+          "level": "692.69\u2013695.59",
+          "kind": "Tue daily implied high"
+        },
+        {
+          "ticker": "QQQ",
+          "level": "669.49\u2013666.59",
+          "kind": "Tue daily implied low"
+        },
+        {
+          "ticker": "QQQ",
+          "level": "669.25",
+          "kind": "Quarterly implied low"
         }
       ]
     }

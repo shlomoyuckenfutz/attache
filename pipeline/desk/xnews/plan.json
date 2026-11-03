@@ -1,11 +1,83 @@
 {
-  "date": "2026-11-02",
-  "asof_pt": "2026-11-02 05:58 PT",
+  "date": "2026-11-03",
+  "asof_pt": "2026-11-02 18:10 PT",
   "bias": {
     "direction": "SHORT",
-    "reason": "Pre-market bounce: ES reclaimed 7628 Sun night and is rallying off the late-Fri 7577\u201375 failed breakdown (Sep 16 low) into the 7648 week-open filter; NQ futures +1%. Structure still below 7648/7665\u20137677 after Fri Mode-1 red, so fade green into 7665/760/771 unless 7648 then 7677 is accepted and held. Supports 7628/7616; SPY 749.83/750 is the line."
+    "reason": "Mon reversal: early ES strength into Fri's gap (high 7693.75) was sold and ES closed near the lows (~7579.50) under the 7600 pivot; SPX 7,541.52 (\u22120.51%), Nasdaq \u22121.12% with NDX in a 10% correction. Below 7600 favors 7575 \u2192 7541 \u2192 7515; buyers must reclaim 7600 then the 7623 LVN. SPY 750 is the line (put walls 750/740/730); fade bounces into 755.62 / 759.50 and 767\u2013771."
   },
   "key_levels": [
+    {
+      "price": 7600,
+      "note": "ES Tue pivot \u2014 above \u2192 7623/7648; below \u2192 7575/7541/7515"
+    },
+    {
+      "price": 7623,
+      "note": "ES LVN between Mon/Fri distributions \u2014 buyers must reclaim"
+    },
+    {
+      "price": 7541,
+      "note": "ES unfilled true gap / DT2"
+    },
+    {
+      "price": 7515,
+      "note": "ES final intraday downside (FDT)"
+    },
+    {
+      "price": 7593,
+      "note": "ES zero gamma (GEX)"
+    },
+    {
+      "price": 7682,
+      "note": "ES call wall \u2014 Mon 10:30 ET rejection"
+    },
+    {
+      "price": 7693.75,
+      "note": "ES Mon high / 2-day balance high"
+    },
+    {
+      "price": 7485,
+      "note": "ES downside target below 7515"
+    },
+    {
+      "price": 755.62,
+      "note": "SPY new 2B dark pool \u2014 likely temp ceiling"
+    },
+    {
+      "price": 759.5,
+      "note": "SPY 100DMA relief-bounce target (flipped to resistance)"
+    },
+    {
+      "price": 763.34,
+      "note": "SPY dark pool (10/23) \u2014 Mon rejection high"
+    },
+    {
+      "price": 740.48,
+      "note": "SPY next dark pool below"
+    },
+    {
+      "price": 740,
+      "note": "SPY put wall >\u22121B"
+    },
+    {
+      "price": 730,
+      "note": "SPY put wall >\u22121B / ~200DMA target"
+    },
+    {
+      "price": 726,
+      "note": "SPY 200DMA (~726.31)"
+    },
+    {
+      "price": 759.23,
+      "note": "SPY Tue implied high (759.23\u2013761.01)"
+    },
+    {
+      "price": 744.97,
+      "note": "SPY Tue implied low (744.97\u2013743.19)"
+    },
+    {
+      "price": 669.25,
+      "note": "QQQ quarterly implied low (Tue daily low 669.49\u2013666.59)"
+    },
     {
       "price": 7677,
       "note": "ES old range shelf LOST \u2014 must recover for sustained green"
@@ -364,6 +436,9 @@
     }
   ],
   "actionable": [
+    "Mon recap (11/2): gap-up faded \u2014 S&P opened +0.45% (7,613.87), ES tagged 7693.75 inside Fri's gap and rejected the 7682 call wall ~10:30 ET, then broke 7620s/7600 into the close (~7579.50, range 7573.75\u20137693.75, \u221246.50). SPX closed 7,541.52 (\u22120.51%), Nasdaq 25,152.43 (\u22121.12%); NDX \u221210% from Oct peak, chip index \u221212% over 3 days. SPY ~753.5 after hours; closed below the 100DMA a 2nd day, rejected 763.34 dark pool on the high and 754.05/754.07 on the last candle. New 2B dark pool at 755.62.",
+    "Evening wire (Mon 11/2): Brent settled $104.77 (\u2212$8.66, \u22127.6%), WTI ~$96.50 on Iran peace-talk hopes; Trump: 'no rush' to restart Iran war, 'no' to strikes after elections; gold +2.5% intraday to $3,957, yields lower. ISM Mfg 55.5 vs 54.5 est. After the close: IRGC claims MQ-9 shootdown / drone seizures near Hormuz; PBOC raises FX deposit reserve ratio 4%\u21926% \u2014 offshore yuan biggest drop since June (6.6642); Asia mixed, KOSPI lagging on US tech weakness; midterms Tue. News bias: risk-off for index/tech \u2014 oil collapse and Iran de-escalation failed to lift stocks as the semis/AI unwind and election event risk dominated; Hormuz drone headlines are the overnight gap risk.",
+    "Tue 11/3 map: ES 7600 pivot \u2014 break/hold above \u2192 7623 / 7648 (then 7670/7690); hold below \u2192 7575 / 7541 (unfilled gap) / 7515. VIX tells: <19.78 with hold above 7648 = strength; >22.54 with hold below 7515 = weakness. ES GEX: zero gamma 7593, call wall 7682. SPY: 750 expected short-term bottom zone (heavy put walls 750/740/730) \u2192 relief 755.62 \u2192 759.50 (100DMA); next dark pool below 740.48; 767\u2013771 puts on a pop, 745 calls if it holds, 740\u2013738 next, 200DMA ~726\u2013730. Tue implied \u2014 SPY 759.23\u2013761.01 / 744.97\u2013743.19; QQQ 692.69\u2013695.59 / 669.49\u2013666.59 (quarterly low 669.25). QQQ closed on its 200DMA; Fri 690P sweeps ~$4M.",
     "Pre-market (Mon 11/2 ~5:58 AM PT): futures green \u2014 NQ +1%, S&P fut ~+0.5%; SPY ~758.8 pre-market inside a positive-gamma cluster (760.74 / 762.76 / 764.51 overhead). ES rally from late-Fri 7577 failed breakdown (+80); Sun night reclaimed 7628 and pressed 7648 (week-open filter). Plan: 7628/7616 supports; 7665 react, then 7677 \u2192 7698\u20137703. Fut map: hold 7620 \u2192 7640/7650; lose 7590 \u2192 7570/7550. SPY: calls above 760 \u2192 762/764; puts below 757 \u2192 755/753. Implied moves \u2014 Mon 746.16\u2013748.07 / 763.37\u2013765.28; week 734.97\u2013739.12 / 772.32\u2013776.47; Nov 713.84\u2013722.22 / 789.22\u2013797.60. Bias stays fade-the-pop below 7648/7665 until accepted; above 776 or a test under 750 changes the read.",
     "Pre-market wire (Mon 11/2): Iran supreme leader grants govt authority for talks (IRNA); Brent falls to intraday low near $106; spot gold +~1% to $3,911; another tanker hit a mine in eastern Hormuz (Iran state media); FT says Netanyahu presses Trump for renewed Iran strikes; Marvell to buy Lumentum in $115B AI-connectivity deal; Oracle files $10B common stock offer; European gas \u22125.3%; elections-reaction focus into Tue midterms. News bias: risk-on tilt pre-market (Iran talks + oil off highs + mega AI deal), with Hormuz mine / strike headlines as the gap-down risk.",
     "Fri recap: Mode-1 red \u2014 7703 failure lost ES 7677\u20137803; SPY flushed 762.27 and 760 into ~\u221217B short gamma. Late 7575 reclaim ripped +45 to ~7614.5. VIX 19.42 (hi 23.93), backwardated.",
@@ -372,14 +447,13 @@
     "SPY structure: 749.83/750 is the line (hold = retest; daily close below \u2192 729.2 then 715.95/716). Bounce shorts preferred near 771 on rejection; 747\u2013745 is the defended long watch. Reclaim 758.70 \u2192 760 \u2192 762.27 for bounce legs.",
     "QQQ/NQ: reclaim 692 / ~28915 for bulls; lose Fri lows \u2192 678 / ~28100. Stronger bottom evidence needs QQQ weekly close above 20-wk ~716\u2013717 with SPY back above ~757 weekly 20 SMA.",
     "Catalysts: Mon ISM Mfg 7 AM PT + AAPL/PLTR earnings; Tue midterms + JOLTS; Wed ADP/ISM Svc; Thu Claims/ULC; Fri NFP 5:30 AM PT; CPI week 11/10; NVDA ~11/17. Geo: Hormuz/Iran/oil gap risk.",
-    "Evening wire (Sun 11/1): Two oil tankers struck mines on unauthorized Hormuz route (Iran state media); Trump says US very near Canada deal after Netanyahu call covering Iran; US\u2013Iran mediators bridging gaps; Taiwan\u2013China Pratas standoff; NK calls US\u2013ROK Iron Mace a nuclear rehearsal. Late (14:49 PT): Goldman lifts Dec-2026 Brent forecast to $105 from $90 (oil-up/inflation pressure); Zelenskiy says ready to meet Putin in Turkey, backs a G20 peace initiative. News bias: risk-off into Sunday open \u2014 oil upside adds pressure; peace-talk headlines are the offset.",
     "Full-plan sweep (Sun 14:37 PT): folded week plans from ES auction map (7648/7725/7575/7440), SPY/QQQ weekly map (747\u2013745 long / 771 short / 20-wk tests), GEX 750-line (729/716), Fri Mon levels (758.70/692 \u2192 745/678), ES Fri range book (7649/7663/7677/7703), GEX walls (765/770.4). KT parked \u2014 excluded. sources_count reflects contributing plans."
   ],
   "sources_count": 14,
-  "overnight_bias": "BEARISH / NEG-GAMMA \u2014 7648 FILTER + 750 LINE",
+  "overnight_bias": "BEARISH / NEG-GAMMA \u2014 ES 7600 PIVOT + SPY 750 LINE",
   "path": {
-    "bull": "Two regimes: (1) Strength \u2014 reclaim/hold ES 7648 \u2192 7725 gap \u2192 7770/7800\u201303; SPY reclaim 758.70\u2192760\u2192762.27\u2192771/775\u2013776; QQQ 692\u2192700\u2192709\u2192716\u2013717. (2) Flush-then-rip \u2014 Mon/early-Tue lower low first (ES 7575\u21927540; SPY 752\u2192750/749.83; QQQ 690\u2192688/683) THEN bounce ES 7616\u21927677\u21927703/7725/7751\u201355; SPY 760\u2192765\u2192770\u2192775. Trend only if ES holds 7703+ and SPY 770 on a closing basis.",
-    "bear": "ES reject under 7648/7665\u20137677 and lose 7575 \u2192 7560/7558 \u2192 7520\u201330 \u2192 7503 \u2192 7470/7440. SPY lose 754.07/749.83 \u2192 745 \u2192 729.2 \u2192 715.95/716. QQQ lose lows \u2192 678. Fade relief into SPY 771 unless 775\u2013776 held."
+    "bull": "Tue: reclaim/hold ES 7600 \u2192 7623 LVN \u2192 7648 (VIX <19.78 = strength) \u2192 7670/7690; SPY 750 holds \u2192 755.62 \u2192 759.50 \u2192 763. Two regimes: (1) Strength \u2014 reclaim/hold ES 7648 \u2192 7725 gap \u2192 7770/7800\u201303; SPY reclaim 758.70\u2192760\u2192762.27\u2192771/775\u2013776; QQQ 692\u2192700\u2192709\u2192716\u2013717. (2) Flush-then-rip \u2014 Mon/early-Tue lower low first (ES 7575\u21927540; SPY 752\u2192750/749.83; QQQ 690\u2192688/683) THEN bounce ES 7616\u21927677\u21927703/7725/7751\u201355; SPY 760\u2192765\u2192770\u2192775. Trend only if ES holds 7703+ and SPY 770 on a closing basis.",
+    "bear": "Tue: hold below ES 7600 \u2192 7575 \u2192 7541 gap \u2192 7515 (VIX >22.54 = weakness) \u2192 7485/7467; SPY lose 750 \u2192 745 \u2192 740.48/740 \u2192 730 put wall / 200DMA ~726\u2013730. ES reject under 7648/7665\u20137677 and lose 7575 \u2192 7560/7558 \u2192 7520\u201330 \u2192 7503 \u2192 7470/7440. SPY lose 754.07/749.83 \u2192 745 \u2192 729.2 \u2192 715.95/716. QQQ lose lows \u2192 678. Fade relief into SPY 771 unless 775\u2013776 held."
   },
   "friday_recap": {
     "SPY": {
@@ -426,10 +500,30 @@
     },
     "drivers": "AI cash-burn scare after AMZN/INTC (+ prior GOOGL); flight to safety; SPY put wall 760 lost; net GEX ~-16.8B short gamma"
   },
-  "asof": "2026-11-02T05:58:00-08:00",
-  "session": "2026-11-02",
-  "title": "Yuckenfutz Tradez \u2014 Daily Plan \u2014 Mon Nov 2, 2026",
+  "asof": "2026-11-02T18:10:00-08:00",
+  "session": "2026-11-03",
+  "title": "Yuckenfutz Tradez \u2014 Daily Plan \u2014 Tue Nov 3, 2026",
   "levels": [
+    {
+      "price": 755.62,
+      "note": "SPY new 2B dark pool (Mon)"
+    },
+    {
+      "price": 740.48,
+      "note": "SPY next dark pool below 750"
+    },
+    {
+      "price": 759.5,
+      "note": "SPY 100DMA (resistance)"
+    },
+    {
+      "price": 750,
+      "note": "SPY put wall >\u22121B / bounce zone"
+    },
+    {
+      "price": 7600,
+      "note": "ES Tue pivot"
+    },
     {
       "price": 749.83,
       "note": "SPY key daily support (Sep low that launched run to 781.62) \u2014 hold = retest"

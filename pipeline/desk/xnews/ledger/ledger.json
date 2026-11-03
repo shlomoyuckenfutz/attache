@@ -1,44 +1,51 @@
 {
- "date": "2026-10-30",
- "title": "Friday 10/30 SPY Post-Market Note (session close)",
- "base": "My take: Base case for next week: something broke \u2014 regime change under negative gamma. Expect bounces to be sold while VIX term structure stays in backwardation.",
- "alternative": "The alternative path (not my lean): midterm chop pins SPY back into 760\u2013765 and resets the gamma book; only believe it if 760 is reclaimed and held with VIX compressing.",
+ "date": "2026-11-02",
+ "title": "Monday 11/2 SPY close review",
+ "base": "Though that too I see failing, just at a much better put entry, but with the VIX doing what it's doing I cannot endorse that.",
+ "alternative": "The alternative case that I honestly struggle to even envision here is we get no downside continuation and move to retake the 100DMA and make a run for the 10DMA and over the next few sessions take that move to the 50DMA.",
  "trigger": "\u2014",
  "direction": "DOWN",
  "levels": [
   {
-   "spy": 765.0,
-   "es": 7718.54,
-   "kind": "GAMMA/GEX",
+   "spy": 800.0,
+   "es": 8071.68,
+   "kind": "WALL",
    "n": 1,
-   "in_take": true
+   "in_take": false
   },
   {
-   "spy": 762.27,
-   "es": 7691.0,
-   "kind": "DARK POOL",
-   "n": 2,
-   "in_take": true
-  },
-  {
-   "spy": 760.0,
-   "es": 7668.09,
-   "kind": "DARK POOL",
-   "n": 4,
-   "in_take": true
-  },
-  {
-   "spy": 755.72,
-   "es": 7624.91,
+   "spy": 786.0,
+   "es": 7930.42,
    "kind": "PRICE",
    "n": 1,
    "in_take": false
   },
   {
-   "spy": 755.0,
-   "es": 7617.64,
+   "spy": 763.34,
+   "es": 7701.79,
    "kind": "DARK POOL",
    "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 762.27,
+   "es": 7691.0,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 759.5,
+   "es": 7663.05,
+   "kind": "MA",
+   "n": 2,
+   "in_take": true
+  },
+  {
+   "spy": 755.62,
+   "es": 7623.9,
+   "kind": "DARK POOL",
+   "n": 3,
    "in_take": true
   },
   {
@@ -46,26 +53,54 @@
    "es": 7608.26,
    "kind": "DARK POOL",
    "n": 1,
-   "in_take": true
+   "in_take": false
+  },
+  {
+   "spy": 754.05,
+   "es": 7608.06,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
   },
   {
    "spy": 750.0,
    "es": 7567.2,
-   "kind": "DARK POOL",
-   "n": 1,
+   "kind": "WALL",
+   "n": 4,
    "in_take": true
   },
   {
-   "spy": 746.77,
-   "es": 7534.61,
+   "spy": 740.48,
+   "es": 7471.14,
    "kind": "DARK POOL",
    "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 740.0,
+   "es": 7466.3,
+   "kind": "WALL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 730.0,
+   "es": 7365.4,
+   "kind": "WALL",
+   "n": 2,
    "in_take": true
   },
   {
-   "spy": 690.49,
-   "es": 6966.76,
-   "kind": "GAMMA/GEX",
+   "spy": 711.0,
+   "es": 7173.7,
+   "kind": "WALL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 700.0,
+   "es": 7062.72,
+   "kind": "WALL",
    "n": 1,
    "in_take": false
   }
@@ -197,6 +232,13 @@
    "next": "2026-11-02",
    "pct": NaN,
    "hit": true
+  },
+  {
+   "date": "2026-11-02",
+   "call": "DOWN",
+   "next": null,
+   "pct": null,
+   "hit": null
   }
  ],
  "hit_rate": {
