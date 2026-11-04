@@ -1,6 +1,6 @@
 {
  "date": "2026-11-03",
- "updated_pt": "2026-11-04 14:46 PT",
+ "updated_pt": "2026-11-04 15:42 PT",
  "symbols": [
   {
    "symbol": "SPY",
@@ -88,7 +88,7 @@
     "put_wall": 763.63,
     "em_lo": 752.88,
     "em_hi": 765.18,
-    "spot": 763.62,
+    "spot": 766.02,
     "regime": "negative gamma",
     "regime_votes": {
      "negative gamma": 2,
@@ -107,7 +107,7 @@
     "put_wall": null,
     "em_lo": null,
     "em_hi": null,
-    "spot": 7660.8,
+    "spot": 7684.9,
     "regime": null,
     "regime_votes": {}
    }
@@ -121,7 +121,7 @@
     "put_wall": null,
     "em_lo": null,
     "em_hi": null,
-    "spot": 711.5,
+    "spot": 713.73,
     "regime": null,
     "regime_votes": {}
    }
