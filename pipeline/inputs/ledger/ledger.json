@@ -1,44 +1,44 @@
 {
- "date": "2026-10-30",
- "title": "Friday 10/30 SPY Post-Market Note (session close)",
- "base": "My take: Base case for next week: something broke \u2014 regime change under negative gamma. Expect bounces to be sold while VIX term structure stays in backwardation.",
- "alternative": "The alternative path (not my lean): midterm chop pins SPY back into 760\u2013765 and resets the gamma book; only believe it if 760 is reclaimed and held with VIX compressing.",
+ "date": "2026-11-03",
+ "title": "Tuesday 11/3 SPY close review",
+ "base": "Same view as yesterday: a larger move down to a test of the 200DMA by or before November OpEx. Tomorrow a push toward 760 is possible if AMD holds its gains, but it should be hard to get far above 755; lean is a close at or below 755, a bearish touch of the 20/50DMAs.",
+ "alternative": "The alternative path here is we manage to establish above the 757.43 dark pool level which puts 760 back on the table, at which point a back test of the 100DMA is in the cards.",
  "trigger": "\u2014",
  "direction": "DOWN",
  "levels": [
   {
    "spy": 765.0,
    "es": 7718.54,
-   "kind": "GAMMA/GEX",
+   "kind": "MA",
    "n": 1,
-   "in_take": true
-  },
-  {
-   "spy": 762.27,
-   "es": 7691.0,
-   "kind": "DARK POOL",
-   "n": 2,
-   "in_take": true
+   "in_take": false
   },
   {
    "spy": 760.0,
    "es": 7668.09,
    "kind": "DARK POOL",
-   "n": 4,
+   "n": 3,
    "in_take": true
   },
   {
-   "spy": 755.72,
-   "es": 7624.91,
-   "kind": "PRICE",
+   "spy": 757.43,
+   "es": 7642.16,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": true
+  },
+  {
+   "spy": 755.62,
+   "es": 7623.9,
+   "kind": "DARK POOL",
    "n": 1,
    "in_take": false
   },
   {
    "spy": 755.0,
    "es": 7617.64,
-   "kind": "DARK POOL",
-   "n": 1,
+   "kind": "MA",
+   "n": 4,
    "in_take": true
   },
   {
@@ -46,26 +46,47 @@
    "es": 7608.26,
    "kind": "DARK POOL",
    "n": 1,
-   "in_take": true
+   "in_take": false
+  },
+  {
+   "spy": 754.05,
+   "es": 7608.06,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
   },
   {
    "spy": 750.0,
    "es": 7567.2,
-   "kind": "DARK POOL",
-   "n": 1,
-   "in_take": true
+   "kind": "WALL",
+   "n": 5,
+   "in_take": false
   },
   {
    "spy": 746.77,
    "es": 7534.61,
    "kind": "DARK POOL",
    "n": 1,
-   "in_take": true
+   "in_take": false
   },
   {
-   "spy": 690.49,
-   "es": 6966.76,
-   "kind": "GAMMA/GEX",
+   "spy": 745.0,
+   "es": 7516.75,
+   "kind": "WALL",
+   "n": 2,
+   "in_take": false
+  },
+  {
+   "spy": 740.0,
+   "es": 7466.3,
+   "kind": "WALL",
+   "n": 5,
+   "in_take": false
+  },
+  {
+   "spy": 730.0,
+   "es": 7365.4,
+   "kind": "WALL",
    "n": 1,
    "in_take": false
   }
@@ -193,6 +214,20 @@
   },
   {
    "date": "2026-10-30",
+   "call": "UP",
+   "next": "2026-11-02",
+   "pct": -0.48,
+   "hit": false
+  },
+  {
+   "date": "2026-11-02",
+   "call": "UP",
+   "next": "2026-11-03",
+   "pct": 0.3,
+   "hit": true
+  },
+  {
+   "date": "2026-11-03",
    "call": "DOWN",
    "next": null,
    "pct": null,
@@ -200,11 +235,11 @@
   }
  ],
  "hit_rate": {
-  "hits": 11,
-  "n": 17,
-  "rate": 64.7
+  "hits": 12,
+  "n": 19,
+  "rate": 63.2
  },
- "built": "2026-10-30",
+ "built": "2026-11-03",
  "intraday": [],
  "intraday_date": null
 }
