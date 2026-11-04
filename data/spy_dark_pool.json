@@ -11,7 +11,7 @@
       "SPY": 766.81,
       "SPX": 7688.62,
       "ES": 7728.0,
-      "source": "Yahoo Finance v8 chart API",
+      "source": "public chart API",
       "asof": "2026-11-04"
     },
     "prior": {
@@ -709,7 +709,7 @@
     "timeframe": "4H",
     "feed": "iex",
     "session": "2026-08-03 \u2192 2026-10-30",
-    "note": "Alpaca IEX 30m bars resampled to RTH 4H buckets (09:30\u201313:30, 13:30\u201316:00 ET)",
+    "note": "exchange 30m bars resampled to RTH 4H buckets (09:30\u201313:30, 13:30\u201316:00 ET)",
     "candles": [
       {
         "t": "2026-08-03T09:30:00-04:00",
@@ -3039,7 +3039,7 @@
         "side": "ABOVE"
       }
     ],
-    "note": "Post-close refresh \u2014 dist/side vs Yahoo RTH close; heat/bars unchanged (prior window)"
+    "note": "Post-close refresh \u2014 dist/side vs RTH close; heat/bars unchanged (prior window)"
   },
   "clusters": {
     "gap": 1.0,
