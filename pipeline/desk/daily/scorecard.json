@@ -58,7 +58,7 @@
           "date": "2026-10-29",
           "hi": 7771.5,
           "lo": 7665.25,
-          "last": 7687.5,
+          "last": 7687.25,
           "event": false
         },
         {
@@ -106,7 +106,7 @@
           "date": "2026-10-28",
           "hi": 30178.0,
           "lo": 29482.5,
-          "last": 29649.25,
+          "last": 29649.0,
           "event": true
         },
         {
@@ -129,7 +129,7 @@
     "spy": {
       "high": 775.75,
       "low": 750.3599853515625,
-      "last": 757.12,
+      "last": 756.99,
       "path": "CHOP / MIXED",
       "phase1": "HIT",
       "phase1_zone": [
@@ -161,7 +161,7 @@
           "date": "2026-10-28",
           "hi": 775.75,
           "lo": 768.28,
-          "last": 769.27,
+          "last": 769.32,
           "event": true
         },
         {
@@ -175,7 +175,7 @@
           "date": "2026-10-30",
           "hi": 769.56,
           "lo": 750.36,
-          "last": 757.12,
+          "last": 756.99,
           "event": false
         }
       ],
@@ -241,7 +241,7 @@
     "es": {
       "high": 7693.75,
       "low": 7490.0,
-      "last": 7503.0,
+      "last": 7504.25,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -266,7 +266,7 @@
           "date": "2026-11-03",
           "hi": 7633.5,
           "lo": 7490.0,
-          "last": 7503.0,
+          "last": 7504.25,
           "event": false
         }
       ],
@@ -275,7 +275,7 @@
     "nq": {
       "high": 28891.25,
       "low": 27615.75,
-      "last": 27694.75,
+      "last": 27710.75,
       "path": "BEAR",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -300,7 +300,7 @@
           "date": "2026-11-03",
           "hi": 28512.0,
           "lo": 27615.75,
-          "last": 27694.75,
+          "last": 27710.75,
           "event": false
         }
       ],
@@ -308,8 +308,8 @@
     },
     "spy": {
       "high": 763.8599853515625,
-      "low": 751.5999755859375,
-      "last": 754.4099731445312,
+      "low": 750.121,
+      "last": 752.16,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -326,24 +326,24 @@
         {
           "date": "2026-11-02",
           "hi": 763.86,
-          "lo": 751.6,
-          "last": 752.12,
+          "lo": 751.46,
+          "last": 753.0,
           "event": false
         },
         {
           "date": "2026-11-03",
-          "hi": 757.07,
-          "lo": 752.39,
-          "last": 754.41,
+          "hi": 757.89,
+          "lo": 750.12,
+          "last": 752.16,
           "event": false
         }
       ],
-      "n_bars": 26
+      "n_bars": 41
     },
     "qqq": {
       "high": 699.4299926757812,
-      "low": 680.3300170898438,
-      "last": 685.3400268554688,
+      "low": 678.98,
+      "last": 681.6205,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -360,19 +360,19 @@
         {
           "date": "2026-11-02",
           "hi": 699.43,
-          "lo": 680.33,
-          "last": 681.13,
+          "lo": 680.0,
+          "last": 682.95,
           "event": false
         },
         {
           "date": "2026-11-03",
-          "hi": 688.69,
-          "lo": 683.18,
-          "last": 685.34,
+          "hi": 690.27,
+          "lo": 678.98,
+          "last": 681.62,
           "event": false
         }
       ],
-      "n_bars": 26
+      "n_bars": 41
     }
   },
   "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned Yahoo bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."

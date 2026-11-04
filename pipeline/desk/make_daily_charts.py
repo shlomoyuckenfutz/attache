@@ -8,6 +8,7 @@ Archives under daily/charts/YYYY-MM-DD/. Also writes weekly/charts/ (+ prior/ + 
 Fails loudly if any chart cannot build (no silent stale PNGs).
 """
 import os, sys, shutil, datetime as dt, json, urllib.request
+from collections import Counter
 from pathlib import Path
 import matplotlib; matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -416,19 +417,15 @@ def chart(key, sp, plan_week, zones, event, out_path, day_notes=None,
 
     actual = raw[(raw.index.date >= plan_start) & (raw.index.date <= plan_end)]
     if not sp["fut"] and not actual.empty:
-        # Premarket always dropped. For actual/scorecard mode keep RTH+AH on every
-        # plan-week day so overnight selloffs (e.g. QQQ Thu AH 715→704) aren't a
-        # blank mid-Thu/Fri hole. Forward plan mode with sparse actuals: RTH-only
-        # except event day (avoids junk AH on quiet days).
+        # Premarket always dropped. Keep RTH + after-hours on every plan-week day
+        # so evening-session updates show on THIS WEEK · PLAN (and daily scorecards).
         mask = []
         for ts in actual.index:
             hm = ts.hour * 60 + ts.minute
             if hm < 6 * 60 + 30:
                 mask.append(False)
-            elif mode == "actual" or ts.date() == event_day:
-                mask.append(True)
             else:
-                mask.append(hm < 13 * 60)
+                mask.append(True)
         actual = actual.loc[mask]
 
     n = len(hist)
@@ -593,6 +590,8 @@ def chart(key, sp, plan_week, zones, event, out_path, day_notes=None,
                             arrowprops=dict(arrowstyle="->", color=BEAR_ZONE_C, lw=0.8))
 
     # Plan paths — ONLY across day columns that have NO actual bars (lines off candles).
+    # X must be strictly increasing (charts never move backward in time). Same target
+    # levels, same order, same day-slot assignments — only frac within a day is monotonic.
     empty_days = [i for i in range(5) if i not in days_with_actual]
     if empty_days:
         # Anchor price = last actual close (or hist last), but X starts inside the
@@ -605,23 +604,38 @@ def chart(key, sp, plan_week, zones, event, out_path, day_notes=None,
             anchor_px = last
         anchor_x = n + empty_days[0] * D + 0.08 * D
         for path, c, lab in ((sp["bull"], S, "bull path"), (sp["bear"], R, "bear path")):
-            # map path points onto empty days (and extend through remaining empty slots)
-            xs = [anchor_x]
-            ys = [anchor_px]
-            # distribute path nodes across empty_days midpoints
             slots = empty_days
-            for i, px in enumerate(path):
-                # place node i across the empty slots proportionally
+            # Day assignment (unchanged): proportional index into empty slots
+            day_for = []
+            for i in range(len(path)):
                 if len(slots) == 1:
-                    di = slots[0]
-                    frac = (i + 1) / (len(path) + 0.5)
-                    xs.append(n + di * D + frac * D)
+                    day_for.append(slots[0])
                 else:
                     idx = min(int(i * len(slots) / max(len(path), 1)), len(slots) - 1)
-                    di = slots[idx]
-                    frac = 0.3 + 0.5 * ((i % max(len(slots), 1)) / max(len(slots), 1))
-                    xs.append(n + di * D + frac * D)
+                    day_for.append(slots[idx])
+            counts = Counter(day_for)
+            seen = Counter()
+            xs = [anchor_x]
+            ys = [anchor_px]
+            prev_x = anchor_x
+            for i, px in enumerate(path):
+                di = day_for[i]
+                local = seen[di]
+                seen[di] += 1
+                n_local = counts[di]
+                if len(slots) == 1:
+                    frac = (i + 1) / (len(path) + 0.5)
+                elif n_local == 1:
+                    frac = 0.55
+                else:
+                    # strictly increasing within the assigned day (no modulo wrap)
+                    frac = 0.2 + 0.6 * (local / (n_local - 1))
+                x = n + di * D + frac * D
+                if x <= prev_x:
+                    x = prev_x + max(0.25, D * 0.04)
+                xs.append(x)
                 ys.append(px)
+                prev_x = x
             ax.plot(xs, ys, color=c, ls="--", lw=1.8, marker="o", ms=3.5, label=lab, zorder=3)
     else:
         # Fully mapped week — no path lines through candles; show legend stubs only
