@@ -1,6 +1,6 @@
 {
- "generated_at_pt": "2026-11-04 11:55 PT",
- "generated_utc": "2026-11-04T19:55:31+00:00",
+ "generated_at_pt": "2026-11-04 12:18 PT",
+ "generated_utc": "2026-11-04T20:18:51+00:00",
  "breaking_minutes": 30,
  "items": [
   {
@@ -10,7 +10,7 @@
    "headline": "ECB’S MOULIN SAYS SAYS HE IS SKEPTICAL ON THE Govt PLAN TO RAISE THE REGULATED…",
    "tag": "FED",
    "src": "SRC W2",
-   "breaking": true
+   "breaking": false
   },
   {
    "ts_utc": "2026-11-04T19:26:15.000Z",
@@ -19,7 +19,7 @@
    "headline": "ECB’S MOULIN SAYS THE SOLUTION TO FRANCE’S FINANCIAL PROBLEMS IS IN FRANCE AND NOT…",
    "tag": "FED",
    "src": "SRC W2",
-   "breaking": true
+   "breaking": false
   },
   {
    "ts_utc": "2026-11-04T19:05:25.000Z",
