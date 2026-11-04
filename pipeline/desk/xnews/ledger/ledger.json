@@ -237,14 +237,14 @@
    "date": "2026-11-02",
    "call": "DOWN",
    "next": "2026-11-03",
-   "pct": NaN,
-   "hit": true
+   "pct": 0.3,
+   "hit": false
   }
  ],
  "hit_rate": {
-  "hits": 13,
+  "hits": 12,
   "n": 19,
-  "rate": 68.4
+  "rate": 63.2
  },
  "built": "2026-11-04",
  "intraday": [],
