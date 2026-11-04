@@ -1,16 +1,14 @@
-// Encrypt plain HTML into exposure lock shell using SAME password+salt as Study Room.
+// Encrypt plain HTML into exposure lock shell using the Heat passcode (separate from Study).
 // usage: node encrypt_page.js plain.html lock_shell.html out.html
-// Password from ATOUCHE_STUDY_PASSWORD or ../secrets/study_password.txt — never printed.
+// Password from ATOUCHE_HEAT_PASSWORD or ../secrets/heat_password.txt — never printed.
 const fs = require('fs'), path = require('path');
 const ce = require('../study_src/lib/cryptoEngine.js');
 const codec = require('../study_src/lib/codec.js').init(ce);
+// Heat has its own passcode (ATOUCHE_HEAT_PASSWORD / ../secrets/heat_password.txt); Study uses ATOUCHE_STUDY_PASSWORD.
 let _pwFile = '';
-try { _pwFile = fs.readFileSync(path.join(__dirname, '../secrets/study_password.txt'), 'utf8').trim(); } catch (e) {}
-const pw = (_pwFile || (process.env.ATOUCHE_STUDY_PASSWORD || '')).trim();
-if (!pw) { console.error('ATOUCHE_STUDY_PASSWORD missing'); process.exit(1); }
-if (_pwFile && process.env.ATOUCHE_STUDY_PASSWORD && process.env.ATOUCHE_STUDY_PASSWORD.trim() !== _pwFile) {
-  console.warn('encrypt_page: ignoring ATOUCHE_STUDY_PASSWORD (differs from secrets file)');
-}
+try { _pwFile = fs.readFileSync(path.join(__dirname, '../secrets/heat_password.txt'), 'utf8').trim(); } catch (e) {}
+const pw = (_pwFile || (process.env.ATOUCHE_HEAT_PASSWORD || '')).trim();
+if (!pw) { console.error('ATOUCHE_HEAT_PASSWORD missing'); process.exit(1); }
 const [plainF, shellF, outF] = process.argv.slice(2);
 if (!plainF || !shellF || !outF) {
   console.error('usage: node encrypt_page.js plain.html lock_shell.html out.html');

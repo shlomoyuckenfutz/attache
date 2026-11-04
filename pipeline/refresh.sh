@@ -22,6 +22,10 @@ if [ -n "${ATOUCHE_STUDY_PASSWORD:-}" ]; then
   printf '%s' "$ATOUCHE_STUDY_PASSWORD" > "$ORB_DESK/secrets/study_password.txt"
   chmod 600 "$ORB_DESK/secrets/study_password.txt"
 fi
+if [ -n "${ATOUCHE_HEAT_PASSWORD:-}" ]; then
+  printf '%s' "$ATOUCHE_HEAT_PASSWORD" > "$ORB_DESK/secrets/heat_password.txt"
+  chmod 600 "$ORB_DESK/secrets/heat_password.txt"
+fi
 
 cd "$ORB_DESK"
 bash "$PIPE/sync_inputs.sh"

@@ -48,6 +48,7 @@ jobs:
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
           ATOUCHE_STUDY_PASSWORD: ${{ secrets.ATOUCHE_STUDY_PASSWORD }}
+          ATOUCHE_HEAT_PASSWORD: ${{ secrets.ATOUCHE_HEAT_PASSWORD }}
         run: bash pipeline/refresh.sh
 
       - name: Commit & push if changed
@@ -56,9 +57,9 @@ jobs:
           git config user.name "attache-refresh"
           git config user.email "attache-refresh@users.noreply.github.com"
           # Never commit runtime secrets or rolling bar cache
-          rm -f pipeline/desk/secrets/study_password.txt
+          rm -f pipeline/desk/secrets/study_password.txt pipeline/desk/secrets/heat_password.txt
           git add -A
-          git reset -- pipeline/desk/secrets/study_password.txt \
+          git reset -- pipeline/desk/secrets/study_password.txt pipeline/desk/secrets/heat_password.txt \
                        pipeline/cache \
                        pipeline/desk/equity_orb15/data/*.parquet \
                        pipeline/desk/python/data/*.parquet 2>/dev/null || true
