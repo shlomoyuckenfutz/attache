@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-04 16:54 PT",
+ "asof": "2026-11-04 17:31 PT",
  "window_days": 5,
  "bars": "SPY 1m (free feed, RTH 09:30-16:00 ET), read-only local copy",
  "rules": "SPY levels auto-extracted from post text (promos/RTs skipped). Graded on the rest of that RTH session (or next session if posted outside RTH). touch = within $0.25; respected = moves ≥$1 back on the approach side within 30 min before a 1m close ≥$1 through; broken = closes ≥$1 through first. hit_rate = respected/touched.",
@@ -9,20 +9,6 @@
  },
  "sources": [
   {
-   "handle": "SRC_PLAN_B",
-   "levels_posted": 8,
-   "touched": 1,
-   "respected": 1,
-   "broken": 0,
-   "hit_rate": 1.0,
-   "touch_rate": 0.125,
-   "avg_reaction_pts": 1.87,
-   "promo_pct": 38.0,
-   "posts_per_day": 31,
-   "weight": 0.7,
-   "greyed": false
-  },
-  {
    "handle": "Basssem666",
    "levels_posted": 38,
    "touched": 2,
@@ -30,7 +16,7 @@
    "broken": 0,
    "hit_rate": 0.0,
    "touch_rate": 0.053,
-   "avg_reaction_pts": 0.82,
+   "avg_reaction_pts": 0.63,
    "promo_pct": 0.0,
    "posts_per_day": 14,
    "weight": 0.8,
@@ -72,7 +58,7 @@
    "broken": 0,
    "hit_rate": 0.0,
    "touch_rate": 0.2,
-   "avg_reaction_pts": 0.74,
+   "avg_reaction_pts": 0.87,
    "promo_pct": 0.0,
    "posts_per_day": 11,
    "weight": 1.0,
@@ -118,6 +104,20 @@
    "promo_pct": 8.0,
    "posts_per_day": 12,
    "weight": 0.6,
+   "greyed": false
+  },
+  {
+   "handle": "SRC_PLAN_B",
+   "levels_posted": 8,
+   "touched": 0,
+   "respected": 0,
+   "broken": 0,
+   "hit_rate": null,
+   "touch_rate": 0.0,
+   "avg_reaction_pts": null,
+   "promo_pct": 38.0,
+   "posts_per_day": 31,
+   "weight": 0.7,
    "greyed": false
   },
   {
