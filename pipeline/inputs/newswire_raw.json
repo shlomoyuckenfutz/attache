@@ -1,312 +1,193 @@
 {
- "pulled_at_pt": "2026-11-02 20:27 PT",
- "pulled_utc": "2026-11-03T04:27:03+00:00",
- "handles": [
-  "axios",
-  "FirstSquawk"
- ],
- "sources": {
-  "FirstSquawk": {
-   "data": [
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T04:21:32.000Z",
-     "id": "2117472219198799919",
-     "text": "Thailand Raises Tax Rate On Fully Imported Electric Vehicles By 25 Percentage Points To 35%",
-     "url": "https://x.com/FirstSquawk/status/2117472219198799919"
+  "pulled_at_pt": "2026-11-04 11:33 PT",
+  "pulled_utc": "2026-11-04T19:33:07.492120+00:00",
+  "handles": [
+    "axios",
+    "FirstSquawk"
+  ],
+  "sources": {
+    "FirstSquawk": {
+      "data": [
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T19:26:18.000Z",
+          "id": "2118062299776974904",
+          "text": "ECB\u2019S MOULIN SAYS SAYS HE IS SKEPTICAL ON THE GOVERNMENT PLAN TO RAISE THE REGULATED SAVINGS CAP",
+          "url": "https://x.com/FirstSquawk/status/2118062299776974904"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T19:26:15.000Z",
+          "id": "2118062288775307385",
+          "text": "ECB\u2019S MOULIN SAYS THE SOLUTION TO FRANCE\u2019S FINANCIAL PROBLEMS IS IN FRANCE AND NOT IN FRANKFURT, THAT BANKS CAN DEAL WITH RISING RATES, AND THAT THERE IS NO LONGER A RISK OF A LOOP BETWEEN BANKS AND SOVEREIGNS",
+          "url": "https://x.com/FirstSquawk/status/2118062288775307385"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T19:10:46.000Z",
+          "id": "2118058389075091900",
+          "text": "DEMOCRAT WILLIAM LAWRENCE WINS MICHIGAN HOUSE 7 RACE \u2013 AP PROJECTS",
+          "url": "https://x.com/FirstSquawk/status/2118058389075091900"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T19:05:25.000Z",
+          "id": "2118057043387207792",
+          "text": "THE U.S. TREASURY RECEIVED $39.636 BLN IN OFFERS FOR A DEBT BUYBACK AND ACCEPTED $6 BLN, TAKING 7 OF 40 ELIGIBLE ISSUES, WITH THE BUYBACK TARGETING COUPON SECURITIES MATURING FROM 2037 TO 2046",
+          "url": "https://x.com/FirstSquawk/status/2118057043387207792"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:50:21.000Z",
+          "id": "2118053250964582782",
+          "text": "ECB\u2019S KAZAKS SAYS THERE MAY BE A GRADUAL INCREASE IN INTEREST RATES, AND THAT RATES NEED TO RISE IF INFLATION RISKS SPREADING",
+          "url": "https://x.com/FirstSquawk/status/2118053250964582782"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:48:49.000Z",
+          "id": "2118052864845365313",
+          "text": "US TREASURY SECRETARY BESSENT: WE WILL SANCTION THOSE WHO CONTINUE SUPPORTING THE IRANIAN REGIME, WHETHER BY LAND, SEA, OR AIR - POST ON X",
+          "url": "https://x.com/FirstSquawk/status/2118052864845365313"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:24:33.000Z",
+          "id": "2118046760497230248",
+          "text": "THE COURSE OF U.S.-IRANIAN NEGOTIATIONS WILL BECOME CLEARER ON FRIDAY, AND THEY HAVE MADE SIGNIFICANT PROGRESS - AL-JADEED, CITING ARAB DIPLOMATIC SOURCES",
+          "url": "https://x.com/FirstSquawk/status/2118046760497230248"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:20:53.000Z",
+          "id": "2118045836500459741",
+          "text": "S&P SAYS IT EXPECTS MOST IF NOT ALL OF SALESFORCE\u2019S FREE OPERATING CASH FLOW TO BE ALLOCATED TOWARDS SHAREHOLDER RETURNS AND M&A, AND THAT IT BELIEVES SALESFORCE CAN ACCELERATE AND GROW REVENUE OVER 10% ANNUALLY",
+          "url": "https://x.com/FirstSquawk/status/2118045836500459741"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:20:51.000Z",
+          "id": "2118045826404728970",
+          "text": "S&P HAS DOWNGRADED SALESFORCE TO \u2018A\u2019 ON RISING M&A ACTIVITY AND SHAREHOLDER RETURNS, WITH A STABLE OUTLOOK, SAYING IT EXPECTS SALESFORCE WILL CONTINUE TO INCREASE SUBSCRIPTION REVENUE AND EARNINGS BASED ON REMAINING PERFORMANCE OBLIGATIONS",
+          "url": "https://x.com/FirstSquawk/status/2118045826404728970"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:17:45.000Z",
+          "id": "2118045049229647916",
+          "text": "META BUYS AI CODING STARTUP CONDUCTOR - AXIOS",
+          "url": "https://x.com/FirstSquawk/status/2118045049229647916"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:14:37.000Z",
+          "id": "2118044258582311114",
+          "text": "TRUMP SAYS IT WOULD DESTROY THE DEMOCRATIC PARTY IF THEY IMPEACHED HIM",
+          "url": "https://x.com/FirstSquawk/status/2118044258582311114"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:13:08.000Z",
+          "id": "2118043886967025775",
+          "text": "TRUMP SAYS HE WILL PROBABLY GET ALONG WITH THE DEMOCRATS, THAT IF HE WERE ON THE BALLOT \u201cWE WOULD HAVE WON,\u201d AND THAT \u201cWE WEREN\u2019T ABLE TO TRANSFER THE LOVE TO CANDIDATES\u201d",
+          "url": "https://x.com/FirstSquawk/status/2118043886967025775"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:13:02.000Z",
+          "id": "2118043860526121239",
+          "text": "TRUMP SAYS IT IS LARGELY TRUE THAT THE ELECTION LOSS WAS THE RESULT OF THE IRAN WAR, BUT THAT \u201cIT WAS WORTH IT\u201d BECAUSE \u201cYOU CAN\u2019T LET IRAN HAVE A NUCLEAR WEAPON\u201d",
+          "url": "https://x.com/FirstSquawk/status/2118043860526121239"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:11:53.000Z",
+          "id": "2118043572100637139",
+          "text": "COREWEAVE\u2019S BONDS TUMBLED WEDNESDAY, IN SOME CASES TO NEW LOWS, AFTER DEMOCRATIC CANDIDATES IN FAVOR OF SLOWING DOWN DATA-CENTER CONSTRUCTION WON A NUMBER OF GUBERNATORIAL RACES, INCLUDING IN TEXAS - SOURCES",
+          "url": "https://x.com/FirstSquawk/status/2118043572100637139"
+        },
+        {
+          "author_id": "3295423333",
+          "created_at": "2026-11-04T18:10:39.000Z",
+          "id": "2118043262686732521",
+          "text": "MORE THAN 20 MINUTES INTO HIS UNSCHEDULED REMARKS, TRUMP HAS NOT SAID A SINGLE WORD ABOUT THE MIDTERM RESULTS THAT COST REPUBLICANS CONTROL OF CONGRESS",
+          "url": "https://x.com/FirstSquawk/status/2118043262686732521"
+        }
+      ]
     },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T04:16:43.000Z",
-     "id": "2117471009268002918",
-     "text": "Saudi Arabia October Composite PMI Declines To 54.0, Signalling Slower Business Activity Growth",
-     "url": "https://x.com/FirstSquawk/status/2117471009268002918"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T04:10:22.000Z",
-     "id": "2117469410357289154",
-     "text": "US Court Blocks Trump Administration's Demand For States To Withhold Votes Of Alleged Noncitizens",
-     "url": "https://x.com/FirstSquawk/status/2117469410357289154"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T03:45:33.000Z",
-     "id": "2117463163461599265",
-     "text": "Taiwan Dollar Drops To Lowest Level Since April 2025",
-     "url": "https://x.com/FirstSquawk/status/2117463163461599265"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T03:41:28.000Z",
-     "id": "2117462134401740897",
-     "text": "JPMorgan Lowers Apple Price Target To $355 From $360",
-     "url": "https://x.com/FirstSquawk/status/2117462134401740897"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T03:39:16.000Z",
-     "id": "2117461583068881086",
-     "text": "Chinese 1-Month Treasury Bills Auctioned at 0.7957% Yield, According to Traders",
-     "url": "https://x.com/FirstSquawk/status/2117461583068881086"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T03:35:48.000Z",
-     "id": "2117460710271877602",
-     "text": "RBA: The board remains mindful of the prolonged period during which inflation has stayed above target.",
-     "url": "https://x.com/FirstSquawk/status/2117460710271877602"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T03:35:34.000Z",
-     "id": "2117460651052523619",
-     "text": "RBA: Inflation is now expected to remain elevated through much of 2027, with the rate not forecast to reach the upper end of the 2-3% target range until late 2027.",
-     "url": "https://x.com/FirstSquawk/status/2117460651052523619"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T02:01:22.000Z",
-     "id": "2117436946331140298",
-     "text": "Vietnam Reports 15% Year-on-Year Growth in October Industrial Output",
-     "url": "https://x.com/FirstSquawk/status/2117436946331140298"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T01:44:20.000Z",
-     "id": "2117432658024407326",
-     "text": "China to Deepen Regulatory Coordination With Hong Kong and Intensify Action Against Cross-Border Financial Fraud, Vice Chair Says",
-     "url": "https://x.com/FirstSquawk/status/2117432658024407326"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T01:25:10.000Z",
-     "id": "2117427836797833357",
-     "text": "China's Offshore Yuan Suffers Biggest Single-Day Loss Since June, Weakening 0.26% to 6.6642 per Dollar",
-     "url": "https://x.com/FirstSquawk/status/2117427836797833357"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T01:20:43.000Z",
-     "id": "2117426716432007352",
-     "text": "Iran's IRGC Says It Seized Two US MQM-170 Drones Over Qeshm Island and Shot Down Another MQ-9 Drone Near Hormuz – Press TV",
-     "url": "https://x.com/FirstSquawk/status/2117426716432007352"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T01:15:55.000Z",
-     "id": "2117425506299806190",
-     "text": "China Fixes Yuan Midpoint at 6.7150 per Dollar",
-     "url": "https://x.com/FirstSquawk/status/2117425506299806190"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T01:10:10.000Z",
-     "id": "2117424062079361479",
-     "text": "Offshore Yuan Slides Nearly 0.2% as China Raises Foreign Currency Deposit Reserve Ratio",
-     "url": "https://x.com/FirstSquawk/status/2117424062079361479"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T00:57:15.000Z",
-     "id": "2117420808419340451",
-     "text": "Asian Foreign Exchange Markets See Limited Moves Ahead of US Midterm Elections - WSJ",
-     "url": "https://x.com/FirstSquawk/status/2117420808419340451"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T00:49:27.000Z",
-     "id": "2117418846923739632",
-     "text": "LG Energy Solution Lifts YoY Revenue Growth Guidance to 35%-40% From Previously Expected Mid-Teens to 20%",
-     "url": "https://x.com/FirstSquawk/status/2117418846923739632"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T00:48:52.000Z",
-     "id": "2117418700852904324",
-     "text": "PBOC Announces Increase in Foreign Currency Deposit Reserve Ratio From 4% to 6%",
-     "url": "https://x.com/FirstSquawk/status/2117418700852904324"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-03T00:26:57.000Z",
-     "id": "2117413184281985201",
-     "text": "ASIAN EQUITIES TRADE MIXED AT THE OPEN, WITH SOUTH KOREA'S KOSPI LAGGING AS PERSISTENT WEAKNESS IN US TECHNOLOGY STOCKS DRIVES THE NASDAQ 100 INTO A CORRECTION. MARKET PARTICIPATION REMAINS MUTED WITH JAPANESE MARKETS CLOSED FOR A HOLIDAY AND US MIDTERM ELECTIONS APPROACHING",
-     "url": "https://x.com/FirstSquawk/status/2117413184281985201"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T22:37:03.000Z",
-     "id": "2117385527788020060",
-     "text": "IRAN’S IRGC CLAIMS IT SHOT DOWN AN MQ-9 DRONE EAST OF THE STRAIT OF HORMUZ USING AN ADVANCED AIR DEFENSE SYSTEM",
-     "url": "https://x.com/FirstSquawk/status/2117385527788020060"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T21:45:18.000Z",
-     "id": "2117372504645976311",
-     "text": "OIL PRICES SLUMPED ON HOPES OF DIPLOMATIC PROGRESS BETWEEN WASHINGTON AND TEHRAN, AFTER IRANIAN PRESIDENT MASOUD PEZESHKIAN SAID HIS GOVERNMENT HAD GREATER AUTHORITY TO PURSUE PEACE TALKS. TRUMP ALSO EXPRESSED OPTIMISM ABOUT A POTENTIAL AGREEMENT, EASING FEARS OF AN IMMEDIATE",
-     "url": "https://x.com/FirstSquawk/status/2117372504645976311"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T21:45:09.000Z",
-     "id": "2117372468390477856",
-     "text": "US STOCKS FACED PRESSURE AS A SEMICONDUCTOR SELLOFF PUSHED THE NASDAQ 100 DOWN 10% FROM ITS OCTOBER PEAK, ENTERING CORRECTION TERRITORY, WHILE THE CHIPMAKER INDEX EXTENDED ITS THREE-DAY DECLINE TO 12%. WTI CRUDE SETTLED NEAR $96.50 A BARREL AS MOST S&amp;P 500 STOCKS ADVANCED, WITH",
-     "url": "https://x.com/FirstSquawk/status/2117372468390477856"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T21:01:56.000Z",
-     "id": "2117361591746469945",
-     "text": "NASDAQ CLOSES 1.12% LOWER AT 25,152.43, DOWN 284.57 POINTS",
-     "url": "https://x.com/FirstSquawk/status/2117361591746469945"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T21:01:43.000Z",
-     "id": "2117361534943043777",
-     "text": "S&amp;P 500 CLOSES 0.51% LOWER AT 7,541.52, DOWN 38.55 POINTS",
-     "url": "https://x.com/FirstSquawk/status/2117361534943043777"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T20:57:37.000Z",
-     "id": "2117360502783586652",
-     "text": "TRUMP SAYS OIL PRICES ARE “DROPPING LIKE A ROCK,” DOWN ALMOST $10 A BARREL, “A RECORD,” BECAUSE PEOPLE FEEL THERE WILL NOT BE A WAR WITH IRAN, ADDING THAT IRAN WANTS A SETTLEMENT AS SOON AS POSSIBLE AND “IT COULD HAPPEN” - TRUTH SOCIAL",
-     "url": "https://x.com/FirstSquawk/status/2117360502783586652"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T20:16:03.000Z",
-     "id": "2117350041971208358",
-     "text": "BRENT CRUDE FUTURES SETTLE AT $104.77/BBL, DOWN $8.66, 7.63%",
-     "url": "https://x.com/FirstSquawk/status/2117350041971208358"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T20:14:38.000Z",
-     "id": "2117349686264889445",
-     "text": "TRUMP SAYS 'NO' TO STRIKING IRAN AFTER ELECTIONS - POOL REPORT.",
-     "url": "https://x.com/FirstSquawk/status/2117349686264889445"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T19:32:45.000Z",
-     "id": "2117339147392471063",
-     "text": "TRUMP SAYS OIL WILL GO DOWN FURTHER BECAUSE “WE’RE WINNING WITH IRAN,” AND THAT IRAN WANTS TO MAKE A DEAL, WHICH COULD HAPPEN",
-     "url": "https://x.com/FirstSquawk/status/2117339147392471063"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T18:12:45.000Z",
-     "id": "2117319014980698295",
-     "text": "GOLD ROSE AS MUCH AS 2.5% TO $3,957 AN OUNCE, REBOUNDING FROM FRIDAY’S 3.7% DROP, AS HOPES FOR US-IRAN PEACE TALKS SENT BRENT CRUDE DOWN AS MUCH AS 11%. TREASURY YIELDS FELL, THE DOLLAR WEAKENED AND EASING TECH- STOCK SELLING ALSO SUPPORTED PRECIOUS METALS, WITH SILVER GAINING",
-     "url": "https://x.com/FirstSquawk/status/2117319014980698295"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T18:02:04.000Z",
-     "id": "2117316324351467920",
-     "text": "U.S. STOCK INDEXES PARED GAINS, WITH THE S&amp;P 500 UP 0.30%, THE NASDAQ UP 0.29% AND THE DOW UP 0.91%",
-     "url": "https://x.com/FirstSquawk/status/2117316324351467920"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T18:00:06.000Z",
-     "id": "2117315830170124511",
-     "text": "OIL FUTURES EXTENDED LOSSES, WITH BRENT FALLING OVER $9/BBL AND U.S. WTI DROPPING $8/BBL ON HOPES FOR A DEAL TO END THE IRAN WAR",
-     "url": "https://x.com/FirstSquawk/status/2117315830170124511"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T16:24:16.000Z",
-     "id": "2117291715388391673",
-     "text": "BRENT CRUDE FUTURES FALLS OVER $8/BBL ON HOPES FOR PROGRESS ON IRAN WAR EFFORTS",
-     "url": "https://x.com/FirstSquawk/status/2117291715388391673"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T15:00:22.000Z",
-     "id": "2117270598154174953",
-     "text": "US OCT. ISM MANUFACTURING INDEX RISES TO 55.5; EST. 54.5",
-     "url": "https://x.com/FirstSquawk/status/2117270598154174953"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T14:45:16.000Z",
-     "id": "2117266798034948604",
-     "text": "US S&amp;P GLOBAL OCT. MANUFACTURING PMI AT 54.9 VS FLASH 56",
-     "url": "https://x.com/FirstSquawk/status/2117266798034948604"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T14:44:19.000Z",
-     "id": "2117266558045360537",
-     "text": "UK 10 YEAR GILT YIELDS ON TRACK FOR BIGGEST ONE DAY FALL SINCE MAY 20TH",
-     "url": "https://x.com/FirstSquawk/status/2117266558045360537"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T14:31:21.000Z",
-     "id": "2117263296885891103",
-     "text": "DOW JONES UP 403.09 POINTS, OR 0.78 PERCENT, AT 52,173.40 AFTER MARKET OPEN\n\nNASDAQ UP 159.07 POINTS, OR 0.63 PERCENT, AT 25,596.07 AFTER MARKET OPEN\n\nS&amp;P 500 UP 33.80 POINTS, OR 0.45 PERCENT, AT 7,613.87 AFTER MARKET OPEN",
-     "url": "https://x.com/FirstSquawk/status/2117263296885891103"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T14:28:03.000Z",
-     "id": "2117262464698245374",
-     "text": "ARAGHCHI: REOPENING OF HORMUZ IS CONDITIONAL ON IRAN'S TERMS",
-     "url": "https://x.com/FirstSquawk/status/2117262464698245374"
-    },
-    {
-     "author_id": "3295423333",
-     "created_at": "2026-11-02T14:26:58.000Z",
-     "id": "2117262192852844544",
-     "text": "STOCKS OF CRUDE OIL IN THE US STRATEGIC PETROLEUM RESERVE FELL TO 282.2 MLN BARRELS LAST WEEK, LOWEST LEVEL SINCE 1982",
-     "url": "https://x.com/FirstSquawk/status/2117262192852844544"
+    "axios": {
+      "data": [
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T19:17:00.000Z",
+          "id": "2118059958914752641",
+          "text": "Key Pentagon priorities in peril after Democratic sweep",
+          "url": "https://x.com/axios/status/2118059958914752641"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T18:56:01.000Z",
+          "id": "2118054676843188616",
+          "text": "Democrats' midterm gains could sideline Electoral College by 2028",
+          "url": "https://x.com/axios/status/2118054676843188616"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T18:26:02.000Z",
+          "id": "2118047131466424409",
+          "text": "Exclusive: Meta buys AI startup, joins race to own coding in show of outsized ambition",
+          "url": "https://x.com/axios/status/2118047131466424409"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T17:50:01.000Z",
+          "id": "2118038067655176437",
+          "text": "Democrats vow Trump investigations, but voters have another priority too",
+          "url": "https://x.com/axios/status/2118038067655176437"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T17:45:01.000Z",
+          "id": "2118036809955324296",
+          "text": "Women ride midterm blue wave to historic gains",
+          "url": "https://x.com/axios/status/2118036809955324296"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T17:35:12.000Z",
+          "id": "2118034340009402760",
+          "text": "The economic aftershocks of Democrats' big win",
+          "url": "https://x.com/axios/status/2118034340009402760"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T17:25:01.000Z",
+          "id": "2118031777742659820",
+          "text": "Trump can't pack the Fed board with allies now",
+          "url": "https://x.com/axios/status/2118031777742659820"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T17:20:01.000Z",
+          "id": "2118030519841558677",
+          "text": "Global leaders weigh in on America's midterm shake-up",
+          "url": "https://x.com/axios/status/2118030519841558677"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T16:36:00.000Z",
+          "id": "2118019441896063432",
+          "text": "Read Mike Johnson's departing message",
+          "url": "https://x.com/axios/status/2118019441896063432"
+        },
+        {
+          "author_id": "800707492346925056",
+          "created_at": "2026-11-04T15:55:33.000Z",
+          "id": "2118009260458328457",
+          "text": "BREAKING: Trump's VP says the Iran war cost them the midterms",
+          "url": "https://x.com/axios/status/2118009260458328457"
+        }
+      ]
     }
-   ]
-  },
-  "axios": {
-   "data": [
-    {
-     "author_id": "800707492346925056",
-     "created_at": "2026-11-03T01:26:30.000Z",
-     "id": "2117428171997864273",
-     "text": "GOP's midterm blame game starts early",
-     "url": "https://x.com/axios/status/2117428171997864273"
-    },
-    {
-     "author_id": "800707492346925056",
-     "created_at": "2026-11-03T00:12:49.000Z",
-     "id": "2117409627373477981",
-     "text": "Final polls, models and markets see a \"blue tsunami\"",
-     "url": "https://x.com/axios/status/2117409627373477981"
-    },
-    {
-     "author_id": "800707492346925056",
-     "created_at": "2026-11-03T00:09:37.000Z",
-     "id": "2117408823711244347",
-     "text": "U.S., Russia and Ukraine to resume peace talks in Abu Dhabi next week, Witkoff says",
-     "url": "https://x.com/axios/status/2117408823711244347"
-    },
-    {
-     "author_id": "800707492346925056",
-     "created_at": "2026-11-02T23:07:56.000Z",
-     "id": "2117393298457530752",
-     "text": "BREAKING: Supreme Court rejects Trump's bid over California disputed ballots",
-     "url": "https://x.com/axios/status/2117393298457530752"
-    },
-    {
-     "author_id": "800707492346925056",
-     "created_at": "2026-11-02T22:10:17.000Z",
-     "id": "2117378791613812824",
-     "text": "Apple earnings: iPhone sales lead revenue upward",
-     "url": "https://x.com/axios/status/2117378791613812824"
-    }
-   ]
   }
- }
 }

@@ -1,12 +1,12 @@
 {
   "source": "@SRC_LEVELS_A",
   "symbol": "ES",
-  "generated_pt": "2026-10-30 14:00 PT",
+  "generated_pt": "2026-11-04 11:33 PT",
   "range": [
     "2026-10-05",
-    "2026-10-30"
+    "2026-11-04"
   ],
-  "method": "Levels transcribed from his public X posts only (no newsletter). supports/resistances as stated that day; key_levels = triggers/pivots/magnets he named. Recurring = within 3 pts on 3+ days.",
+  "method": "Levels transcribed from public X posts only (no paid newsletter). supports/resistances as stated that day; key_levels = triggers/pivots/magnets named. Recurring = within 3 pts on 3+ days.",
   "days": [
     {
       "date": "2026-10-05",
@@ -676,77 +676,236 @@
         "https://x.com/SRC_LEVELS_A/status/2116246333350982092",
         "https://x.com/SRC_LEVELS_A/status/2116270461663252837"
       ]
+    },
+    {
+      "date": "2026-11-02",
+      "supports": [
+        7577,
+        7634
+      ],
+      "resistances": [
+        7657,
+        7665,
+        7677,
+        7698
+      ],
+      "key_levels": [
+        7577,
+        7634,
+        7698
+      ],
+      "notes": "Retrace of Fri 115pt long from 7577 Sept 16 FBD. Targets 7665/7677 hit; 7698 5pts shy. 7634 support / reclaim to rip. Newsletter out 14:50 PT for next squeeze.",
+      "post_urls": [
+        "https://x.com/SRC_LEVELS_A/status/2117337506303934922",
+        "https://x.com/SRC_LEVELS_A/status/2117348212818227440"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "supports": [
+        7546,
+        7558
+      ],
+      "resistances": [
+        7577,
+        7585,
+        7595,
+        7636,
+        7698,
+        7703
+      ],
+      "key_levels": [
+        7558,
+        7577,
+        7636
+      ],
+      "notes": "Fri 7558 LOD Failed Breakdown (swept 7546) was long. Targets 7577/7585/7595 all hit. 7636 = bull/bear line (backtest prior breakdown). Magnets above: 7698-7703. Elevator-down note into midterms.",
+      "post_urls": [
+        "https://x.com/SRC_LEVELS_A/status/2117596573748396295",
+        "https://x.com/SRC_LEVELS_A/status/2117616746878341204",
+        "https://x.com/SRC_LEVELS_A/status/2117636597487378516",
+        "https://x.com/SRC_LEVELS_A/status/2117656419168092194",
+        "https://x.com/SRC_LEVELS_A/status/2117682023318081569",
+        "https://x.com/SRC_LEVELS_A/status/2117702349917454660"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "supports": [
+        7490,
+        7495,
+        7626,
+        7635,
+        7703
+      ],
+      "resistances": [
+        7698,
+        7703,
+        7712,
+        7739,
+        7755,
+        7771,
+        7803
+      ],
+      "key_levels": [
+        7495,
+        7703,
+        7739,
+        7755,
+        7771,
+        7803
+      ],
+      "notes": "Midterm elevator-down swept July 31 low 7495 to 7490 \u2192 Failed Breakdown long \u2192 +245 to tag 7739 (final Wed target). Supports 7635/7626. Next 7755/7771/7803. Desk: protect profits / ride runner; sidelined for new risk unless fresh elevator-down FBD. Substack paid \u2014 public X only.",
+      "post_urls": [
+        "https://x.com/SRC_LEVELS_A/status/2117963026292949232",
+        "https://x.com/SRC_LEVELS_A/status/2117979723095794168",
+        "https://x.com/SRC_LEVELS_A/status/2117999143562191359",
+        "https://x.com/SRC_LEVELS_A/status/2118018202685026812",
+        "https://x.com/SRC_LEVELS_A/status/2118027178113736858",
+        "https://x.com/SRC_LEVELS_A/status/2118048942739145130"
+      ]
     }
   ],
   "recurring": [
-    7904,
-    7886,
-    7872,
-    7867,
-    7859,
-    7853,
-    7845,
-    7840,
-    7835,
-    7823,
-    7811,
-    7803,
-    7793,
-    7784,
-    7774,
-    7768,
-    7755,
-    7751,
-    7736,
-    7732,
-    7720,
-    7712,
-    7707,
-    7703,
-    7698,
-    7686,
-    7677
+    {
+      "level": 7835,
+      "days": 12
+    },
+    {
+      "level": 7803,
+      "days": 11
+    },
+    {
+      "level": 7755,
+      "days": 10
+    },
+    {
+      "level": 7677,
+      "days": 8
+    },
+    {
+      "level": 7698,
+      "days": 8
+    },
+    {
+      "level": 7782,
+      "days": 8
+    },
+    {
+      "level": 7703,
+      "days": 6
+    },
+    {
+      "level": 7845,
+      "days": 5
+    },
+    {
+      "level": 7872,
+      "days": 5
+    },
+    {
+      "level": 7707,
+      "days": 4
+    },
+    {
+      "level": 7718,
+      "days": 4
+    },
+    {
+      "level": 7736,
+      "days": 4
+    },
+    {
+      "level": 7765,
+      "days": 4
+    },
+    {
+      "level": 7820,
+      "days": 4
+    },
+    {
+      "level": 7822,
+      "days": 4
+    },
+    {
+      "level": 7636,
+      "days": 3
+    },
+    {
+      "level": 7686,
+      "days": 3
+    },
+    {
+      "level": 7710,
+      "days": 3
+    },
+    {
+      "level": 7712,
+      "days": 3
+    },
+    {
+      "level": 7748,
+      "days": 3
+    },
+    {
+      "level": 7811,
+      "days": 3
+    },
+    {
+      "level": 7840,
+      "days": 3
+    },
+    {
+      "level": 7853,
+      "days": 3
+    },
+    {
+      "level": 7858,
+      "days": 3
+    },
+    {
+      "level": 7867,
+      "days": 3
+    },
+    {
+      "level": 7884,
+      "days": 3
+    }
   ],
   "latest": {
-    "date": "2026-10-30",
+    "date": "2026-11-04",
     "supports": [
-      7575,
-      7585,
-      7616,
-      7649,
-      7663,
-      7665,
-      7677
+      7490,
+      7495,
+      7626,
+      7635,
+      7703
     ],
     "resistances": [
-      7625,
-      7626,
-      7645,
-      7649,
-      7665,
-      7677,
-      7686,
-      7703
+      7698,
+      7703,
+      7712,
+      7739,
+      7755,
+      7771,
+      7803
     ],
     "key_levels": [
-      7575,
-      7616,
-      7677,
-      7703
+      7495,
+      7703,
+      7739,
+      7755,
+      7771,
+      7803
     ],
-    "notes": "Mode-1 red Friday. Bear case: 7703 failure overnight lost 7677-7803 range. Sold through 7616\u21927585. 7575 reclaim triggered late-day rip (+45); next 7626, 7665. 7665/7677 must recover for sustained green. Typical Mode-1: more upside Sun/Mon.",
+    "notes": "Midterm elevator-down swept July 31 low 7495 to 7490 \u2192 Failed Breakdown long \u2192 +245 to tag 7739 (final Wed target). Supports 7635/7626. Next 7755/7771/7803. Desk: protect profits / ride runner; sidelined for new risk unless fresh elevator-down FBD. Substack paid \u2014 public X only.",
     "post_urls": [
-      "https://x.com/SRC_LEVELS_A/status/2116132688973222177",
-      "https://x.com/SRC_LEVELS_A/status/2116132801263088015",
-      "https://x.com/SRC_LEVELS_A/status/2116154097632231918",
-      "https://x.com/SRC_LEVELS_A/status/2116171917829046725",
-      "https://x.com/SRC_LEVELS_A/status/2116194902153588895",
-      "https://x.com/SRC_LEVELS_A/status/2116215360386969722",
-      "https://x.com/SRC_LEVELS_A/status/2116219871159845302",
-      "https://x.com/SRC_LEVELS_A/status/2116229421434822826",
-      "https://x.com/SRC_LEVELS_A/status/2116234097253285971",
-      "https://x.com/SRC_LEVELS_A/status/2116246333350982092",
-      "https://x.com/SRC_LEVELS_A/status/2116270461663252837"
+      "https://x.com/SRC_LEVELS_A/status/2117963026292949232",
+      "https://x.com/SRC_LEVELS_A/status/2117979723095794168",
+      "https://x.com/SRC_LEVELS_A/status/2117999143562191359",
+      "https://x.com/SRC_LEVELS_A/status/2118018202685026812",
+      "https://x.com/SRC_LEVELS_A/status/2118027178113736858",
+      "https://x.com/SRC_LEVELS_A/status/2118048942739145130"
     ]
   }
 }

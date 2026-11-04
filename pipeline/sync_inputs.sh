@@ -32,6 +32,12 @@ if [ -d "$IN/bento" ]; then
   mkdir -p "$DESK/xnews/bento"
   cp -a "$IN/bento/"*.md "$DESK/xnews/bento/" 2>/dev/null || true
   copy_if "$IN/bento/ledger.json" "$DESK/xnews/bento/ledger.json"
+  # same-day intraday sidecars for ledger_parse (intraday_YYYY-MM-DD.json)
+  shopt -s nullglob
+  for f in "$IN/bento"/intraday_*.json; do
+    cp -a "$f" "$DESK/xnews/bento/"
+  done
+  shopt -u nullglob
 fi
 
 # mancini

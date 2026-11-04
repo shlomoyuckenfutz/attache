@@ -1,284 +1,273 @@
 {
- "asof_pt": "2026-11-01",
- "note": "Consolidated sweep list from pipeline/desk handle JSONs, sources.json, memory/transcripts. KTTECHPRIVATE parked — excluded. sources.json Smash → @smashelito. Newswire separate.",
- "parked": [
-  "KTTECHPRIVATE"
- ],
- "newswire": [
-  "axios",
-  "FirstSquawk"
- ],
- "levels": [
-  "Basssem666",
-  "GAndersonTrades",
-  "TraderJonesy",
-  "SRC_PLAN_B",
-  "TradeSniperSara",
-  "FlowbyBobby",
-  "SuperLuckeee",
-  "QuantData",
-  "unusual_whales",
-  "SRC_LEVELS_A",
-  "market_sleuth",
-  "yuriymatso",
-  "CheddarFlow",
-  "VoltickIO",
-  "PatternProfits",
-  "CheddaFreeze",
-  "Tradytics",
-  "OptionKing33996",
-  "uga1018",
-  "_Shark_Trading",
-  "KCTrades777",
-  "stockdatamarket",
-  "SRC_LEDGER",
-  "GEXEdgeIO",
-  "smashelito"
- ],
- "all": [
-  "Basssem666",
-  "GAndersonTrades",
-  "TraderJonesy",
-  "SRC_PLAN_B",
-  "TradeSniperSara",
-  "FlowbyBobby",
-  "SuperLuckeee",
-  "QuantData",
-  "unusual_whales",
-  "SRC_LEVELS_A",
-  "market_sleuth",
-  "yuriymatso",
-  "CheddarFlow",
-  "VoltickIO",
-  "PatternProfits",
-  "CheddaFreeze",
-  "Tradytics",
-  "OptionKing33996",
-  "uga1018",
-  "_Shark_Trading",
-  "KCTrades777",
-  "stockdatamarket",
-  "SRC_LEDGER",
-  "GEXEdgeIO",
-  "axios",
-  "FirstSquawk",
-  "smashelito"
- ],
- "provenance": {
-  "Basssem666": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
+  "asof_pt": "2026-11-04",
+  "note": "Consolidated sweep list from pipeline/desk handle JSONs, sources.json, memory/transcripts. KTTECHPRIVATE parked \u2014 excluded. sources.json Smash \u2192 @smashelito. Newswire separate.",
+  "parked": [
+    "KTTECHPRIVATE"
   ],
-  "GAndersonTrades": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
+  "newswire": [
+    "axios",
+    "FirstSquawk"
   ],
-  "TraderJonesy": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
+  "levels": [
+    "Basssem666",
+    "GAndersonTrades",
+    "TraderJonesy",
+    "SRC_PLAN_B",
+    "TradeSniperSara",
+    "FlowbyBobby",
+    "SuperLuckeee",
+    "QuantData",
+    "unusual_whales",
+    "SRC_LEVELS_A",
+    "market_sleuth",
+    "yuriymatso",
+    "CheddarFlow",
+    "VoltickIO",
+    "PatternProfits",
+    "CheddaFreeze",
+    "Tradytics",
+    "OptionKing33996",
+    "uga1018",
+    "_Shark_Trading",
+    "KCTrades777",
+    "stockdatamarket",
+    "SRC_LEDGER",
+    "GEXEdgeIO",
+    "smashelito"
   ],
-  "SRC_PLAN_B": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
+  "all": [
+    "Basssem666",
+    "GAndersonTrades",
+    "TraderJonesy",
+    "SRC_PLAN_B",
+    "TradeSniperSara",
+    "FlowbyBobby",
+    "SuperLuckeee",
+    "QuantData",
+    "unusual_whales",
+    "SRC_LEVELS_A",
+    "market_sleuth",
+    "yuriymatso",
+    "CheddarFlow",
+    "VoltickIO",
+    "PatternProfits",
+    "CheddaFreeze",
+    "Tradytics",
+    "OptionKing33996",
+    "uga1018",
+    "_Shark_Trading",
+    "KCTrades777",
+    "stockdatamarket",
+    "SRC_LEDGER",
+    "GEXEdgeIO",
+    "axios",
+    "FirstSquawk",
+    "smashelito"
   ],
-  "TradeSniperSara": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
-  ],
-  "FlowbyBobby": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
-  ],
-  "SuperLuckeee": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
-  ],
-  "QuantData": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
-  ],
-  "unusual_whales": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
-  ],
-  "SRC_LEVELS_A": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
-  ],
-  "market_sleuth": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
-  ],
-  "yuriymatso": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029",
-   "bak-1650"
-  ],
-  "CheddarFlow": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "VoltickIO": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "PatternProfits": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "CheddaFreeze": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "Tradytics": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "OptionKing33996": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "uga1018": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "_Shark_Trading": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "KCTrades777": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles",
-   "backups-2029"
-  ],
-  "stockdatamarket": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles"
-  ],
-  "SRC_LEDGER": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles"
-  ],
-  "GEXEdgeIO": [
-   "orb-inputs-handles",
-   "orb-desk-handles",
-   "desk-handles"
-  ],
-  "axios": [
-   "newswire-inputs",
-   "newswire-desk",
-   "newswire-orb"
-  ],
-  "FirstSquawk": [
-   "newswire-inputs",
-   "newswire-desk",
-   "newswire-orb"
-  ],
-  "smashelito": [
-   "sources.json Smash (resolved via desk smash analysis + X lookup)"
-  ]
- },
- "last_sweep_pt": "2026-11-02 20:27 PT",
- "sweep_status": {
-  "covered": [
-   "Basssem666",
-   "GAndersonTrades",
-   "TraderJonesy",
-   "SRC_PLAN_B",
-   "TradeSniperSara",
-   "FlowbyBobby",
-   "SuperLuckeee",
-   "QuantData",
-   "unusual_whales",
-   "SRC_LEVELS_A",
-   "market_sleuth",
-   "yuriymatso",
-   "CheddarFlow",
-   "VoltickIO",
-   "PatternProfits",
-   "CheddaFreeze",
-   "Tradytics",
-   "OptionKing33996",
-   "uga1018",
-   "_Shark_Trading",
-   "KCTrades777",
-   "stockdatamarket",
-   "SRC_LEDGER",
-   "GEXEdgeIO",
-   "axios",
-   "FirstSquawk",
-   "smashelito"
-  ],
-  "parked_excluded": [
-   "KTTECHPRIVATE"
-  ],
-  "failed": [],
-  "no_new_plan_posts": [
-   "TradeSniperSara",
-   "PatternProfits",
-   "KCTrades777",
-   "market_sleuth",
-   "SuperLuckeee",
-   "QuantData",
-   "unusual_whales",
-   "Tradytics",
-   "FlowbyBobby",
-   "axios"
-  ],
-  "note": "Evening full sweep Mon 11/2 ~8:25 PM PT. Fresh: Smash Tue 7600 plan (image), Mancini 7595/7634-36, Bassem SPY/QQQ chart levels, Cheddar put sweeps, Voltick scorecard, GEXEdge midday GEX, OptionKing SPX, yuriy NQ 27200, Wire overnight Asia + midterms. PatternProfits: no posts in window."
- }
+  "provenance": {
+    "Basssem666": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "GAndersonTrades": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "TraderJonesy": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "SRC_PLAN_B": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "TradeSniperSara": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "FlowbyBobby": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "SuperLuckeee": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "QuantData": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "unusual_whales": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "SRC_LEVELS_A": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "market_sleuth": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "yuriymatso": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029",
+      "bak-1650"
+    ],
+    "CheddarFlow": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "VoltickIO": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "PatternProfits": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "CheddaFreeze": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "Tradytics": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "OptionKing33996": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "uga1018": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "_Shark_Trading": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "KCTrades777": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles",
+      "backups-2029"
+    ],
+    "stockdatamarket": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles"
+    ],
+    "SRC_LEDGER": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles"
+    ],
+    "GEXEdgeIO": [
+      "orb-inputs-handles",
+      "orb-desk-handles",
+      "desk-handles"
+    ],
+    "axios": [
+      "newswire-inputs",
+      "newswire-desk",
+      "newswire-orb"
+    ],
+    "FirstSquawk": [
+      "newswire-inputs",
+      "newswire-desk",
+      "newswire-orb"
+    ],
+    "smashelito": [
+      "sources.json Smash (resolved via desk smash analysis + X lookup)"
+    ]
+  },
+  "last_sweep_pt": "2026-11-04 11:31 PT",
+  "sweep_status": {
+    "pulled": [
+      "SRC_LEVELS_A",
+      "Basssem666",
+      "CheddaFreeze",
+      "CheddarFlow",
+      "FirstSquawk",
+      "FlowbyBobby",
+      "GAndersonTrades",
+      "GEXEdgeIO",
+      "KCTrades777",
+      "SRC_LEDGER",
+      "OptionKing33996",
+      "PatternProfits",
+      "QuantData",
+      "SRC_PLAN_B",
+      "SuperLuckeee",
+      "TradeSniperSara",
+      "TraderJonesy",
+      "Tradytics",
+      "VoltickIO",
+      "_Shark_Trading",
+      "axios",
+      "market_sleuth",
+      "smashelito",
+      "stockdatamarket",
+      "uga1018",
+      "unusual_whales",
+      "yuriymatso"
+    ],
+    "parked": [
+      "KTTECHPRIVATE"
+    ],
+    "voltick": "public X + free /levels meta (full interactive board needs browser login \u2014 skipped)",
+    "mancini_substack": "paid \u2014 used public X only",
+    "bento_night_ledger": "latest saved 2026-11-03; 11/4 post-close not out at sweep time"
+  }
 }
