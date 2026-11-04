@@ -1,6 +1,7 @@
 {
   "symbol": "SPY",
   "levels": [
+    776.38,
     773.38,
     772.42,
     771.22,
@@ -21,6 +22,7 @@
     757.12,
     757.0,
     756.41,
+    756.33,
     755.28,
     754.6,
     754.07,
@@ -46,5 +48,5 @@
   "break_hold_bars": 2,
   "near_pts": 0.1,
   "lookback_days": 30,
-  "note": "Synced from spy_dark_pool.json \u2014 current+prior Dark Pool levels"
+  "note": "Synced from spy_dark_pool.json \u2014 current+prior Dark Pool levels (post-close 2026-11-04)"
 }
