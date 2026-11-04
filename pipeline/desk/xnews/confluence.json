@@ -1,11 +1,11 @@
 {
- "date": "2026-11-03",
- "updated_pt": "2026-11-04 19:30 PT",
+ "date": "2026-11-04",
+ "updated_pt": "2026-11-04 19:36 PT",
  "spot": {
-  "SPY": 768.29,
-  "SPX": 7707.7,
-  "QQQ": 715.85,
-  "asof_et": "2026-11-04 14:14:00-05:00"
+  "SPY": 768.26,
+  "SPX": 7707.4,
+  "QQQ": 715.82,
+  "asof_et": "2026-11-04 14:20:00-05:00"
  },
  "ratios": {
   "SPY": 1.0,
@@ -36,115 +36,19 @@
       "raw_price": "800",
       "native": "SPY",
       "converted": false,
-      "kind": "Call Wall",
-      "scope": "far",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 793.41,
-    "lo": 793.41,
-    "hi": 793.41,
-    "n_sources": 1,
-    "weight": 1.0,
-    "types": [
-     "GEX"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "789.22-797.60",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Nov implied move upper",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 781.62,
-    "lo": 781.62,
-    "hi": 781.62,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "781.62",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Oct 6 high",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 779.29,
-    "lo": 779.29,
-    "hi": 779.29,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "779.29",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Resistance",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 775.5,
-    "lo": 775.5,
-    "hi": 775.5,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "775-776",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Sustained reclaim weakens bearish setup",
+      "kind": "Ceiling",
       "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 774.39,
-    "lo": 774.39,
-    "hi": 774.39,
+    "price": 775.0,
+    "lo": 775.0,
+    "hi": 775.0,
     "n_sources": 1,
     "weight": 1.0,
     "types": [
@@ -152,660 +56,319 @@
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "772.32-776.47",
+      "handle": "CheddarFlow",
+      "raw_price": "775",
       "native": "SPY",
       "converted": false,
-      "kind": "Weekly implied move upper",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
+      "kind": "Major resistance / GEX node",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 770.7,
-    "lo": 770.4,
-    "hi": 771.0,
+    "price": 770.0,
+    "lo": 770.0,
+    "hi": 770.0,
+    "n_sources": 3,
+    "weight": 2.3,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "770",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Call wall (largest +GEX node)",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "770",
+      "native": "SPY",
+      "converted": false,
+      "kind": "GEX cluster ceiling / BOSS",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "770",
+      "native": "SPY",
+      "converted": false,
+      "kind": "0DTE — no puts until here",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 769.08,
+    "lo": 768.61,
+    "hi": 769.55,
     "n_sources": 2,
-    "weight": 1.8,
+    "weight": 1.5,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "QuantData",
+      "raw_price": "768.61",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Dark pool — unable to hold above",
+      "scope": "near",
+      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "posted_pt": "2026-11-04 10:42",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "769.55",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Fri dark pool — furthest make",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 767.0,
+    "lo": 767.0,
+    "hi": 767.12,
+    "n_sources": 4,
+    "weight": 3.8,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Neg GEX pocket",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Pin magnet",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Volt (today)",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
+      "age_days": 1
+     },
+     {
+      "handle": "QuantData",
+      "raw_price": "767.12",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Dark pool",
+      "scope": "near",
+      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "posted_pt": "2026-11-04 10:42",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 765.07,
+    "lo": 765.0,
+    "hi": 766.0,
+    "n_sources": 4,
+    "weight": 3.3,
     "types": [
      "GEX",
      "TA"
     ],
     "sources": [
      {
+      "handle": "CheddarFlow",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": false,
+      "kind": "High OI node",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Put wall (lost)",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Death-cross / 20-50DMA reclaim watch",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
+      "age_days": 1
+     },
+     {
       "handle": "VoltickIO",
-      "raw_price": "770.4",
+      "raw_price": "765.14",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Gamma Flip (open card)",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117989110216532249",
+      "posted_pt": "2026-11-04 06:35",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "765.3",
       "native": "SPY",
       "converted": false,
       "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      },
      {
-      "handle": "Basssem666",
-      "raw_price": "771",
+      "handle": "GEXEdgeIO",
+      "raw_price": "766",
       "native": "SPY",
       "converted": false,
-      "kind": "Preferred short on rally rejection",
+      "kind": "Call wall",
       "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 769.0,
-    "lo": 768.99,
-    "hi": 769.0,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "716-717",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "20-wk SMA reclaim for durable bottom",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "767-771",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Put zone if up first",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
     ],
     "conflicts": [
-     "Basssem666: 716-717, 767-771"
+     "GEXEdgeIO: 765, 766",
+     "VoltickIO: 765.14, 765.3"
     ]
    },
    {
-    "price": 764.75,
-    "lo": 764.33,
-    "hi": 765.0,
-    "n_sources": 3,
-    "weight": 2.8,
+    "price": 763.14,
+    "lo": 763.14,
+    "hi": 763.14,
+    "n_sources": 1,
+    "weight": 1.0,
     "types": [
      "GEX"
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "763.37-765.28",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Daily implied move upper",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     },
-     {
-      "handle": "Tradytics",
-      "raw_price": "764.51",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Gamma level 12.93B [image]",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     },
-     {
       "handle": "VoltickIO",
-      "raw_price": "765",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Volt",
+      "raw_price": "7656",
+      "native": "SPX",
+      "converted": true,
+      "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "765",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Volt / Put Wall",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
+      "post_url": "https://x.com/VoltickIO/status/2118010420422455398",
+      "posted_pt": "2026-11-04 08:00",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 763.34,
-    "lo": 763.07,
-    "hi": 764.0,
-    "n_sources": 3,
-    "weight": 1.7,
-    "types": [
-     "DP",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "763.07",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Resistance (rejected Mon)",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "763.34",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Dark pool (10/23) — Mon rejection",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "764",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Call target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 762.13,
-    "lo": 762.0,
-    "hi": 762.76,
-    "n_sources": 4,
-    "weight": 2.5,
-    "types": [
-     "DP",
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "762",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Call target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "762",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Pin magnet (+$373M midday)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "762.27",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Dark pool line in sand",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2115928352964133024",
-      "posted_pt": "2026-10-29 15:06",
-      "age_days": 1
-     },
-     {
-      "handle": "Tradytics",
-      "raw_price": "762.762",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Gamma level 9.64B [image]",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 760.86,
-    "lo": 760.74,
-    "hi": 760.98,
+    "price": 760.5,
+    "lo": 760.0,
+    "hi": 761.0,
     "n_sources": 2,
     "weight": 1.6,
     "types": [
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "760",
+      "native": "SPY",
+      "converted": false,
+      "kind": "GEX cluster floor",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     },
      {
       "handle": "Tradytics",
-      "raw_price": "760.74",
+      "raw_price": "761",
       "native": "SPY",
       "converted": false,
-      "kind": "Gamma level 6.38B [image]",
+      "kind": "Positive gamma level (overnight reclaim)",
       "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "709.04",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Chart bounce shelf",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
+      "post_url": "https://x.com/Tradytics/status/2117970667547009103",
+      "posted_pt": "2026-11-04 05:22",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 760.0,
-    "lo": 759.33,
-    "hi": 760.12,
-    "n_sources": 7,
-    "weight": 5.3,
+    "price": 758.88,
+    "lo": 758.88,
+    "hi": 758.88,
+    "n_sources": 1,
+    "weight": 0.8,
     "types": [
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
-     {
-      "handle": "GAndersonTrades",
-      "raw_price": "705-710",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Upside target (NQ 29,180)",
-      "scope": "far",
-      "post_url": "https://x.com/GAndersonTrades/status/2117059608028258311",
-      "posted_pt": "2026-11-01 17:01",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "759.50",
-      "native": "SPY",
-      "converted": false,
-      "kind": "100DMA relief-bounce target",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Neg GEX node [image]",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Put Wall lost",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Lost level / resistance",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116947251385733559",
-      "posted_pt": "2026-11-01 09:35",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Calls above → 762/764",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
      {
       "handle": "GEXEdgeIO",
-      "raw_price": "760",
+      "raw_price": "758.88",
       "native": "SPY",
       "converted": false,
-      "kind": "Call wall (midday; later lost)",
+      "kind": "Gamma flip",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "759.23-761.01",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Tue daily implied high",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 758.39,
-    "lo": 758.17,
-    "hi": 759.0,
-    "n_sources": 4,
-    "weight": 2.4,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "758.17",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Chart resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "758.17",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Broken support → resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "758.22",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Gamma flip (midday)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "7610",
-      "native": "SPX",
-      "converted": true,
-      "kind": "Calls above → 7620",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117328493482799560",
-      "posted_pt": "2026-11-02 10:50",
-      "age_days": 1
-     },
-     {
-      "handle": "uga1018",
-      "raw_price": "758.70",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Mon reclaim for bulls",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "759",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Put wall (midday)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "GEXEdgeIO: 758.22, 759"
-    ]
-   },
-   {
-    "price": 757.0,
-    "lo": 757.0,
-    "hi": 757.0,
-    "n_sources": 2,
-    "weight": 1.2,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "757",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Weekly 20 SMA reclaim watch",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "757",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Puts below → 755/753",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 756.09,
-    "lo": 755.62,
-    "hi": 756.56,
-    "n_sources": 2,
-    "weight": 0.9,
-    "types": [
-     "DP",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "755.62",
-      "native": "SPY",
-      "converted": false,
-      "kind": "New 2B dark pool — likely temp ceiling",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "7590",
-      "native": "SPX",
-      "converted": true,
-      "kind": "Puts below → 7580",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117328493482799560",
-      "posted_pt": "2026-11-02 10:50",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 755.0,
-    "lo": 754.06,
-    "hi": 755.0,
-    "n_sources": 4,
-    "weight": 2.9,
-    "types": [
-     "DP",
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "754.05-754.07",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Double dark pool — last candle rejected",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "754.07",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Double dark pool",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
-      "posted_pt": "2026-10-30 10:53",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Neg GEX node [image]",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next put strike",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Put target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "SRC_LEDGER: 754.05-754.07, 754.07"
-    ]
-   },
-   {
-    "price": 753.0,
-    "lo": 753.0,
-    "hi": 753.07,
-    "n_sources": 3,
-    "weight": 1.8,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Tradytics",
-      "raw_price": "753",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next if can't hold 755",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2116225625761714286",
-      "posted_pt": "2026-10-30 10:48",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "753",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Put target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddaFreeze",
-      "raw_price": "753.07",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Phantom / gamma step",
-      "scope": "near",
-      "post_url": "https://x.com/CheddaFreeze/status/2116216040283939072",
-      "posted_pt": "2026-10-30 10:09",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
     ],
@@ -813,371 +376,8 @@
    },
    {
     "price": 750.0,
-    "lo": 749.4,
-    "hi": 750.28,
-    "n_sources": 8,
-    "weight": 6.3,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_PLAN_B",
-      "raw_price": "749.4",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next large support",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_PLAN_B/status/2116229933206995455",
-      "posted_pt": "2026-10-30 11:05",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "749.83",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Key support / Sep launch line",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "749.83",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Key support",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Floor / Neg GEX [image]",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next put strike",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
-      "age_days": 1
-     },
-     {
-      "handle": "SuperLuckeee",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Double bottom key support (Fri low 750.36)",
-      "scope": "near",
-      "post_url": "https://x.com/SuperLuckeee/status/2117234753862840482",
-      "posted_pt": "2026-11-02 04:37",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Lose → 741 risk-off point",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Put wall >-1B / expected short-term bottom",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "750.24",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Chart support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "750.24",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "699.07",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "Basssem666: 699.07, 750.24"
-    ]
-   },
-   {
-    "price": 747.42,
-    "lo": 747.12,
-    "hi": 747.73,
-    "n_sources": 2,
-    "weight": 1.8,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "746.16-748.07",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Daily implied move lower",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "747.73",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Lower support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 746.69,
-    "lo": 746.0,
-    "hi": 746.77,
-    "n_sources": 3,
-    "weight": 1.9,
-    "types": [
-     "DP",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "747-745",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Potential long if defended",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddaFreeze",
-      "raw_price": "746.69",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next downside cluster after 750",
-      "scope": "near",
-      "post_url": "https://x.com/CheddaFreeze/status/2116245383714369675",
-      "posted_pt": "2026-10-30 12:06",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "746.77",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Air pocket target if 754 fails",
-      "scope": "far",
-      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
-      "posted_pt": "2026-10-30 10:53",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 745.0,
-    "lo": 744.08,
-    "hi": 745.0,
-    "n_sources": 3,
-    "weight": 2.2,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "744.97-743.19",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Tue daily implied low",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "692.69-695.59",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Tue daily implied high",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     },
-     {
-      "handle": "uga1018",
-      "raw_price": "745",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next if lows lost",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "745",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Call zone if it holds",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "TraderJonesy: 692.69-695.59, 744.97-743.19"
-    ]
-   },
-   {
-    "price": 742.7,
-    "lo": 742.7,
-    "hi": 742.7,
-    "n_sources": 1,
-    "weight": 0.4,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "uga1018",
-      "raw_price": "692",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Mon reclaim for bulls",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 740.48,
-    "lo": 740.48,
-    "hi": 740.48,
-    "n_sources": 1,
-    "weight": 0.5,
-    "types": [
-     "DP"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "740.48",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next dark pool below",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 739.5,
-    "lo": 739.0,
-    "hi": 740.0,
-    "n_sources": 2,
-    "weight": 1.3,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "740-738",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next long zone if 745 fails",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "740",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Put wall >-1B",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 737.05,
-    "lo": 737.05,
-    "hi": 737.05,
+    "lo": 750.0,
+    "hi": 750.0,
     "n_sources": 1,
     "weight": 1.0,
     "types": [
@@ -1185,306 +385,38 @@
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "734.97-739.12",
+      "handle": "VoltickIO",
+      "raw_price": "750",
       "native": "SPY",
       "converted": false,
-      "kind": "Weekly implied move lower",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
+      "kind": "Floor",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 733.81,
-    "lo": 733.81,
-    "hi": 733.81,
+    "price": 76.55,
+    "lo": 76.55,
+    "hi": 76.55,
     "n_sources": 1,
     "weight": 0.8,
     "types": [
-     "TA"
+     "GEX"
     ],
     "sources": [
      {
-      "handle": "Basssem666",
-      "raw_price": "683.72",
-      "native": "QQQ",
+      "handle": "FlowbyBobby",
+      "raw_price": "768",
+      "native": "SPX",
       "converted": true,
-      "kind": "Chart support near Fri low",
+      "kind": "Heatmap break — below risks bulls",
       "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 730.03,
-    "lo": 730.03,
-    "hi": 730.03,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "680.20",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Support near MA200",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 729.2,
-    "lo": 729.0,
-    "hi": 730.0,
-    "n_sources": 2,
-    "weight": 1.3,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "729",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next support if 750 lost",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "729.20",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Next support",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "730",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Put wall >-1B / ~200DMA target",
-      "scope": "far",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "GEXEdgeIO: 729, 729.20"
-    ]
-   },
-   {
-    "price": 727.67,
-    "lo": 727.67,
-    "hi": 727.67,
-    "n_sources": 1,
-    "weight": 0.4,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "uga1018",
-      "raw_price": "678",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Next if lows lost",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 726.0,
-    "lo": 726.0,
-    "hi": 726.0,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "726",
-      "native": "SPY",
-      "converted": false,
-      "kind": "200 DMA",
-      "scope": "far",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 720.0,
-    "lo": 720.0,
-    "hi": 720.0,
-    "n_sources": 1,
-    "weight": 0.5,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SuperLuckeee",
-      "raw_price": "720",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Dip-buy area",
-      "scope": "far",
-      "post_url": "https://x.com/SuperLuckeee/status/2116950605214155120",
-      "posted_pt": "2026-11-01 09:48",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 718.15,
-    "lo": 718.03,
-    "hi": 718.28,
-    "n_sources": 1,
-    "weight": 1.0,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "713.84-722.22",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Nov implied move lower",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "669.25",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Quarterly implied low",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "TraderJonesy: 669.25, 713.84-722.22"
-    ]
-   },
-   {
-    "price": 716.98,
-    "lo": 716.98,
-    "hi": 716.98,
-    "n_sources": 1,
-    "weight": 1.0,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "669.49-666.59",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Tue daily implied low",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 715.98,
-    "lo": 715.95,
-    "hi": 716.0,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "715.95",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Major support",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "716",
-      "native": "SPY",
-      "converted": false,
-      "kind": "Major support after 729",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "GEXEdgeIO: 715.95, 716"
-    ]
-   },
-   {
-    "price": 694.94,
-    "lo": 694.94,
-    "hi": 694.94,
-    "n_sources": 1,
-    "weight": 0.6,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GAndersonTrades",
-      "raw_price": "660-635",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Downside in play this month",
-      "scope": "far",
-      "post_url": "https://x.com/GAndersonTrades/status/2117059608028258311",
-      "posted_pt": "2026-11-01 17:01",
+      "post_url": "https://x.com/FlowbyBobby/status/2118050285612650989",
+      "posted_pt": "2026-11-04 10:38",
       "age_days": 1
      }
     ],
@@ -1507,19 +439,19 @@
       "raw_price": "800",
       "native": "SPY",
       "converted": true,
-      "kind": "Call Wall",
-      "scope": "far",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
+      "kind": "Ceiling",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 739.25,
-    "lo": 739.25,
-    "hi": 739.25,
+    "price": 722.1,
+    "lo": 722.1,
+    "hi": 722.1,
     "n_sources": 1,
     "weight": 1.0,
     "types": [
@@ -1527,1118 +459,245 @@
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "789.22-797.60",
+      "handle": "CheddarFlow",
+      "raw_price": "775",
       "native": "SPY",
       "converted": true,
-      "kind": "Nov implied move upper",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
+      "kind": "Major resistance / GEX node",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 728.27,
-    "lo": 728.27,
-    "hi": 728.27,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "781.62",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Oct 6 high",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 726.1,
-    "lo": 726.1,
-    "hi": 726.1,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "779.29",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Resistance",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 722.56,
-    "lo": 722.56,
-    "hi": 722.56,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "775-776",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Sustained reclaim weakens bearish setup",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 721.53,
-    "lo": 721.53,
-    "hi": 721.53,
-    "n_sources": 1,
-    "weight": 1.0,
-    "types": [
-     "GEX"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "772.32-776.47",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Weekly implied move upper",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 718.09,
-    "lo": 717.81,
-    "hi": 718.37,
-    "n_sources": 2,
-    "weight": 1.8,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "VoltickIO",
-      "raw_price": "770.4",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Gamma Flip",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "771",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Preferred short on rally rejection",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 716.5,
-    "lo": 716.5,
-    "hi": 716.51,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "716-717",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "20-wk SMA reclaim for durable bottom",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "767-771",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put zone if up first",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "Basssem666: 716-717, 767-771"
-    ]
-   },
-   {
-    "price": 712.78,
-    "lo": 712.32,
-    "hi": 712.78,
-    "n_sources": 2,
-    "weight": 1.8,
-    "types": [
-     "GEX"
-    ],
-    "sources": [
-     {
-      "handle": "Tradytics",
-      "raw_price": "764.51",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Gamma level 12.93B [image]",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "765",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Volt",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "765",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Volt / Put Wall",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 711.85,
-    "lo": 711.23,
-    "hi": 712.15,
+    "price": 717.44,
+    "lo": 717.44,
+    "hi": 717.44,
     "n_sources": 3,
-    "weight": 1.9,
-    "types": [
-     "DP",
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "763.34",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Dark pool (10/23) — Mon rejection",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "764",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Call target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "763.37-765.28",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Daily implied move upper",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 710.24,
-    "lo": 709.99,
-    "hi": 710.98,
-    "n_sources": 5,
-    "weight": 3.3,
-    "types": [
-     "DP",
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "762",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Call target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "762",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Pin magnet (+$373M midday)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "762.27",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Dark pool line in sand",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2115928352964133024",
-      "posted_pt": "2026-10-29 15:06",
-      "age_days": 1
-     },
-     {
-      "handle": "Tradytics",
-      "raw_price": "762.762",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Gamma level 9.64B [image]",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "763.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Resistance (rejected Mon)",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 708.93,
-    "lo": 708.81,
-    "hi": 709.04,
-    "n_sources": 2,
-    "weight": 1.6,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Tradytics",
-      "raw_price": "760.74",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Gamma level 6.38B [image]",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "709.04",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Chart bounce shelf",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 708.12,
-    "lo": 707.5,
-    "hi": 708.23,
-    "n_sources": 7,
-    "weight": 5.3,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GAndersonTrades",
-      "raw_price": "705-710",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Upside target (NQ 29,180)",
-      "scope": "far",
-      "post_url": "https://x.com/GAndersonTrades/status/2117059608028258311",
-      "posted_pt": "2026-11-01 17:01",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "759.50",
-      "native": "SPY",
-      "converted": true,
-      "kind": "100DMA relief-bounce target",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Neg GEX node [image]",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put Wall lost",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Lost level / resistance",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116947251385733559",
-      "posted_pt": "2026-11-01 09:35",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Calls above → 762/764",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Call wall (midday; later lost)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "759.23-761.01",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Tue daily implied high",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 706.62,
-    "lo": 706.42,
-    "hi": 707.19,
-    "n_sources": 4,
-    "weight": 2.4,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "758.17",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Chart resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "758.17",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Broken support → resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "758.22",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Gamma flip (midday)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "7610",
-      "native": "SPX",
-      "converted": true,
-      "kind": "Calls above → 7620",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117328493482799560",
-      "posted_pt": "2026-11-02 10:50",
-      "age_days": 1
-     },
-     {
-      "handle": "uga1018",
-      "raw_price": "758.70",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Mon reclaim for bulls",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "759",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put wall (midday)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "GEXEdgeIO: 758.22, 759"
-    ]
-   },
-   {
-    "price": 705.33,
-    "lo": 704.92,
-    "hi": 705.33,
-    "n_sources": 2,
-    "weight": 1.2,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "7590",
-      "native": "SPX",
-      "converted": true,
-      "kind": "Puts below → 7580",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117328493482799560",
-      "posted_pt": "2026-11-02 10:50",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "757",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Weekly 20 SMA reclaim watch",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "757",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Puts below → 755/753",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "OptionKing33996: 757, 7590"
-    ]
-   },
-   {
-    "price": 703.46,
-    "lo": 703.46,
-    "hi": 704.04,
-    "n_sources": 4,
-    "weight": 2.9,
-    "types": [
-     "DP",
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "VoltickIO",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Neg GEX node [image]",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next put strike",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "755.62",
-      "native": "SPY",
-      "converted": true,
-      "kind": "New 2B dark pool — likely temp ceiling",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 701.67,
-    "lo": 701.6,
-    "hi": 702.6,
-    "n_sources": 4,
     "weight": 2.3,
     "types": [
-     "DP",
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
-     {
-      "handle": "Tradytics",
-      "raw_price": "753",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next if can't hold 755",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2116225625761714286",
-      "posted_pt": "2026-10-30 10:48",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "753",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddaFreeze",
-      "raw_price": "753.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Phantom / gamma step",
-      "scope": "near",
-      "post_url": "https://x.com/CheddaFreeze/status/2116216040283939072",
-      "posted_pt": "2026-10-30 10:09",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "754.05-754.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Double dark pool — last candle rejected",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "754.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Double dark pool",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
-      "posted_pt": "2026-10-30 10:53",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "SRC_LEDGER: 754.05-754.07, 754.07"
-    ]
-   },
-   {
-    "price": 698.81,
-    "lo": 698.25,
-    "hi": 699.07,
-    "n_sources": 8,
-    "weight": 6.3,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_PLAN_B",
-      "raw_price": "749.4",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next large support",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_PLAN_B/status/2116229933206995455",
-      "posted_pt": "2026-10-30 11:05",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "749.83",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Key support / Sep launch line",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "749.83",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Key support",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Floor / Neg GEX [image]",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
      {
       "handle": "CheddarFlow",
-      "raw_price": "750",
+      "raw_price": "770",
       "native": "SPY",
       "converted": true,
-      "kind": "Next put strike",
+      "kind": "Call wall (largest +GEX node)",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
      {
-      "handle": "SuperLuckeee",
-      "raw_price": "750",
+      "handle": "GEXEdgeIO",
+      "raw_price": "770",
       "native": "SPY",
       "converted": true,
-      "kind": "Double bottom key support (Fri low 750.36)",
+      "kind": "GEX cluster ceiling / BOSS",
       "scope": "near",
-      "post_url": "https://x.com/SuperLuckeee/status/2117234753862840482",
-      "posted_pt": "2026-11-02 04:37",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Lose → 741 risk-off point",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
      {
       "handle": "SRC_LEDGER",
-      "raw_price": "750",
+      "raw_price": "770",
       "native": "SPY",
       "converted": true,
-      "kind": "Put wall >-1B / expected short-term bottom",
+      "kind": "0DTE — no puts until here",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "750.24",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Chart support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "750.24",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "699.07",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      }
     ],
-    "conflicts": [
-     "Basssem666: 699.07, 750.24"
-    ]
+    "conflicts": []
    },
    {
-    "price": 696.4,
-    "lo": 696.12,
-    "hi": 696.69,
+    "price": 716.58,
+    "lo": 716.14,
+    "hi": 717.02,
     "n_sources": 2,
-    "weight": 1.8,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "746.16-748.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Daily implied move lower",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "747.73",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Lower support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 695.72,
-    "lo": 695.08,
-    "hi": 695.8,
-    "n_sources": 3,
-    "weight": 1.9,
-    "types": [
-     "DP",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "747-745",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Potential long if defended",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddaFreeze",
-      "raw_price": "746.69",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next downside cluster after 750",
-      "scope": "near",
-      "post_url": "https://x.com/CheddaFreeze/status/2116245383714369675",
-      "posted_pt": "2026-10-30 12:06",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "746.77",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Air pocket target if 754 fails",
-      "scope": "far",
-      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
-      "posted_pt": "2026-10-30 10:53",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 694.14,
-    "lo": 693.29,
-    "hi": 694.15,
-    "n_sources": 3,
-    "weight": 2.2,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "744.97-743.19",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Tue daily implied low",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "692.69-695.59",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Tue daily implied high",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     },
-     {
-      "handle": "uga1018",
-      "raw_price": "745",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next if lows lost",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "745",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Call zone if it holds",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "TraderJonesy: 692.69-695.59, 744.97-743.19"
-    ]
-   },
-   {
-    "price": 692.0,
-    "lo": 692.0,
-    "hi": 692.0,
-    "n_sources": 1,
-    "weight": 0.4,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "uga1018",
-      "raw_price": "692",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Mon reclaim for bulls",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 689.93,
-    "lo": 689.93,
-    "hi": 689.93,
-    "n_sources": 1,
-    "weight": 0.5,
+    "weight": 1.5,
     "types": [
      "DP"
     ],
     "sources": [
      {
-      "handle": "SRC_LEDGER",
-      "raw_price": "740.48",
+      "handle": "QuantData",
+      "raw_price": "768.61",
       "native": "SPY",
       "converted": true,
-      "kind": "Next dark pool below",
+      "kind": "Dark pool — unable to hold above",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
+      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "posted_pt": "2026-11-04 10:42",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "769.55",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Fri dark pool — furthest make",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 689.02,
-    "lo": 688.56,
-    "hi": 689.49,
-    "n_sources": 2,
-    "weight": 1.3,
+    "price": 714.64,
+    "lo": 714.64,
+    "hi": 714.76,
+    "n_sources": 4,
+    "weight": 3.8,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Neg GEX pocket",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Pin magnet",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Volt (today)",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
+      "age_days": 1
+     },
+     {
+      "handle": "QuantData",
+      "raw_price": "767.12",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Dark pool",
+      "scope": "near",
+      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "posted_pt": "2026-11-04 10:42",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 712.85,
+    "lo": 712.78,
+    "hi": 713.71,
+    "n_sources": 4,
+    "weight": 3.3,
     "types": [
      "GEX",
      "TA"
     ],
     "sources": [
      {
-      "handle": "Basssem666",
-      "raw_price": "740-738",
+      "handle": "CheddarFlow",
+      "raw_price": "765",
       "native": "SPY",
       "converted": true,
-      "kind": "Next long zone if 745 fails",
+      "kind": "High OI node",
       "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Put wall (lost)",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
      {
       "handle": "SRC_LEDGER",
-      "raw_price": "740",
+      "raw_price": "765",
       "native": "SPY",
       "converted": true,
-      "kind": "Put wall >-1B",
+      "kind": "Death-cross / 20-50DMA reclaim watch",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "765.14",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Gamma Flip (open card)",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117989110216532249",
+      "posted_pt": "2026-11-04 06:35",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "765.3",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Gamma Flip",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "766",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Call wall",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
     ],
-    "conflicts": []
+    "conflicts": [
+     "GEXEdgeIO: 765, 766",
+     "VoltickIO: 765.14, 765.3"
+    ]
    },
    {
-    "price": 686.73,
-    "lo": 686.73,
-    "hi": 686.73,
+    "price": 711.05,
+    "lo": 711.05,
+    "hi": 711.05,
     "n_sources": 1,
     "weight": 1.0,
     "types": [
@@ -2646,280 +705,121 @@
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "734.97-739.12",
-      "native": "SPY",
+      "handle": "VoltickIO",
+      "raw_price": "7656",
+      "native": "SPX",
       "converted": true,
-      "kind": "Weekly implied move lower",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 683.72,
-    "lo": 683.72,
-    "hi": 683.72,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "683.72",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Chart support near Fri low",
+      "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
+      "post_url": "https://x.com/VoltickIO/status/2118010420422455398",
+      "posted_pt": "2026-11-04 08:00",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 679.8,
-    "lo": 679.24,
-    "hi": 680.2,
-    "n_sources": 3,
-    "weight": 2.1,
+    "price": 708.59,
+    "lo": 708.12,
+    "hi": 709.05,
+    "n_sources": 2,
+    "weight": 1.6,
     "types": [
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
      {
       "handle": "GEXEdgeIO",
-      "raw_price": "729",
+      "raw_price": "760",
       "native": "SPY",
       "converted": true,
-      "kind": "Next support if 750 lost",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "729.20",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next support",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "730",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put wall >-1B / ~200DMA target",
-      "scope": "far",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "680.20",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Support near MA200",
+      "kind": "GEX cluster floor",
       "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "GEXEdgeIO: 729, 729.20"
-    ]
-   },
-   {
-    "price": 678.0,
-    "lo": 678.0,
-    "hi": 678.0,
-    "n_sources": 1,
-    "weight": 0.4,
-    "types": [
-     "TA"
-    ],
-    "sources": [
+     },
      {
-      "handle": "uga1018",
-      "raw_price": "678",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Next if lows lost",
+      "handle": "Tradytics",
+      "raw_price": "761",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Positive gamma level (overnight reclaim)",
       "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
+      "post_url": "https://x.com/Tradytics/status/2117970667547009103",
+      "posted_pt": "2026-11-04 05:22",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 676.44,
-    "lo": 676.44,
-    "hi": 676.44,
+    "price": 707.08,
+    "lo": 707.08,
+    "hi": 707.08,
     "n_sources": 1,
     "weight": 0.8,
     "types": [
-     "TA"
+     "GEX"
     ],
     "sources": [
      {
-      "handle": "Basssem666",
-      "raw_price": "726",
+      "handle": "GEXEdgeIO",
+      "raw_price": "758.88",
       "native": "SPY",
       "converted": true,
-      "kind": "200 DMA",
-      "scope": "far",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
+      "kind": "Gamma flip",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 670.85,
-    "lo": 670.85,
-    "hi": 670.85,
-    "n_sources": 1,
-    "weight": 0.5,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SuperLuckeee",
-      "raw_price": "720",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Dip-buy area",
-      "scope": "far",
-      "post_url": "https://x.com/SuperLuckeee/status/2116950605214155120",
-      "posted_pt": "2026-11-01 09:48",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 669.13,
-    "lo": 669.02,
-    "hi": 669.25,
+    "price": 698.81,
+    "lo": 698.81,
+    "hi": 698.81,
     "n_sources": 1,
     "weight": 1.0,
     "types": [
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "713.84-722.22",
+      "handle": "VoltickIO",
+      "raw_price": "750",
       "native": "SPY",
       "converted": true,
-      "kind": "Nov implied move lower",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "669.25",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Quarterly implied low",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "TraderJonesy: 669.25, 713.84-722.22"
-    ]
-   },
-   {
-    "price": 667.13,
-    "lo": 667.08,
-    "hi": 668.04,
-    "n_sources": 2,
-    "weight": 1.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "715.95",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Major support",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "716",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Major support after 729",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "669.49-666.59",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Tue daily implied low",
+      "kind": "Floor",
       "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
     ],
-    "conflicts": [
-     "GEXEdgeIO: 715.95, 716"
-    ]
+    "conflicts": []
    },
    {
-    "price": 647.5,
-    "lo": 647.5,
-    "hi": 647.5,
+    "price": 71.33,
+    "lo": 71.33,
+    "hi": 71.33,
     "n_sources": 1,
-    "weight": 0.6,
+    "weight": 0.8,
     "types": [
-     "TA"
+     "GEX"
     ],
     "sources": [
      {
-      "handle": "GAndersonTrades",
-      "raw_price": "660-635",
-      "native": "QQQ",
-      "converted": false,
-      "kind": "Downside in play this month",
-      "scope": "far",
-      "post_url": "https://x.com/GAndersonTrades/status/2117059608028258311",
-      "posted_pt": "2026-11-01 17:01",
+      "handle": "FlowbyBobby",
+      "raw_price": "768",
+      "native": "SPX",
+      "converted": true,
+      "kind": "Heatmap break — below risks bulls",
+      "scope": "near",
+      "post_url": "https://x.com/FlowbyBobby/status/2118050285612650989",
+      "posted_pt": "2026-11-04 10:38",
       "age_days": 1
      }
     ],
@@ -2942,115 +842,19 @@
       "raw_price": "800",
       "native": "SPY",
       "converted": true,
-      "kind": "Call Wall",
-      "scope": "far",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7959.7,
-    "lo": 7959.7,
-    "hi": 7959.7,
-    "n_sources": 1,
-    "weight": 1.0,
-    "types": [
-     "GEX"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "789.22-797.60",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Nov implied move upper",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7841.42,
-    "lo": 7841.42,
-    "hi": 7841.42,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "781.62",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Oct 6 high",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7818.05,
-    "lo": 7818.05,
-    "hi": 7818.05,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "779.29",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Resistance",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7780.03,
-    "lo": 7780.03,
-    "hi": 7780.03,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "775-776",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Sustained reclaim weakens bearish setup",
+      "kind": "Ceiling",
       "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 7768.94,
-    "lo": 7768.94,
-    "hi": 7768.94,
+    "price": 7775.01,
+    "lo": 7775.01,
+    "hi": 7775.01,
     "n_sources": 1,
     "weight": 1.0,
     "types": [
@@ -3058,286 +862,296 @@
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "772.32-776.47",
+      "handle": "CheddarFlow",
+      "raw_price": "775",
       "native": "SPY",
       "converted": true,
-      "kind": "Weekly implied move upper",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
+      "kind": "Major resistance / GEX node",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 7731.87,
-    "lo": 7728.86,
-    "hi": 7734.88,
+    "price": 7724.85,
+    "lo": 7724.85,
+    "hi": 7724.85,
+    "n_sources": 3,
+    "weight": 2.3,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "770",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Call wall (largest +GEX node)",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "770",
+      "native": "SPY",
+      "converted": true,
+      "kind": "GEX cluster ceiling / BOSS",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "770",
+      "native": "SPY",
+      "converted": true,
+      "kind": "0DTE — no puts until here",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7715.62,
+    "lo": 7710.9,
+    "hi": 7720.33,
     "n_sources": 2,
-    "weight": 1.8,
+    "weight": 1.5,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "QuantData",
+      "raw_price": "768.61",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Dark pool — unable to hold above",
+      "scope": "near",
+      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "posted_pt": "2026-11-04 10:42",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "769.55",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Fri dark pool — furthest make",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7694.75,
+    "lo": 7694.75,
+    "hi": 7695.95,
+    "n_sources": 4,
+    "weight": 3.8,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddarFlow",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Neg GEX pocket",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Pin magnet",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "767",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Volt (today)",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
+      "age_days": 1
+     },
+     {
+      "handle": "QuantData",
+      "raw_price": "767.12",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Dark pool",
+      "scope": "near",
+      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "posted_pt": "2026-11-04 10:42",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7684.72,
+    "lo": 7684.72,
+    "hi": 7684.72,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "766",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Call wall",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7674.69,
+    "lo": 7674.69,
+    "hi": 7677.7,
+    "n_sources": 4,
+    "weight": 3.3,
     "types": [
      "GEX",
      "TA"
     ],
     "sources": [
      {
+      "handle": "CheddarFlow",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": true,
+      "kind": "High OI node",
+      "scope": "near",
+      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "posted_pt": "2026-11-04 10:04",
+      "age_days": 1
+     },
+     {
+      "handle": "GEXEdgeIO",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Put wall (lost)",
+      "scope": "near",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "765",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Death-cross / 20-50DMA reclaim watch",
+      "scope": "near",
+      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "posted_pt": "2026-11-04 10:03",
+      "age_days": 1
+     },
+     {
       "handle": "VoltickIO",
-      "raw_price": "770.4",
+      "raw_price": "765.14",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Gamma Flip (open card)",
+      "scope": "near",
+      "post_url": "https://x.com/VoltickIO/status/2117989110216532249",
+      "posted_pt": "2026-11-04 06:35",
+      "age_days": 1
+     },
+     {
+      "handle": "VoltickIO",
+      "raw_price": "765.3",
       "native": "SPY",
       "converted": true,
       "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "771",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Preferred short on rally rejection",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7714.77,
-    "lo": 7714.73,
-    "hi": 7714.82,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "716-717",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "20-wk SMA reclaim for durable bottom",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "767-771",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put zone if up first",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
     ],
     "conflicts": [
-     "Basssem666: 716-717, 767-771"
+     "VoltickIO: 765.14, 765.3"
     ]
    },
    {
-    "price": 7672.23,
-    "lo": 7667.91,
-    "hi": 7674.69,
-    "n_sources": 3,
-    "weight": 2.8,
+    "price": 7656.0,
+    "lo": 7656.0,
+    "hi": 7656.0,
+    "n_sources": 1,
+    "weight": 1.0,
     "types": [
      "GEX"
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "763.37-765.28",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Daily implied move upper",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     },
-     {
-      "handle": "Tradytics",
-      "raw_price": "764.51",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Gamma level 12.93B [image]",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     },
-     {
       "handle": "VoltickIO",
-      "raw_price": "765",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Volt",
+      "raw_price": "7656",
+      "native": "SPX",
+      "converted": false,
+      "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "765",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Volt / Put Wall",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
+      "post_url": "https://x.com/VoltickIO/status/2118010420422455398",
+      "posted_pt": "2026-11-04 08:00",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 7658.03,
-    "lo": 7655.32,
-    "hi": 7664.65,
-    "n_sources": 3,
-    "weight": 1.7,
+    "price": 7634.56,
+    "lo": 7634.56,
+    "hi": 7634.56,
+    "n_sources": 1,
+    "weight": 0.8,
     "types": [
-     "DP",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "763.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Resistance (rejected Mon)",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "763.34",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Dark pool (10/23) — Mon rejection",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "764",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Call target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7645.94,
-    "lo": 7644.59,
-    "hi": 7652.23,
-    "n_sources": 4,
-    "weight": 2.5,
-    "types": [
-     "DP",
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "762",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Call target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "762",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Pin magnet (+$373M midday)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "762.27",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Dark pool line in sand",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2115928352964133024",
-      "posted_pt": "2026-10-29 15:06",
-      "age_days": 1
-     },
-     {
-      "handle": "Tradytics",
-      "raw_price": "762.762",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Gamma level 9.64B [image]",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7633.18,
-    "lo": 7631.95,
-    "hi": 7634.41,
-    "n_sources": 2,
-    "weight": 1.6,
-    "types": [
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
      {
       "handle": "Tradytics",
-      "raw_price": "760.74",
+      "raw_price": "761",
       "native": "SPY",
       "converted": true,
-      "kind": "Gamma level 6.38B [image]",
+      "kind": "Positive gamma level (overnight reclaim)",
       "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117250432024404068",
-      "posted_pt": "2026-11-02 05:40",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "709.04",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Chart bounce shelf",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
+      "post_url": "https://x.com/Tradytics/status/2117970667547009103",
+      "posted_pt": "2026-11-04 05:22",
       "age_days": 1
      }
     ],
@@ -3345,373 +1159,47 @@
    },
    {
     "price": 7624.53,
-    "lo": 7617.82,
-    "hi": 7625.73,
-    "n_sources": 7,
-    "weight": 5.3,
+    "lo": 7624.53,
+    "hi": 7624.53,
+    "n_sources": 1,
+    "weight": 0.8,
     "types": [
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
-     {
-      "handle": "GAndersonTrades",
-      "raw_price": "705-710",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Upside target (NQ 29,180)",
-      "scope": "far",
-      "post_url": "https://x.com/GAndersonTrades/status/2117059608028258311",
-      "posted_pt": "2026-11-01 17:01",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "759.50",
-      "native": "SPY",
-      "converted": true,
-      "kind": "100DMA relief-bounce target",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Neg GEX node [image]",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put Wall lost",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Lost level / resistance",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116947251385733559",
-      "posted_pt": "2026-11-01 09:35",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "760",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Calls above → 762/764",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
      {
       "handle": "GEXEdgeIO",
       "raw_price": "760",
       "native": "SPY",
       "converted": true,
-      "kind": "Call wall (midday; later lost)",
+      "kind": "GEX cluster floor",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "759.23-761.01",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Tue daily implied high",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 7608.33,
-    "lo": 7606.17,
-    "hi": 7614.49,
-    "n_sources": 4,
-    "weight": 2.4,
+    "price": 7613.29,
+    "lo": 7613.29,
+    "hi": 7613.29,
+    "n_sources": 1,
+    "weight": 0.8,
     "types": [
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "758.17",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Chart resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "758.17",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Broken support → resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
      {
       "handle": "GEXEdgeIO",
-      "raw_price": "758.22",
+      "raw_price": "758.88",
       "native": "SPY",
       "converted": true,
-      "kind": "Gamma flip (midday)",
+      "kind": "Gamma flip",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "7610",
-      "native": "SPX",
-      "converted": false,
-      "kind": "Calls above → 7620",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117328493482799560",
-      "posted_pt": "2026-11-02 10:50",
-      "age_days": 1
-     },
-     {
-      "handle": "uga1018",
-      "raw_price": "758.70",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Mon reclaim for bulls",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "759",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put wall (midday)",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2117303494663373109",
-      "posted_pt": "2026-11-02 09:11",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "GEXEdgeIO: 758.22, 759"
-    ]
-   },
-   {
-    "price": 7594.43,
-    "lo": 7594.43,
-    "hi": 7594.43,
-    "n_sources": 2,
-    "weight": 1.2,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "757",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Weekly 20 SMA reclaim watch",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "757",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Puts below → 755/753",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7585.29,
-    "lo": 7580.58,
-    "hi": 7590.0,
-    "n_sources": 2,
-    "weight": 0.9,
-    "types": [
-     "DP",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "755.62",
-      "native": "SPY",
-      "converted": true,
-      "kind": "New 2B dark pool — likely temp ceiling",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "7590",
-      "native": "SPX",
-      "converted": false,
-      "kind": "Puts below → 7580",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117328493482799560",
-      "posted_pt": "2026-11-02 10:50",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7574.36,
-    "lo": 7564.93,
-    "hi": 7574.36,
-    "n_sources": 4,
-    "weight": 2.9,
-    "types": [
-     "DP",
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "754.05-754.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Double dark pool — last candle rejected",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "754.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Double dark pool",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
-      "posted_pt": "2026-10-30 10:53",
-      "age_days": 1
-     },
-     {
-      "handle": "VoltickIO",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Neg GEX node [image]",
-      "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next put strike",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "755",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "SRC_LEDGER: 754.05-754.07, 754.07"
-    ]
-   },
-   {
-    "price": 7554.3,
-    "lo": 7554.3,
-    "hi": 7555.0,
-    "n_sources": 3,
-    "weight": 1.8,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Tradytics",
-      "raw_price": "753",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next if can't hold 755",
-      "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2116225625761714286",
-      "posted_pt": "2026-10-30 10:48",
-      "age_days": 1
-     },
-     {
-      "handle": "OptionKing33996",
-      "raw_price": "753",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put target",
-      "scope": "near",
-      "post_url": "https://x.com/OptionKing33996/status/2117246621704716709",
-      "posted_pt": "2026-11-02 05:25",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddaFreeze",
-      "raw_price": "753.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Phantom / gamma step",
-      "scope": "near",
-      "post_url": "https://x.com/CheddaFreeze/status/2116216040283939072",
-      "posted_pt": "2026-10-30 10:09",
+      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
     ],
@@ -3719,680 +1207,47 @@
    },
    {
     "price": 7524.2,
-    "lo": 7518.18,
-    "hi": 7527.06,
-    "n_sources": 8,
-    "weight": 6.3,
+    "lo": 7524.2,
+    "hi": 7524.2,
+    "n_sources": 1,
+    "weight": 1.0,
     "types": [
-     "GEX",
-     "TA"
+     "GEX"
     ],
     "sources": [
-     {
-      "handle": "SRC_PLAN_B",
-      "raw_price": "749.4",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next large support",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_PLAN_B/status/2116229933206995455",
-      "posted_pt": "2026-10-30 11:05",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "749.83",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Key support / Sep launch line",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "749.83",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Key support",
-      "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
      {
       "handle": "VoltickIO",
       "raw_price": "750",
       "native": "SPY",
       "converted": true,
-      "kind": "Floor / Neg GEX [image]",
+      "kind": "Floor",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2116153316065603814",
-      "posted_pt": "2026-10-30 06:00",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddarFlow",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next put strike",
-      "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2116188394556387766",
-      "posted_pt": "2026-10-30 08:20",
-      "age_days": 1
-     },
-     {
-      "handle": "SuperLuckeee",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Double bottom key support (Fri low 750.36)",
-      "scope": "near",
-      "post_url": "https://x.com/SuperLuckeee/status/2117234753862840482",
-      "posted_pt": "2026-11-02 04:37",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Lose → 741 risk-off point",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "750",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put wall >-1B / expected short-term bottom",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "750.24",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Chart support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "750.24",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "699.07",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Resistance",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "Basssem666: 699.07, 750.24"
-    ]
-   },
-   {
-    "price": 7498.34,
-    "lo": 7495.26,
-    "hi": 7501.43,
-    "n_sources": 2,
-    "weight": 1.8,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "746.16-748.07",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Daily implied move lower",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "747.73",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Lower support",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
+      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
     ],
     "conflicts": []
    },
    {
-    "price": 7491.0,
-    "lo": 7484.07,
-    "hi": 7491.8,
-    "n_sources": 3,
-    "weight": 1.9,
-    "types": [
-     "DP",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "747-745",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Potential long if defended",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     },
-     {
-      "handle": "CheddaFreeze",
-      "raw_price": "746.69",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next downside cluster after 750",
-      "scope": "near",
-      "post_url": "https://x.com/CheddaFreeze/status/2116245383714369675",
-      "posted_pt": "2026-10-30 12:06",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "746.77",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Air pocket target if 754 fails",
-      "scope": "far",
-      "post_url": "https://x.com/SRC_LEDGER/status/2116226921981952097",
-      "posted_pt": "2026-10-30 10:53",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7474.01,
-    "lo": 7464.81,
-    "hi": 7474.04,
-    "n_sources": 3,
-    "weight": 2.2,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "744.97-743.19",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Tue daily implied low",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "692.69-695.59",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Tue daily implied high",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     },
-     {
-      "handle": "uga1018",
-      "raw_price": "745",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next if lows lost",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "745",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Call zone if it holds",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "TraderJonesy: 692.69-695.59, 744.97-743.19"
-    ]
-   },
-   {
-    "price": 7450.93,
-    "lo": 7450.93,
-    "hi": 7450.93,
-    "n_sources": 1,
-    "weight": 0.4,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "uga1018",
-      "raw_price": "692",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Mon reclaim for bulls",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7426.29,
-    "lo": 7423.88,
-    "hi": 7428.7,
-    "n_sources": 1,
-    "weight": 0.5,
-    "types": [
-     "DP",
-     "GEX"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "740",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put wall >-1B",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "740.48",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next dark pool below",
-      "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "SRC_LEDGER: 740, 740.48"
-    ]
-   },
-   {
-    "price": 7413.85,
-    "lo": 7413.85,
-    "hi": 7413.85,
+    "price": 768.0,
+    "lo": 768.0,
+    "hi": 768.0,
     "n_sources": 1,
     "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "740-738",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next long zone if 745 fails",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7394.23,
-    "lo": 7394.23,
-    "hi": 7394.23,
-    "n_sources": 1,
-    "weight": 1.0,
     "types": [
      "GEX"
     ],
     "sources": [
      {
-      "handle": "TraderJonesy",
-      "raw_price": "734.97-739.12",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Weekly implied move lower",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7361.78,
-    "lo": 7361.78,
-    "hi": 7361.78,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "683.72",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Chart support near Fri low",
+      "handle": "FlowbyBobby",
+      "raw_price": "768",
+      "native": "SPX",
+      "converted": false,
+      "kind": "Heatmap break — below risks bulls",
       "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117009367597724029",
-      "posted_pt": "2026-11-01 13:42",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7323.72,
-    "lo": 7323.56,
-    "hi": 7323.88,
-    "n_sources": 2,
-    "weight": 1.3,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SRC_LEDGER",
-      "raw_price": "730",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Put wall >-1B / ~200DMA target",
-      "scope": "far",
-      "post_url": "https://x.com/SRC_LEDGER/status/2117413770205049166",
-      "posted_pt": "2026-11-02 16:29",
-      "age_days": 1
-     },
-     {
-      "handle": "Basssem666",
-      "raw_price": "680.20",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Support near MA200",
-      "scope": "near",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7314.53,
-    "lo": 7313.52,
-    "hi": 7315.53,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "729",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next support if 750 lost",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "729.20",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Next support",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "GEXEdgeIO: 729, 729.20"
-    ]
-   },
-   {
-    "price": 7300.19,
-    "lo": 7300.19,
-    "hi": 7300.19,
-    "n_sources": 1,
-    "weight": 0.4,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "uga1018",
-      "raw_price": "678",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Next if lows lost",
-      "scope": "near",
-      "post_url": "https://x.com/uga1018/status/2116263809253794204",
-      "posted_pt": "2026-10-30 13:19",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7283.43,
-    "lo": 7283.43,
-    "hi": 7283.43,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "Basssem666",
-      "raw_price": "726",
-      "native": "SPY",
-      "converted": true,
-      "kind": "200 DMA",
-      "scope": "far",
-      "post_url": "https://x.com/Basssem666/status/2117416902867718215",
-      "posted_pt": "2026-11-02 16:41",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7223.23,
-    "lo": 7223.23,
-    "hi": 7223.23,
-    "n_sources": 1,
-    "weight": 0.5,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "SuperLuckeee",
-      "raw_price": "720",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Dip-buy area",
-      "scope": "far",
-      "post_url": "https://x.com/SuperLuckeee/status/2116950605214155120",
-      "posted_pt": "2026-11-01 09:48",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7204.72,
-    "lo": 7203.47,
-    "hi": 7205.98,
-    "n_sources": 1,
-    "weight": 1.0,
-    "types": [
-     "GEX",
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "713.84-722.22",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Nov implied move lower",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117044572274446530",
-      "posted_pt": "2026-11-01 16:02",
-      "age_days": 1
-     },
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "669.25",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Quarterly implied low",
-      "scope": "far",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "TraderJonesy: 669.25, 713.84-722.22"
-    ]
-   },
-   {
-    "price": 7192.95,
-    "lo": 7192.95,
-    "hi": 7192.95,
-    "n_sources": 1,
-    "weight": 1.0,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "TraderJonesy",
-      "raw_price": "669.49-666.59",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Tue daily implied low",
-      "scope": "near",
-      "post_url": "https://x.com/TraderJonesy/status/2117432380738650270",
-      "posted_pt": "2026-11-02 17:43",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   },
-   {
-    "price": 7182.85,
-    "lo": 7182.6,
-    "hi": 7183.11,
-    "n_sources": 1,
-    "weight": 0.8,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "715.95",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Major support",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944813291610536",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     },
-     {
-      "handle": "GEXEdgeIO",
-      "raw_price": "716",
-      "native": "SPY",
-      "converted": true,
-      "kind": "Major support after 729",
-      "scope": "far",
-      "post_url": "https://x.com/GEXEdgeIO/status/2116944817443709221",
-      "posted_pt": "2026-11-01 09:25",
-      "age_days": 1
-     }
-    ],
-    "conflicts": [
-     "GEXEdgeIO: 715.95, 716"
-    ]
-   },
-   {
-    "price": 6971.79,
-    "lo": 6971.79,
-    "hi": 6971.79,
-    "n_sources": 1,
-    "weight": 0.6,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "GAndersonTrades",
-      "raw_price": "660-635",
-      "native": "QQQ",
-      "converted": true,
-      "kind": "Downside in play this month",
-      "scope": "far",
-      "post_url": "https://x.com/GAndersonTrades/status/2117059608028258311",
-      "posted_pt": "2026-11-01 17:01",
+      "post_url": "https://x.com/FlowbyBobby/status/2118050285612650989",
+      "posted_pt": "2026-11-04 10:38",
       "age_days": 1
      }
     ],
@@ -4401,31 +1256,6 @@
   ]
  },
  "native_only": {
-  "NQ": [
-   {
-    "price": 27200.0,
-    "lo": 27200.0,
-    "hi": 27200.0,
-    "n_sources": 1,
-    "weight": 0.7,
-    "types": [
-     "TA"
-    ],
-    "sources": [
-     {
-      "handle": "yuriymatso",
-      "raw_price": "27200",
-      "native": "NQ",
-      "converted": false,
-      "kind": "Next obvious support (else March low 23500)",
-      "scope": "far",
-      "post_url": "https://x.com/yuriymatso/status/2117312110736920970",
-      "posted_pt": "2026-11-02 09:45",
-      "age_days": 1
-     }
-    ],
-    "conflicts": []
-   }
-  ]
+  "NQ": []
  }
 }

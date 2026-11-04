@@ -6,6 +6,7 @@
     771.22,
     770.33,
     769.73,
+    769.55,
     769.45,
     768.61,
     767.41,
@@ -45,5 +46,5 @@
   "break_hold_bars": 2,
   "near_pts": 0.1,
   "lookback_days": 30,
-  "note": "Synced from site spy_dark_pool.json \u2014 current+prior Dark Pool levels"
+  "note": "Synced from spy_dark_pool.json \u2014 current+prior Dark Pool levels"
 }

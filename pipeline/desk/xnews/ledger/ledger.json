@@ -240,6 +240,27 @@
   "rate": 60.0
  },
  "built": "2026-11-04",
- "intraday": [],
- "intraday_date": null
+ "intraday": [
+  {
+   "pt": "2026-11-04 10:03 PT",
+   "text": "0DTE GEX: no puts for SPY until 770; furthest make ~769.55 Fri dark pool."
+  },
+  {
+   "pt": "2026-11-04 ~09:39 PT",
+   "text": "VIX crush is a primary fuel for the rip \u2014 election result accepted without challenge rhetoric."
+  },
+  {
+   "pt": "2026-11-04 ~09:47 PT",
+   "text": "Dem Congress mandate = data-center build-out regulation + AI guardrails risk. Longer AI-capex overhang intact even with vol crush."
+  },
+  {
+   "pt": "2026-11-04 ~09:26 PT",
+   "text": "Calling Iran war over by Christmas; replacement talk + midterm blame on the war = writing on the wall. Oil trading like peace is near."
+  },
+  {
+   "pt": "2026-11-04 note",
+   "text": "Tue 11/3 Night Ledger lean (close \u2264755) invalidated by overnight 7495 FBD rip; alt (>757.43\u2192760\u2192100DMA) played. Wed Night Ledger not out yet (post-close)."
+  }
+ ],
+ "intraday_date": "2026-11-04"
 }
