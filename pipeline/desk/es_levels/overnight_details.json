@@ -1,9 +1,9 @@
 {
- "generated_et": "2026-11-04 15:50 ET",
- "next_session": "Wed 11/04",
+ "generated_et": "2026-11-04 16:14 ET",
+ "next_session": "Thu 11/05",
  "on": {
   "ES": {
-   "last": 7728.75,
+   "last": 7724.25,
    "on_hi": 7746.25,
    "on_lo": 7490.0,
    "on_mid": 7618.12,
@@ -11,18 +11,18 @@
    "rth_hi": 7623.75,
    "rth_lo": 7576.5,
    "rth_date": "11/03",
-   "gap": 132.25,
-   "gap_pct": 1.741,
+   "gap": 127.75,
+   "gap_pct": 1.682,
    "pos": "OUTSIDE (BOTH)",
-   "on_vol": 2075328,
+   "on_vol": 2283576,
    "avg_vol": 334262,
-   "vol_ratio": 6.21,
+   "vol_ratio": 6.83,
    "on_range": 256.25,
    "avg_range": 47.5,
    "range_pct": 539.5,
    "n_hist": 10,
-   "elapsed_h": 21.7,
-   "asof": "11/04 15:40",
+   "elapsed_h": 22.0,
+   "asof": "11/04 16:00",
    "sess_start": "11/03 18:00",
    "bars": [
     [
@@ -1841,14 +1841,42 @@
     [
      "11/04 15:40",
      7728.25,
-     7729.5,
-     7727.75,
-     7728.75
+     7730.75,
+     7725.0,
+     7725.75
+    ],
+    [
+     "11/04 15:45",
+     7725.75,
+     7728.75,
+     7723.0,
+     7727.25
+    ],
+    [
+     "11/04 15:50",
+     7727.25,
+     7728.75,
+     7714.75,
+     7717.5
+    ],
+    [
+     "11/04 15:55",
+     7717.75,
+     7722.5,
+     7712.75,
+     7721.75
+    ],
+    [
+     "11/04 16:00",
+     7721.75,
+     7728.25,
+     7721.5,
+     7724.25
     ]
    ]
   },
   "NQ": {
-   "last": 28576.0,
+   "last": 28583.75,
    "on_hi": 28969.0,
    "on_lo": 27615.75,
    "on_mid": 28292.38,
@@ -1856,18 +1884,18 @@
    "rth_hi": 28443.5,
    "rth_lo": 28215.75,
    "rth_date": "11/03",
-   "gap": 275.25,
-   "gap_pct": 0.973,
+   "gap": 283.0,
+   "gap_pct": 1.0,
    "pos": "OUTSIDE (BOTH)",
-   "on_vol": 915667,
+   "on_vol": 962074,
    "avg_vol": 186144,
-   "vol_ratio": 4.92,
+   "vol_ratio": 5.17,
    "on_range": 1353.25,
    "avg_range": 336.35,
    "range_pct": 402.3,
    "n_hist": 10,
-   "elapsed_h": 21.7,
-   "asof": "11/04 15:40",
+   "elapsed_h": 22.0,
+   "asof": "11/04 16:00",
    "sess_start": "11/03 18:00",
    "bars": [
     [
@@ -3685,10 +3713,38 @@
     ],
     [
      "11/04 15:40",
-     28569.0,
-     28580.0,
-     28564.5,
-     28576.0
+     28569.75,
+     28588.25,
+     28555.0,
+     28562.25
+    ],
+    [
+     "11/04 15:45",
+     28561.75,
+     28595.75,
+     28552.75,
+     28587.25
+    ],
+    [
+     "11/04 15:50",
+     28593.0,
+     28594.75,
+     28521.0,
+     28539.25
+    ],
+    [
+     "11/04 15:55",
+     28536.5,
+     28582.75,
+     28510.5,
+     28567.75
+    ],
+    [
+     "11/04 16:00",
+     28568.0,
+     28624.0,
+     28566.0,
+     28583.75
     ]
    ]
   }
@@ -3738,116 +3794,116 @@
  },
  "pulse": {
   "XLK": {
-   "last": 176.34,
+   "last": 176.59,
    "prev": 176.47,
-   "chg": -0.13,
-   "pct": -0.08,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "chg": 0.12,
+   "pct": 0.07,
+   "sess": "AH",
+   "asof": "11/04 16:09"
   },
   "XLF": {
-   "last": 59.12,
-   "prev": 57.18,
-   "chg": 1.94,
-   "pct": 3.4,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 59.24,
+   "prev": 59.17,
+   "chg": 0.07,
+   "pct": 0.12,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "XLE": {
-   "last": 63.53,
-   "prev": 66.7,
-   "chg": -3.16,
-   "pct": -4.75,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 63.49,
+   "prev": 63.53,
+   "chg": -0.04,
+   "pct": -0.06,
+   "sess": "AH",
+   "asof": "11/04 16:14"
   },
   "XLV": {
-   "last": 189.62,
-   "prev": 184.02,
-   "chg": 5.6,
-   "pct": 3.04,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 189.9,
+   "prev": 189.65,
+   "chg": 0.25,
+   "pct": 0.13,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "XLY": {
-   "last": 122.42,
-   "prev": 117.34,
-   "chg": 5.08,
-   "pct": 4.33,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 122.45,
+   "prev": 122.31,
+   "chg": 0.14,
+   "pct": 0.11,
+   "sess": "AH",
+   "asof": "11/04 16:11"
   },
   "SMH": {
-   "last": 502.73,
-   "prev": 518.3,
-   "chg": -15.57,
-   "pct": -3.0,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 504.55,
+   "prev": 504.48,
+   "chg": 0.07,
+   "pct": 0.01,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "NVDA": {
-   "last": 201.04,
-   "prev": 206.57,
-   "chg": -5.53,
-   "pct": -2.67,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 200.72,
+   "prev": 200.28,
+   "chg": 0.44,
+   "pct": 0.22,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "AAPL": {
-   "last": 350.61,
-   "prev": 331.74,
-   "chg": 18.87,
-   "pct": 5.69,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 349.87,
+   "prev": 349.62,
+   "chg": 0.25,
+   "pct": 0.07,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "MSFT": {
-   "last": 555.93,
-   "prev": 520.77,
-   "chg": 35.16,
-   "pct": 6.75,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 555.77,
+   "prev": 556.03,
+   "chg": -0.26,
+   "pct": -0.05,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "AMZN": {
-   "last": 266.98,
-   "prev": 250.74,
-   "chg": 16.24,
-   "pct": 6.48,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 266.17,
+   "prev": 266.14,
+   "chg": 0.03,
+   "pct": 0.01,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "META": {
-   "last": 629.31,
-   "prev": 620.95,
-   "chg": 8.36,
-   "pct": 1.35,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 631.3,
+   "prev": 629.89,
+   "chg": 1.41,
+   "pct": 0.22,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "GOOGL": {
-   "last": 290.33,
-   "prev": 279.91,
-   "chg": 10.42,
-   "pct": 3.72,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 290.52,
+   "prev": 289.03,
+   "chg": 1.49,
+   "pct": 0.51,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "TSLA": {
-   "last": 384.66,
-   "prev": 398.22,
-   "chg": -13.56,
-   "pct": -3.41,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 384.9,
+   "prev": 385.3,
+   "chg": -0.4,
+   "pct": -0.1,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   },
   "AVGO": {
-   "last": 325.64,
-   "prev": 332.09,
-   "chg": -6.45,
-   "pct": -1.94,
-   "sess": "RTH",
-   "asof": "11/04 15:50"
+   "last": 326.88,
+   "prev": 325.7,
+   "chg": 1.18,
+   "pct": 0.36,
+   "sess": "AH",
+   "asof": "11/04 16:10"
   }
  },
  "earn": {},
@@ -3863,46 +3919,61 @@
  "cal": {
   "econ": [
    {
-    "time_pt": "05:15",
-    "title": "ADP Non-Farm Employment Change",
+    "time_pt": "02:30",
+    "title": "Challenger Job Cuts y/y",
     "impact": "Low",
-    "fc": "67K",
-    "prev": "90K"
+    "fc": "",
+    "prev": "-19.9%"
    },
    {
     "time_pt": "05:30",
-    "title": "Trade Balance",
-    "impact": "Low",
-    "fc": "-107.9B",
-    "prev": "-105.6B"
-   },
-   {
-    "time_pt": "06:45",
-    "title": "Final Services PMI",
-    "impact": "Low",
-    "fc": "57.9",
-    "prev": "57.9"
-   },
-   {
-    "time_pt": "07:00",
-    "title": "ISM Services PMI",
+    "title": "Unemployment Claims",
     "impact": "Medium",
-    "fc": "54.8",
-    "prev": "54.9"
+    "fc": "197K",
+    "prev": "194K"
+   },
+   {
+    "time_pt": "05:30",
+    "title": "Prelim Nonfarm Productivity q/q",
+    "impact": "Low",
+    "fc": "2.8%",
+    "prev": "1.4%"
+   },
+   {
+    "time_pt": "05:30",
+    "title": "Prelim Unit Labor Costs q/q",
+    "impact": "Low",
+    "fc": "0.3%",
+    "prev": "1.3%"
    },
    {
     "time_pt": "07:30",
-    "title": "Crude Oil Inventories",
+    "title": "Natural Gas Storage",
     "impact": "Low",
-    "fc": "-1.7M",
-    "prev": "-1.9M"
+    "fc": "81B",
+    "prev": "80B"
    }
   ],
-  "fed": [],
+  "fed": [
+   {
+    "time_pt": "05:50",
+    "title": "FOMC Member Hammack Speaks",
+    "impact": "Low",
+    "fc": "",
+    "prev": ""
+   },
+   {
+    "time_pt": "06:10",
+    "title": "FOMC Member Barkin Speaks",
+    "impact": "Low",
+    "fc": "",
+    "prev": ""
+   }
+  ],
   "auctions": [
    {
     "date": "Thu 11/05",
-    "next": false,
+    "next": true,
     "time_pt": "08:30",
     "term": "4-Week",
     "type": "Bill",
@@ -3911,7 +3982,7 @@
    },
    {
     "date": "Thu 11/05",
-    "next": false,
+    "next": true,
     "time_pt": "08:30",
     "term": "8-Week",
     "type": "Bill",
@@ -3968,25 +4039,25 @@
    {
     "what": "VIX expiration (AM settle 06:30 PT)",
     "date": "Wed 11/18",
-    "days": 14,
+    "days": 13,
     "today": false
    },
    {
     "what": "Monthly equity OPEX",
     "date": "Fri 11/20",
-    "days": 16,
+    "days": 15,
     "today": false
    },
    {
     "what": "VIX expiration (AM settle 06:30 PT)",
     "date": "Wed 12/16",
-    "days": 42,
+    "days": 41,
     "today": false
    },
    {
     "what": "Monthly equity OPEX",
     "date": "Fri 12/18",
-    "days": 44,
+    "days": 43,
     "today": false
    }
   ],
