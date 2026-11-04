@@ -239,16 +239,16 @@
   },
   "symbols_plan": {
     "es": {
-      "high": 7693.75,
+      "high": 7706.75,
       "low": 7490.0,
-      "last": 7681.0,
-      "path": "CHOP / MIXED",
-      "phase1": "MISSED",
+      "last": 7700.5,
+      "path": "BULL",
+      "phase1": "HIT",
       "phase1_zone": [
         7703.0,
         7755.0
       ],
-      "phase1_high": 7693.75,
+      "phase1_high": 7706.75,
       "phase2": "HIT",
       "phase2_zone": [
         7558.0,
@@ -271,18 +271,18 @@
         },
         {
           "date": "2026-11-04",
-          "hi": 7688.5,
+          "hi": 7706.75,
           "lo": 7588.25,
-          "last": 7681.0,
+          "last": 7700.5,
           "event": false
         }
       ],
-      "n_bars": 106
+      "n_bars": 107
     },
     "nq": {
       "high": 28891.25,
       "low": 27615.75,
-      "last": 28375.5,
+      "last": 28530.5,
       "path": "BEAR",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -314,23 +314,23 @@
           "date": "2026-11-04",
           "hi": 28662.0,
           "lo": 28252.5,
-          "last": 28375.5,
+          "last": 28530.5,
           "event": false
         }
       ],
-      "n_bars": 106
+      "n_bars": 107
     },
     "spy": {
-      "high": 763.8599853515625,
-      "low": 750.121,
-      "last": 752.16,
+      "high": 768.0593872070312,
+      "low": 751.46,
+      "last": 768.0,
       "path": "BULL",
       "phase1": "MISSED",
       "phase1_zone": [
         770.0,
         775.0
       ],
-      "phase1_high": 763.8599853515625,
+      "phase1_high": 768.0593872070312,
       "phase2": "MISSED",
       "phase2_zone": [
         750.0,
@@ -347,8 +347,15 @@
         {
           "date": "2026-11-03",
           "hi": 757.89,
-          "lo": 750.12,
-          "last": 752.16,
+          "lo": 752.39,
+          "last": 754.98,
+          "event": false
+        },
+        {
+          "date": "2026-11-04",
+          "hi": 768.06,
+          "lo": 762.64,
+          "last": 768.0,
           "event": false
         }
       ],
@@ -356,8 +363,8 @@
     },
     "qqq": {
       "high": 699.4299926757812,
-      "low": 678.98,
-      "last": 681.6205,
+      "low": 680.0,
+      "last": 698.489990234375,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -381,8 +388,15 @@
         {
           "date": "2026-11-03",
           "hi": 690.27,
-          "lo": 678.98,
-          "last": 681.62,
+          "lo": 683.18,
+          "last": 685.89,
+          "event": false
+        },
+        {
+          "date": "2026-11-04",
+          "hi": 698.73,
+          "lo": 687.9,
+          "last": 698.49,
           "event": false
         }
       ],
