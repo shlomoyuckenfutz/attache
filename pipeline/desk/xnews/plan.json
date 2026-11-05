@@ -77,7 +77,7 @@
     },
     {
       "price": 767,
-      "note": "SPY Volt / pin magnet"
+      "note": "SPY Magnet / pin magnet"
     },
     {
       "price": 766,
@@ -97,7 +97,7 @@
     },
     {
       "price": 750,
-      "note": "SPY floor / put wall / Volt floor"
+      "note": "SPY floor / put wall / Magnet floor"
     },
     {
       "price": 740,
@@ -115,7 +115,7 @@
   "actionable": [
     "Wed 11/4 tape (~11:30 PT): midterm blue wave priced \u2014 Dems expected \u2265250 House / 54 Senate. Overnight ES elevator-down to 7490 then Failed Breakdown of 7495 (July 31 low) ripped +245 to tag 7739. SPY ~768.12 (live quotes), SPX ~7704.85, QQQ ~693.91, NQ ~28691, VIX ~16.73. ADP/ISM Services morning; Iran talks progress reported for Friday clarity.",
     "ES map (public X levels): long trigger was 7495 FBD. Today's targets 7698\u20137703 / 7712 / 7739 all hit. Next 7755 \u2192 7771 \u2192 7803. Supports 7635/7626. Desk lean: protect profits / ride runner; sidelined for new risk unless another elevator-down prints a fresh Failed Breakdown.",
-    "SPY gamma flip day: net GEX \u2212$11.8B \u2192 +$2.8B; call wall 770; 1D EM \u00b1$5.75 (762.89\u2013774.39). Alternate GEX: net +$1.01B, pin 767, put wall 765 just lost, floor 760, flip 758.88. Volt card: Volt 767 \u00b7 floor 750 \u00b7 ceiling 800 \u00b7 flip ~765.2 \u00b7 pre-open EM \u00b16.36 (757.86\u2013768.92). Dark pools in play: 768.61 / 767.12 / 769.55. Single-leg short-dated calls lead puts by $35M+.",
+    "SPY gamma flip day: net GEX \u2212$11.8B \u2192 +$2.8B; call wall 770; 1D EM \u00b1$5.75 (762.89\u2013774.39). Alternate GEX: net +$1.01B, pin 767, put wall 765 just lost, floor 760, flip 758.88. Magnet card: Magnet 767 \u00b7 floor 750 \u00b7 ceiling 800 \u00b7 flip ~765.2 \u00b7 pre-open EM \u00b16.36 (757.86\u2013768.92). Dark pools in play: 768.61 / 767.12 / 769.55. Single-leg short-dated calls lead puts by $35M+.",
     "Auction context (Tue night plan for Wed): auction pivot was 7600 with UT 7621/7648 and DT 7575/7541 \u2014 overnight flush then rip has already traversed that map; 7600 now deep support. 5D/20D VPOC 7754 sits just above the runner path.",
     "Flow notables: $3.6M SPY Dec 31 788C; $23M+ QQQ Mar 2027 720C floor prints; $16M ORCL Nov 20 145/150P; AAPL 0DTE 350C $1.8M; MSFT next-week 557.5/565C $1.3M. CoreWeave bonds hit new lows on Dem governors favoring slower data-center buildout (Texas incl.).",
     "Night Ledger (latest = Tue 11/3 close): base was larger move toward 200DMA by/before Nov OpEx; Wed lean was close \u2264755 with hard work above 755 \u2014 that lean was invalidated by the overnight FBD rip. Alt (establish >757.43 \u2192 760 \u2192 100DMA) is the path that played. No Wed 11/4 Night Ledger yet (post-close). Intraday take: 0DTE GEX shows no puts until 770; furthest make ~769.55 Fri DP; death-cross watch still active if we fail to push toward 765+ and hold; Dem Congress = AI/data-center regulation risk into year-end; Iran war may end by Christmas (vol-crush contributor).",
