@@ -18,7 +18,7 @@
           "net_gex": "negative at open card; flipped intraday per other desks",
           "regime": "flip zone ~765",
           "posted_pt": "2026-11-04 06:01",
-          "url": "https://x.com/VoltickIO/status/2117980467089830019",
+          "url": "#",
           "note": "Open 763.8 inside EM. Free page meta: call 770 / put 740 / flip 765.21"
         },
         {
@@ -33,7 +33,7 @@
           "net_gex": "+$2.8B (was \u2212$11.8B Tue close)",
           "regime": "positive gamma",
           "posted_pt": "2026-11-04 10:04",
-          "url": "https://x.com/CheddarFlow/status/2118041733338456512",
+          "url": "#",
           "note": "Spot ~768.64 under 770 call wall; call GEX 22.6B / put \u221219.8B"
         },
         {
@@ -48,11 +48,11 @@
           "net_gex": "+$1.01B",
           "regime": "positive gamma \u2014 fade edges of 760\u2013770",
           "posted_pt": "2026-11-04 08:24",
-          "url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+          "url": "#",
           "note": "Lost 765 put wall; reclaim 765\u2192767; lose\u2192760"
         },
         {
-          "handle": "SRC_LEDGER",
+          "handle": "SRC",
           "scope": "intraday 0DTE GEX note",
           "volt": null,
           "flip": null,
@@ -63,7 +63,7 @@
           "net_gex": "0DTE \u2014 no puts until 770",
           "regime": null,
           "posted_pt": "2026-11-04 10:03",
-          "url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+          "url": "#",
           "note": "Furthest make ~769.55 Fri DP"
         },
         {
@@ -78,7 +78,7 @@
           "net_gex": "ES put wall 7728",
           "regime": null,
           "posted_pt": "2026-11-04 10:42",
-          "url": "https://x.com/QuantData/status/2118051154105864377",
+          "url": "#",
           "note": "SPY DP 768.61 / 767.12; short-dated calls lead puts +$35M"
         }
       ],
@@ -96,7 +96,7 @@
       "symbol": "ES",
       "sources": [
         {
-          "handle": "SRC_LEVELS_A",
+          "handle": "SRC",
           "scope": "public X intraday",
           "volt": "7739",
           "flip": null,
@@ -107,7 +107,7 @@
           "net_gex": null,
           "regime": "ride runner after 7495 FBD",
           "posted_pt": "2026-11-04 10:33",
-          "url": "https://x.com/SRC_LEVELS_A/status/2118048942739145130",
+          "url": "#",
           "note": "7739 final target tagged; next 7755/7771/7803; supports 7635/7626"
         },
         {
@@ -122,7 +122,7 @@
           "net_gex": null,
           "regime": null,
           "posted_pt": "2026-11-04 10:42",
-          "url": "https://x.com/QuantData/status/2118051154105864377",
+          "url": "#",
           "note": "Put wall 7728 held as reaction"
         },
         {
@@ -137,7 +137,7 @@
           "net_gex": null,
           "regime": "inside-day plan traversed by overnight flush+rip",
           "posted_pt": "2026-11-03 14:53",
-          "url": "https://x.com/smashelito/status/2117752058363392166",
+          "url": "#",
           "note": "Smashlevel 7600; VPOC 7754; UT 7621/7648; DT 7575/7541"
         }
       ],
@@ -181,7 +181,7 @@
           "net_gex": null,
           "regime": null,
           "posted_pt": "2026-11-04 08:51",
-          "url": "https://x.com/CheddarFlow/status/2118023303377940680",
+          "url": "#",
           "note": "$23M+ Mar 2027 720C floor prints"
         }
       ],
@@ -210,7 +210,7 @@
           "net_gex": null,
           "regime": null,
           "posted_pt": "2026-11-04 08:00",
-          "url": "https://x.com/VoltickIO/status/2118010420422455398",
+          "url": "#",
           "note": "Feb 19 7650P $51.4M below flip; spot ~7705"
         }
       ],

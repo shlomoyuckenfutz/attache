@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """ATTACHÉ OVERNIGHT detail panels (HTML fragment + CSS) for build_overnight.py.
-Reads es_levels/overnight.json (cross-asset board), es_levels/overnight_details.json, xnews/bento/ledger.json. No source names."""
+Reads es_levels/overnight.json (cross-asset board), es_levels/overnight_details.json, xnews/ledger/ledger.json. No source names."""
 import json
 from pathlib import Path
 from html import escape as e
@@ -128,7 +128,7 @@ def ledger_panel(N, D):
             f'<div class="q" style="margin-top:4px"><i>HIT RATE</i> <b>{f(hr["rate"],1) if hr else "—"}%</b> <span class="m">({hr["hits"] if hr else 0}/{hr["n"] if hr else 0} next-day direction calls)</span></div><div>{hh}</div>'
             f'<div class="m">ES = SPY ÷ {N.get("factor")}. Call scored vs next SPY close-to-close (|move| under 0.3% = FLAT; a directional call with a flat same-sign day counts as a hit).</div></div>')
 def build(B):
-    D = L("es_levels/overnight_details.json"); N = L("xnews/bento/ledger.json")
+    D = L("es_levels/overnight_details.json"); N = L("xnews/ledger/ledger.json")
     if not D: return "", CSS
     gen = e(D.get("generated_et", ""))
     ledger = ledger_panel(N, D).replace('<div class="dp">', '<div class="dp full">', 1)

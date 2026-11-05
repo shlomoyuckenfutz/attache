@@ -403,5 +403,5 @@
       "n_bars": 60
     }
   },
-  "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned Yahoo bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
+  "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
 }

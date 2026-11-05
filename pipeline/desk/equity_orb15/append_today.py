@@ -1,4 +1,4 @@
-"""Incremental top-up of data/{SYM}_1m.parquet (read-only Alpaca SIP market data, ~20 min delayed). Usage: append_today.py SPY QQQ"""
+"""Incremental top-up of data/{SYM}_1m.parquet (read-only free_feed SIP market data, ~20 min delayed). Usage: append_today.py SPY QQQ"""
 import sys, json, pandas as pd
 from datetime import datetime, timedelta, timezone
 from pathlib import Path

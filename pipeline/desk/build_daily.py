@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """ATTACHÉ DAILY PLAN page. Source of truth: xnews/plan.json (copied to daily/plan.json).
-Optional enrich: smash note paths, mancini latest levels, bento take — never named on the page (SRC tags only via site_sanitize).
+Optional enrich: auction note paths, levels_a latest levels, SRC take — never named on the page (SRC tags only via site_sanitize).
   build_daily.py [ --site DIR ]              -> DIR/daily/index.html
   build_daily.py --patch-desk F             -> insert/refresh DAILY PLAN summary card after WEEKLY card (or at top)
-Plan only. No ORB5/ORB30. No source names/handles/links."""
+Plan only. No ORB-A/ORB-B. No source names/handles/links."""
 from __future__ import annotations
 import html, json, os, re, shutil, subprocess, sys
 from pathlib import Path
@@ -47,12 +47,12 @@ def esc(s):
 def sanitize_text(s: str) -> str:
     """Neutral scrub before HTML (site_sanitize also runs on publish)."""
     s = re.sub(r"https?://(?:www\.|mobile\.)?(?:x|twitter)\.com/\S+", "", s, flags=re.I)
-    s = re.sub(r"https?://(?:newsletter\.)?smashelito\.com\S+", "", s, flags=re.I)
-    s = re.sub(r"https?://\S*(?:yahoo|alpaca)\S*", "", s, flags=re.I)
+    s = re.sub(r"https?://(?:newsletter\.)?AUCTION_SRC\.com\S+", "", s, flags=re.I)
+    s = re.sub(r"https?://\S*(?:free_data|free_feed)\S*", "", s, flags=re.I)
     s = re.sub(r"(?i)\bORB\s*(?:5|30)\b", "OPEN RANGE", s)
     # strip common handles/names (leave content)
-    for n in ("smashelito", "SRC_LEVELS_A", "SRC_LEDGER", "Smashlevel", "Smash", "Mancini", "Bento",
-              "Voltick", "voltick", "@SRC_LEVELS_A", "@SRC_LEDGER"):
+    for n in ("AUCTION_SRC", "SRC LEVELS_A", "SRC LEDGER", "auction", "levels_a", "ledger",
+              "magnet", "MAGNET_SRC"):
         s = re.sub(re.escape(n), "SRC", s, flags=re.I)
     s = re.sub(r"\bSRC\s*level\b", "plan level", s, flags=re.I)
     s = re.sub(r"\bSRC\b(\s*/\s*SRC)*", "plan", s)
@@ -193,9 +193,9 @@ def fill_spx(by: dict) -> dict:
     return by
 
 
-def derive_paths(plan, smash_text=""):
+def derive_paths(plan, auction_text=""):
     acts = " ".join(plan.get("actionable") or [])
-    blob = sanitize_text(acts + "\n" + smash_text)
+    blob = sanitize_text(acts + "\n" + auction_text)
     bull, bear = [], []
     # Prefer explicit path.bull / path.bear from plan.json when present
     path = plan.get("path") or {}
@@ -311,13 +311,13 @@ def page(plan, site: Path):
         if not by.get(k):
             by[k] = rows
     by = fill_spx(by)
-    smash = ""
-    sp = HERE / "smash_note.md"
+    auction = ""
+    sp = HERE / "auction_note.md"
     if not sp.exists():
-        sp = HERE / "xnews" / "smash" / f"{plan.get('date')}.md"
+        sp = HERE / "xnews" / "auction" / f"{plan.get('date')}.md"
     if sp.exists():
-        smash = sp.read_text(encoding="utf-8", errors="ignore")
-    bull, bear = derive_paths(plan, smash)
+        auction = sp.read_text(encoding="utf-8", errors="ignore")
+    bull, bear = derive_paths(plan, auction)
     cats = catalysts(plan)
     bias = plan.get("bias") or {}
     direction = (bias.get("direction") or "NEUTRAL").upper()

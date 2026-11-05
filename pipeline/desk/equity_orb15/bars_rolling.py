@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Maintain a rolling ~12-day SPY/QQQ 1m bar cache for Actions (no multi-year parquet in repo).
-Uses Alpaca IEX (free) with SIP fallback. Writes equity_orb15/data/{SYM}_1m.parquet."""
+Uses free_feed IEX (free) with SIP fallback. Writes equity_orb15/data/{SYM}_1m.parquet."""
 import os, sys, json
 from datetime import datetime, timedelta, timezone
 from pathlib import Path

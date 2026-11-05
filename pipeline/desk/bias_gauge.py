@@ -99,7 +99,7 @@ def desk_parts(px):
         tb = 1 if "bull" in b and "bear" not in b else -1 if "bear" in b and "bull" not in b else 0
         v.append(("FB · LEAN", "First Blade stated lean", tb, "bullish" if tb > 0 else "bearish" if tb < 0 else "neutral", 0.5))
     esp = (J(ES / "summary.json") or {}).get("price")
-    M = (J(XN / "mancini/levels_a.json") or {}).get("latest") or {}
+    M = (J(XN / "levels_a/levels_a.json") or {}).get("latest") or {}
     if esp:
         lv = sorted(set((M.get("supports") or []) + (M.get("resistances") or [])))
         near_s = [x for x in (M.get("supports") or []) if x <= esp]; near_r = [x for x in (M.get("resistances") or []) if x >= esp]

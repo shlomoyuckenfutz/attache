@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ATTACHÉ DAILY + WEEKLY PLAN vs ACTUAL charts.
 Weekly layout + actual 30m overlay. Prior-week amber; plan-week past days white;
-event/today cyan. Free Yahoo 30m (cleaned of seam/garbage-wick artifacts).
+event/today cyan. Free free_data 30m (cleaned of seam/garbage-wick artifacts).
 Plan paths drawn ONLY on day columns with no actual bars (Everett: lines off candles).
 Level / zone fills stay; FOMC/event marker = edge ticks only.
 Archives under daily/charts/YYYY-MM-DD/. Also writes weekly/charts/ (+ prior/ + plan/).
@@ -156,8 +156,8 @@ FWD_DAY_NOTES = {
 
 
 def _download(sym):
-    """Free Yahoo 30m with extended hours; clean seam/garbage-wick artifacts."""
-    u = (f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}"
+    """Free free_data 30m with extended hours; clean seam/garbage-wick artifacts."""
+    u = (f"https://query1.finance.free_data.com/v8/finance/chart/{sym}"
          f"?interval=30m&range=15d&includePrePost=true")
     req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"})
     d = json.loads(urllib.request.urlopen(req, timeout=30).read())
@@ -182,7 +182,7 @@ def _download(sym):
 def _clean_bars(df):
     """Root-cause fix for the Friday full-height glitch wick.
 
-    Yahoo 30m sometimes emits a session-seam bar (esp. futures around cash settle)
+    free_data 30m sometimes emits a session-seam bar (esp. futures around cash settle)
     with Open=High=previousClose and Low near the true session low — a vertical
     spike through the whole chart. Also stamps garbage extended-hours Lows far
     below the body while O/H/C stay real (SPY AH). Drop / repair those here so
@@ -207,7 +207,7 @@ def _clean_bars(df):
     bad_low = (lower > 3.5 * rmed) & (lower > 6 * (upper + 1e-9))
     # Session-seam / settle spike: open jumps to prior close area, range enormous
     bad_seam = prev_c.notna() & (open_jump > 5 * rmed) & (rng > 6 * rmed)
-    # Classic Yahoo artifact: Open==High far above Close with huge range
+    # Classic free_data artifact: Open==High far above Close with huge range
     bad_settle = (df.Open == df.High) & ((df.Open - df.Close).abs() > 5 * rmed) & (rng > 6 * rmed)
 
     n_repair = int(bad_low.sum())
@@ -775,7 +775,7 @@ def main():
         "have_actual": bool(scores),
         "symbols_prior": scores,
         "symbols_plan": fwd_scores,
-        "note": "Prior week = Oct 26–30 PLAN vs ACTUAL (cleaned Yahoo bars). "
+        "note": "Prior week = Oct 26–30 PLAN vs ACTUAL (cleaned free_data bars). "
                 "Plan week = Nov 2–6 forward paths only on empty day columns.",
     }, indent=2), encoding="utf-8")
     try:

@@ -24,7 +24,7 @@ cp daily/index.html /workspace/orb-dash-site/daily/
 5. Desk **DARK POOL POSITION · SPY** reads `data/spy_dark_pool.json` at runtime (embedded `D.dpx` is the fallback). After editing levels, update the baked spot in `D.dpx` / Command `"dpx"` to the latest SPY RTH close (recompute distances / nearest; drop stale crossed-today stamps) — or rebuild via `build_master.py` / `build_command.py` once those builders load this JSON.
 6. Commit and push this repo.
 
-Do not put ORB5/ORB30 wording on the site. Keep annotation lines off the candles (edge ticks only).
+Do not put ORB-A/ORB-B wording on the site. Keep annotation lines off the candles (edge ticks only).
 
 ## Dark Pool TEST page
 

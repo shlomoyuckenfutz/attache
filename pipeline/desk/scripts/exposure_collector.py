@@ -2,7 +2,7 @@
 """Board dealer-exposure collector for Attaché HEAT app.
 Fetches CBOE delayed options for the chip board (+ SPX for Trinity),
 computes GEX/VEX/DEX/Charm grids (strike × expiry), walls, King, EM, setups,
-scanner scores, Alpaca 5m bars for Attaché. Writes under orb-dash-site/exposure/data/.
+scanner scores, free_feed 5m bars for Attaché. Writes under orb-dash-site/exposure/data/.
 FREE sources only. No routines created here — invoke on a schedule yourself.
 
 Usage:
@@ -377,12 +377,12 @@ def market_state(now):
     return "closed"
 
 def fetch_bars(sym, key, sec, timeframe="5Min", limit=100):
-    # Alpaca doesn't have index options underlyings as stocks the same way; skip SPXW/NDXP -> use SPY/QQQ? use underlying ETF
+    # free_feed doesn't have index options underlyings as stocks the same way; skip SPXW/NDXP -> use SPY/QQQ? use underlying ETF
     map_sym = {"SPXW":"SPY","NDXP":"QQQ","SPX":"SPY","NDX":"QQQ"}.get(sym, sym)
     headers={"APCA-API-KEY-ID":key,"APCA-API-SECRET-KEY":sec}
     if timeframe.endswith("Day") or timeframe=="1Day":
         start=(datetime.now(timezone.utc)-timedelta(days=160)).strftime("%Y-%m-%d")
-        url=(f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
+        url=(f"https://data.free_feed.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
              f"&start={start}&limit={max(limit,200)}&adjustment=raw&feed=iex")
         try:
             j=fetch_json(url, headers=headers, timeout=20)
@@ -390,12 +390,12 @@ def fetch_bars(sym, key, sec, timeframe="5Min", limit=100):
             return [{"t":b["t"],"o":b["o"],"h":b["h"],"l":b["l"],"c":b["c"],"v":b["v"]} for b in bars][-limit:]
         except Exception as e:
             return {"error": str(e)[:120]}
-    # 5m: paginate so we keep the NEWEST session bars (Alpaca returns ascending from start)
+    # 5m: paginate so we keep the NEWEST session bars (free_feed returns ascending from start)
     start=(datetime.now(timezone.utc)-timedelta(days=3)).strftime("%Y-%m-%dT00:00:00Z")
     out=[]; page_token=None
     try:
         for _ in range(8):
-            url=(f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
+            url=(f"https://data.free_feed.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
                  f"&start={start}&limit=10000&adjustment=raw&feed=iex")
             if page_token: url += f"&page_token={page_token}"
             j=fetch_json(url, headers=headers, timeout=25)
@@ -665,7 +665,7 @@ def main():
 
     board={
         "meta": {
-            "source":"CBOE delayed options", "delay":"~15-min delayed",
+            "source":"desk", "delay":"~15-min delayed",
             "updated_pt": now.astimezone(PT).strftime("%Y-%m-%d %H:%M PT"),
             "market": mkt, "n_ok": len(results), "n_err": len(errors),
             "note":"GEX=γ·OI·100·S²·0.01 (C+,P−); VEX≈ν·OI·100; DEX=Δ·OI·100·S; Charm≈BS ∂Δ/∂t·OI·100·S. SPXW/NDXP=weekly roots on _SPX/_NDX.",

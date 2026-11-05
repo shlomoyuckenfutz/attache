@@ -1,10 +1,10 @@
 {
   "session": "2026-11-04",
   "curated_pt": "2026-11-04 11:31 PT",
-  "note": "Full sweep Wed 11/4 ~11:31 AM PT. Overnight 7495 FBD \u2192 7739 tagged. Gamma flipped pos. Mancini public X levels only (Substack paid \u2014 skipped). Voltick via public X + free /levels pages (no login dashboard). Night Ledger 11/4 not out yet (post-close); using 11/3 + intraday.",
+  "note": "Full sweep Wed 11/4 ~11:31 AM PT. Overnight 7495 FBD \u2192 7739 tagged. Gamma flipped pos. levels_a public X levels only (Substack paid \u2014 skipped). Voltick via public X + free /levels pages (no login dashboard). Night Ledger 11/4 not out yet (post-close); using 11/3 + intraday.",
   "levels": [
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -13,10 +13,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -25,10 +25,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -37,10 +37,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -49,10 +49,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -61,10 +61,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -73,10 +73,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -85,10 +85,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -97,10 +97,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -109,10 +109,10 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEVELS_A",
+      "handle": "SRC",
       "post_id": "2117963026292949232",
       "posted_pt": "2026-11-04 04:51",
       "symbol": "ES",
@@ -121,7 +121,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEVELS_A/status/2117963026292949232"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -133,7 +133,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -145,7 +145,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -157,7 +157,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -169,7 +169,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -181,7 +181,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -193,7 +193,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -205,7 +205,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -217,7 +217,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -229,7 +229,7 @@
       "type": "TA",
       "scope": "far",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -241,7 +241,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -253,7 +253,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -265,7 +265,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -277,7 +277,7 @@
       "type": "TA",
       "scope": "far",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -289,7 +289,7 @@
       "type": "TA",
       "scope": "far",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -301,7 +301,7 @@
       "type": "TA",
       "scope": "far",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -313,7 +313,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -325,7 +325,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -337,7 +337,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -349,7 +349,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -361,7 +361,7 @@
       "type": "TA",
       "scope": "far",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -373,7 +373,7 @@
       "type": "TA",
       "scope": "far",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -385,7 +385,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "smashelito",
@@ -397,7 +397,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/smashelito/status/2117752058363392166"
+      "url": "#"
     },
     {
       "handle": "QuantData",
@@ -409,7 +409,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/QuantData/status/2118051154105864377"
+      "url": "#"
     },
     {
       "handle": "QuantData",
@@ -421,7 +421,7 @@
       "type": "DP",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/QuantData/status/2118051154105864377"
+      "url": "#"
     },
     {
       "handle": "QuantData",
@@ -433,7 +433,7 @@
       "type": "DP",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/QuantData/status/2118051154105864377"
+      "url": "#"
     },
     {
       "handle": "CheddarFlow",
@@ -445,7 +445,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/CheddarFlow/status/2118041733338456512"
+      "url": "#"
     },
     {
       "handle": "CheddarFlow",
@@ -457,7 +457,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/CheddarFlow/status/2118041733338456512"
+      "url": "#"
     },
     {
       "handle": "CheddarFlow",
@@ -469,7 +469,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/CheddarFlow/status/2118041733338456512"
+      "url": "#"
     },
     {
       "handle": "CheddarFlow",
@@ -481,7 +481,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/CheddarFlow/status/2118041733338456512"
+      "url": "#"
     },
     {
       "handle": "GEXEdgeIO",
@@ -493,7 +493,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/GEXEdgeIO/status/2118018531208188210"
+      "url": "#"
     },
     {
       "handle": "GEXEdgeIO",
@@ -505,7 +505,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/GEXEdgeIO/status/2118018531208188210"
+      "url": "#"
     },
     {
       "handle": "GEXEdgeIO",
@@ -517,7 +517,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/GEXEdgeIO/status/2118018531208188210"
+      "url": "#"
     },
     {
       "handle": "GEXEdgeIO",
@@ -529,7 +529,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/GEXEdgeIO/status/2118018531208188210"
+      "url": "#"
     },
     {
       "handle": "GEXEdgeIO",
@@ -541,7 +541,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/GEXEdgeIO/status/2118018531208188210"
+      "url": "#"
     },
     {
       "handle": "GEXEdgeIO",
@@ -553,7 +553,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/GEXEdgeIO/status/2118018531208188210"
+      "url": "#"
     },
     {
       "handle": "VoltickIO",
@@ -565,7 +565,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/VoltickIO/status/2117980467089830019"
+      "url": "#"
     },
     {
       "handle": "VoltickIO",
@@ -577,7 +577,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/VoltickIO/status/2117980467089830019"
+      "url": "#"
     },
     {
       "handle": "VoltickIO",
@@ -589,7 +589,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/VoltickIO/status/2117980467089830019"
+      "url": "#"
     },
     {
       "handle": "VoltickIO",
@@ -601,7 +601,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/VoltickIO/status/2117980467089830019"
+      "url": "#"
     },
     {
       "handle": "VoltickIO",
@@ -613,7 +613,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/VoltickIO/status/2117989110216532249"
+      "url": "#"
     },
     {
       "handle": "VoltickIO",
@@ -625,7 +625,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/VoltickIO/status/2118010420422455398"
+      "url": "#"
     },
     {
       "handle": "VoltickIO",
@@ -637,10 +637,10 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/VoltickIO/status/2118034411967160519"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "post_id": "2118041569282396458",
       "posted_pt": "2026-11-04 10:03",
       "symbol": "SPY",
@@ -649,10 +649,10 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEDGER/status/2118041569282396458"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "post_id": "2118041569282396458",
       "posted_pt": "2026-11-04 10:03",
       "symbol": "SPY",
@@ -661,10 +661,10 @@
       "type": "DP",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEDGER/status/2118041569282396458"
+      "url": "#"
     },
     {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "post_id": "2118041569282396458",
       "posted_pt": "2026-11-04 10:03",
       "symbol": "SPY",
@@ -673,7 +673,7 @@
       "type": "TA",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/SRC_LEDGER/status/2118041569282396458"
+      "url": "#"
     },
     {
       "handle": "Tradytics",
@@ -685,7 +685,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/Tradytics/status/2117970667547009103"
+      "url": "#"
     },
     {
       "handle": "FlowbyBobby",
@@ -697,7 +697,7 @@
       "type": "GEX",
       "scope": "near",
       "life_days": 3,
-      "url": "https://x.com/FlowbyBobby/status/2118050285612650989"
+      "url": "#"
     }
   ]
 }

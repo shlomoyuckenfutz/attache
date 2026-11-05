@@ -38,7 +38,7 @@
       "converted": false,
       "kind": "Ceiling",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
@@ -62,7 +62,7 @@
       "converted": false,
       "kind": "Major resistance / GEX node",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      }
@@ -86,7 +86,7 @@
       "converted": false,
       "kind": "Call wall (largest +GEX node)",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -97,18 +97,18 @@
       "converted": false,
       "kind": "GEX cluster ceiling / BOSS",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "770",
       "native": "SPY",
       "converted": false,
       "kind": "0DTE — no puts until here",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      }
@@ -132,18 +132,18 @@
       "converted": false,
       "kind": "Dark pool — unable to hold above",
       "scope": "near",
-      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:42",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "769.55",
       "native": "SPY",
       "converted": false,
       "kind": "Fri dark pool — furthest make",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      }
@@ -168,7 +168,7 @@
       "converted": false,
       "kind": "Neg GEX pocket",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -179,7 +179,7 @@
       "converted": false,
       "kind": "Pin magnet",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
@@ -190,7 +190,7 @@
       "converted": false,
       "kind": "Volt (today)",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      },
@@ -201,7 +201,7 @@
       "converted": false,
       "kind": "Dark pool",
       "scope": "near",
-      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:42",
       "age_days": 1
      }
@@ -226,7 +226,7 @@
       "converted": false,
       "kind": "High OI node",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -237,18 +237,18 @@
       "converted": false,
       "kind": "Put wall (lost)",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "765",
       "native": "SPY",
       "converted": false,
       "kind": "Death-cross / 20-50DMA reclaim watch",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      },
@@ -259,7 +259,7 @@
       "converted": false,
       "kind": "Gamma Flip (open card)",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117989110216532249",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:35",
       "age_days": 1
      },
@@ -270,7 +270,7 @@
       "converted": false,
       "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      },
@@ -281,7 +281,7 @@
       "converted": false,
       "kind": "Call wall",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
@@ -308,7 +308,7 @@
       "converted": true,
       "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2118010420422455398",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:00",
       "age_days": 1
      }
@@ -332,7 +332,7 @@
       "converted": false,
       "kind": "GEX cluster floor",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
@@ -343,7 +343,7 @@
       "converted": false,
       "kind": "Positive gamma level (overnight reclaim)",
       "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117970667547009103",
+      "post_url": "",
       "posted_pt": "2026-11-04 05:22",
       "age_days": 1
      }
@@ -367,7 +367,7 @@
       "converted": false,
       "kind": "Gamma flip",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
@@ -391,7 +391,7 @@
       "converted": false,
       "kind": "Floor",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
@@ -415,7 +415,7 @@
       "converted": true,
       "kind": "Heatmap break — below risks bulls",
       "scope": "near",
-      "post_url": "https://x.com/FlowbyBobby/status/2118050285612650989",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:38",
       "age_days": 1
      }
@@ -441,7 +441,7 @@
       "converted": true,
       "kind": "Ceiling",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
@@ -465,7 +465,7 @@
       "converted": true,
       "kind": "Major resistance / GEX node",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      }
@@ -489,7 +489,7 @@
       "converted": true,
       "kind": "Call wall (largest +GEX node)",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -500,18 +500,18 @@
       "converted": true,
       "kind": "GEX cluster ceiling / BOSS",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "770",
       "native": "SPY",
       "converted": true,
       "kind": "0DTE — no puts until here",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      }
@@ -535,18 +535,18 @@
       "converted": true,
       "kind": "Dark pool — unable to hold above",
       "scope": "near",
-      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:42",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "769.55",
       "native": "SPY",
       "converted": true,
       "kind": "Fri dark pool — furthest make",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      }
@@ -571,7 +571,7 @@
       "converted": true,
       "kind": "Neg GEX pocket",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -582,7 +582,7 @@
       "converted": true,
       "kind": "Pin magnet",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
@@ -593,7 +593,7 @@
       "converted": true,
       "kind": "Volt (today)",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      },
@@ -604,7 +604,7 @@
       "converted": true,
       "kind": "Dark pool",
       "scope": "near",
-      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:42",
       "age_days": 1
      }
@@ -629,7 +629,7 @@
       "converted": true,
       "kind": "High OI node",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -640,18 +640,18 @@
       "converted": true,
       "kind": "Put wall (lost)",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "765",
       "native": "SPY",
       "converted": true,
       "kind": "Death-cross / 20-50DMA reclaim watch",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      },
@@ -662,7 +662,7 @@
       "converted": true,
       "kind": "Gamma Flip (open card)",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117989110216532249",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:35",
       "age_days": 1
      },
@@ -673,7 +673,7 @@
       "converted": true,
       "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      },
@@ -684,7 +684,7 @@
       "converted": true,
       "kind": "Call wall",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
@@ -711,7 +711,7 @@
       "converted": true,
       "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2118010420422455398",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:00",
       "age_days": 1
      }
@@ -735,7 +735,7 @@
       "converted": true,
       "kind": "GEX cluster floor",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
@@ -746,7 +746,7 @@
       "converted": true,
       "kind": "Positive gamma level (overnight reclaim)",
       "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117970667547009103",
+      "post_url": "",
       "posted_pt": "2026-11-04 05:22",
       "age_days": 1
      }
@@ -770,7 +770,7 @@
       "converted": true,
       "kind": "Gamma flip",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
@@ -794,7 +794,7 @@
       "converted": true,
       "kind": "Floor",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
@@ -818,7 +818,7 @@
       "converted": true,
       "kind": "Heatmap break — below risks bulls",
       "scope": "near",
-      "post_url": "https://x.com/FlowbyBobby/status/2118050285612650989",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:38",
       "age_days": 1
      }
@@ -844,7 +844,7 @@
       "converted": true,
       "kind": "Ceiling",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
@@ -868,7 +868,7 @@
       "converted": true,
       "kind": "Major resistance / GEX node",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      }
@@ -892,7 +892,7 @@
       "converted": true,
       "kind": "Call wall (largest +GEX node)",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -903,18 +903,18 @@
       "converted": true,
       "kind": "GEX cluster ceiling / BOSS",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "770",
       "native": "SPY",
       "converted": true,
       "kind": "0DTE — no puts until here",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      }
@@ -938,18 +938,18 @@
       "converted": true,
       "kind": "Dark pool — unable to hold above",
       "scope": "near",
-      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:42",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "769.55",
       "native": "SPY",
       "converted": true,
       "kind": "Fri dark pool — furthest make",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      }
@@ -974,7 +974,7 @@
       "converted": true,
       "kind": "Neg GEX pocket",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -985,7 +985,7 @@
       "converted": true,
       "kind": "Pin magnet",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
@@ -996,7 +996,7 @@
       "converted": true,
       "kind": "Volt (today)",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      },
@@ -1007,7 +1007,7 @@
       "converted": true,
       "kind": "Dark pool",
       "scope": "near",
-      "post_url": "https://x.com/QuantData/status/2118051154105864377",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:42",
       "age_days": 1
      }
@@ -1031,7 +1031,7 @@
       "converted": true,
       "kind": "Call wall",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
@@ -1056,7 +1056,7 @@
       "converted": true,
       "kind": "High OI node",
       "scope": "near",
-      "post_url": "https://x.com/CheddarFlow/status/2118041733338456512",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:04",
       "age_days": 1
      },
@@ -1067,18 +1067,18 @@
       "converted": true,
       "kind": "Put wall (lost)",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      },
      {
-      "handle": "SRC_LEDGER",
+      "handle": "SRC",
       "raw_price": "765",
       "native": "SPY",
       "converted": true,
       "kind": "Death-cross / 20-50DMA reclaim watch",
       "scope": "near",
-      "post_url": "https://x.com/SRC_LEDGER/status/2118041569282396458",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:03",
       "age_days": 1
      },
@@ -1089,7 +1089,7 @@
       "converted": true,
       "kind": "Gamma Flip (open card)",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117989110216532249",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:35",
       "age_days": 1
      },
@@ -1100,7 +1100,7 @@
       "converted": true,
       "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
@@ -1126,7 +1126,7 @@
       "converted": false,
       "kind": "Gamma Flip",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2118010420422455398",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:00",
       "age_days": 1
      }
@@ -1150,7 +1150,7 @@
       "converted": true,
       "kind": "Positive gamma level (overnight reclaim)",
       "scope": "near",
-      "post_url": "https://x.com/Tradytics/status/2117970667547009103",
+      "post_url": "",
       "posted_pt": "2026-11-04 05:22",
       "age_days": 1
      }
@@ -1174,7 +1174,7 @@
       "converted": true,
       "kind": "GEX cluster floor",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
@@ -1198,7 +1198,7 @@
       "converted": true,
       "kind": "Gamma flip",
       "scope": "near",
-      "post_url": "https://x.com/GEXEdgeIO/status/2118018531208188210",
+      "post_url": "",
       "posted_pt": "2026-11-04 08:32",
       "age_days": 1
      }
@@ -1222,7 +1222,7 @@
       "converted": true,
       "kind": "Floor",
       "scope": "near",
-      "post_url": "https://x.com/VoltickIO/status/2117980467089830019",
+      "post_url": "",
       "posted_pt": "2026-11-04 06:01",
       "age_days": 1
      }
@@ -1246,7 +1246,7 @@
       "converted": false,
       "kind": "Heatmap break — below risks bulls",
       "scope": "near",
-      "post_url": "https://x.com/FlowbyBobby/status/2118050285612650989",
+      "post_url": "",
       "posted_pt": "2026-11-04 10:38",
       "age_days": 1
      }

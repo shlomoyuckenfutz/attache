@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 import pandas as pd
 R = Path(__file__).resolve().parent
-POST = R / "xnews/spartan/plan_b.json"; OUT = R / "xnews/spartan/first_blade_calc.json"
+POST = R / "xnews/plan_b/plan_b.json"; OUT = R / "xnews/plan_b/first_blade_calc.json"
 
 def calc(sym="SPY"):
     d = pd.read_parquet(R / f"equity_orb15/data/{sym}_1m.parquet", columns=["ts", "open", "high", "low", "close"])

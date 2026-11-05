@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Attaché TERMINAL snapshot builder — free public data only.
 
-Fetches quotes/charts (Yahoo), filings (SEC EDGAR), macro (FRED CSV),
-news/earnings (Yahoo RSS + Nasdaq calendar + SEC 8-K), options (Yahoo then CBOE),
+Fetches quotes/charts (free_data), filings (SEC EDGAR), macro (FRED CSV),
+news/earnings (free_data RSS + Nasdaq calendar + SEC 8-K), options (free_data then CBOE),
 and builds a rule-based DESK summary. Writes terminal-test/data/snapshot.json
 and embeds into terminal-test/_src/terminal_plain.html (from template).
 
@@ -39,7 +39,7 @@ OUT_JSON = OUT_DIR / "snapshot.json"
 DESK = Path(os.environ.get("DESK", "/workspace/desk/orb-research"))
 PLAIN_TEMPLATE = DESK / "terminal_src" / "terminal_plain.template.html"
 PLAIN_OUT = DESK / "terminal_src" / "terminal_plain.html"
-UA_YAHOO = "Mozilla/5.0 (compatible; AttacheTerminal/1.0; +mailto:Shlomoyuckenfutz@gmail.com)"
+UA_FEED = "Mozilla/5.0 (compatible; AttacheTerminal/1.0; +mailto:Shlomoyuckenfutz@gmail.com)"
 UA_SEC = "AttacheTerminal/1.0 (Shlomoyuckenfutz@gmail.com)"
 UA_NASDAQ = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
@@ -107,7 +107,7 @@ def panel(ok: bool, data=None, error: str | None = None, fetched_at: str | None 
 
 def http_get(url: str, headers: dict | None = None, timeout: int = 30, retries: int = 3):
     last = None
-    h = {"User-Agent": UA_YAHOO, "Accept": "*/*"}
+    h = {"User-Agent": UA_FEED, "Accept": "*/*"}
     if headers:
         h.update(headers)
     for i in range(retries):
@@ -129,16 +129,16 @@ def http_text(url: str, headers: dict | None = None, timeout: int = 30):
     return http_get(url, headers=headers, timeout=timeout).decode("utf-8", "replace")
 
 
-# ── Quotes / Charts (Yahoo) ───────────────────────────────────────────────
+# ── Quotes / Charts (free_data) ───────────────────────────────────────────────
 
-def fetch_yahoo_chart(symbol: str, range_: str = "1d", interval: str = "5m"):
+def fetch_feed_chart(symbol: str, range_: str = "1d", interval: str = "5m"):
     for host in ("query1", "query2"):
         url = (
-            f"https://{host}.finance.yahoo.com/v8/finance/chart/"
+            f"https://{host}.finance.free_data.com/v8/finance/chart/"
             f"{urllib.parse.quote(symbol, safe='^=')}?range={range_}&interval={interval}"
         )
         try:
-            d = http_json(url, headers={"User-Agent": UA_YAHOO})
+            d = http_json(url, headers={"User-Agent": UA_FEED})
             err = d.get("chart", {}).get("error")
             results = d.get("chart", {}).get("result") or []
             if err or not results:
@@ -146,7 +146,7 @@ def fetch_yahoo_chart(symbol: str, range_: str = "1d", interval: str = "5m"):
             return results[0]
         except Exception:
             continue
-    raise RuntimeError(f"Yahoo chart failed for {symbol}")
+    raise RuntimeError(f"free_data chart failed for {symbol}")
 
 
 def spark_from_closes(closes):
@@ -159,13 +159,13 @@ def spark_from_closes(closes):
     return [round((c - lo) / span, 4) if c is not None else None for c in closes]
 
 
-def quote_row(label: str, yahoo_sym: str):
+def quote_row(label: str, feed_sym: str):
     try:
         # intraday for spark
         try:
-            r = fetch_yahoo_chart(yahoo_sym, "1d", "5m")
+            r = fetch_feed_chart(feed_sym, "1d", "5m")
         except Exception:
-            r = fetch_yahoo_chart(yahoo_sym, "5d", "1d")
+            r = fetch_feed_chart(feed_sym, "5d", "1d")
         meta = r.get("meta") or {}
         ind = (r.get("indicators") or {}).get("quote") or [{}]
         closes = (ind[0] or {}).get("close") or []
@@ -183,7 +183,7 @@ def quote_row(label: str, yahoo_sym: str):
             chg_pct = 100.0 * chg / prev if prev else None
         return {
             "label": label,
-            "symbol": yahoo_sym,
+            "symbol": feed_sym,
             "last": last,
             "prev": prev,
             "change": chg,
@@ -196,7 +196,7 @@ def quote_row(label: str, yahoo_sym: str):
     except Exception as e:
         return {
             "label": label,
-            "symbol": yahoo_sym,
+            "symbol": feed_sym,
             "last": None,
             "prev": None,
             "change": None,
@@ -343,7 +343,7 @@ def fetch_filings():
 
 def fred_series(series_id: str):
     url = f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series_id}"
-    text = http_text(url, headers={"User-Agent": UA_YAHOO})
+    text = http_text(url, headers={"User-Agent": UA_FEED})
     # skip comments
     lines = [ln for ln in text.splitlines() if ln and not ln.startswith("#")]
     reader = csv.DictReader(io.StringIO("\n".join(lines)))
@@ -422,9 +422,9 @@ def fetch_macro():
 
 # ── News / Earnings ───────────────────────────────────────────────────────
 
-def yahoo_rss(ticker: str, limit: int = 5):
-    url = f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
-    text = http_text(url, headers={"User-Agent": UA_YAHOO})
+def feed_rss(ticker: str, limit: int = 5):
+    url = f"https://feeds.finance.free_data.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
+    text = http_text(url, headers={"User-Agent": UA_FEED})
     root = ET.fromstring(text)
     items = []
     for item in root.findall("./channel/item")[:limit]:
@@ -432,7 +432,7 @@ def yahoo_rss(ticker: str, limit: int = 5):
         link = (item.findtext("link") or "").strip()
         pub = (item.findtext("pubDate") or "").strip()
         # strip analyst/person names? keep headlines as-is but do not attribute people in desk copy
-        items.append({"ticker": ticker, "title": title, "link": link, "published": pub, "source": "Yahoo RSS"})
+        items.append({"ticker": ticker, "title": title, "link": link, "published": pub, "source": "desk"})
     return items
 
 
@@ -464,7 +464,7 @@ def nasdaq_earnings_for_dates(dates, watch):
                             "time": r.get("time"),
                             "name": r.get("name"),
                             "eps_forecast": r.get("epsForecast") or r.get("eps_forecast"),
-                            "source": "Nasdaq calendar",
+                            "source": "desk",
                         }
                     )
         except Exception as e:
@@ -494,7 +494,7 @@ def sec_8k_headlines(ticker: str, cik: str, limit: int = 3):
                 "title": title,
                 "link": href,
                 "published": updated,
-                "source": "SEC 8-K",
+                "source": "desk",
             }
         )
     return items
@@ -505,7 +505,7 @@ def fetch_news():
     errors = []
     watch = WATCH_EQUITY + ["SPY", "QQQ"]
     with ThreadPoolExecutor(max_workers=6) as ex:
-        futs = {ex.submit(yahoo_rss, t): t for t in watch}
+        futs = {ex.submit(feed_rss, t): t for t in watch}
         for fut in as_completed(futs):
             t = futs[fut]
             try:
@@ -545,18 +545,18 @@ def fetch_news():
     )
 
 
-# ── Options (Yahoo try → CBOE) ────────────────────────────────────────────
+# ── Options (free_data try → CBOE) ────────────────────────────────────────────
 
-def try_yahoo_options(symbol: str):
+def try_feed_options(symbol: str):
     for host in ("query1", "query2"):
-        url = f"https://{host}.finance.yahoo.com/v7/finance/options/{symbol}"
+        url = f"https://{host}.finance.free_data.com/v7/finance/options/{symbol}"
         try:
-            d = http_json(url, headers={"User-Agent": UA_YAHOO}, timeout=20)
+            d = http_json(url, headers={"User-Agent": UA_FEED}, timeout=20)
             chain = (d.get("optionChain") or {}).get("result") or []
             if not chain:
                 err = (d.get("optionChain") or {}).get("error") or d.get("finance", {}).get("error")
                 raise RuntimeError(str(err) or "empty")
-            return chain[0], "Yahoo"
+            return chain[0], "free_data"
         except Exception as e:
             last = e
             continue
@@ -565,7 +565,7 @@ def try_yahoo_options(symbol: str):
 
 def fetch_cboe_options(symbol: str):
     url = f"https://cdn.cboe.com/api/global/delayed_quotes/options/{symbol}.json"
-    d = http_json(url, headers={"User-Agent": UA_YAHOO}, timeout=40)
+    d = http_json(url, headers={"User-Agent": UA_FEED}, timeout=40)
     return d, "CBOE delayed"
 
 
@@ -689,8 +689,8 @@ def fetch_options():
     for sym in ("SPY", "QQQ"):
         try:
             try:
-                chain, source = try_yahoo_options(sym)
-                # Yahoo path: minimal summary if somehow works
+                chain, source = try_feed_options(sym)
+                # free_data path: minimal summary if somehow works
                 quote = chain.get("quote") or {}
                 opts = (chain.get("options") or [{}])[0]
                 calls = opts.get("calls") or []
@@ -709,7 +709,7 @@ def fetch_options():
                         "call_oi": call_oi,
                         "biggest_oi": [],
                         "source": source,
-                        "note": "Yahoo options returned; skew not computed in this path",
+                        "note": "free_data options returned; skew not computed in this path",
                     }
                 )
             except Exception:
@@ -911,8 +911,8 @@ def main():
         "options": options,
         "desk": desk,
         "from_reference": {
-            "note": "Yahoo chart endpoint pattern and free-data desk ethos from public writeup (helicerat0x); French factors not used on this wall.",
-            "yahoo_chart": "https://query1.finance.yahoo.com/v8/finance/chart/{SYMBOL}",
+            "note": "free_data chart endpoint pattern and free-data desk ethos from public writeup (helicerat0x); French factors not used on this wall.",
+            "feed_chart": "https://query1.finance.free_data.com/v8/finance/chart/{SYMBOL}",
         },
     }
     snap = merge_prev(snap, OUT_JSON)

@@ -18,7 +18,7 @@
       "net_gex": "-$12.8B",
       "regime": "negative gamma",
       "posted_pt": "2026-10-30 06:00",
-      "url": "https://x.com/VoltickIO/status/2116153316065603814",
+      "url": "#",
       "note": "Open 759.9 in 758.2-764.22; Volt today shifted to 760 at open. Scorecard Volt39/54 EM36/54 walls37/54 (112/162).",
       "extra": "Text Volt 765 is today's expiration; image values are all expirations; put wall coincides with Volt at 765"
     },
@@ -34,7 +34,7 @@
       "net_gex": "-16.8B short gamma",
       "regime": "short gamma",
       "posted_pt": "2026-10-30 08:20",
-      "url": "https://x.com/CheddarFlow/status/2116188394556387766",
+      "url": "#",
       "note": "Lost 760 put wall (-2.8B); next big puts 755 (-1.7B) and 750 (-2.3B)"
     },
     {
@@ -49,7 +49,7 @@
       "net_gex": null,
       "regime": null,
       "posted_pt": "2026-10-29 15:06",
-      "url": "https://x.com/SRC_LEDGER/status/2115928352964133024",
+      "url": "#",
       "note": "Base: test DP 762.27 line in sand; alt pin 769.36. Intraday 10/30: DP 757.43 bounce setup; later 754.07/754.05 air pocket to 746.77"
     },
     {
@@ -64,7 +64,7 @@
       "net_gex": "neg node 7560 hit",
       "regime": "negative gamma",
       "posted_pt": "2026-10-30 11:38",
-      "url": "https://x.com/QuantData/status/2116238324117733848",
+      "url": "#",
       "note": "ES 7610 target \u2192 7584 zone \u2192 MVC 7574 \u2192 7560 neg node hit; puts lead calls $23M+"
     },
     {
@@ -79,7 +79,7 @@
       "net_gex": "-904M",
       "regime": "under flip / all 3 mkts neg",
       "posted_pt": "2026-10-29 08:45",
-      "url": "https://x.com/GEXEdgeIO/status/2115832316690055332",
+      "url": "#",
       "note": "Stale vs 10/30 tape; last published GEX update was Oct 29"
     }
   ],

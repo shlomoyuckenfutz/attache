@@ -1,4 +1,4 @@
-"""Read-only Alpaca market-data pull of SPY 1m bars (4:00-16:00 ET). No trading endpoints used."""
+"""Read-only free_feed market-data pull of SPY 1m bars (4:00-16:00 ET). No trading endpoints used."""
 import os, sys, time, json, requests, pandas as pd
 from datetime import datetime, timedelta, timezone
 # Credentials from env (GitHub Actions secrets or pre-exported local env).
@@ -8,7 +8,7 @@ if os.environ.get("ALPACA_SECRET_KEY") and not os.environ.get("ALPACA_API_SECRET
 if not os.environ.get("ALPACA_API_KEY") or not (os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")):
     raise SystemExit("ALPACA_API_KEY and ALPACA_SECRET_KEY (or ALPACA_API_SECRET) required")
 H={"APCA-API-KEY-ID":os.environ["ALPACA_API_KEY"],"APCA-API-SECRET-KEY":os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")}
-URL="https://data.alpaca.markets/v2/stocks/bars"
+URL="https://data.free_feed.markets/v2/stocks/bars"
 def pull(sym,feed,start,end):
     rows=[];tok=None
     while True:

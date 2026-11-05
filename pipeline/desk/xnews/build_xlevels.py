@@ -82,7 +82,7 @@ def pick(h, sym, *kinds, scope=None):
             return l["raw"]
     return None
 G = {"date": session, "updated_pt": conf["updated_pt"], "symbols": []}
-U = lambda h, i: f"https://x.com/{h}/status/{i}"
+U = lambda h, i: f"#"
 GS = json.loads((X / "gamma_sources.json").read_text())   # per-session gamma sources (curated from posts by the collection pass)
 spy_src, spx_src, qqq_src, nq_src = GS.get("SPY", []), GS.get("SPX", []), GS.get("QQQ", []), GS.get("NQ", [])
 EM = GS.get("em") or {}

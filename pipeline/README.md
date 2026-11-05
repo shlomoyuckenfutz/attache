@@ -11,9 +11,9 @@ GitHub Actions runs `refresh.sh` on a schedule. Bot-only inputs (X / LLM / brows
 | X-levels raw | `pipeline/inputs/xlevels/levels_raw.json` |
 | Handles / sources | `pipeline/inputs/xlevels/handles.json`, `newswire_handles.json`, `sources.json` |
 | Optional derived xlevels | `pipeline/inputs/xlevels/{confluence,gamma,scorecard}.json` |
-| Night Ledger issues | `pipeline/inputs/bento/YYYY-MM-DD.md` |
-| First Blade post | `pipeline/inputs/spartan/plan_b.json` |
-| Mancini ES levels | `pipeline/inputs/mancini/levels_a.json` |
+| Night Ledger issues | `pipeline/inputs/ledger/YYYY-MM-DD.md` |
+| First Blade post | `pipeline/inputs/plan_b/plan_b.json` |
+| Iron Ladder ES levels | `pipeline/inputs/levels_a/levels_a.json` |
 | Dark Pool levels | `pipeline/inputs/spy_dark_pool.json` **and** `pipeline/inputs/darkpool_levels.json` |
 | Weekly plan text | `pipeline/inputs/plans/yuckenfutz-weekly-YYYY-MM-DD.txt` |
 | Newswire raw (X MCP) | `pipeline/inputs/newswire_raw.json` (Actions runs `newswire_fetch.py` → patches THE WIRE) |
@@ -23,6 +23,6 @@ Do **not** commit secrets. `desk/secrets/study_password.txt` is runtime-only (fr
 ## Local dry-run
 
 ```bash
-export ALPACA_API_KEY=... ALPACA_SECRET_KEY=... ATOUCHE_STUDY_PASSWORD=...
+export FEED_API_KEY=... FEED_SECRET_KEY=...  # mapped from Actions secrets ATOUCHE_STUDY_PASSWORD=...
 cd pipeline && bash refresh.sh
 ```

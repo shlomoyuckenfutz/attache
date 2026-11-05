@@ -51,7 +51,7 @@ run "build_xlevels" bash -c 'cd xnews && timeout 120 python3 build_xlevels.py'
 run "newswire_fetch" bash -c 'cd xnews && python3 newswire_fetch.py'
 run "patch_newswire" python3 patch_newswire.py "$ORB_SITE"
 
-# 4) ES conversions (mancini levels from inputs)
+# 4) ES conversions (levels_a levels from inputs)
 run "convert_es" bash -c 'cd es_levels && timeout 120 python3 convert_es.py'
 
 # 5) Free GEX (CBOE public)
@@ -64,8 +64,8 @@ run "calc_im" bash -c 'cd xnews/implied_move && python3 calc_im.py'
 run "overnight_fetch" bash -c 'cd es_levels && python3 overnight_fetch.py'
 run "overnight_details" bash -c 'cd es_levels && python3 overnight_details.py'
 
-# 8) Night ledger parse (from bento md inputs)
-run "ledger_parse" bash -c 'cd xnews/bento && python3 ledger_parse.py'
+# 8) Night ledger parse (from ledger md inputs)
+run "ledger_parse" bash -c 'cd xnews/ledger && python3 ledger_parse.py'
 
 # 9) HEAT / exposure data (CBOE + Alpaca bars) — no git push
 run "exposure_collector" env PUSH=0 python3 scripts/exposure_collector.py

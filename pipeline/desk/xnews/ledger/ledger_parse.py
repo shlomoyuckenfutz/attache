@@ -10,7 +10,7 @@ F = 0.099112  # ES-to-SPY factor: ES = SPY / F
 # next-session direction call per issue (UP / DOWN / FLAT); curated from each issue's take, heuristic fallback for new issues
 DIR = {"2026-10-07": "UP", "2026-10-08": "UP", "2026-10-09": "DOWN", "2026-10-12": "DOWN", "2026-10-13": "DOWN", "2026-10-14": "UP",
        "2026-10-15": "FLAT", "2026-10-16": "UP", "2026-10-19": "UP", "2026-10-20": "DOWN", "2026-10-21": "DOWN", "2026-10-22": "UP", "2026-10-23": "UP", "2026-10-26": "FLAT", "2026-10-27": "DOWN", "2026-10-28": "DOWN", "2026-10-29": "DOWN", "2026-10-30": "DOWN"}
-BAN = re.compile(r"(?i)@?michaelpbento|bento|valois|cheddar ?flow|unusual whales|x\.com/\S*|https?://\S*")
+BAN = re.compile(r"(?i)@?SRC(?:\s+LEDGER)?|VAULT_SRC|GEX_PANEL|x\.com/\S*|https?://\S*")
 def clean(s): return re.sub(r"\s+", " ", BAN.sub("", s)).strip()
 def sents(t): return [x.strip() for x in re.split(r"(?<=[.!?])\s+", t) if x.strip()]
 def body(p):

@@ -51,7 +51,7 @@
    "greyed": false
   },
   {
-   "handle": "SRC_PLAN_B",
+   "handle": "SRC",
    "levels_posted": 8,
    "touched": 5,
    "respected": 2,
@@ -163,7 +163,7 @@
    "greyed": false
   },
   {
-   "handle": "SRC_LEVELS_A",
+   "handle": "SRC",
    "levels_posted": 0,
    "touched": 0,
    "respected": 0,

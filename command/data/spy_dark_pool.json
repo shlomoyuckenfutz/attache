@@ -11,14 +11,14 @@
       "SPY": 755.72,
       "SPX": 7580.07,
       "ES": 7614.0,
-      "source": "Yahoo Finance v8 chart API",
+      "source": "desk",
       "asof": "2026-10-30"
     },
     "prior": {
       "spy_per_spx": 0.0997,
       "es_minus_spx": 34.5
     },
-    "note": "SPX = SPY \u00f7 0.099698; ES = SPX + 33.93 (Fri 2026-10-30 Yahoo closes: SPY 755.72, SPX 7580.07, ES 7614.0)"
+    "note": "SPX = SPY \u00f7 0.099698; ES = SPX + 33.93 (Fri 2026-10-30 free_data closes: SPY 755.72, SPX 7580.07, ES 7614.0)"
   },
   "levels": [
     758.02,
@@ -131,7 +131,7 @@
     "timeframe": "5Min",
     "feed": "iex",
     "session": "2026-10-30 RTH",
-    "note": "Baked Alpaca IEX 5m bars for PRICE LADDER (no client keys)",
+    "note": "Baked free_feed IEX 5m bars for PRICE LADDER (no client keys)",
     "candles": [
       {
         "t": "2026-10-30T13:30:00Z",

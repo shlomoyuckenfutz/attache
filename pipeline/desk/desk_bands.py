@@ -1,9 +1,9 @@
-"""DESK BANDS loader: reads es_levels/voltick/{gex_SPY,gex_QQQ,gex_SPX,expected_moves,flow_pressure}.json
+"""DESK BANDS loader: reads es_levels/magnet/{gex_SPY,gex_QQQ,gex_SPX,expected_moves,flow_pressure}.json
 (future refreshes: just overwrite those JSONs and run publish_dashboard.sh). Normalizes to source-neutral data and renders
 static HTML for: GAMMA GRID (command), UNDERTOW (command), DESK BANDS + gamma line (main). All visible text is scrubbed."""
 import json, re, html
 from pathlib import Path
-RES = Path(__file__).resolve().parent; DIR = RES / "es_levels" / "voltick"; ES = RES / "es_levels"
+RES = Path(__file__).resolve().parent; DIR = RES / "es_levels" / "magnet"; ES = RES / "es_levels"
 TK = ("SPY", "QQQ", "SPX")
 def J(p):
     try: return json.loads(Path(p).read_text())
@@ -11,8 +11,8 @@ def J(p):
 def scrub(s):
     s = str(s if s is not None else "")
     s = re.sub(r"(?i)https?://\S+|\b[\w.-]+\.io\S*", "", s)
-    s = re.sub(r"(?i)voltick", "", s)
-    s = re.sub(r"(?i)\bfront\s+volts?\b", "FRONT MAGNET", s)
+    s = re.sub(r"(?i)magnet", "", s)
+    s = re.sub(r"(?i)\bfront\s+MAGNET?\b", "FRONT MAGNET", s)
     s = re.sub(r"(?i)\bvolts?\b", "MAGNET", s)
     s = re.sub(r"(?i)\borb ?(5|30)\b", "", s)
     return s.strip()
@@ -47,7 +47,7 @@ def load_shot():
             c = (g.get(m) or {}).get("cards") or {}
             fm = c.get("final_volt", ""); fmv = num(fm.split(":", 1)[1]) if ":" in str(fm) and re.search(r"\$\d", str(fm)) else None
             lv = {"net_gex": head(c.get("net_gex")), "regime": "POS" if str(c.get("net_gex", "")).startswith("+") else "NEG",
-                  "call_wall": num(c.get("call_wall")), "magnet": num(c.get("volt")), "front_magnet": fmv, "flip": num(c.get("gamma_flip")),
+                  "call_wall": num(c.get("call_wall")), "magnet": num(c.get("MAGNET")), "front_magnet": fmv, "flip": num(c.get("gamma_flip")),
                   "move": scrub(c.get("move")), "iv": head(c.get("atm_iv")) if "not" not in str(c.get("atm_iv")) else None}
             for k in ("call_wall", "magnet", "front_magnet", "flip"): lv["es_" + k] = to_es(t, lv[k])
             lv["pos"] = [(x["strike"], scrub(x["gex"])) for x in (g.get(m) or {}).get("top5_pos", [])][:5]

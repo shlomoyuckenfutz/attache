@@ -26,11 +26,11 @@ git push
 
 ## Panels (free sources only)
 
-1. Quotes/Charts — Yahoo `query1/query2.finance.yahoo.com/v8/finance/chart`
+1. Quotes/Charts — free_data `query1/query2.finance.free_data.com/v8/finance/chart`
 2. Filings — SEC EDGAR (`User-Agent` includes Shlomoyuckenfutz@gmail.com)
 3. Macro — FRED `fredgraph.csv` (no API key)
-4. News/Earnings — Yahoo RSS, SEC 8-K atom, Nasdaq earnings calendar JSON
-5. Options — Yahoo options if reachable, else CBOE delayed quotes JSON
+4. News/Earnings — free_data RSS, SEC 8-K atom, Nasdaq earnings calendar JSON
+5. Options — free_data options if reachable, else CBOE delayed quotes JSON
 6. The Desk — rule-based plain-English summary + “Ask Head Shlomo…”
 
 Each panel shows its error and keeps last-good data on failure.

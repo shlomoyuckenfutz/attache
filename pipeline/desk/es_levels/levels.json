@@ -29,8 +29,8 @@
   7686,
   7703
  ],
- "mancini_asof": "2026-10-30 14:00 PT (Fri 10/30 close posts)",
- "mancini_note": "source=mancini (@SRC_LEVELS_A X posts). Refreshed daily from xnews/mancini/levels_a.json latest; 'levels' = Everett's own.",
+ "levels_a_asof": "2026-10-30 14:00 PT (Fri 10/30 close posts)",
+ "levels_a_note": "source=levels_a (SRC X posts). Refreshed daily from xnews/levels_a/levels_a.json latest; 'levels' = Everett's own.",
  "key_levels": [
   7680
  ]

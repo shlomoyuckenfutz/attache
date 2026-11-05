@@ -1,17 +1,17 @@
-# @SRC_LEDGER — Nightly "SPY Post-Market Write-Up" (research summary)
+# SRC — Nightly "SPY Post-Market Write-Up" (research summary)
 
 Compiled 2026-10-20, 8:45 PM PT. Source files: `./2026-10-07.md` … `./2026-10-20.md` (full text plus post URL in each file).
 
 ## Where it lives
-- **Platform: X Articles** (long-form posts on X), not Substack or beehiiv. Bio: "Valois Capital Management, LLC". There's no website link in the profile.
+- **Platform: X Articles** (long-form posts on X), not Substack or beehiiv. Bio: "SRC Capital Management, LLC". There's no website link in the profile.
 - Title format: "<Weekday> <M/D> SPY Post-Market Write-Up". Posted around 2:30–4:00 PM PT after the close, sometimes on the weekend for Friday's session. He usually reposts it in the evening ("Don't forget to read today's write-up").
 - The daily write-ups are free and public. He also sells a paid X subscription tier ("macro analysis for subscribers"); none of that was accessed.
-- **RSS: none.** X Articles have no RSS or Atom feed, and x.com/i/article URLs don't open without login (t.co reports 404). Nightly pull: use the X API (the `x` MCP `search_posts_all`, query `from:SRC_LEDGER url:article`, `post.fields=article`). It returns `article.title` and `article.plain_text`. Charts are images only (media ids, no text).
+- **RSS: none.** X Articles have no RSS or Atom feed, and # URLs don't open without login (t.co reports 404). Nightly pull: use the X API (the `x` MCP `search_posts_all`, query `from:SRC url:article`, `post.fields=article`). It returns `article.title` and `article.plain_text`. Charts are images only (media ids, no text).
 
 ## Method / style
 - **Instrument:** SPY, mostly the daily chart, with the 1H chart for next-day timing. ES is not used. Context instruments: VIX, VIX1D, VIX3M/VIX spread, VIX term structure, 10Y yield, DXY, Gold, WTI, IWM, RSP vs MAGS, % of stocks above their 50DMA. Occasionally KOSPI.
 - **Levels:** the main tool is **dark-pool print levels** (large blocks, given with $ size). He prefers them to fibs. Recurring levels: 762.27 (the largest), 764.19, 767.41/.42, 769.45, **772.22/772.43** (the "ceiling since Aug 4"), 773.76/.84, 776.47, 777.86, 779.10, 757.40/.43, 746/745.
-- **Options positioning:** GEX call and put walls (CheddarFlow, Unusual Whales), gamma/vanna/charm heatmaps, OI magnets, max pain, 0DTE walls. He follows OpEx and VIXperation dates closely.
+- **Options positioning:** GEX call and put walls (VAULT_SRC, GEX_PANEL), gamma/vanna/charm heatmaps, OI magnets, max pain, 0DTE walls. He follows OpEx and VIXperation dates closely.
 - **Moving averages:** 10/20/50/100/200 DMA, EMA 8/21, 1H SMA 10/20/50/200. He calls a level broken only after a confirmed close ("one day doesn't confirm").
 - **Oscillators:** MACD, RSI, Stochastic, Awesome Oscillator, Bollinger Bands (squeeze = coiling spring; close outside the band with RSI<30 = mean-reversion signal). He also reads MOC imbalances (first call vs. final call).
 - **Rules of thumb:** VIX1D touching 6.88 means a next-day pullback. VIX closing up 10% or more gives an 80% chance of a SPY bounce within 2 sessions (95% if up 20% or more). Gold tracks SPY, so a Gold divergence warns. WTI above 95.64 is a headwind for stocks.
@@ -31,7 +31,7 @@ Compiled 2026-10-20, 8:45 PM PT. Source files: `./2026-10-07.md` … `./2026-10-
 | Mon 10/19 | Slow bounce into Wed AM, then about 760 by Fri; next stops 757.40, then 746 | 772.22 retest unlikely, 50DMA, 767.41, 762.27, 750 put wall | Lost the 20 and 50 DMA; MOC first call -3.6B; will buy Nov puts on a rejection |
 | Tue 10/20 (**for Wed 10/21**) | **Bearish lean:** AM push up, weakness after the VIX settles | **772.22/772.43** test (cap 777.86), 50DMA ≈768.3, 769.45 1H resistance, 768 GEX, 773 upside node, 764.19 support, 765 0DTE put wall | VIXperation removes the VIX<20 suppression; Gold diverging; TSLA/META/TXN/IBM earnings; close below the 50DMA means a correction into month-end |
 
-## How the calls held up (SPY daily OHLC, Yahoo free data)
+## How the calls held up (SPY daily OHLC, free_data free data)
 | Call made | Next session actual | Verdict |
 |---|---|---|
 | 10/7: shallow dip to ~776, then up | 10/8: low 770.44, close 773.93 | Partial: direction right, dip deeper (he admitted it) |

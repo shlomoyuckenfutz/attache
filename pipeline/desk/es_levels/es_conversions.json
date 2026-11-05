@@ -10,7 +10,7 @@
   "es_per_spy": 10.071016129145246
  },
  "method": "Convert posted ES levels (+ pinned Iron Ladder) to SPY only. Free delayed data only.\nSPY = ES * factor, factor = SPY_close / ES_close at a synchronized timestamp (last 5m bar ending <= 16:00 ET of latest session).",
- "mancini": {
+ "levels_a": {
   "date": "2026-11-04",
   "levels": [
    {
