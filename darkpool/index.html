@@ -7,10 +7,10 @@
 <link rel="icon" href="data:,">
 <style>
 :root{
- --bg:#000;--p:#070707;--p2:#0c0c0c;--ln:#232323;--ln2:#333;
- --amb:#ffb000;--amb2:#a87400;--txt:#e6e0cc;--mut:#857d6a;
- --up:#3ddc5c;--dn:#ff4d4d;--cy:#22c7e8;--pu:#8a4fc4;--pu2:#c48cff;--pu3:#e2c8ff;
- --fs:12.5px;--fs-s:11px;--fs-l:15px;
+  --bg:#000;--p:#070707;--p2:#0c0c0c;--ln:#232323;--ln2:#333;
+  --amb:#ffb000;--amb2:#a87400;--txt:#e6e0cc;--mut:#857d6a;
+  --up:#3ddc5c;--dn:#ff4d4d;--cy:#22c7e8;--pu:#8a4fc4;--pu2:#c48cff;--pu3:#e2c8ff;
+  --fs:12.5px;--fs-s:11px;--fs-l:15px;
 }
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 html,body{margin:0;background:var(--bg);color:var(--txt);font:var(--fs)/1.45 'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
@@ -114,31 +114,31 @@ table.lv .pri td:first-child,table.lv td .badge{opacity:1}
 .dpx .xc{display:inline-block;font-size:9px;font-weight:700;color:#000;background:#ffb000;padding:0 3px;margin-top:2px}
 .tip{position:absolute;z-index:30;pointer-events:none;background:#12081c;border:1px solid #c48cff;color:var(--pu3);font-size:10.5px;padding:4px 6px;white-space:nowrap;display:none;box-shadow:0 0 12px #8a4fc466}
 @media(max-width:720px){
- html,body{-webkit-text-size-adjust:100%;text-size-adjust:100%}
- body{--fs:13px;--fs-s:12px;--fs-l:14px;font-size:13px}
- .wrap{padding:8px 8px 28px;max-width:100%;overflow-x:hidden}
- .ladder{grid-template-columns:1fr;gap:6px;max-width:100%;min-width:0}
- /* Taller chart on phones so candles/labels breathe */
- .lad-rail{min-height:560px;max-width:100%;width:100%;overflow:hidden;box-sizing:border-box}
- .lad-rail svg{min-height:560px;max-width:100%;width:100%;height:auto;display:block}
- .lad-legend{flex-direction:column;flex-wrap:nowrap;gap:6px;max-width:100%}
- .lad-legend .chip{flex:1 1 auto;width:100%;max-width:100%;box-sizing:border-box;min-width:0}
- .lad-legend .chip b{margin-right:6px}
- .lad-legend .chip-list{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
- .lad-legend .chip-row{display:flex;flex-wrap:wrap;gap:4px 8px;max-width:100%}
- .lad-legend .pxc{display:inline-block;padding:1px 5px;border:1px solid #3a2752;border-radius:3px;margin:0;white-space:nowrap;font-size:12px}
- /* Restore original multi-col level cards; scroll sideways if needed — do not restyle into a stack */
- .dpx{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
- .dpx .dg{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
- .bbbar{width:64px}
- /* Level table: original layout, horizontal scroll only */
- .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
- table.lv,table.st{min-width:420px}
- h2{font-size:14px;overflow-wrap:anywhere}
- .sub{overflow-wrap:anywhere;word-break:break-word}
- .top{flex-wrap:wrap;gap:6px;max-width:100%;box-sizing:border-box}
- .top .brand,.top .meta{max-width:100%;overflow-wrap:anywhere;word-break:break-word;white-space:normal}
- .meta{font-size:12px;line-height:1.35}
+  html,body{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{--fs:13px;--fs-s:12px;--fs-l:14px;font-size:13px}
+  .wrap{padding:8px 8px 28px;max-width:100%;overflow-x:hidden}
+  .ladder{grid-template-columns:1fr;gap:6px;max-width:100%;min-width:0}
+  /* Taller chart on phones so candles/labels breathe */
+  .lad-rail{min-height:560px;max-width:100%;width:100%;overflow:hidden;box-sizing:border-box}
+  .lad-rail svg{min-height:560px;max-width:100%;width:100%;height:auto;display:block}
+  .lad-legend{flex-direction:column;flex-wrap:nowrap;gap:6px;max-width:100%}
+  .lad-legend .chip{flex:1 1 auto;width:100%;max-width:100%;box-sizing:border-box;min-width:0}
+  .lad-legend .chip b{margin-right:6px}
+  .lad-legend .chip-list{display:flex;flex-direction:column;align-items:flex-start;gap:4px}
+  .lad-legend .chip-row{display:flex;flex-wrap:wrap;gap:4px 8px;max-width:100%}
+  .lad-legend .pxc{display:inline-block;padding:1px 5px;border:1px solid #3a2752;border-radius:3px;margin:0;white-space:nowrap;font-size:12px}
+  /* Restore original multi-col level cards; scroll sideways if needed — do not restyle into a stack */
+  .dpx{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  .dpx .dg{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))}
+  .bbbar{width:64px}
+  /* Level table: original layout, horizontal scroll only */
+  .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+  table.lv,table.st{min-width:420px}
+  h2{font-size:14px;overflow-wrap:anywhere}
+  .sub{overflow-wrap:anywhere;word-break:break-word}
+  .top{flex-wrap:wrap;gap:6px;max-width:100%;box-sizing:border-box}
+  .top .brand,.top .meta{max-width:100%;overflow-wrap:anywhere;word-break:break-word;white-space:normal}
+  .meta{font-size:12px;line-height:1.35}
 }
 </style>
 </head>
@@ -226,600 +226,600 @@ const run=()=>{document.querySelectorAll('table').forEach(tb=>{if(tb.closest('#u
 const rs=[...(tb.tBodies[0]||tb).rows].filter(r=>!r.querySelector('th'));if(rs.length>10){const K=6;rs.slice(K).forEach(r=>r.classList.add('ux-h'));const b=document.createElement('button');b.className='ux-more';b.type='button';
 const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' rows)';L();b.onclick=()=>{b.dataset.o=b.dataset.o?'':'1';rs.slice(K).forEach(r=>r.classList.toggle('ux-h',!b.dataset.o));L()};w.after(b)}})};document.readyState=='loading'?document.addEventListener('DOMContentLoaded',run):setTimeout(run,0)})()</script><!--UISHELL-->
 <div class="wrap">
- <header class="top">
- <div class="brand">◆ DARK POOL</div>
- <div class="meta" id="hdrMeta">loading levels…</div>
- </header>
+  <header class="top">
+    <div class="brand">◆ DARK POOL</div>
+    <div class="meta" id="hdrMeta">loading levels…</div>
+  </header>
 
- <section class="sec dpx" id="pos">
- <div class="mut">Loading position…</div>
- </section>
+  <section class="sec dpx" id="pos">
+    <div class="mut">Loading position…</div>
+  </section>
 
- <section class="sec">
- <h2>PRICE LADDER · 4H</h2>
- <p class="sub" id="ladSub">SPY 4H candles · Dark Pool level lines (current solid / prior dashed) · spot dashed · hover crosshair for SPX/ES</p>
- <div class="ladder">
- <div class="lad-rail" id="ladder"><div class="tip" id="ladTip"></div></div>
- <div class="lad-legend" id="ladLeg"></div>
- </div>
- </section>
+  <section class="sec">
+    <h2>PRICE LADDER · 4H</h2>
+    <p class="sub" id="ladSub">SPY 4H candles · Dark Pool level lines (current solid / prior dashed) · spot dashed · hover crosshair for SPX/ES</p>
+    <div class="ladder">
+      <div class="lad-rail" id="ladder"><div class="tip" id="ladTip"></div></div>
+      <div class="lad-legend" id="ladLeg"></div>
+    </div>
+  </section>
 
- <section class="sec">
- <h2>LEVEL TABLE · SPY / SPX / ES</h2>
- <p class="sub" id="convNote">SPX = SPY ÷ ratio · ES = SPX + basis (see Conversion)</p>
- <div class="tbl-wrap">
- <table class="lv" id="tbl">
- <thead><tr><th>#</th><th>SPY</th><th>STATUS</th><th>SPX</th><th>ES</th><th>SIDE</th><th>Δ SPY</th><th>Δ %</th></tr></thead>
- <tbody></tbody>
- </table>
- </div>
- </section>
+  <section class="sec">
+    <h2>LEVEL TABLE · SPY / SPX / ES</h2>
+    <p class="sub" id="convNote">SPX = SPY ÷ ratio · ES = SPX + basis (see Conversion)</p>
+    <div class="tbl-wrap">
+      <table class="lv" id="tbl">
+        <thead><tr><th>#</th><th>SPY</th><th>STATUS</th><th>SPX</th><th>ES</th><th>SIDE</th><th>Δ SPY</th><th>Δ %</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
 
- <section class="sec">
- <h2>LEVEL STATS · TOUCH / BOUNCE / BREAK</h2>
- <p class="sub" id="statsSub">Per-level reaction stats over the baked 5m window. Click column headers to sort.</p>
- <div class="tbl-wrap">
- <table class="st" id="statsTbl">
- <thead>
- <tr>
- <th class="sortable" data-k="spy" data-t="num">SPY<span class="arr">↕</span></th>
- <th class="sortable" data-k="type" data-t="str">TYPE<span class="arr">↕</span></th>
- <th class="sortable" data-k="touches" data-t="num">TOUCH<span class="arr">↕</span></th>
- <th class="sortable" data-k="bounces" data-t="num">BOUNCE<span class="arr">↕</span></th>
- <th class="sortable" data-k="breaks" data-t="num">BREAK<span class="arr">↕</span></th>
- <th>B vs K</th>
- <th class="sortable" data-k="bounce_pct" data-t="num">BOUNCE %<span class="arr">↕</span></th>
- <th class="sortable" data-k="break_pct" data-t="num">BREAK %<span class="arr">↕</span></th>
- <th class="sortable" data-k="avg_bounce_reaction" data-t="num">AVG REACT<span class="arr">↕</span></th>
- <th class="sortable" data-k="avg_break_follow" data-t="num">AVG FOLLOW<span class="arr">↕</span></th>
- <th class="sortable" data-k="last_touch" data-t="str">LAST TOUCH<span class="arr">↕</span></th>
- </tr>
- </thead>
- <tbody></tbody>
- </table>
- </div>
- <div class="defs" id="statsDefs">
- <b>Definitions</b> (history window of baked 5m bars):
- <ul>
- <li><b>Touch</b> — 5m bar high/low within <b>$0.10</b> of the level.</li>
- <li><b>Bounce</b> — rejected at the level and moved <b>≥$0.50</b> away without a close through.</li>
- <li><b>Break</b> — 5m close through the level that <b>holds 2+</b> subsequent bars on the through side.</li>
- <li><b>Bounce %</b> / <b>Break %</b> — share of classified bounce+break events (touches that never bounce or break are omitted from %).</li>
- <li><b>Avg react</b> — mean max excursion away from the level after a bounce.</li>
- <li><b>Avg follow</b> — mean max excursion through the level in the hour after a break holds.</li>
- <li><b>B vs K</b> — compact purple (bounce) vs grey (break) bar for that level’s events.</li>
- </ul>
- </div>
- </section>
+  <section class="sec">
+    <h2>LEVEL STATS · TOUCH / BOUNCE / BREAK</h2>
+    <p class="sub" id="statsSub">Per-level reaction stats over the baked 5m window. Click column headers to sort.</p>
+    <div class="tbl-wrap">
+      <table class="st" id="statsTbl">
+        <thead>
+          <tr>
+            <th class="sortable" data-k="spy" data-t="num">SPY<span class="arr">↕</span></th>
+            <th class="sortable" data-k="type" data-t="str">TYPE<span class="arr">↕</span></th>
+            <th class="sortable" data-k="touches" data-t="num">TOUCH<span class="arr">↕</span></th>
+            <th class="sortable" data-k="bounces" data-t="num">BOUNCE<span class="arr">↕</span></th>
+            <th class="sortable" data-k="breaks" data-t="num">BREAK<span class="arr">↕</span></th>
+            <th>B vs K</th>
+            <th class="sortable" data-k="bounce_pct" data-t="num">BOUNCE %<span class="arr">↕</span></th>
+            <th class="sortable" data-k="break_pct" data-t="num">BREAK %<span class="arr">↕</span></th>
+            <th class="sortable" data-k="avg_bounce_reaction" data-t="num">AVG REACT<span class="arr">↕</span></th>
+            <th class="sortable" data-k="avg_break_follow" data-t="num">AVG FOLLOW<span class="arr">↕</span></th>
+            <th class="sortable" data-k="last_touch" data-t="str">LAST TOUCH<span class="arr">↕</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="defs" id="statsDefs">
+      <b>Definitions</b> (history window of baked 5m bars):
+      <ul>
+        <li><b>Touch</b> — 5m bar high/low within <b>$0.10</b> of the level.</li>
+        <li><b>Bounce</b> — rejected at the level and moved <b>≥$0.50</b> away without a close through.</li>
+        <li><b>Break</b> — 5m close through the level that <b>holds 2+</b> subsequent bars on the through side.</li>
+        <li><b>Bounce %</b> / <b>Break %</b> — share of classified bounce+break events (touches that never bounce or break are omitted from %).</li>
+        <li><b>Avg react</b> — mean max excursion away from the level after a bounce.</li>
+        <li><b>Avg follow</b> — mean max excursion through the level in the hour after a break holds.</li>
+        <li><b>B vs K</b> — compact purple (bounce) vs grey (break) bar for that level’s events.</li>
+      </ul>
+    </div>
+  </section>
 
 
- <section class="sec">
- <h2>CONVERSION · SPY → SPX → ES</h2>
- <p class="sub" id="cvSub">Ratio and ES basis from Fri closes (public data).</p>
- <div class="cvbox" id="cvBox"></div>
- <div class="note" id="cvNote"></div>
- </section>
+  <section class="sec">
+    <h2>CONVERSION · SPY → SPX → ES</h2>
+    <p class="sub" id="cvSub">Ratio and ES basis from Fri closes (public data).</p>
+    <div class="cvbox" id="cvBox"></div>
+    <div class="note" id="cvNote"></div>
+  </section>
 
- <section class="sec sc">
- <h2>LEVEL SCORECARD</h2>
- <p class="sub" id="scSub">Distance from spot · bounce vs break · session cross stamps. Confluence (GEX/TA) lives on Command when multi-source data is present; this page is Dark Pool–only.</p>
- <div id="scBody"><div class="mut">loading…</div></div>
- </section>
+  <section class="sec sc">
+    <h2>LEVEL SCORECARD</h2>
+    <p class="sub" id="scSub">Distance from spot · bounce vs break · session cross stamps. Confluence (GEX/TA) lives on Command when multi-source data is present; this page is Dark Pool–only.</p>
+    <div id="scBody"><div class="mut">loading…</div></div>
+  </section>
 
- <section class="sec tm">
- <h2>TIME ABOVE / BELOW · LATEST SESSION</h2>
- <p class="sub" id="tmSub">Share of session minutes (from baked 5m closes) spent above each level.</p>
- <div id="tmBody"><div class="mut">loading…</div></div>
- </section>
+  <section class="sec tm">
+    <h2>TIME ABOVE / BELOW · LATEST SESSION</h2>
+    <p class="sub" id="tmSub">Share of session minutes (from baked 5m closes) spent above each level.</p>
+    <div id="tmBody"><div class="mut">loading…</div></div>
+  </section>
 
- <section class="sec">
- <h2>CLUSTERS · ZONES ≤ $1</h2>
- <p class="sub" id="clSub">Contiguous SPY levels within $1 of a neighbor · distance from spot.</p>
- <div class="cl-g" id="clBody"><div class="mut">loading…</div></div>
- </section>
+  <section class="sec">
+    <h2>CLUSTERS · ZONES ≤ $1</h2>
+    <p class="sub" id="clSub">Contiguous SPY levels within $1 of a neighbor · distance from spot.</p>
+    <div class="cl-g" id="clBody"><div class="mut">loading…</div></div>
+  </section>
 
- <section class="sec">
- <h2>HOW TO UPDATE</h2>
- <div class="note">
- Single source of truth: <code>data/spy_dark_pool.json</code> on the Attaché site.
- <ol>
- <li>Edit the <code>levels</code> array (SPY prices, high → low). Label them <b style="color:var(--pu2)">Dark Pool</b> only — no source names.</li>
- <li>Recompute <code>rows</code> from <code>convert.spy_per_spx</code> and <code>convert.es_minus_spx</code> (stored with asof + public data closes).</li>
- <li>Refresh baked <code>bars.candles</code> (exchange 30m bars resampled to RTH <b>4H</b>, ~3m; y-range fits candles, off-chart levels listed in chips) and <code>level_stats</code> from Desk, then push JSON. Tag levels with <code>status</code> current|prior and <code>color</code>.</li>
- <li>This page reads the JSON at runtime — push the JSON and reload.</li>
- <li>LIVE Dark Pool is published UNLOCKED (plain HTML). Do not re-encrypt the live page. TEST copy may still use:
- <code>node /workspace/desk/orb-research/darkpool_src/encrypt_page.js …</code></li>
- </ol>
- </div>
- </section>
+  <section class="sec">
+    <h2>HOW TO UPDATE</h2>
+    <div class="note">
+      Single source of truth: <code>data/spy_dark_pool.json</code> on the Attaché site.
+      <ol>
+        <li>Edit the <code>levels</code> array (SPY prices, high → low). Label them <b style="color:var(--pu2)">Dark Pool</b> only — no source names.</li>
+        <li>Recompute <code>rows</code> from <code>convert.spy_per_spx</code> and <code>convert.es_minus_spx</code> (stored with asof + public data closes).</li>
+        <li>Refresh baked <code>bars.candles</code> (exchange 30m bars resampled to RTH <b>4H</b>, ~3m; y-range fits candles, off-chart levels listed in chips) and <code>level_stats</code> from Desk, then push JSON. Tag levels with <code>status</code> current|prior and <code>color</code>.</li>
+        <li>This page reads the JSON at runtime — push the JSON and reload.</li>
+        <li>LIVE Dark Pool is published UNLOCKED (plain HTML). Do not re-encrypt the live page. TEST copy may still use:
+          <code>node /workspace/desk/orb-research/darkpool_src/encrypt_page.js …</code></li>
+      </ol>
+    </div>
+  </section>
 
- <div class="foot">ATTACHÉ · DARK POOL · research only · not financial advice</div>
+  <div class="foot">ATTACHÉ · DARK POOL · research only · not financial advice</div>
 </div>
 <script>
 (()=>{
- const SPOT_DEFAULT = {price:755.72, asof:'2026-10-30 close', delay_note:'Fri RTH close'};
- const fmt = (n,d=2)=> (n==null||Number.isNaN(Number(n))) ? '–' : Number(n).toFixed(d);
- const fmtPct = (n)=> (n==null||Number.isNaN(Number(n))) ? '–' : Number(n).toFixed(1)+'%';
- const fmtTouch = (iso)=>{
- if(!iso) return '–';
- try{
- const d=new Date(iso);
- const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()];
- const hh=String(d.getUTCHours()).padStart(2,'0');
- const mm=String(d.getUTCMinutes()).padStart(2,'0');
- return `${m} ${d.getUTCDate()} ${hh}:${mm}Z`;
- }catch(e){return iso}
- };
+  const SPOT_DEFAULT = {price:755.72, asof:'2026-10-30 close', delay_note:'Fri RTH close'};
+  const fmt = (n,d=2)=> (n==null||Number.isNaN(Number(n))) ? '–' : Number(n).toFixed(d);
+  const fmtPct = (n)=> (n==null||Number.isNaN(Number(n))) ? '–' : Number(n).toFixed(1)+'%';
+  const fmtTouch = (iso)=>{
+    if(!iso) return '–';
+    try{
+      const d=new Date(iso);
+      const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()];
+      const hh=String(d.getUTCHours()).padStart(2,'0');
+      const mm=String(d.getUTCMinutes()).padStart(2,'0');
+      return `${m} ${d.getUTCDate()} ${hh}:${mm}Z`;
+    }catch(e){return iso}
+  };
 
- const paintPos = (X)=>{
- const B=document.getElementById('pos');
- if(!X||!X.levels){B.innerHTML='<div class="err">Dark pool data unavailable.</div>';return}
- const sp=X.spot,a=X.near_above,b=X.near_below,ls=X.levels;
- const lo=Math.min(...ls.map(x=>x.p),sp), hi=Math.max(...ls.map(x=>x.p),sp);
- const zp=(b!=null&&a!=null)?(sp-b)/(a-b)*100:50;
- const note=X.delay_note||'';
- let h=`<div class="dh"><b>◆ DARK POOL POSITION · SPY</b><span>spot <b style="font-size:var(--fs)">${fmt(sp)}</b> · ${X.asof}${note?` · ${note}`:''}</span><span>${ls.filter(x=>x.side==='ABOVE').length} below spot · ${ls.filter(x=>x.side==='BELOW').length} above spot</span></div>`;
- h+=`<div class="zn" title="Spot ${fmt(sp)} between ${b??'–'} and ${a??'–'}"><span class="bl">▼ ${b??'–'}${b!=null?' ('+(sp-b>0?'+':'')+fmt(sp-b)+')':''}</span><div class="zb"><i style="left:calc(${Math.max(0,Math.min(100,zp)).toFixed(1)}% - 1px)"></i></div><span class="ab">${a??'–'}${a!=null?' ('+fmt(sp-a)+')':''} ▲</span></div><div class="dg">`;
- const XM=window.__cross||{};
- h+=ls.slice().reverse().map(x=>{
- const up=x.side==='ABOVE', nr=x.p===a||x.p===b;
- const y=v=>(100-(v-lo)/((hi-lo)||1)*100).toFixed(1);
- const xc=XM[x.p]||XM[Number(x.p)];
- const xstamp=xc&&xc.cross?`<span class="xc" title="crossed ${xc.cross_dir||''} @ ${xc.cross_t||''}">✕ ${xc.cross_dir||'CROSS'}</span>`:'';
- return `<div class="dc${nr?' nr':''}"><div class="mt"><u style="top:${Math.min(y(x.p),y(sp))}%;height:${Math.abs(y(x.p)-y(sp))}%"></u><i style="top:${y(x.p)}%;background:#c48cff"></i><i style="top:${y(sp)}%"></i></div><div><div class="lv">${x.p}</div><div class="sd ${up?'ab':'bl'}">${up?'▲ ABOVE':'▼ BELOW'}</div><div class="ds ${up?'ab':'bl'}">${x.d>0?'+':''}${fmt(x.d)} · ${x.pct>0?'+':''}${fmt(x.pct)}%${nr?`<span class="ng">${x.p===a?'NEAREST ABOVE ▲':'NEAREST BELOW ▼'}</span>`:''}${xstamp}</div></div></div>`;
- }).join('');
- B.innerHTML=h+'</div>';
- };
+  const paintPos = (X)=>{
+    const B=document.getElementById('pos');
+    if(!X||!X.levels){B.innerHTML='<div class="err">Dark pool data unavailable.</div>';return}
+    const sp=X.spot,a=X.near_above,b=X.near_below,ls=X.levels;
+    const lo=Math.min(...ls.map(x=>x.p),sp), hi=Math.max(...ls.map(x=>x.p),sp);
+    const zp=(b!=null&&a!=null)?(sp-b)/(a-b)*100:50;
+    const note=X.delay_note||'';
+    let h=`<div class="dh"><b>◆ DARK POOL POSITION · SPY</b><span>spot <b style="font-size:var(--fs)">${fmt(sp)}</b> · ${X.asof}${note?` · ${note}`:''}</span><span>${ls.filter(x=>x.side==='ABOVE').length} below spot · ${ls.filter(x=>x.side==='BELOW').length} above spot</span></div>`;
+    h+=`<div class="zn" title="Spot ${fmt(sp)} between ${b??'–'} and ${a??'–'}"><span class="bl">▼ ${b??'–'}${b!=null?' ('+(sp-b>0?'+':'')+fmt(sp-b)+')':''}</span><div class="zb"><i style="left:calc(${Math.max(0,Math.min(100,zp)).toFixed(1)}% - 1px)"></i></div><span class="ab">${a??'–'}${a!=null?' ('+fmt(sp-a)+')':''} ▲</span></div><div class="dg">`;
+    const XM=window.__cross||{};
+    h+=ls.slice().reverse().map(x=>{
+      const up=x.side==='ABOVE', nr=x.p===a||x.p===b;
+      const y=v=>(100-(v-lo)/((hi-lo)||1)*100).toFixed(1);
+      const xc=XM[x.p]||XM[Number(x.p)];
+      const xstamp=xc&&xc.cross?`<span class="xc" title="crossed ${xc.cross_dir||''} @ ${xc.cross_t||''}">✕ ${xc.cross_dir||'CROSS'}</span>`:'';
+      return `<div class="dc${nr?' nr':''}"><div class="mt"><u style="top:${Math.min(y(x.p),y(sp))}%;height:${Math.abs(y(x.p)-y(sp))}%"></u><i style="top:${y(x.p)}%;background:#c48cff"></i><i style="top:${y(sp)}%"></i></div><div><div class="lv">${x.p}</div><div class="sd ${up?'ab':'bl'}">${up?'▲ ABOVE':'▼ BELOW'}</div><div class="ds ${up?'ab':'bl'}">${x.d>0?'+':''}${fmt(x.d)} · ${x.pct>0?'+':''}${fmt(x.pct)}%${nr?`<span class="ng">${x.p===a?'NEAREST ABOVE ▲':'NEAREST BELOW ▼'}</span>`:''}${xstamp}</div></div></div>`;
+    }).join('');
+    B.innerHTML=h+'</div>';
+  };
 
- const normLevel = (x)=>{
- if(x==null) return null;
- if(typeof x==='number') return {spy:Number(x), status:'current', color:'purple'};
- if(typeof x==='string' && x.trim()!=='' && !Number.isNaN(Number(x))) return {spy:Number(x), status:'current', color:'purple'};
- if(typeof x==='object'){
- const spy=Number(x.spy!=null?x.spy:x.price!=null?x.price:x.level!=null?x.level:x.p);
- if(Number.isNaN(spy)) return null;
- return {
- spy,
- status: x.status||'current',
- color: x.color|| (x.status==='prior'?'purple-dim':'purple'),
- source_date: x.source_date||x.sourceDate||'',
- note: x.note||''
- };
- }
- return null;
- };
- const colorFor = (c)=>{
- if(c==='green') return '#4ade80';
- if(c==='teal') return '#2dd4bf';
- if(c==='purple-dim') return '#7a5a9a';
- return '#c48cff'; // purple / current
- };
- const badgeFor = (st, col)=>{
- if(col==='green') return '<span class="badge grn">GREEN</span>';
- if(col==='teal') return '<span class="badge teal">TEAL</span>';
- if(st==='prior') return '<span class="badge pri">PRIOR</span>';
- return '<span class="badge cur">CURRENT</span>';
- };
+  const normLevel = (x)=>{
+    if(x==null) return null;
+    if(typeof x==='number') return {spy:Number(x), status:'current', color:'purple'};
+    if(typeof x==='string' && x.trim()!=='' && !Number.isNaN(Number(x))) return {spy:Number(x), status:'current', color:'purple'};
+    if(typeof x==='object'){
+      const spy=Number(x.spy!=null?x.spy:x.price!=null?x.price:x.level!=null?x.level:x.p);
+      if(Number.isNaN(spy)) return null;
+      return {
+        spy,
+        status: x.status||'current',
+        color: x.color|| (x.status==='prior'?'purple-dim':'purple'),
+        source_date: x.source_date||x.sourceDate||'',
+        note: x.note||''
+      };
+    }
+    return null;
+  };
+  const colorFor = (c)=>{
+    if(c==='green') return '#4ade80';
+    if(c==='teal') return '#2dd4bf';
+    if(c==='purple-dim') return '#7a5a9a';
+    return '#c48cff'; // purple / current
+  };
+  const badgeFor = (st, col)=>{
+    if(col==='green') return '<span class="badge grn">GREEN</span>';
+    if(col==='teal') return '<span class="badge teal">TEAL</span>';
+    if(st==='prior') return '<span class="badge pri">PRIOR</span>';
+    return '<span class="badge cur">CURRENT</span>';
+  };
 
- const fromLevels=(levels,spot,meta={})=>{
- const metas=levels.map(normLevel).filter(Boolean);
- const L=metas.map(m=>m.spy).sort((a,b)=>a-b);
- const below=L.filter(x=>x<=spot), above=L.filter(x=>x>spot);
- const nb=below.length?below[below.length-1]:null, na=above.length?above[0]:null;
- const bySpy={}; metas.forEach(m=>{ bySpy[m.spy]=m; });
- return {
- spot, asof:meta.asof||'', today:meta.today||'', near_below:nb, near_above:na,
- delay_note:meta.delay_note||'',
- bySpy,
- levels:L.map(x=>({p:x,d:+(spot-x).toFixed(2),pct:+((spot-x)/x*100).toFixed(3),side:spot>x?'ABOVE':'BELOW',
- status:(bySpy[x]&&bySpy[x].status)||'current', color:(bySpy[x]&&bySpy[x].color)||'purple'}))
- };
- };
+  const fromLevels=(levels,spot,meta={})=>{
+    const metas=levels.map(normLevel).filter(Boolean);
+    const L=metas.map(m=>m.spy).sort((a,b)=>a-b);
+    const below=L.filter(x=>x<=spot), above=L.filter(x=>x>spot);
+    const nb=below.length?below[below.length-1]:null, na=above.length?above[0]:null;
+    const bySpy={}; metas.forEach(m=>{ bySpy[m.spy]=m; });
+    return {
+      spot, asof:meta.asof||'', today:meta.today||'', near_below:nb, near_above:na,
+      delay_note:meta.delay_note||'',
+      bySpy,
+      levels:L.map(x=>({p:x,d:+(spot-x).toFixed(2),pct:+((spot-x)/x*100).toFixed(3),side:spot>x?'ABOVE':'BELOW',
+        status:(bySpy[x]&&bySpy[x].status)||'current', color:(bySpy[x]&&bySpy[x].color)||'purple'}))
+    };
+  };
 
- const paintTable=(rows, spot, near)=>{
- const tb=document.querySelector('#tbl tbody');
- const nb=near.below, na=near.above;
- tb.innerHTML=rows.map((r,i)=>{
- const spy=r.spy, side=spot>spy?'ABOVE':'BELOW';
- const d=+(spot-spy).toFixed(2), pct=+((spot-spy)/spy*100).toFixed(3);
- const nr=spy===nb||spy===na;
- const st=r.status||'current', col=r.color||'purple';
- const pri=st==='prior' && col!=='green' && col!=='teal';
- return `<tr class="${nr?'nr':''}${pri?' pri':''}" title="${(r.note||'').replace(/"/g,'&quot;')} · src ${r.source_date||''}"><td>${i+1}</td><td style="color:${colorFor(col)};font-weight:700">${fmt(spy)}</td><td>${badgeFor(st,col)}</td><td>${fmt(r.spx)}</td><td>${fmt(r.es)}</td><td class="${side==='ABOVE'?'ab':'bl'}">${side==='ABOVE'?'▲ ABOVE':'▼ BELOW'}${nr?(spy===na?' · nearest ▲':' · nearest ▼'):''}</td><td class="${d>=0?'ab':'bl'}">${d>0?'+':''}${fmt(d)}</td><td class="${pct>=0?'ab':'bl'}">${pct>0?'+':''}${fmt(pct)}%</td></tr>`;
- }).join('');
- };
+  const paintTable=(rows, spot, near)=>{
+    const tb=document.querySelector('#tbl tbody');
+    const nb=near.below, na=near.above;
+    tb.innerHTML=rows.map((r,i)=>{
+      const spy=r.spy, side=spot>spy?'ABOVE':'BELOW';
+      const d=+(spot-spy).toFixed(2), pct=+((spot-spy)/spy*100).toFixed(3);
+      const nr=spy===nb||spy===na;
+      const st=r.status||'current', col=r.color||'purple';
+      const pri=st==='prior' && col!=='green' && col!=='teal';
+      return `<tr class="${nr?'nr':''}${pri?' pri':''}" title="${(r.note||'').replace(/"/g,'&quot;')} · src ${r.source_date||''}"><td>${i+1}</td><td style="color:${colorFor(col)};font-weight:700">${fmt(spy)}</td><td>${badgeFor(st,col)}</td><td>${fmt(r.spx)}</td><td>${fmt(r.es)}</td><td class="${side==='ABOVE'?'ab':'bl'}">${side==='ABOVE'?'▲ ABOVE':'▼ BELOW'}${nr?(spy===na?' · nearest ▲':' · nearest ▼'):''}</td><td class="${d>=0?'ab':'bl'}">${d>0?'+':''}${fmt(d)}</td><td class="${pct>=0?'ab':'bl'}">${pct>0?'+':''}${fmt(pct)}%</td></tr>`;
+    }).join('');
+  };
 
- /* ---- PRICE LADDER: 4H candles, level lines behind candles ---- */
- const paintLadder=(levelMetas, spot, near, candles, rowMeta)=>{
- const el=document.getElementById('ladder');
- const tip=document.getElementById('ladTip');
- const metas=(levelMetas||[]).map(normLevel).filter(Boolean);
- const bySpy={}; metas.forEach(m=>{ bySpy[m.spy]=m; });
- const Lall=metas.map(m=>m.spy).filter(x=>!Number.isNaN(x)).sort((a,b)=>a-b);
- let cs=(candles&&candles.length)?candles:null;
- const K=window.__k||0.099698, EO=window.__eo||33.93;
- const W=Math.max(el.clientWidth||640,300);
- const mob=W<560;
- /* Mobile: last 30 calendar days from the final bar; desktop keeps full range */
- if(cs&&mob){
- const last=cs[cs.length-1].t.slice(0,10);
- const cut=new Date(last+'T12:00:00Z'); cut.setUTCDate(cut.getUTCDate()-30);
- const cutS=cut.toISOString().slice(0,10);
- cs=cs.filter(c=>c.t.slice(0,10)>=cutS);
- if(!cs.length) cs=candles.slice(-40);
- }
- const H=mob?Math.max(560,Math.round(W*1.55)):Math.max(480,Math.min(640,Math.round(W*0.5)));
- const pad={l:6,r:mob?58:84,t:12,b:28};
- const plotW=W-pad.l-pad.r, plotH=H-pad.t-pad.b;
- let yLo, yHi;
- if(cs){ yLo=Math.min(...cs.map(c=>c.l),spot); yHi=Math.max(...cs.map(c=>c.h),spot); }
- else { yLo=Math.min(...Lall,spot); yHi=Math.max(...Lall,spot); }
- const padY=(yHi-yLo)*0.03||0.5; yLo-=padY; yHi+=padY;
- const inView=Lall.filter(p=>p>=yLo&&p<=yHi);
- const below=Lall.filter(p=>p<yLo), above=Lall.filter(p=>p>yHi);
- const n=cs?cs.length:1;
- const step=plotW/n;
- const xAt=i=>pad.l+(i+0.5)*step;
- const yAt=v=>pad.t+((yHi-v)/(yHi-yLo))*plotH;
- const vAt=y=>yHi-(y-pad.t)/plotH*(yHi-yLo);
- const cw=Math.max(1.2,Math.min(9,step*0.66));
- const R=x=>Math.round(x)+0.5;
- let svg=`<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" role="img" aria-label="SPY 4H Dark Pool ladder" style="font-family:inherit">`;
- svg+=`<rect x="${pad.l}" y="${pad.t}" width="${plotW}" height="${plotH}" fill="#07050c" stroke="#2a1a3a"/>`;
- // gridlines + price axis (left inside)
- const rng=yHi-yLo; const gs=[1,2,2.5,5,10,20].find(s=>rng/s<=(mob?8:10))||20;
- for(let v=Math.ceil(yLo/gs)*gs; v<=yHi; v+=gs){
- const y=R(yAt(v));
- svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${y}" y2="${y}" stroke="#1c1428" stroke-width="1"/>`;
- svg+=`<text x="${pad.l+3}" y="${y-2}" fill="#5f5670" font-size="9">${v.toFixed(gs<1?2:0)}</text>`;
- }
- // time axis: label first bar of each week
- if(cs){
- let lastWk=null, lastX=-1e9;
- cs.forEach((c,i)=>{
- const d=new Date(c.t.slice(0,10)+'T12:00:00Z');
- const wk=Math.floor((d-Date.UTC(2026,0,5))/(7*864e5));
- if(wk!==lastWk){ lastWk=wk; const x=R(xAt(i)-step/2);
- svg+=`<line x1="${x}" x2="${x}" y1="${pad.t}" y2="${pad.t+plotH}" stroke="#1c1428"/>`;
- if(x-lastX>(mob?44:54)){ lastX=x; svg+=`<text x="${x+2}" y="${H-pad.b+13}" fill="#857d6a" font-size="9">${c.t.slice(5,10).replace('-','/')}</text>`; }
- }
- });
- }
- // level lines (behind candles)
- const labels=inView.map(p=>{
- const lm=bySpy[p]||{}; const nr=p===near.below||p===near.above;
- const meta=rowMeta&&(rowMeta[p]||rowMeta[Number(p)]);
- const cn=lm.color||'purple'; const prior=lm.status==='prior';
- const col=nr?'#ffffff':colorFor(cn);
- /* Right-edge labels/ticks: prior lavender full opacity; current bright purple; green/teal unchanged */
- const labCol=nr?'#ffffff':(cn==='green'||cn==='teal')?colorFor(cn):(prior?'#c4b5fd':'#c48cff');
- const y=yAt(p);
- svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${R(y)}" y2="${R(y)}" stroke="${col}" stroke-opacity="${prior?0.28:0.5}" stroke-width="1" ${prior?'stroke-dasharray="3 3"':''}/>`;
- svg+=`<line x1="${pad.l+plotW}" x2="${pad.l+plotW+5}" y1="${R(y)}" y2="${R(y)}" stroke="${labCol}" stroke-opacity="1" stroke-width="1.5"/>`;
- return {p,nr,col,labCol,prior,yTick:y,yLab:y,title:meta?`SPY ${fmt(p)} · SPX ${fmt(meta.spx)} · ES ${fmt(meta.es)} · ${lm.status||''}`:`SPY ${fmt(p)}`};
- });
- // candles
- if(cs) cs.forEach((c,i)=>{
- const x=xAt(i), up=c.c>=c.o, col=up?'#26d07c':'#ff5a5a';
- const yO=yAt(c.o), yC=yAt(c.c), top=Math.min(yO,yC), bh=Math.max(1,Math.abs(yC-yO));
- svg+=`<line x1="${R(x)}" x2="${R(x)}" y1="${yAt(c.h)}" y2="${yAt(c.l)}" stroke="${col}" stroke-width="1"/>`;
- svg+=`<rect x="${(x-cw/2).toFixed(1)}" y="${top.toFixed(1)}" width="${cw.toFixed(1)}" height="${bh.toFixed(1)}" fill="${col}" fill-opacity="${up?0.85:0.9}" shape-rendering="crispEdges"/>`;
- });
- // spot
- const ySpot=yAt(spot);
- svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${R(ySpot)}" y2="${R(ySpot)}" stroke="#ffffffcc" stroke-dasharray="5 3"/>`;
- // de-overlap labels — keep ALL purple ticks; thin/skip colliding text on mobile
- labels.forEach(lb=>{ lb.pri = lb.nr ? 3 : (lb.prior ? 0 : 2); });
- labels.push({spotTag:true,p:spot,yTick:ySpot,yLab:ySpot,pri:4});
- labels.sort((a,b)=>a.yTick-b.yTick);
- const gap=mob?13:12, yMin=pad.t+5, yMax=pad.t+plotH-3;
- labels.forEach((lb,i)=>{ const g=(l)=>l.spotTag?gap+4:gap; lb.yLab=Math.max(yMin, i?Math.max(lb.yTick,labels[i-1].yLab+Math.max(g(lb),g(labels[i-1]))):lb.yTick); });
- for(let i=labels.length-1;i>=0;i--){ const lim=i===labels.length-1?yMax:labels[i+1].yLab-((labels[i].spotTag||labels[i+1].spotTag)?gap+4:gap); if(labels[i].yLab>lim) labels[i].yLab=lim; }
- // If still overlapping after push, drop lowest-priority non-spot labels (ticks stay)
- if(mob){
- const keep=labels.slice();
- for(let pass=0;pass<8;pass++){
- let dropped=false;
- for(let i=1;i<keep.length;i++){
- const a=keep[i-1], b=keep[i];
- if(Math.abs(b.yLab-a.yLab)<gap-1){
- const victim = (a.spotTag||(a.pri||0)>=(b.pri||0)) ? b : a;
- if(victim.spotTag) continue;
- keep.splice(keep.indexOf(victim),1); dropped=true; break;
- }
- }
- if(!dropped) break;
- }
- labels.length=0; keep.forEach(x=>labels.push(x));
- }
- const tx0=pad.l+plotW, labX=tx0+10;
- const spotLab=labels.find(l=>l.spotTag);
- labels.splice(labels.indexOf(spotLab),1);
- const fsz=mob?8:10;
- labels.forEach(lb=>{
- svg+=`<path d="M ${tx0} ${R(lb.yTick)} L ${tx0+4} ${R(lb.yTick)} L ${labX-2} ${lb.yLab}" fill="none" stroke="${lb.labCol}" stroke-opacity="1"/>`;
- svg+=`<text class="dlbl" data-title="${lb.title}" x="${labX}" y="${lb.yLab+3}" fill="${lb.labCol}" fill-opacity="1" font-size="${fsz}" font-weight="${lb.nr?700:(lb.prior?500:700)}">${fmt(lb.p)}</text>`;
- });
- // spot tag on axis
- svg+=`<path d="M ${tx0} ${R(ySpot)} L ${labX-2} ${spotLab.yLab}" stroke="#fff"/><rect x="${labX-3}" y="${spotLab.yLab-7}" width="${pad.r-8}" height="14" fill="#fff"/><text x="${labX}" y="${spotLab.yLab+4}" fill="#000" font-size="${mob?9:10}" font-weight="700">${fmt(spot)}</text>`;
- // crosshair
- svg+=`<g id="xh" style="display:none;pointer-events:none"><line id="xhH" x1="${pad.l}" x2="${pad.l+plotW}" stroke="#c48cff" stroke-dasharray="2 2"/><line id="xhV" y1="${pad.t}" y2="${pad.t+plotH}" stroke="#c48cff55" stroke-dasharray="2 2"/></g>`;
- svg+=`<rect id="xhHit" x="${pad.l}" y="${pad.t}" width="${plotW}" height="${plotH}" fill="transparent"/>`;
- if(cs) svg+=`<text x="${W-4}" y="${H-4}" text-anchor="end" fill="#5f5670" font-size="9">4H · ${cs.length} bars · ${cs[0].t.slice(0,10)} → ${cs[cs.length-1].t.slice(0,10)}</text>`;
- svg+=`</svg>`;
- el.innerHTML=svg; el.appendChild(tip); tip.style.display='none';
- const sv=el.querySelector('svg'), xh=sv.querySelector('#xh'), hH=sv.querySelector('#xhH'), hV=sv.querySelector('#xhV');
- const show=(ev)=>{
- const r=sv.getBoundingClientRect(), sx=W/r.width;
- const x=(ev.clientX-r.left)*sx, y=(ev.clientY-r.top)*sx;
- if(y<pad.t||y>pad.t+plotH||x<pad.l||x>pad.l+plotW){xh.style.display='none';tip.style.display='none';return}
- const v=vAt(y), i=Math.max(0,Math.min(n-1,Math.floor((x-pad.l)/step)));
- xh.style.display=''; hH.setAttribute('y1',y); hH.setAttribute('y2',y); hV.setAttribute('x1',xAt(i)); hV.setAttribute('x2',xAt(i));
- const spx=v/K; const c=cs&&cs[i];
- tip.innerHTML=`<b>SPY ${v.toFixed(2)}</b> · SPX ${spx.toFixed(2)} · ES ${(spx+EO).toFixed(2)}`+(c?`<br>${c.t.slice(0,16).replace('T',' ')} ET · O ${c.o} H ${c.h} L ${c.l} C ${c.c}`:'');
- tip.style.display='block';
- const px=(ev.clientX-r.left);
- tip.style.left=Math.min(el.clientWidth-230,Math.max(4,px+10))+'px';
- tip.style.top=Math.max(4,(ev.clientY-r.top)-44)+'px';
- };
- const hit=sv.querySelector('#xhHit');
- hit.addEventListener('pointermove',show); hit.addEventListener('pointerdown',show);
- hit.addEventListener('pointerleave',()=>{xh.style.display='none';tip.style.display='none'});
- const chips=(arr)=>arr.slice().sort((a,b)=>a-b).map(p=>{const m=bySpy[p]||{};return `<span class="pxc" style="color:${colorFor(m.color||'purple')};opacity:${m.status==='prior'?0.65:1}">${fmt(p)}</span>`}).join('');
- const nCur=metas.filter(m=>m.status==='current').length, nPri=metas.filter(m=>m.status==='prior').length;
- document.getElementById('ladLeg').innerHTML=
- `<div class="chip"><b>Nearest below / above</b> ${near.below??'–'} / ${near.above??'–'}</div>`+
- `<div class="chip"><b>In view</b> ${inView.length} / ${Lall.length} (${nCur} current · ${nPri} prior)</div>`+
- `<div class="chip"><b>Chart range</b> ${fmt(yLo+padY)} – ${fmt(yHi-padY)}</div>`+
- `<div class="chip chip-list"><b>▲ ${above.length} off-chart above</b><span class="chip-row">${above.length?chips(above):'none'}</span></div>`+
- `<div class="chip chip-list"><b>▼ ${below.length} off-chart below</b><span class="chip-row">${below.length?chips(below):'none'}</span></div>`;
- };
+  /* ---- PRICE LADDER: 4H candles, level lines behind candles ---- */
+  const paintLadder=(levelMetas, spot, near, candles, rowMeta)=>{
+    const el=document.getElementById('ladder');
+    const tip=document.getElementById('ladTip');
+    const metas=(levelMetas||[]).map(normLevel).filter(Boolean);
+    const bySpy={}; metas.forEach(m=>{ bySpy[m.spy]=m; });
+    const Lall=metas.map(m=>m.spy).filter(x=>!Number.isNaN(x)).sort((a,b)=>a-b);
+    let cs=(candles&&candles.length)?candles:null;
+    const K=window.__k||0.099698, EO=window.__eo||33.93;
+    const W=Math.max(el.clientWidth||640,300);
+    const mob=W<560;
+    /* Mobile: last 30 calendar days from the final bar; desktop keeps full range */
+    if(cs&&mob){
+      const last=cs[cs.length-1].t.slice(0,10);
+      const cut=new Date(last+'T12:00:00Z'); cut.setUTCDate(cut.getUTCDate()-30);
+      const cutS=cut.toISOString().slice(0,10);
+      cs=cs.filter(c=>c.t.slice(0,10)>=cutS);
+      if(!cs.length) cs=candles.slice(-40);
+    }
+    const H=mob?Math.max(560,Math.round(W*1.55)):Math.max(480,Math.min(640,Math.round(W*0.5)));
+    const pad={l:6,r:mob?58:84,t:12,b:28};
+    const plotW=W-pad.l-pad.r, plotH=H-pad.t-pad.b;
+    let yLo, yHi;
+    if(cs){ yLo=Math.min(...cs.map(c=>c.l),spot); yHi=Math.max(...cs.map(c=>c.h),spot); }
+    else { yLo=Math.min(...Lall,spot); yHi=Math.max(...Lall,spot); }
+    const padY=(yHi-yLo)*0.03||0.5; yLo-=padY; yHi+=padY;
+    const inView=Lall.filter(p=>p>=yLo&&p<=yHi);
+    const below=Lall.filter(p=>p<yLo), above=Lall.filter(p=>p>yHi);
+    const n=cs?cs.length:1;
+    const step=plotW/n;
+    const xAt=i=>pad.l+(i+0.5)*step;
+    const yAt=v=>pad.t+((yHi-v)/(yHi-yLo))*plotH;
+    const vAt=y=>yHi-(y-pad.t)/plotH*(yHi-yLo);
+    const cw=Math.max(1.2,Math.min(9,step*0.66));
+    const R=x=>Math.round(x)+0.5;
+    let svg=`<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" role="img" aria-label="SPY 4H Dark Pool ladder" style="font-family:inherit">`;
+    svg+=`<rect x="${pad.l}" y="${pad.t}" width="${plotW}" height="${plotH}" fill="#07050c" stroke="#2a1a3a"/>`;
+    // gridlines + price axis (left inside)
+    const rng=yHi-yLo; const gs=[1,2,2.5,5,10,20].find(s=>rng/s<=(mob?8:10))||20;
+    for(let v=Math.ceil(yLo/gs)*gs; v<=yHi; v+=gs){
+      const y=R(yAt(v));
+      svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${y}" y2="${y}" stroke="#1c1428" stroke-width="1"/>`;
+      svg+=`<text x="${pad.l+3}" y="${y-2}" fill="#5f5670" font-size="9">${v.toFixed(gs<1?2:0)}</text>`;
+    }
+    // time axis: label first bar of each week
+    if(cs){
+      let lastWk=null, lastX=-1e9;
+      cs.forEach((c,i)=>{
+        const d=new Date(c.t.slice(0,10)+'T12:00:00Z');
+        const wk=Math.floor((d-Date.UTC(2026,0,5))/(7*864e5));
+        if(wk!==lastWk){ lastWk=wk; const x=R(xAt(i)-step/2);
+          svg+=`<line x1="${x}" x2="${x}" y1="${pad.t}" y2="${pad.t+plotH}" stroke="#1c1428"/>`;
+          if(x-lastX>(mob?44:54)){ lastX=x; svg+=`<text x="${x+2}" y="${H-pad.b+13}" fill="#857d6a" font-size="9">${c.t.slice(5,10).replace('-','/')}</text>`; }
+        }
+      });
+    }
+    // level lines (behind candles)
+    const labels=inView.map(p=>{
+      const lm=bySpy[p]||{}; const nr=p===near.below||p===near.above;
+      const meta=rowMeta&&(rowMeta[p]||rowMeta[Number(p)]);
+      const cn=lm.color||'purple'; const prior=lm.status==='prior';
+      const col=nr?'#ffffff':colorFor(cn);
+      /* Right-edge labels/ticks: prior lavender full opacity; current bright purple; green/teal unchanged */
+      const labCol=nr?'#ffffff':(cn==='green'||cn==='teal')?colorFor(cn):(prior?'#c4b5fd':'#c48cff');
+      const y=yAt(p);
+      svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${R(y)}" y2="${R(y)}" stroke="${col}" stroke-opacity="${prior?0.28:0.5}" stroke-width="1" ${prior?'stroke-dasharray="3 3"':''}/>`;
+      svg+=`<line x1="${pad.l+plotW}" x2="${pad.l+plotW+5}" y1="${R(y)}" y2="${R(y)}" stroke="${labCol}" stroke-opacity="1" stroke-width="1.5"/>`;
+      return {p,nr,col,labCol,prior,yTick:y,yLab:y,title:meta?`SPY ${fmt(p)} · SPX ${fmt(meta.spx)} · ES ${fmt(meta.es)} · ${lm.status||''}`:`SPY ${fmt(p)}`};
+    });
+    // candles
+    if(cs) cs.forEach((c,i)=>{
+      const x=xAt(i), up=c.c>=c.o, col=up?'#26d07c':'#ff5a5a';
+      const yO=yAt(c.o), yC=yAt(c.c), top=Math.min(yO,yC), bh=Math.max(1,Math.abs(yC-yO));
+      svg+=`<line x1="${R(x)}" x2="${R(x)}" y1="${yAt(c.h)}" y2="${yAt(c.l)}" stroke="${col}" stroke-width="1"/>`;
+      svg+=`<rect x="${(x-cw/2).toFixed(1)}" y="${top.toFixed(1)}" width="${cw.toFixed(1)}" height="${bh.toFixed(1)}" fill="${col}" fill-opacity="${up?0.85:0.9}" shape-rendering="crispEdges"/>`;
+    });
+    // spot
+    const ySpot=yAt(spot);
+    svg+=`<line x1="${pad.l}" x2="${pad.l+plotW}" y1="${R(ySpot)}" y2="${R(ySpot)}" stroke="#ffffffcc" stroke-dasharray="5 3"/>`;
+    // de-overlap labels — keep ALL purple ticks; thin/skip colliding text on mobile
+    labels.forEach(lb=>{ lb.pri = lb.nr ? 3 : (lb.prior ? 0 : 2); });
+    labels.push({spotTag:true,p:spot,yTick:ySpot,yLab:ySpot,pri:4});
+    labels.sort((a,b)=>a.yTick-b.yTick);
+    const gap=mob?13:12, yMin=pad.t+5, yMax=pad.t+plotH-3;
+    labels.forEach((lb,i)=>{ const g=(l)=>l.spotTag?gap+4:gap; lb.yLab=Math.max(yMin, i?Math.max(lb.yTick,labels[i-1].yLab+Math.max(g(lb),g(labels[i-1]))):lb.yTick); });
+    for(let i=labels.length-1;i>=0;i--){ const lim=i===labels.length-1?yMax:labels[i+1].yLab-((labels[i].spotTag||labels[i+1].spotTag)?gap+4:gap); if(labels[i].yLab>lim) labels[i].yLab=lim; }
+    // If still overlapping after push, drop lowest-priority non-spot labels (ticks stay)
+    if(mob){
+      const keep=labels.slice();
+      for(let pass=0;pass<8;pass++){
+        let dropped=false;
+        for(let i=1;i<keep.length;i++){
+          const a=keep[i-1], b=keep[i];
+          if(Math.abs(b.yLab-a.yLab)<gap-1){
+            const victim = (a.spotTag||(a.pri||0)>=(b.pri||0)) ? b : a;
+            if(victim.spotTag) continue;
+            keep.splice(keep.indexOf(victim),1); dropped=true; break;
+          }
+        }
+        if(!dropped) break;
+      }
+      labels.length=0; keep.forEach(x=>labels.push(x));
+    }
+    const tx0=pad.l+plotW, labX=tx0+10;
+    const spotLab=labels.find(l=>l.spotTag);
+    labels.splice(labels.indexOf(spotLab),1);
+    const fsz=mob?8:10;
+    labels.forEach(lb=>{
+      svg+=`<path d="M ${tx0} ${R(lb.yTick)} L ${tx0+4} ${R(lb.yTick)} L ${labX-2} ${lb.yLab}" fill="none" stroke="${lb.labCol}" stroke-opacity="1"/>`;
+      svg+=`<text class="dlbl" data-title="${lb.title}" x="${labX}" y="${lb.yLab+3}" fill="${lb.labCol}" fill-opacity="1" font-size="${fsz}" font-weight="${lb.nr?700:(lb.prior?500:700)}">${fmt(lb.p)}</text>`;
+    });
+    // spot tag on axis
+    svg+=`<path d="M ${tx0} ${R(ySpot)} L ${labX-2} ${spotLab.yLab}" stroke="#fff"/><rect x="${labX-3}" y="${spotLab.yLab-7}" width="${pad.r-8}" height="14" fill="#fff"/><text x="${labX}" y="${spotLab.yLab+4}" fill="#000" font-size="${mob?9:10}" font-weight="700">${fmt(spot)}</text>`;
+    // crosshair
+    svg+=`<g id="xh" style="display:none;pointer-events:none"><line id="xhH" x1="${pad.l}" x2="${pad.l+plotW}" stroke="#c48cff" stroke-dasharray="2 2"/><line id="xhV" y1="${pad.t}" y2="${pad.t+plotH}" stroke="#c48cff55" stroke-dasharray="2 2"/></g>`;
+    svg+=`<rect id="xhHit" x="${pad.l}" y="${pad.t}" width="${plotW}" height="${plotH}" fill="transparent"/>`;
+    if(cs) svg+=`<text x="${W-4}" y="${H-4}" text-anchor="end" fill="#5f5670" font-size="9">4H · ${cs.length} bars · ${cs[0].t.slice(0,10)} → ${cs[cs.length-1].t.slice(0,10)}</text>`;
+    svg+=`</svg>`;
+    el.innerHTML=svg; el.appendChild(tip); tip.style.display='none';
+    const sv=el.querySelector('svg'), xh=sv.querySelector('#xh'), hH=sv.querySelector('#xhH'), hV=sv.querySelector('#xhV');
+    const show=(ev)=>{
+      const r=sv.getBoundingClientRect(), sx=W/r.width;
+      const x=(ev.clientX-r.left)*sx, y=(ev.clientY-r.top)*sx;
+      if(y<pad.t||y>pad.t+plotH||x<pad.l||x>pad.l+plotW){xh.style.display='none';tip.style.display='none';return}
+      const v=vAt(y), i=Math.max(0,Math.min(n-1,Math.floor((x-pad.l)/step)));
+      xh.style.display=''; hH.setAttribute('y1',y); hH.setAttribute('y2',y); hV.setAttribute('x1',xAt(i)); hV.setAttribute('x2',xAt(i));
+      const spx=v/K; const c=cs&&cs[i];
+      tip.innerHTML=`<b>SPY ${v.toFixed(2)}</b> · SPX ${spx.toFixed(2)} · ES ${(spx+EO).toFixed(2)}`+(c?`<br>${c.t.slice(0,16).replace('T',' ')} ET · O ${c.o} H ${c.h} L ${c.l} C ${c.c}`:'');
+      tip.style.display='block';
+      const px=(ev.clientX-r.left);
+      tip.style.left=Math.min(el.clientWidth-230,Math.max(4,px+10))+'px';
+      tip.style.top=Math.max(4,(ev.clientY-r.top)-44)+'px';
+    };
+    const hit=sv.querySelector('#xhHit');
+    hit.addEventListener('pointermove',show); hit.addEventListener('pointerdown',show);
+    hit.addEventListener('pointerleave',()=>{xh.style.display='none';tip.style.display='none'});
+    const chips=(arr)=>arr.slice().sort((a,b)=>a-b).map(p=>{const m=bySpy[p]||{};return `<span class="pxc" style="color:${colorFor(m.color||'purple')};opacity:${m.status==='prior'?0.65:1}">${fmt(p)}</span>`}).join('');
+    const nCur=metas.filter(m=>m.status==='current').length, nPri=metas.filter(m=>m.status==='prior').length;
+    document.getElementById('ladLeg').innerHTML=
+      `<div class="chip"><b>Nearest below / above</b> ${near.below??'–'} / ${near.above??'–'}</div>`+
+      `<div class="chip"><b>In view</b> ${inView.length} / ${Lall.length} (${nCur} current · ${nPri} prior)</div>`+
+      `<div class="chip"><b>Chart range</b> ${fmt(yLo+padY)} – ${fmt(yHi-padY)}</div>`+
+      `<div class="chip chip-list"><b>▲ ${above.length} off-chart above</b><span class="chip-row">${above.length?chips(above):'none'}</span></div>`+
+      `<div class="chip chip-list"><b>▼ ${below.length} off-chart below</b><span class="chip-row">${below.length?chips(below):'none'}</span></div>`;
+  };
 
- /* ---- STATS TABLE ---- */
- let _statsRows = [];
- let _sort = {k:'spy', dir:'desc', t:'num'};
+  /* ---- STATS TABLE ---- */
+  let _statsRows = [];
+  let _sort = {k:'spy', dir:'desc', t:'num'};
 
- const bbBar = (bn, bk)=>{
- const t = (bn||0)+(bk||0);
- if(!t) return `<span class="bbbar emp" title="no bounce/break events"><i class="bn" style="width:0"></i></span>`;
- const pw = (100*bn/t).toFixed(1);
- return `<span class="bbbar" title="bounce ${bn} · break ${bk}"><i class="bn" style="width:${pw}%"></i><i class="bk" style="width:${(100-pw).toFixed(1)}%"></i></span>`;
- };
+  const bbBar = (bn, bk)=>{
+    const t = (bn||0)+(bk||0);
+    if(!t) return `<span class="bbbar emp" title="no bounce/break events"><i class="bn" style="width:0"></i></span>`;
+    const pw = (100*bn/t).toFixed(1);
+    return `<span class="bbbar" title="bounce ${bn} · break ${bk}"><i class="bn" style="width:${pw}%"></i><i class="bk" style="width:${(100-pw).toFixed(1)}%"></i></span>`;
+  };
 
- const paintStats = (rows, near)=>{
- _statsRows = rows.slice();
- const tb=document.querySelector('#statsTbl tbody');
- const sorted = _statsRows.slice().sort((a,b)=>{
- const k=_sort.k;
- let av=a[k], bv=b[k];
- if(_sort.t==='num'){
- av = (av==null||av==='') ? -Infinity : Number(av);
- bv = (bv==null||bv==='') ? -Infinity : Number(bv);
- return _sort.dir==='asc' ? av-bv : bv-av;
- }
- av = av==null?'':String(av); bv = bv==null?'':String(bv);
- return _sort.dir==='asc' ? av.localeCompare(bv) : bv.localeCompare(av);
- });
- tb.innerHTML = sorted.map(r=>{
- const nr = r.spy===near.below || r.spy===near.above;
- return `<tr class="${nr?'nr':''}">`+
- `<td title="SPX ${fmt(r.spx)} · ES ${fmt(r.es)}">${fmt(r.spy)}</td>`+
- `<td><span class="tbadge" style="color:${({current:'#c48cff',prior:'#8a7a9a',green:'#4ade80',teal:'#2dd4bf'})[r.type]||'#c48cff'}">${(r.type||'').toUpperCase()}</span></td>`+
- `<td title="${r.note||''}">${r.touches?r.touches:'0 touches'}</td>`+
- `<td class="ab">${r.bounces??0}</td>`+
- `<td class="bl">${r.breaks??0}</td>`+
- `<td>${bbBar(r.bounces, r.breaks)}</td>`+
- `<td>${fmtPct(r.bounce_pct)}</td>`+
- `<td>${fmtPct(r.break_pct)}</td>`+
- `<td>${r.avg_bounce_reaction==null?'–':fmt(r.avg_bounce_reaction,2)}</td>`+
- `<td>${r.avg_break_follow==null?'–':fmt(r.avg_break_follow,2)}</td>`+
- `<td>${fmtTouch(r.last_touch)}</td>`+
- `</tr>`;
- }).join('');
+  const paintStats = (rows, near)=>{
+    _statsRows = rows.slice();
+    const tb=document.querySelector('#statsTbl tbody');
+    const sorted = _statsRows.slice().sort((a,b)=>{
+      const k=_sort.k;
+      let av=a[k], bv=b[k];
+      if(_sort.t==='num'){
+        av = (av==null||av==='') ? -Infinity : Number(av);
+        bv = (bv==null||bv==='') ? -Infinity : Number(bv);
+        return _sort.dir==='asc' ? av-bv : bv-av;
+      }
+      av = av==null?'':String(av); bv = bv==null?'':String(bv);
+      return _sort.dir==='asc' ? av.localeCompare(bv) : bv.localeCompare(av);
+    });
+    tb.innerHTML = sorted.map(r=>{
+      const nr = r.spy===near.below || r.spy===near.above;
+      return `<tr class="${nr?'nr':''}">`+
+        `<td title="SPX ${fmt(r.spx)} · ES ${fmt(r.es)}">${fmt(r.spy)}</td>`+
+        `<td><span class="tbadge" style="color:${({current:'#c48cff',prior:'#8a7a9a',green:'#4ade80',teal:'#2dd4bf'})[r.type]||'#c48cff'}">${(r.type||'').toUpperCase()}</span></td>`+
+        `<td title="${r.note||''}">${r.touches?r.touches:'0 touches'}</td>`+
+        `<td class="ab">${r.bounces??0}</td>`+
+        `<td class="bl">${r.breaks??0}</td>`+
+        `<td>${bbBar(r.bounces, r.breaks)}</td>`+
+        `<td>${fmtPct(r.bounce_pct)}</td>`+
+        `<td>${fmtPct(r.break_pct)}</td>`+
+        `<td>${r.avg_bounce_reaction==null?'–':fmt(r.avg_bounce_reaction,2)}</td>`+
+        `<td>${r.avg_break_follow==null?'–':fmt(r.avg_break_follow,2)}</td>`+
+        `<td>${fmtTouch(r.last_touch)}</td>`+
+        `</tr>`;
+    }).join('');
 
- document.querySelectorAll('#statsTbl th.sortable').forEach(th=>{
- th.classList.toggle('asc', th.dataset.k===_sort.k && _sort.dir==='asc');
- th.classList.toggle('desc', th.dataset.k===_sort.k && _sort.dir==='desc');
- th.querySelector('.arr').textContent =
- th.dataset.k!==_sort.k ? '↕' : (_sort.dir==='asc'?'↑':'↓');
- });
- };
+    document.querySelectorAll('#statsTbl th.sortable').forEach(th=>{
+      th.classList.toggle('asc', th.dataset.k===_sort.k && _sort.dir==='asc');
+      th.classList.toggle('desc', th.dataset.k===_sort.k && _sort.dir==='desc');
+      th.querySelector('.arr').textContent =
+        th.dataset.k!==_sort.k ? '↕' : (_sort.dir==='asc'?'↑':'↓');
+    });
+  };
 
- document.querySelectorAll('#statsTbl th.sortable').forEach(th=>{
- th.addEventListener('click', ()=>{
- const k=th.dataset.k, t=th.dataset.t||'num';
- if(_sort.k===k) _sort.dir = _sort.dir==='asc'?'desc':'asc';
- else { _sort.k=k; _sort.dir = (k==='spy'?'desc':'desc'); _sort.t=t; }
- _sort.t=t;
- const near = window.__near || {below:null,above:null};
- paintStats(_statsRows, near);
- });
- });
+  document.querySelectorAll('#statsTbl th.sortable').forEach(th=>{
+    th.addEventListener('click', ()=>{
+      const k=th.dataset.k, t=th.dataset.t||'num';
+      if(_sort.k===k) _sort.dir = _sort.dir==='asc'?'desc':'asc';
+      else { _sort.k=k; _sort.dir = (k==='spy'?'desc':'desc'); _sort.t=t; }
+      _sort.t=t;
+      const near = window.__near || {below:null,above:null};
+      paintStats(_statsRows, near);
+    });
+  });
 
 
- const paintConvert=(conv)=>{
- const box=document.getElementById('cvBox');
- const k=Number(conv.spy_per_spx), esOff=Number(conv.es_minus_spx);
- const c=conv.closes||{};
- box.innerHTML =
- `<div class="c"><b>SPY ÷ SPX</b><span>${k}</span></div>`+
- `<div class="c"><b>ES − SPX</b><span>${esOff}</span></div>`+
- `<div class="c"><b>ASOF</b><span style="font-size:var(--fs)">${conv.asof||'–'}</span></div>`+
- `<div class="c"><b>SPY CLOSE</b><span style="font-size:var(--fs)">${c.SPY??'–'}</span></div>`+
- `<div class="c"><b>SPX CLOSE</b><span style="font-size:var(--fs)">${c.SPX??'–'}</span></div>`+
- `<div class="c"><b>ES CLOSE</b><span style="font-size:var(--fs)">${c.ES??'–'}</span></div>`;
- document.getElementById('cvSub').textContent =
- `SPX = SPY ÷ ${k} · ES = SPX + ${esOff}` + (conv.asof?` · verified ${conv.asof}`:'');
- const prior=conv.prior||{};
- let note = conv.note || '';
- if(prior.spy_per_spx!=null){
- note += ` · prior was ÷ ${prior.spy_per_spx} / + ${prior.es_minus_spx}`;
- }
- if(c.source) note += ` · source ${c.source}`;
- document.getElementById('cvNote').textContent = note;
- };
+  const paintConvert=(conv)=>{
+    const box=document.getElementById('cvBox');
+    const k=Number(conv.spy_per_spx), esOff=Number(conv.es_minus_spx);
+    const c=conv.closes||{};
+    box.innerHTML =
+      `<div class="c"><b>SPY ÷ SPX</b><span>${k}</span></div>`+
+      `<div class="c"><b>ES − SPX</b><span>${esOff}</span></div>`+
+      `<div class="c"><b>ASOF</b><span style="font-size:var(--fs)">${conv.asof||'–'}</span></div>`+
+      `<div class="c"><b>SPY CLOSE</b><span style="font-size:var(--fs)">${c.SPY??'–'}</span></div>`+
+      `<div class="c"><b>SPX CLOSE</b><span style="font-size:var(--fs)">${c.SPX??'–'}</span></div>`+
+      `<div class="c"><b>ES CLOSE</b><span style="font-size:var(--fs)">${c.ES??'–'}</span></div>`;
+    document.getElementById('cvSub').textContent =
+      `SPX = SPY ÷ ${k} · ES = SPX + ${esOff}` + (conv.asof?` · verified ${conv.asof}`:'');
+    const prior=conv.prior||{};
+    let note = conv.note || '';
+    if(prior.spy_per_spx!=null){
+      note += ` · prior was ÷ ${prior.spy_per_spx} / + ${prior.es_minus_spx}`;
+    }
+    if(c.source) note += ` · source ${c.source}`;
+    document.getElementById('cvNote').textContent = note;
+  };
 
- const paintScorecard=(stats, near, crossMap)=>{
- const el=document.getElementById('scBody');
- if(!stats||!stats.length){el.innerHTML='<div class="mut">no stats</div>';return}
- const rows=stats.slice().sort((a,b)=>b.spy-a.spy);
- let h='<div class="rw hd"><span>LEVEL</span><span>DIST</span><span>BOUNCE ▮ BREAK</span><span>LAST</span></div>';
- h+=rows.map(r=>{
- const nr=r.spy===near.below||r.spy===near.above;
- const bn=r.bounces|0, bk=r.breaks|0, t=bn+bk||1;
- const xc=crossMap[r.spy]||crossMap[Number(r.spy)];
- const stamp=xc&&xc.cross?`<span class="xstamp" title="${xc.cross_dir||''} ${xc.cross_t||''}">✕${xc.cross_dir||''}</span>`:'';
- const d=r.dist!=null?r.dist:(near&&0);
- const dist = r.dist!=null ? r.dist : null;
- const side = r.side || (dist!=null && dist>=0 ? 'ABOVE':'BELOW');
- return `<div class="rw" title="SPY ${fmt(r.spy)} · SPX ${fmt(r.spx)} · ES ${fmt(r.es)} · touches ${r.touches||0}">`+
- `<b style="color:${nr?'var(--pu3)':'var(--txt)'}">${fmt(r.spy)}${stamp}</b>`+
- `<span class="${side==='ABOVE'?'ab':'bl'}">${side==='ABOVE'?'▲':'▼'}${dist==null?'–':Math.abs(dist).toFixed(2)}</span>`+
- `<span style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px;align-items:center"><span class="hb"><i style="width:${(100*bn/t).toFixed(0)}%;background:var(--up)"></i><i style="width:${(100*bk/t).toFixed(0)}%;background:var(--dn)"></i></span><span class="mut">${bn}/${bk}</span></span>`+
- `<span class="mut">${fmtTouch(r.last_touch).replace(/Z$/,'')}</span></div>`;
- }).join('');
- el.innerHTML=h+'<div class="mut" style="margin-top:6px;font-size:10px">bar = bounce (green) vs break (red) · ✕ = level crossed during latest session (5m closes)</div>';
- };
+  const paintScorecard=(stats, near, crossMap)=>{
+    const el=document.getElementById('scBody');
+    if(!stats||!stats.length){el.innerHTML='<div class="mut">no stats</div>';return}
+    const rows=stats.slice().sort((a,b)=>b.spy-a.spy);
+    let h='<div class="rw hd"><span>LEVEL</span><span>DIST</span><span>BOUNCE ▮ BREAK</span><span>LAST</span></div>';
+    h+=rows.map(r=>{
+      const nr=r.spy===near.below||r.spy===near.above;
+      const bn=r.bounces|0, bk=r.breaks|0, t=bn+bk||1;
+      const xc=crossMap[r.spy]||crossMap[Number(r.spy)];
+      const stamp=xc&&xc.cross?`<span class="xstamp" title="${xc.cross_dir||''} ${xc.cross_t||''}">✕${xc.cross_dir||''}</span>`:'';
+      const d=r.dist!=null?r.dist:(near&&0);
+      const dist = r.dist!=null ? r.dist : null;
+      const side = r.side || (dist!=null && dist>=0 ? 'ABOVE':'BELOW');
+      return `<div class="rw" title="SPY ${fmt(r.spy)} · SPX ${fmt(r.spx)} · ES ${fmt(r.es)} · touches ${r.touches||0}">`+
+        `<b style="color:${nr?'var(--pu3)':'var(--txt)'}">${fmt(r.spy)}${stamp}</b>`+
+        `<span class="${side==='ABOVE'?'ab':'bl'}">${side==='ABOVE'?'▲':'▼'}${dist==null?'–':Math.abs(dist).toFixed(2)}</span>`+
+        `<span style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px;align-items:center"><span class="hb"><i style="width:${(100*bn/t).toFixed(0)}%;background:var(--up)"></i><i style="width:${(100*bk/t).toFixed(0)}%;background:var(--dn)"></i></span><span class="mut">${bn}/${bk}</span></span>`+
+        `<span class="mut">${fmtTouch(r.last_touch).replace(/Z$/,'')}</span></div>`;
+    }).join('');
+    el.innerHTML=h+'<div class="mut" style="margin-top:6px;font-size:10px">bar = bounce (green) vs break (red) · ✕ = level crossed during latest session (5m closes)</div>';
+  };
 
- const paintTime=(sess, near)=>{
- const el=document.getElementById('tmBody');
- if(!sess||!sess.levels||!sess.levels.length){el.innerHTML='<div class="mut">no session time data</div>';return}
- document.getElementById('tmSub').textContent =
- `${sess.session||''} · ${sess.bar_count||'–'} × ${sess.timeframe||'5m'} · ${sess.minutes_per_bar||5} min/bar · green = above level`;
- const rows=sess.levels.slice().sort((a,b)=>b.spy-a.spy);
- let h='<div class="rw hd"><span>LEVEL</span><span>SESSION HEAT →</span><span>%▲</span></div>';
- h+=rows.map(x=>{
- const tot=(x.above_min||0)+(x.below_min||0)||1;
- const pct=x.pct_above!=null?x.pct_above:roundish(100*(x.above_min||0)/tot);
- const heat=(x.heat||[]).map((v,i)=>`<i style="background:${v==null?'#111':`rgb(${Math.round(255*(1-v))},${Math.round(200*v)},${Math.round(80*v+40*(1-v))})`}" title="slice ${i+1}/30 · ${v==null?'n/a':Math.round(v*100)+'% above'}"></i>`).join('');
- const nr=x.spy===near.below||x.spy===near.above;
- return `<div class="rw" title="${fmt(x.spy)}: above ${x.above_min} min · below ${x.below_min} min · Δ ${x.dist>0?'+':''}${fmt(x.dist)}">`+
- `<b style="color:${nr?'var(--pu3)':'var(--txt)'}">${fmt(x.spy)}</b>`+
- `<span class="st">${heat}</span>`+
- `<span class="${pct>=50?'ab':'bl'}">${fmt(pct,0)}%▲</span></div>`;
- }).join('');
- el.innerHTML=h;
- };
- const roundish=(n)=>Math.round(n);
+  const paintTime=(sess, near)=>{
+    const el=document.getElementById('tmBody');
+    if(!sess||!sess.levels||!sess.levels.length){el.innerHTML='<div class="mut">no session time data</div>';return}
+    document.getElementById('tmSub').textContent =
+      `${sess.session||''} · ${sess.bar_count||'–'} × ${sess.timeframe||'5m'} · ${sess.minutes_per_bar||5} min/bar · green = above level`;
+    const rows=sess.levels.slice().sort((a,b)=>b.spy-a.spy);
+    let h='<div class="rw hd"><span>LEVEL</span><span>SESSION HEAT →</span><span>%▲</span></div>';
+    h+=rows.map(x=>{
+      const tot=(x.above_min||0)+(x.below_min||0)||1;
+      const pct=x.pct_above!=null?x.pct_above:roundish(100*(x.above_min||0)/tot);
+      const heat=(x.heat||[]).map((v,i)=>`<i style="background:${v==null?'#111':`rgb(${Math.round(255*(1-v))},${Math.round(200*v)},${Math.round(80*v+40*(1-v))})`}" title="slice ${i+1}/30 · ${v==null?'n/a':Math.round(v*100)+'% above'}"></i>`).join('');
+      const nr=x.spy===near.below||x.spy===near.above;
+      return `<div class="rw" title="${fmt(x.spy)}: above ${x.above_min} min · below ${x.below_min} min · Δ ${x.dist>0?'+':''}${fmt(x.dist)}">`+
+        `<b style="color:${nr?'var(--pu3)':'var(--txt)'}">${fmt(x.spy)}</b>`+
+        `<span class="st">${heat}</span>`+
+        `<span class="${pct>=50?'ab':'bl'}">${fmt(pct,0)}%▲</span></div>`;
+    }).join('');
+    el.innerHTML=h;
+  };
+  const roundish=(n)=>Math.round(n);
 
- const paintClusters=(cl, spot)=>{
- const el=document.getElementById('clBody');
- if(!cl||!cl.zones||!cl.zones.length){el.innerHTML='<div class="mut">no clusters</div>';return}
- const K=window.__k||0.099698, EO=window.__eo||33.93, SM=window.__statMap||{};
- const all=cl.zones.flat(); const lo=Math.min(...all,spot)-1, hi=Math.max(...all,spot)+1;
- const px=v=>((v-lo)/(hi-lo)*100).toFixed(2);
- const Z=cl.zones.map(z=>{const a=z[0],b=z[z.length-1];const d=spot>b?spot-b:spot<a?a-spot:0;
- let t=0,bn=0,bk=0; z.forEach(v=>{const s=SM[v]||{};t+=s.touches|0;bn+=s.bounces|0;bk+=s.breaks|0});
- return {z,a,b,d,side:spot>b?'below':spot<a?'above':'in',t,bn,bk};}).sort((x,y)=>x.d-y.d);
- document.getElementById('clSub').textContent=`${Z.length} zones · levels within $${cl.gap??1} of a neighbor · nearest to spot ${fmt(spot)} first`;
- const sx=(v)=>`SPX ${(v/K).toFixed(0)} · ES ${(v/K+EO).toFixed(0)}`;
- el.innerHTML=Z.map(o=>{
- const col=o.side==='in'?'#fff':o.side==='above'?'var(--up)':'var(--dn)';
- const dtxt=o.side==='in'?'SPOT INSIDE':`${o.side==='above'?'▲':'▼'} $${o.d.toFixed(2)} · ${(100*o.d/spot).toFixed(2)}% ${o.side} spot`;
- const ev=o.bn+o.bk, bp=ev?Math.round(100*o.bn/ev)+'%':'–';
- const rng=o.z.length>1?`${fmt(o.a)} – ${fmt(o.b)}`:fmt(o.a);
- return `<div class="cz2"><div class="r1"><span class="zr">${rng}</span><span class="zd" style="color:${col}">${dtxt}</span></div>`+
- `<div class="r2"><span>${o.z.length} level${o.z.length>1?'s':''}</span><span>${o.t} touches</span><span>bounce ${bp}</span><span class="mut">${sx(o.a)}${o.z.length>1?' – '+(o.b/K).toFixed(0):''}</span></div>`+
- `<div class="zb2"><i class="sp" style="left:${px(spot)}%"></i><i class="zn" style="left:${px(o.a)}%;width:max(3px,${(px(o.b)-px(o.a)).toFixed(2)}%)"></i></div></div>`;
- }).join('');
- };
+  const paintClusters=(cl, spot)=>{
+    const el=document.getElementById('clBody');
+    if(!cl||!cl.zones||!cl.zones.length){el.innerHTML='<div class="mut">no clusters</div>';return}
+    const K=window.__k||0.099698, EO=window.__eo||33.93, SM=window.__statMap||{};
+    const all=cl.zones.flat(); const lo=Math.min(...all,spot)-1, hi=Math.max(...all,spot)+1;
+    const px=v=>((v-lo)/(hi-lo)*100).toFixed(2);
+    const Z=cl.zones.map(z=>{const a=z[0],b=z[z.length-1];const d=spot>b?spot-b:spot<a?a-spot:0;
+      let t=0,bn=0,bk=0; z.forEach(v=>{const s=SM[v]||{};t+=s.touches|0;bn+=s.bounces|0;bk+=s.breaks|0});
+      return {z,a,b,d,side:spot>b?'below':spot<a?'above':'in',t,bn,bk};}).sort((x,y)=>x.d-y.d);
+    document.getElementById('clSub').textContent=`${Z.length} zones · levels within $${cl.gap??1} of a neighbor · nearest to spot ${fmt(spot)} first`;
+    const sx=(v)=>`SPX ${(v/K).toFixed(0)} · ES ${(v/K+EO).toFixed(0)}`;
+    el.innerHTML=Z.map(o=>{
+      const col=o.side==='in'?'#fff':o.side==='above'?'var(--up)':'var(--dn)';
+      const dtxt=o.side==='in'?'SPOT INSIDE':`${o.side==='above'?'▲':'▼'} $${o.d.toFixed(2)} · ${(100*o.d/spot).toFixed(2)}% ${o.side} spot`;
+      const ev=o.bn+o.bk, bp=ev?Math.round(100*o.bn/ev)+'%':'–';
+      const rng=o.z.length>1?`${fmt(o.a)} – ${fmt(o.b)}`:fmt(o.a);
+      return `<div class="cz2"><div class="r1"><span class="zr">${rng}</span><span class="zd" style="color:${col}">${dtxt}</span></div>`+
+        `<div class="r2"><span>${o.z.length} level${o.z.length>1?'s':''}</span><span>${o.t} touches</span><span>bounce ${bp}</span><span class="mut">${sx(o.a)}${o.z.length>1?' – '+(o.b/K).toFixed(0):''}</span></div>`+
+        `<div class="zb2"><i class="sp" style="left:${px(spot)}%"></i><i class="zn" style="left:${px(o.a)}%;width:max(3px,${(px(o.b)-px(o.a)).toFixed(2)}%)"></i></div></div>`;
+    }).join('');
+  };
 
- const url=new URL('../data/spy_dark_pool.json', document.baseURI||location.href);
- fetch(url).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(J=>{
- const rawLevels=J.levels||(J.rows||[]).map(r=>r.spy);
- const levelMetas=rawLevels.map(normLevel).filter(Boolean);
- const levels=levelMetas.map(m=>m.spy);
- const spot=(J.spot!=null?Number(J.spot):SPOT_DEFAULT.price);
- const asof=J.spot_asof||SPOT_DEFAULT.asof;
- const delay=J.spot_note||SPOT_DEFAULT.delay_note;
- const X=fromLevels(levelMetas, spot, {asof, delay_note:delay});
- paintPos(X);
+  const url=new URL('../data/spy_dark_pool.json', document.baseURI||location.href);
+  fetch(url).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(J=>{
+    const rawLevels=J.levels||(J.rows||[]).map(r=>r.spy);
+    const levelMetas=rawLevels.map(normLevel).filter(Boolean);
+    const levels=levelMetas.map(m=>m.spy);
+    const spot=(J.spot!=null?Number(J.spot):SPOT_DEFAULT.price);
+    const asof=J.spot_asof||SPOT_DEFAULT.asof;
+    const delay=J.spot_note||SPOT_DEFAULT.delay_note;
+    const X=fromLevels(levelMetas, spot, {asof, delay_note:delay});
+    paintPos(X);
 
- const k=Number((J.convert&&J.convert.spy_per_spx)||0.099698);
- const esOff=Number((J.convert&&J.convert.es_minus_spx)||33.93);
- window.__k=k; window.__eo=esOff;
- const rows=(J.rows&&J.rows.length)?J.rows.map(r=>({
- spy:Number(r.spy),spx:Number(r.spx),es:Number(r.es),
- status:r.status||((X.bySpy[Number(r.spy)]||{}).status)||'current',
- color:r.color||((X.bySpy[Number(r.spy)]||{}).color)||'purple',
- source_date:r.source_date||'', note:r.note||''
- }))
- :levelMetas.slice().sort((a,b)=>b.spy-a.spy).map(m=>{const spx=m.spy/k;return {spy:m.spy,spx,es:spx+esOff,status:m.status,color:m.color,source_date:m.source_date,note:m.note}});
- rows.sort((a,b)=>b.spy-a.spy);
- paintTable(rows, spot, {below:X.near_below, above:X.near_above});
+    const k=Number((J.convert&&J.convert.spy_per_spx)||0.099698);
+    const esOff=Number((J.convert&&J.convert.es_minus_spx)||33.93);
+    window.__k=k; window.__eo=esOff;
+    const rows=(J.rows&&J.rows.length)?J.rows.map(r=>({
+        spy:Number(r.spy),spx:Number(r.spx),es:Number(r.es),
+        status:r.status||((X.bySpy[Number(r.spy)]||{}).status)||'current',
+        color:r.color||((X.bySpy[Number(r.spy)]||{}).color)||'purple',
+        source_date:r.source_date||'', note:r.note||''
+      }))
+      :levelMetas.slice().sort((a,b)=>b.spy-a.spy).map(m=>{const spx=m.spy/k;return {spy:m.spy,spx,es:spx+esOff,status:m.status,color:m.color,source_date:m.source_date,note:m.note}});
+    rows.sort((a,b)=>b.spy-a.spy);
+    paintTable(rows, spot, {below:X.near_below, above:X.near_above});
 
- const conv=J.convert||{};
- document.getElementById('convNote').textContent =
- (conv.note)||`SPX = SPY ÷ ${k} · ES = SPX + ${esOff}`;
+    const conv=J.convert||{};
+    document.getElementById('convNote').textContent =
+      (conv.note)||`SPX = SPY ÷ ${k} · ES = SPX + ${esOff}`;
 
- const rowMeta = {};
- rows.forEach(r=>{ rowMeta[r.spy]=r; rowMeta[Number(r.spy)]=r; });
+    const rowMeta = {};
+    rows.forEach(r=>{ rowMeta[r.spy]=r; rowMeta[Number(r.spy)]=r; });
 
- const candles = (J.bars && J.bars.candles) || [];
- const near = {below:X.near_below, above:X.near_above};
- window.__near = near;
- paintLadder(levelMetas, spot, near, candles, rowMeta);
- if(J.bars){
- const tf=J.bars.timeframe||'1Day';
- const sess=J.bars.session||'';
- document.getElementById('ladSub').textContent =
- `SPY ${tf} (RTH 09:30–13:30 / 13:30–16:00 ET) · ${sess} · level lines current solid / prior dashed · spot dashed · hover SPX/ES (÷${k} / +${esOff})`;
- }
+    const candles = (J.bars && J.bars.candles) || [];
+    const near = {below:X.near_below, above:X.near_above};
+    window.__near = near;
+    paintLadder(levelMetas, spot, near, candles, rowMeta);
+    if(J.bars){
+      const tf=J.bars.timeframe||'1Day';
+      const sess=J.bars.session||'';
+      document.getElementById('ladSub').textContent =
+        `SPY ${tf} (RTH 09:30–13:30 / 13:30–16:00 ET) · ${sess} · level lines current solid / prior dashed · spot dashed · hover SPX/ES (÷${k} / +${esOff})`;
+    }
 
- // stats
- const stats = (J.level_stats||[]).map(s=>({
- spy:Number(s.spy),
- spx:s.spx, es:s.es,
- touches:s.touches|0, bounces:s.bounces|0, breaks:s.breaks|0,
- bounce_pct:s.bounce_pct, break_pct:s.break_pct,
- avg_bounce_reaction:s.avg_bounce_reaction, avg_break_follow:s.avg_break_follow,
- last_touch:s.last_touch||null, type:s.type||s.status, note:s.note||''
- }));
- window.__statMap={}; stats.forEach(x=>window.__statMap[x.spy]=x);
- paintStats(stats, near);
- const sw=J.stats_window||{};
+    // stats
+    const stats = (J.level_stats||[]).map(s=>({
+      spy:Number(s.spy),
+      spx:s.spx, es:s.es,
+      touches:s.touches|0, bounces:s.bounces|0, breaks:s.breaks|0,
+      bounce_pct:s.bounce_pct, break_pct:s.break_pct,
+      avg_bounce_reaction:s.avg_bounce_reaction, avg_break_follow:s.avg_break_follow,
+      last_touch:s.last_touch||null, type:s.type||s.status, note:s.note||''
+    }));
+    window.__statMap={}; stats.forEach(x=>window.__statMap[x.spy]=x);
+    paintStats(stats, near);
+    const sw=J.stats_window||{};
 
- // cross map + conversion + scorecard + time + clusters
- const crossMap = {};
- ((J.session_time&&J.session_time.levels)||[]).forEach(r=>{
- crossMap[r.spy]=r; crossMap[Number(r.spy)]=r;
- });
- window.__cross = crossMap;
- paintPos(X); // refresh stamps
- paintConvert(J.convert||{});
- // attach dist/side onto stats for scorecard
- stats.forEach(s=>{
- const m=crossMap[s.spy]||crossMap[Number(s.spy)];
- if(m){ s.dist=m.dist; s.side=m.side; }
- else { s.dist=+(spot-s.spy).toFixed(2); s.side=spot>s.spy?'ABOVE':'BELOW'; }
- });
- paintScorecard(stats, near, crossMap);
- paintTime(J.session_time||{}, near);
- paintClusters(J.clusters||{}, spot);
- if(sw.start && sw.end){
- document.getElementById('statsSub').textContent =
- `Window ${sw.start.slice(0,10)} → ${sw.end.slice(0,10)} · ${sw.bar_count||'–'} × ${sw.timeframe||'5Min'} bars · click headers to sort`;
- }
+    // cross map + conversion + scorecard + time + clusters
+    const crossMap = {};
+    ((J.session_time&&J.session_time.levels)||[]).forEach(r=>{
+      crossMap[r.spy]=r; crossMap[Number(r.spy)]=r;
+    });
+    window.__cross = crossMap;
+    paintPos(X); // refresh stamps
+    paintConvert(J.convert||{});
+    // attach dist/side onto stats for scorecard
+    stats.forEach(s=>{
+      const m=crossMap[s.spy]||crossMap[Number(s.spy)];
+      if(m){ s.dist=m.dist; s.side=m.side; }
+      else { s.dist=+(spot-s.spy).toFixed(2); s.side=spot>s.spy?'ABOVE':'BELOW'; }
+    });
+    paintScorecard(stats, near, crossMap);
+    paintTime(J.session_time||{}, near);
+    paintClusters(J.clusters||{}, spot);
+    if(sw.start && sw.end){
+      document.getElementById('statsSub').textContent =
+        `Window ${sw.start.slice(0,10)} → ${sw.end.slice(0,10)} · ${sw.bar_count||'–'} × ${sw.timeframe||'5Min'} bars · click headers to sort`;
+    }
 
- let updated = J.updated || J.levels_updated || '';
- if(!updated && J.asof_note){
- const m=String(J.asof_note).match(/20\d{2}-\d{2}-\d{2}/);
- updated = m?m[0]:J.asof_note;
- }
- if(!updated) updated='(see JSON asof_note)';
- document.getElementById('hdrMeta').innerHTML =
- `levels last updated <b>${updated}</b> · ${levels.length} levels (${levelMetas.filter(m=>m.status==='current').length} current / ${levelMetas.filter(m=>m.status==='prior').length} prior) · spot <b>${fmt(spot)}</b> (${asof})`;
+    let updated = J.updated || J.levels_updated || '';
+    if(!updated && J.asof_note){
+      const m=String(J.asof_note).match(/20\d{2}-\d{2}-\d{2}/);
+      updated = m?m[0]:J.asof_note;
+    }
+    if(!updated) updated='(see JSON asof_note)';
+    document.getElementById('hdrMeta').innerHTML =
+      `levels last updated <b>${updated}</b> · ${levels.length} levels (${levelMetas.filter(m=>m.status==='current').length} current / ${levelMetas.filter(m=>m.status==='prior').length} prior) · spot <b>${fmt(spot)}</b> (${asof})`;
 
- // redraw ladder on resize for correct label layout
- let rt=null;
- window.addEventListener('resize', ()=>{
- clearTimeout(rt);
- rt=setTimeout(()=>paintLadder(levelMetas, spot, near, candles, rowMeta), 120);
- });
- }).catch(e=>{
- document.getElementById('pos').innerHTML=`<div class="err">Failed to load data/spy_dark_pool.json (${e.message||e})</div>`;
- document.getElementById('hdrMeta').textContent='load failed';
- });
+    // redraw ladder on resize for correct label layout
+    let rt=null;
+    window.addEventListener('resize', ()=>{
+      clearTimeout(rt);
+      rt=setTimeout(()=>paintLadder(levelMetas, spot, near, candles, rowMeta), 120);
+    });
+  }).catch(e=>{
+    document.getElementById('pos').innerHTML=`<div class="err">Failed to load data/spy_dark_pool.json (${e.message||e})</div>`;
+    document.getElementById('hdrMeta').textContent='load failed';
+  });
 })();
 </script>
 </body>
