@@ -58,7 +58,7 @@
           "date": "2026-10-29",
           "hi": 7771.5,
           "lo": 7665.25,
-          "last": 7687.5,
+          "last": 7687.25,
           "event": false
         },
         {
@@ -106,7 +106,7 @@
           "date": "2026-10-28",
           "hi": 30178.0,
           "lo": 29482.5,
-          "last": 29649.25,
+          "last": 29649.0,
           "event": true
         },
         {
@@ -129,7 +129,7 @@
     "spy": {
       "high": 775.75,
       "low": 750.3599853515625,
-      "last": 757.12,
+      "last": 756.99,
       "path": "CHOP / MIXED",
       "phase1": "HIT",
       "phase1_zone": [
@@ -161,7 +161,7 @@
           "date": "2026-10-28",
           "hi": 775.75,
           "lo": 768.28,
-          "last": 769.27,
+          "last": 769.32,
           "event": true
         },
         {
@@ -175,7 +175,7 @@
           "date": "2026-10-30",
           "hi": 769.56,
           "lo": 750.36,
-          "last": 757.12,
+          "last": 756.99,
           "event": false
         }
       ],
@@ -241,7 +241,7 @@
     "es": {
       "high": 7746.25,
       "low": 7490.0,
-      "last": 7670.5,
+      "last": 7522.0,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -266,7 +266,7 @@
           "date": "2026-11-03",
           "hi": 7633.5,
           "lo": 7490.0,
-          "last": 7590.5,
+          "last": 7590.75,
           "event": false
         },
         {
@@ -279,17 +279,17 @@
         {
           "date": "2026-11-05",
           "hi": 7738.75,
-          "lo": 7668.0,
-          "last": 7670.5,
+          "lo": 7498.0,
+          "last": 7522.0,
           "event": false
         }
       ],
-      "n_bars": 153
+      "n_bars": 155
     },
     "nq": {
       "high": 28969.0,
-      "low": 27615.75,
-      "last": 27932.0,
+      "low": 27085.5,
+      "last": 27254.75,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -327,17 +327,17 @@
         {
           "date": "2026-11-05",
           "hi": 28465.0,
-          "lo": 27906.75,
-          "last": 27932.0,
+          "lo": 27085.5,
+          "last": 27254.75,
           "event": false
         }
       ],
-      "n_bars": 153
+      "n_bars": 155
     },
     "spy": {
       "high": 775.6400146484375,
-      "low": 751.46,
-      "last": 756.6400146484375,
+      "low": 742.1580200195312,
+      "last": 742.1580200195312,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -345,7 +345,7 @@
         775.0
       ],
       "phase1_high": 775.6400146484375,
-      "phase2": "MISSED",
+      "phase2": "HIT",
       "phase2_zone": [
         750.0,
         746.5
@@ -375,17 +375,17 @@
         {
           "date": "2026-11-05",
           "hi": 765.97,
-          "lo": 756.25,
-          "last": 756.64,
+          "lo": 742.16,
+          "last": 742.16,
           "event": false
         }
       ],
-      "n_bars": 59
+      "n_bars": 61
     },
     "qqq": {
       "high": 701.4500122070312,
-      "low": 670.6699829101562,
-      "last": 670.9600219726562,
+      "low": 653.8779907226562,
+      "last": 653.8779907226562,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -423,12 +423,12 @@
         {
           "date": "2026-11-05",
           "hi": 683.64,
-          "lo": 670.67,
-          "last": 670.96,
+          "lo": 653.88,
+          "last": 653.88,
           "event": false
         }
       ],
-      "n_bars": 59
+      "n_bars": 61
     }
   },
   "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
