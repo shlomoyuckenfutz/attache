@@ -382,7 +382,7 @@ def fetch_bars(sym, key, sec, timeframe="5Min", limit=100):
     headers={"APCA-API-KEY-ID":key,"APCA-API-SECRET-KEY":sec}
     if timeframe.endswith("Day") or timeframe=="1Day":
         start=(datetime.now(timezone.utc)-timedelta(days=160)).strftime("%Y-%m-%d")
-        url=(f"https://data.free_feed.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
+        url=(f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
              f"&start={start}&limit={max(limit,200)}&adjustment=raw&feed=iex")
         try:
             j=fetch_json(url, headers=headers, timeout=20)
@@ -395,7 +395,7 @@ def fetch_bars(sym, key, sec, timeframe="5Min", limit=100):
     out=[]; page_token=None
     try:
         for _ in range(8):
-            url=(f"https://data.free_feed.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
+            url=(f"https://data.alpaca.markets/v2/stocks/{map_sym}/bars?timeframe={timeframe}"
                  f"&start={start}&limit=10000&adjustment=raw&feed=iex")
             if page_token: url += f"&page_token={page_token}"
             j=fetch_json(url, headers=headers, timeout=25)

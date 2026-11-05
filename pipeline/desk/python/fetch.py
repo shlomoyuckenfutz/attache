@@ -8,7 +8,7 @@ if os.environ.get("ALPACA_SECRET_KEY") and not os.environ.get("ALPACA_API_SECRET
 if not os.environ.get("ALPACA_API_KEY") or not (os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")):
     raise SystemExit("ALPACA_API_KEY and ALPACA_SECRET_KEY (or ALPACA_API_SECRET) required")
 H={"APCA-API-KEY-ID":os.environ["ALPACA_API_KEY"],"APCA-API-SECRET-KEY":os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")}
-URL="https://data.free_feed.markets/v2/stocks/bars"
+URL="https://data.alpaca.markets/v2/stocks/bars"
 def pull(sym,feed,start,end):
     rows=[];tok=None
     while True:

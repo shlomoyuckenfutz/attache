@@ -26,7 +26,7 @@ git push
 
 ## Panels (free sources only)
 
-1. Quotes/Charts — free_data `query1/query2.finance.free_data.com/v8/finance/chart`
+1. Quotes/Charts — free_data `query1/query2.finance.yahoo.com/v8/finance/chart`
 2. Filings — SEC EDGAR (`User-Agent` includes Shlomoyuckenfutz@gmail.com)
 3. Macro — FRED `fredgraph.csv` (no API key)
 4. News/Earnings — free_data RSS, SEC 8-K atom, Nasdaq earnings calendar JSON

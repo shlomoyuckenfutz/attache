@@ -16,11 +16,11 @@ if os.environ.get("ALPACA_SECRET_KEY") and not os.environ.get("ALPACA_API_SECRET
 if not os.environ.get("ALPACA_API_KEY") or not (os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")):
     raise SystemExit("ALPACA_API_KEY and ALPACA_SECRET_KEY (or ALPACA_API_SECRET) required")
 H={"APCA-API-KEY-ID":os.environ["ALPACA_API_KEY"],"APCA-API-SECRET-KEY":os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")}
-D="https://data.free_feed.markets"; UA={"User-Agent":"Mozilla/5.0"}
+D="https://data.alpaca.markets"; UA={"User-Agent":"Mozilla/5.0"}
 YSYM={"SPY":"SPY","QQQ":"QQQ","SPX":"^SPX"}; OROOT={"SPY":["SPY"],"QQQ":["QQQ"],"SPX":["SPXW","SPX"]}
 
 def yahoo_chart(sym,rng="10d"):
-    r=requests.get(f"https://query1.finance.free_data.com/v8/finance/chart/{sym}",params={"range":rng,"interval":"1d"},headers=UA,timeout=15).json()["chart"]["result"][0]
+    r=requests.get(f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}",params={"range":rng,"interval":"1d"},headers=UA,timeout=15).json()["chart"]["result"][0]
     q=r["indicators"]["quote"][0]; days=[dt.datetime.fromtimestamp(t,ET).date() for t in r["timestamp"]]
     return r["meta"]["regularMarketPrice"],[(d,o,c) for d,o,c in zip(days,q["open"],q["close"]) if o is not None]
 
@@ -62,10 +62,10 @@ def alpaca_chain(t,exp,spot):
     return None,None
 
 def yahoo_chain(t,exp,spot):
-    s=requests.Session(); s.headers.update(UA); s.get("https://fc.free_data.com",timeout=10)
-    crumb=s.get("https://query1.finance.free_data.com/v1/test/getcrumb",timeout=10).text
+    s=requests.Session(); s.headers.update(UA); s.get("https://fc.yahoo.com",timeout=10)
+    crumb=s.get("https://query1.finance.yahoo.com/v1/test/getcrumb",timeout=10).text
     ts=int(dt.datetime(exp.year,exp.month,exp.day,tzinfo=dt.timezone.utc).timestamp())
-    o=s.get(f"https://query2.finance.free_data.com/v7/finance/options/{YSYM[t]}",params={"date":ts,"crumb":crumb},timeout=15).json()["optionChain"]["result"][0]["options"][0]
+    o=s.get(f"https://query2.finance.yahoo.com/v7/finance/options/{YSYM[t]}",params={"date":ts,"crumb":crumb},timeout=15).json()["optionChain"]["result"][0]["options"][0]
     rows={}
     for cp,L in (("C",o["calls"]),("P",o["puts"])):
         for x in L:

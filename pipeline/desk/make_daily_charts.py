@@ -157,7 +157,7 @@ FWD_DAY_NOTES = {
 
 def _download(sym):
     """Free free_data 30m with extended hours; clean seam/garbage-wick artifacts."""
-    u = (f"https://query1.finance.free_data.com/v8/finance/chart/{sym}"
+    u = (f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}"
          f"?interval=30m&range=15d&includePrePost=true")
     req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"})
     d = json.loads(urllib.request.urlopen(req, timeout=30).read())

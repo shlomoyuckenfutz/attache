@@ -1936,14 +1936,14 @@
         {
           "ticker": "AMZN",
           "title": "Andy Jassy Says West Is 'Very Hungry' For More Western Open Source AI Models as Amazon Adds China's Kimi and GLM to Bedrock",
-          "link": "https://finance.free_data.com/technology/ai/articles/andy-jassy-says-west-very-233005253.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/technology/ai/articles/andy-jassy-says-west-very-233005253.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 23:30:05 +0000",
           "source": "desk"
         },
         {
           "ticker": "NVDA",
           "title": "Nvidia (NVDA) CEO Jensen Huang Reportedly Targeted In Chinese Espionage Plot",
-          "link": "https://finance.free_data.com/technology/ai/articles/nvidia-nvda-ceo-jensen-huang-220818674.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/technology/ai/articles/nvidia-nvda-ceo-jensen-huang-220818674.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 22:08:18 +0000",
           "source": "desk"
         },
@@ -1964,14 +1964,14 @@
         {
           "ticker": "NVDA",
           "title": "5 Best High Growth Stocks Outside Big Tech",
-          "link": "https://finance.free_data.com/markets/stocks/articles/5-best-high-growth-stocks-213926607.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/5-best-high-growth-stocks-213926607.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 21:39:26 +0000",
           "source": "desk"
         },
         {
           "ticker": "META",
           "title": "Here\u2019s Why Janus Henderson is Bullish On Meta Platforms, Inc. (META)",
-          "link": "https://finance.free_data.com/markets/stocks/articles/why-janus-henderson-bullish-meta-212034266.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/why-janus-henderson-bullish-meta-212034266.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 21:20:34 +0000",
           "source": "desk"
         },
@@ -2006,7 +2006,7 @@
         {
           "ticker": "MSFT",
           "title": "5 insightful analyst questions from Microsoft\u2019s Q3 earnings call",
-          "link": "https://finance.free_data.com/markets/stocks/articles/5-insightful-analyst-questions-microsoft-182729596.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/5-insightful-analyst-questions-microsoft-182729596.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 18:27:29 +0000",
           "source": "desk"
         },
@@ -2062,7 +2062,7 @@
         {
           "ticker": "AMZN",
           "title": "Amazon (AMZN) Stock Slips As Q3 Earnings Reflect Profit Reset",
-          "link": "https://finance.free_data.com/markets/stocks/articles/amazon-amzn-stock-slips-q3-151326000.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/amazon-amzn-stock-slips-q3-151326000.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 15:13:26 +0000",
           "source": "desk"
         },
@@ -2097,14 +2097,14 @@
         {
           "ticker": "AAPL",
           "title": "Dow Jones Futures: Stock Market Sells Off As Apple, Palantir, Midterm Elections Loom; What To Do",
-          "link": "https://finance.free_data.com/m/d0bc23d0-115b-314d-8989-07ca797bebfa/dow-jones-futures%3A-stock.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/m/d0bc23d0-115b-314d-8989-07ca797bebfa/dow-jones-futures%3A-stock.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 12:41:41 +0000",
           "source": "desk"
         },
         {
           "ticker": "META",
           "title": "Why don't the ultra-wealthy just leave high-tax states?",
-          "link": "https://finance.free_data.com/video/why-dont-ultra-wealthy-just-120000461.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/video/why-dont-ultra-wealthy-just-120000461.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 12:00:00 +0000",
           "source": "desk"
         },
@@ -2118,7 +2118,7 @@
         {
           "ticker": "AAPL",
           "title": "What Apple Doubters Got Wrong",
-          "link": "https://finance.free_data.com/markets/stocks/articles/apple-doubters-got-wrong-080821562.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/apple-doubters-got-wrong-080821562.html?.tsrc=rss",
           "published": "Sat, 31 Oct 2026 08:08:21 +0000",
           "source": "desk"
         },
@@ -2146,7 +2146,7 @@
         {
           "ticker": "TSLA",
           "title": "See how Tesla stocks performed for week ending Oct. 30",
-          "link": "https://finance.free_data.com/video/see-tesla-stocks-performed-week-221519114.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/video/see-tesla-stocks-performed-week-221519114.html?.tsrc=rss",
           "published": "Fri, 30 Oct 2026 22:15:19 +0000",
           "source": "desk"
         },
@@ -2181,7 +2181,7 @@
         {
           "ticker": "QQQ",
           "title": "Exchange-Traded Funds Lower as US Equities Decline After Midday Friday",
-          "link": "https://finance.free_data.com/markets/stocks/articles/exchange-traded-funds-lower-us-172229310.html?.tsrc=rss",
+          "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-lower-us-172229310.html?.tsrc=rss",
           "published": "Fri, 30 Oct 2026 17:22:29 +0000",
           "source": "desk"
         },
@@ -2551,6 +2551,6 @@
   },
   "from_reference": {
     "note": "free_data chart endpoint pattern and free-data desk ethos from public writeup (helicerat0x); French factors not used on this wall.",
-    "feed_chart": "https://query1.finance.free_data.com/v8/finance/chart/{SYMBOL}"
+    "feed_chart": "https://query1.finance.yahoo.com/v8/finance/chart/{SYMBOL}"
   }
 }

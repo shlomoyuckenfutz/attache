@@ -134,7 +134,7 @@ def http_text(url: str, headers: dict | None = None, timeout: int = 30):
 def fetch_feed_chart(symbol: str, range_: str = "1d", interval: str = "5m"):
     for host in ("query1", "query2"):
         url = (
-            f"https://{host}.finance.free_data.com/v8/finance/chart/"
+            f"https://{host}.finance.yahoo.com/v8/finance/chart/"
             f"{urllib.parse.quote(symbol, safe='^=')}?range={range_}&interval={interval}"
         )
         try:
@@ -423,7 +423,7 @@ def fetch_macro():
 # ── News / Earnings ───────────────────────────────────────────────────────
 
 def feed_rss(ticker: str, limit: int = 5):
-    url = f"https://feeds.finance.free_data.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
+    url = f"https://feeds.finance.yahoo.com/rss/2.0/headline?s={ticker}&region=US&lang=en-US"
     text = http_text(url, headers={"User-Agent": UA_FEED})
     root = ET.fromstring(text)
     items = []
@@ -549,7 +549,7 @@ def fetch_news():
 
 def try_feed_options(symbol: str):
     for host in ("query1", "query2"):
-        url = f"https://{host}.finance.free_data.com/v7/finance/options/{symbol}"
+        url = f"https://{host}.finance.yahoo.com/v7/finance/options/{symbol}"
         try:
             d = http_json(url, headers={"User-Agent": UA_FEED}, timeout=20)
             chain = (d.get("optionChain") or {}).get("result") or []
@@ -912,7 +912,7 @@ def main():
         "desk": desk,
         "from_reference": {
             "note": "free_data chart endpoint pattern and free-data desk ethos from public writeup (helicerat0x); French factors not used on this wall.",
-            "feed_chart": "https://query1.finance.free_data.com/v8/finance/chart/{SYMBOL}",
+            "feed_chart": "https://query1.finance.yahoo.com/v8/finance/chart/{SYMBOL}",
         },
     }
     snap = merge_prev(snap, OUT_JSON)
