@@ -1,266 +1,175 @@
 {
-  "date": "2026-11-03",
-  "title": "Tuesday 11/3 SPY close review",
-  "base": "Same view as yesterday: a larger move down to a test of the 200DMA by or before November OpEx. Tomorrow a push toward 760 is possible if AMD holds its gains, but it should be hard to get far above 755; lean is a close at or below 755, a bearish touch of the 20/50DMAs.",
-  "alternative": "The alternative path here is we manage to establish above the 757.43 dark pool level which puts 760 back on the table, at which point a back test of the 100DMA is in the cards.",
-  "trigger": "\u2014",
-  "direction": "DOWN",
-  "levels": [
-    {
-      "spy": 765.0,
-      "es": 7718.54,
-      "kind": "MA",
-      "n": 1,
-      "in_take": false
-    },
-    {
-      "spy": 760.0,
-      "es": 7668.09,
-      "kind": "DARK POOL",
-      "n": 3,
-      "in_take": true
-    },
-    {
-      "spy": 757.43,
-      "es": 7642.16,
-      "kind": "DARK POOL",
-      "n": 1,
-      "in_take": true
-    },
-    {
-      "spy": 755.62,
-      "es": 7623.9,
-      "kind": "DARK POOL",
-      "n": 1,
-      "in_take": false
-    },
-    {
-      "spy": 755.0,
-      "es": 7617.64,
-      "kind": "MA",
-      "n": 4,
-      "in_take": true
-    },
-    {
-      "spy": 754.07,
-      "es": 7608.26,
-      "kind": "DARK POOL",
-      "n": 1,
-      "in_take": false
-    },
-    {
-      "spy": 754.05,
-      "es": 7608.06,
-      "kind": "DARK POOL",
-      "n": 1,
-      "in_take": false
-    },
-    {
-      "spy": 750.0,
-      "es": 7567.2,
-      "kind": "WALL",
-      "n": 5,
-      "in_take": false
-    },
-    {
-      "spy": 746.77,
-      "es": 7534.61,
-      "kind": "DARK POOL",
-      "n": 1,
-      "in_take": false
-    },
-    {
-      "spy": 745.0,
-      "es": 7516.75,
-      "kind": "WALL",
-      "n": 2,
-      "in_take": false
-    },
-    {
-      "spy": 740.0,
-      "es": 7466.3,
-      "kind": "WALL",
-      "n": 5,
-      "in_take": false
-    },
-    {
-      "spy": 730.0,
-      "es": 7365.4,
-      "kind": "WALL",
-      "n": 1,
-      "in_take": false
-    }
-  ],
-  "factor": 0.099112,
-  "history": [
-    {
-      "date": "2026-10-07",
-      "call": "UP",
-      "next": "2026-10-08",
-      "pct": -0.42,
-      "hit": false
-    },
-    {
-      "date": "2026-10-08",
-      "call": "UP",
-      "next": "2026-10-09",
-      "pct": 0.6,
-      "hit": true
-    },
-    {
-      "date": "2026-10-09",
-      "call": "DOWN",
-      "next": "2026-10-12",
-      "pct": -0.06,
-      "hit": true
-    },
-    {
-      "date": "2026-10-12",
-      "call": "DOWN",
-      "next": "2026-10-13",
-      "pct": -0.01,
-      "hit": true
-    },
-    {
-      "date": "2026-10-13",
-      "call": "DOWN",
-      "next": "2026-10-14",
-      "pct": -1.08,
-      "hit": true
-    },
-    {
-      "date": "2026-10-14",
-      "call": "UP",
-      "next": "2026-10-15",
-      "pct": 0.28,
-      "hit": true
-    },
-    {
-      "date": "2026-10-15",
-      "call": "FLAT",
-      "next": "2026-10-16",
-      "pct": -1.11,
-      "hit": false
-    },
-    {
-      "date": "2026-10-16",
-      "call": "UP",
-      "next": "2026-10-19",
-      "pct": 0.42,
-      "hit": true
-    },
-    {
-      "date": "2026-10-19",
-      "call": "UP",
-      "next": "2026-10-20",
-      "pct": 0.34,
-      "hit": true
-    },
-    {
-      "date": "2026-10-20",
-      "call": "DOWN",
-      "next": "2026-10-21",
-      "pct": 0.53,
-      "hit": false
-    },
-    {
-      "date": "2026-10-21",
-      "call": "DOWN",
-      "next": "2026-10-22",
-      "pct": -1.18,
-      "hit": true
-    },
-    {
-      "date": "2026-10-22",
-      "call": "UP",
-      "next": "2026-10-23",
-      "pct": -0.52,
-      "hit": false
-    },
-    {
-      "date": "2026-10-23",
-      "call": "UP",
-      "next": "2026-10-26",
-      "pct": 0.71,
-      "hit": true
-    },
-    {
-      "date": "2026-10-26",
-      "call": "FLAT",
-      "next": "2026-10-27",
-      "pct": 0.56,
-      "hit": false
-    },
-    {
-      "date": "2026-10-27",
-      "call": "DOWN",
-      "next": "2026-10-28",
-      "pct": 0.34,
-      "hit": false
-    },
-    {
-      "date": "2026-10-28",
-      "call": "DOWN",
-      "next": "2026-10-29",
-      "pct": -0.38,
-      "hit": true
-    },
-    {
-      "date": "2026-10-29",
-      "call": "DOWN",
-      "next": "2026-10-30",
-      "pct": -1.77,
-      "hit": true
-    },
-    {
-      "date": "2026-10-30",
-      "call": "UP",
-      "next": "2026-11-02",
-      "pct": -0.48,
-      "hit": false
-    },
-    {
-      "date": "2026-11-02",
-      "call": "UP",
-      "next": "2026-11-03",
-      "pct": 0.3,
-      "hit": true
-    },
-    {
-      "date": "2026-11-03",
-      "call": "DOWN",
-      "next": null,
-      "pct": null,
-      "hit": null
-    }
-  ],
-  "hit_rate": {
-    "hits": 12,
-    "n": 19,
-    "rate": 63.2
+ "date": "2026-11-04",
+ "title": "Wednesday 11/4 SPY close review",
+ "base": "Brief, low-conviction read after a +1.65% gap-up on vol crush and an oil drop: SPY closed below the 50DMA (a rejection after trading above it) and rejected the downtrend line, though it reclaimed the 10DMA and 100DMA. New dark pool at 754.51; the 20/50DMA death cross is still likely without another rally. Speculative lean is that some of the rally is given back, possibly a nothing day ahead of Friday NFP; sitting in cash.",
+ "alternative": "\u2014",
+ "trigger": "\u2014",
+ "direction": "DOWN",
+ "levels": [
+  {
+   "spy": 754.51,
+   "es": 7612.7,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
+  }
+ ],
+ "factor": 0.099112,
+ "history": [
+  {
+   "date": "2026-10-07",
+   "call": "UP",
+   "next": "2026-10-08",
+   "pct": -0.42,
+   "hit": false
   },
-  "built": "2026-11-03",
-  "intraday": [
-    {
-      "pt": "2026-11-04 10:03 PT",
-      "text": "0DTE GEX: no puts for SPY until 770; furthest make ~769.55 Fri dark pool."
-    },
-    {
-      "pt": "2026-11-04 ~09:39 PT",
-      "text": "VIX crush is a primary fuel for the rip \u2014 election result accepted without 'rigged' challenge rhetoric."
-    },
-    {
-      "pt": "2026-11-04 ~09:47 PT",
-      "text": "Dem Congress mandate = data-center build-out regulation + AI guardrails risk. Longer AI-capex overhang intact even with vol crush."
-    },
-    {
-      "pt": "2026-11-04 ~09:26 PT",
-      "text": "Calling Iran war over by Christmas; Hegseth replacement talk + Vance blaming war for midterm loss = writing on the wall. Oil trading like peace is near."
-    },
-    {
-      "pt": "2026-11-04 note",
-      "text": "Tue 11/3 Night Ledger lean (close \u2264755) invalidated by overnight 7495 FBD rip; alt (>757.43\u2192760\u2192100DMA) played. Wed Night Ledger not out yet (post-close)."
-    }
-  ],
-  "intraday_date": "2026-11-04"
+  {
+   "date": "2026-10-08",
+   "call": "UP",
+   "next": "2026-10-09",
+   "pct": 0.6,
+   "hit": true
+  },
+  {
+   "date": "2026-10-09",
+   "call": "DOWN",
+   "next": "2026-10-12",
+   "pct": -0.06,
+   "hit": true
+  },
+  {
+   "date": "2026-10-12",
+   "call": "DOWN",
+   "next": "2026-10-13",
+   "pct": -0.01,
+   "hit": true
+  },
+  {
+   "date": "2026-10-13",
+   "call": "DOWN",
+   "next": "2026-10-14",
+   "pct": -1.08,
+   "hit": true
+  },
+  {
+   "date": "2026-10-14",
+   "call": "UP",
+   "next": "2026-10-15",
+   "pct": 0.28,
+   "hit": true
+  },
+  {
+   "date": "2026-10-15",
+   "call": "FLAT",
+   "next": "2026-10-16",
+   "pct": -1.11,
+   "hit": false
+  },
+  {
+   "date": "2026-10-16",
+   "call": "UP",
+   "next": "2026-10-19",
+   "pct": 0.42,
+   "hit": true
+  },
+  {
+   "date": "2026-10-19",
+   "call": "UP",
+   "next": "2026-10-20",
+   "pct": 0.34,
+   "hit": true
+  },
+  {
+   "date": "2026-10-20",
+   "call": "DOWN",
+   "next": "2026-10-21",
+   "pct": 0.53,
+   "hit": false
+  },
+  {
+   "date": "2026-10-21",
+   "call": "DOWN",
+   "next": "2026-10-22",
+   "pct": -1.18,
+   "hit": true
+  },
+  {
+   "date": "2026-10-22",
+   "call": "UP",
+   "next": "2026-10-23",
+   "pct": -0.52,
+   "hit": false
+  },
+  {
+   "date": "2026-10-23",
+   "call": "UP",
+   "next": "2026-10-26",
+   "pct": 0.71,
+   "hit": true
+  },
+  {
+   "date": "2026-10-26",
+   "call": "FLAT",
+   "next": "2026-10-27",
+   "pct": 0.56,
+   "hit": false
+  },
+  {
+   "date": "2026-10-27",
+   "call": "DOWN",
+   "next": "2026-10-28",
+   "pct": 0.34,
+   "hit": false
+  },
+  {
+   "date": "2026-10-28",
+   "call": "DOWN",
+   "next": "2026-10-29",
+   "pct": -0.38,
+   "hit": true
+  },
+  {
+   "date": "2026-10-29",
+   "call": "DOWN",
+   "next": "2026-10-30",
+   "pct": -1.77,
+   "hit": true
+  },
+  {
+   "date": "2026-10-30",
+   "call": "UP",
+   "next": "2026-11-02",
+   "pct": -0.48,
+   "hit": false
+  },
+  {
+   "date": "2026-11-02",
+   "call": "UP",
+   "next": "2026-11-03",
+   "pct": 0.3,
+   "hit": true
+  },
+  {
+   "date": "2026-11-03",
+   "call": "DOWN",
+   "next": "2026-11-04",
+   "pct": 1.65,
+   "hit": false
+  },
+  {
+   "date": "2026-11-04",
+   "call": "DOWN",
+   "next": null,
+   "pct": null,
+   "hit": null
+  }
+ ],
+ "hit_rate": {
+  "hits": 12,
+  "n": 20,
+  "rate": 60.0
+ },
+ "built": "2026-11-04",
+ "intraday": [],
+ "intraday_date": null
 }
