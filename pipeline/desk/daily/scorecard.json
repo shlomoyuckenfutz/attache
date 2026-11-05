@@ -240,8 +240,8 @@
   "symbols_plan": {
     "es": {
       "high": 7746.25,
-      "low": 7391.25,
-      "last": 7403.5,
+      "low": 7388.0,
+      "last": 7407.0,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -279,17 +279,17 @@
         {
           "date": "2026-11-05",
           "hi": 7738.75,
-          "lo": 7391.25,
-          "last": 7403.5,
+          "lo": 7388.0,
+          "last": 7407.0,
           "event": false
         }
       ],
-      "n_bars": 161
+      "n_bars": 162
     },
     "nq": {
       "high": 28969.0,
       "low": 26732.0,
-      "last": 26874.0,
+      "last": 26915.5,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -328,16 +328,16 @@
           "date": "2026-11-05",
           "hi": 28465.0,
           "lo": 26732.0,
-          "last": 26874.0,
+          "last": 26915.5,
           "event": false
         }
       ],
-      "n_bars": 161
+      "n_bars": 162
     },
     "spy": {
       "high": 775.6400146484375,
-      "low": 734.239990234375,
-      "last": 735.6099853515625,
+      "low": 733.9500122070312,
+      "last": 736.0399780273438,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -375,17 +375,17 @@
         {
           "date": "2026-11-05",
           "hi": 765.97,
-          "lo": 734.24,
-          "last": 735.61,
+          "lo": 733.95,
+          "last": 736.04,
           "event": false
         }
       ],
-      "n_bars": 67
+      "n_bars": 69
     },
     "qqq": {
       "high": 701.4500122070312,
       "low": 647.4299926757812,
-      "last": 651.280029296875,
+      "last": 652.0,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -424,11 +424,11 @@
           "date": "2026-11-05",
           "hi": 683.64,
           "lo": 647.43,
-          "last": 651.28,
+          "last": 652.0,
           "event": false
         }
       ],
-      "n_bars": 67
+      "n_bars": 69
     }
   },
   "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
