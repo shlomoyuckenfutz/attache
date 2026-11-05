@@ -1,5 +1,5 @@
 {
- "generated_pt": "2026-11-04 21:57 PT",
+ "generated_pt": "2026-11-04 23:11 PT",
  "session_for": "2026-11-05",
  "week_expiry": "2026-11-06",
  "method": "ATM straddle = call mid + put mid at strike nearest spot; bands = ref \u00b1 straddle; iv_move = spot*IV*sqrt(DTE/365); straddle_085 = 0.85\u00d7straddle (~1\u03c3)",
@@ -14,7 +14,7 @@
     "straddle": 4.53,
     "straddle_085": 3.85,
     "atm_iv": null,
-    "dte_cal": 0.627,
+    "dte_cal": 0.575,
     "iv_move": null,
     "source": "indicative:SPY",
     "ref": 766.9,
@@ -31,8 +31,8 @@
     "straddle": 6.89,
     "straddle_085": 5.86,
     "atm_iv": 0.2151,
-    "dte_cal": 1.627,
-    "iv_move": 11.01,
+    "dte_cal": 1.575,
+    "iv_move": 10.84,
     "source": "indicative:SPY",
     "ref": 759.45,
     "ref_kind": "Monday open",
@@ -54,7 +54,7 @@
     "straddle": 45.88,
     "straddle_085": 39.0,
     "atm_iv": null,
-    "dte_cal": 0.627,
+    "dte_cal": 0.575,
     "iv_move": null,
     "source": "indicative:SPXW",
     "ref": 7688.62,
@@ -71,7 +71,7 @@
     "straddle": 69.05,
     "straddle_085": 58.7,
     "atm_iv": null,
-    "dte_cal": 1.627,
+    "dte_cal": 1.575,
     "iv_move": null,
     "source": "indicative:SPXW",
     "ref": 7610.83,
@@ -94,7 +94,7 @@
     "straddle": 7.53,
     "straddle_085": 6.4,
     "atm_iv": null,
-    "dte_cal": 0.627,
+    "dte_cal": 0.575,
     "iv_move": null,
     "source": "indicative:QQQ",
     "ref": 692.53,
@@ -111,8 +111,8 @@
     "straddle": 11.36,
     "straddle_085": 9.66,
     "atm_iv": 0.375,
-    "dte_cal": 1.627,
-    "iv_move": 17.34,
+    "dte_cal": 1.575,
+    "iv_move": 17.06,
     "source": "indicative:QQQ",
     "ref": 695.32,
     "ref_kind": "Monday open",
@@ -422,7 +422,7 @@
    }
   },
   {
-   "generated_pt": "2026-11-04 21:57 PT",
+   "generated_pt": "2026-11-04 23:11 PT",
    "session_for": "2026-11-05",
    "week_expiry": "2026-11-06",
    "SPY": {
@@ -440,7 +440,7 @@
      "lower": 752.56,
      "ref": 759.45,
      "atm_iv": 0.2151,
-     "iv_move": 11.01
+     "iv_move": 10.84
     }
    },
    "SPX": {
@@ -476,7 +476,7 @@
      "lower": 683.96,
      "ref": 695.32,
      "atm_iv": 0.375,
-     "iv_move": 17.34
+     "iv_move": 17.06
     }
    }
   }
