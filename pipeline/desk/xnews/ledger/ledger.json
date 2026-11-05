@@ -230,14 +230,14 @@
    "date": "2026-11-03",
    "call": "DOWN",
    "next": "2026-11-04",
-   "pct": NaN,
-   "hit": true
+   "pct": 1.65,
+   "hit": false
   }
  ],
  "hit_rate": {
-  "hits": 13,
+  "hits": 12,
   "n": 20,
-  "rate": 65.0
+  "rate": 60.0
  },
  "built": "2026-11-05",
  "intraday": [],
