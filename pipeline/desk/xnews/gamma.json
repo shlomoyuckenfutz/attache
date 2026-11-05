@@ -1,6 +1,6 @@
 {
  "date": "2026-11-04",
- "updated_pt": "2026-11-05 03:52 PT",
+ "updated_pt": "2026-11-05 04:33 PT",
  "symbols": [
   {
    "symbol": "SPY",
@@ -37,7 +37,7 @@
      "note": "Lost 760 put wall (-2.8B); next big puts 755 (-1.7B) and 750 (-2.3B)"
     },
     {
-     "handle": "SRC",
+     "handle": "SRC_LEDGER",
      "scope": "10/29 short note lean into 10/30",
      "volt": null,
      "flip": null,
@@ -91,9 +91,9 @@
     "spot": 766.73,
     "regime": "negative gamma",
     "regime_votes": {
-     "short gamma": 1,
      "negative gamma": 2,
-     "under flip / all 3 mkts neg": 1
+     "under flip / all 3 mkts neg": 1,
+     "short gamma": 1
     }
    },
    "em_note": "Cheddar 1D EM after 760 put-wall break; Voltick pre-open EM 758.2-764.22"
