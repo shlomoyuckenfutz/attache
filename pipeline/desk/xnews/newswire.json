@@ -1,6 +1,6 @@
 {
- "generated_at_pt": "2026-11-05 20:43 PT",
- "generated_utc": "2026-11-06T04:43:19+00:00",
+ "generated_at_pt": "2026-11-05 20:55 PT",
+ "generated_utc": "2026-11-06T04:55:13+00:00",
  "breaking_minutes": 30,
  "items": [
   {
@@ -19,7 +19,7 @@
    "headline": "North Korea Removes Parliamentary Vice Chairman, Revises Construction and Precious…",
    "tag": "GEO",
    "src": "SRC W2",
-   "breaking": true
+   "breaking": false
   },
   {
    "ts_utc": "2026-11-06T04:06:05.000Z",
