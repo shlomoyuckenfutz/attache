@@ -1,14 +1,14 @@
 {
- "generated_pt": "2026-11-06 06:11 PT",
- "sync_timestamp_et": "2026-11-06 09:05:00-05:00",
+ "generated_pt": "2026-11-06 06:42 PT",
+ "sync_timestamp_et": "2026-11-06 09:35:00-05:00",
  "prices": {
-  "ES=F": 7396.75,
-  "SPY": 734.66
+  "ES=F": 7406.0,
+  "SPY": 735.6799926757812
  },
  "feed": "yfinance",
  "factors": {
-  "spy_per_es": 0.09932199952681921,
-  "es_per_spy": 10.068262869899002
+  "spy_per_es": 0.09933567278906039,
+  "es_per_spy": 10.06687700322424
  },
  "method": "Convert posted ES levels (+ pinned Iron Ladder) to SPY only. Free delayed data only.\nSPY = ES * factor, factor = SPY_close / ES_close at a synchronized timestamp (last 5m bar ending <= 16:00 ET of latest session).",
  "levels_a": {
@@ -16,74 +16,74 @@
   "levels": [
    {
     "es": 7606,
-    "es_pct": 2.829,
-    "spy": 755.44,
+    "es_pct": 2.701,
+    "spy": 755.55,
     "role": "RK"
    },
    {
     "es": 7558,
-    "es_pct": 2.18,
-    "spy": 750.68,
+    "es_pct": 2.052,
+    "spy": 750.78,
     "role": "R"
    },
    {
     "es": 7533,
-    "es_pct": 1.842,
-    "spy": 748.19,
+    "es_pct": 1.715,
+    "spy": 748.3,
     "role": "R"
    },
    {
     "es": 7513,
-    "es_pct": 1.572,
-    "spy": 746.21,
+    "es_pct": 1.445,
+    "spy": 746.31,
     "role": "R"
    },
    {
     "es": 7495,
-    "es_pct": 1.328,
-    "spy": 744.42,
+    "es_pct": 1.202,
+    "spy": 744.52,
     "role": "R"
    },
    {
     "es": 7490,
-    "es_pct": 1.261,
-    "spy": 743.92,
+    "es_pct": 1.134,
+    "spy": 744.02,
     "role": "RK"
    },
    {
     "es": 7460,
-    "es_pct": 0.855,
-    "spy": 740.94,
+    "es_pct": 0.729,
+    "spy": 741.04,
     "role": "R"
    },
    {
     "es": 7441,
-    "es_pct": 0.598,
-    "spy": 739.05,
+    "es_pct": 0.473,
+    "spy": 739.16,
     "role": "R"
    },
    {
     "es": 7432,
-    "es_pct": 0.477,
-    "spy": 738.16,
+    "es_pct": 0.351,
+    "spy": 738.26,
     "role": "R"
    },
    {
     "es": 7420,
-    "es_pct": 0.314,
-    "spy": 736.97,
+    "es_pct": 0.189,
+    "spy": 737.07,
     "role": "SK"
    },
    {
     "es": 7346,
-    "es_pct": -0.686,
-    "spy": 729.62,
+    "es_pct": -0.81,
+    "spy": 729.72,
     "role": "S"
    },
    {
     "es": 7322,
-    "es_pct": -1.011,
-    "spy": 727.24,
+    "es_pct": -1.134,
+    "spy": 727.34,
     "role": "S"
    }
   ]
@@ -91,92 +91,92 @@
  "iron_ladder": [
   {
    "es": 7887,
-   "es_pct": 6.628,
-   "spy": 783.35,
+   "es_pct": 6.495,
+   "spy": 783.46,
    "role": "resistance"
   },
   {
    "es": 7879,
-   "es_pct": 6.52,
-   "spy": 782.56,
+   "es_pct": 6.387,
+   "spy": 782.67,
    "role": "resistance"
   },
   {
    "es": 7870,
-   "es_pct": 6.398,
-   "spy": 781.66,
+   "es_pct": 6.265,
+   "spy": 781.77,
    "role": "resistance"
   },
   {
    "es": 7862,
-   "es_pct": 6.29,
-   "spy": 780.87,
+   "es_pct": 6.157,
+   "spy": 780.98,
    "role": "resistance"
   },
   {
    "es": 7847,
-   "es_pct": 6.087,
-   "spy": 779.38,
+   "es_pct": 5.955,
+   "spy": 779.49,
    "role": "resistance"
   },
   {
    "es": 7834,
-   "es_pct": 5.911,
-   "spy": 778.09,
+   "es_pct": 5.779,
+   "spy": 778.2,
    "role": "resistance"
   },
   {
    "es": 7820,
-   "es_pct": 5.722,
-   "spy": 776.7,
+   "es_pct": 5.59,
+   "spy": 776.8,
    "role": "resistance"
   },
   {
    "es": 7801,
-   "es_pct": 5.465,
-   "spy": 774.81,
+   "es_pct": 5.334,
+   "spy": 774.92,
    "role": "resistance"
   },
   {
    "es": 7782,
-   "es_pct": 5.208,
-   "spy": 772.92,
+   "es_pct": 5.077,
+   "spy": 773.03,
    "role": "support"
   },
   {
    "es": 7766,
-   "es_pct": 4.992,
-   "spy": 771.33,
+   "es_pct": 4.861,
+   "spy": 771.44,
    "role": "support"
   },
   {
    "es": 7729,
-   "es_pct": 4.492,
-   "spy": 767.66,
+   "es_pct": 4.361,
+   "spy": 767.77,
    "role": "support"
   },
   {
    "es": 7719,
-   "es_pct": 4.357,
-   "spy": 766.67,
+   "es_pct": 4.226,
+   "spy": 766.77,
    "role": "support"
   },
   {
    "es": 7705,
-   "es_pct": 4.167,
-   "spy": 765.28,
+   "es_pct": 4.037,
+   "spy": 765.38,
    "role": "support"
   },
   {
    "es": 7680,
-   "es_pct": 3.829,
-   "spy": 762.79,
+   "es_pct": 3.7,
+   "spy": 762.9,
    "role": "support"
   },
   {
    "es": 7620,
-   "es_pct": 3.018,
-   "spy": 756.83,
+   "es_pct": 2.89,
+   "spy": 756.94,
    "role": "support"
   }
  ]
