@@ -1,15 +1,15 @@
 {
  "source": "desk",
  "symbol": "SPY",
- "date": "2026-10-28",
- "posted_pt": "2026-10-28 06:23 PT",
+ "date": "2026-11-05",
+ "posted_pt": "2026-11-05 06:23 PT",
  "post_url": "",
- "pivot": 771.37,
- "room_higher": 773.53,
- "resistance_break": 775.28,
- "room_lower": 769.17,
- "support_break": 767.68,
+ "pivot": 767.66,
+ "room_higher": 769.07,
+ "resistance_break": 771.35,
+ "room_lower": 766.39,
+ "support_break": 765.41,
  "bias": "Leaning bullish neutral",
- "text": "$SPY 771.37 is the pivot to the upside today imo. This level is able to hold, room higher into the 773.53 res, breaks we see the 775.28 tested. Pivot unable to hold, room lower into the 769.17 support, breaks we see the 767.68 tested. Leaning bullish neutral.",
+ "text": "$SPY 767.66 is the pivot to the upside today imo. This level is able to hold, room higher into the 769.07 res, breaks we see the 771.35 tested. Pivot unable to hold, room lower into the 766.39 support, breaks we see the 765.41 tested. Leaning bullish neutral. (Posted as \"267.66\" \u2014 obvious typo for 767.66.)",
  "updates": []
 }
