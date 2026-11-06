@@ -241,7 +241,7 @@
     "es": {
       "high": 7746.25,
       "low": 7322.25,
-      "last": 7388.25,
+      "last": 7387.0,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -280,16 +280,16 @@
           "date": "2026-11-05",
           "hi": 7738.75,
           "lo": 7322.25,
-          "last": 7388.25,
+          "last": 7387.0,
           "event": false
         }
       ],
-      "n_bars": 171
+      "n_bars": 173
     },
     "nq": {
       "high": 28969.0,
       "low": 26366.5,
-      "last": 26856.25,
+      "last": 26937.25,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -328,11 +328,11 @@
           "date": "2026-11-05",
           "hi": 28465.0,
           "lo": 26366.5,
-          "last": 26856.25,
+          "last": 26937.25,
           "event": false
         }
       ],
-      "n_bars": 171
+      "n_bars": 173
     },
     "spy": {
       "high": 775.6400146484375,
