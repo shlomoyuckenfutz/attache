@@ -336,7 +336,7 @@ def page(plan, site: Path):
     out = [f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
            f'<title>ATTACHÉ | DAILY PLAN</title><link rel="icon" href="data:,">'
            f'<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">{CSS}</head><body><main>',
-           f'<h1>{html.escape(title)}</h1>',
+           f'<h1>{html.escape(title)}</h1>', lss_html(plan),
            f'<div class="hd"><div>Plan only — not investment advice · rebuilt from plan.json on every sweep</div>'
            f'<div>Session date: <b>{html.escape(fmt_date(date))}</b> · sources counted in plan: <b>{html.escape(str(plan.get("sources_count", "–")))}</b></div></div>',
            '<nav class="toc">' + "".join(f'<a href="#{i}">{html.escape(lab)}</a>' for i, lab in toc) + "</nav>",
@@ -379,6 +379,44 @@ def page(plan, site: Path):
     return "".join(out), title, direction, bias.get("reason") or ""
 
 
+LSS_MK = "<!--LSS-->"
+_PLAN = None
+def _im_lines(plan):
+    """Implied-move synopsis from the freshly computed implied_move.json; never use a stale session."""
+    f = HERE / "xnews" / "implied_move" / "implied_move.json"
+    try: im = json.loads(f.read_text())
+    except Exception: return ["Implied move unavailable (calc did not produce data this refresh)."], ""
+    want = (plan.get("long_story_short") or {}).get("for_session") or plan.get("date")
+    if im.get("session_for") != want:
+        return [f"Implied move unavailable for {want} (latest calc is for {im.get('session_for')})."], ""
+    out = []
+    for sym in ("SPY", "SPX", "QQQ"):
+        d = (im.get("symbols") or {}).get(sym, {}).get("daily") or {}
+        if not d.get("straddle"): continue
+        iv = f" · ATM IV {d['atm_iv']*100:.1f}%" if d.get("atm_iv") else ""
+        out.append(f"{sym} ±{d['straddle']:g} ({d.get('move_pct', 0):.2f}%) → {d['lower']:g}–{d['upper']:g} off {d.get('ref', 0):g}{iv}")
+    return (out or ["Implied move unavailable."]), f"ATM straddle, {im.get('session_for')} expiry · calc {im.get('generated_pt','')}"
+
+def lss_html(plan, compact=False):
+    L = plan.get("long_story_short") or {}
+    if not L: return ""
+    im, im_note = _im_lines(plan)
+    st = "margin:8px 10px;padding:10px 14px;border:1px solid #ffb000;border-radius:6px;background:#0b0800;color:#e6e0cc;font:13px/1.55 'IBM Plex Mono',ui-monospace,monospace"
+    tag = "color:#000;background:#ffb000;padding:1px 8px;font-weight:700;letter-spacing:.15em;font-size:11px"
+    def blk(lab, col, txt): return f'<div style="margin-top:6px"><b style="color:{col}">{lab}</b> {html.escape(sanitize_text(txt))}</div>'
+    h = [f'<section id="long-story-short" style="{st}"><span style="{tag}">long story short</span>']
+    if L.get("headline"): h.append(f'<b style="color:#ffb000;margin-left:8px">{html.escape(sanitize_text(L["headline"]))}</b>')
+    if L.get("context"): h.append(f'<div style="margin-top:6px">{html.escape(sanitize_text(L["context"]))}</div>')
+    h.append('<div style="margin-top:6px"><b style="color:#22c7e8">Implied move (daily):</b> ' + " · ".join(html.escape(x) for x in im) +
+             (f' <span style="color:#8a8470">({html.escape(im_note)})</span>' if im_note else "") + "</div>")
+    if L.get("levels"): h.append(blk("Key levels:", "#ffb000", L["levels"]))
+    h.append(blk("Bearish lean:", "#ff4d4d", L.get("bearish", "")))
+    h.append(blk("Bullish lean:", "#3ddc5c", L.get("bullish", "")))
+    h.append(blk("General lean:", "#ffb000", L.get("general", "")))
+    h.append("</section>")
+    return LSS_MK + "".join(h) + LSS_MK
+
+
 def card(title, direction, reason):
     p = reason
     p = (p[:220].rsplit(" ", 1)[0] + "…") if len(p) > 220 else p
@@ -397,6 +435,7 @@ def patch_desk(f: Path, title, direction, reason):
     # drop anything accidentally appended after </html>
     if "</html>" in s:
         s = s[: s.rfind("</html>") + 7]
+    s = re.sub(re.escape(LSS_MK) + ".*?" + re.escape(LSS_MK), "", s, flags=re.S)
     c = card(title, direction, reason)
     wm = re.search(re.escape(WK) + ".*?" + re.escape(WK), s, flags=re.S)
     if wm:
@@ -404,6 +443,10 @@ def patch_desk(f: Path, title, direction, reason):
     else:
         m = re.search(r"<body[^>]*>", s)
         s = s[: m.end()] + c + s[m.end() :] if m else c + s
+    lss = lss_html(_PLAN) if _PLAN else ""
+    if lss:
+        m = re.search(r"<body[^>]*>", s)
+        s = s[: m.end()] + lss + s[m.end() :] if m else lss + s
     f.write_text(s, encoding="utf-8")
 
 
@@ -412,6 +455,7 @@ if __name__ == "__main__":
     daily = site / "daily"; daily.mkdir(parents=True, exist_ok=True)
     # Charts are built by refresh.sh via make_daily_charts.py (must succeed there).
     plan, _ = load_plan(site)
+    _PLAN = plan
     h, title, direction, reason = page(plan, site)
     (daily / "index.html").write_text(h, encoding="utf-8")
     print("daily ->", daily / "index.html")
