@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-04",
-  "updated_pt": "2026-11-04 11:31 PT",
+  "date": "2026-11-05",
+  "updated_pt": "2026-11-05 20:40 PT",
   "spot": {
-    "SPY": 768.12,
-    "SPX": 7704.85,
-    "QQQ": 693.91,
-    "asof_et": "2026-11-04 ~14:30 ET (Yahoo)"
+    "SPY": 733.0,
+    "SPX": 7353.73,
+    "QQQ": 647.05,
+    "asof_et": "2026-11-05 16:00 ET close"
   },
   "ratios": {
     "SPX": 10.032,
-    "QQQ": 0.903,
+    "QQQ": 0.883,
     "SPY": 1.0
   },
   "band_half_width": {
@@ -18,7 +18,7 @@
     "SPX": 5.0,
     "NQ": 25.0
   },
-  "note": "Bands = levels within \u00b1half-width. Wed rip into SPY 767\u2013770 GEX cluster / ES 7728\u20137739.",
+  "note": "Bands = levels within ±half-width. Thu flush: SPY 740/750 overhead, 726–730 support.",
   "symbols": {
     "SPY": {
       "bands": [

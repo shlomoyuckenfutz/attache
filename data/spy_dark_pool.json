@@ -1,24 +1,24 @@
 {
   "label": "Dark Pool",
   "symbol": "SPY",
-  "updated": "2026-11-04",
-  "asof_note": "Post-close refresh Wed 11/4 ~3:59 PM PT. RTH close SPY 766.81 / SPX 7688.62 / ES 7728.0. New: 776.38 (chart overlay), 756.33 (Tue hit). Active Wed prints: 768.61 rejected repeatedly; 767.12 afternoon magnet; 769.55 Fri DP overhead. Night Ledger 11/4 posted (brief jump-ball) \u2014 full DP ladder not free-text; used public X prints + chart overlays only.",
+  "updated": "2026-11-05",
+  "asof_note": "Night refresh Thu 11/5 ~8:40 PM PT after −4.4% day. RTH close SPY 733.00 / SPX 7353.73 / ES 7383.0. New: $941.9M DP 735.41 (largest), $115.5M 741.54, $66.6M 737.23; 17 downside AH prints filled 728–733; next unfilled 727.83, 725.97, 724.50, 722.57, 720.69/719.87 (monthly 50MA). Night Ledger: bounce lean 740, stretch 750 gamma.",
   "convert": {
-    "spy_per_spx": 0.099733,
-    "es_minus_spx": 39.38,
-    "asof": "2026-11-04",
+    "spy_per_spx": 0.099677,
+    "es_minus_spx": 29.27,
+    "asof": "2026-11-05",
     "closes": {
-      "SPY": 766.81,
-      "SPX": 7688.62,
-      "ES": 7728.0,
-      "source": "desk",
-      "asof": "2026-11-04"
+      "SPY": 733.0,
+      "SPX": 7353.73,
+      "ES": 7383.0,
+      "source": "public chart API",
+      "asof": "2026-11-05"
     },
     "prior": {
-      "spy_per_spx": 0.099693,
-      "es_minus_spx": 33.65
+      "spy_per_spx": 0.099733,
+      "es_minus_spx": 39.38
     },
-    "note": "SPX = SPY \u00f7 0.099733; ES = SPX + 39.38 (Wed 2026-11-04 RTH close: SPY 766.81, SPX 7688.62, ES 7728.0)"
+    "note": "SPX = SPY ÷ 0.099677; ES = SPX + 29.27 (Thu 2026-11-05 RTH close: SPY 733.00, SPX 7353.73, ES 7383.0)"
   },
   "levels": [
     {
@@ -26,49 +26,49 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 top DP line above HOD wick zone"
+      "note": "Wed 11/4 chart overlay — top DP line above HOD wick zone"
     },
     {
       "spy": 773.38,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead"
+      "note": "Wed 11/4 chart overlay — overhead"
     },
     {
       "spy": 772.42,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead"
+      "note": "Wed 11/4 chart overlay — overhead"
     },
     {
       "spy": 771.22,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster"
+      "note": "Wed 11/4 chart overlay — overhead cluster"
     },
     {
       "spy": 770.33,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster"
+      "note": "Wed 11/4 chart overlay — overhead cluster"
     },
     {
       "spy": 769.73,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster"
+      "note": "Wed 11/4 chart overlay — overhead cluster"
     },
     {
       "spy": 769.55,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Fri DP \u2014 furthest 0DTE make called Wed AM; overhead"
+      "note": "Fri DP — furthest 0DTE make called Wed AM; overhead"
     },
     {
       "spy": 769.45,
@@ -82,28 +82,28 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 \u2014 rejected repeatedly; ceiling into close (unable to hold above)"
+      "note": "Wed 11/4 — rejected repeatedly; ceiling into close (unable to hold above)"
     },
     {
       "spy": 767.41,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 \u2014 AH/session tag near close zone"
+      "note": "Wed 11/4 — AH/session tag near close zone"
     },
     {
       "spy": 767.12,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 \u2014 retested afternoon; magnet into close / AH"
+      "note": "Wed 11/4 — retested afternoon; magnet into close / AH"
     },
     {
       "spy": 765.59,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 support under close"
+      "note": "Wed 11/4 chart overlay — support under close"
     },
     {
       "spy": 765.4,
@@ -117,28 +117,28 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 support"
+      "note": "Wed 11/4 chart overlay — support"
     },
     {
       "spy": 762.27,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 support (prior liquidity drain note earlier week)"
+      "note": "Wed 11/4 chart overlay — support (prior liquidity drain note earlier week)"
     },
     {
       "spy": 759.57,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 support"
+      "note": "Wed 11/4 chart overlay — support"
     },
     {
       "spy": 758.02,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234); also prior-week seed 2026-10-26"
+      "note": "Nov 2–6 plan (5d5d234); also prior-week seed 2026-10-26"
     },
     {
       "spy": 757.43,
@@ -159,7 +159,7 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 756.41,
@@ -173,49 +173,49 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-03",
-      "note": "Tue 11/3 hit (public X) \u2014 add to book"
+      "note": "Tue 11/3 hit (public X) — add to book"
     },
     {
       "spy": 755.28,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 754.6,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 754.07,
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
-      "note": "double dark pool; fail \u2192 air pocket"
+      "note": "double dark pool; fail → air pocket"
     },
     {
       "spy": 751.04,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 750.16,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 748.17,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 746.77,
@@ -229,7 +229,7 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 744.36,
@@ -243,56 +243,182 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
+    },
+    {
+      "spy": 741.83,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP print — filled"
+    },
+    {
+      "spy": 741.54,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 $115.5M DP"
     },
     {
       "spy": 741.26,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 739.11,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
     },
     {
       "spy": 737.64,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
+    },
+    {
+      "spy": 737.23,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 $66.6M DP"
+    },
+    {
+      "spy": 737.1,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP print — filled"
+    },
+    {
+      "spy": 736.49,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP print — filled"
+    },
+    {
+      "spy": 735.41,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 $941.9M DP — largest print; overhead pivot"
+    },
+    {
+      "spy": 734.37,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP print — filled"
     },
     {
       "spy": 734.16,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
+    },
+    {
+      "spy": 733.09,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP — close zone"
+    },
+    {
+      "spy": 732.05,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled"
+    },
+    {
+      "spy": 731.78,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled"
     },
     {
       "spy": 731.58,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
+    },
+    {
+      "spy": 730.02,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled (+GEX 730)"
+    },
+    {
+      "spy": 729.08,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled"
+    },
+    {
+      "spy": 728.74,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled"
+    },
+    {
+      "spy": 728.05,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled (near AH low 727.41)"
+    },
+    {
+      "spy": 727.83,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Next unfilled downside DP"
+    },
+    {
+      "spy": 725.97,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled downside DP"
     },
     {
       "spy": 725.49,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
+    },
+    {
+      "spy": 724.5,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled downside DP"
     },
     {
       "spy": 723.61,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)"
+      "note": "Nov 2–6 plan (5d5d234)"
+    },
+    {
+      "spy": 722.57,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled downside DP"
     },
     {
       "spy": 721.76,
@@ -300,83 +426,97 @@
       "color": "teal",
       "source_date": "2026-10-31",
       "note": "everett-named; not found as DP in git (gamma-grid digit collision)"
+    },
+    {
+      "spy": 720.69,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled DP — monthly 50MA zone"
+    },
+    {
+      "spy": 719.87,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled DP (+GEX 720)"
     }
   ],
   "rows": [
     {
       "spy": 776.38,
-      "spx": 7784.58,
-      "es": 7823.96,
+      "spx": 7788.96,
+      "es": 7818.23,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 top DP line above HOD wick zone",
+      "note": "Wed 11/4 chart overlay — top DP line above HOD wick zone",
       "type": "current"
     },
     {
       "spy": 773.38,
-      "spx": 7754.5,
-      "es": 7793.88,
+      "spx": 7758.86,
+      "es": 7788.13,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead",
+      "note": "Wed 11/4 chart overlay — overhead",
       "type": "current"
     },
     {
       "spy": 772.42,
-      "spx": 7744.88,
-      "es": 7784.26,
+      "spx": 7749.23,
+      "es": 7778.5,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead",
+      "note": "Wed 11/4 chart overlay — overhead",
       "type": "current"
     },
     {
       "spy": 771.22,
-      "spx": 7732.85,
-      "es": 7772.23,
+      "spx": 7737.19,
+      "es": 7766.46,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster",
+      "note": "Wed 11/4 chart overlay — overhead cluster",
       "type": "current"
     },
     {
       "spy": 770.33,
-      "spx": 7723.92,
-      "es": 7763.3,
+      "spx": 7728.26,
+      "es": 7757.53,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster",
+      "note": "Wed 11/4 chart overlay — overhead cluster",
       "type": "current"
     },
     {
       "spy": 769.73,
-      "spx": 7717.91,
-      "es": 7757.29,
+      "spx": 7722.24,
+      "es": 7751.51,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster",
+      "note": "Wed 11/4 chart overlay — overhead cluster",
       "type": "current"
     },
     {
       "spy": 769.55,
-      "spx": 7716.1,
-      "es": 7755.48,
+      "spx": 7720.44,
+      "es": 7749.71,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Fri DP \u2014 furthest 0DTE make called Wed AM; overhead",
+      "note": "Fri DP — furthest 0DTE make called Wed AM; overhead",
       "type": "current"
     },
     {
       "spy": 769.45,
-      "spx": 7715.1,
-      "es": 7754.48,
+      "spx": 7719.43,
+      "es": 7748.7,
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-27",
@@ -385,48 +525,48 @@
     },
     {
       "spy": 768.61,
-      "spx": 7706.68,
-      "es": 7746.06,
+      "spx": 7711.01,
+      "es": 7740.28,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 \u2014 rejected repeatedly; ceiling into close (unable to hold above)",
+      "note": "Wed 11/4 — rejected repeatedly; ceiling into close (unable to hold above)",
       "type": "current"
     },
     {
       "spy": 767.41,
-      "spx": 7694.64,
-      "es": 7734.02,
+      "spx": 7698.97,
+      "es": 7728.24,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 \u2014 AH/session tag near close zone",
+      "note": "Wed 11/4 — AH/session tag near close zone",
       "type": "current"
     },
     {
       "spy": 767.12,
-      "spx": 7691.74,
-      "es": 7731.12,
+      "spx": 7696.06,
+      "es": 7725.33,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 \u2014 retested afternoon; magnet into close / AH",
+      "note": "Wed 11/4 — retested afternoon; magnet into close / AH",
       "type": "current"
     },
     {
       "spy": 765.59,
-      "spx": 7676.4,
-      "es": 7715.78,
+      "spx": 7680.71,
+      "es": 7709.98,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 support under close",
+      "note": "Wed 11/4 chart overlay — support under close",
       "type": "current"
     },
     {
       "spy": 765.4,
-      "spx": 7674.49,
-      "es": 7713.87,
+      "spx": 7678.8,
+      "es": 7708.07,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
@@ -435,48 +575,48 @@
     },
     {
       "spy": 764.37,
-      "spx": 7664.16,
-      "es": 7703.54,
+      "spx": 7668.47,
+      "es": 7697.74,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 support",
+      "note": "Wed 11/4 chart overlay — support",
       "type": "current"
     },
     {
       "spy": 762.27,
-      "spx": 7643.11,
-      "es": 7682.49,
+      "spx": 7647.4,
+      "es": 7676.67,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 support (prior liquidity drain note earlier week)",
+      "note": "Wed 11/4 chart overlay — support (prior liquidity drain note earlier week)",
       "type": "current"
     },
     {
       "spy": 759.57,
-      "spx": 7616.03,
-      "es": 7655.41,
+      "spx": 7620.31,
+      "es": 7649.58,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay \u2014 support",
+      "note": "Wed 11/4 chart overlay — support",
       "type": "current"
     },
     {
       "spy": 758.02,
-      "spx": 7600.49,
-      "es": 7639.87,
+      "spx": 7604.76,
+      "es": 7634.03,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234); also prior-week seed 2026-10-26",
+      "note": "Nov 2–6 plan (5d5d234); also prior-week seed 2026-10-26",
       "type": "current"
     },
     {
       "spy": 757.43,
-      "spx": 7594.58,
-      "es": 7633.96,
+      "spx": 7598.84,
+      "es": 7628.11,
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
@@ -485,8 +625,8 @@
     },
     {
       "spy": 757.12,
-      "spx": 7591.47,
-      "es": 7630.85,
+      "spx": 7595.73,
+      "es": 7625.0,
       "status": "prior",
       "color": "green",
       "source_date": "2026-10-26",
@@ -495,18 +635,18 @@
     },
     {
       "spy": 757.0,
-      "spx": 7590.27,
-      "es": 7629.65,
+      "spx": 7594.53,
+      "es": 7623.8,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 756.41,
-      "spx": 7584.35,
-      "es": 7623.73,
+      "spx": 7588.61,
+      "es": 7617.88,
       "status": "prior",
       "color": "green",
       "source_date": "2026-10-31",
@@ -515,78 +655,78 @@
     },
     {
       "spy": 756.33,
-      "spx": 7583.55,
-      "es": 7622.93,
+      "spx": 7587.81,
+      "es": 7617.08,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-03",
-      "note": "Tue 11/3 hit (public X) \u2014 add to book",
+      "note": "Tue 11/3 hit (public X) — add to book",
       "type": "current"
     },
     {
       "spy": 755.28,
-      "spx": 7573.02,
-      "es": 7612.4,
+      "spx": 7577.27,
+      "es": 7606.54,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 754.6,
-      "spx": 7566.2,
-      "es": 7605.58,
+      "spx": 7570.45,
+      "es": 7599.72,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 754.07,
-      "spx": 7560.89,
-      "es": 7600.27,
+      "spx": 7565.14,
+      "es": 7594.41,
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
-      "note": "double dark pool; fail \u2192 air pocket",
+      "note": "double dark pool; fail → air pocket",
       "type": "prior"
     },
     {
       "spy": 751.04,
-      "spx": 7530.51,
-      "es": 7569.89,
+      "spx": 7534.74,
+      "es": 7564.01,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 750.16,
-      "spx": 7521.68,
-      "es": 7561.06,
+      "spx": 7525.91,
+      "es": 7555.18,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 748.17,
-      "spx": 7501.73,
-      "es": 7541.11,
+      "spx": 7505.94,
+      "es": 7535.21,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 746.77,
-      "spx": 7487.69,
-      "es": 7527.07,
+      "spx": 7491.9,
+      "es": 7521.17,
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
@@ -595,18 +735,18 @@
     },
     {
       "spy": 745.47,
-      "spx": 7474.66,
-      "es": 7514.04,
+      "spx": 7478.86,
+      "es": 7508.13,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 744.36,
-      "spx": 7463.53,
-      "es": 7502.91,
+      "spx": 7467.72,
+      "es": 7496.99,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
@@ -615,101 +755,301 @@
     },
     {
       "spy": 742.28,
-      "spx": 7442.67,
-      "es": 7482.05,
+      "spx": 7446.85,
+      "es": 7476.12,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "type": "current"
+    },
+    {
+      "spy": 741.83,
+      "spx": 7442.34,
+      "es": 7471.61,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP print — filled",
+      "type": "current"
+    },
+    {
+      "spy": 741.54,
+      "spx": 7439.43,
+      "es": 7468.7,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 $115.5M DP",
       "type": "current"
     },
     {
       "spy": 741.26,
-      "spx": 7432.44,
-      "es": 7471.82,
+      "spx": 7436.62,
+      "es": 7465.89,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 739.11,
-      "spx": 7410.89,
-      "es": 7450.27,
+      "spx": 7415.05,
+      "es": 7444.32,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
       "type": "current"
     },
     {
       "spy": 737.64,
-      "spx": 7396.15,
-      "es": 7435.53,
+      "spx": 7400.3,
+      "es": 7429.57,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "type": "current"
+    },
+    {
+      "spy": 737.23,
+      "spx": 7396.19,
+      "es": 7425.46,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 $66.6M DP",
+      "type": "current"
+    },
+    {
+      "spy": 737.1,
+      "spx": 7394.89,
+      "es": 7424.16,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP print — filled",
+      "type": "current"
+    },
+    {
+      "spy": 736.49,
+      "spx": 7388.77,
+      "es": 7418.04,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP print — filled",
+      "type": "current"
+    },
+    {
+      "spy": 735.41,
+      "spx": 7377.93,
+      "es": 7407.2,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 $941.9M DP — largest print; overhead pivot",
+      "type": "current"
+    },
+    {
+      "spy": 734.37,
+      "spx": 7367.5,
+      "es": 7396.77,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP print — filled",
       "type": "current"
     },
     {
       "spy": 734.16,
-      "spx": 7361.25,
-      "es": 7400.63,
+      "spx": 7365.39,
+      "es": 7394.66,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "type": "current"
+    },
+    {
+      "spy": 733.09,
+      "spx": 7354.66,
+      "es": 7383.93,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 DP — close zone",
+      "type": "current"
+    },
+    {
+      "spy": 732.05,
+      "spx": 7344.22,
+      "es": 7373.49,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled",
+      "type": "current"
+    },
+    {
+      "spy": 731.78,
+      "spx": 7341.51,
+      "es": 7370.78,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled",
       "type": "current"
     },
     {
       "spy": 731.58,
-      "spx": 7335.39,
-      "es": 7374.77,
+      "spx": 7339.51,
+      "es": 7368.78,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "type": "current"
+    },
+    {
+      "spy": 730.02,
+      "spx": 7323.86,
+      "es": 7353.13,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled (+GEX 730)",
+      "type": "current"
+    },
+    {
+      "spy": 729.08,
+      "spx": 7314.43,
+      "es": 7343.7,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled",
+      "type": "current"
+    },
+    {
+      "spy": 728.74,
+      "spx": 7311.01,
+      "es": 7340.28,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled",
+      "type": "current"
+    },
+    {
+      "spy": 728.05,
+      "spx": 7304.09,
+      "es": 7333.36,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Thu 11/5 AH DP filled (near AH low 727.41)",
+      "type": "current"
+    },
+    {
+      "spy": 727.83,
+      "spx": 7301.89,
+      "es": 7331.16,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Next unfilled downside DP",
+      "type": "current"
+    },
+    {
+      "spy": 725.97,
+      "spx": 7283.22,
+      "es": 7312.49,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled downside DP",
       "type": "current"
     },
     {
       "spy": 725.49,
-      "spx": 7274.32,
-      "es": 7313.7,
+      "spx": 7278.41,
+      "es": 7307.68,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "type": "current"
+    },
+    {
+      "spy": 724.5,
+      "spx": 7268.48,
+      "es": 7297.75,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled downside DP",
       "type": "current"
     },
     {
       "spy": 723.61,
-      "spx": 7255.47,
-      "es": 7294.85,
+      "spx": 7259.55,
+      "es": 7288.82,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2\u20136 plan (5d5d234)",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "type": "current"
+    },
+    {
+      "spy": 722.57,
+      "spx": 7249.11,
+      "es": 7278.38,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled downside DP",
       "type": "current"
     },
     {
       "spy": 721.76,
-      "spx": 7236.92,
-      "es": 7276.3,
+      "spx": 7240.99,
+      "es": 7270.26,
       "status": "prior",
       "color": "teal",
       "source_date": "2026-10-31",
       "note": "everett-named; not found as DP in git (gamma-grid digit collision)",
       "type": "prior"
+    },
+    {
+      "spy": 720.69,
+      "spx": 7230.25,
+      "es": 7259.52,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled DP — monthly 50MA zone",
+      "type": "current"
+    },
+    {
+      "spy": 719.87,
+      "spx": 7222.03,
+      "es": 7251.3,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-05",
+      "note": "Unfilled DP (+GEX 720)",
+      "type": "current"
     }
   ],
   "bars": {
     "symbol": "SPY",
     "timeframe": "4H",
     "feed": "iex",
-    "session": "2026-08-03 \u2192 2026-10-30",
-    "note": "exchange 30m bars resampled to RTH 4H buckets (09:30\u201313:30, 13:30\u201316:00 ET)",
+    "session": "2026-08-03 → 2026-10-30",
+    "note": "exchange 30m bars resampled to RTH 4H buckets (09:30–13:30, 13:30–16:00 ET)",
     "candles": [
       {
         "t": "2026-08-03T09:30:00-04:00",
@@ -1737,9 +2077,9 @@
       }
     ]
   },
-  "spot": 766.81,
-  "spot_asof": "2026-11-04 13:00 PT",
-  "spot_note": "Public chart API RTH close (AH ~767.4 on public charts)",
+  "spot": 733.0,
+  "spot_asof": "2026-11-05 13:00 PT",
+  "spot_note": "RTH close (AH low ~727.4; overnight ~734.7 on public charts)",
   "stats_window": {
     "symbol": "SPY",
     "timeframe": "5Min",
@@ -1749,27 +2089,27 @@
     "bar_count": 10842,
     "definitions": {
       "touch": "5m bar high/low within $0.10 of level",
-      "bounce": "rejected and moved \u2265$0.50 away without closing through",
+      "bounce": "rejected and moved ≥$0.50 away without closing through",
       "break": "5m close through level and holds 2+ subsequent bars on through side",
-      "avg_bounce_reaction": "mean max excursion away from level after bounce (\u2265$0.50)",
+      "avg_bounce_reaction": "mean max excursion away from level after bounce (≥$0.50)",
       "avg_break_follow": "mean max excursion through level in ~1h after break holds"
     }
   },
   "level_stats": [
     {
       "spy": 776.38,
-      "spx": 7784.58,
-      "es": 7823.96,
+      "spx": 7788.96,
+      "es": 7818.23,
       "type": "current",
       "status": "current",
-      "dist": -9.57,
+      "dist": -43.38,
       "side": "BELOW",
-      "note": "Wed 11/4 chart overlay \u2014 top DP line above HOD wick zone"
+      "note": "Wed 11/4 chart overlay — top DP line above HOD wick zone"
     },
     {
       "spy": 773.38,
-      "spx": 7754.5,
-      "es": 7793.88,
+      "spx": 7758.86,
+      "es": 7788.13,
       "type": "current",
       "status": "current",
       "touches": 46,
@@ -1781,8 +2121,8 @@
       "avg_bounce_reaction": 1.35,
       "avg_break_follow": 1.59,
       "last_touch": "2026-10-28T18:35:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 overhead",
-      "dist": -6.57,
+      "note": "Wed 11/4 chart overlay — overhead",
+      "dist": -40.38,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -1793,8 +2133,8 @@
     },
     {
       "spy": 772.42,
-      "spx": 7744.88,
-      "es": 7784.26,
+      "spx": 7749.23,
+      "es": 7778.5,
       "type": "current",
       "status": "current",
       "touches": 65,
@@ -1806,8 +2146,8 @@
       "avg_bounce_reaction": 2.05,
       "avg_break_follow": 1.59,
       "last_touch": "2026-10-28T19:50:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 overhead",
-      "dist": -5.61,
+      "note": "Wed 11/4 chart overlay — overhead",
+      "dist": -39.42,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -1818,8 +2158,8 @@
     },
     {
       "spy": 771.22,
-      "spx": 7732.85,
-      "es": 7772.23,
+      "spx": 7737.19,
+      "es": 7766.46,
       "type": "current",
       "status": "current",
       "touches": 80,
@@ -1831,8 +2171,8 @@
       "avg_bounce_reaction": 1.63,
       "avg_break_follow": 2.1,
       "last_touch": "2026-10-28T19:30:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster",
-      "dist": -4.41,
+      "note": "Wed 11/4 chart overlay — overhead cluster",
+      "dist": -38.22,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -1843,8 +2183,8 @@
     },
     {
       "spy": 770.33,
-      "spx": 7723.92,
-      "es": 7763.3,
+      "spx": 7728.26,
+      "es": 7757.53,
       "type": "current",
       "status": "current",
       "touches": 89,
@@ -1856,8 +2196,8 @@
       "avg_bounce_reaction": 1.74,
       "avg_break_follow": 1.83,
       "last_touch": "2026-10-29T15:30:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster",
-      "dist": -3.52,
+      "note": "Wed 11/4 chart overlay — overhead cluster",
+      "dist": -37.33,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -1868,8 +2208,8 @@
     },
     {
       "spy": 769.73,
-      "spx": 7717.91,
-      "es": 7757.29,
+      "spx": 7722.24,
+      "es": 7751.51,
       "type": "current",
       "status": "current",
       "touches": 84,
@@ -1881,8 +2221,8 @@
       "avg_bounce_reaction": 1.83,
       "avg_break_follow": 1.72,
       "last_touch": "2026-10-29T16:55:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 overhead cluster",
-      "dist": -2.92,
+      "note": "Wed 11/4 chart overlay — overhead cluster",
+      "dist": -36.73,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -1893,18 +2233,18 @@
     },
     {
       "spy": 769.55,
-      "spx": 7716.1,
-      "es": 7755.48,
+      "spx": 7720.44,
+      "es": 7749.71,
       "type": "current",
       "status": "current",
-      "dist": -2.74,
+      "dist": -36.55,
       "side": "BELOW",
-      "note": "Fri DP \u2014 furthest 0DTE make called Wed AM; overhead"
+      "note": "Fri DP — furthest 0DTE make called Wed AM; overhead"
     },
     {
       "spy": 769.45,
-      "spx": 7715.1,
-      "es": 7754.48,
+      "spx": 7719.43,
+      "es": 7748.7,
       "type": "prior",
       "status": "prior",
       "touches": 91,
@@ -1917,7 +2257,7 @@
       "avg_break_follow": 1.72,
       "last_touch": "2026-10-29T19:55:00Z",
       "note": "prior-week desk seed / command dp array",
-      "dist": -2.64,
+      "dist": -36.45,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -1928,8 +2268,8 @@
     },
     {
       "spy": 768.61,
-      "spx": 7706.68,
-      "es": 7746.06,
+      "spx": 7711.01,
+      "es": 7740.28,
       "type": "current",
       "status": "current",
       "touches": 85,
@@ -1941,8 +2281,8 @@
       "avg_bounce_reaction": 1.43,
       "avg_break_follow": 1.76,
       "last_touch": "2026-10-29T19:50:00Z",
-      "note": "Wed 11/4 \u2014 rejected repeatedly; ceiling into close (unable to hold above)",
-      "dist": -1.8,
+      "note": "Wed 11/4 — rejected repeatedly; ceiling into close (unable to hold above)",
+      "dist": -35.61,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -1953,8 +2293,8 @@
     },
     {
       "spy": 767.41,
-      "spx": 7694.64,
-      "es": 7734.02,
+      "spx": 7698.97,
+      "es": 7728.24,
       "type": "current",
       "status": "current",
       "touches": 68,
@@ -1966,8 +2306,8 @@
       "avg_bounce_reaction": 1.99,
       "avg_break_follow": 2.13,
       "last_touch": "2026-10-29T18:00:00Z",
-      "note": "Wed 11/4 \u2014 AH/session tag near close zone",
-      "dist": -0.6,
+      "note": "Wed 11/4 — AH/session tag near close zone",
+      "dist": -34.41,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -1978,8 +2318,8 @@
     },
     {
       "spy": 767.12,
-      "spx": 7691.74,
-      "es": 7731.12,
+      "spx": 7696.06,
+      "es": 7725.33,
       "type": "current",
       "status": "current",
       "touches": 68,
@@ -1991,8 +2331,8 @@
       "avg_bounce_reaction": 1.97,
       "avg_break_follow": 2.4,
       "last_touch": "2026-10-29T19:10:00Z",
-      "note": "Wed 11/4 \u2014 retested afternoon; magnet into close / AH",
-      "dist": -0.31,
+      "note": "Wed 11/4 — retested afternoon; magnet into close / AH",
+      "dist": -34.12,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2003,8 +2343,8 @@
     },
     {
       "spy": 765.59,
-      "spx": 7676.4,
-      "es": 7715.78,
+      "spx": 7680.71,
+      "es": 7709.98,
       "type": "current",
       "status": "current",
       "touches": 77,
@@ -2016,9 +2356,9 @@
       "avg_bounce_reaction": 1.58,
       "avg_break_follow": 1.75,
       "last_touch": "2026-10-27T14:00:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 support under close",
-      "dist": 1.22,
-      "side": "ABOVE",
+      "note": "Wed 11/4 chart overlay — support under close",
+      "dist": -32.59,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2028,8 +2368,8 @@
     },
     {
       "spy": 765.4,
-      "spx": 7674.49,
-      "es": 7713.87,
+      "spx": 7678.8,
+      "es": 7708.07,
       "type": "current",
       "status": "current",
       "touches": 79,
@@ -2042,8 +2382,8 @@
       "avg_break_follow": 1.92,
       "last_touch": "2026-10-27T14:15:00Z",
       "note": "prior-week desk seed / command dp array",
-      "dist": 1.41,
-      "side": "ABOVE",
+      "dist": -32.4,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2053,8 +2393,8 @@
     },
     {
       "spy": 764.37,
-      "spx": 7664.16,
-      "es": 7703.54,
+      "spx": 7668.47,
+      "es": 7697.74,
       "type": "current",
       "status": "current",
       "touches": 55,
@@ -2066,9 +2406,9 @@
       "avg_bounce_reaction": 2.07,
       "avg_break_follow": 2.12,
       "last_touch": "2026-10-26T19:00:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 support",
-      "dist": 2.44,
-      "side": "ABOVE",
+      "note": "Wed 11/4 chart overlay — support",
+      "dist": -31.37,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2078,8 +2418,8 @@
     },
     {
       "spy": 762.27,
-      "spx": 7643.11,
-      "es": 7682.49,
+      "spx": 7647.4,
+      "es": 7676.67,
       "type": "current",
       "status": "current",
       "touches": 50,
@@ -2091,9 +2431,9 @@
       "avg_bounce_reaction": 1.78,
       "avg_break_follow": 2.87,
       "last_touch": "2026-10-26T13:40:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 support (prior liquidity drain note earlier week)",
-      "dist": 4.54,
-      "side": "ABOVE",
+      "note": "Wed 11/4 chart overlay — support (prior liquidity drain note earlier week)",
+      "dist": -29.27,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2103,8 +2443,8 @@
     },
     {
       "spy": 759.57,
-      "spx": 7616.03,
-      "es": 7655.41,
+      "spx": 7620.31,
+      "es": 7649.58,
       "type": "current",
       "status": "current",
       "touches": 36,
@@ -2116,20 +2456,20 @@
       "avg_bounce_reaction": 2.09,
       "avg_break_follow": 1.3,
       "last_touch": "2026-10-30T14:35:00Z",
-      "note": "Wed 11/4 chart overlay \u2014 support",
-      "dist": 7.24,
-      "side": "ABOVE",
+      "note": "Wed 11/4 chart overlay — support",
+      "dist": -26.57,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T15:00:00Z",
-      "cross_dir": "A\u2192B",
+      "cross_dir": "A→B",
       "above_min": 60,
       "below_min": 330,
       "pct_above": 15.4
     },
     {
       "spy": 758.02,
-      "spx": 7600.49,
-      "es": 7639.87,
+      "spx": 7604.76,
+      "es": 7634.03,
       "type": "current",
       "status": "current",
       "touches": 26,
@@ -2141,20 +2481,20 @@
       "avg_bounce_reaction": 1.65,
       "avg_break_follow": 2.31,
       "last_touch": "2026-10-30T16:40:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234); also prior-week seed 2026-10-26",
-      "dist": 8.79,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234); also prior-week seed 2026-10-26",
+      "dist": -25.02,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T15:35:00Z",
-      "cross_dir": "A\u2192B",
+      "cross_dir": "A→B",
       "above_min": 120,
       "below_min": 270,
       "pct_above": 30.8
     },
     {
       "spy": 757.43,
-      "spx": 7594.58,
-      "es": 7633.96,
+      "spx": 7598.84,
+      "es": 7628.11,
       "type": "prior",
       "status": "prior",
       "touches": 35,
@@ -2167,19 +2507,19 @@
       "avg_break_follow": 2.6,
       "last_touch": "2026-10-30T16:00:00Z",
       "note": "double dark pool bounce/reclaim",
-      "dist": 9.38,
-      "side": "ABOVE",
+      "dist": -24.43,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T16:40:00Z",
-      "cross_dir": "A\u2192B",
+      "cross_dir": "A→B",
       "above_min": 160,
       "below_min": 230,
       "pct_above": 41.0
     },
     {
       "spy": 757.12,
-      "spx": 7591.47,
-      "es": 7630.85,
+      "spx": 7595.73,
+      "es": 7625.0,
       "type": "prior",
       "status": "prior",
       "touches": 25,
@@ -2192,19 +2532,19 @@
       "avg_break_follow": 2.72,
       "last_touch": "2026-10-30T16:45:00Z",
       "note": "prior-week desk seed / command dp array",
-      "dist": 9.69,
-      "side": "ABOVE",
+      "dist": -24.12,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T16:45:00Z",
-      "cross_dir": "A\u2192B",
+      "cross_dir": "A→B",
       "above_min": 175,
       "below_min": 215,
       "pct_above": 44.9
     },
     {
       "spy": 757.0,
-      "spx": 7590.27,
-      "es": 7629.65,
+      "spx": 7594.53,
+      "es": 7623.8,
       "type": "current",
       "status": "current",
       "touches": 27,
@@ -2216,20 +2556,20 @@
       "avg_bounce_reaction": 1.55,
       "avg_break_follow": 2.49,
       "last_touch": "2026-10-30T16:35:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 9.81,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -24.0,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T16:45:00Z",
-      "cross_dir": "A\u2192B",
+      "cross_dir": "A→B",
       "above_min": 190,
       "below_min": 200,
       "pct_above": 48.7
     },
     {
       "spy": 756.41,
-      "spx": 7584.35,
-      "es": 7623.73,
+      "spx": 7588.61,
+      "es": 7617.88,
       "type": "prior",
       "status": "prior",
       "touches": 27,
@@ -2242,29 +2582,29 @@
       "avg_break_follow": 2.19,
       "last_touch": "2026-10-30T19:50:00Z",
       "note": "everett-named; appeared as 21-EMA in bias gauge, not in DP arrays",
-      "dist": 10.4,
-      "side": "ABOVE",
+      "dist": -23.41,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T16:45:00Z",
-      "cross_dir": "A\u2192B",
+      "cross_dir": "A→B",
       "above_min": 195,
       "below_min": 195,
       "pct_above": 50.0
     },
     {
       "spy": 756.33,
-      "spx": 7583.55,
-      "es": 7622.93,
+      "spx": 7587.81,
+      "es": 7617.08,
       "type": "current",
       "status": "current",
-      "dist": 10.48,
-      "side": "ABOVE",
-      "note": "Tue 11/3 hit (public X) \u2014 add to book"
+      "dist": -23.33,
+      "side": "BELOW",
+      "note": "Tue 11/3 hit (public X) — add to book"
     },
     {
       "spy": 755.28,
-      "spx": 7573.02,
-      "es": 7612.4,
+      "spx": 7577.27,
+      "es": 7606.54,
       "type": "current",
       "status": "current",
       "touches": 30,
@@ -2276,20 +2616,20 @@
       "avg_bounce_reaction": 2.16,
       "avg_break_follow": 1.77,
       "last_touch": "2026-10-30T19:50:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 11.53,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -22.28,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T19:50:00Z",
-      "cross_dir": "B\u2192A",
+      "cross_dir": "B→A",
       "above_min": 250,
       "below_min": 140,
       "pct_above": 64.1
     },
     {
       "spy": 754.6,
-      "spx": 7566.2,
-      "es": 7605.58,
+      "spx": 7570.45,
+      "es": 7599.72,
       "type": "current",
       "status": "current",
       "touches": 27,
@@ -2301,20 +2641,20 @@
       "avg_bounce_reaction": 1.06,
       "avg_break_follow": 1.1,
       "last_touch": "2026-10-30T19:50:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 12.21,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -21.6,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T19:50:00Z",
-      "cross_dir": "B\u2192A",
+      "cross_dir": "B→A",
       "above_min": 270,
       "below_min": 120,
       "pct_above": 69.2
     },
     {
       "spy": 754.07,
-      "spx": 7560.89,
-      "es": 7600.27,
+      "spx": 7565.14,
+      "es": 7594.41,
       "type": "prior",
       "status": "prior",
       "touches": 32,
@@ -2326,20 +2666,20 @@
       "avg_bounce_reaction": 1.48,
       "avg_break_follow": 2.44,
       "last_touch": "2026-10-30T19:45:00Z",
-      "note": "double dark pool; fail \u2192 air pocket",
-      "dist": 12.74,
-      "side": "ABOVE",
+      "note": "double dark pool; fail → air pocket",
+      "dist": -21.07,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T19:45:00Z",
-      "cross_dir": "B\u2192A",
+      "cross_dir": "B→A",
       "above_min": 275,
       "below_min": 115,
       "pct_above": 70.5
     },
     {
       "spy": 751.04,
-      "spx": 7530.51,
-      "es": 7569.89,
+      "spx": 7534.74,
+      "es": 7564.01,
       "type": "current",
       "status": "current",
       "touches": 46,
@@ -2351,20 +2691,20 @@
       "avg_bounce_reaction": 2.55,
       "avg_break_follow": 1.98,
       "last_touch": "2026-10-30T18:45:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 15.77,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -18.04,
+      "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T18:55:00Z",
-      "cross_dir": "B\u2192A",
+      "cross_dir": "B→A",
       "above_min": 380,
       "below_min": 10,
       "pct_above": 97.4
     },
     {
       "spy": 750.16,
-      "spx": 7521.68,
-      "es": 7561.06,
+      "spx": 7525.91,
+      "es": 7555.18,
       "type": "current",
       "status": "current",
       "touches": 58,
@@ -2376,9 +2716,9 @@
       "avg_bounce_reaction": 2.41,
       "avg_break_follow": 2.31,
       "last_touch": "2026-09-16T19:20:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 16.65,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -17.16,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2388,8 +2728,8 @@
     },
     {
       "spy": 748.17,
-      "spx": 7501.73,
-      "es": 7541.11,
+      "spx": 7505.94,
+      "es": 7535.21,
       "type": "current",
       "status": "current",
       "touches": 47,
@@ -2401,9 +2741,9 @@
       "avg_bounce_reaction": 2.29,
       "avg_break_follow": 2.53,
       "last_touch": "2026-07-31T19:40:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 18.64,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -15.17,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2413,8 +2753,8 @@
     },
     {
       "spy": 746.77,
-      "spx": 7487.69,
-      "es": 7527.07,
+      "spx": 7491.9,
+      "es": 7521.17,
       "type": "prior",
       "status": "prior",
       "touches": 59,
@@ -2427,8 +2767,8 @@
       "avg_break_follow": 2.7,
       "last_touch": "2026-07-31T19:55:00Z",
       "note": "air pocket target (DP-typed in confluence)",
-      "dist": 20.04,
-      "side": "ABOVE",
+      "dist": -13.77,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2438,8 +2778,8 @@
     },
     {
       "spy": 745.47,
-      "spx": 7474.66,
-      "es": 7514.04,
+      "spx": 7478.86,
+      "es": 7508.13,
       "type": "current",
       "status": "current",
       "touches": 60,
@@ -2451,9 +2791,9 @@
       "avg_bounce_reaction": 2.22,
       "avg_break_follow": 1.88,
       "last_touch": "2026-07-31T17:45:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 21.34,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -12.47,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2463,8 +2803,8 @@
     },
     {
       "spy": 744.36,
-      "spx": 7463.53,
-      "es": 7502.91,
+      "spx": 7467.72,
+      "es": 7496.99,
       "type": "current",
       "status": "current",
       "touches": 70,
@@ -2477,8 +2817,8 @@
       "avg_break_follow": 3.69,
       "last_touch": "2026-07-31T16:20:00Z",
       "note": "Wed overnight pump print (public X); still on Nov plan ladder",
-      "dist": 22.45,
-      "side": "ABOVE",
+      "dist": -11.36,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2488,8 +2828,8 @@
     },
     {
       "spy": 742.28,
-      "spx": 7442.67,
-      "es": 7482.05,
+      "spx": 7446.85,
+      "es": 7476.12,
       "type": "current",
       "status": "current",
       "touches": 63,
@@ -2501,9 +2841,9 @@
       "avg_bounce_reaction": 2.4,
       "avg_break_follow": 3.35,
       "last_touch": "2026-07-31T15:50:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 24.53,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -9.28,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2512,9 +2852,29 @@
       "pct_above": 100.0
     },
     {
+      "spy": 741.83,
+      "spx": 7442.34,
+      "es": 7471.61,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 DP print — filled",
+      "dist": -8.83,
+      "side": "BELOW"
+    },
+    {
+      "spy": 741.54,
+      "spx": 7439.43,
+      "es": 7468.7,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 $115.5M DP",
+      "dist": -8.54,
+      "side": "BELOW"
+    },
+    {
       "spy": 741.26,
-      "spx": 7432.44,
-      "es": 7471.82,
+      "spx": 7436.62,
+      "es": 7465.89,
       "type": "current",
       "status": "current",
       "touches": 77,
@@ -2526,9 +2886,9 @@
       "avg_bounce_reaction": 2.23,
       "avg_break_follow": 3.67,
       "last_touch": "2026-07-31T15:45:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 25.55,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -8.26,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2538,8 +2898,8 @@
     },
     {
       "spy": 739.11,
-      "spx": 7410.89,
-      "es": 7450.27,
+      "spx": 7415.05,
+      "es": 7444.32,
       "type": "current",
       "status": "current",
       "touches": 87,
@@ -2551,9 +2911,9 @@
       "avg_bounce_reaction": 2.64,
       "avg_break_follow": 3.21,
       "last_touch": "2026-07-31T14:15:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 27.7,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -6.11,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2563,8 +2923,8 @@
     },
     {
       "spy": 737.64,
-      "spx": 7396.15,
-      "es": 7435.53,
+      "spx": 7400.3,
+      "es": 7429.57,
       "type": "current",
       "status": "current",
       "touches": 89,
@@ -2576,9 +2936,9 @@
       "avg_bounce_reaction": 2.84,
       "avg_break_follow": 3.06,
       "last_touch": "2026-07-31T14:15:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 29.17,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -4.64,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2587,9 +2947,59 @@
       "pct_above": 100.0
     },
     {
+      "spy": 737.23,
+      "spx": 7396.19,
+      "es": 7425.46,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 $66.6M DP",
+      "dist": -4.23,
+      "side": "BELOW"
+    },
+    {
+      "spy": 737.1,
+      "spx": 7394.89,
+      "es": 7424.16,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 DP print — filled",
+      "dist": -4.1,
+      "side": "BELOW"
+    },
+    {
+      "spy": 736.49,
+      "spx": 7388.77,
+      "es": 7418.04,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 DP print — filled",
+      "dist": -3.49,
+      "side": "BELOW"
+    },
+    {
+      "spy": 735.41,
+      "spx": 7377.93,
+      "es": 7407.2,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 $941.9M DP — largest print; overhead pivot",
+      "dist": -2.41,
+      "side": "BELOW"
+    },
+    {
+      "spy": 734.37,
+      "spx": 7367.5,
+      "es": 7396.77,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 DP print — filled",
+      "dist": -1.37,
+      "side": "BELOW"
+    },
+    {
       "spy": 734.16,
-      "spx": 7361.25,
-      "es": 7400.63,
+      "spx": 7365.39,
+      "es": 7394.66,
       "type": "current",
       "status": "current",
       "touches": 63,
@@ -2601,9 +3011,9 @@
       "avg_bounce_reaction": 2.67,
       "avg_break_follow": 2.95,
       "last_touch": "2026-07-29T19:30:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 32.65,
-      "side": "ABOVE",
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": -1.16,
+      "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
@@ -2612,9 +3022,39 @@
       "pct_above": 100.0
     },
     {
+      "spy": 733.09,
+      "spx": 7354.66,
+      "es": 7383.93,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 DP — close zone",
+      "dist": -0.09,
+      "side": "BELOW"
+    },
+    {
+      "spy": 732.05,
+      "spx": 7344.22,
+      "es": 7373.49,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 AH DP filled",
+      "dist": 0.95,
+      "side": "ABOVE"
+    },
+    {
+      "spy": 731.78,
+      "spx": 7341.51,
+      "es": 7370.78,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 AH DP filled",
+      "dist": 1.22,
+      "side": "ABOVE"
+    },
+    {
       "spy": 731.58,
-      "spx": 7335.39,
-      "es": 7374.77,
+      "spx": 7339.51,
+      "es": 7368.78,
       "type": "current",
       "status": "current",
       "touches": 43,
@@ -2626,8 +3066,8 @@
       "avg_bounce_reaction": 3.53,
       "avg_break_follow": 3.39,
       "last_touch": "2026-07-29T19:35:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 35.23,
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": 1.42,
       "side": "ABOVE",
       "cross": false,
       "cross_t": null,
@@ -2637,9 +3077,69 @@
       "pct_above": 100.0
     },
     {
+      "spy": 730.02,
+      "spx": 7323.86,
+      "es": 7353.13,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 AH DP filled (+GEX 730)",
+      "dist": 2.98,
+      "side": "ABOVE"
+    },
+    {
+      "spy": 729.08,
+      "spx": 7314.43,
+      "es": 7343.7,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 AH DP filled",
+      "dist": 3.92,
+      "side": "ABOVE"
+    },
+    {
+      "spy": 728.74,
+      "spx": 7311.01,
+      "es": 7340.28,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 AH DP filled",
+      "dist": 4.26,
+      "side": "ABOVE"
+    },
+    {
+      "spy": 728.05,
+      "spx": 7304.09,
+      "es": 7333.36,
+      "type": "current",
+      "status": "current",
+      "note": "Thu 11/5 AH DP filled (near AH low 727.41)",
+      "dist": 4.95,
+      "side": "ABOVE"
+    },
+    {
+      "spy": 727.83,
+      "spx": 7301.89,
+      "es": 7331.16,
+      "type": "current",
+      "status": "current",
+      "note": "Next unfilled downside DP",
+      "dist": 5.17,
+      "side": "ABOVE"
+    },
+    {
+      "spy": 725.97,
+      "spx": 7283.22,
+      "es": 7312.49,
+      "type": "current",
+      "status": "current",
+      "note": "Unfilled downside DP",
+      "dist": 7.03,
+      "side": "ABOVE"
+    },
+    {
       "spy": 725.49,
-      "spx": 7274.32,
-      "es": 7313.7,
+      "spx": 7278.41,
+      "es": 7307.68,
       "type": "current",
       "status": "current",
       "touches": 9,
@@ -2651,8 +3151,8 @@
       "avg_bounce_reaction": 7.03,
       "avg_break_follow": 5.65,
       "last_touch": "2026-06-26T19:55:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 41.32,
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": 7.51,
       "side": "ABOVE",
       "cross": false,
       "cross_t": null,
@@ -2662,9 +3162,19 @@
       "pct_above": 100.0
     },
     {
+      "spy": 724.5,
+      "spx": 7268.48,
+      "es": 7297.75,
+      "type": "current",
+      "status": "current",
+      "note": "Unfilled downside DP",
+      "dist": 8.5,
+      "side": "ABOVE"
+    },
+    {
       "spy": 723.61,
-      "spx": 7255.47,
-      "es": 7294.85,
+      "spx": 7259.55,
+      "es": 7288.82,
       "type": "current",
       "status": "current",
       "touches": 11,
@@ -2676,8 +3186,8 @@
       "avg_bounce_reaction": 7.01,
       "avg_break_follow": 1.41,
       "last_touch": "2026-06-26T19:55:00Z",
-      "note": "Nov 2\u20136 plan (5d5d234)",
-      "dist": 43.2,
+      "note": "Nov 2–6 plan (5d5d234)",
+      "dist": 9.39,
       "side": "ABOVE",
       "cross": false,
       "cross_t": null,
@@ -2687,9 +3197,19 @@
       "pct_above": 100.0
     },
     {
+      "spy": 722.57,
+      "spx": 7249.11,
+      "es": 7278.38,
+      "type": "current",
+      "status": "current",
+      "note": "Unfilled downside DP",
+      "dist": 10.43,
+      "side": "ABOVE"
+    },
+    {
       "spy": 721.76,
-      "spx": 7236.92,
-      "es": 7276.3,
+      "spx": 7240.99,
+      "es": 7270.26,
       "type": "prior",
       "status": "prior",
       "touches": 10,
@@ -2702,7 +3222,7 @@
       "avg_break_follow": 2.06,
       "last_touch": "2026-06-26T19:55:00Z",
       "note": "everett-named; not found as DP in git (gamma-grid digit collision)",
-      "dist": 45.05,
+      "dist": 11.24,
       "side": "ABOVE",
       "cross": false,
       "cross_t": null,
@@ -2710,365 +3230,568 @@
       "above_min": 390,
       "below_min": 0,
       "pct_above": 100.0
+    },
+    {
+      "spy": 720.69,
+      "spx": 7230.25,
+      "es": 7259.52,
+      "type": "current",
+      "status": "current",
+      "note": "Unfilled DP — monthly 50MA zone",
+      "dist": 12.31,
+      "side": "ABOVE"
+    },
+    {
+      "spy": 719.87,
+      "spx": 7222.03,
+      "es": 7251.3,
+      "type": "current",
+      "status": "current",
+      "note": "Unfilled DP (+GEX 720)",
+      "dist": 13.13,
+      "side": "ABOVE"
     }
   ],
   "session_time": {
-    "session": "2026-11-04 RTH close",
+    "session": "2026-11-05 RTH close",
     "timeframe": "close",
     "bar_count": 1,
     "minutes_per_bar": 0,
     "levels": [
       {
         "spy": 776.38,
-        "spx": 7784.58,
-        "es": 7823.96,
+        "spx": 7788.96,
+        "es": 7818.23,
         "type": "current",
-        "dist": -9.57,
+        "dist": -43.38,
         "side": "BELOW"
       },
       {
         "spy": 773.38,
-        "spx": 7754.5,
-        "es": 7793.88,
+        "spx": 7758.86,
+        "es": 7788.13,
         "type": "current",
-        "dist": -6.57,
+        "dist": -40.38,
         "side": "BELOW"
       },
       {
         "spy": 772.42,
-        "spx": 7744.88,
-        "es": 7784.26,
+        "spx": 7749.23,
+        "es": 7778.5,
         "type": "current",
-        "dist": -5.61,
+        "dist": -39.42,
         "side": "BELOW"
       },
       {
         "spy": 771.22,
-        "spx": 7732.85,
-        "es": 7772.23,
+        "spx": 7737.19,
+        "es": 7766.46,
         "type": "current",
-        "dist": -4.41,
+        "dist": -38.22,
         "side": "BELOW"
       },
       {
         "spy": 770.33,
-        "spx": 7723.92,
-        "es": 7763.3,
+        "spx": 7728.26,
+        "es": 7757.53,
         "type": "current",
-        "dist": -3.52,
+        "dist": -37.33,
         "side": "BELOW"
       },
       {
         "spy": 769.73,
-        "spx": 7717.91,
-        "es": 7757.29,
+        "spx": 7722.24,
+        "es": 7751.51,
         "type": "current",
-        "dist": -2.92,
+        "dist": -36.73,
         "side": "BELOW"
       },
       {
         "spy": 769.55,
-        "spx": 7716.1,
-        "es": 7755.48,
+        "spx": 7720.44,
+        "es": 7749.71,
         "type": "current",
-        "dist": -2.74,
+        "dist": -36.55,
         "side": "BELOW"
       },
       {
         "spy": 769.45,
-        "spx": 7715.1,
-        "es": 7754.48,
+        "spx": 7719.43,
+        "es": 7748.7,
         "type": "prior",
-        "dist": -2.64,
+        "dist": -36.45,
         "side": "BELOW"
       },
       {
         "spy": 768.61,
-        "spx": 7706.68,
-        "es": 7746.06,
+        "spx": 7711.01,
+        "es": 7740.28,
         "type": "current",
-        "dist": -1.8,
+        "dist": -35.61,
         "side": "BELOW"
       },
       {
         "spy": 767.41,
-        "spx": 7694.64,
-        "es": 7734.02,
+        "spx": 7698.97,
+        "es": 7728.24,
         "type": "current",
-        "dist": -0.6,
+        "dist": -34.41,
         "side": "BELOW"
       },
       {
         "spy": 767.12,
-        "spx": 7691.74,
-        "es": 7731.12,
+        "spx": 7696.06,
+        "es": 7725.33,
         "type": "current",
-        "dist": -0.31,
+        "dist": -34.12,
         "side": "BELOW"
       },
       {
         "spy": 765.59,
-        "spx": 7676.4,
-        "es": 7715.78,
+        "spx": 7680.71,
+        "es": 7709.98,
+        "type": "current",
+        "dist": -32.59,
+        "side": "BELOW"
+      },
+      {
+        "spy": 765.4,
+        "spx": 7678.8,
+        "es": 7708.07,
+        "type": "current",
+        "dist": -32.4,
+        "side": "BELOW"
+      },
+      {
+        "spy": 764.37,
+        "spx": 7668.47,
+        "es": 7697.74,
+        "type": "current",
+        "dist": -31.37,
+        "side": "BELOW"
+      },
+      {
+        "spy": 762.27,
+        "spx": 7647.4,
+        "es": 7676.67,
+        "type": "current",
+        "dist": -29.27,
+        "side": "BELOW"
+      },
+      {
+        "spy": 759.57,
+        "spx": 7620.31,
+        "es": 7649.58,
+        "type": "current",
+        "dist": -26.57,
+        "side": "BELOW"
+      },
+      {
+        "spy": 758.02,
+        "spx": 7604.76,
+        "es": 7634.03,
+        "type": "current",
+        "dist": -25.02,
+        "side": "BELOW"
+      },
+      {
+        "spy": 757.43,
+        "spx": 7598.84,
+        "es": 7628.11,
+        "type": "prior",
+        "dist": -24.43,
+        "side": "BELOW"
+      },
+      {
+        "spy": 757.12,
+        "spx": 7595.73,
+        "es": 7625.0,
+        "type": "prior",
+        "dist": -24.12,
+        "side": "BELOW"
+      },
+      {
+        "spy": 757.0,
+        "spx": 7594.53,
+        "es": 7623.8,
+        "type": "current",
+        "dist": -24.0,
+        "side": "BELOW"
+      },
+      {
+        "spy": 756.41,
+        "spx": 7588.61,
+        "es": 7617.88,
+        "type": "prior",
+        "dist": -23.41,
+        "side": "BELOW"
+      },
+      {
+        "spy": 756.33,
+        "spx": 7587.81,
+        "es": 7617.08,
+        "type": "current",
+        "dist": -23.33,
+        "side": "BELOW"
+      },
+      {
+        "spy": 755.28,
+        "spx": 7577.27,
+        "es": 7606.54,
+        "type": "current",
+        "dist": -22.28,
+        "side": "BELOW"
+      },
+      {
+        "spy": 754.6,
+        "spx": 7570.45,
+        "es": 7599.72,
+        "type": "current",
+        "dist": -21.6,
+        "side": "BELOW"
+      },
+      {
+        "spy": 754.07,
+        "spx": 7565.14,
+        "es": 7594.41,
+        "type": "prior",
+        "dist": -21.07,
+        "side": "BELOW"
+      },
+      {
+        "spy": 751.04,
+        "spx": 7534.74,
+        "es": 7564.01,
+        "type": "current",
+        "dist": -18.04,
+        "side": "BELOW"
+      },
+      {
+        "spy": 750.16,
+        "spx": 7525.91,
+        "es": 7555.18,
+        "type": "current",
+        "dist": -17.16,
+        "side": "BELOW"
+      },
+      {
+        "spy": 748.17,
+        "spx": 7505.94,
+        "es": 7535.21,
+        "type": "current",
+        "dist": -15.17,
+        "side": "BELOW"
+      },
+      {
+        "spy": 746.77,
+        "spx": 7491.9,
+        "es": 7521.17,
+        "type": "prior",
+        "dist": -13.77,
+        "side": "BELOW"
+      },
+      {
+        "spy": 745.47,
+        "spx": 7478.86,
+        "es": 7508.13,
+        "type": "current",
+        "dist": -12.47,
+        "side": "BELOW"
+      },
+      {
+        "spy": 744.36,
+        "spx": 7467.72,
+        "es": 7496.99,
+        "type": "current",
+        "dist": -11.36,
+        "side": "BELOW"
+      },
+      {
+        "spy": 742.28,
+        "spx": 7446.85,
+        "es": 7476.12,
+        "type": "current",
+        "dist": -9.28,
+        "side": "BELOW"
+      },
+      {
+        "spy": 741.83,
+        "spx": 7442.34,
+        "es": 7471.61,
+        "type": "current",
+        "dist": -8.83,
+        "side": "BELOW"
+      },
+      {
+        "spy": 741.54,
+        "spx": 7439.43,
+        "es": 7468.7,
+        "type": "current",
+        "dist": -8.54,
+        "side": "BELOW"
+      },
+      {
+        "spy": 741.26,
+        "spx": 7436.62,
+        "es": 7465.89,
+        "type": "current",
+        "dist": -8.26,
+        "side": "BELOW"
+      },
+      {
+        "spy": 739.11,
+        "spx": 7415.05,
+        "es": 7444.32,
+        "type": "current",
+        "dist": -6.11,
+        "side": "BELOW"
+      },
+      {
+        "spy": 737.64,
+        "spx": 7400.3,
+        "es": 7429.57,
+        "type": "current",
+        "dist": -4.64,
+        "side": "BELOW"
+      },
+      {
+        "spy": 737.23,
+        "spx": 7396.19,
+        "es": 7425.46,
+        "type": "current",
+        "dist": -4.23,
+        "side": "BELOW"
+      },
+      {
+        "spy": 737.1,
+        "spx": 7394.89,
+        "es": 7424.16,
+        "type": "current",
+        "dist": -4.1,
+        "side": "BELOW"
+      },
+      {
+        "spy": 736.49,
+        "spx": 7388.77,
+        "es": 7418.04,
+        "type": "current",
+        "dist": -3.49,
+        "side": "BELOW"
+      },
+      {
+        "spy": 735.41,
+        "spx": 7377.93,
+        "es": 7407.2,
+        "type": "current",
+        "dist": -2.41,
+        "side": "BELOW"
+      },
+      {
+        "spy": 734.37,
+        "spx": 7367.5,
+        "es": 7396.77,
+        "type": "current",
+        "dist": -1.37,
+        "side": "BELOW"
+      },
+      {
+        "spy": 734.16,
+        "spx": 7365.39,
+        "es": 7394.66,
+        "type": "current",
+        "dist": -1.16,
+        "side": "BELOW"
+      },
+      {
+        "spy": 733.09,
+        "spx": 7354.66,
+        "es": 7383.93,
+        "type": "current",
+        "dist": -0.09,
+        "side": "BELOW"
+      },
+      {
+        "spy": 732.05,
+        "spx": 7344.22,
+        "es": 7373.49,
+        "type": "current",
+        "dist": 0.95,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 731.78,
+        "spx": 7341.51,
+        "es": 7370.78,
         "type": "current",
         "dist": 1.22,
         "side": "ABOVE"
       },
       {
-        "spy": 765.4,
-        "spx": 7674.49,
-        "es": 7713.87,
-        "type": "current",
-        "dist": 1.41,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 764.37,
-        "spx": 7664.16,
-        "es": 7703.54,
-        "type": "current",
-        "dist": 2.44,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 762.27,
-        "spx": 7643.11,
-        "es": 7682.49,
-        "type": "current",
-        "dist": 4.54,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 759.57,
-        "spx": 7616.03,
-        "es": 7655.41,
-        "type": "current",
-        "dist": 7.24,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 758.02,
-        "spx": 7600.49,
-        "es": 7639.87,
-        "type": "current",
-        "dist": 8.79,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 757.43,
-        "spx": 7594.58,
-        "es": 7633.96,
-        "type": "prior",
-        "dist": 9.38,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 757.12,
-        "spx": 7591.47,
-        "es": 7630.85,
-        "type": "prior",
-        "dist": 9.69,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 757.0,
-        "spx": 7590.27,
-        "es": 7629.65,
-        "type": "current",
-        "dist": 9.81,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 756.41,
-        "spx": 7584.35,
-        "es": 7623.73,
-        "type": "prior",
-        "dist": 10.4,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 756.33,
-        "spx": 7583.55,
-        "es": 7622.93,
-        "type": "current",
-        "dist": 10.48,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 755.28,
-        "spx": 7573.02,
-        "es": 7612.4,
-        "type": "current",
-        "dist": 11.53,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 754.6,
-        "spx": 7566.2,
-        "es": 7605.58,
-        "type": "current",
-        "dist": 12.21,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 754.07,
-        "spx": 7560.89,
-        "es": 7600.27,
-        "type": "prior",
-        "dist": 12.74,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 751.04,
-        "spx": 7530.51,
-        "es": 7569.89,
-        "type": "current",
-        "dist": 15.77,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 750.16,
-        "spx": 7521.68,
-        "es": 7561.06,
-        "type": "current",
-        "dist": 16.65,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 748.17,
-        "spx": 7501.73,
-        "es": 7541.11,
-        "type": "current",
-        "dist": 18.64,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 746.77,
-        "spx": 7487.69,
-        "es": 7527.07,
-        "type": "prior",
-        "dist": 20.04,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 745.47,
-        "spx": 7474.66,
-        "es": 7514.04,
-        "type": "current",
-        "dist": 21.34,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 744.36,
-        "spx": 7463.53,
-        "es": 7502.91,
-        "type": "current",
-        "dist": 22.45,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 742.28,
-        "spx": 7442.67,
-        "es": 7482.05,
-        "type": "current",
-        "dist": 24.53,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 741.26,
-        "spx": 7432.44,
-        "es": 7471.82,
-        "type": "current",
-        "dist": 25.55,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 739.11,
-        "spx": 7410.89,
-        "es": 7450.27,
-        "type": "current",
-        "dist": 27.7,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 737.64,
-        "spx": 7396.15,
-        "es": 7435.53,
-        "type": "current",
-        "dist": 29.17,
-        "side": "ABOVE"
-      },
-      {
-        "spy": 734.16,
-        "spx": 7361.25,
-        "es": 7400.63,
-        "type": "current",
-        "dist": 32.65,
-        "side": "ABOVE"
-      },
-      {
         "spy": 731.58,
-        "spx": 7335.39,
-        "es": 7374.77,
+        "spx": 7339.51,
+        "es": 7368.78,
         "type": "current",
-        "dist": 35.23,
+        "dist": 1.42,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 730.02,
+        "spx": 7323.86,
+        "es": 7353.13,
+        "type": "current",
+        "dist": 2.98,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 729.08,
+        "spx": 7314.43,
+        "es": 7343.7,
+        "type": "current",
+        "dist": 3.92,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 728.74,
+        "spx": 7311.01,
+        "es": 7340.28,
+        "type": "current",
+        "dist": 4.26,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 728.05,
+        "spx": 7304.09,
+        "es": 7333.36,
+        "type": "current",
+        "dist": 4.95,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 727.83,
+        "spx": 7301.89,
+        "es": 7331.16,
+        "type": "current",
+        "dist": 5.17,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 725.97,
+        "spx": 7283.22,
+        "es": 7312.49,
+        "type": "current",
+        "dist": 7.03,
         "side": "ABOVE"
       },
       {
         "spy": 725.49,
-        "spx": 7274.32,
-        "es": 7313.7,
+        "spx": 7278.41,
+        "es": 7307.68,
         "type": "current",
-        "dist": 41.32,
+        "dist": 7.51,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 724.5,
+        "spx": 7268.48,
+        "es": 7297.75,
+        "type": "current",
+        "dist": 8.5,
         "side": "ABOVE"
       },
       {
         "spy": 723.61,
-        "spx": 7255.47,
-        "es": 7294.85,
+        "spx": 7259.55,
+        "es": 7288.82,
         "type": "current",
-        "dist": 43.2,
+        "dist": 9.39,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 722.57,
+        "spx": 7249.11,
+        "es": 7278.38,
+        "type": "current",
+        "dist": 10.43,
         "side": "ABOVE"
       },
       {
         "spy": 721.76,
-        "spx": 7236.92,
-        "es": 7276.3,
+        "spx": 7240.99,
+        "es": 7270.26,
         "type": "prior",
-        "dist": 45.05,
+        "dist": 11.24,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 720.69,
+        "spx": 7230.25,
+        "es": 7259.52,
+        "type": "current",
+        "dist": 12.31,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 719.87,
+        "spx": 7222.03,
+        "es": 7251.3,
+        "type": "current",
+        "dist": 13.13,
         "side": "ABOVE"
       }
-    ],
-    "note": "Post-close refresh \u2014 dist/side vs RTH close; heat/bars unchanged (prior window)"
+    ]
   },
   "clusters": {
     "gap": 1.0,
     "zones": [
       [
-        721.76
+        719.87,
+        720.69
       ],
       [
-        723.61
+        721.76,
+        722.57
       ],
       [
-        725.49
+        723.61,
+        724.5,
+        725.49,
+        725.97
       ],
       [
-        731.58
+        727.83,
+        728.05,
+        728.74,
+        729.08,
+        730.02
       ],
       [
-        734.16
+        731.58,
+        731.78,
+        732.05
       ],
       [
+        733.09
+      ],
+      [
+        734.16,
+        734.37
+      ],
+      [
+        735.41
+      ],
+      [
+        736.49,
+        737.1,
+        737.23,
         737.64
       ],
       [
         739.11
       ],
       [
-        741.26
-      ],
-      [
+        741.26,
+        741.54,
+        741.83,
         742.28
       ],
       [
@@ -3167,13 +3890,33 @@
     745.47,
     744.36,
     742.28,
+    741.83,
+    741.54,
     741.26,
     739.11,
     737.64,
+    737.23,
+    737.1,
+    736.49,
+    735.41,
+    734.37,
     734.16,
+    733.09,
+    732.05,
+    731.78,
     731.58,
+    730.02,
+    729.08,
+    728.74,
+    728.05,
+    727.83,
+    725.97,
     725.49,
+    724.5,
     723.61,
-    721.76
+    722.57,
+    721.76,
+    720.69,
+    719.87
   ]
 }

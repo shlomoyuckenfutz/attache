@@ -1,10 +1,10 @@
 {
   "source": "desk",
   "symbol": "ES",
-  "generated_pt": "2026-11-04 11:33 PT",
+  "generated_pt": "2026-11-05 20:40 PT",
   "range": [
     "2026-10-05",
-    "2026-11-04"
+    "2026-11-05"
   ],
   "method": "Levels transcribed from public X posts only (no paid newsletter). supports/resistances as stated that day; key_levels = triggers/pivots/magnets named. Recurring = within 3 pts on 3+ days.",
   "days": [
@@ -553,7 +553,7 @@
         7803,
         7835
       ],
-      "notes": "Tue 10/27 (FOMC eve): Overnight 7703 Failed Breakdown paid; 7677 reclaim remains the major long trigger (macro+intraday). Range 7677\u20137803. Targets 7750-55 hit (spent much of day there); next 7783 then 7803. React at 7803 then 7835 magnet. Supports defended: 7718 (held after quick trap), 7731, 7703-7698. Newsletter Oct 28 paywalled in Gmail; levels from public X only.",
+      "notes": "Tue 10/27 (FOMC eve): Overnight 7703 Failed Breakdown paid; 7677 reclaim remains the major long trigger (macro+intraday). Range 7677–7803. Targets 7750-55 hit (spent much of day there); next 7783 then 7803. React at 7803 then 7835 magnet. Supports defended: 7718 (held after quick trap), 7731, 7703-7698. Newsletter Oct 28 paywalled in Gmail; levels from public X only.",
       "post_urls": [
         "#",
         "#",
@@ -588,7 +588,7 @@
         7803,
         7835
       ],
-      "notes": "Wed 10/28 FOMC day: Range 7677\u20137802/7803. Long from Fri/Sun 7677 trap+reclaim. Targets 7750-55 hit, 7782/7783 hit; 7803 left then 7835 magnet. Closing: 7752 critical \u2014 quality entries below; low quality at 72. Support shelf 7748-52 (watch traps); 7712 below. FOMC noise; ride runners until elevator-down trap.",
+      "notes": "Wed 10/28 FOMC day: Range 7677–7802/7803. Long from Fri/Sun 7677 trap+reclaim. Targets 7750-55 hit, 7782/7783 hit; 7803 left then 7835 magnet. Closing: 7752 critical — quality entries below; low quality at 72. Support shelf 7748-52 (watch traps); 7712 below. FOMC noise; ride runners until elevator-down trap.",
       "post_urls": [
         "#",
         "#",
@@ -621,7 +621,7 @@
         7803,
         7677
       ],
-      "notes": "Pinned at 7752 magnet after completing leg to 7803 (+125 from Sun 7677 long). Range still 7677-7803. Reclaim 7752 \u2192 7772/7792/7803. Fail \u2192 7732 (held) then 7712. Newsletter sent early ahead of earnings.",
+      "notes": "Pinned at 7752 magnet after completing leg to 7803 (+125 from Sun 7677 long). Range still 7677-7803. Reclaim 7752 → 7772/7792/7803. Fail → 7732 (held) then 7712. Newsletter sent early ahead of earnings.",
       "post_urls": [
         "#",
         "#",
@@ -662,7 +662,7 @@
         7677,
         7703
       ],
-      "notes": "Mode-1 red Friday. Bear case: 7703 failure overnight lost 7677-7803 range. Sold through 7616\u21927585. 7575 reclaim triggered late-day rip (+45); next 7626, 7665. 7665/7677 must recover for sustained green. Typical Mode-1: more upside Sun/Mon.",
+      "notes": "Mode-1 red Friday. Bear case: 7703 failure overnight lost 7677-7803 range. Sold through 7616→7585. 7575 reclaim triggered late-day rip (+45); next 7626, 7665. 7665/7677 must recover for sustained green. Typical Mode-1: more upside Sun/Mon.",
       "post_urls": [
         "#",
         "#",
@@ -755,10 +755,41 @@
         7771,
         7803
       ],
-      "notes": "Midterm elevator-down swept July 31 low 7495 to 7490 \u2192 Failed Breakdown long \u2192 +245 to tag 7739 (final Wed target). Supports 7635/7626. Next 7755/7771/7803. Desk: protect profits / ride runner; sidelined for new risk unless fresh elevator-down FBD. Substack paid \u2014 public X only.",
+      "notes": "Midterm elevator-down swept July 31 low 7495 to 7490 → Failed Breakdown long → +245 to tag 7739 (final Wed target). Supports 7635/7626. Next 7755/7771/7803. Desk: protect profits / ride runner; sidelined for new risk unless fresh elevator-down FBD. Substack paid — public X only.",
       "post_urls": [
         "#",
         "#",
+        "#",
+        "#",
+        "#",
+        "#"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "supports": [
+        7420,
+        7346,
+        7322
+      ],
+      "resistances": [
+        7432,
+        7441,
+        7460,
+        7490,
+        7495,
+        7513,
+        7533,
+        7558,
+        7606
+      ],
+      "key_levels": [
+        7420,
+        7490,
+        7606
+      ],
+      "notes": "Thu bear case triggered under 7606 → elevator-down through all listed supports to 7346. 7420 (last listed support) gave 3 Failed Breakdown recoveries: 7432 (2x), 7441, ~7460 target 3. Must recover 7420 again overnight to rally; 7490–95 Tue low next big test. Bears control <7490 and ultimately <7606.",
+      "post_urls": [
         "#",
         "#",
         "#",
@@ -780,7 +811,7 @@
       "days": 10
     },
     {
-      "level": 7677,
+      "level": 7782,
       "days": 8
     },
     {
@@ -788,7 +819,7 @@
       "days": 8
     },
     {
-      "level": 7782,
+      "level": 7677,
       "days": 8
     },
     {
@@ -804,19 +835,7 @@
       "days": 5
     },
     {
-      "level": 7707,
-      "days": 4
-    },
-    {
-      "level": 7718,
-      "days": 4
-    },
-    {
-      "level": 7736,
-      "days": 4
-    },
-    {
-      "level": 7765,
+      "level": 7822,
       "days": 4
     },
     {
@@ -824,31 +843,31 @@
       "days": 4
     },
     {
-      "level": 7822,
+      "level": 7765,
       "days": 4
     },
     {
-      "level": 7636,
-      "days": 3
+      "level": 7718,
+      "days": 4
     },
     {
-      "level": 7686,
-      "days": 3
+      "level": 7707,
+      "days": 4
     },
     {
-      "level": 7710,
-      "days": 3
-    },
-    {
-      "level": 7712,
-      "days": 3
-    },
-    {
-      "level": 7748,
-      "days": 3
+      "level": 7736,
+      "days": 4
     },
     {
       "level": 7811,
+      "days": 3
+    },
+    {
+      "level": 7867,
+      "days": 3
+    },
+    {
+      "level": 7858,
       "days": 3
     },
     {
@@ -860,48 +879,55 @@
       "days": 3
     },
     {
-      "level": 7858,
-      "days": 3
-    },
-    {
-      "level": 7867,
-      "days": 3
-    },
-    {
       "level": 7884,
+      "days": 3
+    },
+    {
+      "level": 7748,
+      "days": 3
+    },
+    {
+      "level": 7686,
+      "days": 3
+    },
+    {
+      "level": 7710,
+      "days": 3
+    },
+    {
+      "level": 7636,
+      "days": 3
+    },
+    {
+      "level": 7712,
       "days": 3
     }
   ],
   "latest": {
-    "date": "2026-11-04",
+    "date": "2026-11-05",
     "supports": [
-      7490,
-      7495,
-      7626,
-      7635,
-      7703
+      7420,
+      7346,
+      7322
     ],
     "resistances": [
-      7698,
-      7703,
-      7712,
-      7739,
-      7755,
-      7771,
-      7803
+      7432,
+      7441,
+      7460,
+      7490,
+      7495,
+      7513,
+      7533,
+      7558,
+      7606
     ],
     "key_levels": [
-      7495,
-      7703,
-      7739,
-      7755,
-      7771,
-      7803
+      7420,
+      7490,
+      7606
     ],
-    "notes": "Midterm elevator-down swept July 31 low 7495 to 7490 \u2192 Failed Breakdown long \u2192 +245 to tag 7739 (final Wed target). Supports 7635/7626. Next 7755/7771/7803. Desk: protect profits / ride runner; sidelined for new risk unless fresh elevator-down FBD. Substack paid \u2014 public X only.",
+    "notes": "Thu bear case triggered under 7606 → elevator-down through all listed supports to 7346. 7420 (last listed support) gave 3 Failed Breakdown recoveries: 7432 (2x), 7441, ~7460 target 3. Must recover 7420 again overnight to rally; 7490–95 Tue low next big test. Bears control <7490 and ultimately <7606.",
     "post_urls": [
-      "#",
-      "#",
       "#",
       "#",
       "#",
