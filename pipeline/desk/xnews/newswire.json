@@ -1,6 +1,6 @@
 {
- "generated_at_pt": "2026-11-05 21:03 PT",
- "generated_utc": "2026-11-06T05:03:25+00:00",
+ "generated_at_pt": "2026-11-05 21:06 PT",
+ "generated_utc": "2026-11-06T05:06:18+00:00",
  "breaking_minutes": 30,
  "items": [
   {
@@ -10,7 +10,7 @@
    "headline": "Russian Forces Hit Power Station Near Ukraine’s Sumy, According to Defence Ministry…",
    "tag": "GEO",
    "src": "SRC W2",
-   "breaking": true
+   "breaking": false
   },
   {
    "ts_utc": "2026-11-06T04:17:57.000Z",

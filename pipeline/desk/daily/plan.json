@@ -167,5 +167,15 @@
       "chg": 69.66
     },
     "drivers": "Thu 11/5: post-midterm Dem sweep + AI/chip liquidation (SMH −11%), hedge-fund distress reports, oil spike (Brent >$100); VIX +70%; worst day since Apr 2025."
+  },
+  "long_story_short": {
+    "for_session": "2026-11-06",
+    "asof_pt": "2026-11-05 20:40 PT",
+    "headline": "Fri 11/6 — NFP 5:30 AM PT · NEUTRAL into jobs",
+    "context": "Thu close SPY 733.00 (−4.41%), SPX 7353.73, QQQ 647.05 (−6.49%), VIX 28.18 (+70%); ES RTH low 7346 / close 7383, overnight ~7389.5 at 8:23 PM PT.",
+    "levels": "ES 7606 · 7490 · 7420 · 7346 · 7322 | SPY 750 · 740/741.4 · 735.41 · 730 · 727.40 · 726 · 720 · 716",
+    "bearish": "Bears control below ES 7490 and ultimately 7606. If NFP is hot/ugly or ES loses 7420: ES 7346 → 7322; SPY loses 730 / 727.40 → 726 → 720 → 716 August low.",
+    "bullish": "If NFP cooperates and ES holds 7420: SPY reclaims 735.41 (largest dark pool, $941.9M) → 740 / 741.4, stretch 748–750, then fade. Night Ledger calls UP: bounce lean 740 / stretch 750.",
+    "general": "NEUTRAL into NFP. Bounce lean only while ES 7420 and SPY 735.40 hold; most likely a volatile jobs-day bounce toward 740 that gets sold, unless 7420 fails. Trend not repaired until ES reclaims 7606."
   }
 }
