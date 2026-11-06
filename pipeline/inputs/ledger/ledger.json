@@ -255,5 +255,6 @@
  },
  "built": "2026-11-05",
  "intraday": [],
- "intraday_date": null
+ "intraday_date": null,
+ "curated": true
 }
