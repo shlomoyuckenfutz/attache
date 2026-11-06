@@ -1,6 +1,6 @@
 {
-  "pulled_at_pt": "2026-11-04 11:33 PT",
-  "pulled_utc": "2026-11-04T19:33:07.492120+00:00",
+  "pulled_at_pt": "2026-11-05 20:40 PT",
+  "pulled_utc": "2026-11-06T04:36:14.392071+00:00",
   "handles": [
     "axios",
     "FirstSquawk"
@@ -10,108 +10,273 @@
       "data": [
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T19:26:18.000Z",
-          "id": "2118062299776974904",
-          "text": "ECB\u2019S MOULIN SAYS SAYS HE IS SKEPTICAL ON THE GOVERNMENT PLAN TO RAISE THE REGULATED SAVINGS CAP",
-          "url": "#"
+          "created_at": "2026-11-06T04:34:05.000Z",
+          "edit_history_tweet_ids": [
+            "2118562540318077231"
+          ],
+          "id": "2118562540318077231",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 5371,
+            "like_count": 0,
+            "quote_count": 0,
+            "reply_count": 0,
+            "retweet_count": 0
+          },
+          "text": "Russian Forces Hit Power Station Near Ukraine’s Sumy, According to Defence Ministry – Russian Newswires",
+          "url": "https://x.com/FirstSquawk/status/2118562540318077231"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T19:26:15.000Z",
-          "id": "2118062288775307385",
-          "text": "ECB\u2019S MOULIN SAYS THE SOLUTION TO FRANCE\u2019S FINANCIAL PROBLEMS IS IN FRANCE AND NOT IN FRANKFURT, THAT BANKS CAN DEAL WITH RISING RATES, AND THAT THERE IS NO LONGER A RISK OF A LOOP BETWEEN BANKS AND SOVEREIGNS",
-          "url": "#"
+          "created_at": "2026-11-06T04:27:18.000Z",
+          "edit_history_tweet_ids": [
+            "2118560835148841247"
+          ],
+          "id": "2118560835148841247",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 9368,
+            "like_count": 3,
+            "quote_count": 0,
+            "reply_count": 0,
+            "retweet_count": 0
+          },
+          "text": "Japan’s Electric Vehicle Sales Cross 100,000 Units for the First Time in 2026",
+          "url": "https://x.com/FirstSquawk/status/2118560835148841247"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T19:10:46.000Z",
-          "id": "2118058389075091900",
-          "text": "DEMOCRAT WILLIAM LAWRENCE WINS MICHIGAN HOUSE 7 RACE \u2013 AP PROJECTS",
-          "url": "#"
+          "created_at": "2026-11-06T04:17:57.000Z",
+          "edit_history_tweet_ids": [
+            "2118558481951461689"
+          ],
+          "id": "2118558481951461689",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 11984,
+            "like_count": 3,
+            "quote_count": 0,
+            "reply_count": 1,
+            "retweet_count": 3
+          },
+          "text": "North Korea Removes Parliamentary Vice Chairman, Revises Construction and Precious Metal Regulations - YONHAP",
+          "url": "https://x.com/FirstSquawk/status/2118558481951461689"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T19:05:25.000Z",
-          "id": "2118057043387207792",
-          "text": "THE U.S. TREASURY RECEIVED $39.636 BLN IN OFFERS FOR A DEBT BUYBACK AND ACCEPTED $6 BLN, TAKING 7 OF 40 ELIGIBLE ISSUES, WITH THE BUYBACK TARGETING COUPON SECURITIES MATURING FROM 2037 TO 2046",
-          "url": "#"
+          "created_at": "2026-11-06T04:07:49.000Z",
+          "edit_history_tweet_ids": [
+            "2118555932506632624"
+          ],
+          "id": "2118555932506632624",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 13630,
+            "like_count": 6,
+            "quote_count": 0,
+            "reply_count": 2,
+            "retweet_count": 0
+          },
+          "text": "Japan’s benchmark TOPIX extends losses, falling over 6% to an April low.",
+          "url": "https://x.com/FirstSquawk/status/2118555932506632624"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:50:21.000Z",
-          "id": "2118053250964582782",
-          "text": "ECB\u2019S KAZAKS SAYS THERE MAY BE A GRADUAL INCREASE IN INTEREST RATES, AND THAT RATES NEED TO RISE IF INFLATION RISKS SPREADING",
-          "url": "#"
+          "created_at": "2026-11-06T04:06:05.000Z",
+          "edit_history_tweet_ids": [
+            "2118555495334359484"
+          ],
+          "id": "2118555495334359484",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 12862,
+            "like_count": 8,
+            "quote_count": 0,
+            "reply_count": 1,
+            "retweet_count": 2
+          },
+          "text": "Thai Inflation Surpasses Central Bank Target as Price Pressures Accelerate - WSJ",
+          "url": "https://x.com/FirstSquawk/status/2118555495334359484"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:48:49.000Z",
-          "id": "2118052864845365313",
-          "text": "US TREASURY SECRETARY BESSENT: WE WILL SANCTION THOSE WHO CONTINUE SUPPORTING THE IRANIAN REGIME, WHETHER BY LAND, SEA, OR AIR - POST ON X",
-          "url": "#"
+          "created_at": "2026-11-06T03:58:58.000Z",
+          "edit_history_tweet_ids": [
+            "2118553702760112219"
+          ],
+          "id": "2118553702760112219",
+          "public_metrics": {
+            "bookmark_count": 2,
+            "impression_count": 15090,
+            "like_count": 22,
+            "quote_count": 1,
+            "reply_count": 6,
+            "retweet_count": 4
+          },
+          "text": "US Stock Market Expected to Find It Difficult to Recover to October Peak - WSJ",
+          "url": "https://x.com/FirstSquawk/status/2118553702760112219"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:24:33.000Z",
-          "id": "2118046760497230248",
-          "text": "THE COURSE OF U.S.-IRANIAN NEGOTIATIONS WILL BECOME CLEARER ON FRIDAY, AND THEY HAVE MADE SIGNIFICANT PROGRESS - AL-JADEED, CITING ARAB DIPLOMATIC SOURCES",
-          "url": "#"
+          "created_at": "2026-11-06T03:45:06.000Z",
+          "edit_history_tweet_ids": [
+            "2118550213170483441"
+          ],
+          "id": "2118550213170483441",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 16702,
+            "like_count": 1,
+            "quote_count": 0,
+            "reply_count": 1,
+            "retweet_count": 2
+          },
+          "text": "Germany Sees Risks to Transatlantic Ties From Efforts to Cut Dependence on US Weapons – POLITICO",
+          "url": "https://x.com/FirstSquawk/status/2118550213170483441"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:20:53.000Z",
-          "id": "2118045836500459741",
-          "text": "S&P SAYS IT EXPECTS MOST IF NOT ALL OF SALESFORCE\u2019S FREE OPERATING CASH FLOW TO BE ALLOCATED TOWARDS SHAREHOLDER RETURNS AND M&A, AND THAT IT BELIEVES SALESFORCE CAN ACCELERATE AND GROW REVENUE OVER 10% ANNUALLY",
-          "url": "#"
+          "created_at": "2026-11-06T03:40:57.000Z",
+          "edit_history_tweet_ids": [
+            "2118549168029659226"
+          ],
+          "id": "2118549168029659226",
+          "public_metrics": {
+            "bookmark_count": 2,
+            "impression_count": 18008,
+            "like_count": 56,
+            "quote_count": 1,
+            "reply_count": 7,
+            "retweet_count": 4
+          },
+          "text": "Brent oil futures gain more than $2 to cross the $100/bbl threshold.",
+          "url": "https://x.com/FirstSquawk/status/2118549168029659226"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:20:51.000Z",
-          "id": "2118045826404728970",
-          "text": "S&P HAS DOWNGRADED SALESFORCE TO \u2018A\u2019 ON RISING M&A ACTIVITY AND SHAREHOLDER RETURNS, WITH A STABLE OUTLOOK, SAYING IT EXPECTS SALESFORCE WILL CONTINUE TO INCREASE SUBSCRIPTION REVENUE AND EARNINGS BASED ON REMAINING PERFORMANCE OBLIGATIONS",
-          "url": "#"
+          "created_at": "2026-11-06T03:37:48.000Z",
+          "edit_history_tweet_ids": [
+            "2118548378527359458"
+          ],
+          "id": "2118548378527359458",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 15279,
+            "like_count": 7,
+            "quote_count": 0,
+            "reply_count": 0,
+            "retweet_count": 0
+          },
+          "text": "Australian Dollar Comes Under Pressure on Softer RBA Outlook and US Dollar Gains - FX",
+          "url": "https://x.com/FirstSquawk/status/2118548378527359458"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:17:45.000Z",
-          "id": "2118045049229647916",
-          "text": "META BUYS AI CODING STARTUP CONDUCTOR - AXIOS",
-          "url": "#"
+          "created_at": "2026-11-06T03:29:33.000Z",
+          "edit_history_tweet_ids": [
+            "2118546299482177784"
+          ],
+          "id": "2118546299482177784",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 16721,
+            "like_count": 15,
+            "quote_count": 0,
+            "reply_count": 6,
+            "retweet_count": 1
+          },
+          "text": "Trump's proposed Washington Arch clears a major regulatory hurdle, but construction remains subject to a possible court block.",
+          "url": "https://x.com/FirstSquawk/status/2118546299482177784"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:14:37.000Z",
-          "id": "2118044258582311114",
-          "text": "TRUMP SAYS IT WOULD DESTROY THE DEMOCRATIC PARTY IF THEY IMPEACHED HIM",
-          "url": "#"
+          "created_at": "2026-11-06T03:28:47.000Z",
+          "edit_history_tweet_ids": [
+            "2118546106741395539"
+          ],
+          "id": "2118546106741395539",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 16674,
+            "like_count": 36,
+            "quote_count": 1,
+            "reply_count": 5,
+            "retweet_count": 2
+          },
+          "text": "US oil futures advance $1 to trade at $91.52/BBL.",
+          "url": "https://x.com/FirstSquawk/status/2118546106741395539"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:13:08.000Z",
-          "id": "2118043886967025775",
-          "text": "TRUMP SAYS HE WILL PROBABLY GET ALONG WITH THE DEMOCRATS, THAT IF HE WERE ON THE BALLOT \u201cWE WOULD HAVE WON,\u201d AND THAT \u201cWE WEREN\u2019T ABLE TO TRANSFER THE LOVE TO CANDIDATES\u201d",
-          "url": "#"
+          "created_at": "2026-11-06T03:24:27.000Z",
+          "edit_history_tweet_ids": [
+            "2118545016897552664"
+          ],
+          "id": "2118545016897552664",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 17730,
+            "like_count": 17,
+            "quote_count": 0,
+            "reply_count": 4,
+            "retweet_count": 3
+          },
+          "text": "Canada charts a new economic independence strategy, marking a significant shift in its relationship with the US.  - SCMP",
+          "url": "https://x.com/FirstSquawk/status/2118545016897552664"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:13:02.000Z",
-          "id": "2118043860526121239",
-          "text": "TRUMP SAYS IT IS LARGELY TRUE THAT THE ELECTION LOSS WAS THE RESULT OF THE IRAN WAR, BUT THAT \u201cIT WAS WORTH IT\u201d BECAUSE \u201cYOU CAN\u2019T LET IRAN HAVE A NUCLEAR WEAPON\u201d",
-          "url": "#"
+          "created_at": "2026-11-06T03:13:18.000Z",
+          "edit_history_tweet_ids": [
+            "2118542211759653023"
+          ],
+          "id": "2118542211759653023",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 18399,
+            "like_count": 28,
+            "quote_count": 0,
+            "reply_count": 3,
+            "retweet_count": 6
+          },
+          "text": "Gold prices slide close to 1%, with spot bullion falling to $4,049.88 an ounce.",
+          "url": "https://x.com/FirstSquawk/status/2118542211759653023"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:11:53.000Z",
-          "id": "2118043572100637139",
-          "text": "COREWEAVE\u2019S BONDS TUMBLED WEDNESDAY, IN SOME CASES TO NEW LOWS, AFTER DEMOCRATIC CANDIDATES IN FAVOR OF SLOWING DOWN DATA-CENTER CONSTRUCTION WON A NUMBER OF GUBERNATORIAL RACES, INCLUDING IN TEXAS - SOURCES",
-          "url": "#"
+          "created_at": "2026-11-06T03:12:39.000Z",
+          "edit_history_tweet_ids": [
+            "2118542048890609817"
+          ],
+          "id": "2118542048890609817",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 16708,
+            "like_count": 8,
+            "quote_count": 1,
+            "reply_count": 6,
+            "retweet_count": 2
+          },
+          "text": "Binance says it will expand withdrawal availability to more assets starting at 04:00 UTC as restoration efforts continue.",
+          "url": "https://x.com/FirstSquawk/status/2118542048890609817"
         },
         {
           "author_id": "3295423333",
-          "created_at": "2026-11-04T18:10:39.000Z",
-          "id": "2118043262686732521",
-          "text": "MORE THAN 20 MINUTES INTO HIS UNSCHEDULED REMARKS, TRUMP HAS NOT SAID A SINGLE WORD ABOUT THE MIDTERM RESULTS THAT COST REPUBLICANS CONTROL OF CONGRESS",
-          "url": "#"
+          "created_at": "2026-11-06T03:06:38.000Z",
+          "edit_history_tweet_ids": [
+            "2118540535841608140"
+          ],
+          "id": "2118540535841608140",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 17882,
+            "like_count": 4,
+            "quote_count": 0,
+            "reply_count": 4,
+            "retweet_count": 2
+          },
+          "text": "Japanese authorities direct Chubu Electric to address operational shortcomings following nuclear plant data fraud.",
+          "url": "https://x.com/FirstSquawk/status/2118540535841608140"
         }
       ]
     },
@@ -119,73 +284,183 @@
       "data": [
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T19:17:00.000Z",
-          "id": "2118059958914752641",
-          "text": "Key Pentagon priorities in peril after Democratic sweep",
-          "url": "#"
+          "created_at": "2026-11-06T00:47:14.000Z",
+          "edit_history_tweet_ids": [
+            "2118505454020001964"
+          ],
+          "id": "2118505454020001964",
+          "public_metrics": {
+            "bookmark_count": 10,
+            "impression_count": 14888,
+            "like_count": 32,
+            "quote_count": 0,
+            "reply_count": 2,
+            "retweet_count": 6
+          },
+          "text": "\"Never heard of them\": Meet the incoming House Dems shocked even their own party https://t.co/nvIAivkq99",
+          "url": "https://x.com/axios/status/2118505454020001964"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T18:56:01.000Z",
-          "id": "2118054676843188616",
-          "text": "Democrats' midterm gains could sideline Electoral College by 2028",
-          "url": "#"
+          "created_at": "2026-11-06T00:37:17.000Z",
+          "edit_history_tweet_ids": [
+            "2118502950372810972"
+          ],
+          "id": "2118502950372810972",
+          "public_metrics": {
+            "bookmark_count": 9,
+            "impression_count": 15479,
+            "like_count": 36,
+            "quote_count": 1,
+            "reply_count": 13,
+            "retweet_count": 5
+          },
+          "text": "Trump says voters should blame themselves for stock market rout https://t.co/02amAhx4ak",
+          "url": "https://x.com/axios/status/2118502950372810972"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T18:26:02.000Z",
-          "id": "2118047131466424409",
-          "text": "Exclusive: Meta buys AI startup, joins race to own coding in show of outsized ambition",
-          "url": "#"
+          "created_at": "2026-11-05T23:51:06.000Z",
+          "edit_history_tweet_ids": [
+            "2118491325448196529"
+          ],
+          "id": "2118491325448196529",
+          "public_metrics": {
+            "bookmark_count": 6,
+            "impression_count": 15577,
+            "like_count": 57,
+            "quote_count": 7,
+            "reply_count": 8,
+            "retweet_count": 16
+          },
+          "text": "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy https://t.co/D1yGcaUo98",
+          "url": "https://x.com/axios/status/2118491325448196529"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T17:50:01.000Z",
-          "id": "2118038067655176437",
-          "text": "Democrats vow Trump investigations, but voters have another priority too",
-          "url": "#"
+          "created_at": "2026-11-05T23:30:21.000Z",
+          "edit_history_tweet_ids": [
+            "2118486102759653574"
+          ],
+          "id": "2118486102759653574",
+          "public_metrics": {
+            "bookmark_count": 16,
+            "impression_count": 20018,
+            "like_count": 115,
+            "quote_count": 5,
+            "reply_count": 4,
+            "retweet_count": 42
+          },
+          "text": "Trump meets with national security team, says Iran war decision coming \"soon\" https://t.co/2LQoopQaoT",
+          "url": "https://x.com/axios/status/2118486102759653574"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T17:45:01.000Z",
-          "id": "2118036809955324296",
-          "text": "Women ride midterm blue wave to historic gains",
-          "url": "#"
+          "created_at": "2026-11-05T22:57:03.000Z",
+          "edit_history_tweet_ids": [
+            "2118477722754101627"
+          ],
+          "id": "2118477722754101627",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 13393,
+            "like_count": 6,
+            "quote_count": 0,
+            "reply_count": 0,
+            "retweet_count": 0
+          },
+          "text": "TV audience for 2026 midterms surges to 31 million https://t.co/taW8twYMJd",
+          "url": "https://x.com/axios/status/2118477722754101627"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T17:35:12.000Z",
-          "id": "2118034340009402760",
-          "text": "The economic aftershocks of Democrats' big win",
-          "url": "#"
+          "created_at": "2026-11-05T22:40:15.000Z",
+          "edit_history_tweet_ids": [
+            "2118473496787394736"
+          ],
+          "id": "2118473496787394736",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 14577,
+            "like_count": 10,
+            "quote_count": 1,
+            "reply_count": 1,
+            "retweet_count": 3
+          },
+          "text": "Democratic wave has robotaxi industry sweating https://t.co/QXBD1mgtJt",
+          "url": "https://x.com/axios/status/2118473496787394736"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T17:25:01.000Z",
-          "id": "2118031777742659820",
-          "text": "Trump can't pack the Fed board with allies now",
-          "url": "#"
+          "created_at": "2026-11-05T21:40:29.000Z",
+          "edit_history_tweet_ids": [
+            "2118458453643432225"
+          ],
+          "id": "2118458453643432225",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 14712,
+            "like_count": 13,
+            "quote_count": 1,
+            "reply_count": 1,
+            "retweet_count": 4
+          },
+          "text": "Raman ousts Bass as New York and L.A. prepare for South Asian socialist mayors https://t.co/1T0sojWreg",
+          "url": "https://x.com/axios/status/2118458453643432225"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T17:20:01.000Z",
-          "id": "2118030519841558677",
-          "text": "Global leaders weigh in on America's midterm shake-up",
-          "url": "#"
+          "created_at": "2026-11-05T21:31:37.000Z",
+          "edit_history_tweet_ids": [
+            "2118456224895123645"
+          ],
+          "id": "2118456224895123645",
+          "public_metrics": {
+            "bookmark_count": 19,
+            "impression_count": 22015,
+            "like_count": 242,
+            "quote_count": 11,
+            "reply_count": 12,
+            "retweet_count": 85
+          },
+          "text": "Epstein files back in spotlight after midterms https://t.co/3lIXuec9i1",
+          "url": "https://x.com/axios/status/2118456224895123645"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T16:36:00.000Z",
-          "id": "2118019441896063432",
-          "text": "Read Mike Johnson's departing message",
-          "url": "#"
+          "created_at": "2026-11-05T21:02:00.000Z",
+          "edit_history_tweet_ids": [
+            "2118448770815803752"
+          ],
+          "id": "2118448770815803752",
+          "public_metrics": {
+            "bookmark_count": 0,
+            "impression_count": 14710,
+            "like_count": 9,
+            "quote_count": 0,
+            "reply_count": 2,
+            "retweet_count": 3
+          },
+          "text": "Newsom moves to empty California's death row as 2028 looms https://t.co/zilNE2XBhL",
+          "url": "https://x.com/axios/status/2118448770815803752"
         },
         {
           "author_id": "800707492346925056",
-          "created_at": "2026-11-04T15:55:33.000Z",
-          "id": "2118009260458328457",
-          "text": "BREAKING: Trump's VP says the Iran war cost them the midterms",
-          "url": "#"
+          "created_at": "2026-11-05T20:59:43.000Z",
+          "edit_history_tweet_ids": [
+            "2118448195697299956"
+          ],
+          "id": "2118448195697299956",
+          "public_metrics": {
+            "bookmark_count": 1,
+            "impression_count": 13499,
+            "like_count": 6,
+            "quote_count": 1,
+            "reply_count": 2,
+            "retweet_count": 2
+          },
+          "text": "Newsom plans to commute all 548 of California's death sentences to life without parole.\n\nIf he follows through, it will be the largest mass commutation of death sentences in U.S. history.\n\nhttps://t.co/mQQPOjtTUH",
+          "url": "https://x.com/axios/status/2118448195697299956"
         }
       ]
     }

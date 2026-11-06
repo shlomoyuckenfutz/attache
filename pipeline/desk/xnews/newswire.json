@@ -1,140 +1,104 @@
 {
- "generated_at_pt": "2026-11-05 19:51 PT",
- "generated_utc": "2026-11-06T03:51:01+00:00",
+ "generated_at_pt": "2026-11-05 20:37 PT",
+ "generated_utc": "2026-11-06T04:37:59+00:00",
  "breaking_minutes": 30,
  "items": [
   {
-   "ts_utc": "2026-11-04T19:26:18.000Z",
-   "time_pt": "11:26",
-   "date_pt": "11/04",
-   "headline": "ECB’S MOULIN SAYS SAYS HE IS SKEPTICAL ON THE Govt PLAN TO RAISE THE REGULATED…",
-   "tag": "FED",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T19:26:15.000Z",
-   "time_pt": "11:26",
-   "date_pt": "11/04",
-   "headline": "ECB’S MOULIN SAYS THE SOLUTION TO FRANCE’S FINANCIAL PROBLEMS IS IN FRANCE AND NOT…",
-   "tag": "FED",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T19:05:25.000Z",
-   "time_pt": "11:05",
-   "date_pt": "11/04",
-   "headline": "THE U.S. TREASURY RECEIVED $39.636 BLN IN OFFERS FOR A DEBT BUYBACK AND ACCEPTED $6…",
-   "tag": "RATES",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:50:21.000Z",
-   "time_pt": "10:50",
-   "date_pt": "11/04",
-   "headline": "ECB’S KAZAKS SAYS THERE MAY BE A GRADUAL INCREASE IN INTEREST RATES, AND THAT RATES…",
-   "tag": "FED",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:48:49.000Z",
-   "time_pt": "10:48",
-   "date_pt": "11/04",
-   "headline": "US TREASURY SECRETARY BESSENT: WE WILL SANCTION THOSE WHO CONTINUE SUPPORTING THE…",
-   "tag": "RATES",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:26:02.000Z",
-   "time_pt": "10:26",
-   "date_pt": "11/04",
-   "headline": "Exclusive: Meta buys AI startup, joins race to own coding in show of outsized…",
-   "tag": "TECH",
-   "src": "SRC W1",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:20:53.000Z",
-   "time_pt": "10:20",
-   "date_pt": "11/04",
-   "headline": "S&P SAYS IT EXPECTS MOST IF NOT ALL OF SALESFORCE’S FREE OPERATING CASH FLOW TO BE…",
-   "tag": "EARNINGS",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:20:51.000Z",
-   "time_pt": "10:20",
-   "date_pt": "11/04",
-   "headline": "S&P HAS DOWNGRADED SALESFORCE TO ‘A’ ON RISING M&A ACTIVITY AND SHAREHOLDER…",
-   "tag": "EARNINGS",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:17:45.000Z",
-   "time_pt": "10:17",
-   "date_pt": "11/04",
-   "headline": "META BUYS AI CODING STARTUP CONDUCTOR - AXIOS",
-   "tag": "TECH",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:14:37.000Z",
-   "time_pt": "10:14",
-   "date_pt": "11/04",
-   "headline": "TRUMP SAYS IT WOULD DESTROY THE DEMOCRATIC PARTY IF THEY IMPEACHED HIM",
-   "tag": "POLICY",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:13:08.000Z",
-   "time_pt": "10:13",
-   "date_pt": "11/04",
-   "headline": "TRUMP SAYS HE WILL PROBABLY GET ALONG WITH THE DEMOCRATS, THAT IF HE WERE ON THE…",
-   "tag": "FX",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-04T18:13:02.000Z",
-   "time_pt": "10:13",
-   "date_pt": "11/04",
-   "headline": "TRUMP SAYS IT IS LARGELY TRUE THAT THE ELECTION LOSS WAS THE RESULT OF THE IRAN…",
+   "ts_utc": "2026-11-06T04:34:05.000Z",
+   "time_pt": "20:34",
+   "date_pt": "11/05",
+   "headline": "Russian Forces Hit Power Station Near Ukraine’s Sumy, According to Defence Ministry…",
    "tag": "GEO",
    "src": "SRC W2",
-   "breaking": false
+   "breaking": true
   },
   {
-   "ts_utc": "2026-11-04T18:11:53.000Z",
-   "time_pt": "10:11",
-   "date_pt": "11/04",
-   "headline": "COREWEAVE’S BONDS TUMBLED WEDNESDAY, IN SOME CASES TO NEW LOWS, AFTER DEMOCRATIC…",
-   "tag": "RATES",
+   "ts_utc": "2026-11-06T04:17:57.000Z",
+   "time_pt": "20:17",
+   "date_pt": "11/05",
+   "headline": "North Korea Removes Parliamentary Vice Chairman, Revises Construction and Precious…",
+   "tag": "GEO",
+   "src": "SRC W2",
+   "breaking": true
+  },
+  {
+   "ts_utc": "2026-11-06T04:06:05.000Z",
+   "time_pt": "20:06",
+   "date_pt": "11/05",
+   "headline": "Thai Inflation Surpasses Central Bank Target as Price Pressures Accelerate",
+   "tag": "FED",
    "src": "SRC W2",
    "breaking": false
   },
   {
-   "ts_utc": "2026-11-04T17:50:01.000Z",
-   "time_pt": "09:50",
-   "date_pt": "11/04",
-   "headline": "Democrats vow Trump investigations, but voters have another priority too",
+   "ts_utc": "2026-11-06T03:58:58.000Z",
+   "time_pt": "19:58",
+   "date_pt": "11/05",
+   "headline": "US Stock Market Expected to Find It Difficult to Recover to October Peak",
+   "tag": "EQUITY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-06T03:40:57.000Z",
+   "time_pt": "19:40",
+   "date_pt": "11/05",
+   "headline": "Brent oil futures gain more than $2 to cross the $100/bbl threshold",
+   "tag": "ENERGY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-06T03:37:48.000Z",
+   "time_pt": "19:37",
+   "date_pt": "11/05",
+   "headline": "Australian Dollar Comes Under Pressure on Softer RBA Outlook and US Dollar Gains",
+   "tag": "FED",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-06T03:29:33.000Z",
+   "time_pt": "19:29",
+   "date_pt": "11/05",
+   "headline": "Trump's proposed Washington Arch clears a major regulatory hurdle, but construction…",
+   "tag": "POLICY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-06T03:28:47.000Z",
+   "time_pt": "19:28",
+   "date_pt": "11/05",
+   "headline": "US oil futures advance $1 to trade at $91.52/BBL",
+   "tag": "ENERGY",
+   "src": "SRC W2",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-06T00:37:17.000Z",
+   "time_pt": "16:37",
+   "date_pt": "11/05",
+   "headline": "Trump says voters should blame themselves for stock market rout",
    "tag": "POLICY",
    "src": "SRC W1",
    "breaking": false
   },
   {
-   "ts_utc": "2026-11-04T17:25:01.000Z",
-   "time_pt": "09:25",
-   "date_pt": "11/04",
-   "headline": "Trump can't pack the Fed board with allies now",
-   "tag": "FED",
+   "ts_utc": "2026-11-05T23:51:06.000Z",
+   "time_pt": "15:51",
+   "date_pt": "11/05",
+   "headline": "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy",
+   "tag": "TECH",
+   "src": "SRC W1",
+   "breaking": false
+  },
+  {
+   "ts_utc": "2026-11-05T23:30:21.000Z",
+   "time_pt": "15:30",
+   "date_pt": "11/05",
+   "headline": "Trump meets with national security team, says Iran war decision coming \"soon\"",
+   "tag": "GEO",
    "src": "SRC W1",
    "breaking": false
   }

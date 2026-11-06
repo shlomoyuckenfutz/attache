@@ -1,5 +1,5 @@
 {
-  "generated_at_pt": "2026-11-04 11:33 PT",
+  "generated_at_pt": "2026-11-05 20:40 PT",
   "window_days": 1,
   "groups": {
     "set1": {
@@ -10,23 +10,23 @@
     "voltick": {
       "set1": {
         "post_id": "2117980467089830019",
-        "label": "Wed SPY Magnet 767 \u00b7 flip 765.3 \u00b7 floor 750 \u00b7 ceiling 800 \u00b7 EM \u00b16.36"
+        "label": "Wed SPY Magnet 767 · flip 765.3 · floor 750 · ceiling 800 · EM ±6.36"
       }
     },
     "cheddar_gex": {
       "set1": {
         "post_id": "2118041733338456512",
-        "label": "SPY GEX flip \u221211.8B\u2192+2.8B \u00b7 call wall 770"
+        "label": "SPY GEX flip −11.8B→+2.8B · call wall 770"
       }
     }
   },
   "sentiment": {
     "cheddar": {
-      "asof_pt": "2026-11-04 11:33 PT",
-      "spy_put_wall": 765,
-      "spy_call_wall": 770,
-      "net_gex": "+$2.8B (flipped from \u2212$11.8B Tue close)",
-      "note": "Wed midterm rip: spot ~768 under 770 call wall; EM \u00b15.75 (762.89\u2013774.39). Big LEAP QQQ 720C $23M; ORCL puts $16M; AAPL 0DTE calls.",
+      "asof_pt": "2026-11-05 20:40 PT",
+      "spy_put_wall": 720,
+      "spy_call_wall": 740,
+      "net_gex": "negative (VIX 28.18)",
+      "note": "Thu −4.4%: QQQ $16M put buyers; SPY IVR 74%; DP $941.9M at 735.41; 17 AH downside prints filled 728–733.",
       "derived": true
     }
   },
@@ -35,139 +35,29 @@
       "group": "set1",
       "section": "cheddar",
       "handle": "CheddarFlow",
-      "post_id": "2118052433972596793",
+      "post_id": "",
       "url": "#",
-      "posted_at_utc": "2026-11-04T18:47:06.000Z",
-      "posted_at_pt": "2026-11-04 10:47 PT",
-      "caption": "$3.6M SPY Dec 31 788C \u2014 SPY ~769",
-      "symbols": [
-        "SPY"
-      ],
-      "tags": [
-        "calls"
-      ],
-      "has_media": true,
-      "media_note": "SPY Dec 788C print"
-    },
-    {
-      "group": "set1",
-      "section": "cheddar",
-      "handle": "CheddarFlow",
-      "post_id": "2118041733338456512",
-      "url": "#",
-      "posted_at_utc": "2026-11-04T18:04:35.000Z",
-      "posted_at_pt": "2026-11-04 10:04 PT",
-      "caption": "SPY under 770 call wall; GEX flipped \u2212$11.8B \u2192 +$2.8B",
-      "symbols": [
-        "SPY"
-      ],
-      "tags": [
-        "gex",
-        "calls"
-      ],
-      "has_media": true,
-      "media_note": "SPY all-exp GEX chart"
-    },
-    {
-      "group": "set1",
-      "section": "cheddar",
-      "handle": "CheddarFlow",
-      "post_id": "2118030220053627013",
-      "url": "#",
-      "posted_at_utc": "2026-11-04T17:18:50.000Z",
-      "posted_at_pt": "2026-11-04 09:18 PT",
-      "caption": "$1.3M+ MSFT next-week 557.5/565C opening ask",
-      "symbols": [
-        "MSFT"
-      ],
-      "tags": [
-        "calls"
-      ],
-      "has_media": true,
-      "media_note": "MSFT call tape"
-    },
-    {
-      "group": "set1",
-      "section": "cheddar",
-      "handle": "CheddarFlow",
-      "post_id": "2118023303377940680",
-      "url": "#",
-      "posted_at_utc": "2026-11-04T16:51:21.000Z",
-      "posted_at_pt": "2026-11-04 08:51 PT",
-      "caption": "$23M+ QQQ Mar 2027 720C \u2014 $21M in two floor prints",
+      "posted_at_utc": "2026-11-05T23:30:00.000Z",
+      "posted_at_pt": "2026-11-05 15:30 PT",
+      "caption": "QQQ $16M put buyers today",
       "symbols": [
         "QQQ"
-      ],
-      "tags": [
-        "calls"
-      ],
-      "has_media": true,
-      "media_note": "QQQ LEAP call prints"
-    },
-    {
-      "group": "set1",
-      "section": "cheddar",
-      "handle": "CheddarFlow",
-      "post_id": "2118005521231831190",
-      "url": "#",
-      "posted_at_utc": "2026-11-04T15:40:41.000Z",
-      "posted_at_pt": "2026-11-04 07:40 PT",
-      "caption": "$16M ORCL Nov 20 145P+150P sweeps in 4 min",
-      "symbols": [
-        "ORCL"
       ],
       "tags": [
         "puts"
       ],
       "has_media": true,
-      "media_note": "ORCL put sweeps"
+      "media_note": "QQQ put flow"
     },
     {
       "group": "set1",
       "section": "cheddar",
-      "handle": "CheddarFlow",
-      "post_id": "2117996898120262088",
+      "handle": "CheddaFreeze",
+      "post_id": "",
       "url": "#",
-      "posted_at_utc": "2026-11-04T15:06:25.000Z",
-      "posted_at_pt": "2026-11-04 07:06 PT",
-      "caption": "$1.8M+ AAPL 0DTE 350C",
-      "symbols": [
-        "AAPL"
-      ],
-      "tags": [
-        "calls",
-        "0dte"
-      ],
-      "has_media": true,
-      "media_note": "AAPL 0DTE calls"
-    },
-    {
-      "group": "set1",
-      "section": "quantdata",
-      "handle": "QuantData",
-      "post_id": "2118051154105864377",
-      "url": "#",
-      "posted_at_utc": "2026-11-04T18:42:01.000Z",
-      "posted_at_pt": "2026-11-04 10:42 PT",
-      "caption": "ES put wall 7728 \u2014 reaction zone",
-      "symbols": [
-        "ES"
-      ],
-      "tags": [
-        "gex"
-      ],
-      "has_media": true,
-      "media_note": "ES put wall chart"
-    },
-    {
-      "group": "set1",
-      "section": "quantdata",
-      "handle": "QuantData",
-      "post_id": "2118052752626463107",
-      "url": "#",
-      "posted_at_utc": "2026-11-04T18:48:22.000Z",
-      "posted_at_pt": "2026-11-04 10:48 PT",
-      "caption": "SPY back to 767.12 Dark Pool",
+      "posted_at_utc": "2026-11-06T01:32:00.000Z",
+      "posted_at_pt": "2026-11-05 17:32 PT",
+      "caption": "SPY downside DP prints filled AH (17); next 727.8, 726–722, 720.7 into monthly 50MA",
       "symbols": [
         "SPY"
       ],
@@ -175,35 +65,53 @@
         "darkpool"
       ],
       "has_media": true,
-      "media_note": "SPY DP 767.12"
+      "media_note": "SPY 5m DP map"
     },
     {
       "group": "set1",
       "section": "quantdata",
       "handle": "QuantData",
-      "post_id": "2118033494731555046",
+      "post_id": "",
       "url": "#",
-      "posted_at_utc": "2026-11-04T17:31:50.000Z",
-      "posted_at_pt": "2026-11-04 09:31 PT",
-      "caption": "SPY 768.61 Dark Pool \u2014 unable to hold above",
+      "posted_at_utc": "2026-11-06T03:58:00.000Z",
+      "posted_at_pt": "2026-11-05 19:58 PT",
+      "caption": "SPY IV Rank closed 74.04%",
       "symbols": [
         "SPY"
       ],
       "tags": [
-        "darkpool"
+        "vol"
       ],
       "has_media": true,
-      "media_note": "SPY DP 768.61"
+      "media_note": "IVR chart"
     },
     {
       "group": "set1",
       "section": "quantdata",
       "handle": "QuantData",
-      "post_id": "2118036718976676146",
+      "post_id": "",
       "url": "#",
-      "posted_at_utc": "2026-11-04T17:44:39.000Z",
-      "posted_at_pt": "2026-11-04 09:44 PT",
-      "caption": "SPY single-leg short-dated calls lead puts by $35M+",
+      "posted_at_utc": "2026-11-06T03:46:00.000Z",
+      "posted_at_pt": "2026-11-05 19:46 PT",
+      "caption": "MRNA earnings Fri pre-market (+718% YTD)",
+      "symbols": [
+        "MRNA"
+      ],
+      "tags": [
+        "earnings"
+      ],
+      "has_media": true,
+      "media_note": ""
+    },
+    {
+      "group": "set1",
+      "section": "flow",
+      "handle": "SRC_LEDGER",
+      "post_id": "",
+      "url": "#",
+      "posted_at_utc": "2026-11-05T22:40:00.000Z",
+      "posted_at_pt": "2026-11-05 14:40 PT",
+      "caption": "~$3B sell-side at the low was absorbed into close; SPY calls picked up at close",
       "symbols": [
         "SPY"
       ],
@@ -211,25 +119,7 @@
         "calls"
       ],
       "has_media": true,
-      "media_note": "SPY call/put lead"
-    },
-    {
-      "group": "set1",
-      "section": "quantdata",
-      "handle": "QuantData",
-      "post_id": "2118041346967748774",
-      "url": "#",
-      "posted_at_utc": "2026-11-04T18:03:03.000Z",
-      "posted_at_pt": "2026-11-04 10:03 PT",
-      "caption": "NQ Call Wall / MVC hit",
-      "symbols": [
-        "NQ"
-      ],
-      "tags": [
-        "gex"
-      ],
-      "has_media": true,
-      "media_note": "NQ call wall"
+      "media_note": ""
     }
   ]
 }
