@@ -1,5 +1,5 @@
 {
- "generated_et": "2026-11-06 22:47 ET",
+ "generated_et": "2026-11-06 23:50 ET",
  "next_session": "Mon 11/09",
  "on": {
   "ES": {
@@ -14,9 +14,9 @@
    "gap": 22.75,
    "gap_pct": 0.308,
    "pos": "OUTSIDE (L)",
-   "on_vol": 1869656,
+   "on_vol": 1871964,
    "avg_vol": 369372,
-   "vol_ratio": 5.06,
+   "vol_ratio": 5.07,
    "on_range": 146.75,
    "avg_range": 60.08,
    "range_pct": 244.3,
@@ -1964,9 +1964,9 @@
    "gap": 361.0,
    "gap_pct": 1.35,
    "pos": "OUTSIDE (L)",
-   "on_vol": 845225,
+   "on_vol": 847064,
    "avg_vol": 206252,
-   "vol_ratio": 4.1,
+   "vol_ratio": 4.11,
    "on_range": 1058.5,
    "avg_range": 400.15,
    "range_pct": 264.5,
