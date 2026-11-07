@@ -1,5 +1,5 @@
 {
- "generated_et": "2026-11-07 16:35 ET",
+ "generated_et": "2026-11-07 17:36 ET",
  "groups": [
   {
    "name": "INDICES",
@@ -481,14 +481,14 @@
      "status": "LIVE",
      "note": "",
      "q": {
-      "last": 6.2375,
-      "prev": 6.213,
-      "chg": 0.0245,
-      "pct": 0.39434,
-      "hi": 6.292,
-      "lo": 6.188,
+      "last": 6.218,
+      "prev": 6.249,
+      "chg": -0.031,
+      "pct": -0.496082,
+      "hi": 6.2515,
+      "lo": 6.181,
       "flag": "",
-      "asof": "11/06 16:55",
+      "asof": "11/06 D",
       "stale": false
      }
     },
@@ -690,7 +690,7 @@
       "chg": 2.75,
       "pct": 0.991348,
       "hi": 282.5,
-      "lo": 268.200012,
+      "lo": 268.149994,
       "flag": "",
       "asof": "11/06 13:25",
       "stale": false
@@ -1211,10 +1211,20 @@
   {
    "name": "Euro-Bund (German 10Y yield)",
    "code": "BUND",
-   "status": "NA",
+   "status": "PROXY",
    "note": "German 10Y govt yield, daily",
    "yld": true,
-   "q": null
+   "q": {
+    "last": 3.27,
+    "prev": 3.31,
+    "chg": -0.04,
+    "pct": -1.208459,
+    "hi": null,
+    "lo": null,
+    "flag": "",
+    "asof": "11/06 D",
+    "stale": false
+   }
   },
   {
    "name": "VIX short-term futures ETN",
