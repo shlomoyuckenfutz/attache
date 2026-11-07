@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-07 15:35 PT",
+ "asof": "2026-11-07 16:38 PT",
  "window_days": 5,
  "bars": "SPY 1m (free feed, RTH 09:30-16:00 ET), read-only local copy",
  "rules": "SPY levels auto-extracted from post text (promos/RTs skipped). Graded on the rest of that RTH session (or next session if posted outside RTH). touch = within $0.25; respected = moves ≥$1 back on the approach side within 30 min before a 1m close ≥$1 through; broken = closes ≥$1 through first. hit_rate = respected/touched.",
@@ -9,17 +9,17 @@
  },
  "sources": [
   {
-   "handle": "Basssem666",
-   "levels_posted": 38,
-   "touched": 2,
-   "respected": 2,
+   "handle": "QuantData",
+   "levels_posted": 5,
+   "touched": 1,
+   "respected": 1,
    "broken": 0,
    "hit_rate": 1.0,
-   "touch_rate": 0.053,
-   "avg_reaction_pts": 1.33,
+   "touch_rate": 0.2,
+   "avg_reaction_pts": 1.62,
    "promo_pct": 0.0,
-   "posts_per_day": 14,
-   "weight": 0.8,
+   "posts_per_day": 24,
+   "weight": 1.0,
    "greyed": false
   },
   {
@@ -30,23 +30,9 @@
    "broken": 0,
    "hit_rate": 1.0,
    "touch_rate": 0.118,
-   "avg_reaction_pts": 1.78,
+   "avg_reaction_pts": 1.88,
    "promo_pct": 0.0,
    "posts_per_day": 10,
-   "weight": 1.0,
-   "greyed": false
-  },
-  {
-   "handle": "QuantData",
-   "levels_posted": 5,
-   "touched": 2,
-   "respected": 1,
-   "broken": 1,
-   "hit_rate": 0.5,
-   "touch_rate": 0.4,
-   "avg_reaction_pts": 0.97,
-   "promo_pct": 0.0,
-   "posts_per_day": 24,
    "weight": 1.0,
    "greyed": false
   },
@@ -58,7 +44,7 @@
    "broken": 0,
    "hit_rate": 0.0,
    "touch_rate": 0.1,
-   "avg_reaction_pts": 0.8,
+   "avg_reaction_pts": 0.99,
    "promo_pct": 0.0,
    "posts_per_day": 11,
    "weight": 1.0,
@@ -76,6 +62,20 @@
    "promo_pct": 0.0,
    "posts_per_day": 48,
    "weight": 0.5,
+   "greyed": false
+  },
+  {
+   "handle": "Basssem666",
+   "levels_posted": 38,
+   "touched": 0,
+   "respected": 0,
+   "broken": 0,
+   "hit_rate": null,
+   "touch_rate": 0.0,
+   "avg_reaction_pts": null,
+   "promo_pct": 0.0,
+   "posts_per_day": 14,
+   "weight": 0.8,
    "greyed": false
   },
   {
