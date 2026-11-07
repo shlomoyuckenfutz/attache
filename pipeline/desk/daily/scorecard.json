@@ -351,7 +351,7 @@
     "spy": {
       "high": 775.6400146484375,
       "low": 691.5287,
-      "last": 736.12,
+      "last": 736.32,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -397,16 +397,16 @@
           "date": "2026-11-06",
           "hi": 746.69,
           "lo": 691.53,
-          "last": 736.12,
+          "last": 736.32,
           "event": true
         }
       ],
-      "n_bars": 96
+      "n_bars": 98
     },
     "qqq": {
       "high": 701.4500122070312,
       "low": 639.0,
-      "last": 656.9,
+      "last": 657.35,
       "path": "CHOP / MIXED",
       "phase1": "MISSED",
       "phase1_zone": [
@@ -452,11 +452,11 @@
           "date": "2026-11-06",
           "hi": 664.52,
           "lo": 654.0,
-          "last": 656.9,
+          "last": 657.35,
           "event": true
         }
       ],
-      "n_bars": 96
+      "n_bars": 98
     }
   },
   "note": "Prior week = Oct 26\u201330 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 2\u20136 forward paths only on empty day columns."
