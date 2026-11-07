@@ -1,5 +1,5 @@
 {
- "generated_et": "2026-11-07 15:35 ET",
+ "generated_et": "2026-11-07 16:35 ET",
  "groups": [
   {
    "name": "INDICES",
@@ -690,7 +690,7 @@
       "chg": 2.75,
       "pct": 0.991348,
       "hi": 282.5,
-      "lo": 268.149994,
+      "lo": 268.200012,
       "flag": "",
       "asof": "11/06 13:25",
       "stale": false
@@ -1211,20 +1211,10 @@
   {
    "name": "Euro-Bund (German 10Y yield)",
    "code": "BUND",
-   "status": "PROXY",
+   "status": "NA",
    "note": "German 10Y govt yield, daily",
    "yld": true,
-   "q": {
-    "last": 3.27,
-    "prev": 3.31,
-    "chg": -0.04,
-    "pct": -1.208459,
-    "hi": null,
-    "lo": null,
-    "flag": "",
-    "asof": "11/06 D",
-    "stale": false
-   }
+   "q": null
   },
   {
    "name": "VIX short-term futures ETN",
