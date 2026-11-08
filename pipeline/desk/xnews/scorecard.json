@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-08 16:37 PT",
+ "asof": "2026-11-08 17:32 PT",
  "window_days": 5,
  "bars": "SPY 1m (free feed, RTH 09:30-16:00 ET), read-only local copy",
  "rules": "SPY levels auto-extracted from post text (promos/RTs skipped). Graded on the rest of that RTH session (or next session if posted outside RTH). touch = within $0.25; respected = moves ≥$1 back on the approach side within 30 min before a 1m close ≥$1 through; broken = closes ≥$1 through first. hit_rate = respected/touched.",
@@ -8,20 +8,6 @@
   "2026-10-20": "Volt touched 644 of 1070 · Inside the expected range 1058 of 1070 · Closed between the walls 829 of 1070"
  },
  "sources": [
-  {
-   "handle": "QuantData",
-   "levels_posted": 5,
-   "touched": 1,
-   "respected": 1,
-   "broken": 0,
-   "hit_rate": 1.0,
-   "touch_rate": 0.2,
-   "avg_reaction_pts": 1.32,
-   "promo_pct": 0.0,
-   "posts_per_day": 24,
-   "weight": 1.0,
-   "greyed": false
-  },
   {
    "handle": "SuperLuckeee",
    "levels_posted": 2,
@@ -44,7 +30,7 @@
    "broken": 0,
    "hit_rate": 0.6,
    "touch_rate": 0.5,
-   "avg_reaction_pts": 1.01,
+   "avg_reaction_pts": 1.06,
    "promo_pct": 0.0,
    "posts_per_day": 11,
    "weight": 1.0,
@@ -54,15 +40,29 @@
    "handle": "Basssem666",
    "levels_posted": 38,
    "touched": 9,
-   "respected": 4,
+   "respected": 3,
    "broken": 0,
-   "hit_rate": 0.444,
+   "hit_rate": 0.333,
    "touch_rate": 0.237,
-   "avg_reaction_pts": 1.07,
+   "avg_reaction_pts": 0.88,
    "promo_pct": 0.0,
    "posts_per_day": 14,
    "weight": 0.8,
-   "greyed": false
+   "greyed": true
+  },
+  {
+   "handle": "QuantData",
+   "levels_posted": 5,
+   "touched": 1,
+   "respected": 0,
+   "broken": 0,
+   "hit_rate": 0.0,
+   "touch_rate": 0.2,
+   "avg_reaction_pts": 0.41,
+   "promo_pct": 0.0,
+   "posts_per_day": 24,
+   "weight": 1.0,
+   "greyed": true
   },
   {
    "handle": "TraderJonesy",
@@ -72,7 +72,7 @@
    "broken": 0,
    "hit_rate": 0.0,
    "touch_rate": 0.118,
-   "avg_reaction_pts": 0.41,
+   "avg_reaction_pts": 0.63,
    "promo_pct": 0.0,
    "posts_per_day": 10,
    "weight": 1.0,
