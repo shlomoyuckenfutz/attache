@@ -1,5 +1,5 @@
 {
- "generated_et": "2026-11-07 23:50 ET",
+ "generated_et": "2026-11-08 00:47 ET",
  "next_session": "Mon 11/09",
  "on": {
   "ES": {
@@ -4063,8 +4063,38 @@
  "earn": {},
  "earn_other": {},
  "cal": {
-  "econ": [],
-  "fed": [],
+  "econ": [
+   {
+    "time_pt": "07:00",
+    "title": "Final Wholesale Inventories m/m",
+    "impact": "Low",
+    "fc": "0.6%",
+    "prev": "0.6%"
+   }
+  ],
+  "fed": [
+   {
+    "time_pt": "05:40",
+    "title": "FOMC Member Bowman Speaks",
+    "impact": "Low",
+    "fc": "",
+    "prev": ""
+   },
+   {
+    "time_pt": "07:00",
+    "title": "FOMC Member Goolsbee Speaks",
+    "impact": "Low",
+    "fc": "",
+    "prev": ""
+   },
+   {
+    "time_pt": "09:15",
+    "title": "FOMC Member Barkin Speaks",
+    "impact": "Low",
+    "fc": "",
+    "prev": ""
+   }
+  ],
   "auctions": [
    {
     "date": "Mon 11/09",
