@@ -108,6 +108,21 @@ def cal_panel(D):
     return (f'<div class="dp"><h3>TODAY\'S CALENDAR · {e(ns)}</h3>{warn}<table><tr><th class="n">PT</th><th>US RELEASE</th><th>IMPACT</th><th class="n">CONS</th><th class="n">PRIOR</th></tr>{ec}'
             f'<tr><th class="n">PT</th><th colspan="4">FED SPEAKERS</th></tr>{fd}<tr><th class="n">PT</th><th>TREASURY AUCTIONS (7D)</th><th></th><th class="n" colspan="2">SIZE</th></tr>{au}</table>'
             f'<div style="margin-top:4px">{ex}</div><div class="m">Times PT (auction = competitive close). OPEX = 3rd Friday; VIX expiry = Wednesday 30 days before the next month\'s OPEX.</div></div>')
+def _ledger_stale_tag(issue_date, today=None):
+    """' · awaiting update (last issue <date>)' when the issue predates the previous weekday (PT)."""
+    import datetime as _dt
+    from zoneinfo import ZoneInfo as _Z
+    try:
+        d = _dt.date.fromisoformat(str(issue_date)[:10])
+    except ValueError:
+        return " · awaiting update"
+    t = today or _dt.datetime.now(_Z("America/Los_Angeles")).date()
+    prev = t - _dt.timedelta(days=1)
+    while prev.weekday() >= 5:
+        prev -= _dt.timedelta(days=1)
+    return f" · awaiting update (last issue {d.isoformat()})" if d < prev else ""
+
+
 def ledger_panel(N, D):
     if not N: return '<div class="dp"><h3>NIGHT LEDGER</h3><div class="m">No issue parsed.</div></div>'
     es = ((D.get("on") or {}).get("ES") or {}).get("last")
@@ -121,7 +136,7 @@ def ledger_panel(N, D):
     hr = N.get("hit_rate"); hist = N.get("history", [])
     hh = " ".join(f'<span class="tg {"on" if x["hit"] else "off" if x["hit"] is False else "in"}" title="{e(x["date"])} call {e(x["call"])} → {x["pct"] if x["pct"] is not None else "pending"}%">{e(x["date"][5:])} {e(x["call"][0])}</span>' for x in hist)
     d = N.get("direction", "—")
-    return (f'<div class="dp"><h3>NIGHT LEDGER · {e(N.get("date",""))}</h3><div class="q"><i>NEXT-DAY CALL</i> <span class="tg {"on" if d=="UP" else "off" if d=="DOWN" else "in"}">{e(d)}</span></div>'
+    return (f'<div class="dp"><h3>NIGHT LEDGER · {e(N.get("date",""))}{_ledger_stale_tag(N.get("date",""))}</h3><div class="q"><i>NEXT-DAY CALL</i> <span class="tg {"on" if d=="UP" else "off" if d=="DOWN" else "in"}">{e(d)}</span></div>'
             + (f'<div class="q"><i>SINCE ISSUE · {e(N.get("intraday_date") or "")}</i></div>' + "".join(f'<div class="q"><span class="m">{e(x["pt"])} PT</span> {e(x["text"])}</div>' for x in N.get("intraday", [])) if N.get("intraday") else "") +
             f'<div class="q"><i>BASE CASE</i> {e(N.get("base","—"))}</div><div class="q"><i>ALTERNATIVE</i> {e(N.get("alternative","—"))}</div><div class="q"><i>FLIP TRIGGER</i> {e(N.get("trigger","—"))}</div>'
             f'<table style="margin-top:4px"><tr><th class="n">SPY</th><th class="n">ES EQUIV</th><th class="n">vs ES LAST</th><th>TYPE</th><th></th></tr>{lv}</table>'

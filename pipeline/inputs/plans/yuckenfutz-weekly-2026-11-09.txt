@@ -1,0 +1,45 @@
+YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 9 to Fri Nov 13, 2026
+Plan only — not investment advice · updated Mon Nov 9, 3:40 PM PT (after Monday's cash close)
+Weekly implied move (SPY-scale bounds, not ES/SPX points): 713.24–757.34 for Nov 9–13
+Monday: short-covering rally. ES swept 7380 on the Sunday-evening gap down, recovered it, and rotated back to last week's value node near 7596. Weekly structure is still one-time-framing down until buyers follow through.
+
+BIAS (WEEK)
+Cautious / bearish structure with active countertrend squeeze. Monday's rally repaired the short term, not the weekly: the weekly auction is still one-time-framing down. Do not chase shorts into strength and do not chase Monday's runner. Tuesday CPI decides follow-through; trade acceptance and retests with defined risk.
+
+SCENARIOS
+- Bull: ES holds 7562 and reclaims 7595–96 → 7625 → 7648; acceptance above 7648 opens 7690 / 7714 and the weekly references 7740 / 7758. SPY recovery holds above 745 → upper weekly implied bound 757.34.
+- Bear: ES loses 7562 and accepts below 7536 → 7498 → 7457 (top of last week's lower distribution) → 7420; failure to recover keeps 7388 / 7356 / 7335 in play. SPY back under 730 weakens the recovery case → 726–727 retest → 718 → lower weekly implied bound 713.24.
+- Neutral: CPI chop inside 7536–7596; fade the edges, skip the middle.
+
+KEY LEVELS
+
+/ES
+- Resistance: 7595–96 (last week's value node) · 7625 · 7648 · 7690 · 7714 · 7740 · 7758
+- Pivot: 7562 (Monday afternoon pullback low, session pivot) · 7457 (weekly decision zone)
+- Support: 7535–40 · 7498 · 7456–57 · 7420 · 7388 · 7356 · 7335
+
+SPY
+- Resistance: 745 (recovery test) · 757.34 (weekly implied high)
+- Pivot: 739–741 (recovery zone)
+- Support: 730 (larger risk line) · 726–727 (structural retest) · 718 · 713.24 (weekly implied low)
+
+Nasdaq (QQQ and /NQ): levels awaiting update (no verified instrument-specific map for this week yet).
+
+DAY BY DAY
+- Mon Nov 9: done. Short-covering rally from the 7380 Failed Breakdown back to the 7596 value node.
+- Tue Nov 10: CPI m/m and Core CPI 5:30 AM PT; 10-year note auction 10:00 AM PT. Pivot 7562.
+- Wed Nov 11: Veterans Day. Equities open; check product-specific hours and expect thinner bond-market liquidity.
+- Thu Nov 12: 30-year bond auction 10:00 AM PT.
+- Fri Nov 13: PPI 5:30 AM PT.
+
+TRIGGERS / IF-THEN
+1. Hold above 7562 after CPI → long the retest, 7595–96 first; acceptance above 7596 → 7625 / 7648.
+2. Acceptance back below 7536 → Monday's rally in question → 7498, then 7457.
+3. A failed break below 7457 that recovers = squeeze setup again; wait for the reclaim, never catch the first flush.
+4. VIX under 18.36 on a push higher = strength; VIX over 21.48 on a break lower = weakness.
+
+SKIP
+- No positions into CPI or PPI prints; let the first 15 minutes trade.
+- Skip mid-range chop between 7540 and 7560.
+- Skip chasing Monday's runner and skip unplanned or unlimited-risk 0DTE exposure.
+- Do not reuse last week's options-expiry walls as this week's positioning.

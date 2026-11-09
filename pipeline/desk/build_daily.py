@@ -234,7 +234,7 @@ def catalysts(plan):
     if re.search(r"FOMC", bias + " ".join(acts), re.I):
         out.append("FOMC decision <b>2:00</b> PM ET / <b>11:00</b> AM PT — first reaction often the trap; size light")
     for a in acts:
-        if re.search(r"MSFT|GOOG|FDX|INTC|AMZN|SNDK|earnings|GDP|PCE|Claims|ECI", a, re.I):
+        if re.search(r"MSFT|GOOG|FDX|INTC|AMZN|SNDK|earnings|GDP|PCE|Claims|ECI|CPI|PPI|auction", a, re.I):
             out.append(sanitize_text(a))
     # dedupe
     seen, uniq = set(), []
@@ -299,7 +299,7 @@ def charts_html(site: Path, plan_date: str, score: dict | None):
     return (f'<section class="sec" id="plan-charts"><h2>PLAN ON THE CHART</h2>'
             f'<p>{mode}. Same weekly layout: last week of 30m bars with the plan levels drawn on. '
             f'Red = resistance, green = support, amber = pivot, shaded = key zones. '
-            f'Dashed lines = bull / bear paths across Mon to Fri; purple dotted = FOMC Wed 11:00 PT. '
+            f'Dashed lines = bull / bear paths across Mon to Fri; purple ticks = CPI Tue 5:30 AM PT (edge only). '
             f'Bright candles in the MON..FRI columns = actual price action since the plan was made.{arch} Tap a chart to enlarge.</p>'
             f'{sc_html}<div class="chg">{figs}</div></section>')
 
@@ -382,20 +382,13 @@ def page(plan, site: Path):
 LSS_MK = "<!--LSS-->"
 _PLAN = None
 def _im_lines(plan):
-    """Implied-move synopsis from the freshly computed implied_move.json; never use a stale session."""
-    f = HERE / "xnews" / "implied_move" / "implied_move.json"
-    try: im = json.loads(f.read_text())
-    except Exception: return ["Implied move unavailable (calc did not produce data this refresh)."], ""
+    """Labelled, dated implied-move rows (daily + weekly) from the sourced input; 'awaiting update' otherwise."""
     want = (plan.get("long_story_short") or {}).get("for_session") or plan.get("date")
-    if im.get("session_for") != want:
-        return [f"Implied move unavailable for {want} (latest calc is for {im.get('session_for')})."], ""
-    out = []
-    for sym in ("SPY", "SPX", "QQQ"):
-        d = (im.get("symbols") or {}).get(sym, {}).get("daily") or {}
-        if not d.get("straddle"): continue
-        iv = f" · ATM IV {d['atm_iv']*100:.1f}%" if d.get("atm_iv") else ""
-        out.append(f"{sym} ±{d['straddle']:g} ({d.get('move_pct', 0):.2f}%) → {d['lower']:g}–{d['upper']:g} off {d.get('ref', 0):g}{iv}")
-    return (out or ["Implied move unavailable."]), f"ATM straddle, {im.get('session_for')} expiry · calc {im.get('generated_pt','')}"
+    try:
+        import implied_sourced as _ims
+        return _ims.lines(_ims.load(HERE / "xnews" / "implied_move" / "sourced_im.json"), want)
+    except Exception:
+        return ["Implied move: awaiting update"], ""
 
 def lss_html(plan, compact=False):
     L = plan.get("long_story_short") or {}
@@ -407,7 +400,7 @@ def lss_html(plan, compact=False):
     h = [f'<section id="long-story-short" style="{st}"><span style="{tag}">long story short</span>']
     if L.get("headline"): h.append(f'<b style="color:#ffb000;margin-left:8px">{html.escape(sanitize_text(L["headline"]))}</b>')
     if L.get("context"): h.append(f'<div style="margin-top:6px">{html.escape(sanitize_text(L["context"]))}</div>')
-    h.append('<div style="margin-top:6px"><b style="color:#22c7e8">Implied move (daily):</b> ' + " · ".join(html.escape(x) for x in im) +
+    h.append('<div style="margin-top:6px"><b style="color:#22c7e8">Implied move:</b> ' + " · ".join(html.escape(x) for x in im) +
              (f' <span style="color:#8a8470">({html.escape(im_note)})</span>' if im_note else "") + "</div>")
     if L.get("levels"): h.append(blk("Key levels:", "#ffb000", L["levels"]))
     h.append(blk("Bearish lean:", "#ff4d4d", L.get("bearish", "")))
