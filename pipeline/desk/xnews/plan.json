@@ -1,181 +1,59 @@
 {
-  "date": "2026-11-06",
-  "asof_pt": "2026-11-05 20:40 PT",
-  "asof": "2026-11-05 20:40 PT",
-  "session": "2026-11-06",
-  "title": "Yuckenfutz Tradez — Daily Plan — Fri Nov 6, 2026 (NFP)",
-  "bias": {
-    "direction": "NEUTRAL",
-    "reason": "Thu 11/5 elevator-down: SPY −4.4% (765.47→733.00), QQQ −6.5%, chips −11%, VIX 16.6→28.2 — worst day since Apr 2025. ES lost the 7606 pivot (bear case) and flushed to 7346 RTH / 7322 overnight; 7420 Failed Breakdowns paid 3x into the close. Overnight ES ~7390 bounce attempt. Bears control <7490 and ultimately <7606. NFP 5:30 AM PT is the swing event: lean is a reflex bounce toward SPY 740 / stretch 748–750 gamma IF jobs cooperate, then fade/reload shorts at 750. Lose 726 = next leg toward 720/716."
+ "date": "2026-11-10",
+ "asof_pt": "2026-11-09 15:40 PT",
+ "asof": "2026-11-09 15:40 PT",
+ "session": "2026-11-10",
+ "title": "Yuckenfutz Tradez \u2014 Daily Plan \u2014 Tue Nov 10, 2026 (CPI)",
+ "bias": {
+  "direction": "NEUTRAL",
+  "reason": "Mon 11/9 short-covering rally: ES gapped down Sunday evening, swept the 7380 low, recovered it (Failed Breakdown) and ripped through 7478 / 7490 / 7506 / 7558, completing a rotation back to last week's value area near 7596. Selling aggression showed above 7562 in the afternoon. Into CPI 5:30 AM PT the session pivot is ES 7562: holding above favors follow-through toward 7596, losing it and accepting below 7536 puts Monday's move in question. Neutral into the print; lean with acceptance, not anticipation."
+ },
+ "overnight_bias": "NEUTRAL INTO CPI \u2014 ES pivot 7562 \u00b7 7595\u201396 overhead \u00b7 7535\u201340 support \u00b7 CPI 5:30 PT",
+ "sources_count": 3,
+ "key_levels": [
+  {
+   "price": 7596,
+   "note": "ES 7595\u201396 resistance \u2014 last week's value-area node; reclaim and hold = short-term bullish"
   },
-  "overnight_bias": "BEARISH TREND / BOUNCE WATCH — ES 7420 FBD · SPY 733 · VIX 28 · NFP 5:30 PT",
-  "sources_count": 18,
-  "key_levels": [
-    {
-      "price": 7606,
-      "note": "ES bull/bear pivot — bears control below; must reclaim to rally toward highs"
-    },
-    {
-      "price": 7558,
-      "note": "ES reclaim target / resistance"
-    },
-    {
-      "price": 7533,
-      "note": "ES resistance"
-    },
-    {
-      "price": 7513,
-      "note": "ES 1st target hit Thu AM then rejected"
-    },
-    {
-      "price": 7490,
-      "note": "ES 7490–95 Tuesday low — next big test; recover = bull trigger"
-    },
-    {
-      "price": 7460,
-      "note": "ES target 3 (hit late Thu)"
-    },
-    {
-      "price": 7441,
-      "note": "ES target 2 (hit)"
-    },
-    {
-      "price": 7432,
-      "note": "ES target 1 (hit 2x)"
-    },
-    {
-      "price": 7420,
-      "note": "ES key level — 3 Failed Breakdown recoveries Thu; must hold/recover again to rally"
-    },
-    {
-      "price": 7346,
-      "note": "ES Thu RTH low"
-    },
-    {
-      "price": 7322,
-      "note": "ES overnight low (Thu night)"
-    },
-    {
-      "price": 750,
-      "note": "SPY gamma wall / reload-short zone (stretch bounce target)"
-    },
-    {
-      "price": 748.23,
-      "note": "SPY resistance (chart level)"
-    },
-    {
-      "price": 741.36,
-      "note": "SPY resistance / DP cluster 741.5–741.8 ($115M)"
-    },
-    {
-      "price": 740,
-      "note": "SPY bounce target; +DELTA/−GEX line"
-    },
-    {
-      "price": 737.23,
-      "note": "SPY DP $66.6M"
-    },
-    {
-      "price": 735.41,
-      "note": "SPY DP $941.9M — largest print, overhead pivot"
-    },
-    {
-      "price": 733,
-      "note": "SPY Thu close"
-    },
-    {
-      "price": 730,
-      "note": "SPY +GEX support"
-    },
-    {
-      "price": 727.4,
-      "note": "SPY AH low / DP cluster 728–729 (AH fills)"
-    },
-    {
-      "price": 726,
-      "note": "SPY +GEX / chart support 726.40"
-    },
-    {
-      "price": 720,
-      "note": "SPY +GEX / DP prints 719.9–720.7"
-    },
-    {
-      "price": 716,
-      "note": "SPY August low — next leg target"
-    },
-    {
-      "price": 647,
-      "note": "QQQ Thu close (low of day); NQ 26570 RTH low / ~26990 overnight"
-    }
-  ],
-  "path": {
-    "bull": "NFP cooperates: ES hold 7420 → 7460 → 7490–95 (Tue low); reclaim 7490 → 7513/7533/7558; SPY 735.4 DP reclaim → 737.2 → 740/741.4 → stretch 748–750 gamma. Fade/reload shorts into 750; 7606 only above = trend repair.",
-    "bear": "Hot/ugly NFP or 7420 fails: ES 7346 → 7322 → 7300s; SPY lose 730/727.4 AH low → 726 → 720 → 716 August low; QQQ under 647 extends. Elevator-down = wait for the next Failed Breakdown, don't catch knives."
+  {
+   "price": 7562,
+   "note": "ES session pivot \u2014 Monday afternoon pullback low; hold above = upside follow-through, lose = rotation lower"
   },
-  "actionable": [
-    "Thu 11/5 close: SPY 733.00 (−4.41%), SPX 7353.73 (−4.36%), QQQ 647.05 (−6.49%), NDX 26629.8, VIX 28.18 (+70%). ES RTH 7737.25→7383 (low 7346); overnight ES ~7389.5, NQ ~26987 (8:23 PM PT). WTI 91.95, Brent >$100, 10Y 4.84%.",
-    "Drivers: post-midterm Dem sweep (House + Senate) + AI/chip liquidation (SMH −11%, biggest chip drop since Mar 2020); reports of hedge funds in distress; KOSPI <5000, TOPIX −6% overnight; oil spike.",
-    "Catalyst: Oct NFP Fri 11/6 5:30 AM PT (first print post-midterms). MRNA earnings pre-market. Expect huge 0DTE range — SPY IV Rank 74%.",
-    "ES map: 7606 bear-case pivot lost Thu. 7420 = key — three Failed Breakdown recoveries paid 7432/7441/7460. 7490–95 Tue low is the next big test; bears control below 7490, ultimately 7606.",
-    "Dark pool / flow: $941.9M SPY DP at 735.41 (biggest) + $115.5M 741.54 + $66.6M 737.23; 17 downside AH prints filled 728–733; next unfilled DP 727.8, 726–722, 720.7/719.9 (into monthly 50MA). QQQ $16M put buyers. Gamma: −GEX 736/740, +GEX 730 / 726 / 720.",
-    "Night Ledger 11/5: UP call, hit rate 13/21 (61.9%). Not done selling — bounce lean to 740, stretch 750 gamma; reload puts at 750 for the next leg through the 200DMA. Speculative ultimate destination ~697.84.",
-    "Other desks: shallow recovery 748–752 then another swoosh toward August low 716; dip-buyers sized in citing VIX-spike forward returns (+3.3% 1M avg).",
-    "Gameplan: no pre-NFP risk. Let the first 15 minutes print. Long only on ES 7420 hold/7490 reclaim with SPY >735.4; target 740/748–750 and fade there. Short failures at 740/750 or a lose of 727.4. Size down — VIX 28 = 2–3x normal ranges."
-  ],
-  "levels": [],
-  "friday_recap": {
-    "SPY": {
-      "o": 765.47,
-      "h": 765.97,
-      "l": 732.71,
-      "c": 733.0,
-      "chg": -4.41
-    },
-    "QQQ": {
-      "o": 683.12,
-      "h": 683.65,
-      "l": 647.05,
-      "c": 647.05,
-      "chg": -6.49
-    },
-    "SPX": {
-      "o": 7678.72,
-      "h": 7681.29,
-      "l": 7350.35,
-      "c": 7353.73,
-      "chg": -4.36
-    },
-    "ES": {
-      "o": 7737.25,
-      "h": 7738.75,
-      "l": 7346.0,
-      "c": 7383.0,
-      "chg": -4.46
-    },
-    "NQ": {
-      "o": 28663.0,
-      "h": 28668.5,
-      "l": 26570.0,
-      "c": 26752.0,
-      "chg": -6.67
-    },
-    "VIX": {
-      "o": 17.14,
-      "h": 28.36,
-      "l": 16.7,
-      "c": 28.18,
-      "chg": 69.66
-    },
-    "drivers": "Thu 11/5: post-midterm Dem sweep + AI/chip liquidation (SMH −11%), hedge-fund distress reports, oil spike (Brent >$100); VIX +70%; worst day since Apr 2025."
+  {
+   "price": 7538,
+   "note": "ES 7535\u201340 support \u2014 first support of interest; acceptance below 7536 questions Monday's rally"
   },
-  "long_story_short": {
-    "for_session": "2026-11-06",
-    "asof_pt": "2026-11-05 20:40 PT",
-    "headline": "Fri 11/6 — NFP 5:30 AM PT · NEUTRAL into jobs",
-    "context": "Thu close SPY 733.00 (−4.41%), SPX 7353.73, QQQ 647.05 (−6.49%), VIX 28.18 (+70%); ES RTH low 7346 / close 7383, overnight ~7389.5 at 8:23 PM PT.",
-    "levels": "ES 7606 · 7490 · 7420 · 7346 · 7322 | SPY 750 · 740/741.4 · 735.41 · 730 · 727.40 · 726 · 720 · 716",
-    "bearish": "Bears control below ES 7490 and ultimately 7606. If NFP is hot/ugly or ES loses 7420: ES 7346 → 7322; SPY loses 730 / 727.40 → 726 → 720 → 716 August low.",
-    "bullish": "If NFP cooperates and ES holds 7420: SPY reclaims 735.41 (largest dark pool, $941.9M) → 740 / 741.4, stretch 748–750, then fade. Night Ledger calls UP: bounce lean 740 / stretch 750.",
-    "general": "NEUTRAL into NFP. Bounce lean only while ES 7420 and SPY 735.40 hold; most likely a volatile jobs-day bounce toward 740 that gets sold, unless 7420 fails. Trend not repaired until ES reclaims 7606."
+  {
+   "price": 7457,
+   "note": "ES 7456\u201357 support \u2014 top of last week's lower distribution"
+  },
+  {
+   "price": 7420,
+   "note": "ES 7420 support \u2014 deeper support / prior recovery level"
   }
+ ],
+ "path": {
+  "bull": "ES holds 7562 \u2192 7595\u201396 reclaim \u2192 7625 \u2192 7648 (targets above the filtered range; react, don't chase).",
+  "bear": "ES breaks and holds below 7562 \u2192 7535\u201340 \u2192 7498; acceptance below 7536 puts Monday's rally in question \u2192 7456\u201357 \u2192 7420."
+ },
+ "actionable": [
+  "Mon 11/9 recap: Sunday-evening gap down swept 7380 and recovered (Failed Breakdown); ES ran 7478 \u2192 7490 \u2192 7506 \u2192 7558 and rotated back toward last week's value node at 7596. Afternoon pullback low 7562 = Tuesday's pivot.",
+  "Key-level filter: ES range = Monday's full session (overnight + RTH, ~7385.50\u20137600.50); no ES-matched implied move yet, so the band is not padded. Above the pivot only 7595\u201396 qualifies; 7625 / 7648 sit outside and stay targets only. Below: 7535\u201340, 7456\u201357, 7420 (top 3 by confluence). Re-rank once Tuesday's overnight range prints.",
+  "Implied move: SPY Tue Nov 10 daily = awaiting update (not yet published as of Mon 3:40 PM PT). SPY weekly Nov 9\u201313 = 713.24\u2013757.34 (SPY-scale, not ES/SPX points).",
+  "SPY / QQQ / NQ intraday levels: awaiting update (Tue pre-open board not yet published; Monday's board is not reused).",
+  "VIX filter: VIX under 18.36 alongside an ES push higher = strength; VIX over 21.48 alongside an ES break lower = weakness.",
+  "CPI m/m + Core CPI Tue 5:30 AM PT, 10-year note auction 10:00 AM PT: no position into the print; let the first 15 minutes trade.",
+  "Gameplan: long only on a hold/retest of 7562 after CPI, first target 7595\u201396; short only on acceptance back below 7536 targeting 7498. Skip the middle (7540\u20137560 chop) and skip chasing Monday's runner. Size down; ranges are still elevated."
+ ],
+ "levels": [],
+ "long_story_short": {
+  "for_session": "2026-11-10",
+  "asof_pt": "2026-11-09 15:40 PT",
+  "headline": "Tue 11/10 \u2014 CPI 5:30 AM PT \u00b7 NEUTRAL, pivot ES 7562",
+  "context": "Monday: vicious short-covering rally. ES swept 7380 Sunday night, recovered, and ran to last week's value node near 7596; afternoon pullback low 7562.",
+  "levels": "ES pivot 7562 | above 7595\u201396 | below 7535\u201340 \u00b7 7456\u201357 \u00b7 7420",
+  "bearish": "Break and hold below 7562 \u2192 7535\u201340 \u2192 7498; acceptance below 7536 questions Monday's rally. VIX over 21.48 on a break lower = weakness.",
+  "bullish": "Hold above 7562 \u2192 reclaim 7595\u201396 \u2192 7625 / 7648. VIX under 18.36 on a push higher = strength.",
+  "general": "NEUTRAL into CPI. Trade the reaction at 7562, not a prediction. No SPY intraday levels until Tuesday's board posts."
+ }
 }

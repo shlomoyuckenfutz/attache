@@ -1,77 +1,45 @@
-YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 2 to Fri Nov 6, 2026
-Plan only — not investment advice · Spots = Fri 10/30 close · gamma = full open-interest book (negative)
-Fri close: SPY 755.72 · QQQ 690.49 · /ES 7614.50 · /NQ 28543.00
-Cash close Fri: S&P 7,580 (−1.82%) · Nasdaq ~25,303 (−2.9%) · Dow 51,770 (−1.09%)
-Week range: SPY 750.36–773.36 · QQQ 683.45–726.14 · /ES 7558.25–7819.50 · /NQ 28232.75–30178 · VIX 16.21–23.93 (close 19.42, +12.9% Fri)
-Friday path: AI-spend scare (AMZN miss + INTC −29% + prior GOOGL) → SPY lost 762.27 dark-pool line and 760 put wall into −16.8B short gamma → Mode-1 red day; late /ES 7575 reclaim ripped ~+45 into the close (settle 7614.50). Flight to safety: yields down, gold/XLU/XLE bid, VIX term structure into backwardation.
+YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 9 to Fri Nov 13, 2026
+Plan only — not investment advice · updated Mon Nov 9, 3:40 PM PT (after Monday's cash close)
+Weekly implied move (SPY-scale bounds, not ES/SPX points): 713.24–757.34 for Nov 9–13
+Monday: short-covering rally. ES swept 7380 on the Sunday-evening gap down, recovered it, and rotated back to last week's value node near 7596. Weekly structure is still one-time-framing down until buyers follow through.
 
 BIAS (WEEK)
-Bearish / negative-gamma regime. Something broke Friday — treat this as a correction week into November, not a buy-the-dip week. Sellers own the tape under the old range (ES 7677–7803 flushed; SPY under 760 and 762.27). Daily+Weekly one-time-framing down; Monthly still in balance (ES ~7542.75–7897.50). Week open filter is ES 7648 — Fri settle 7614.50 is already below, so the default lean is weakness toward 7575 unless 7648 is reclaimed and held. Monday bounce odds are real after a Mode-1 red Friday, but fade green into resistance (7665/7677, SPY 760/771) until acceptance. Everything is short gamma under the flips (~770 SPY / far above), so ranges stay wide — size down, level to level, don't chase.
-
-SPY pivot for the week is 755 / 749.83–750. Holds with reclaim of 757.43 → 758.70 → 760 → bounce path. Fails 754.07 → 750 → 747–745 → 746.77 air pocket; daily close under 749.83 opens 729.2 then 715.95/716. Prefer shorts near 771 on rejection until a weekly close back above ~757 (20-wk area) with QQQ reclaiming ~716–717.
-
-Macro: Brent elevated on Middle East / Hormuz risk; Fed paused at 3.75–4.00% with hike dissents — sticky inflation keeps hike optionality alive. Tech: AI cash-burn narrative is the driver; sell rips in Mag7/chips until the tape proves otherwise. Tue 11/3 = US midterms. Fri 11/6 = October jobs. CPI 11/10. NVDA ~11/17.
+Cautious / bearish structure with active countertrend squeeze. Monday's rally repaired the short term, not the weekly: the weekly auction is still one-time-framing down. Do not chase shorts into strength and do not chase Monday's runner. Tuesday CPI decides follow-through; trade acceptance and retests with defined risk.
 
 SCENARIOS
-- Strength path (open/hold above ES 7648): short-term bullish → gap fill 7725 → acceptance opens 7770–7800/7803. SPY 758.70 → 760 → 762.27 → 771 → 775–776. QQQ 692 → 700 → 709 → 716–717. Still trail into magnets inside a neg-gamma week.
-- Bounce (flush-then-rip): Mon / early-Tue lower low first, then bounce later. Flush: ES 7575 → 7540 (undercut Fri low 7558) → 7503; SPY 752 → 750/749.83 → 747–745; QQQ 690 → 688/683; NQ 28295 → ~28100. Rip: ES 7560/7616 → 7626 → 7648/7663 → 7677 → 7703 → 7725/7731 / 7751–55; SPY 754 → 760 → 762.27 → 765 → 770 → 775; QQQ 692 → 700 → 707 → 710 → 715; NQ 28250 → 28915 → 29320 → 29740 → 30100. Trend only if ES holds 7703+ and SPY 770 closing.
-- Bear (base): Desk lean — a Democratic midterm win (Tue 11/3) is the main sink: results uncertainty / contested races resolve into a Dem House or Dem sweep → sharp risk-off toward the downside magnets. Policy risk (fiscal, energy, AI/data-center regulation) hits an already fragile tape: short bias, Fri settle under ES 7648, deep negative gamma, risk-off wire. Overlay: Hormuz tanker mines keep oil bid; Brent Dec-26 forecast lifted to $105 (oil-up / sticky inflation). Fri jobs can stack another flush after election flow. Path: rejection under ES 7648 / 7665–7677 / SPY 760–762.27 then loss of 7575 → 7540 → 7503 → 7470 → 7440. SPY lose 749.83 → 729.20 → 716. QQQ lose 692 → 678 (then 676 / 200 DMA). NQ ~28295 → ~27900. VIX stays bid / backwardated.
-- Midterms (Tue) / Jobs (Fri): election pin then dump is the default in neg-gamma; soft jobs + dovish Fed-speak → choppy bounce; hot jobs / sticky wages → another leg down into CPI week (11/10).
+- Bull: ES holds 7562 and reclaims 7595–96 → 7625 → 7648; acceptance above 7648 opens 7690 / 7714 and the weekly references 7740 / 7758. SPY recovery holds above 745 → upper weekly implied bound 757.34.
+- Bear: ES loses 7562 and accepts below 7536 → 7498 → 7457 (top of last week's lower distribution) → 7420; failure to recover keeps 7388 / 7356 / 7335 in play. SPY back under 730 weakens the recovery case → 726–727 retest → 718 → lower weekly implied bound 713.24.
+- Neutral: CPI chop inside 7536–7596; fade the edges, skip the middle.
 
 KEY LEVELS
-/ES (Fri settle 7614.50 · Fri low 7558.25 · prior range 7677–7803 LOST)
-Resistance: 7626 · 7645–49 · 7648 (week open filter) · 7663 · 7665 · 7677 (old shelf) · 7703 · 7725 (gap) · 7731 · 7751–55 · 7770 · 7800–7803
-Pivot: 7575 (Mode-1 / multi-week balance low / monthly line)
-Support: 7616 (≈SPX 7582 / SPY 755.9) · 7585 (≈SPX 7550.5 / SPY 752.8) · 7575 · 7560 · 7558 · 7540 · 7520–30 · 7503 · 7500 · 7470 · 7440
 
-SPY (spot 755.72)
-Resistance: 757.43 · 758.17 · 758.70 · 760 LOST put wall · 762.27 LOST dark-pool · 763.07 · 765 · 767.07 · 768.6–770.4 flip · 770 call wall · 771 short-zone · 775–776 · 779.29 · 781.62
-Pivot: 755 (Fri close / put node) · 754.07 · 749.83–750 (line in the sand)
-Support: 755.9 · 752.8 · 750.24 · 750 · 747.73 / 747–745 · 746.77 / 746.69 · 745 · 729.2 · 715.95 / 716
-Gamma: under flip (~770) · put wall migrated to 755 · net ~−$17B near-exp · NEGATIVE / short gamma
-LOST Fri: 762.27 · 760 · (and ES 7677–7803 range)
+/ES
+- Resistance: 7595–96 (last week's value node) · 7625 · 7648 · 7690 · 7714 · 7740 · 7758
+- Pivot: 7562 (Monday afternoon pullback low, session pivot) · 7457 (weekly decision zone)
+- Support: 7535–40 · 7498 · 7456–57 · 7420 · 7388 · 7356 · 7335
 
-QQQ (spot 690.49)
-Resistance: 692 · 695 · 699.07 · 700 · 707 · 709.04 · 710 · 715–718 (20-wk ~716–717)
-Support: 690.49 · 688 · 685 · 683.72 / 683.45 · 678 · 676 (200 DMA) · 670
-Gamma: deep neg · treat 700 as first real reclaim; weekly close >716–717 = stronger bottom evidence
+SPY
+- Resistance: 745 (recovery test) · 757.34 (weekly implied high)
+- Pivot: 739–741 (recovery zone)
+- Support: 730 (larger risk line) · 726–727 (structural retest) · 718 · 713.24 (weekly implied low)
 
-/NQ (Fri settle 28543 · Fri low 28232.75)
-Resistance: 28710 · ~28915 (≈QQQ 700) · 29320 · 29740 · 30160 (Wed AH ~30178)
-Support: 28295 · 28232 · ~28100 · ~27900 · ~27500
-
-SPX
-Fri cash 7,580: under flip · support 7582 (≈ES 7616) · 7550.5 (≈ES 7585) · put walls 7600 / 7550 / 7500
-Cross-map: ES 7614.50 · SPX 7580 · SPY 755.72 → basis ES−SPX +34.5 · SPY/SPX 0.09970
-ES 7648 → SPX ≈7613.5 / SPY ≈759.1 · ES 7725 → SPX ≈7690.5 / SPY ≈766.7 · ES 7470 → SPX ≈7435.5 / SPY ≈741.3 · ES 7440 → SPX ≈7405.5 / SPY ≈738.3
-
-LOST LAST WEEK (mark as resistance on reclaim only)
-- ES 7677–7803 range · ES 7703 bear trigger · SPY 762.27 · SPY 760 put wall · QQQ 707 / 20-week area
+Nasdaq (QQQ and /NQ): levels awaiting update (no verified instrument-specific map for this week yet).
 
 DAY BY DAY
-- Mon 11/2: ISM Manufacturing 7 AM PT · AAPL / PLTR earnings. Map both open regimes around ES 7648. Flush path: ES 7575 → 7540; SPY 752 → 750/749.83; QQQ 690 → 688. Strength path: hold/reclaim 7648 → 7725. Fade premature green into 7665/760/771 before acceptance. No US jobs data.
-- Tue 11/3: US midterms + JOLTS 7 AM PT. Event risk — smaller size, expect pin then flow.
-- Wed 11/4: ADP 5:15 AM PT · ISM Services 7 AM PT. Soft ADP → bounce fuel; hot → sell rip.
-- Thu 11/5: Claims + Unit Labor Costs 5:30 AM PT. Prep for Friday jobs; Fed speakers out of blackout.
-- Fri 11/6: October jobs 5:30 AM PT (NFP cons ~65k / U3 4.2%). Main print — no new entries 5:15–5:45 AM PT. Soft → short-covering into old resistance; hot → another flush toward SPY 750/745/729.
+- Mon Nov 9: done. Short-covering rally from the 7380 Failed Breakdown back to the 7596 value node.
+- Tue Nov 10: CPI m/m and Core CPI 5:30 AM PT; 10-year note auction 10:00 AM PT. Pivot 7562.
+- Wed Nov 11: Veterans Day. Equities open; check product-specific hours and expect thinner bond-market liquidity.
+- Thu Nov 12: 30-year bond auction 10:00 AM PT.
+- Fri Nov 13: PPI 5:30 AM PT.
 
 TRIGGERS / IF-THEN
-1. ES reclaims and holds 7648 → 7663 → 7677 → 7703 → 7725 → 7770/7800–03 (strength path)
-2. After Mon/Tue flush prints a lower low (ES ≤7540 / under Fri 7558): ES reclaims 7616 → 7648/7649 → 7677 → 7703 → 7725/7731 / 7751–55 — don't buy the first green before the undercut
-3. ES rejects 7648 / 7665–7677 and loses 7575 → short toward 7560 → 7558 → 7520–30 → 7503 → 7470/7440
-4. Flush into 7558/7575 that recovers → bounce long level to level back to 7616/7626/7648 (Mode-1 pattern)
-5. SPY holds 749.83–755 and reclaims 758.70 → 760 → 762.27 → 765 → 771 → 775–776; failure at 760 = short back to 755/754
-6. SPY loses 754.07 / 749.83 → 747–745 → 746.69 → 729.2 → 715.95/716 (bear path confirming)
-7. Relief rally into SPY 771 with rejection → preferred short; sustained >775–776 weakens that setup
-8. QQQ/NQ: reject 700 / ~28915 → 685 / 28295; acceptance over 707 / ~29320 opens 710–716 / 29740 → 30160 once ES >7677
-9. Under ES 7575 on a closing basis → bear regime, no hero longs; weekly close SPY <750 with QQQ <685 → deeper November correction
-10. VIX stays backwardated and >19 → fade green; VIX compresses under 17 with SPY >760 → bounce has legs
+1. Hold above 7562 after CPI → long the retest, 7595–96 first; acceptance above 7596 → 7625 / 7648.
+2. Acceptance back below 7536 → Monday's rally in question → 7498, then 7457.
+3. A failed break below 7457 that recovers = squeeze setup again; wait for the reclaim, never catch the first flush.
+4. VIX under 18.36 on a push higher = strength; VIX over 21.48 on a break lower = weakness.
 
 SKIP
-- Calling a bottom Monday after one Mode-1 rip / assuming Friday marked the low
-- Chasing green into ES 7677 / SPY 762 / 771 without acceptance
-- Knife-catching SPY 745 / ES 7520–7470 on a full-speed elevator
-- Swing size into midterms / Friday jobs — day-trade week, take profits level to level
-- Buying AI/tech rip on narrative alone while net GEX stays deeply negative
-
-Updated: 2026-11-01 14:37 PT full X sweep (27 handles; KT parked). Plan only. Not investment advice.
+- No positions into CPI or PPI prints; let the first 15 minutes trade.
+- Skip mid-range chop between 7540 and 7560.
+- Skip chasing Monday's runner and skip unplanned or unlimited-risk 0DTE exposure.
+- Do not reuse last week's options-expiry walls as this week's positioning.
