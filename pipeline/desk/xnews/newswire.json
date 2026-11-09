@@ -1,43 +1,6 @@
 {
- "generated_at_pt": "2026-11-08 19:54 PT",
- "generated_utc": "2026-11-09T03:54:55+00:00",
+ "generated_at_pt": "2026-11-08 21:00 PT",
+ "generated_utc": "2026-11-09T05:00:38+00:00",
  "breaking_minutes": 30,
- "items": [
-  {
-   "ts_utc": "2026-11-06T04:34:05.000Z",
-   "time_pt": "20:34",
-   "date_pt": "11/05",
-   "headline": "Russian Forces Hit Power Station Near Ukraine’s Sumy, According to Defence Ministry…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-06T04:17:57.000Z",
-   "time_pt": "20:17",
-   "date_pt": "11/05",
-   "headline": "North Korea Removes Parliamentary Vice Chairman, Revises Construction and Precious…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-06T04:06:05.000Z",
-   "time_pt": "20:06",
-   "date_pt": "11/05",
-   "headline": "Thai Inflation Surpasses Central Bank Target as Price Pressures Accelerate",
-   "tag": "FED",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-06T03:58:58.000Z",
-   "time_pt": "19:58",
-   "date_pt": "11/05",
-   "headline": "US Stock Market Expected to Find It Difficult to Recover to October Peak",
-   "tag": "EQUITY",
-   "src": "SRC W2",
-   "breaking": false
-  }
- ]
+ "items": []
 }
