@@ -1,6 +1,6 @@
 {
- "generated_at_pt": "2026-11-08 15:35 PT",
- "generated_utc": "2026-11-08T23:35:42+00:00",
+ "generated_at_pt": "2026-11-08 16:59 PT",
+ "generated_utc": "2026-11-09T00:59:27+00:00",
  "breaking_minutes": 30,
  "items": [
   {
@@ -73,24 +73,6 @@
    "headline": "US oil futures advance $1 to trade at $91.52/BBL",
    "tag": "ENERGY",
    "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-06T00:37:17.000Z",
-   "time_pt": "16:37",
-   "date_pt": "11/05",
-   "headline": "Trump says voters should blame themselves for stock market rout",
-   "tag": "POLICY",
-   "src": "SRC W1",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-05T23:51:06.000Z",
-   "time_pt": "15:51",
-   "date_pt": "11/05",
-   "headline": "Nvidia CEO called in by lawmakers over ties to alleged Chinese spy",
-   "tag": "TECH",
-   "src": "SRC W1",
    "breaking": false
   }
  ]
