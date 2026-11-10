@@ -128,7 +128,7 @@ class I8_HeaderStamp(unittest.TestCase):
             g = json.loads(m.group(2)); g["updated_pt"] = "SENTINEL"
             p.write_text(t[:m.start(2)] + json.dumps(g, ensure_ascii=False) + t[m.end(2):])
             G.patch_command(p, D); self.assertEqual(self._gl(p)["updated_pt"], "SENTINEL")  # unchanged content keeps stamp
-            p.write_text(p.read_text().replace("THE WIRE · LAST 5", "THE WIRE · LAST 5 "))
+            p.write_text(p.read_text().replace('id="brief"', 'id="brief" '))
             G.patch_command(p, D); self.assertNotEqual(self._gl(p)["updated_pt"], "SENTINEL")
         self.assertIn("$('#ts').textContent=(window.GL&&GL.updated_pt)||D.updated;", src)
 

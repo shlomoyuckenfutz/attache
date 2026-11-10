@@ -34,9 +34,6 @@ def strict_scan(root=ROOT):
         if not p.exists():
             continue
         t = p.read_text(encoding="utf-8", errors="replace")
-        if f == "command/index.html":  # the wire block carries outside headlines; scan everything else
-            import re as _re
-            t = _re.sub(r'<section class="nw nwt" id="z-wire">.*?</section>', "", t, flags=_re.S)
         m = rx.search(t)
         if m:
             hits.append(f"{f}: {m.group(0)!r} …{t[max(0, m.start()-40):m.end()+40]!r}")

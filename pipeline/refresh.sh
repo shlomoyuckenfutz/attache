@@ -47,7 +47,7 @@ run "first_blade" python3 first_blade.py
 
 # 3) X-levels rebuild (needs levels_raw from bot + bars)
 run "build_xlevels" bash -c 'cd xnews && timeout 120 python3 build_xlevels.py'
-# 3b) THE WIRE: rebuild newswire.json from bot-written newswire_raw.json, patch command ticker
+# 3b) newswire.json from bot-written newswire_raw.json; strip any leftover command ticker (section retired)
 run "newswire_fetch" bash -c 'cd xnews && python3 newswire_fetch.py'
 run "patch_newswire" python3 patch_newswire.py "$ORB_SITE"
 

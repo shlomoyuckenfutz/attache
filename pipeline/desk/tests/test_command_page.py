@@ -34,7 +34,34 @@ class StaticChecks(unittest.TestCase):
             t = p.read_text(); s = t.index("window.drawBrief=t=>{"); body = t[s:t.index("$('#brief').innerHTML", s)]
             for r in ("OVERNIGHT · ES", "FUTURES · ES", "THE WIRE<span>"):
                 self.assertNotIn(r, body)
-            self.assertIn('id="z-wire"', t)  # the wire section itself stays on the page
+            self.assertNotIn('id="z-wire"', t)
+            self.assertNotIn("THE WIRE · LAST 5", t)
+
+
+    def test_no_wire_section(self):
+        t = PAGE.read_text()
+        self.assertNotIn('id="z-wire"', t)
+        self.assertNotIn("THE WIRE · LAST 5", t)
+        self.assertNotIn("full wire", t.lower())
+        self.assertNotRegex(t, r'<section[^>]*id="z-wire"')
+
+    def test_refresh_does_not_readd_wire(self):
+        import tempfile, importlib.util
+        spec = importlib.util.spec_from_file_location("patch_newswire", ROOT / "pipeline/desk/patch_newswire.py")
+        mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
+        with tempfile.TemporaryDirectory() as td:
+            site = pathlib.Path(td); cmd = site / "command"; cmd.mkdir()
+            src = PAGE.read_text()
+            (cmd / "index.html").write_text(src)
+            self.assertTrue(mod.strip_file(cmd / "index.html"))
+            self.assertNotIn('id="z-wire"', (cmd / "index.html").read_text())
+            leftover = src.replace("<main>", "<main><style>\n.nw{border:1px solid #232323}</style><section class=\"nw nwt\" id=\"z-wire\"><div class=\"nh\">THE WIRE · LAST 5</div></section><script>(function(){var m=30*60e3;})();</script>", 1)
+            (cmd / "index.html").write_text(leftover)
+            self.assertTrue(mod.strip_file(cmd / "index.html"))
+            out = (cmd / "index.html").read_text()
+            self.assertNotIn('id="z-wire"', out)
+            self.assertNotIn("THE WIRE · LAST 5", out)
+            self.assertIn("<main>", out)
 
     def test_glance_data_honest(self):
         G = glance_data()
@@ -76,7 +103,7 @@ class RenderedChecks(unittest.TestCase):
             cls.R = pg.evaluate("""()=>({
               glance:[...document.querySelectorAll('#glance .gc')].map(c=>({k:c.querySelector('.gk').innerText, t:c.innerText})),
               tiles:[...document.querySelectorAll('#brief .tile')].map(c=>({h:c.querySelector('h4').innerText, d:(c.querySelector('h4 span')||{}).innerText||'', t:c.innerText, body:c.innerText.replace(c.querySelector('h4').innerText,'').trim()})),
-              cd:(document.getElementById('glCd')||{}).innerText||'', qs:document.getElementById('qs').innerText, ts:document.getElementById('ts').innerText, wire:!!document.querySelector('#z-wire .nh'),
+              cd:(document.getElementById('glCd')||{}).innerText||'', qs:document.getElementById('qs').innerText, ts:document.getElementById('ts').innerText, wire:!!document.querySelector('#z-wire'),
               rows:(()=>{const g=document.getElementById('brief').getBoundingClientRect(),m={};[...document.querySelectorAll('#brief .tile')].forEach(t=>{const r=t.getBoundingClientRect(),k=Math.round(r.top);(m[k]=m[k]||[]).push([r.left-g.left,g.right-r.right])});return Object.values(m)})(),
               cols:getComputedStyle(document.getElementById('brief')).gridTemplateColumns.split(' ').length})""")
             b.close()
@@ -102,12 +129,12 @@ class RenderedChecks(unittest.TestCase):
         for g in self.R["glance"]:
             self.assertTrue(g["t"].replace(g["k"], "").strip(), g["k"]); self.assertRegex(g["t"], DATED)
 
-    def test_removed_tiles_absent_and_wire_section_stays(self):
+    def test_removed_tiles_absent_and_wire_section_gone(self):
         hs = [t["h"].split("\n")[0].upper() for t in self.R["tiles"]]
         self.assertEqual(len(hs), len(EXPECTED), hs)
         for r in ("OVERNIGHT · ES", "FUTURES · ES", "THE WIRE"):
             self.assertFalse(any(h.startswith(r) for h in hs), r)
-        self.assertTrue(self.R["wire"]); self.assertNotIn("7571", self.R["qs"])
+        self.assertFalse(self.R["wire"]); self.assertNotIn("7571", self.R["qs"])
 
     def test_header_shows_real_update(self):
         self.assertNotIn("Oct 30", self.R["ts"]); self.assertRegex(self.R["ts"], r"Nov \d+, 2026 .* PT")
