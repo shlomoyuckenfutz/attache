@@ -1,0 +1,183 @@
+{
+ "schema": 1,
+ "asof": "2026-11-09",
+ "asof_label": "11/9 close",
+ "note": "Options positioning recorded at the 11/9 close. Descriptive only, not a forecast. 'Magnet' = largest gamma strike for that expiry. Regime = net gamma for that single expiry.",
+ "close": {
+  "SPX": 7549.95,
+  "SPY": 752.69,
+  "QQQ": 678.68,
+  "NDX": 27900.61
+ },
+ "basis": {
+  "ES_minus_SPX": 29.27,
+  "NQ_minus_NDX": null
+ },
+ "expiries": [
+  "2026-11-10",
+  "2026-11-13",
+  "2026-11-20"
+ ],
+ "levels": {
+  "SPX": {
+   "2026-11-10": {
+    "flip": 7578.8,
+    "magnet": 7550,
+    "put_wall": 7500,
+    "call_wall": 7550,
+    "net_gex": "-$797.1M",
+    "regime": "NEG"
+   },
+   "2026-11-13": {
+    "flip": 7592.2,
+    "magnet": 7650,
+    "put_wall": 7450,
+    "call_wall": null,
+    "net_gex": "-$2.2B",
+    "regime": "NEG"
+   },
+   "2026-11-20": {
+    "flip": 7686.9,
+    "magnet": 7500,
+    "put_wall": null,
+    "call_wall": 7700,
+    "net_gex": "-$16.0B",
+    "regime": "NEG"
+   }
+  },
+  "SPY": {
+   "2026-11-10": {
+    "flip": 734.8,
+    "magnet": 750,
+    "put_wall": 758,
+    "put_wall_note": "above price",
+    "call_wall": null,
+    "net_gex": "+$802.5M",
+    "regime": "POS"
+   },
+   "2026-11-13": {
+    "flip": 758.6,
+    "magnet": 730,
+    "put_wall": null,
+    "call_wall": 750,
+    "net_gex": "-$847.5M",
+    "regime": "NEG"
+   },
+   "2026-11-20": {
+    "flip": 771.6,
+    "magnet": 725,
+    "put_wall": null,
+    "call_wall": 800,
+    "net_gex": "-$4.5B",
+    "regime": "NEG"
+   }
+  },
+  "QQQ": {
+   "2026-11-10": {
+    "flip": 664.1,
+    "magnet": 678,
+    "put_wall": 671,
+    "call_wall": null,
+    "net_gex": "+$212.3M",
+    "regime": "POS"
+   },
+   "2026-11-13": null,
+   "2026-11-20": null
+  },
+  "NDX": {
+   "2026-11-10": {
+    "flip": 28458.8,
+    "magnet": 27975,
+    "put_wall": null,
+    "call_wall": 28500,
+    "net_gex": "-$113.3M",
+    "regime": "NEG"
+   },
+   "2026-11-13": null,
+   "2026-11-20": null
+  }
+ },
+ "weekly_em": {
+  "expiry": "2026-11-13",
+  "rows": [
+   {
+    "symbol": "SPX",
+    "pct": 1.87,
+    "lower": 7408.69,
+    "upper": 7691.21
+   },
+   {
+    "symbol": "SPY",
+    "pct": 1.89,
+    "lower": 738.44,
+    "upper": 766.94
+   },
+   {
+    "symbol": "QQQ",
+    "pct": 3.09,
+    "lower": 658.34,
+    "upper": 700.36
+   },
+   {
+    "symbol": "NDX",
+    "pct": 3.09,
+    "lower": 27038.57,
+    "upper": 28762.65
+   }
+  ]
+ },
+ "calendar": [
+  {
+   "date": "2026-11-10",
+   "utc": "2026-11-10T13:30:00Z",
+   "pt": "5:30 AM PT",
+   "name": "CPI",
+   "detail": "CPI · inflation print"
+  },
+  {
+   "date": "2026-11-11",
+   "utc": null,
+   "pt": null,
+   "name": null,
+   "detail": "no event listed"
+  },
+  {
+   "date": "2026-11-12",
+   "utc": "2026-11-12T13:30:00Z",
+   "pt": "5:30 AM PT",
+   "name": "Jobless claims",
+   "detail": "Jobless claims"
+  },
+  {
+   "date": "2026-11-13",
+   "utc": "2026-11-13T13:30:00Z",
+   "pt": "5:30 AM PT",
+   "name": "PPI",
+   "detail": "PPI · producer prices"
+  }
+ ],
+ "flow": {
+  "scope": "options tape, all names, full session",
+  "net": "+$333M",
+  "lean": "bullish",
+  "prints": 13927,
+  "calls": "$750M",
+  "puts": "$1.1B",
+  "put_call": 1.07,
+  "spy_notable": [
+   "$7.0M Dec 18 745 call, bought at the ask",
+   "$5.0M Dec 18 755 call, bought above the ask"
+  ],
+  "spy_directional": "SPY intraday directional premium net −$5.3M (883 notable prints) leaned bearish"
+ },
+ "seasonality": {
+  "SPX": {
+   "week": "Week 46 (Nov 9–13), 2017–2025: higher 5 of 9 · median +0.08% · average +0.13%",
+   "month": "November 2017–2025: median +3.4% · higher 8 of 9"
+  },
+  "QQQ": {
+   "week": "Week 46 (Nov 9–13), 2016–2025: higher 5 of 10 · median +0.02% · average −0.16%",
+   "month": "November 2016–2025: median +3.0% · higher 8 of 10"
+  }
+ }
+}
