@@ -250,15 +250,15 @@
   {
    "date": "2026-11-09",
    "call": "FLAT",
-   "next": null,
-   "pct": null,
-   "hit": null
+   "next": "2026-11-10",
+   "pct": -0.53,
+   "hit": false
   }
  ],
  "hit_rate": {
   "hits": 13,
-  "n": 23,
-  "rate": 56.5
+  "n": 24,
+  "rate": 54.2
  },
  "built": "2026-11-10",
  "intraday": [],
