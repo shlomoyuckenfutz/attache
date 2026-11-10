@@ -5,13 +5,15 @@ ROOT = Path(os.environ.get("ORB_SITE") or Path(__file__).resolve().parents[3])
 BANNED = re.compile(r"mancini|smashelito|\bsmash(?:level)?\b|voltick|kttech|traderjonesy|jonesy|substack|newsletter", re.I)
 TEXT = {".html", ".json", ".js", ".css", ".txt", ".md", ".svg", ".xml"}
 INPUTS = ["pipeline/inputs/plan.json", "pipeline/inputs/implied_move/sourced_im.json",
-          "pipeline/inputs/newswire_raw.json", "pipeline/inputs/positioning/board.json"] + [str(p.relative_to(ROOT)) for p in (ROOT / "pipeline/inputs/plans").glob("yuckenfutz-weekly-2026-11-*.txt")]
+          "pipeline/inputs/newswire_raw.json", "pipeline/inputs/positioning/board.json",
+          "pipeline/inputs/plans/addenda.json"] + [str(p.relative_to(ROOT)) for p in (ROOT / "pipeline/inputs/plans").glob("yuckenfutz-weekly-2026-11-*.txt")]
 
 
 # Stricter scan for the pages/inputs carrying options-positioning data: also no source-specific jargon
 # (level names, band names) and no saved handle anywhere.
 STRICT_FILES = ["command/index.html", "daily/index.html", "weekly/index.html", "gammamap/index.html",
-                "pipeline/inputs/positioning/board.json", "pipeline/desk/gamma_board.py"]
+                "pipeline/inputs/positioning/board.json", "pipeline/desk/gamma_board.py",
+                "pipeline/inputs/plans/addenda.json", "pipeline/desk/plan_addenda.py"]
 JARGON = r"\bvolts?\b|\bsurge\b|\bcoil\b|\breversal level|learned (?:band|move)|grower|first ?squawk|\baxios\b"
 
 

@@ -1,0 +1,31 @@
+{
+ "schema": 1,
+ "daily": {
+  "session": "2026-11-10",
+  "title": "CPI & SPY levels",
+  "rows": [
+   {"k": "piv", "lb": "CPI", "t": "Tue 5:30 AM PT · MoM only"},
+   {"k": "", "lb": "In line", "t": "headline 0.3% / core 0.2%"},
+   {"k": "res", "lb": "Hot", "t": "headline 0.4–0.5% / core 0.3% · bad for stocks (Fed hike odds)"},
+   {"k": "sup", "lb": "Cool", "t": "headline 0.1–0.2% / core 0.1%"},
+   {"k": "res", "lb": "Resistance", "t": "SPY 754.05–755.62 · dark-pool cluster, capped Monday's high"},
+   {"k": "piv", "lb": "Decision", "t": "SPY 757–760 · 100-day, 20-week SMA, 11/13 gamma flip ~758.6"},
+   {"k": "sup", "lb": "Support", "t": "SPY 750 · 746.77 · 741.26 · 730 put wall"},
+   {"k": "sup", "lb": "If cool", "t": "squeeze into 758–760; fade a rejection there; stop leaning short on a daily close above 758"},
+   {"k": "res", "lb": "If hot", "t": "hot or in line: back toward 741, then the 200-day"},
+   {"k": "piv", "lb": "Call", "t": "stay flat through the print, trade the reaction"}
+  ]
+ },
+ "weekly": {
+  "week_start": "2026-11-09",
+  "week_end": "2026-11-13",
+  "title": "Week bias & volatility",
+  "rows": [
+   {"k": "piv", "lb": "Bias flip", "t": "weekly close above SPY 758 = bias flips bullish; below that, rallies stay suspect while the 20-day is under the 50-day"},
+   {"k": "res", "lb": "QQQ", "t": "must reclaim its 20-week SMA (~711) to confirm a real recovery"},
+   {"k": "sup", "lb": "Downside", "t": "SPY 726–727, then 718"},
+   {"k": "sup", "lb": "Put OI", "t": "big put open-interest magnet at SPY 725 for 11/20 monthly opex; 730 put OI for Fri 11/13"},
+   {"k": "res", "lb": "Volatility", "t": "vol not done: VIX futures front month still above spot, and VIX1D holding above 16"}
+  ]
+ }
+}

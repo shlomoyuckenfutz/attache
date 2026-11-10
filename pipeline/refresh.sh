@@ -83,6 +83,7 @@ run "build_daily" python3 build_daily.py --patch-desk "$ORB_SITE/command/index.h
 mkdir -p "$ORB_SITE/gammamap"
 run "gamma_board" python3 gamma_board.py --patch-daily daily/index.html --patch-weekly weekly/index.html \
   --patch-command "$ORB_SITE/command/index.html" --page "$ORB_SITE/gammamap/index.html"
+run "plan_addenda" python3 plan_addenda.py --daily daily/index.html --weekly weekly/index.html
 
 # 12) Copy pages into site root
 mkdir -p "$ORB_SITE/overnight" "$ORB_SITE/weekly/charts/prior" "$ORB_SITE/weekly/charts/plan" \
