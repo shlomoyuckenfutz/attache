@@ -3,9 +3,9 @@ import json, os, re, unittest, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 PAGE = ROOT / "command" / "index.html"
-REMOVED = ["NEWS BIAS", "GAMMA ·", "TOP CONFLUENCE", "ORB15 ·", "NEAREST ES", "BLAST RADIUS ·"]
-EXPECTED = ["TODAY'S PLAN · ES", "IMPLIED MOVE", "CATALYSTS", "OVERNIGHT · ES", "FUTURES · ES", "ES · NQ LEVELS",
-            "FLOW", "SEASONALITY", "THE WIRE", "GAMMA LEVELS"]
+REMOVED = ["NEWS BIAS", "GAMMA ·", "TOP CONFLUENCE", "ORB15 ·", "NEAREST ES", "BLAST RADIUS ·",
+           "OVERNIGHT · ES", "FUTURES · ES", "THE WIRE"]
+EXPECTED = ["TODAY'S PLAN · ES", "IMPLIED MOVE", "CATALYSTS", "ES · NQ LEVELS", "FLOW", "SEASONALITY", "GAMMA LEVELS"]
 BANNED = re.compile(r"mancini|smashelito|\bsmash(?:level)?\b|voltick|kttech|traderjonesy|jonesy|substack|newsletter", re.I)
 DATED = re.compile(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun) Nov \d|Nov \d+–\d+|\d{4}-\d{2}-\d{2}|\b\d{1,2}/\d{1,2}\b|awaiting", re.I)
 
@@ -23,6 +23,18 @@ class StaticChecks(unittest.TestCase):
         for r in REMOVED:
             self.assertNotIn(r, body.upper(), r)
         self.assertNotIn("window.imTile", t)
+        self.assertNotIn("G.overnight", body); self.assertNotIn("G.es", body)
+        self.assertNotIn("overnight", glance_data())
+
+    def test_rerender_keeps_tiles_removed(self):
+        import tempfile, gamma_board as GB
+        with tempfile.TemporaryDirectory() as td:
+            p = pathlib.Path(td) / "c.html"; p.write_text(PAGE.read_text())
+            GB.patch_command(p, GB.load(ROOT / "pipeline/inputs/positioning/board.json"))
+            t = p.read_text(); s = t.index("window.drawBrief=t=>{"); body = t[s:t.index("$('#brief').innerHTML", s)]
+            for r in ("OVERNIGHT · ES", "FUTURES · ES", "THE WIRE<span>"):
+                self.assertNotIn(r, body)
+            self.assertIn('id="z-wire"', t)  # the wire section itself stays on the page
 
     def test_glance_data_honest(self):
         G = glance_data()
@@ -39,7 +51,7 @@ class StaticChecks(unittest.TestCase):
             self.assertRegex(c["utc"], r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:00Z$"); self.assertTrue(c["pt"].endswith("PT"))
         dn = G["im"]["daily_next"]
         self.assertTrue(("lo" in dn) or dn.get("status") == "awaiting tonight's post")
-        self.assertIsNone(G["overnight"]["high"]) if "in progress" in G["overnight"]["status"] else None
+        self.assertNotIn("overnight", G)  # tile removed; its data must not linger
         self.assertFalse(BANNED.search(json.dumps(G, ensure_ascii=False)))
 
 
@@ -64,7 +76,7 @@ class RenderedChecks(unittest.TestCase):
             cls.R = pg.evaluate("""()=>({
               glance:[...document.querySelectorAll('#glance .gc')].map(c=>({k:c.querySelector('.gk').innerText, t:c.innerText})),
               tiles:[...document.querySelectorAll('#brief .tile')].map(c=>({h:c.querySelector('h4').innerText, d:(c.querySelector('h4 span')||{}).innerText||'', t:c.innerText, body:c.innerText.replace(c.querySelector('h4').innerText,'').trim()})),
-              cd:(document.getElementById('glCd')||{}).innerText||'', qs:document.getElementById('qs').innerText, ts:document.getElementById('ts').innerText,
+              cd:(document.getElementById('glCd')||{}).innerText||'', qs:document.getElementById('qs').innerText, ts:document.getElementById('ts').innerText, wire:!!document.querySelector('#z-wire .nh'),
               rows:(()=>{const g=document.getElementById('brief').getBoundingClientRect(),m={};[...document.querySelectorAll('#brief .tile')].forEach(t=>{const r=t.getBoundingClientRect(),k=Math.round(r.top);(m[k]=m[k]||[]).push([r.left-g.left,g.right-r.right])});return Object.values(m)})(),
               cols:getComputedStyle(document.getElementById('brief')).gridTemplateColumns.split(' ').length})""")
             b.close()
@@ -90,12 +102,12 @@ class RenderedChecks(unittest.TestCase):
         for g in self.R["glance"]:
             self.assertTrue(g["t"].replace(g["k"], "").strip(), g["k"]); self.assertRegex(g["t"], DATED)
 
-    def test_futures_es_honest(self):
-        f = [t for t in self.R["tiles"] if t["h"].upper().startswith("FUTURES · ES")][0]
-        G = glance_data()
-        if G["es"]["price"] is None:
-            self.assertIn("awaiting update · last data " + G["es"]["last_data"], f["t"])
-            self.assertNotIn("7571", f["t"]); self.assertNotIn("7571", self.R["qs"])
+    def test_removed_tiles_absent_and_wire_section_stays(self):
+        hs = [t["h"].split("\n")[0].upper() for t in self.R["tiles"]]
+        self.assertEqual(len(hs), len(EXPECTED), hs)
+        for r in ("OVERNIGHT · ES", "FUTURES · ES", "THE WIRE"):
+            self.assertFalse(any(h.startswith(r) for h in hs), r)
+        self.assertTrue(self.R["wire"]); self.assertNotIn("7571", self.R["qs"])
 
     def test_header_shows_real_update(self):
         self.assertNotIn("Oct 30", self.R["ts"]); self.assertRegex(self.R["ts"], r"Nov \d+, 2026 .* PT")
