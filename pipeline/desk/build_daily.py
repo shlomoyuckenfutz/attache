@@ -390,6 +390,15 @@ def _im_lines(plan):
     except Exception:
         return ["Implied move: awaiting update"], ""
 
+def _em_line():
+    """('Weekly expected move to Fri 11/13 (11/9 close)', 'SPX a–b (±x%) · ...') from the positioning board, or None."""
+    try:
+        import gamma_board as _gb
+        lab, rows = _gb.em_rows(_gb.load())
+        return (lab, " · ".join(f"{s} {v}" for s, v in rows)) if rows else None
+    except Exception:
+        return None
+
 def lss_html(plan, compact=False):
     L = plan.get("long_story_short") or {}
     if not L: return ""
@@ -402,6 +411,10 @@ def lss_html(plan, compact=False):
     if L.get("context"): h.append(f'<div style="margin-top:6px">{html.escape(sanitize_text(L["context"]))}</div>')
     h.append('<div style="margin-top:6px"><b style="color:#22c7e8">Implied move:</b> ' + " · ".join(html.escape(x) for x in im) +
              (f' <span style="color:#8a8470">({html.escape(im_note)})</span>' if im_note else "") + "</div>")
+    em = _em_line()
+    if em:
+        h.append('<div style="margin-top:2px"><b style="color:#22c7e8">' + html.escape(em[0]) + ':</b> ' + html.escape(em[1]) +
+                 ' <span style="color:#8a8470">(each index in its own points; not guaranteed limits)</span></div>')
     if L.get("levels"): h.append(blk("Key levels:", "#ffb000", L["levels"]))
     h.append(blk("Bearish lean:", "#ff4d4d", L.get("bearish", "")))
     h.append(blk("Bullish lean:", "#3ddc5c", L.get("bullish", "")))

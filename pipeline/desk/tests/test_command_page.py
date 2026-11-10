@@ -4,9 +4,10 @@ import json, os, re, unittest, pathlib
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 PAGE = ROOT / "command" / "index.html"
 REMOVED = ["NEWS BIAS", "GAMMA ·", "TOP CONFLUENCE", "ORB15 ·", "NEAREST ES", "BLAST RADIUS ·"]
-EXPECTED = ["TODAY'S PLAN · ES", "IMPLIED MOVE", "CATALYSTS", "OVERNIGHT · ES", "FUTURES · ES", "THE WIRE"]
+EXPECTED = ["TODAY'S PLAN · ES", "IMPLIED MOVE", "CATALYSTS", "OVERNIGHT · ES", "FUTURES · ES", "ES · NQ LEVELS",
+            "FLOW", "SEASONALITY", "THE WIRE", "GAMMA LEVELS"]
 BANNED = re.compile(r"mancini|smashelito|\bsmash(?:level)?\b|voltick|kttech|traderjonesy|jonesy|substack|newsletter", re.I)
-DATED = re.compile(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun) Nov \d|Nov \d+–\d+|\d{4}-\d{2}-\d{2}|awaiting", re.I)
+DATED = re.compile(r"(Mon|Tue|Wed|Thu|Fri|Sat|Sun) Nov \d|Nov \d+–\d+|\d{4}-\d{2}-\d{2}|\b\d{1,2}/\d{1,2}\b|awaiting", re.I)
 
 
 def glance_data():
@@ -33,6 +34,8 @@ class StaticChecks(unittest.TestCase):
             self.assertTrue(es["asof"])
         self.assertEqual(G["session"], "2026-11-10")
         for c in G["catalysts"]["items"]:
+            if c.get("utc") is None:  # a day with no listed event carries status text, no time
+                self.assertTrue(c["detail"]); continue
             self.assertRegex(c["utc"], r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:00Z$"); self.assertTrue(c["pt"].endswith("PT"))
         dn = G["im"]["daily_next"]
         self.assertTrue(("lo" in dn) or dn.get("status") == "awaiting tonight's post")
@@ -61,7 +64,8 @@ class RenderedChecks(unittest.TestCase):
             cls.R = pg.evaluate("""()=>({
               glance:[...document.querySelectorAll('#glance .gc')].map(c=>({k:c.querySelector('.gk').innerText, t:c.innerText})),
               tiles:[...document.querySelectorAll('#brief .tile')].map(c=>({h:c.querySelector('h4').innerText, d:(c.querySelector('h4 span')||{}).innerText||'', t:c.innerText, body:c.innerText.replace(c.querySelector('h4').innerText,'').trim()})),
-              cd:(document.getElementById('glCd')||{}).innerText||'', qs:document.getElementById('qs').innerText,
+              cd:(document.getElementById('glCd')||{}).innerText||'', qs:document.getElementById('qs').innerText, ts:document.getElementById('ts').innerText,
+              rows:(()=>{const g=document.getElementById('brief').getBoundingClientRect(),m={};[...document.querySelectorAll('#brief .tile')].forEach(t=>{const r=t.getBoundingClientRect(),k=Math.round(r.top);(m[k]=m[k]||[]).push([r.left-g.left,g.right-r.right])});return Object.values(m)})(),
               cols:getComputedStyle(document.getElementById('brief')).gridTemplateColumns.split(' ').length})""")
             b.close()
 
@@ -78,7 +82,8 @@ class RenderedChecks(unittest.TestCase):
             self.assertRegex(t["d"] + " " + t["body"], DATED, t["h"])
 
     def test_no_empty_cells(self):
-        self.assertEqual(len(self.R["tiles"]) % self.R["cols"], 0, "partial grid row")
+        for row in self.R["rows"]:  # every grid row starts at the left edge and ends at the right edge
+            self.assertLess(min(l for l, _ in row), 2, row); self.assertLess(min(r for _, r in row), 2, row)
         for t in self.R["tiles"]:
             self.assertTrue(t["body"], t["h"])
         self.assertEqual(len(self.R["glance"]), 4)
@@ -91,6 +96,9 @@ class RenderedChecks(unittest.TestCase):
         if G["es"]["price"] is None:
             self.assertIn("awaiting update · last data " + G["es"]["last_data"], f["t"])
             self.assertNotIn("7571", f["t"]); self.assertNotIn("7571", self.R["qs"])
+
+    def test_header_shows_real_update(self):
+        self.assertNotIn("Oct 30", self.R["ts"]); self.assertRegex(self.R["ts"], r"Nov \d+, 2026 .* PT")
 
     def test_countdown_live(self):
         self.assertRegex(self.R["cd"], r"(in (\d+h )?\d+m \d{2}s|released)$")

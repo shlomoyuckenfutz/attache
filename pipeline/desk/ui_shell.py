@@ -97,7 +97,7 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
 
 def bar(page, root):
     # No DESK tab — root redirects to command/
-    tabs = [("command", "COMMAND CENTER", "command/"), ("overnight", "OVERNIGHT", "overnight/"), ("weekly", "WEEKLY", "weekly/"), ("daily", "DAILY", "daily/"), ("study", "STUDY", "study/"), ("exposure", "HEAT", "exposure/"), ("darkpool", "DARK POOL", "darkpool/"), ("projectb", "PROJ B", "project-b/")]
+    tabs = [("command", "COMMAND CENTER", "command/"), ("overnight", "OVERNIGHT", "overnight/"), ("weekly", "WEEKLY", "weekly/"), ("daily", "DAILY", "daily/"), ("study", "STUDY", "study/"), ("exposure", "HEAT", "exposure/"), ("darkpool", "DARK POOL", "darkpool/"), ("gammamap", "GAMMA MAP", "gammamap/"), ("projectb", "PROJ B", "project-b/")]
     cur = "study" if page in ("studylock", "study") else \
           "exposure" if page in ("exposurelock", "exposure") else \
           "darkpool" if page in ("darkpoollock", "darkpool") else \
