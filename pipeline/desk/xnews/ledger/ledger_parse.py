@@ -9,15 +9,20 @@ HERE = Path(__file__).resolve().parent
 F = 0.099112  # ES-to-SPY factor: ES = SPY / F
 # next-session direction call per issue (UP / DOWN / FLAT); curated from each issue's take, heuristic fallback for new issues
 DIR = {"2026-10-07": "UP", "2026-10-08": "UP", "2026-10-09": "DOWN", "2026-10-12": "DOWN", "2026-10-13": "DOWN", "2026-10-14": "UP",
-       "2026-10-15": "FLAT", "2026-10-16": "UP", "2026-10-19": "UP", "2026-10-20": "DOWN", "2026-10-21": "DOWN", "2026-10-22": "UP", "2026-10-23": "UP", "2026-10-26": "FLAT", "2026-10-27": "DOWN", "2026-10-28": "DOWN", "2026-10-29": "DOWN", "2026-10-30": "DOWN", "2026-11-05": "UP"}
+       "2026-10-15": "FLAT", "2026-10-16": "UP", "2026-10-19": "UP", "2026-10-20": "DOWN", "2026-10-21": "DOWN", "2026-10-22": "UP", "2026-10-23": "UP", "2026-10-26": "FLAT", "2026-10-27": "DOWN", "2026-10-28": "DOWN", "2026-10-29": "DOWN", "2026-10-30": "DOWN", "2026-11-05": "UP", "2026-11-06": "DOWN", "2026-11-09": "FLAT"}
+BASE = {
+    "2026-11-09": "No lean today — it depends on CPI tomorrow. Hot or in-line CPI: come back to give the 200DMA an actual touch. Cool print: potential to send us up to 760 for a re-test of the 100DMA; a clean breakout that threatens to retake the 20DMA would be the tell to get bulled up. Treat every rally as suspect while the 20/50DMAs are in a bearish arrangement. Anecdotal expectation leans bearish, but do not play the print; wait for the data and position with the trend.",
+    "2026-11-06": "Monday should not move much with CPI due Tuesday. Lean is a drift lower to pin around 733; alternative is reclaiming some dark-pool levels above, but not higher than 740 before CPI. Sit on hands until after CPI.",
+}
 BAN = re.compile(r"(?i)@?SRC(?:\s+LEDGER)?|VAULT_SRC|GEX_PANEL|x\.com/\S*|https?://\S*")
 def clean(s): return re.sub(r"\s+", " ", BAN.sub("", s)).strip()
 def sents(t): return [x.strip() for x in re.split(r"(?<=[.!?])\s+", t) if x.strip()]
 def body(p):
     t = p.read_text(encoding="utf-8"); return t.split("---", 1)[1] if "---" in t else t
 def take(t):
-    m = re.search(r"(?i)(here'?s my take|my take)", t)
-    return t[m.start():].split("\n")[0] if m else ""
+    ms = list(re.finditer(r"(?i)(here'?s my take|my take)", t))
+    if not ms: return ""
+    return t[ms[-1].start():].split("\n")[0]
 def heur_dir(tk):
     s = tk.lower(); b = len(re.findall(r"bull|bounce|higher|up to|move up|rally", s)); d = len(re.findall(r"bear|weak|lower|pullback|correction|reject|drop|fail", s))
     return "UP" if b > d else "DOWN" if d > b else "FLAT"
@@ -37,7 +42,7 @@ def parse(p):
         if kind != "PRICE" and r["kind"] == "PRICE": r["kind"] = kind
         if m.group(1) in tk: r["in_take"] = True
     title = clean(t.strip().split("\n")[0].lstrip("# ")) if False else clean(p.read_text(encoding="utf-8").split("\n")[0].lstrip("# "))
-    return dict(date=p.stem, title=title.replace("SPY Post-Market Write-Up", "SPY close review"), base=clean(" ".join(base[:3])) or clean(" ".join(S[:2])),
+    return dict(date=p.stem, title=title.replace("SPY Post-Market Write-Up", "SPY close review"), base=BASE.get(p.stem) or clean(" ".join(base[:3])) or clean(" ".join(S[:2])),
                 alternative=clean(" ".join(alt[:2])) or "—", trigger=clean(" ".join(trg[:2])) or "—",
                 direction=DIR.get(p.stem, heur_dir(tk)), levels=sorted(lv.values(), key=lambda r: -r["spy"]))
 def scorecard(issues):

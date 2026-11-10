@@ -1,94 +1,87 @@
 {
- "date": "2026-11-05",
- "title": "Thursday 11/5 SPY close review",
- "base": "Not done selling \u2014 start of a large correction, but the lean is a bounce tomorrow (if NFP cooperates) to 740 with a stretch to the 750 gamma; reload puts if/when 750 prints for the next leg through the 200DMA. Speculative first destination as low as 697.84 before a bear-market rally.",
- "alternative": "If we reach 750 I will be reloading puts as we will be taking the next leg down that should tear through the 200DMA. The alternative case for tomorrow is we keep selling, in which case 729.26 would be stop number one, and the stretch would be to the June low around 716.",
+ "date": "2026-11-09",
+ "title": "Monday 11/9 SPY close review",
+ "base": "No lean today \u2014 it depends on CPI tomorrow. Hot or in-line CPI: come back to give the 200DMA an actual touch. Cool print: potential to send us up to 760 for a re-test of the 100DMA; a clean breakout that threatens to retake the 20DMA would be the tell to get bulled up. Treat every rally as suspect while the 20/50DMAs are in a bearish arrangement. Anecdotal expectation leans bearish, but do not play the print; wait for the data and position with the trend.",
+ "alternative": "If we get a hot or in line CPI then I see us coming back to give the 200DMA an actual touch.",
  "trigger": "\u2014",
- "direction": "UP",
+ "direction": "FLAT",
  "levels": [
   {
-   "spy": 766.43,
-   "es": 7732.97,
-   "kind": "PRICE",
-   "n": 1,
-   "in_take": false
-  },
-  {
-   "spy": 750.0,
-   "es": 7567.2,
-   "kind": "WALL",
-   "n": 5,
-   "in_take": true
-  },
-  {
-   "spy": 745.0,
-   "es": 7516.75,
-   "kind": "WALL",
-   "n": 1,
-   "in_take": false
-  },
-  {
-   "spy": 740.0,
-   "es": 7466.3,
-   "kind": "PRICE",
+   "spy": 760.0,
+   "es": 7668.09,
+   "kind": "MA",
    "n": 1,
    "in_take": true
   },
   {
-   "spy": 733.08,
-   "es": 7396.48,
+   "spy": 755.62,
+   "es": 7623.9,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 754.51,
+   "es": 7612.7,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 754.07,
+   "es": 7608.26,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 754.05,
+   "es": 7608.06,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 753.0,
+   "es": 7597.47,
+   "kind": "WALL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 752.0,
+   "es": 7587.38,
+   "kind": "WALL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 746.77,
+   "es": 7534.61,
    "kind": "PRICE",
    "n": 1,
    "in_take": false
   },
   {
-   "spy": 733.0,
-   "es": 7395.67,
+   "spy": 741.26,
+   "es": 7479.01,
    "kind": "PRICE",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 730.0,
+   "es": 7365.4,
+   "kind": "WALL",
    "n": 2,
    "in_take": false
   },
   {
-   "spy": 729.26,
-   "es": 7357.94,
-   "kind": "PRICE",
-   "n": 1,
-   "in_take": true
-  },
-  {
    "spy": 725.0,
    "es": 7314.96,
-   "kind": "WALL",
-   "n": 1,
+   "kind": "OI/MAGNET",
+   "n": 2,
    "in_take": false
-  },
-  {
-   "spy": 723.26,
-   "es": 7297.4,
-   "kind": "PRICE",
-   "n": 1,
-   "in_take": false
-  },
-  {
-   "spy": 716.0,
-   "es": 7224.15,
-   "kind": "PRICE",
-   "n": 1,
-   "in_take": true
-  },
-  {
-   "spy": 700.0,
-   "es": 7062.72,
-   "kind": "WALL",
-   "n": 1,
-   "in_take": false
-  },
-  {
-   "spy": 697.84,
-   "es": 7040.92,
-   "kind": "PRICE",
-   "n": 1,
-   "in_take": true
   }
  ],
  "factor": 0.099112,
@@ -214,17 +207,17 @@
   },
   {
    "date": "2026-10-30",
-   "call": "UP",
+   "call": "DOWN",
    "next": "2026-11-02",
    "pct": -0.48,
-   "hit": false
+   "hit": true
   },
   {
    "date": "2026-11-02",
-   "call": "UP",
+   "call": "DOWN",
    "next": "2026-11-03",
    "pct": 0.3,
-   "hit": true
+   "hit": false
   },
   {
    "date": "2026-11-03",
@@ -235,14 +228,28 @@
   },
   {
    "date": "2026-11-04",
-   "call": "DOWN",
+   "call": "FLAT",
    "next": "2026-11-05",
    "pct": -4.41,
-   "hit": true
+   "hit": false
   },
   {
    "date": "2026-11-05",
    "call": "UP",
+   "next": "2026-11-06",
+   "pct": 0.31,
+   "hit": true
+  },
+  {
+   "date": "2026-11-06",
+   "call": "DOWN",
+   "next": "2026-11-09",
+   "pct": 2.37,
+   "hit": false
+  },
+  {
+   "date": "2026-11-09",
+   "call": "FLAT",
    "next": null,
    "pct": null,
    "hit": null
@@ -250,11 +257,10 @@
  ],
  "hit_rate": {
   "hits": 13,
-  "n": 21,
-  "rate": 61.9
+  "n": 23,
+  "rate": 56.5
  },
- "built": "2026-11-05",
+ "built": "2026-11-09",
  "intraday": [],
- "intraday_date": null,
- "curated": true
+ "intraday_date": null
 }
