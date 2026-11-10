@@ -231,7 +231,50 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
 #brief .tile .s{white-space:normal;overflow:visible;text-overflow:clip;line-height:1.35}
 #qs.qs>div b{font-variant-numeric:tabular-nums}
 </style>
-<section class="brief" id="brief"></section>
+<style id="cmd-glance">
+#brief.brief{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:720px){#brief.brief{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){#brief.brief{grid-template-columns:minmax(0,1fr)}}
+#glance{display:grid;grid-template-columns:1.2fr 1fr 1.4fr 1fr;gap:8px;margin:8px 0;font-variant-numeric:tabular-nums}
+#glance .gc{background:var(--p);border:1px solid var(--ln);border-top:2px solid var(--c,var(--amb));padding:8px 10px;min-width:0}
+#glance .gk{font-size:var(--fs-s);color:var(--mut);letter-spacing:.5px;text-transform:uppercase;display:flex;justify-content:space-between;gap:6px}
+#glance .gv{font-size:26px;font-weight:700;line-height:1.15;color:var(--txt)}
+#glance .gv small{font-size:13px;font-weight:600;margin-left:6px}
+#glance .gs{font-size:var(--fs-s);color:var(--mut);line-height:1.35}
+#glance .gs b{color:var(--txt)}
+#glance .up{color:var(--up)}#glance .dn{color:var(--dn)}
+#glance .rb{position:relative;height:10px;background:#141414;border:1px solid var(--ln2);margin:10px 0 4px}
+#glance .rb i{position:absolute;top:0;bottom:0;background:linear-gradient(90deg,#3a1414,#1f1f1f 50%,#143a1f)}
+#glance .rb em{position:absolute;top:-4px;width:10px;height:16px;margin-left:-5px;background:var(--amb);border-radius:2px}
+#glance .rl{display:flex;justify-content:space-between;font-size:var(--fs-s);color:var(--mut)}
+#brief .tile ul.kv{list-style:none;margin:2px 0 0;padding:0;display:block!important;columns:auto!important;width:100%}
+#brief .tile ul.kv li{width:100%;float:none;display:flex;justify-content:space-between;gap:8px;font-size:var(--fs);border-bottom:1px solid #141414;padding:2px 0}
+#brief .tile ul.kv li span{color:var(--mut);flex:0 1 auto}#brief .tile ul.kv li b{color:var(--txt);text-align:right}
+#brief .tile .st{color:var(--amb);font-size:var(--fs-s);margin-top:4px;line-height:1.35}
+@media(max-width:1180px){#glance{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){#glance{grid-template-columns:minmax(0,1fr)}#glance .gv{font-size:22px}}
+</style><section id="glance" aria-label="At a glance"></section><script id="glance-data" type="application/json">{"built_pt": "Mon Nov 9, 2026 4:45 PM PT", "session": "2026-11-10", "session_label": "Tue Nov 10", "es": {"price": null, "asof": null, "status": "ES price awaiting update · no dated ES print posted since Mon Nov 9 2:59 PM PT", "last_data": "2026-11-02"}, "plan": {"date_label": "Tue Nov 10", "posted": "Mon Nov 9 2:59 PM PT", "pivot": 7562, "above": [{"lv": "7595–96", "ref": 7595.5}], "below": [{"lv": "7535–40", "ref": 7537.5}, {"lv": "7456–57", "ref": 7456.5}, {"lv": "7420", "ref": 7420}]}, "im": {"daily_next": {"sym": "SPY", "label": "Tue Nov 10", "status": "awaiting tonight's post"}, "daily_prev": {"sym": "SPY", "label": "Mon Nov 9 (prior session)", "lo": 725.03, "hi": 745.55}, "weekly": {"sym": "SPY", "label": "Nov 9–13", "lo": 713.24, "hi": 757.34}, "spx": "SPX · awaiting post (no conversion shown)"}, "catalysts": {"date_label": "Tue Nov 10", "items": [{"utc": "2026-11-10T13:30:00Z", "pt": "5:30 AM PT", "name": "CPI", "detail": "CPI m/m · Core CPI m/m"}], "other": "other scheduled events: awaiting update"}, "overnight": {"date_label": "Mon Nov 9 → Tue Nov 10", "high": null, "low": null, "status": "session opened Mon 3:00 PM PT · in progress · high / low awaiting update"}}</script><script id="glance-js">
+(()=>{const G=JSON.parse(document.getElementById('glance-data').textContent),e=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[m]),n2=x=>(+x).toFixed(2);
+window.GL=G;const P=G.plan,px=G.es.price,up=P.above[0],dn=P.below[0];
+const cell=(k,c,v,s,id)=>`<div class="gc" style="--c:${c}"${id?` id="${id}"`:''}><div class="gk">${k}</div>${v}<div class="gs">${s}</div></div>`;
+let a,b;
+if(px!=null){const d=px-P.pivot,cl=d>=0?'up':'dn';
+ a=cell(`ES vs pivot ${P.pivot}<span>${e(G.es.asof)}</span>`,d>=0?'var(--up)':'var(--dn)',`<div class="gv ${cl}">${d>=0?'+':''}${d.toFixed(2)}<small>${d>=0?'ABOVE':'BELOW'}</small></div>`,`ES <b>${n2(px)}</b> · price as of ${e(G.es.asof)}`);
+ b=cell(`Next levels<span>${e(P.date_label)}</span>`,'var(--amb)',`<div class="gv"><span class="up">▲ ${e(up.lv)}</span> <small class="mut">+${(up.ref-px).toFixed(1)}</small></div><div class="gv"><span class="dn">▼ ${e(dn.lv)}</span> <small class="mut">${(dn.ref-px).toFixed(1)}</small></div>`,'distance from ES price above');
+}else{
+ a=cell(`ES pivot · ${e(P.date_label)}<span>plan ${e(P.posted)}</span>`,'var(--amb)',`<div class="gv">${P.pivot}<small class="mut" style="color:var(--mut)">ABOVE / BELOW: awaiting price</small></div>`,e(G.es.status));
+ b=cell(`Next levels · ${e(P.date_label)}<span>ES</span>`,'var(--amb)',`<div class="gv"><span class="up">▲ ${e(up.lv)}</span></div><div class="gv"><span class="dn">▼ ${e(dn.lv)}</span></div>`,'distances shown once a dated price posts');}
+const I=G.im,dn_=I.daily_next,w=I.weekly;let rb;
+if(dn_&&dn_.lo!=null){rb=[dn_,`SPY daily · ${dn_.label}`]}else if(w){rb=[w,`SPY weekly · ${w.label}`,`daily ${dn_.label}: ${dn_.status}`]}
+const c=rb?cell(`Implied range<span>${e(rb[1])}</span>`,'var(--cy)',`<div class="rb"><i style="left:0;right:0"></i></div><div class="rl"><b>${n2(rb[0].lo)}</b><span>SPY price dot: awaiting dated price</span><b>${n2(rb[0].hi)}</b></div>`,`${rb[2]?e(rb[2])+' · ':''}SPY-scale bounds, not guaranteed limits`):cell('Implied range','var(--cy)','<div class="gv">—</div>','awaiting update');
+const d=cell(`Next catalyst<span>${e(G.catalysts.date_label)}</span>`,'var(--pu)','<div class="gv" id="glCd">…</div>','<span id="glCs"></span>','glCat');
+document.getElementById('glance').innerHTML=a+b+c+d;
+const tick=()=>{const now=Date.now(),nx=G.catalysts.items.find(x=>Date.parse(x.utc)>now),V=document.getElementById('glCd'),S=document.getElementById('glCs');
+ if(!nx){const l=G.catalysts.items[G.catalysts.items.length-1];V.textContent=`${l.name} released`;S.textContent=`${l.pt} · ${G.catalysts.date_label} · next catalyst awaiting update`;return}
+ let m=Math.max(0,Math.floor((Date.parse(nx.utc)-now)/1000)),h=Math.floor(m/3600),mi=Math.floor(m%3600/60),s=m%60;
+ V.textContent=`${nx.name} in ${h?h+'h ':''}${mi}m ${String(s).padStart(2,'0')}s`;S.textContent=`${nx.detail} · ${nx.pt} ${G.catalysts.date_label}`};
+tick();setInterval(tick,1000);})();
+</script><section class="brief" id="brief"></section>
 <main><style>
 .nw{border:1px solid #232323;background:#000;font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
 .nw .nh{display:flex;justify-content:space-between;gap:8px;align-items:baseline;background:#120d00;border-bottom:1px solid #a87400;padding:3px 8px;color:#ffb000;font-weight:700;letter-spacing:.5px;font-size:12px}
@@ -698,7 +741,6 @@ let TK='SPY';
  h+=`<div style="min-width:0"><div class="grp">${lab} · exp ${e(g.exp||'–')}</div>`+(g.L.length?bar(g.L,px)+'<table><tr><th>Src</th><th class="r">Lower</th><th class="r">Upper</th><th class="r">± pts</th><th class="r">±%</th><th class="r">Price in band</th></tr>'+g.L.map(x=>`<tr title="${x.note}"><td><span class="fl" style="${x.tag==='CALC'?'background:var(--cy)':''}">${x.tag}</span></td><td class="r">${n(x.lo)}</td><td class="r">${n(x.hi)}</td><td class="r">${n(x.mv)}</td><td class="r">${n(100*x.mv/x.ref,2)}</td><td class="r">${pos(x,px)}</td></tr>`).join('')+'</table>'+g.L.map(x=>`<div class="nt"><b>${x.tag}</b> ${x.note}</div>`).join(''):`<div class="mut">No data${g.err?' · '+e(g.err):''}</div>`)+'</div>'});
  B.innerHTML=h+'</div>'+(window.ftImplied?'<div class="grp">ES ≈ BAND (SPX straddle + basis)</div>'+ftImplied():'')+'<div class="nt">POSTED = third-party levels posted for this session (SPY only); CALC = our ATM straddle from free indicative option quotes (free quotes fallback). Weekly CALC is today\'s remaining straddle for Friday expiry anchored on Monday open, so it shrinks through the week; POSTED weekly is fixed from the prior Friday. Not advice.</div>';
  $('#imH').textContent=`calc ${C.generated_pt||'–'} · price ${px??'–'}`};
- window.imTile=t=>{const px=((D.quotes||{})[t]||{}).last,r=['daily','weekly'].map(k=>{const g=imGet(t,k),x=g.L[0];return x?`<li><b>${k==='daily'?'D':'W'} ${n(x.lo)}–${n(x.hi)}</b><span class="mut">±${n(x.mv)}</span><span>${x.tag}</span></li>`:`<li><b>${k==='daily'?'D':'W'} –</b></li>`}).join('');return `<ol>${r}</ol>`};
 })();
 // FIRST BLADE symbol switcher: SPY | QQQ | SPX | /ES (client-side)
 (()=>{const X=D.fbx||{},S=D["SRC D"]||{},Q=D.quotes||{},b=(id)=>{const n=document.getElementById(id);return n||{textContent:'',innerHTML:'',style:{}}},B=document.getElementById('spB'),H=document.getElementById('spH');if(!B||!H)return;
@@ -799,20 +841,17 @@ window.SRC=window.SRC||(()=>{const m={};let i=0;return h=>m[h]||(m[h]='SRC '+Str
 
 // QUOTES strip + MORNING BRIEF + collapsible flow tables
 (()=>{const Q=D.quotes||{},e=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[m]);
- $('#qs').innerHTML=['SPY','QQQ','SPX','ES'].map(k=>{const q=Q[k]||{};const c=q.chg,cp=q.chg_pct;return `<div>${k}<b>${q.last!=null?(+q.last).toFixed(2):'–'}</b><span class="${ud(c)}">${c==null?'':sgn(c,2)+' ('+sgn(cp,2,'%')+')'}</span> <span class="mut">${e(q.asof||'')}</span></div>`}).join('')+`<div>ORB15 <b class="${ud(L.total_r)}">${sgn(L.total_r,2,'R')}</b>${L.trades} trades</div>`;
- window.drawBrief=t=>{const P=(D.xnews||{}).plan||{},b=P.bias||{},gs=((D.gamma||{}).symbols||[]),g=(gs.find(x=>x.symbol===t)||gs[0]||{}),c=g.consensus||{},
- CB=(((D.conf||{}).symbols||{})[t]||[]).slice().sort((a,b)=>b.n_sources-a.n_sources||b.weight-a.weight).slice(0,3),sp=((D.conf||{}).spot||{})[t],
- O=(D.orb||[])[0]||{},ES=D.es||{},DP=D.dp||{},nr=(o,n)=>((o.levels||[]).slice().sort((a,b)=>Math.abs(a.distance)-Math.abs(b.distance)).slice(0,n));
- const bc={LONG:'var(--up)',SHORT:'var(--dn)'}[b.direction]||'var(--amb)';
+ $('#qs').innerHTML=['SPY','QQQ','SPX','ES'].map(k=>{const q=Q[k]||{};const c=q.chg,cp=q.chg_pct;const sess=((window.GL||{}).session||''),ad=String(q.asof||'').slice(0,10),stale=!ad||(sess&&ad<new Date(Date.parse(sess+'T12:00:00Z')-864e5*3).toISOString().slice(0,10));if(stale)return `<div>${k}<b>–</b><span class="mut">awaiting update${ad?' · last data '+e(ad):''}</span></div>`;return `<div>${k}<b>${q.last!=null?(+q.last).toFixed(2):'–'}</b><span class="${ud(c)}">${c==null?'':sgn(c,2)+' ('+sgn(cp,2,'%')+')'}</span> <span class="mut">${e(q.asof||'')}</span></div>`}).join('')+`<div>ORB15 <b class="${ud(L.total_r)}">${sgn(L.total_r,2,'R')}</b>${L.trades} trades</div>`;
+ window.drawBrief=t=>{const G=window.GL||{},P=G.plan||{},I=G.im||{},C=G.catalysts||{},O=G.overnight||{},S=G.es||{},
+ kv=r=>'<ul class="kv">'+r.map(([k,v])=>`<li><span>${k}</span><b>${v}</b></li>`).join('')+'</ul>',n2=x=>(+x).toFixed(2),
+ rng=x=>x&&x.lo!=null?`${n2(x.lo)}–${n2(x.hi)}`:e((x&&x.status)||'awaiting update');
  const T=[
- [`NEWS BIAS<span>${e(P.date||'')}</span>`,bc,`<div class="v" style="color:${bc}">${e(b.direction||'–')}</div><div class="s" title="${e(b.reason)}">${e(b.reason||'No plan yet')}</div>`],
- [`GAMMA · ${e(g.symbol||t)}<span>${e(((g.sources||[]).map(s=>s.posted_pt||'').sort().pop()||(D.gamma||{}).date||'').slice(0,16))}</span>`,c.regime==='NEG'?'var(--dn)':c.regime==='POS'?'var(--up)':'var(--mut)',`<div class="v">${(()=>{const r=String(c.regime||'');if(!r)return 'n/a';const u=r.toUpperCase();if(u==='NEG'||u.indexOf('NEG')>=0)return 'NEG GAMMA';if(u==='POS'||u.indexOf('POS')>=0)return 'POS GAMMA';return u.indexOf('GAMMA')>=0?r:(r+' GAMMA');})()}</div><div class="s">flip <b>${c.flip??'–'}</b> · CW <b>${c.call_wall??'–'}</b> · PW <b>${c.put_wall??'–'}</b></div>`],
- [`TOP CONFLUENCE · ${t}<span>spot ${sp??'–'}</span>`,'var(--amb)',CB.length?'<ol>'+CB.map(x=>`<li><b>${x.price}</b><span class="mut">${x.lo}–${x.hi}</span><span>${x.n_sources} src</span></li>`).join('')+'</ol>':'<div class="s">No bands yet</div>'],
- [`ORB15 · ${e(O.date||'')}<span>SPY</span>`,O.status==='Win'?'var(--up)':O.status==='Loss'?'var(--dn)':'var(--mut)',O.high!=null?`<div class="v">${f(O.low)}–${f(O.high)}</div><div class="s">mid <b>${f(O.mid)}</b> · w ${f(O.width)} · ${e(O.side||'')} <b>${e(O.status||'')}</b></div>`:`<div class="v">–</div><div class="s">${e(O.status||'no range')}</div>`],
- [`NEAREST ES<span>${ES.price??'–'}</span>`,'var(--gn)','<ol>'+nr(ES,3).map(x=>`<li><b>${x.level}</b><span class="mut">${sgn(-x.distance,1)}</span><span>${x.touches}t</span></li>`).join('')+'</ol>'],
- [`FUTURES · ES<span>${e(((D.fut||{}).quotes||{}).ES?.asof||'')}</span>`,'var(--gn)',(()=>{const F=D.fut||{},q=(F.quotes||{}).ES,n=(F.ladder||[]).filter(r=>r.dist!=null).sort((a,b)=>Math.abs(a.dist)-Math.abs(b.dist)).slice(0,2);return q?`<div class="v"><a href="#futures" style="color:var(--gn)">${f(q.last)}</a> <span class="${ud(q.chg)}" style="font-size:var(--fs)">${sgn(q.chg,2)}</span></div><div class="s">nearest ${n.map(r=>`<b>${r.price}</b> (${sgn(r.dist,2)})`).join(' · ')}</div>`:'<div class="s">No ES quote</div>'})()],
- [`BLAST RADIUS · ${t}<span>${e(((D.im||{}).calc||{}).session_for||'')}</span>`,'var(--cy)',window.imTile?imTile(t):''],
- [`THE WIRE<span>live</span>`,'var(--amb)','<div class="v">LAST 5</div><div class="s"><a href="#wire" style="color:var(--amb)">full wire →</a></div>']];
+ [`TODAY'S PLAN · ES<span>${e(P.date_label||'')}</span>`,'var(--amb)',P.pivot!=null?`<div class="v">pivot ${P.pivot}</div>`+kv([['above',(P.above||[]).map(x=>e(x.lv)).join(' · ')||'awaiting update'],['below',(P.below||[]).map(x=>e(x.lv)).join(' · ')||'awaiting update'],['plan posted',e(P.posted||'')]]):'<div class="st">plan awaiting update</div>'],
+ [`IMPLIED MOVE<span>SPY-scale</span>`,'var(--cy)',kv([[`SPY daily · ${e((I.daily_next||{}).label||'')}`,rng(I.daily_next)],...(I.daily_prev?[[`SPY daily · ${e(I.daily_prev.label)}`,rng(I.daily_prev)]]:[]),[`SPY weekly · ${e((I.weekly||{}).label||'')}`,rng(I.weekly)]])+`<div class="st">${e(I.spx||'')}</div>`],
+ [`CATALYSTS<span>${e(C.date_label||'')}</span>`,'var(--pu)',kv((C.items||[]).map(x=>[e(x.pt),e(x.detail)]))+`<div class="st">${e(C.other||'')}</div>`],
+ [`OVERNIGHT · ES<span>${e(O.date_label||'')}</span>`,'var(--bl)',O.high!=null?kv([['high',O.high],['low',O.low],['range',(O.high-O.low).toFixed(2)]])+`<div class="st">${e(O.status||'')}</div>`:`<div class="v">—</div><div class="st">${e(O.status||'awaiting update')}</div>`],
+ [`FUTURES · ES<span>${S.price!=null?e(S.asof):'last data '+e(S.last_data||'')}</span>`,'var(--gn)',S.price!=null?`<div class="v"><a href="#futures" style="color:var(--gn)">${n2(S.price)}</a></div><div class="s">as of ${e(S.asof)}</div>`:`<div class="v">—</div><div class="st">awaiting update · last data ${e(S.last_data||'')}</div>`],
+ [`THE WIRE<span>${e((document.querySelector('#z-wire .nh small')||{}).textContent||'').split('·')[0].trim()||'live'}</span>`,'var(--amb)','<div class="v">LAST 5</div><div class="s"><a href="#wire" style="color:var(--amb)">full wire →</a></div>']];
  $('#brief').innerHTML=T.map(([h,col,v])=>`<div class="tile" style="--c:${col}"><h4>${h}</h4>${v}</div>`).join('')};
  window.collapse=(root,N)=>{if(!root)return;root.querySelectorAll('table').forEach(tb=>{if(tb.dataset.cl)return;const R=[...tb.querySelectorAll('tr')].slice(1);if(R.length<=N)return;tb.dataset.cl=1;
  R.slice(N).forEach(r=>r.hidden=true);const b=document.createElement('button');b.className='more';b.type='button';b.textContent=`SHOW ALL ${R.length} ROWS ▾`;let o=0;
