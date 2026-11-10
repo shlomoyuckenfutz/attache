@@ -1,23 +1,23 @@
 {
  "date": "2026-11-10",
- "asof_pt": "2026-11-10 05:55 PT",
- "asof": "2026-11-10 05:55 PT",
+ "asof_pt": "2026-11-10 06:05 PT",
+ "asof": "2026-11-10 06:05 PT",
  "session": "2026-11-10",
  "title": "Yuckenfutz Tradez — Daily Plan — Tue Nov 10, 2026 (CPI hot)",
  "bias": {
   "direction": "BEARISH",
-  "reason": "Oct CPI printed hot at 5:30 AM PT: headline 0.4% MoM (est 0.3%), core 0.3% (est 0.2%); no YoY rate was published this month. That is the plan's HOT case. Treasury 2- to 5-year yields rose at least 10 bp on the day, traders added bets on a half-point Fed hike next month, and Nasdaq 100 futures fell 1.5% to the premarket low (5:43 AM PT). ES dropped straight into 7535–40 support (tagged 5:36 AM PT), below the 7562–65 pivot. While ES is under 7562–65, the lean is down: 7513, then 7476. Recovering and holding 7565 restores the upside targets 7595–96 / 7616 / 7636. Monday's short-covering rally came on top of a weekly structure that was still one-time-framing down."
+  "reason": "Oct CPI printed hot at 5:30 AM PT: headline 0.4% MoM (est 0.3%), core 0.3% (est 0.2%); no YoY rate was published this month. That is the plan's HOT case. Treasury 2- to 5-year yields rose at least 10 bp on the day, traders added bets on a half-point Fed hike next month, and Nasdaq 100 futures fell 1.5% to the premarket low (5:43 AM PT). ES dropped straight into 7535–40 support (tagged 5:36 AM PT), below the 7562–65 pivot. While ES is under 7562–65, the lean is down: 7513, then 7476. Recovering and holding 7565 restores the upside; 7595–96 is the first level above, and 7616 / 7636 are targets only. Monday's short-covering rally came on top of a weekly structure that was still one-time-framing down."
  },
  "overnight_bias": "CPI HOT (0.4% / core 0.3%) — ES below pivot 7562–65 · tagged 7535–40 · 7513 / 7476 below · 7595–96 above",
  "sources_count": 3,
  "key_levels": [
   {
    "price": 7596,
-   "note": "ES 7595–96 resistance — last week's value-area node; first upside target only after 7565 is recovered"
+   "note": "ES 7595–96 resistance — last week's value-area node; first level above once 7565 is recovered"
   },
   {
    "price": 7564,
-   "note": "ES 7562–65 pivot — must recover and hold to resume the upside (7595–96 · 7616 · 7636); below it, the lean is down"
+   "note": "ES 7562–65 pivot — must recover and hold to resume the upside (7595–96 first; 7616 / 7636 are targets only); below it, the lean is down"
   },
   {
    "price": 7538,
@@ -29,26 +29,18 @@
   },
   {
    "price": 7476,
-   "note": "ES 7476 support — deeper post-CPI level"
-  },
-  {
-   "price": 7457,
-   "note": "ES 7456–57 support — top of last week's lower distribution"
-  },
-  {
-   "price": 7420,
-   "note": "ES 7420 support — deeper support / prior recovery level"
+   "note": "ES 7476 support — next level below 7513"
   }
  ],
  "path": {
-  "bull": "ES flushes 7535–40 and reclaims it (failed breakdown), then recovers and holds 7562–65 → 7595–96 → 7616 → 7636.",
-  "bear": "ES stays below 7562–65 and accepts under 7535–40 → 7513 → 7476 → 7456–57 → 7420. SPY plan (hot case): back toward 741, then the 200-day."
+  "bull": "ES flushes 7535–40 and reclaims it (failed breakdown), then recovers and holds 7562–65 → 7595–96; 7616 / 7636 are targets only.",
+  "bear": "ES stays below 7562–65 and accepts under 7535–40 → 7513 → 7476. SPY plan (hot case): back toward 741, then the 200-day."
  },
  "actionable": [
   "CPI (Tue 5:30 AM PT): headline 0.4% MoM vs 0.3% est (prior 0.6%); core 0.3% vs 0.2% est (prior 0.3%). No YoY rate was published this month. HOT case is live (plan thresholds: hot = 0.4–0.5% / core 0.3%).",
   "Reaction (5:30–5:45 AM PT Tue): 2- to 5-year yields rose at least 10 bp on the day, traders added bets on a half-point Fed hike next month, gold fell 2.4%, and Nasdaq 100 futures fell 1.5% to the premarket low. ES tagged 7535–40 support at 5:36 AM PT.",
   "SPY premarket after the print (X reads, 5:34–5:43 AM PT): about 747–750, under the 750 support and well below the 754.05–755.62 dark-pool resistance and the 757–760 decision zone. No exact print is shown as live.",
-  "Key levels after CPI: pivot 7562–65 (must recover). Below: 7535–40 (tagged), 7513, 7476, then 7456–57 / 7420. Above, once 7565 is back: 7595–96, 7616, 7636.",
+  "Key levels after CPI: pivot 7562–65 (must recover). Below: 7535–40 (tagged), 7513, 7476. Above: 7595–96 once 7565 is back. 7616 / 7636 are targets only.",
   "Implied move: SPY Tue Nov 10 daily = awaiting update (still not posted as of Tue 5:50 AM PT). SPY weekly Nov 9–13 = 713.24–757.34 (SPY-scale, not ES/SPX points).",
   "QQQ / NQ intraday levels: awaiting update (no Tue-dated board). Gamma levels on this page are from the 11/9 close, not Tuesday's open.",
   "VIX filter: VIX under 18.36 alongside an ES push higher = strength; VIX over 21.48 alongside an ES break lower = weakness.",
@@ -58,12 +50,12 @@
  "levels": [],
  "long_story_short": {
   "for_session": "2026-11-10",
-  "asof_pt": "2026-11-10 05:55 PT",
+  "asof_pt": "2026-11-10 06:05 PT",
   "headline": "Tue 11/10 — CPI HOT (0.4% / core 0.3%) · ES below pivot 7562–65",
   "context": "Oct CPI beat on both lines (est 0.3% / 0.2%). Yields up, half-point hike bets up, Nasdaq 100 futures −1.5% at the premarket low; ES dropped into 7535–40 support (5:36 AM PT).",
-  "levels": "ES pivot 7562–65 | above 7595–96 · 7616 · 7636 | below 7535–40 · 7513 · 7476",
+  "levels": "ES pivot 7562–65 | above 7595–96 | below 7535–40 · 7513 · 7476",
   "bearish": "Below 7562–65 and accepting under 7535–40 → 7513 → 7476. SPY hot case: back toward 741, then the 200-day. VIX over 21.48 on a break lower = weakness.",
-  "bullish": "Flush-and-reclaim of 7535–40 or recover 7565 → 7595–96 → 7616 / 7636. VIX under 18.36 on a push higher = strength.",
+  "bullish": "Flush-and-reclaim of 7535–40 or recover 7565 → 7595–96; 7616 / 7636 are targets only. VIX under 18.36 on a push higher = strength.",
   "general": "HOT case live. Lean down while ES is under 7562–65; trade the reaction, not the headline."
  }
 }
