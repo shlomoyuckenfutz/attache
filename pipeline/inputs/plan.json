@@ -40,7 +40,7 @@
   "Mon 11/9 recap: Sunday-evening gap down swept 7380 and recovered (Failed Breakdown); ES ran 7478 \u2192 7490 \u2192 7506 \u2192 7558 and rotated back toward last week's value node at 7596. Afternoon pullback low 7562 = Tuesday's pivot.",
   "Key-level filter: ES range = Monday's full session (overnight + RTH, ~7385.50\u20137600.50); no ES-matched implied move yet, so the band is not padded. Above the pivot only 7595\u201396 qualifies; 7625 / 7648 sit outside and stay targets only. Below: 7535\u201340, 7456\u201357, 7420 (top 3 by confluence). Re-rank once Tuesday's overnight range prints.",
   "Implied move: SPY Tue Nov 10 daily = awaiting update (not yet published as of Mon 3:40 PM PT). SPY weekly Nov 9\u201313 = 713.24\u2013757.34 (SPY-scale, not ES/SPX points).",
-  "SPY / QQQ / NQ intraday levels: awaiting update (Tue pre-open board not yet published; Monday's board is not reused).",
+  "QQQ / NQ intraday levels: awaiting update (Tue pre-open board not yet published; Monday's board is not reused).",
   "VIX filter: VIX under 18.36 alongside an ES push higher = strength; VIX over 21.48 alongside an ES break lower = weakness.",
   "CPI m/m + Core CPI Tue 5:30 AM PT, 10-year note auction 10:00 AM PT: no position into the print; let the first 15 minutes trade.",
   "Gameplan: long only on a hold/retest of 7562 after CPI, first target 7595\u201396; short only on acceptance back below 7536 targeting 7498. Skip the middle (7540\u20137560 chop) and skip chasing Monday's runner. Size down; ranges are still elevated."
@@ -54,6 +54,6 @@
   "levels": "ES pivot 7562 | above 7595\u201396 | below 7535\u201340 \u00b7 7456\u201357 \u00b7 7420",
   "bearish": "Break and hold below 7562 \u2192 7535\u201340 \u2192 7498; acceptance below 7536 questions Monday's rally. VIX over 21.48 on a break lower = weakness.",
   "bullish": "Hold above 7562 \u2192 reclaim 7595\u201396 \u2192 7625 / 7648. VIX under 18.36 on a push higher = strength.",
-  "general": "NEUTRAL into CPI. Trade the reaction at 7562, not a prediction. No SPY intraday levels until Tuesday's board posts."
+  "general": "NEUTRAL into CPI. Trade the reaction at 7562, not a prediction."
  }
 }

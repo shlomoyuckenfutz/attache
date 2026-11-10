@@ -19,7 +19,7 @@ class Daily(unittest.TestCase):
         self.assertIn("CPI & SPY LEVELS · TUE 11/10".replace("&", "&amp;"), DB)
         for s in ["5:30 AM PT", "MoM only", "0.3% / core 0.2%", "0.4–0.5% / core 0.3%", "0.1–0.2% / core 0.1%", "Fed hike odds",
                   "754.05–755.62", "dark-pool cluster", "757–760", "100-day", "20-week SMA", "~758.6",
-                  "750 · 746.77 · 741.26 · 730 put wall", "squeeze into 758–760", "fade a rejection", "daily close above 758",
+                  "750 · 746.77 · 741.26 · 730 gamma floor", "squeeze into 758–760", "fade a rejection", "daily close above 758",
                   "back toward 741, then the 200-day", "stay flat through the print, trade the reaction"]:
             self.assertIn(s, t.replace(" - ", "–"), s)
 
@@ -34,15 +34,37 @@ class Weekly(unittest.TestCase):
         t = txt(WB)
         self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 9–13", WB)
         for s in ["weekly close above SPY 758", "bias flips bullish", "20-day is under the 50-day", "20-week SMA (~711)",
-                  "726–727, then 718", "725 for 11/20 monthly opex", "730 put OI for Fri 11/13",
+                  "726–727, then 718", "open-interest magnet at SPY 725 for the 11/20 monthly opex",
+                  "open-interest magnet at SPY 730 for Fri 11/13",
                   "VIX futures front month still above spot", "VIX1D holding above 16"]:
             self.assertIn(s, t, s)
-        self.assertNotIn("backwardation", WB.lower())
+        self.assertNotIn("backwardation", WB.lower()); self.assertNotIn("contango", WB.lower())
+        self.assertIn("VIX futures front month still above spot, and VIX1D holding above 16", t)
+        self.assertNotIn("put open-interest", t.lower()); self.assertNotIn("put oi", t.lower())
 
     def test_hidden_outside_week(self):
         self.assertEqual(A.weekly_block(DATA, "2026-11-16"), "")
         bad = json.loads(json.dumps(DATA)); bad["weekly"]["week_end"] = "2026-11-30"
         self.assertEqual(A.weekly_block(bad, PD), "")
+
+
+class Wording(unittest.TestCase):
+    def test_730_is_gamma_floor_not_put_wall(self):
+        t = txt(DB)
+        self.assertIn("730 gamma floor", t); self.assertNotRegex(t, r"730 put wall|put wall[^·]*730")
+
+    def test_stale_spy_awaiting_line_gone_from_source_and_page(self):
+        import build_daily
+        plan_txt = (ROOT / "pipeline/inputs/plan.json").read_text()
+        page = (ROOT / "daily/index.html").read_text()
+        for h in (plan_txt, page):
+            self.assertNotIn("No SPY intraday levels", h)
+            self.assertNotRegex(h, r"SPY / QQQ / NQ intraday levels: awaiting")
+        lss = build_daily.lss_html(json.loads(plan_txt))
+        self.assertNotIn("SPY intraday", lss); self.assertIn("General lean:", lss)
+        self.assertNotRegex(txt(lss), r"General lean:\s*(Bearish|Bullish|$)")  # line still has its text
+        # no empty list rows / paragraphs left on the Daily page
+        self.assertNotRegex(page, r"<li>\s*(<span[^>]*>\s*</span>\s*)*</li>|<p>\s*</p>|<span class=\"vv\">\s*</span>")
 
 
 class Hygiene(unittest.TestCase):
