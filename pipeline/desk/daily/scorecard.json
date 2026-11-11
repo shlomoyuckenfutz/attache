@@ -44,7 +44,7 @@
           "date": "2026-11-03",
           "hi": 7633.5,
           "lo": 7490.0,
-          "last": 7590.5,
+          "last": 7590.75,
           "event": false
         },
         {
@@ -241,7 +241,7 @@
     "es": {
       "high": 7671.5,
       "low": 7391.25,
-      "last": 7648.25,
+      "last": 7642.25,
       "path": "CHOP / MIXED",
       "phase1": "HIT",
       "phase1_zone": [
@@ -266,14 +266,14 @@
           "date": "2026-11-10",
           "hi": 7597.5,
           "lo": 7493.0,
-          "last": 7591.0,
+          "last": 7591.25,
           "event": true
         },
         {
           "date": "2026-11-11",
           "hi": 7671.5,
           "lo": 7587.25,
-          "last": 7648.25,
+          "last": 7642.25,
           "event": false
         }
       ],
@@ -282,7 +282,7 @@
     "spy": {
       "high": 762.510009765625,
       "low": 741.0250244140625,
-      "last": 759.64,
+      "last": 756.32,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -314,11 +314,11 @@
           "date": "2026-11-11",
           "hi": 762.51,
           "lo": 754.9,
-          "last": 759.64,
+          "last": 756.32,
           "event": false
         }
       ],
-      "n_bars": 54
+      "n_bars": 56
     }
   },
   "note": "Prior week = Nov 2\u20136 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 9\u201313 actual so far + forward paths only on empty day columns."
