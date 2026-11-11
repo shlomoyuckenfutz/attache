@@ -239,16 +239,16 @@
   },
   "symbols_plan": {
     "es": {
-      "high": 7613.0,
+      "high": 7615.75,
       "low": 7391.25,
-      "last": 7606.75,
+      "last": 7609.75,
       "path": "BEAR",
       "phase1": "HIT",
       "phase1_zone": [
         7596.0,
         7625.0
       ],
-      "phase1_high": 7613.0,
+      "phase1_high": 7615.75,
       "phase2": "HIT",
       "phase2_zone": [
         7536.0,
@@ -271,13 +271,13 @@
         },
         {
           "date": "2026-11-11",
-          "hi": 7613.0,
+          "hi": 7615.75,
           "lo": 7587.25,
-          "last": 7606.75,
+          "last": 7609.75,
           "event": false
         }
       ],
-      "n_bars": 102
+      "n_bars": 104
     },
     "spy": {
       "high": 755.4199829101562,
