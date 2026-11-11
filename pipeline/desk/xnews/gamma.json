@@ -1,6 +1,6 @@
 {
  "date": "2026-11-06",
- "updated_pt": "2026-11-11 14:42 PT",
+ "updated_pt": "2026-11-11 15:28 PT",
  "symbols": [
   {
    "symbol": "SPY",
@@ -88,12 +88,12 @@
     "put_wall": 763.63,
     "em_lo": 752.88,
     "em_hi": 765.18,
-    "spot": 757.1,
+    "spot": 755.89,
     "regime": "negative gamma",
     "regime_votes": {
-     "short gamma": 1,
      "under flip / all 3 mkts neg": 1,
-     "negative gamma": 2
+     "negative gamma": 2,
+     "short gamma": 1
     }
    },
    "em_note": "Cheddar 1D EM after 760 put-wall break; Voltick pre-open EM 758.2-764.22"
@@ -107,7 +107,7 @@
     "put_wall": null,
     "em_lo": null,
     "em_hi": null,
-    "spot": 7595.4,
+    "spot": 7583.3,
     "regime": null,
     "regime_votes": {}
    }
@@ -121,7 +121,7 @@
     "put_wall": null,
     "em_lo": null,
     "em_hi": null,
-    "spot": 705.42,
+    "spot": 704.29,
     "regime": null,
     "regime_votes": {}
    }
