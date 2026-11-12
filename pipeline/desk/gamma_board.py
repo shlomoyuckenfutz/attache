@@ -228,7 +228,7 @@ def weekly_section(data):
         return _sec("gamma-week", "GAMMA LEVELS · WEEK", f'<p class="gb-n">{AWAIT}</p>')
     body = (f'<p class="gb-n">All three expiries, <b>{E(data["asof_label"])}</b>. Regime is per expiry.</p>' +
             table(data, data["expiries"]) + f'<p class="gb-n">{E(em_line(data))}</p>' +
-            f'<h2 style="margin-top:8px">CATALYSTS · TUE–FRI (PT) · {E(data["asof_label"].upper())}</h2>' + calendar_html(data) +
+            f'<h2 style="margin-top:8px">CATALYSTS · REST OF WEEK (PT) · {E(data["asof_label"].upper())}</h2>' + calendar_html(data) +
             f'<h2 style="margin-top:8px">SEASONALITY · {E(data["asof_label"].upper())}</h2>' + seasonality_html(data) +
             '<a class="gb-l" href="../gammamap/">Open the gamma map →</a>')
     return _sec("gamma-week", f"GAMMA LEVELS · WEEK · {data['asof_label'].upper()}", body)
@@ -487,7 +487,7 @@ def map_page(data, plan, spy_week=None, built=""):
             rows.append(f'<tr class="spot"><td>◆ {f(spot_v, 2)}</td><td colspan="{len(cols)}">{E(a)}{" (SPX close + basis)" if sym == "ES" else ""}</td></tr>')
         h.append(f'<section class="tk" id="m-{sym.lower()}"><h2>{sym} <small>{E(a)}</small></h2><p class="st">{E(" · ".join(sub))}</p>'
                  f'<div class="w ux-tw"><table class="hm"><tr><th>Level</th>{"".join(f"<th>{E(x)}</th>" for x in cols)}</tr>{"".join(rows)}</table></div></section>')
-    h.append(f'<section class="tk" id="m-cal"><h2>CATALYSTS · TUE–FRI (PT) <small>{E(a)}</small></h2>{calendar_html(data)}</section>')
+    h.append(f'<section class="tk" id="m-cal"><h2>CATALYSTS · REST OF WEEK (PT) <small>{E(a)}</small></h2>{calendar_html(data)}</section>')
     h.append(f'<div class="ft">Positioning is descriptive, recorded at the {E(a)}; not a forecast and not investment advice. '
              f'Expected-move bands are not guaranteed limits. Built {E(built)}.</div></main></body></html>')
     return "".join(h)

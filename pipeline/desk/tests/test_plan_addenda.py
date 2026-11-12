@@ -13,18 +13,18 @@ txt = lambda h: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", h))
 
 
 class Daily(unittest.TestCase):
-    def test_renders_for_tue_with_every_figure(self):
-        self.assertEqual(PD, "2026-11-10")
+    def test_renders_for_thu_with_every_figure(self):
+        self.assertEqual(PD, "2026-11-12")
         t = txt(DB)
-        self.assertIn("CPI & SPY LEVELS · TUE 11/10".replace("&", "&amp;"), DB)
-        for s in ["5:30 AM PT", "MoM only", "0.3% / core 0.2%", "0.4–0.5% / core 0.3%", "0.1–0.2% / core 0.1%", "Fed hike odds",
-                  "754.05–755.62", "dark-pool cluster", "757–760", "100-day", "20-week SMA", "~758.6",
-                  "750 · 746.77 · 741.26 · 730 gamma floor", "squeeze into 758–760", "fade a rejection", "daily close above 758",
-                  "back toward 741, then the 200-day", "stay flat through the print, trade the reaction"]:
-            self.assertIn(s, t.replace(" - ", "–"), s)
+        self.assertIn("AFTER HOURS, CATALYSTS &amp; SPY LEVELS · THU 11/12", DB)
+        for s in ["Nvidia board reported preparing to remove its CEO", "$173.73", "NQ −0.96% (4:02 PM PT)", "SPY 756.41, −0.45% (4:22 PM PT)",
+                  "7,619.22 (+1.31%)", "Thu 5:30 AM PT · weekly initial jobless claims", "Thu 9:00 AM PT", "Fri 5:30 AM PT · October producer prices",
+                  "SPY 752.72–761.82 (±0.60%)", "7593.86–7654.28", "762.27 dark-pool line", "758.3 all-expiration flip",
+                  "759.57 dark-pool line", "750 all-expiration floor", "borderline disturbing"]:
+            self.assertIn(s, t, s)
 
     def test_hidden_on_other_sessions(self):
-        self.assertEqual(A.daily_block(DATA, "2026-11-11"), "")
+        self.assertEqual(A.daily_block(DATA, "2026-11-13"), "")
         self.assertEqual(A.daily_block({}, PD), "")
         self.assertEqual(A.daily_block(DATA, None), "")
 
@@ -33,14 +33,10 @@ class Weekly(unittest.TestCase):
     def test_renders_for_week_with_every_figure(self):
         t = txt(WB)
         self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 9–13", WB)
-        for s in ["weekly close above SPY 758", "bias flips bullish", "20-day is under the 50-day", "20-week SMA (~711)",
-                  "726–727, then 718", "open-interest magnet at SPY 725 for the 11/20 monthly opex",
-                  "open-interest magnet at SPY 730 for Fri 11/13",
-                  "VIX futures front month still above spot", "VIX1D holding above 16"]:
+        for s in ["weekly close above SPY 758", "bias flips bullish", "759.81", "PPI Fri 5:30 AM PT",
+                  "board reported preparing to remove the CEO", "698.1 flip", "SPY 751.89–767.73", "−$8.0B (11/20 monthly opex)"]:
             self.assertIn(s, t, s)
         self.assertNotIn("backwardation", WB.lower()); self.assertNotIn("contango", WB.lower())
-        self.assertIn("VIX futures front month still above spot, and VIX1D holding above 16", t)
-        self.assertNotIn("put open-interest", t.lower()); self.assertNotIn("put oi", t.lower())
 
     def test_hidden_outside_week(self):
         self.assertEqual(A.weekly_block(DATA, "2026-11-16"), "")
@@ -49,9 +45,9 @@ class Weekly(unittest.TestCase):
 
 
 class Wording(unittest.TestCase):
-    def test_730_is_gamma_floor_not_put_wall(self):
+    def test_750_is_gamma_floor_not_put_wall(self):
         t = txt(DB)
-        self.assertIn("730 gamma floor", t); self.assertNotRegex(t, r"730 put wall|put wall[^·]*730")
+        self.assertIn("750 all-expiration floor", t); self.assertNotRegex(t, r"750 put wall|put wall[^·]*750")
 
     def test_stale_spy_awaiting_line_gone_from_source_and_page(self):
         import build_daily
@@ -102,7 +98,7 @@ class Rendered(unittest.TestCase):
         base = os.environ.get("SITE_URL")
         with sync_playwright() as p:
             b = p.chromium.launch(executable_path="/usr/bin/google-chrome", args=["--no-sandbox"])
-            for page, sid, head in (("daily", "cpi-spy-levels", "CPI & SPY LEVELS"), ("weekly", "week-bias-vol", "WEEK BIAS & VOLATILITY")):
+            for page, sid, head in (("daily", "cpi-spy-levels", "AFTER HOURS, CATALYSTS & SPY LEVELS"), ("weekly", "week-bias-vol", "WEEK BIAS & VOLATILITY")):
                 pg = b.new_page(viewport={"width": 1200, "height": 900})
                 errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
                 pg.goto(f"{base}{page}/?cb=1" if base else (ROOT / page / "index.html").as_uri(), wait_until="load")

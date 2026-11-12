@@ -71,7 +71,7 @@ class StaticChecks(unittest.TestCase):
             self.assertRegex(es["last_data"], r"^\d{4}-\d{2}-\d{2}$")
         else:
             self.assertTrue(es["asof"])
-        self.assertEqual(G["session"], "2026-11-10")
+        self.assertEqual(G["session"], "2026-11-12")
         for c in G["catalysts"]["items"]:
             if c.get("utc") is None:  # a day with no listed event carries status text, no time
                 self.assertTrue(c["detail"]); continue

@@ -299,7 +299,7 @@ def charts_html(site: Path, plan_date: str, score: dict | None):
     return (f'<section class="sec" id="plan-charts"><h2>PLAN ON THE CHART</h2>'
             f'<p>{mode}. Same weekly layout: last week of 30m bars with the plan levels drawn on. '
             f'Red = resistance, green = support, amber = pivot, shaded = key zones. '
-            f'Dashed lines = bull / bear paths across Mon to Fri; purple ticks = CPI Tue 5:30 AM PT (edge only). '
+            f'Dashed lines = bull / bear paths across Mon to Fri; purple ticks = PPI Fri 5:30 AM PT (edge only). '
             f'Bright candles in the MON..FRI columns = actual price action since the plan was made.{arch} Tap a chart to enlarge.</p>'
             f'{sc_html}<div class="chg">{figs}</div></section>')
 

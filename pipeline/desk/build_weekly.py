@@ -134,7 +134,7 @@ def charts_html():
             '<p>Week of <b>Nov 9–13</b> — cautious / bearish structure, countertrend squeeze. Amber = prior week actual; '
             'white = this week\'s actual 30m so far; empty day columns show the <b>bull (green) and bear (red) paths</b> only — no lines through candles. '
             'Day tags: Tue CPI · Wed Veterans Day · Thu 30Y auction · Fri PPI. '
-            'Purple ticks = CPI Tue. Levels as right-edge ticks. Nasdaq charts show candles only: levels awaiting update. Tap to enlarge.</p>'
+            'Purple ticks = PPI Fri 5:30 AM PT. Levels as right-edge ticks. Nasdaq charts show candles only: levels awaiting update. Tap to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')
     return "".join(out)
 
