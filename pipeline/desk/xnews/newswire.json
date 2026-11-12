@@ -1,6 +1,6 @@
 {
- "generated_at_pt": "2026-11-12 13:32 PT",
- "generated_utc": "2026-11-12T21:32:32+00:00",
+ "generated_at_pt": "2026-11-12 13:44 PT",
+ "generated_utc": "2026-11-12T21:44:51+00:00",
  "breaking_minutes": 30,
  "items": [
   {
@@ -118,51 +118,6 @@
    "headline": "What we know about the mystery woman at the center of Nvidia's spy scandal",
    "tag": "TECH",
    "src": "SRC W1",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-09T21:40:22.000Z",
-   "time_pt": "13:40",
-   "date_pt": "11/09",
-   "headline": "FALLING OIL PRICES, DOWN 4.3% TO $86.94 A BARREL, ALSO SUPPORTED SENTIMENT AS HOPES…",
-   "tag": "ENERGY",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-09T21:40:22.000Z",
-   "time_pt": "13:40",
-   "date_pt": "11/09",
-   "headline": "US STOCKS REBOUNDED SHARPLY, WITH THE S&P 500 RISING 2.35%, THE NASDAQ 100 GAINING…",
-   "tag": "TECH",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-09T21:35:30.000Z",
-   "time_pt": "13:35",
-   "date_pt": "11/09",
-   "headline": "TRUMP SAYS ISRAEL AND THE ENTIRE MIDDLE EAST ARE PROTECTED FROM IRANIAN DANGER AND…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-09T21:35:27.000Z",
-   "time_pt": "13:35",
-   "date_pt": "11/09",
-   "headline": "TRUMP SAYS ALL HAVE AGREED THAT IRAN CANNOT HAVE A NUCLEAR WEAPON, CALLING IT…",
-   "tag": "GEO",
-   "src": "SRC W2",
-   "breaking": false
-  },
-  {
-   "ts_utc": "2026-11-09T21:35:24.000Z",
-   "time_pt": "13:35",
-   "date_pt": "11/09",
-   "headline": "TRUMP SAYS HE HAD AN EXCELLENT CONVERSATION WITH QATAR’S PRIME MINISTER SHEIKH…",
-   "tag": "GEO",
-   "src": "SRC W2",
    "breaking": false
   }
  ]
