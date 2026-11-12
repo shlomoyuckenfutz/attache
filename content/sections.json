@@ -1,0 +1,679 @@
+{
+ "version": 1,
+ "about": "Editable text sections for /edit/. Code-owned: add or change sections here, never from the pipeline. Locked text lives in overrides.json.",
+ "pages": {
+  "command": "command/index.html",
+  "daily": "daily/index.html",
+  "weekly": "weekly/index.html",
+  "overnight": "overnight/index.html"
+ },
+ "sections": [
+  {
+   "id": "lss.headline",
+   "group": "Daily · Long story short (also on Command)",
+   "label": "Headline",
+   "pages": [
+    "daily",
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#long-story-short"
+    },
+    {
+     "sel": ":scope > b"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "stamp": false,
+   "expiry": "day"
+  },
+  {
+   "id": "lss.context",
+   "group": "Daily · Long story short (also on Command)",
+   "label": "Context line",
+   "pages": [
+    "daily",
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#long-story-short"
+    },
+    {
+     "sel": ":scope > div",
+     "bare": true
+    }
+   ],
+   "mode": "text",
+   "expiry": "day"
+  },
+  {
+   "id": "lss.bearish",
+   "group": "Daily · Long story short (also on Command)",
+   "label": "Bearish lean",
+   "pages": [
+    "daily",
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#long-story-short"
+    },
+    {
+     "sel": ":scope > div",
+     "has": {
+      "sel": ":scope > b",
+      "starts": "Bearish lean"
+     }
+    }
+   ],
+   "mode": "text",
+   "keep_label": true,
+   "expiry": "day"
+  },
+  {
+   "id": "lss.bullish",
+   "group": "Daily · Long story short (also on Command)",
+   "label": "Bullish lean",
+   "pages": [
+    "daily",
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#long-story-short"
+    },
+    {
+     "sel": ":scope > div",
+     "has": {
+      "sel": ":scope > b",
+      "starts": "Bullish lean"
+     }
+    }
+   ],
+   "mode": "text",
+   "keep_label": true,
+   "expiry": "day"
+  },
+  {
+   "id": "lss.general",
+   "group": "Daily · Long story short (also on Command)",
+   "label": "General lean",
+   "pages": [
+    "daily",
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#long-story-short"
+    },
+    {
+     "sel": ":scope > div",
+     "has": {
+      "sel": ":scope > b",
+      "starts": "General lean"
+     }
+    }
+   ],
+   "mode": "text",
+   "keep_label": true,
+   "expiry": "day"
+  },
+  {
+   "id": "daily.bias",
+   "group": "Daily plan",
+   "label": "Bias (day) · reasoning",
+   "pages": [
+    "daily"
+   ],
+   "steps": [
+    {
+     "sel": "#bias-day .why"
+    }
+   ],
+   "mode": "text",
+   "expiry": "day"
+  },
+  {
+   "id": "daily.bull_path",
+   "group": "Daily plan",
+   "label": "Bull path",
+   "pages": [
+    "daily"
+   ],
+   "steps": [
+    {
+     "sel": "#bull-path"
+    }
+   ],
+   "mode": "list",
+   "keep_label": true,
+   "expiry": "day",
+   "hint": "One bullet per line."
+  },
+  {
+   "id": "daily.bear_path",
+   "group": "Daily plan",
+   "label": "Bear path",
+   "pages": [
+    "daily"
+   ],
+   "steps": [
+    {
+     "sel": "#bear-path"
+    }
+   ],
+   "mode": "list",
+   "keep_label": true,
+   "expiry": "day",
+   "hint": "One bullet per line."
+  },
+  {
+   "id": "daily.catalysts",
+   "group": "Daily plan",
+   "label": "Catalysts / events",
+   "pages": [
+    "daily"
+   ],
+   "steps": [
+    {
+     "sel": "#catalysts"
+    }
+   ],
+   "mode": "list",
+   "keep_label": true,
+   "expiry": "day",
+   "hint": "One bullet per line."
+  },
+  {
+   "id": "daily.gameplan",
+   "group": "Daily plan",
+   "label": "Gameplan",
+   "pages": [
+    "daily"
+   ],
+   "steps": [
+    {
+     "sel": "#gameplan"
+    }
+   ],
+   "mode": "numbered",
+   "keep_label": true,
+   "expiry": "day",
+   "hint": "One numbered item per line (numbers are added for you)."
+  },
+  {
+   "id": "daily.chart_caption",
+   "group": "Daily plan",
+   "label": "Plan on the chart · caption",
+   "pages": [
+    "daily"
+   ],
+   "steps": [
+    {
+     "sel": "#plan-charts > p"
+    }
+   ],
+   "mode": "text",
+   "expiry": "day"
+  },
+  {
+   "id": "weekly.recap",
+   "group": "Weekly plan",
+   "label": "Header · week so far",
+   "pages": [
+    "weekly"
+   ],
+   "steps": [
+    {
+     "sel": "main > .hd > div",
+     "nth": 2
+    }
+   ],
+   "mode": "text",
+   "expiry": "week"
+  },
+  {
+   "id": "weekly.bias",
+   "group": "Weekly plan",
+   "label": "Bias (week)",
+   "pages": [
+    "weekly"
+   ],
+   "steps": [
+    {
+     "sel": "#bias-week > p"
+    }
+   ],
+   "mode": "text",
+   "expiry": "week"
+  },
+  {
+   "id": "weekly.scenarios",
+   "group": "Weekly plan",
+   "label": "Scenarios",
+   "pages": [
+    "weekly"
+   ],
+   "steps": [
+    {
+     "sel": "#scenarios"
+    }
+   ],
+   "mode": "list",
+   "keep_label": true,
+   "expiry": "week",
+   "hint": "One scenario per line, e.g. **Bull:** ES holds 7625 → 7650–55."
+  },
+  {
+   "id": "weekly.day_by_day",
+   "group": "Weekly plan",
+   "label": "Day by day",
+   "pages": [
+    "weekly"
+   ],
+   "steps": [
+    {
+     "sel": "#day-by-day"
+    }
+   ],
+   "mode": "list",
+   "keep_label": true,
+   "expiry": "week",
+   "hint": "One day per line."
+  },
+  {
+   "id": "weekly.triggers",
+   "group": "Weekly plan",
+   "label": "Triggers / if-then",
+   "pages": [
+    "weekly"
+   ],
+   "steps": [
+    {
+     "sel": "#triggers-if-then"
+    }
+   ],
+   "mode": "numbered",
+   "keep_label": true,
+   "expiry": "week",
+   "hint": "One trigger per line (numbers are added for you)."
+  },
+  {
+   "id": "weekly.skip",
+   "group": "Weekly plan",
+   "label": "Skip",
+   "pages": [
+    "weekly"
+   ],
+   "steps": [
+    {
+     "sel": "#skip"
+    }
+   ],
+   "mode": "list",
+   "keep_label": true,
+   "expiry": "week",
+   "hint": "One bullet per line."
+  },
+  {
+   "id": "weekly.lastweek_caption",
+   "group": "Weekly plan",
+   "label": "Last week · plan vs actual · caption",
+   "pages": [
+    "weekly"
+   ],
+   "steps": [
+    {
+     "sel": "#plan-charts > p"
+    }
+   ],
+   "mode": "text",
+   "expiry": "week"
+  },
+  {
+   "id": "weekly.thisweek_caption",
+   "group": "Weekly plan",
+   "label": "This week · plan (paths chart) · caption",
+   "pages": [
+    "weekly"
+   ],
+   "steps": [
+    {
+     "sel": "#plan-forward > p"
+    }
+   ],
+   "mode": "text",
+   "expiry": "week"
+  },
+  {
+   "id": "command.daily_card",
+   "group": "Command",
+   "label": "Daily plan card · summary",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "a[href=\"../daily/\"]",
+     "has": {
+      "sel": ":scope > span",
+      "starts": "DAILY PLAN"
+     }
+    },
+    {
+     "sel": ":scope > div"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "expiry": "day"
+  },
+  {
+   "id": "command.weekly_card",
+   "group": "Command",
+   "label": "Weekly plan card · summary",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "a[href=\"../weekly/\"]",
+     "has": {
+      "sel": ":scope > span",
+      "starts": "WEEKLY PLAN"
+     }
+    },
+    {
+     "sel": ":scope > div"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "expiry": "week"
+  },
+  {
+   "id": "command.tile.implied_move",
+   "group": "Command",
+   "label": "IMPLIED MOVE tile · note line",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#brief .tile",
+     "has": {
+      "sel": "h4",
+      "starts": "IMPLIED MOVE"
+     }
+    },
+    {
+     "sel": ":scope > .st"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "dynamic": true,
+   "expiry": "day"
+  },
+  {
+   "id": "command.tile.catalysts",
+   "group": "Command",
+   "label": "CATALYSTS tile · note line",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#brief .tile",
+     "has": {
+      "sel": "h4",
+      "starts": "CATALYSTS"
+     }
+    },
+    {
+     "sel": ":scope > .st"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "dynamic": true,
+   "expiry": "day"
+  },
+  {
+   "id": "command.tile.es_nq_levels",
+   "group": "Command",
+   "label": "ES · NQ LEVELS tile · note line",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#brief .tile",
+     "has": {
+      "sel": "h4",
+      "starts": "ES · NQ LEVELS"
+     }
+    },
+    {
+     "sel": ":scope > .st"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "dynamic": true,
+   "expiry": "day"
+  },
+  {
+   "id": "command.tile.flow",
+   "group": "Command",
+   "label": "FLOW tile · note line",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#brief .tile",
+     "has": {
+      "sel": "h4",
+      "starts": "FLOW"
+     }
+    },
+    {
+     "sel": ":scope > .st"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "dynamic": true,
+   "expiry": "day"
+  },
+  {
+   "id": "command.tile.seasonality",
+   "group": "Command",
+   "label": "SEASONALITY tile · note line",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#brief .tile",
+     "has": {
+      "sel": "h4",
+      "starts": "SEASONALITY"
+     }
+    },
+    {
+     "sel": ":scope > .st"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "dynamic": true,
+   "expiry": "day",
+   "optional": true
+  },
+  {
+   "id": "command.tile.gamma_levels",
+   "group": "Command",
+   "label": "GAMMA LEVELS tile · note line",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#brief .tile",
+     "has": {
+      "sel": "h4",
+      "starts": "GAMMA LEVELS"
+     }
+    },
+    {
+     "sel": ":scope > .st"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "dynamic": true,
+   "expiry": "day"
+  },
+  {
+   "id": "overnight.ledger.heading",
+   "group": "Overnight · Night Ledger",
+   "label": "Night Ledger · heading line",
+   "pages": [
+    "overnight"
+   ],
+   "steps": [
+    {
+     "sel": ".dp.full",
+     "has": {
+      "sel": ":scope > h3",
+      "starts": "NIGHT LEDGER"
+     }
+    },
+    {
+     "sel": ":scope > h3"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "stamp": false,
+   "expiry": "day"
+  },
+  {
+   "id": "overnight.ledger.call",
+   "group": "Overnight · Night Ledger",
+   "label": "Night Ledger · next-day call (UP / DOWN / FLAT)",
+   "pages": [
+    "overnight"
+   ],
+   "steps": [
+    {
+     "sel": ".dp.full",
+     "has": {
+      "sel": ":scope > h3",
+      "starts": "NIGHT LEDGER"
+     }
+    },
+    {
+     "sel": ":scope > .q",
+     "has": {
+      "sel": ":scope > i",
+      "starts": "NEXT-DAY CALL"
+     }
+    },
+    {
+     "sel": ".tg"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "stamp": false,
+   "expiry": "day"
+  },
+  {
+   "id": "overnight.ledger.base",
+   "group": "Overnight · Night Ledger",
+   "label": "Night Ledger · Base Case",
+   "pages": [
+    "overnight"
+   ],
+   "steps": [
+    {
+     "sel": ".dp.full",
+     "has": {
+      "sel": ":scope > h3",
+      "starts": "NIGHT LEDGER"
+     }
+    },
+    {
+     "sel": ":scope > .q",
+     "has": {
+      "sel": ":scope > i",
+      "starts": "BASE CASE"
+     }
+    }
+   ],
+   "mode": "text",
+   "keep_label": true,
+   "expiry": "day"
+  },
+  {
+   "id": "overnight.ledger.alternative",
+   "group": "Overnight · Night Ledger",
+   "label": "Night Ledger · Alternative",
+   "pages": [
+    "overnight"
+   ],
+   "steps": [
+    {
+     "sel": ".dp.full",
+     "has": {
+      "sel": ":scope > h3",
+      "starts": "NIGHT LEDGER"
+     }
+    },
+    {
+     "sel": ":scope > .q",
+     "has": {
+      "sel": ":scope > i",
+      "starts": "ALTERNATIVE"
+     }
+    }
+   ],
+   "mode": "text",
+   "keep_label": true,
+   "expiry": "day"
+  },
+  {
+   "id": "overnight.ledger.flip",
+   "group": "Overnight · Night Ledger",
+   "label": "Night Ledger · Flip Trigger",
+   "pages": [
+    "overnight"
+   ],
+   "steps": [
+    {
+     "sel": ".dp.full",
+     "has": {
+      "sel": ":scope > h3",
+      "starts": "NIGHT LEDGER"
+     }
+    },
+    {
+     "sel": ":scope > .q",
+     "has": {
+      "sel": ":scope > i",
+      "starts": "FLIP TRIGGER"
+     }
+    }
+   ],
+   "mode": "text",
+   "keep_label": true,
+   "expiry": "day"
+  }
+ ]
+}

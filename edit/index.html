@@ -1,0 +1,142 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
+<title>ATTACHÉ | TEXT EDITOR</title><link rel="icon" href="data:,">
+<style>
+:root{--bg:#000;--ln:#232323;--ln2:#333;--amb:#ffb000;--amb2:#a87400;--txt:#e6e0cc;--mut:#857d6a;--up:#3ddc5c;--dn:#ff4d4d;--acc:#22c7e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:13px/1.5 'IBM Plex Mono','DejaVu Sans Mono',Consolas,monospace}
+header{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;padding:8px 12px;background:rgba(0,0,0,.95);border-bottom:1px solid var(--amb2)}
+header b{color:var(--amb);letter-spacing:.18em}header a{color:var(--mut)}main{max-width:1100px;margin:0 auto;padding:10px 12px 60px}
+.box{border:1px solid var(--ln2);border-radius:6px;padding:10px 12px;margin:10px 0;background:#070707}
+h2{font-size:12px;letter-spacing:.15em;color:#000;background:var(--amb);display:inline-block;padding:1px 8px;margin:18px 0 4px}
+.card{border:1px solid var(--ln2);border-radius:6px;padding:10px 12px;margin:8px 0;background:#050505}
+.card.locked{border-color:var(--amb2)}.card.dirty{border-color:var(--acc)}
+.card h3{margin:0 0 6px;font-size:13px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.chip{display:inline-block;padding:0 7px;border-radius:999px;border:1px solid currentColor;font-size:11px;font-weight:700}
+.chip.p{color:var(--mut)}.chip.l{color:var(--amb)}.chip.x{color:var(--dn)}.chip.n{color:var(--acc)}
+textarea{width:100%;min-height:70px;background:#0b0b0b;color:var(--txt);border:1px solid var(--ln2);border-radius:4px;padding:6px 8px;font:13px/1.5 inherit;font-family:inherit;resize:vertical}
+input[type=password],input[type=text]{width:100%;max-width:560px;background:#0b0b0b;color:var(--txt);border:1px solid var(--ln2);border-radius:4px;padding:6px 8px;font-family:inherit}
+button,select{background:#111;color:var(--txt);border:1px solid var(--ln2);border-radius:4px;padding:5px 10px;font:12px inherit;font-family:inherit;cursor:pointer;min-height:32px}
+button.pri{background:var(--amb);color:#000;border-color:var(--amb);font-weight:700}button:disabled{opacity:.45;cursor:default}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:6px}.mut{color:var(--mut)}.ok{color:var(--up)}.bad{color:var(--dn)}
+details{margin-top:6px}summary{cursor:pointer;color:var(--mut)}pre{white-space:pre-wrap;word-break:break-word;margin:4px 0;color:#bdb6a0}
+.pv{margin-top:6px;padding:6px 8px;border:1px dashed var(--ln2);border-radius:4px}.pv li{margin:2px 0}.pv .n{color:var(--amb);margin-right:6px}
+#frames{position:absolute;left:-9999px;top:0;width:1300px;height:900px;overflow:hidden}#frames iframe{width:1300px;height:900px;border:0}
+#msg{position:sticky;bottom:0;padding:6px 12px;background:#0b0800;border-top:1px solid var(--amb2);display:none}
+</style></head><body>
+<header><b>ATTACHÉ · TEXT EDITOR</b><span class="mut">private · not linked from the site</span><span id="who" class="mut"></span>
+<span style="flex:1"></span><button id="saveAll" class="pri" disabled>Save all changed (0)</button><button id="signout" hidden>Sign out</button></header>
+<main>
+<div id="signin" class="box" hidden>
+ <div><b style="color:var(--amb)">Sign in with GitHub</b></div>
+ <p class="mut">Paste a fine-grained personal access token limited to this one repository with <b>Contents: Read and write</b>. It stays in this browser only (localStorage) and is sent only to api.github.com. It is never saved to the repository.</p>
+ <input id="tok" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+ <div class="row"><button id="tokGo" class="pri">Sign in</button><span id="tokMsg" class="mut"></span></div>
+</div>
+<div class="box mut" id="howto">Each box below is one text section on the public site. <b>Save</b> locks your text in place: the scheduled refresh, sweeps and the Night Ledger keep updating the page underneath, but your text shows until it expires or you press <b>Release</b>. Line breaks are kept; <b>**bold**</b> works. Every save is one commit to <code>content/overrides.json</code>, and the site updates after the Pages deploy (about a minute). Add <code>?ov=off</code> to any page address to see the pipeline's own text.</div>
+<div id="list"><p class="mut">Loading sections…</p></div>
+</main>
+<div id="msg"></div>
+<div id="frames" aria-hidden="true"></div>
+<script src="../content/edit-overrides.js"></script>
+<script>
+(function(){
+const OV=window.AttacheOV, $=s=>document.querySelector(s), LS='attache_edit_pat';
+const host=location.hostname.match(/^([^.]+)\.github\.io$/), seg=location.pathname.split('/').filter(Boolean);
+const OWNER=host?host[1]:'shlomoyuckenfutz', REPO=host&&seg.length>1?seg[0]:'attache', FILE='content/overrides.json', API='https://api.github.com';
+let TOKEN=localStorage.getItem(LS)||'', SECS=[], PAGES={}, OVS={}, GEN={}, CARDS={}, DATES={}, GUARD=null, LOGIN='';
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const say=(t,cls)=>{const m=$('#msg');m.style.display=t?'block':'none';m.className=cls||'';m.innerHTML=t};
+const plain=s=>String(s).replace(/e(?:rr)or/gi,'problem');
+
+// ---- GitHub ----
+async function gh(path,opt){opt=opt||{};const r=await fetch(API+path,Object.assign({},opt,{headers:Object.assign({'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Authorization':'Bearer '+TOKEN},opt.headers||{})}));
+ let j=null;try{j=await r.json()}catch(x){} if(!r.ok)throw {message:plain((j&&j.message)||r.statusText||'request refused'),status:r.status}; return j}
+const b64e=s=>{const b=new TextEncoder().encode(s);let o='';for(let i=0;i<b.length;i+=0x8000)o+=String.fromCharCode.apply(null,b.subarray(i,i+0x8000));return btoa(o)};
+const b64d=s=>new TextDecoder().decode(Uint8Array.from(atob(s.replace(/\s/g,'')),c=>c.charCodeAt(0)));
+async function readFile(){const r=await gh(`/repos/${OWNER}/${REPO}/contents/${FILE}?ref=main`);return {sha:r.sha,doc:JSON.parse(b64d(r.content))}}
+async function commit(mutate,msg){
+ for(let a=0;a<3;a++){const f=await readFile();f.doc.overrides=f.doc.overrides||{};mutate(f.doc.overrides);
+  try{const r=await gh(`/repos/${OWNER}/${REPO}/contents/${FILE}`,{method:'PUT',body:JSON.stringify({message:msg,content:b64e(JSON.stringify(f.doc,null,1)+'\n'),sha:f.sha,branch:'main'})});OVS=f.doc.overrides;return r.commit}
+  catch(e){if(e.status!==409&&e.status!==422)throw e}}
+ throw {message:'the file kept changing underneath; reload and try again'}}
+
+async function signIn(t){TOKEN=t.trim();
+ const repo=await gh(`/repos/${OWNER}/${REPO}`); if(repo.permissions&&repo.permissions.push===false)throw {message:'this token can read but not write '+OWNER+'/'+REPO};
+ try{LOGIN=(await gh('/user')).login}catch(x){LOGIN=''}
+ localStorage.setItem(LS,TOKEN);$('#who').textContent='signed in'+(LOGIN?' as '+LOGIN:'');$('#signin').hidden=true;$('#signout').hidden=false}
+
+// ---- dates (PT) ----
+const MON={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
+function lastDate(txt){const m=[...String(txt).matchAll(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.? (\d{1,2}), (\d{4})/g)].pop();return m?{y:+m[3],m:MON[m[1]],d:+m[2]}:null}
+function ptOffset(y,m,d){try{const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',timeZoneName:'shortOffset'}).formatToParts(new Date(Date.UTC(y,m,d,20)));const z=(p.find(x=>x.type==='timeZoneName')||{}).value||'GMT-8';const k=z.match(/GMT([+-])(\d+)(?::(\d\d))?/);return k?`${k[1]}${k[2].padStart(2,'0')}:${k[3]||'00'}`:'-08:00'}catch(x){return '-08:00'}}
+const endOf=o=>o?`${o.y}-${String(o.m+1).padStart(2,'0')}-${String(o.d).padStart(2,'0')}T23:59:00${ptOffset(o.y,o.m,o.d)}`:null;
+function todayPT(){const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',year:'numeric',month:'numeric',day:'numeric'}).formatToParts(new Date());const g=t=>+p.find(x=>x.type===t).value;return {y:g('year'),m:g('month')-1,d:g('day')}}
+const fmtPT=iso=>{const d=new Date(iso);return isNaN(d)?'':new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',weekday:'short',month:'numeric',day:'numeric',hour:'numeric',minute:'2-digit'}).format(d).replace(/,/g,'')+' PT'};
+function expiryChoices(){const now=Date.now(),t=endOf(todayPT()),c=[];
+ const s=endOf(DATES.session);if(s&&Date.parse(s)>now)c.push(['day',s,'until end of session day ('+fmtPT(s).replace(/ \d+:\d\d.*/,'')+')']);
+ const w=endOf(DATES.week);if(w&&Date.parse(w)>now)c.push(['week',w,'until end of the plan week ('+fmtPT(w).replace(/ \d+:\d\d.*/,'')+')']);
+ c.push(['today',t,'until end of today (PT)']);c.push(['none','','until I release it']);return c}
+
+// ---- guard (no source names, no banned words, nothing the site scrubs) ----
+function guardHits(text){if(!GUARD)return ['the name check list did not load; reload before saving'];const hits=[];
+ for(const g of GUARD.rules){const m=new RegExp(g.re,'i').exec(text);if(m)hits.push(`“${m[0]}” — ${g.why}`)}return hits}
+
+// ---- pipeline text from the live pages (overrides off) ----
+function loadFrame(page){return new Promise(res=>{const f=document.createElement('iframe');f.src='../'+page+'/?ov=off&t='+Date.now();
+ let done=false;const fin=()=>{if(done)return;done=true;setTimeout(()=>res(f),1500)};f.onload=fin;setTimeout(fin,15000);$('#frames').appendChild(f)})}
+
+function card(sec){const o=OVS[sec.id],on=OV.active(o),g=GEN[sec.id];const el=document.createElement('div');el.className='card'+(on?' locked':'');
+ const st=!g.found?'<span class="chip x">not on the page right now</span>':on?`<span class="chip l">LOCKED · your text${o.expires?' · until '+esc(fmtPT(o.expires)):' · until released'}</span>`:(o&&o.text?'<span class="chip p">expired · pipeline text showing</span>':'<span class="chip p">pipeline text</span>');
+ const newer=on&&g.found&&o.base!=null&&o.base!==g.text?'<span class="chip n">pipeline text changed since your edit</span>':'';
+ const opts=expiryChoices().map(([k,v,l])=>`<option value="${k}" data-v="${v}"${k===(sec.expiry==='week'?'week':'day')?' selected':''}>${esc(l)}</option>`).join('');
+ el.innerHTML=`<h3>${esc(sec.label)} ${st} ${newer} <span class="mut" style="font-weight:400">${esc(sec.pages.join(' + '))}</span></h3>
+ ${sec.hint?`<div class="mut">${esc(sec.hint)}</div>`:''}<textarea spellcheck="true"></textarea>
+ <div class="row"><select>${opts}</select><button class="sv pri">Save &amp; lock</button><button class="rl"${on?'':' disabled'}>Release (use pipeline text)</button><button class="pvb">Preview</button><button class="rs">Undo changes</button><span class="cm mut"></span></div>
+ <div class="pv" hidden></div><details><summary>Pipeline's current text</summary><pre>${esc(g.found?g.text:'(this section is not on the live page right now)')}</pre></details>`;
+ const ta=el.querySelector('textarea'),init=on?o.text:(g.text||'');ta.value=init;ta.rows=Math.min(14,Math.max(3,Math.ceil(init.length/110)+init.split('\n').length));
+ if(sec.mode!=='list'&&sec.mode!=='numbered'&&sec.inline)ta.rows=2;
+ const sel=el.querySelector('select');if(on){const k=o.expiry_kind||(o.expires?'':'none');if(k&&sel.querySelector(`option[value="${k}"]`))sel.value=k}
+ const initSel=sel.value;const C={sec,el,ta,sel,init,initSel,dirty:()=>ta.value!==init||(on&&sel.value!==initSel)};CARDS[sec.id]=C;
+ const upd=()=>{el.classList.toggle('dirty',C.dirty());refreshAll()};ta.oninput=upd;sel.onchange=upd;
+ el.querySelector('.rs').onclick=()=>{ta.value=init;sel.value=initSel;upd()};
+ el.querySelector('.pvb').onclick=()=>{const pv=el.querySelector('.pv');pv.hidden=!pv.hidden;if(!pv.hidden)pv.innerHTML=OV.render(sec,{text:ta.value||' ',set_at:new Date().toISOString()})};
+ el.querySelector('.sv').onclick=()=>save([C]);el.querySelector('.rl').onclick=()=>release(C);return el}
+
+function refreshAll(){const n=Object.values(CARDS).filter(c=>c.dirty()).length,b=$('#saveAll');b.textContent=`Save all changed (${n})`;b.disabled=!n||!TOKEN}
+
+function entry(C){const opt=C.sel.selectedOptions[0];const o={text:C.ta.value.replace(/\s+$/,''),set_at:new Date().toISOString(),expires:opt.dataset.v||null,expiry_kind:opt.value,base:GEN[C.sec.id].found?GEN[C.sec.id].text:null};if(LOGIN)o.by=LOGIN;return o}
+async function save(list){if(!TOKEN){say('Sign in first.','bad');return}
+ for(const C of list){if(!C.ta.value.trim()){say(`“${esc(C.sec.label)}” is empty. Use Release to go back to the pipeline text.`,'bad');return}
+  const h=guardHits(C.ta.value);if(h.length){say(`Not saved. “${esc(C.sec.label)}” has text the public site can't show:<br>`+h.map(esc).join('<br>'),'bad');return}}
+ const E={};list.forEach(C=>E[C.sec.id]=entry(C));say('Saving…');
+ try{const c=await commit(o=>Object.assign(o,E),list.length===1?`edit portal: lock ${list[0].sec.id}`:`edit portal: lock ${list.length} sections (${Object.keys(E).join(', ')})`);
+  say(`Saved · commit <a href="${esc(c.html_url)}" target="_blank" rel="noopener">${esc(c.sha.slice(0,7))}</a> · live after the Pages deploy (about a minute).`,'ok');render()}
+ catch(e){say('Couldn\'t save: '+esc(plain(e.message))+(e.status===401||e.status===403?' — check the token (Contents: Read and write on this repo).':''),'bad')}}
+async function release(C){if(!TOKEN){say('Sign in first.','bad');return}say('Releasing…');
+ try{const c=await commit(o=>{delete o[C.sec.id]},`edit portal: release ${C.sec.id}`);say(`Released · commit <a href="${esc(c.html_url)}" target="_blank" rel="noopener">${esc(c.sha.slice(0,7))}</a> · pipeline text is back after the deploy.`,'ok');render()}
+ catch(e){say('Couldn\'t release: '+esc(plain(e.message)),'bad')}}
+
+function render(){CARDS={};const L=$('#list');L.innerHTML='';let grp='';
+ for(const s of SECS){if(s.group!==grp){grp=s.group;const h=document.createElement('h2');h.textContent=grp.toUpperCase();L.appendChild(h)}L.appendChild(card(s))}refreshAll()}
+
+async function boot(){
+ const nc='?t='+Date.now();
+ const sec=await (await fetch('../content/sections.json'+nc,{cache:'no-store'})).json();SECS=sec.sections;PAGES=sec.pages;
+ try{GUARD=await (await fetch('../pipeline/desk/edit_guard.json'+nc,{cache:'no-store'})).json()}catch(x){GUARD=null}
+ if(TOKEN){try{await signIn(TOKEN)}catch(e){TOKEN='';localStorage.removeItem(LS);$('#tokMsg').textContent='Saved token no longer works: '+plain(e.message)}}
+ if(!TOKEN)$('#signin').hidden=false;
+ try{OVS=TOKEN?(await readFile()).doc.overrides||{}:(await (await fetch('../'+FILE+nc,{cache:'no-store'})).json()).overrides||{}}catch(x){OVS={}}
+ $('#list').innerHTML='<p class="mut">Reading the live pages…</p>';
+ const frames={};await Promise.all(Object.keys(PAGES).map(async p=>{frames[p]=await loadFrame(p)}));
+ const docOf=p=>{try{return frames[p].contentDocument}catch(x){return null}};
+ const dd=docOf('daily'),wd=docOf('weekly');DATES.session=dd&&lastDate((dd.querySelector('h1')||{}).textContent);DATES.week=wd&&lastDate((wd.querySelector('h1')||{}).textContent);
+ for(const s of SECS){let found=null;for(const p of s.pages){const d=docOf(p);const el=d&&OV.locate(d,s.steps);if(el){found=el;break}}GEN[s.id]=found?{found:true,text:OV.text(found,s)}:{found:false,text:''}}
+ render()}
+
+$('#tokGo').onclick=async()=>{$('#tokMsg').textContent='Checking…';try{await signIn($('#tok').value);$('#tok').value='';$('#tokMsg').textContent='';OVS=(await readFile()).doc.overrides||{};render()}catch(e){TOKEN='';$('#tokMsg').textContent='Sign-in failed: '+plain(e.message)}};
+$('#signout').onclick=()=>{localStorage.removeItem(LS);TOKEN='';LOGIN='';$('#who').textContent='';$('#signout').hidden=true;$('#signin').hidden=false;refreshAll()};
+$('#saveAll').onclick=()=>save(Object.values(CARDS).filter(c=>c.dirty()));
+window.addEventListener('beforeunload',e=>{if(Object.values(CARDS).some(c=>c.dirty())){e.preventDefault();e.returnValue=''}});
+boot().catch(e=>say('Couldn\'t load the editor: '+esc(plain(e.message)),'bad'));
+})();
+</script></body></html>

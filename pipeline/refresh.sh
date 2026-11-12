@@ -131,6 +131,10 @@ if [ -f darkpool_src/darkpool_live_plain.html ]; then
   rm -f /tmp/darkpool_live_ui.html
 fi
 
+# 16b) Manual text overrides from /edit/ (content/overrides.json). Runs after every rebuild so a page the
+#      builders just rewrote still shows Everett's locked text. Never writes content/overrides.json.
+run "apply_overrides" python3 apply_overrides.py "$ORB_SITE"
+
 # 17) Sanitize (no trader/source names, no alpaca/yahoo, no ORB5/ORB30)
 PAGES=("$ORB_SITE/command/index.html")
 for p in overnight weekly daily darkpool gammamap exposure; do
