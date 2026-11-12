@@ -337,8 +337,6 @@ def page(plan, site: Path):
            f'<title>ATTACHÉ | DAILY PLAN</title><link rel="icon" href="data:,">'
            f'<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">{CSS}</head><body><main>',
            f'<h1>{html.escape(title)}</h1>', lss_html(plan),
-           f'<div class="hd"><div>Plan only — not investment advice · rebuilt from plan.json on every sweep</div>'
-           f'<div>Session date: <b>{html.escape(fmt_date(date))}</b> · sources counted in plan: <b>{html.escape(str(plan.get("sources_count", "–")))}</b></div></div>',
            '<nav class="toc">' + "".join(f'<a href="#{i}">{html.escape(lab)}</a>' for i, lab in toc) + "</nav>",
            f'<section class="sec" id="bias-day"><h2>BIAS (DAY)</h2>'
            f'<div class="bias"><div class="dir {dcls}">{html.escape(direction)}</div>'

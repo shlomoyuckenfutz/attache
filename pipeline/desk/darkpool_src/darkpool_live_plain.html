@@ -220,7 +220,7 @@ table.lv .pri td:first-child,table.lv td .badge{opacity:1}
 
   <section class="sec sc">
     <h2>LEVEL SCORECARD</h2>
-    <p class="sub" id="scSub">Distance from spot · bounce vs break · session cross stamps. Confluence (GEX/TA) lives on Command when multi-source data is present; this page is Dark Pool–only.</p>
+    <p class="sub" id="scSub">Distance from spot · bounce vs break · session cross stamps. Confluence (GEX/TA) lives on Command; this page is Dark Pool only.</p>
     <div id="scBody"><div class="mut">loading…</div></div>
   </section>
 
@@ -239,9 +239,9 @@ table.lv .pri td:first-child,table.lv td .badge{opacity:1}
   <section class="sec">
     <h2>HOW TO UPDATE</h2>
     <div class="note">
-      Single source of truth: <code>data/spy_dark_pool.json</code> on the Attaché site.
+      Levels load from the site Dark Pool data file.
       <ol>
-        <li>Edit the <code>levels</code> array (SPY prices, high → low). Label them <b style="color:var(--pu2)">Dark Pool</b> only — no source names.</li>
+        <li>Edit the <code>levels</code> array (SPY prices, high → low). Label them <b style="color:var(--pu2)">Dark Pool</b> only.</li>
         <li>Recompute <code>rows</code> from <code>convert.spy_per_spx</code> and <code>convert.es_minus_spx</code> (stored with asof + public data closes).</li>
         <li>Refresh baked <code>bars.candles</code> (exchange 30m bars resampled to RTH <b>4H</b>, ~3m; y-range fits candles, off-chart levels listed in chips) and <code>level_stats</code> from Desk, then push JSON. Tag levels with <code>status</code> current|prior and <code>color</code>.</li>
         <li>This page reads the JSON at runtime — push the JSON and reload.</li>
@@ -343,7 +343,7 @@ table.lv .pri td:first-child,table.lv td .badge{opacity:1}
       const nr=spy===nb||spy===na;
       const st=r.status||'current', col=r.color||'purple';
       const pri=st==='prior' && col!=='green' && col!=='teal';
-      return `<tr class="${nr?'nr':''}${pri?' pri':''}" title="${(r.note||'').replace(/"/g,'&quot;')} · src ${r.source_date||''}"><td>${i+1}</td><td style="color:${colorFor(col)};font-weight:700">${fmt(spy)}</td><td>${badgeFor(st,col)}</td><td>${fmt(r.spx)}</td><td>${fmt(r.es)}</td><td class="${side==='ABOVE'?'ab':'bl'}">${side==='ABOVE'?'▲ ABOVE':'▼ BELOW'}${nr?(spy===na?' · nearest ▲':' · nearest ▼'):''}</td><td class="${d>=0?'ab':'bl'}">${d>0?'+':''}${fmt(d)}</td><td class="${pct>=0?'ab':'bl'}">${pct>0?'+':''}${fmt(pct)}%</td></tr>`;
+      return `<tr class="${nr?'nr':''}${pri?' pri':''}" title="${(r.note||'').replace(/"/g,'&quot;')} · as of ${r.source_date||''}"><td>${i+1}</td><td style="color:${colorFor(col)};font-weight:700">${fmt(spy)}</td><td>${badgeFor(st,col)}</td><td>${fmt(r.spx)}</td><td>${fmt(r.es)}</td><td class="${side==='ABOVE'?'ab':'bl'}">${side==='ABOVE'?'▲ ABOVE':'▼ BELOW'}${nr?(spy===na?' · nearest ▲':' · nearest ▼'):''}</td><td class="${d>=0?'ab':'bl'}">${d>0?'+':''}${fmt(d)}</td><td class="${pct>=0?'ab':'bl'}">${pct>0?'+':''}${fmt(pct)}%</td></tr>`;
     }).join('');
   };
 
@@ -573,7 +573,7 @@ table.lv .pri td:first-child,table.lv td .badge{opacity:1}
     if(prior.spy_per_spx!=null){
       note += ` · prior was ÷ ${prior.spy_per_spx} / + ${prior.es_minus_spx}`;
     }
-    if(c.source) note += ` · source ${c.source}`;
+   
     document.getElementById('cvNote').textContent = note;
   };
 

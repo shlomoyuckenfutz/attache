@@ -779,10 +779,9 @@ function setTicker(t){TK=t;document.body.dataset.t=t;document.querySelectorAll('
  try{localStorage.setItem('atk',t)}catch(e){}}
 document.querySelectorAll('#tkr button').forEach(b=>b.addEventListener('click',()=>setTicker(b.dataset.t)));
 // X / NEWS
-(()=>{const X=D.xnews||{},P=X.plan||{},h=X.handles||[],B=$('#xnB');B.classList.add('xn');
- if(!h.length){$('#xnH').textContent='0 feeds';B.innerHTML='<div class="wait">Awaiting feed list.</div>';return}
- $('#xnH').textContent=`${h.length} feeds · ${P.sources_count??0} sources · ${P.date??'–'}`;
- if(!P.date){B.innerHTML='<div class="wait">No plan yet.</div>';return}
+(()=>{const X=D.xnews||{},P=X.plan||{},B=$('#xnB');B.classList.add('xn');
+ if(!P.date){$('#xnH').textContent='';B.innerHTML='<div class="wait">Awaiting update.</div>';return}
+ $('#xnH').textContent=P.date;
  const b=P.bias||{},c={LONG:'#3ddc5c',SHORT:'#ff3b3b'}[b.direction]||'#ffb000',e=s=>String(s??'').replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'})[m]);
  B.innerHTML=`<div class="xb" style="--c:${c}"><small>BIAS</small><b>${e(b.direction||'NEUTRAL')}</b><span>${e(b.reason)}</span></div>`+
  ((P.key_levels||[]).length?'<table><tr><th class="r">Level</th><th>Note</th></tr>'+P.key_levels.map(l=>`<tr><td class="r cy">${e(l.price)}</td><td>${e(l.note)}</td></tr>`).join('')+'</table>':'')+
@@ -791,7 +790,7 @@ document.querySelectorAll('#tkr button').forEach(b=>b.addEventListener('click',(
 window.SRC=window.SRC||(()=>{const m={};let i=0;return h=>m[h]||(m[h]='SRC '+String.fromCharCode(65+(i++%26)))})();
 (()=>{const e=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[m]),C=D.conf||{},G=D.gamma||{},S=D.score||{};
  window.drawConf=t=>{const B=$('#cflB'),L=((C.symbols||{})[t])||[];if(!L.length){B.innerHTML='<div class="mut">No levels yet.</div>';$('#cflH').textContent='';return}
- const sp=(C.spot||{})[t],mx=Math.max(...L.map(b=>b.n_sources));let h='<div class="lad"><div class="mut">PRICE</div><div class="mut">SOURCES · TYPES</div><div class="mut">RANGE</div><div class="mut r">N</div>',dn=0;
+ const sp=(C.spot||{})[t],mx=Math.max(...L.map(b=>b.n_sources));let h='<div class="lad"><div class="mut">PRICE</div><div class="mut">CONFLUENCE · TYPES</div><div class="mut">RANGE</div><div class="mut r">N</div>',dn=0;
  L.forEach(b=>{if(!dn&&sp!=null&&b.price<sp){h+=`<div class="spot">${sp}</div><div class="spot">SPOT ${t==='SPY'?'':'≈'}</div><div class="spot"></div><div class="spot"></div>`;dn=1}
  const cv=b.sources.some(x=>x.converted),tip=b.sources.map(x=>`${SRC(x.handle)}: ${x.raw_price} ${x.native}${x.converted?' (≈)':''} · ${x.kind}${x.scope?' · '+x.scope:''} · ${x.posted_pt}`).join('\n')+(b.conflicts.length?'\nCONFLICT '+b.conflicts.map(z=>String(z).replace(/(^|; )([^:;]+):/g,(m,p,h)=>p+SRC(h.trim())+':')).join('; '):''),c=b.n_sources>=3?'b3':'';
  h+=`<div class="${c}" title="${e(tip)}">${cv&&b.sources.every(x=>x.converted)?'≈':''}${b.price}</div><div class="${c}" title="${e(tip)}">${b.types.map(x=>`<span class="chip ${x}">${x}</span>`).join('')} ${e([...new Set(b.sources.map(x=>SRC(x.handle)))].join(', '))}<div class="bar ${c}" style="width:${100*b.n_sources/mx}%"></div></div><div class="mut">${b.lo}–${b.hi}</div><div class="r ${c}">${b.n_sources}</div>`});
