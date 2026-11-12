@@ -49,7 +49,8 @@ def strip(k):
             f'<div><i>GLOBEX L</i> {f(s["on_lo"],2)} vs RTH L {f(s["rth_lo"],2)}{vs(s["on_lo"], s["rth_lo"], False)}</div>{extra}'
             f'<div class="m">session from {e(s["sess_start"])} ET · prior RTH {e(s["rth_date"] or "—")} 09:30-16:00</div></div>')
 import overnight_panels  # OVERNIGHT DETAIL panels (levels, curve & risk, pulse, calendar, night ledger)
-try: dethtml, detcss = overnight_panels.build(D)
+_existing = (R / "overnight/index.html").read_text(encoding="utf-8", errors="replace") if (R / "overnight/index.html").exists() else ""
+try: dethtml, detcss = overnight_panels.build(D, existing_html=_existing)
 except Exception as ex: dethtml, detcss = "", ""
 try: charthtml = overnight_panels.charts()
 except Exception: charthtml = ""

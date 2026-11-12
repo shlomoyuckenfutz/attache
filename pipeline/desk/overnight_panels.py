@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ATTACHÉ OVERNIGHT detail panels (HTML fragment + CSS) for build_overnight.py.
 Reads es_levels/overnight.json (cross-asset board), es_levels/overnight_details.json, xnews/ledger/ledger.json. No source names."""
-import json
+import json, re
 from pathlib import Path
 from html import escape as e
 R = Path(__file__).resolve().parent
@@ -123,6 +123,32 @@ def _ledger_stale_tag(issue_date, today=None):
     return f" · awaiting update (last issue {d.isoformat()})" if d < prev else ""
 
 
+
+LEDGER_BLOCK_RE = re.compile(r'<div class="dp(?: full)?"><h3>NIGHT LEDGER[\s\S]*?</div></div>')
+LEDGER_DATE_RE = re.compile(r'NIGHT LEDGER · (\d{4}-\d{2}-\d{2})')
+
+
+def page_ledger_date(html):
+    m = LEDGER_DATE_RE.search(html or "")
+    return m.group(1) if m else ""
+
+
+def extract_ledger_block(html):
+    m = LEDGER_BLOCK_RE.search(html or "")
+    return m.group(0) if m else ""
+
+
+def pick_ledger_html(incoming_date, new_html, existing_html=""):
+    """Keep the on-page Night Ledger when its issue date is newer than the incoming parse."""
+    old = page_ledger_date(existing_html)
+    incoming = str(incoming_date or "")[:10]
+    if old and incoming and old > incoming:
+        kept = extract_ledger_block(existing_html)
+        if kept:
+            return kept
+    return new_html
+
+
 def ledger_panel(N, D):
     if not N: return '<div class="dp"><h3>NIGHT LEDGER</h3><div class="m">No issue parsed.</div></div>'
     es = ((D.get("on") or {}).get("ES") or {}).get("last")
@@ -142,11 +168,16 @@ def ledger_panel(N, D):
             f'<table style="margin-top:4px"><tr><th class="n">SPY</th><th class="n">ES EQUIV</th><th class="n">vs ES LAST</th><th>TYPE</th><th></th></tr>{lv}</table>'
             f'<div class="q" style="margin-top:4px"><i>HIT RATE</i> <b>{f(hr["rate"],1) if hr else "—"}%</b> <span class="m">({hr["hits"] if hr else 0}/{hr["n"] if hr else 0} next-day direction calls)</span></div><div>{hh}</div>'
             f'<div class="m">ES = SPY ÷ {N.get("factor")}. Call scored vs next SPY close-to-close (|move| under 0.3% = FLAT; a directional call with a flat same-sign day counts as a hit).</div></div>')
-def build(B):
+def build(B, existing_html=""):
     D = L("es_levels/overnight_details.json"); N = L("xnews/ledger/ledger.json")
     if not D: return "", CSS
     gen = e(D.get("generated_et", ""))
     ledger = ledger_panel(N, D).replace('<div class="dp">', '<div class="dp full">', 1)
+    if not existing_html:
+        _p = R / "overnight/index.html"
+        if _p.exists():
+            existing_html = _p.read_text(encoding="utf-8", errors="replace")
+    ledger = pick_ledger_html((N or {}).get("date", ""), ledger, existing_html)
     return (f'<h2>OVERNIGHT DETAIL <span class="m" style="letter-spacing:0;font-weight:400">· built {gen}</span></h2><div class="dgrid">{on_panel(D)}{curve_panel(D, B)}'
             f'{pulse_panel(D)}{cal_panel(D)}{ledger}</div>'), CSS
 

@@ -9,8 +9,9 @@ HERE = Path(__file__).resolve().parent
 F = 0.099112  # ES-to-SPY factor: ES = SPY / F
 # next-session direction call per issue (UP / DOWN / FLAT); curated from each issue's take, heuristic fallback for new issues
 DIR = {"2026-10-07": "UP", "2026-10-08": "UP", "2026-10-09": "DOWN", "2026-10-12": "DOWN", "2026-10-13": "DOWN", "2026-10-14": "UP",
-       "2026-10-15": "FLAT", "2026-10-16": "UP", "2026-10-19": "UP", "2026-10-20": "DOWN", "2026-10-21": "DOWN", "2026-10-22": "UP", "2026-10-23": "UP", "2026-10-26": "FLAT", "2026-10-27": "DOWN", "2026-10-28": "DOWN", "2026-10-29": "DOWN", "2026-10-30": "DOWN", "2026-11-05": "UP", "2026-11-06": "DOWN", "2026-11-09": "FLAT"}
+       "2026-10-15": "FLAT", "2026-10-16": "UP", "2026-10-19": "UP", "2026-10-20": "DOWN", "2026-10-21": "DOWN", "2026-10-22": "UP", "2026-10-23": "UP", "2026-10-26": "FLAT", "2026-10-27": "DOWN", "2026-10-28": "DOWN", "2026-10-29": "DOWN", "2026-10-30": "DOWN", "2026-11-05": "UP", "2026-11-06": "DOWN", "2026-11-09": "FLAT", "2026-11-11": "DOWN"}
 BASE = {
+    "2026-11-11": "Leaning toward a hot PPI (corrected later: Friday, not Thursday) pushing yields and the DXY through a critical level, which stocks will not like. Base case: come back to close the gap and revisit 750, with a fight expected between 753 and 750. Dark pools at 733–733.13 by week’s end are not the base case but a higher-than-average probability. Pattern of the last three weeks: peak Wednesday, sell off Thursday. NVDA CEO-succession news is the bigger multi-week overhang versus the print.",
     "2026-11-09": "No lean today — it depends on CPI tomorrow. Hot or in-line CPI: come back to give the 200DMA an actual touch. Cool print: potential to send us up to 760 for a re-test of the 100DMA; a clean breakout that threatens to retake the 20DMA would be the tell to get bulled up. Treat every rally as suspect while the 20/50DMAs are in a bearish arrangement. Anecdotal expectation leans bearish, but do not play the print; wait for the data and position with the trend.",
     "2026-11-06": "Monday should not move much with CPI due Tuesday. Lean is a drift lower to pin around 733; alternative is reclaiming some dark-pool levels above, but not higher than 740 before CPI. Sit on hands until after CPI.",
 }
@@ -60,6 +61,17 @@ def scorecard(issues):
         out.append(dict(date=i["date"], call=i["direction"], next=ks[j+1], pct=round(float(pc), 2), hit=bool(hit)))
     sc = [x for x in out if x["hit"] is not None]
     return out, (dict(hits=sum(x["hit"] for x in sc), n=len(sc), rate=round(100*sum(x["hit"] for x in sc)/len(sc), 1)) if sc else None)
+
+def should_keep_existing(prev, incoming_date):
+    """Keep the on-disk ledger.json when it is curated for the same date, or when it is newer than the parse result."""
+    if not prev:
+        return False
+    incoming = str(incoming_date or "")
+    if prev.get("curated") and str(prev.get("date") or "") == incoming:
+        return True
+    prev_d = str(prev.get("date") or "")
+    return bool(prev_d and incoming and prev_d > incoming)
+
 def main():
     files = sorted(HERE.glob("20??-??-??.md"))
     p = Path(sys.argv[1]) if len(sys.argv) > 1 else files[-1]
@@ -69,8 +81,8 @@ def main():
     out = dict(cur, factor=F, history=hist, hit_rate=rate, built=date.today().isoformat(), intraday=intra, intraday_date=date.today().isoformat() if intra else None)
     try:
         prev = json.loads((HERE / "ledger.json").read_text())
-        if prev.get("curated") and prev.get("date") == out.get("date"):
-            print("ledger_parse: curated issue for", out.get("date"), "kept"); return
+        if should_keep_existing(prev, out.get("date")):
+            print("ledger_parse: kept existing issue", prev.get("date"), "instead of", out.get("date")); return
     except Exception: pass
     (HERE / "ledger.json").write_text(json.dumps(out, indent=1))
     print(json.dumps(dict(date=cur["date"], levels=len(cur["levels"]), hit_rate=rate)))
