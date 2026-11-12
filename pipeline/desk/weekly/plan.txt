@@ -1,43 +1,45 @@
 YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 9 to Fri Nov 13, 2026
-Plan only — not investment advice · updated Tue Nov 10, 6:05 AM PT (after the hot CPI print)
-Weekly implied move (SPY-scale bounds, not ES/SPX points): 713.24–757.34 for Nov 9–13
-Monday: short-covering rally. ES swept 7380 on the Sunday-evening gap down, recovered it, and rotated back to last week's value node near 7596. Tuesday: Oct CPI printed hot (headline 0.4% / core 0.3% MoM vs 0.3% / 0.2% est); no YoY rate was published this month. ES tagged 7535–40 support (5:36 AM PT), below the 7562–65 pivot. Weekly structure is still one-time-framing down until buyers follow through.
+Plan only — not investment advice · updated Wed Nov 11, 5:05 PM PT (after the close and the after-hours Nvidia headlines)
+Weekly implied move (SPY-scale bounds, not ES/SPX points): 713.24–757.34 for Nov 9–13 (set before the week). SPY closed Wed at 759.81, above the upper bound. Remaining-week expected move to Fri 11/13 (11/11 close): SPY 751.89–767.73 · SPX 7539.86–7698.92.
+Monday: short-covering rally from the 7380 Failed Breakdown back to the 7596 value node. Tuesday: Oct CPI printed hot (headline 0.4% / core 0.3% MoM vs 0.3% / 0.2% est); ES tagged 7535–40 and reclaimed it. Wednesday: one-sided rally. ES reclaimed 7562 overnight, gapped up, hit 7616, 7636 and 7650, and retraced almost all of last Thursday's selloff; the S&P 500 closed +1.31% at 7,619.22. After the close, reports that Nvidia's board is preparing to remove its CEO sent NVDA about 7–9% lower and Nasdaq 100 futures about 1% lower.
 
 BIAS (WEEK)
-Cautious / bearish. CPI printed hot: headline 0.4% MoM (est 0.3%), core 0.3% (est 0.2%). Treasury 2- to 5-year yields rose at least 10 bp, traders added bets on a half-point Fed hike next month, gold fell 2.4%, and Nasdaq 100 futures fell 1.5% to the premarket low. The weekly auction is still one-time-framing down. While ES is under 7562–65, the lean is down. Trade the reaction, not the headline.
+Neutral to bullish while ES holds 7596–7600. The hot CPI did not break the market: buyers defended 7535–40 and then took back 7562, 7596 and 7625. The weekly structure has turned up (Wednesday retraced last Thursday's selloff). The risks into Friday are the after-hours Nvidia leadership shock, December hike pricing after the hot CPI, a dollar at its highest since May 2025, and Friday's PPI. Above 7625, the lean is up toward 7650–55 and 7687–90; losing 7596–7600 brings back the 7566 gap fill.
 
 SCENARIOS
-- Bull: ES flushes 7535–40 and reclaims it, then recovers and holds 7562–65 → 7595–96; 7616 / 7636 are targets only. SPY upper weekly implied bound 757.34.
-- Bear: ES stays below 7562–65 and accepts under 7535–40 → 7513 → 7476. SPY hot case: back toward 741, then the 200-day. Lower weekly implied bound 713.24.
-- Neutral: chop between 7535–40 and 7562–65; fade the edges, skip the middle.
+- Bull: ES holds 7625 → 7650–55 → reclaim 7655 → 7687–90; 7714 is a stretch target. SPY above the 758.3 flip toward 762.27, then the 767.73 remaining-week bound.
+- Bear: ES loses 7625 and accepts below 7596–7600 → 7566 gap fill (near the developing weekly VWAP), target only. SPY under 758.3 and 755 → 750 floor.
+- Neutral: chop between 7596–7600 and 7650–55 into PPI; fade the edges, skip the middle.
 
 KEY LEVELS
 
 /ES
-- Resistance: 7595–96 (last week's value node). Targets only: 7616 · 7636
-- Pivot: 7562–65 (must recover and hold to resume the upside)
-- Support: 7535–40 · 7513 · 7476
+- Resistance: 7650–55 (reclaim 7655 = strength). Targets only: 7687–90 · 7714
+- Pivot: 7625
+- Support: 7596–7600. Target only below: 7566
 
 SPY
-- Weekly implied move: 713.24–757.34. Premarket after the hot print (5:34–5:43 AM PT): about 747–750 (approximate; no exact live print).
+- Resistance: 762.27 (dark-pool line) · 767.73 (remaining-week bound)
+- Pivot: 758.3 (all-expiration gamma flip)
+- Support: 755 · 750 (all-expiration floor)
 
-Nasdaq (QQQ and /NQ): levels awaiting update (no verified instrument-specific map for this week yet).
+Nasdaq (QQQ and /NQ): QQQ closed 690.38 in negative gamma below its 698.1 flip (floor 680, ceiling 720). /NQ levels awaiting update (no sourced NQ basis).
 
 DAY BY DAY
 - Mon Nov 9: done. Short-covering rally from the 7380 Failed Breakdown back to the 7596 value node.
-- Tue Nov 10: CPI printed hot at 5:30 AM PT (headline 0.4% / core 0.3% vs 0.3% / 0.2% est; no YoY published). Later Tue (PT): Fed's Logan 6:35 AM, 10-year Treasury note sale 10:00 AM, Fed's Schmid 10:30 AM, Fed's Bowman 12:30 PM. Pivot 7562–65.
-- Wed Nov 11: Veterans Day. Equities open; check product-specific hours and expect thinner bond-market liquidity.
-- Thu Nov 12: 30-year bond auction 10:00 AM PT.
-- Fri Nov 13: PPI 5:30 AM PT.
+- Tue Nov 10: done. CPI printed hot at 5:30 AM PT; ES tagged 7535–40 and reclaimed it.
+- Wed Nov 11: done. Veterans Day (bond market closed). ES gap-up rally hit 7616, 7636 and 7650; S&P 500 +1.31%. After hours: Nvidia CEO headlines, NQ about −1%, SPY 756.41 (−0.45%, 4:22 PM PT).
+- Thu Nov 12: weekly jobless claims 5:30 AM PT · EIA petroleum report 9:00 AM PT · Cisco and Applied Materials report after the close. Pivot 7625.
+- Fri Nov 13: October PPI 5:30 AM PT.
 
 TRIGGERS / IF-THEN
-1. Recover and hold 7562–65 → 7595–96 first; 7616 / 7636 are targets only.
-2. Acceptance below 7535–40 → 7513, then 7476.
-3. A flush-and-reclaim of 7535–40 is a failed-breakdown setup; wait for the reclaim, never catch the first flush.
-4. VIX under 18.36 on a push higher = strength; VIX over 21.48 on a break lower = weakness.
+1. Hold 7625 → 7650–55; a reclaim of 7655 opens 7687–90 (target), then 7714.
+2. Break and hold below 7625 → 7596–7600; acceptance below 7596 opens 7566 (target only).
+3. Break and hold above 7714 with VIX under 16.44 = strength; break and hold below 7566 with VIX over 18.54 = weakness.
+4. SPY back above 758.3 restores the positive-gamma side; under 755, the 750 floor is next.
 
 SKIP
-- CPI has printed. No positions into the Fri PPI print; let the first 15 minutes trade.
-- Skip mid-range chop between 7535–40 and 7562–65.
+- Don't chase the overnight Nvidia gap; let the 6:30 AM PT open and the claims reaction trade first.
+- No new positions into Friday's 5:30 AM PT PPI print.
+- Skip mid-range chop between 7600 and 7650.
 - Skip chasing and skip unplanned or unlimited-risk 0DTE exposure.
-- Do not reuse last week's options-expiry walls as this week's positioning.

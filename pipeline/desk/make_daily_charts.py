@@ -115,43 +115,42 @@ PRIOR_DAY_NOTES = {
 PLAN_WEEK_FWD = [dt.date(2026, 11, 9), dt.date(2026, 11, 10), dt.date(2026, 11, 11),
                  dt.date(2026, 11, 12), dt.date(2026, 11, 13)]
 FWD_ZONES = {
-  "spy": {"bull": (745.0, 757.34), "bear": (730.0, 726.0),
-          "bull_lab": "745 → 757.34 weekly implied high", "bear_lab": "730 / 726 retest"},
-  "es":  {"bull": (7596.0, 7625.0), "bear": (7536.0, 7498.0),
-          "bull_lab": "7596 reclaim → 7625", "bear_lab": "below 7536 → 7498"},
+  "spy": {"bull": (758.3, 767.73), "bear": (755.0, 750.0),
+          "bull_lab": "758.3 flip → 767.73 week bound", "bear_lab": "below 755 → 750 floor"},
+  "es":  {"bull": (7650.0, 7690.0), "bear": (7600.0, 7566.0),
+          "bull_lab": "7650–55 → 7687–90", "bear_lab": "below 7596–7600 → 7566"},
   "qqq": None,
   "nq":  None,
 }
 FWD_SPEC = {
- "es": dict(sym="ES=F", title="/ES  ·  week of Nov 9 (plan)", fut=True, lv=[
-   (7648,"R","resistance"),(7625,"R","resistance"),(7596,"R","last week value node"),
-   (7562,"P","session pivot"),(7538,"S","7535–40 support"),(7498,"S","support"),
-   (7457,"S","weekly decision zone"),(7420,"S","support")],
+ "es": dict(sym="ES=F", title="/ES  ·  week of Nov 9 (plan · Thu 11/12 levels)", fut=True, lv=[
+   (7714,"R","stretch target"),(7688,"R","7687–90 target"),(7652,"R","7650–55 resistance"),
+   (7625,"P","pivot"),(7598,"S","7596–7600 support"),(7566,"S","7566 gap-fill target")],
    zones=[],
-   bull=[7562,7596,7625,7648], bear=[7562,7536,7498,7457]),
+   bull=[7625,7652,7688], bear=[7625,7598,7566]),
  "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 9 (candles · levels awaiting update)", fut=True, lv=[],
    zones=[], bull=[], bear=[]),
- "spy": dict(sym="SPY", title="SPY  ·  week of Nov 9 (plan)", fut=False, lv=[
-   (757.34,"R","weekly implied high"),(745,"R","recovery test"),
-   (730,"S","risk line"),(718,"S","weekly reference"),(713.24,"S","weekly implied low")],
-   zones=[(739,741,"P","recovery zone"),(726,727,"S","structural retest")],
-   bull=[741,745,757.34], bear=[739,730,726,718]),
+ "spy": dict(sym="SPY", title="SPY  ·  week of Nov 9 (plan · Thu 11/12 levels)", fut=False, lv=[
+   (767.73,"R","remaining-week bound"),(762.27,"R","dark-pool line"),
+   (758.3,"P","gamma flip"),(755,"S","support"),(750,"S","gamma floor")],
+   zones=[],
+   bull=[758.3,762.27,767.73], bear=[758.3,755,750]),
  "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 9 (candles · levels awaiting update)", fut=False, lv=[],
    zones=[], bull=[], bear=[]),
 }
-FWD_EVENT = {  # Tue CPI — edge ticks only
-  "day": dt.date(2026, 11, 10),
-  "label": "CPI Tue 5:30 AM PT",
+FWD_EVENT = {  # Fri PPI — edge ticks only
+  "day": dt.date(2026, 11, 13),
+  "label": "PPI Fri 5:30 AM PT",
   "frac_fut": 0.15, "frac_cash": 0.15,
 }
 FWD_DAY_NOTES = {
-  1: "CPI",
+  1: "CPI hot",
   2: "Veterans Day",
-  3: "30Y auction",
+  3: "Claims",
   4: "PPI",
 }
-FWD_BOX = ["bias: cautious / bearish structure · countertrend squeeze",
-           "catalysts: Tue CPI · Wed Veterans Day · Thu 30Y auction · Fri PPI"]
+FWD_BOX = ["bias: neutral to bullish above 7596–7600 · pivot 7625",
+           "catalysts: Thu claims 5:30 AM PT · Thu EIA 9:00 AM PT · Fri PPI 5:30 AM PT"]
 
 
 def _download(sym):

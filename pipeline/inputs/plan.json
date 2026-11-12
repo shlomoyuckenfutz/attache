@@ -1,61 +1,53 @@
 {
- "date": "2026-11-10",
- "asof_pt": "2026-11-10 06:05 PT",
- "asof": "2026-11-10 06:05 PT",
- "session": "2026-11-10",
- "title": "Yuckenfutz Tradez — Daily Plan — Tue Nov 10, 2026 (CPI hot)",
+ "date": "2026-11-12",
+ "asof_pt": "2026-11-11 17:05 PT",
+ "asof": "2026-11-11 17:05 PT",
+ "session": "2026-11-12",
+ "title": "Yuckenfutz Tradez — Daily Plan — Thu Nov 12, 2026 (Claims · Nvidia shock after hours)",
  "bias": {
-  "direction": "BEARISH",
-  "reason": "Oct CPI printed hot at 5:30 AM PT: headline 0.4% MoM (est 0.3%), core 0.3% (est 0.2%); no YoY rate was published this month. That is the plan's HOT case. Treasury 2- to 5-year yields rose at least 10 bp on the day, traders added bets on a half-point Fed hike next month, and Nasdaq 100 futures fell 1.5% to the premarket low (5:43 AM PT). ES dropped straight into 7535–40 support (tagged 5:36 AM PT), below the 7562–65 pivot. While ES is under 7562–65, the lean is down: 7513, then 7476. Recovering and holding 7565 restores the upside; 7595–96 is the first level above, and 7616 / 7636 are targets only. Monday's short-covering rally came on top of a weekly structure that was still one-time-framing down."
+  "direction": "NEUTRAL",
+  "reason": "Wednesday was a one-sided rally: the S&P 500 closed +1.31% at 7,619.22 and the Nasdaq +1.59%, with ES retracing almost all of last Thursday's selloff and tagging the 7616, 7636 and 7650 targets. After the close, reports that Nvidia's board is preparing to remove its CEO sent NVDA down about 7–9% after hours (close $173.73), Nasdaq 100 futures fell about 1% (−0.96% at 4:02 PM PT) and SPY slipped −0.45% to about 756.41 (4:22 PM PT). That puts ES back near the 7625 pivot into Thursday. Above 7625 the rally can extend to 7650–55, then 7687–90; below it, 7596–7600 is the first support and 7566 (gap fill, near the developing weekly VWAP) is the downside target. Rate-hike pricing for December and a dollar at its highest since May 2025 are the macro headwinds."
  },
- "overnight_bias": "CPI HOT (0.4% / core 0.3%) — ES below pivot 7562–65 · tagged 7535–40 · 7513 / 7476 below · 7595–96 above",
- "sources_count": 3,
+ "overnight_bias": "After-hours Nvidia shock — NQ −0.96% · SPY −0.45% · ES pivot 7625 · above 7650–55 · below 7596–7600",
+ "sources_count": 4,
  "key_levels": [
   {
-   "price": 7596,
-   "note": "ES 7595–96 resistance — last week's value-area node; first level above once 7565 is recovered"
+   "price": 7652,
+   "note": "ES 7650–55 resistance — Wednesday's 7650 target area; reclaiming and holding 7655 defines strength (7687–90, then 7714 are targets only)"
   },
   {
-   "price": 7564,
-   "note": "ES 7562–65 pivot — must recover and hold to resume the upside (7595–96 first; 7616 / 7636 are targets only); below it, the lean is down"
+   "price": 7625,
+   "note": "ES 7625 pivot — hold above for 7650–55; break and hold below opens 7596–7600"
   },
   {
-   "price": 7538,
-   "note": "ES 7535–40 support — tagged right after the hot CPI print (5:36 AM PT Tue); a flush below and a reclaim would set up a failed breakdown, while acceptance below opens 7513"
-  },
-  {
-   "price": 7513,
-   "note": "ES 7513 support — next level below 7535–40 (posted after the print Tue)"
-  },
-  {
-   "price": 7476,
-   "note": "ES 7476 support — next level below 7513"
+   "price": 7598,
+   "note": "ES 7596–7600 support — Wednesday's RTH-low area that buyers defended; acceptance below opens the 7566 gap fill (target only)"
   }
  ],
  "path": {
-  "bull": "ES flushes 7535–40 and reclaims it (failed breakdown), then recovers and holds 7562–65 → 7595–96; 7616 / 7636 are targets only.",
-  "bear": "ES stays below 7562–65 and accepts under 7535–40 → 7513 → 7476. SPY plan (hot case): back toward 741, then the 200-day."
+  "bull": "ES holds 7625 after the overnight Nvidia dip → 7650–55 → reclaim 7655 → 7687–90; 7714 is a stretch target.",
+  "bear": "ES breaks and holds below 7625 → 7596–7600 → acceptance below opens the 7566 gap fill (weekly VWAP area)."
  },
  "actionable": [
-  "CPI (Tue 5:30 AM PT): headline 0.4% MoM vs 0.3% est (prior 0.6%); core 0.3% vs 0.2% est (prior 0.3%). No YoY rate was published this month. HOT case is live (plan thresholds: hot = 0.4–0.5% / core 0.3%).",
-  "Reaction (5:30–5:45 AM PT Tue): 2- to 5-year yields rose at least 10 bp on the day, traders added bets on a half-point Fed hike next month, gold fell 2.4%, and Nasdaq 100 futures fell 1.5% to the premarket low. ES tagged 7535–40 support at 5:36 AM PT.",
-  "SPY premarket after the print (X reads, 5:34–5:43 AM PT): about 747–750, under the 750 support and well below the 754.05–755.62 dark-pool resistance and the 757–760 decision zone. No exact print is shown as live.",
-  "Key levels after CPI: pivot 7562–65 (must recover). Below: 7535–40 (tagged), 7513, 7476. Above: 7595–96 once 7565 is back. 7616 / 7636 are targets only.",
-  "Implied move: SPY Tue Nov 10 daily = awaiting update (still not posted as of Tue 5:50 AM PT). SPY weekly Nov 9–13 = 713.24–757.34 (SPY-scale, not ES/SPX points).",
-  "QQQ / NQ intraday levels: awaiting update (no Tue-dated board). Gamma levels on this page are from the 11/9 close, not Tuesday's open.",
-  "VIX filter: VIX under 18.36 alongside an ES push higher = strength; VIX over 21.48 alongside an ES break lower = weakness.",
-  "Rest of Tue (PT): Fed's Logan 6:35 AM, 10-year Treasury note sale 10:00 AM, Fed's Schmid 10:30 AM, Fed's Bowman 12:30 PM.",
-  "Gameplan: short only on acceptance below 7535–40, targeting 7513, then 7476. Long only on a flush-and-reclaim of 7535–40, or on recovering 7565, targeting 7595–96. Skip the 7540–7560 chop, and let the first 15 minutes after the 6:30 AM PT open trade. Size down; ranges are elevated."
+  "After hours Wed (PT): Nvidia's board is reported to be preparing to remove CEO Jensen Huang after a second reported relationship with a company executive. NVDA closed $173.73 (+2.9%) and traded about 7–9% lower after hours. Nasdaq 100 futures −0.96% at 4:02 PM PT (session high earlier), SPY 756.41 after hours (−0.45%) at 4:22 PM PT.",
+  "Wednesday close: S&P 500 7,619.22 (+1.31%), Nasdaq 25,465.38 (+1.59%), Dow 52,465.11 (+0.45%). CoreWeave +24.7% after results; bond market closed for Veterans Day. ES tagged 7616, 7636 and 7650 during the session.",
+  "Key levels Thu: pivot 7625. Above: 7650–55 (reclaim 7655 = strength). Below: 7596–7600. Targets only: 7687–90 and 7714 above, 7566 below (outside Thursday's implied band).",
+  "Implied move Thu 11/12 (next expiry): SPY 752.72–761.82 (±0.60%); SPX 7564.59–7625.01 (±0.40%), so ES ≈ 7593.86–7654.28 (derived, SPX + 29.27). SPY weekly to Fri 11/13: 751.89–767.73.",
+  "SPY: closed 759.81. Dark-pool lines 759.57 (held as support Wed) and 762.27 (resistance). Thu-expiry largest gamma strike 759, flip 753.3; all-expiration floor 750, flip 758.3. After hours SPY is under the 758.3 flip.",
+  "Catalysts (PT): Thu 5:30 AM weekly jobless claims; Thu 9:00 AM EIA petroleum report; Cisco and Applied Materials report after the close; Fri 5:30 AM October PPI.",
+  "Macro: a Fed official called the inflation report 'borderline disturbing'; December hike odds are high and the dollar is at its highest since May 2025. US envoys are due in Moscow Thursday; no ceasefire deal.",
+  "VIX filter: break and hold above 7714 with VIX under 16.44 = strength; break and hold below 7566 with VIX over 18.54 = weakness.",
+  "Gameplan: let the 6:30 AM PT open and the claims reaction settle. Long on a hold or reclaim of 7625 toward 7650–55; short only on acceptance below 7625 toward 7596–7600. Skip chasing above 7655 or below 7596 without a retest. Size down on headline gaps."
  ],
  "levels": [],
  "long_story_short": {
-  "for_session": "2026-11-10",
-  "asof_pt": "2026-11-10 06:05 PT",
-  "headline": "Tue 11/10 — CPI HOT (0.4% / core 0.3%) · ES below pivot 7562–65",
-  "context": "Oct CPI beat on both lines (est 0.3% / 0.2%). Yields up, half-point hike bets up, Nasdaq 100 futures −1.5% at the premarket low; ES dropped into 7535–40 support (5:36 AM PT).",
-  "levels": "ES pivot 7562–65 | above 7595–96 | below 7535–40 · 7513 · 7476",
-  "bearish": "Below 7562–65 and accepting under 7535–40 → 7513 → 7476. SPY hot case: back toward 741, then the 200-day. VIX over 21.48 on a break lower = weakness.",
-  "bullish": "Flush-and-reclaim of 7535–40 or recover 7565 → 7595–96; 7616 / 7636 are targets only. VIX under 18.36 on a push higher = strength.",
-  "general": "HOT case live. Lean down while ES is under 7562–65; trade the reaction, not the headline."
+  "for_session": "2026-11-12",
+  "asof_pt": "2026-11-11 17:05 PT",
+  "headline": "Thu 11/12 — Nvidia CEO shock after hours · ES pivot 7625",
+  "context": "Wed rally (S&P +1.31%) gave back part after hours on the Nvidia report: NQ −0.96%, SPY −0.45% (756.41). Claims 5:30 AM PT Thu; PPI 5:30 AM PT Fri.",
+  "levels": "ES pivot 7625 | above 7650–55 | below 7596–7600",
+  "bearish": "Below 7625 → 7596–7600; acceptance below opens 7566 (target only). VIX over 18.54 on a break of 7566 = weakness.",
+  "bullish": "Hold 7625 → 7650–55; reclaim 7655 → 7687–90 (target), 7714 stretch. VIX under 16.44 above 7714 = strength.",
+  "general": "Headline gap risk from the Nvidia story. Trade the 7625 reaction after claims, not the overnight print."
  }
 }
