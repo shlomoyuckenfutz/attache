@@ -24,31 +24,30 @@ details{margin-top:6px}summary{cursor:pointer;color:var(--mut)}pre{white-space:p
 #msg{position:sticky;bottom:0;padding:6px 12px;background:#0b0800;border-top:1px solid var(--amb2);display:none}
 </style></head><body>
 <header><b>ATTACHÉ · TEXT EDITOR</b><span class="mut">private · not linked from the site</span><span id="who" class="mut"></span>
-<span style="flex:1"></span><button id="saveAll" class="pri" disabled>Save all changed (0)</button><button id="signout" hidden>Sign out</button></header>
+<span style="flex:1"></span><span id="hdrActions"></span></header>
 <main>
-<div id="signin" class="box" hidden>
+<div id="signin" class="box">
  <div><b style="color:var(--amb)">Sign in with GitHub</b></div>
- <p class="mut">Paste a fine-grained personal access token limited to this one repository with <b>Contents: Read and write</b>. It stays in this browser only (localStorage) and is sent only to api.github.com. It is never saved to the repository.</p>
+ <p class="mut">Paste a fine-grained personal access token limited to this one repository with <b>Contents: Read and write</b>. It stays in this browser tab only (sessionStorage) and is sent only to api.github.com. It is never saved to the repository or put in the address bar.</p>
  <input id="tok" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
  <div class="row"><button id="tokGo" class="pri">Sign in</button><span id="tokMsg" class="mut"></span></div>
 </div>
-<div class="box mut" id="howto">Each box below is one text section on the public site. <b>Save</b> locks your text in place: the scheduled refresh, sweeps and the Night Ledger keep updating the page underneath, but your text shows until it expires or you press <b>Release</b>. Line breaks are kept; <b>**bold**</b> works. Every save is one commit to <code>content/overrides.json</code>, and the site updates after the Pages deploy (about a minute). Add <code>?ov=off</code> to any page address to see the pipeline's own text.</div>
-<div id="list"><p class="mut">Loading sections…</p></div>
 </main>
 <div id="msg"></div>
-<div id="frames" aria-hidden="true"></div>
 <script src="../content/edit-overrides.js"></script>
 <script>
 (function(){
 const OV=window.AttacheOV, $=s=>document.querySelector(s), LS='attache_edit_pat';
 const host=location.hostname.match(/^([^.]+)\.github\.io$/), seg=location.pathname.split('/').filter(Boolean);
 const OWNER=host?host[1]:'shlomoyuckenfutz', REPO=host&&seg.length>1?seg[0]:'attache', FILE='content/overrides.json', API='https://api.github.com';
-let TOKEN=localStorage.getItem(LS)||'', SECS=[], PAGES={}, OVS={}, GEN={}, CARDS={}, DATES={}, GUARD=null, LOGIN='';
+let TOKEN='', SECS=[], PAGES={}, OVS={}, GEN={}, CARDS={}, DATES={}, GUARD=null, LOGIN='', OPEN=false;
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const say=(t,cls)=>{const m=$('#msg');m.style.display=t?'block':'none';m.className=cls||'';m.innerHTML=t};
 const plain=s=>String(s).replace(/e(?:rr)or/gi,'problem');
 
-// ---- GitHub ----
+function storeToken(t){ if(t) sessionStorage.setItem(LS,t); else sessionStorage.removeItem(LS); }
+function readStored(){ try{ return sessionStorage.getItem(LS)||''; }catch(x){ return ''; } }
+
 async function gh(path,opt){opt=opt||{};const r=await fetch(API+path,Object.assign({},opt,{headers:Object.assign({'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Authorization':'Bearer '+TOKEN},opt.headers||{})}));
  let j=null;try{j=await r.json()}catch(x){} if(!r.ok)throw {message:plain((j&&j.message)||r.statusText||'request refused'),status:r.status}; return j}
 const b64e=s=>{const b=new TextEncoder().encode(s);let o='';for(let i=0;i<b.length;i+=0x8000)o+=String.fromCharCode.apply(null,b.subarray(i,i+0x8000));return btoa(o)};
@@ -60,12 +59,30 @@ async function commit(mutate,msg){
   catch(e){if(e.status!==409&&e.status!==422)throw e}}
  throw {message:'the file kept changing underneath; reload and try again'}}
 
-async function signIn(t){TOKEN=t.trim();
- const repo=await gh(`/repos/${OWNER}/${REPO}`); if(repo.permissions&&repo.permissions.push===false)throw {message:'this token can read but not write '+OWNER+'/'+REPO};
- try{LOGIN=(await gh('/user')).login}catch(x){LOGIN=''}
- localStorage.setItem(LS,TOKEN);$('#who').textContent='signed in'+(LOGIN?' as '+LOGIN:'');$('#signin').hidden=true;$('#signout').hidden=false}
+async function checkPush(t){
+ const tok=(t||'').trim();
+ if(!tok) throw {message:'Paste a token first.'};
+ let r, repo=null;
+ try{
+  r=await fetch(API+'/repos/'+OWNER+'/'+REPO,{headers:{'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','Authorization':'Bearer '+tok}});
+ }catch(x){ throw {message:'Could not reach GitHub. Try again.'}; }
+ if(!r.ok) throw {message:'Sign-in failed. Check the token and try again.'};
+ try{ repo=await r.json(); }catch(x){ throw {message:'Sign-in failed. Check the token and try again.'}; }
+ if(!(repo && repo.permissions && repo.permissions.push===true)) throw {message:'This token cannot publish to the site.'};
+ return tok;
+}
 
-// ---- dates (PT) ----
+async function signIn(t){
+ const tok=await checkPush(t);
+ TOKEN=tok;
+ try{LOGIN=(await gh('/user')).login}catch(x){LOGIN=''}
+ storeToken(TOKEN);
+ $('#who').textContent='signed in'+(LOGIN?' as '+LOGIN:'');
+ if($('#signin')) $('#signin').remove();
+ if($('#signout')) $('#signout').hidden=false;
+ if(!OPEN) await openEditor();
+}
+
 const MON={Jan:0,Feb:1,Mar:2,Apr:3,May:4,Jun:5,Jul:6,Aug:7,Sep:8,Oct:9,Nov:10,Dec:11};
 function lastDate(txt){const m=[...String(txt).matchAll(/\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*\.? (\d{1,2}), (\d{4})/g)].pop();return m?{y:+m[3],m:MON[m[1]],d:+m[2]}:null}
 function ptOffset(y,m,d){try{const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/Los_Angeles',timeZoneName:'shortOffset'}).formatToParts(new Date(Date.UTC(y,m,d,20)));const z=(p.find(x=>x.type==='timeZoneName')||{}).value||'GMT-8';const k=z.match(/GMT([+-])(\d+)(?::(\d\d))?/);return k?`${k[1]}${k[2].padStart(2,'0')}:${k[3]||'00'}`:'-08:00'}catch(x){return '-08:00'}}
@@ -77,11 +94,9 @@ function expiryChoices(){const now=Date.now(),t=endOf(todayPT()),c=[];
  const w=endOf(DATES.week);if(w&&Date.parse(w)>now)c.push(['week',w,'until end of the plan week ('+fmtPT(w).replace(/ \d+:\d\d.*/,'')+')']);
  c.push(['today',t,'until end of today (PT)']);c.push(['none','','until I release it']);return c}
 
-// ---- guard (no source names, no banned words, nothing the site scrubs) ----
 function guardHits(text){if(!GUARD)return ['the name check list did not load; reload before saving'];const hits=[];
  for(const g of GUARD.rules){const m=new RegExp(g.re,'i').exec(text);if(m)hits.push(`“${m[0]}” — ${g.why}`)}return hits}
 
-// ---- pipeline text from the live pages (overrides off) ----
 function loadFrame(page){return new Promise(res=>{const f=document.createElement('iframe');f.src='../'+page+'/?ov=off&t='+Date.now();
  let done=false;const fin=()=>{if(done)return;done=true;setTimeout(()=>res(f),1500)};f.onload=fin;setTimeout(fin,15000);$('#frames').appendChild(f)})}
 
@@ -102,7 +117,7 @@ function card(sec){const o=OVS[sec.id],on=OV.active(o),g=GEN[sec.id];const el=do
  el.querySelector('.pvb').onclick=()=>{const pv=el.querySelector('.pv');pv.hidden=!pv.hidden;if(!pv.hidden)pv.innerHTML=OV.render(sec,{text:ta.value||' ',set_at:new Date().toISOString()})};
  el.querySelector('.sv').onclick=()=>save([C]);el.querySelector('.rl').onclick=()=>release(C);return el}
 
-function refreshAll(){const n=Object.values(CARDS).filter(c=>c.dirty()).length,b=$('#saveAll');b.textContent=`Save all changed (${n})`;b.disabled=!n||!TOKEN}
+function refreshAll(){const n=Object.values(CARDS).filter(c=>c.dirty()).length,b=$('#saveAll');if(b){b.textContent=`Save all changed (${n})`;b.disabled=!n||!TOKEN}}
 
 function entry(C){const opt=C.sel.selectedOptions[0];const o={text:C.ta.value.replace(/\s+$/,''),set_at:new Date().toISOString(),expires:opt.dataset.v||null,expiry_kind:opt.value,base:GEN[C.sec.id].found?GEN[C.sec.id].text:null};if(LOGIN)o.by=LOGIN;return o}
 async function save(list){if(!TOKEN){say('Sign in first.','bad');return}
@@ -116,27 +131,34 @@ async function release(C){if(!TOKEN){say('Sign in first.','bad');return}say('Rel
  try{const c=await commit(o=>{delete o[C.sec.id]},`edit portal: release ${C.sec.id}`);say(`Released · commit <a href="${esc(c.html_url)}" target="_blank" rel="noopener">${esc(c.sha.slice(0,7))}</a> · pipeline text is back after the deploy.`,'ok');render()}
  catch(e){say('Couldn\'t release: '+esc(plain(e.message)),'bad')}}
 
-function render(){CARDS={};const L=$('#list');L.innerHTML='';let grp='';
+function render(){CARDS={};const L=$('#list');if(!L)return;L.innerHTML='';let grp='';
  for(const s of SECS){if(s.group!==grp){grp=s.group;const h=document.createElement('h2');h.textContent=grp.toUpperCase();L.appendChild(h)}L.appendChild(card(s))}refreshAll()}
 
-async function boot(){
+async function openEditor(){
+ if(OPEN) return; OPEN=true;
+ const main=$('main');
+ const howto=document.createElement('div');howto.className='box mut';howto.id='howto';
+ howto.innerHTML='Each box below is one text section on the public site. <b>Save</b> locks your text in place: the scheduled refresh, sweeps and the Night Ledger keep updating the page underneath, but your text shows until it expires or you press <b>Release</b>. Line breaks are kept; <b>**bold**</b> works. Every save is one commit to <code>content/overrides.json</code>, and the site updates after the Pages deploy (about a minute). Add <code>?ov=off</code> to any page address to see the pipeline\'s own text.';
+ const list=document.createElement('div');list.id='list';list.innerHTML='<p class="mut">Reading the live pages…</p>';
+ main.appendChild(howto);main.appendChild(list);
+ const frames=document.createElement('div');frames.id='frames';frames.setAttribute('aria-hidden','true');document.body.appendChild(frames);
+ const hdr=$('#hdrActions');
+ hdr.innerHTML='<button id="saveAll" class="pri" disabled>Save all changed (0)</button><button id="signout">Sign out</button>';
+ $('#saveAll').onclick=()=>save(Object.values(CARDS).filter(c=>c.dirty()));
+ $('#signout').onclick=()=>{storeToken('');TOKEN='';LOGIN='';OPEN=false;$('#who').textContent='';location.reload()};
  const nc='?t='+Date.now();
  const sec=await (await fetch('../content/sections.json'+nc,{cache:'no-store'})).json();SECS=sec.sections;PAGES=sec.pages;
  try{GUARD=await (await fetch('../pipeline/desk/edit_guard.json'+nc,{cache:'no-store'})).json()}catch(x){GUARD=null}
- if(TOKEN){try{await signIn(TOKEN)}catch(e){TOKEN='';localStorage.removeItem(LS);$('#tokMsg').textContent='Saved token no longer works: '+plain(e.message)}}
- if(!TOKEN)$('#signin').hidden=false;
- try{OVS=TOKEN?(await readFile()).doc.overrides||{}:(await (await fetch('../'+FILE+nc,{cache:'no-store'})).json()).overrides||{}}catch(x){OVS={}}
- $('#list').innerHTML='<p class="mut">Reading the live pages…</p>';
- const frames={};await Promise.all(Object.keys(PAGES).map(async p=>{frames[p]=await loadFrame(p)}));
- const docOf=p=>{try{return frames[p].contentDocument}catch(x){return null}};
+ try{OVS=(await readFile()).doc.overrides||{}}catch(x){OVS={}}
+ const frameMap={};await Promise.all(Object.keys(PAGES).map(async p=>{frameMap[p]=await loadFrame(p)}));
+ const docOf=p=>{try{return frameMap[p].contentDocument}catch(x){return null}};
  const dd=docOf('daily'),wd=docOf('weekly');DATES.session=dd&&lastDate((dd.querySelector('h1')||{}).textContent);DATES.week=wd&&lastDate((wd.querySelector('h1')||{}).textContent);
  for(const s of SECS){let found=null;for(const p of s.pages){const d=docOf(p);const el=d&&OV.locate(d,s.steps);if(el){found=el;break}}GEN[s.id]=found?{found:true,text:OV.text(found,s)}:{found:false,text:''}}
- render()}
+ render();
+}
 
-$('#tokGo').onclick=async()=>{$('#tokMsg').textContent='Checking…';try{await signIn($('#tok').value);$('#tok').value='';$('#tokMsg').textContent='';OVS=(await readFile()).doc.overrides||{};render()}catch(e){TOKEN='';$('#tokMsg').textContent='Sign-in failed: '+plain(e.message)}};
-$('#signout').onclick=()=>{localStorage.removeItem(LS);TOKEN='';LOGIN='';$('#who').textContent='';$('#signout').hidden=true;$('#signin').hidden=false;refreshAll()};
-$('#saveAll').onclick=()=>save(Object.values(CARDS).filter(c=>c.dirty()));
+$('#tokGo').onclick=async()=>{$('#tokMsg').textContent='Checking…';try{await signIn($('#tok').value);if($('#tok'))$('#tok').value='';if($('#tokMsg'))$('#tokMsg').textContent='';}catch(e){TOKEN='';storeToken('');if($('#tokMsg'))$('#tokMsg').textContent=plain(e.message);}};
 window.addEventListener('beforeunload',e=>{if(Object.values(CARDS).some(c=>c.dirty())){e.preventDefault();e.returnValue=''}});
-boot().catch(e=>say('Couldn\'t load the editor: '+esc(plain(e.message)),'bad'));
+(async()=>{const saved=readStored();if(saved){try{await signIn(saved)}catch(e){storeToken('');TOKEN='';if($('#tokMsg'))$('#tokMsg').textContent=plain(e.message);}}})();
 })();
 </script></body></html>

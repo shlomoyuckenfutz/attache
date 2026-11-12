@@ -197,11 +197,12 @@ class Rendered(unittest.TestCase):
         self.assertNotIn("Lose 7625 and the 7596–7600", self.R["released"]["t"])
         self.assertEqual(self.R["released"]["applied"], [])
 
-    def test_edit_page_lists_every_section(self):
+    def test_edit_page_stays_locked_without_a_token(self):
         e = self.R["edit"]
         self.assertTrue(e["signin"])
-        self.assertEqual(e["cards"], len(SEC["sections"]))
-        self.assertGreaterEqual(e["filled"], len([s for s in SEC["sections"] if not s.get("optional")]))
+        self.assertEqual(e["cards"], 0)
+        self.assertEqual(e["filled"], 0)
+        self.assertNotRegex(e["t"], r"Each box below is one text section")
         self.assertNotRegex(e["t"].lower(), r"\berror\b")
 
     def test_no_error_word_or_names_rendered(self):
@@ -248,9 +249,9 @@ class EditSaveFlow(unittest.TestCase):
             ctx.route(re.compile(r"^https://api\.github\.com/"), api)
             pg = ctx.new_page(); pg.on("pageerror", lambda e: cls.errs.append(str(e)))
             pg.goto(base + "edit/", wait_until="load"); pg.wait_for_timeout(5000)
-            pg.fill("#tok", "test-token-not-real"); pg.click("#tokGo"); pg.wait_for_timeout(800)
-            cls.who = pg.inner_text("#who")
-            cls.stored = pg.evaluate("()=>localStorage.getItem('attache_edit_pat')")
+            pg.fill("#tok", "test-token-not-real"); pg.click("#tokGo"); pg.wait_for_selector("#list .card", timeout=20000); pg.wait_for_timeout(200)
+            cls.who = pg.inner_text("#who"); cls.cards = pg.locator(".card").count(); cls.signin_gone = pg.evaluate("()=>!document.getElementById('signin')")
+            cls.stored = pg.evaluate("()=>sessionStorage.getItem('attache_edit_pat')")
             card = pg.locator(".card").nth(2)  # Bearish lean
             card.locator("textarea").fill("Mentions a newsletter here.")
             card.locator("button.sv").click(); pg.wait_for_timeout(500)
@@ -270,6 +271,10 @@ class EditSaveFlow(unittest.TestCase):
         for p in self.puts:
             self.assertNotIn("test-token-not-real", json.dumps(p))
 
+    def test_sign_in_unlocks_every_section(self):
+        self.assertTrue(self.signin_gone)
+        self.assertEqual(self.cards, len(SEC["sections"]))
+
     def test_guard_blocks_banned_text_before_any_commit(self):
         self.assertEqual(self.puts_after_block, 0)
         self.assertIn("Not saved", self.blocked)
@@ -286,6 +291,110 @@ class EditSaveFlow(unittest.TestCase):
         self.assertTrue(o["base"].startswith("Below 7625"), o["base"])
         self.assertIn("Saved", self.saved)
         self.assertEqual(self.errs, [])
+
+
+@unittest.skipUnless(HAVE_PW, "headless chrome not available")
+class EditGate(unittest.TestCase):
+    """Locked /edit/ gate, against a mocked GitHub API (no network, no real token)."""
+
+    def _open(self, api):
+        self.td = tempfile.mkdtemp(); site = site_copy(self.td, {}); self.srv = serve(site)
+        base = f"http://127.0.0.1:{self.srv.server_address[1]}/"
+        self.pw = sync_playwright().start()
+        self.b = self.pw.chromium.launch(executable_path="/usr/bin/google-chrome", args=["--no-sandbox"])
+        ctx = self.b.new_context(viewport={"width": 1280, "height": 800})
+        ctx.route(re.compile(r"^https://fonts\."), lambda r: r.abort())
+        ctx.route(re.compile(r"^https://api\.github\.com/"), api)
+        pg = ctx.new_page()
+        pg.goto(base + "edit/", wait_until="load")
+        pg.wait_for_timeout(800)
+        return pg
+
+    def tearDown(self):
+        try: self.b.close()
+        except Exception: pass
+        try: self.pw.stop()
+        except Exception: pass
+        try: self.srv.shutdown()
+        except Exception: pass
+        shutil.rmtree(self.td, ignore_errors=True)
+
+    def _snap(self, pg):
+        return pg.evaluate("""()=>({
+            signin: !!document.getElementById('signin'),
+            cards: document.querySelectorAll('.card').length,
+            list: !!document.getElementById('list'),
+            howto: !!document.getElementById('howto'),
+            frames: !!document.getElementById('frames'),
+            textareas: document.querySelectorAll('textarea').length,
+            t: document.body.innerText
+        })""")
+
+    def test_no_token_has_no_editor_or_section_list(self):
+        def api(route):
+            return route.fulfill(status=401, headers={"Content-Type":"application/json","Access-Control-Allow-Origin":"*"}, body='{"message":"Bad credentials"}')
+        pg = self._open(api)
+        s = self._snap(pg)
+        self.assertTrue(s["signin"])
+        self.assertEqual(s["cards"], 0)
+        self.assertFalse(s["list"])
+        self.assertFalse(s["howto"])
+        self.assertFalse(s["frames"])
+        self.assertEqual(s["textareas"], 0)
+        self.assertIn("Sign in", s["t"])
+        self.assertNotIn("Each box below is one text section", s["t"])
+
+    def test_push_false_stays_locked(self):
+        def api(route):
+            r, u = route.request, route.request.url
+            hdr = {"Access-Control-Allow-Origin": "*", "Content-Type": "application/json"}
+            if r.method == "OPTIONS":
+                return route.fulfill(status=204, headers={**hdr, "Access-Control-Allow-Headers": "*", "Access-Control-Allow-Methods": "GET,PUT"})
+            if u.endswith("/repos/shlomoyuckenfutz/attache"):
+                return route.fulfill(headers=hdr, body='{"permissions":{"push":false}}')
+            return route.fulfill(status=404, headers=hdr, body='{"message":"Not Found"}')
+        pg = self._open(api)
+        pg.fill("#tok", "test-token-readonly")
+        pg.click("#tokGo")
+        pg.wait_for_timeout(800)
+        s = self._snap(pg)
+        self.assertTrue(s["signin"])
+        self.assertEqual(s["cards"], 0)
+        self.assertFalse(s["list"])
+        self.assertIn("cannot publish", pg.inner_text("#tokMsg").lower())
+        self.assertEqual(pg.evaluate("()=>sessionStorage.getItem('attache_edit_pat')"), None)
+
+    def test_push_true_unlocks(self):
+        import base64
+        doc = {"version": 1, "overrides": {}}
+        def api(route):
+            r, u = route.request, route.request.url
+            hdr = {"Access-Control-Allow-Origin": "*", "Content-Type": "application/json"}
+            if r.method == "OPTIONS":
+                return route.fulfill(status=204, headers={**hdr, "Access-Control-Allow-Headers": "*", "Access-Control-Allow-Methods": "GET,PUT"})
+            if r.headers.get("authorization") != "Bearer test-token-not-real":
+                return route.fulfill(status=401, headers=hdr, body='{"message":"Bad credentials"}')
+            if u.endswith("/repos/shlomoyuckenfutz/attache"):
+                return route.fulfill(headers=hdr, body='{"permissions":{"push":true}}')
+            if u.endswith("/user"):
+                return route.fulfill(headers=hdr, body='{"login":"tester"}')
+            if "/contents/content/overrides.json" in u and r.method == "GET":
+                c = base64.b64encode(json.dumps(doc).encode()).decode()
+                return route.fulfill(headers=hdr, body=json.dumps({"sha": "abc", "content": c}))
+            return route.fulfill(status=404, headers=hdr, body='{"message":"Not Found"}')
+        pg = self._open(api)
+        locked = self._snap(pg)
+        self.assertEqual(locked["cards"], 0)
+        pg.fill("#tok", "test-token-not-real")
+        pg.click("#tokGo")
+        pg.wait_for_timeout(6000)
+        s = self._snap(pg)
+        self.assertFalse(s["signin"])
+        self.assertTrue(s["list"])
+        self.assertGreater(s["cards"], 0)
+        self.assertEqual(s["cards"], len(SEC["sections"]))
+        self.assertEqual(pg.evaluate("()=>sessionStorage.getItem('attache_edit_pat')"), "test-token-not-real")
+
 
 
 if __name__ == "__main__":
