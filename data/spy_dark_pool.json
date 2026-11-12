@@ -11,6 +11,7 @@
       "SPY": 759.81,
       "SPX": 7619.38,
       "ES": 7648.65,
+      "source": "public chart API",
       "asof": "2026-11-11"
     },
     "prior": {
