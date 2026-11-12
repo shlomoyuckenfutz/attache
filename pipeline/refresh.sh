@@ -114,13 +114,12 @@ if [ -f study_src/study_plain.html ] && [ -f "$ORB_SITE/study/index.html" ]; the
   rm -f /tmp/study_plain_ui.html
 fi
 
-# 15) Exposure HEAT re-encrypt (live)
-if [ -f exposure_src/exposure_live_plain.html ] && [ -f "$ORB_SITE/exposure/index.html" ]; then
+# 15) Exposure HEAT — plain unlocked (never re-encrypt)
+if [ -f exposure_src/exposure_live_plain.html ]; then
   cp exposure_src/exposure_live_plain.html /tmp/exposure_live_ui.html
   python3 ui_shell.py exposure=/tmp/exposure_live_ui.html || true
-  node exposure_src/encrypt_page.js /tmp/exposure_live_ui.html exposure_src/lock_shell_live.html "$ORB_SITE/exposure/index.html" \
-    || echo "WARN: exposure encrypt failed" >&2
-  python3 ui_shell.py exposurelock="$ORB_SITE/exposure/index.html" || true
+  mkdir -p "$ORB_SITE/exposure"
+  cp /tmp/exposure_live_ui.html "$ORB_SITE/exposure/index.html"
   rm -f /tmp/exposure_live_ui.html
 fi
 
@@ -134,7 +133,7 @@ fi
 
 # 17) Sanitize (no trader/source names, no alpaca/yahoo, no ORB5/ORB30)
 PAGES=("$ORB_SITE/command/index.html")
-for p in overnight weekly daily darkpool gammamap; do
+for p in overnight weekly daily darkpool gammamap exposure; do
   [ -f "$ORB_SITE/$p/index.html" ] && PAGES+=("$ORB_SITE/$p/index.html")
 done
 run "site_sanitize" python3 site_sanitize.py "${PAGES[@]}"
@@ -146,7 +145,7 @@ from pathlib import Path
 site = Path(__import__('os').environ['ORB_SITE'])
 # unlocked pages only
 files = [site/'command/index.html', site/'overnight/index.html', site/'weekly/index.html',
-         site/'daily/index.html', site/'darkpool/index.html', site/'gammamap/index.html', site/'index.html']
+         site/'daily/index.html', site/'darkpool/index.html', site/'gammamap/index.html', site/'exposure/index.html', site/'index.html']
 rx = re.compile(r'(?i)\bpaper(?:\s+trading)?\b')
 orb = re.compile(r'(?i)\bORB\s*(?:5|30)\b')
 for f in files:
@@ -176,7 +175,7 @@ for name in ('handles.json','newswire_handles.json'):
 pat = r'yahoo|alpaca|first ?squawk|' + '|'.join(re.escape(h) for h in handles) + r'|voltick|\bvolts?\b|\bORB ?(5|30)\b|x\.com/|twitter\.com/|' + '|'.join(re.escape(n) for n in S.NAMES)
 rx = re.compile(pat, re.I)
 bad = []
-for rel in ('command/index.html','overnight/index.html','weekly/index.html','daily/index.html','darkpool/index.html','gammamap/index.html'):
+for rel in ('command/index.html','overnight/index.html','weekly/index.html','daily/index.html','darkpool/index.html','gammamap/index.html','exposure/index.html'):
     f = site/rel
     if not f.exists(): continue
     t = f.read_text(encoding='utf-8', errors='replace')
