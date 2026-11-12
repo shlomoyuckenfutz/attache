@@ -149,6 +149,13 @@
   },
   {
    "date": "2026-11-12",
+   "utc": "2026-11-12T18:00:00Z",
+   "pt": "10:00 AM PT",
+   "name": "30-year bond sale",
+   "detail": "US Treasury 30-year bond sale ($25B) · results 10:00 AM PT"
+  },
+  {
+   "date": "2026-11-12",
    "utc": null,
    "pt": "after the close",
    "name": null,

@@ -77,7 +77,7 @@ class I4_Calendar(unittest.TestCase):
             c = [r for r in rows if r["day"] == dy and r["name"] == name][0]; self.assertEqual(c["pt"], "5:30 AM PT")
             t = datetime.fromisoformat(c["utc"].replace("Z", "+00:00")).astimezone(pt)
             self.assertEqual((t.hour, t.minute), (5, 30))
-        self.assertEqual(sum(1 for r in rows if r["day"] == "Thu 11/12"), 3)  # several events on one day each get a row
+        self.assertEqual(sum(1 for r in rows if r["day"] == "Thu 11/12"), 4)  # claims, EIA, 30-year bond sale, earnings; several events on one day each get a row
         self.assertTrue(any(r["utc"] is None and r["day"] == "Thu 11/12" for r in rows))
 
 

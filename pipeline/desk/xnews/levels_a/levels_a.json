@@ -1,10 +1,10 @@
 {
   "source": "desk",
   "symbol": "ES",
-  "generated_pt": "2026-11-05 20:40 PT",
+  "generated_pt": "2026-11-11 20:55 PT",
   "range": [
     "2026-10-05",
-    "2026-11-05"
+    "2026-11-11"
   ],
   "method": "Levels transcribed from public X posts only (no paid newsletter). supports/resistances as stated that day; key_levels = triggers/pivots/magnets named. Recurring = within 3 pts on 3+ days.",
   "days": [
@@ -795,6 +795,75 @@
         "#",
         "#"
       ]
+    },
+    {
+      "date": "2026-11-09",
+      "supports": [
+        7456,
+        7420
+      ],
+      "resistances": [
+        7478,
+        7490,
+        7506,
+        7558,
+        7595,
+        7636
+      ],
+      "key_levels": [
+        7380,
+        7490
+      ],
+      "notes": "Sunday gap-down 7380 Failed Breakdown triggered the long (~+100 by morning). Targets 7478, 7490 (reaction zone), 7506, 7558 all hit; 7595, then 7636 next. 7535–40 became support later in the day.",
+      "post_urls": [
+        "#"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "supports": [
+        7565,
+        7535,
+        7513,
+        7474
+      ],
+      "resistances": [
+        7549,
+        7565,
+        7595,
+        7616,
+        7636
+      ],
+      "key_levels": [
+        7535,
+        7565
+      ],
+      "notes": "CPI elevator-down to 7535–40 support; 7513 held. 7535 reclaim triggered long to 7549, 7565 (hit). 7565 must recover to resume upside to 7595 / 7616 / 7636.",
+      "post_urls": [
+        "#"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "supports": [
+        7650,
+        7600
+      ],
+      "resistances": [
+        7616,
+        7636,
+        7650,
+        7687,
+        7690
+      ],
+      "key_levels": [
+        7535,
+        7650
+      ],
+      "notes": "Long from the 7535–40 reclaim (+125 by 10:20 AM PT). Targets 7616, 7636, 7650 all hit. 7600 first support swept and recovered early; after the targets, 7650 = first support down, 7687–90 above to back-test last Thursday's breakdown. No public levels posted for Thu 11/12 (newsletter is paid).",
+      "post_urls": [
+        "#"
+      ]
     }
   ],
   "recurring": [
@@ -904,33 +973,24 @@
     }
   ],
   "latest": {
-    "date": "2026-11-05",
+    "date": "2026-11-11",
     "supports": [
-      7420,
-      7346,
-      7322
+      7650,
+      7600
     ],
     "resistances": [
-      7432,
-      7441,
-      7460,
-      7490,
-      7495,
-      7513,
-      7533,
-      7558,
-      7606
+      7616,
+      7636,
+      7650,
+      7687,
+      7690
     ],
     "key_levels": [
-      7420,
-      7490,
-      7606
+      7535,
+      7650
     ],
-    "notes": "Thu bear case triggered under 7606 → elevator-down through all listed supports to 7346. 7420 (last listed support) gave 3 Failed Breakdown recoveries: 7432 (2x), 7441, ~7460 target 3. Must recover 7420 again overnight to rally; 7490–95 Tue low next big test. Bears control <7490 and ultimately <7606.",
+    "notes": "Long from the 7535–40 reclaim (+125 by 10:20 AM PT). Targets 7616, 7636, 7650 all hit. 7600 first support swept and recovered early; after the targets, 7650 = first support down, 7687–90 above to back-test last Thursday's breakdown. No public levels posted for Thu 11/12 (newsletter is paid).",
     "post_urls": [
-      "#",
-      "#",
-      "#",
       "#"
     ]
   }

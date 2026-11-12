@@ -26,9 +26,6 @@ cp daily/index.html /workspace/orb-dash-site/daily/
 
 Do not put ORB-A/ORB-B wording on the site. Keep annotation lines off the candles (edge ticks only).
 
-## Dark Pool TEST page
+## Test pages
 
-Locked organizer (not in nav): [`darkpool-test/`](darkpool-test/) →
-https://shlomoyuckenfutz.github.io/attache/darkpool-test/
-See that folder's README for rebuild/encrypt steps.
-
+The old unlinked test pages (command-test, heat-test, study-test, terminal-test, darkpool-test) were removed from the deployed site on 2026-11-11 at Everett's request.

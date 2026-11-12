@@ -1,14 +1,14 @@
 {
  "date": "2026-11-12",
- "asof_pt": "2026-11-11 17:05 PT",
- "asof": "2026-11-11 17:05 PT",
+ "asof_pt": "2026-11-11 20:55 PT",
+ "asof": "2026-11-11 20:55 PT",
  "session": "2026-11-12",
  "title": "Yuckenfutz Tradez — Daily Plan — Thu Nov 12, 2026 (Claims · Nvidia shock after hours)",
  "bias": {
   "direction": "NEUTRAL",
   "reason": "Wednesday was a one-sided rally: the S&P 500 closed +1.31% at 7,619.22 and the Nasdaq +1.59%, with ES retracing almost all of last Thursday's selloff and tagging the 7616, 7636 and 7650 targets. After the close, reports that Nvidia's board is preparing to remove its CEO sent NVDA down about 7–9% after hours (close $173.73), Nasdaq 100 futures fell about 1% (−0.96% at 4:02 PM PT) and SPY slipped −0.45% to about 756.41 (4:22 PM PT). That puts ES back near the 7625 pivot into Thursday. Above 7625 the rally can extend to 7650–55, then 7687–90; below it, 7596–7600 is the first support and 7566 (gap fill, near the developing weekly VWAP) is the downside target. Rate-hike pricing for December and a dollar at its highest since May 2025 are the macro headwinds."
  },
- "overnight_bias": "After-hours Nvidia shock — NQ −0.96% · SPY −0.45% · ES pivot 7625 · above 7650–55 · below 7596–7600",
+ "overnight_bias": "After-hours Nvidia shock — ES 7614.25 (8:35 PM PT, delayed) below the 7625 pivot · NQ 28,231 · above 7650–55 · below 7596–7600",
  "sources_count": 4,
  "key_levels": [
   {
@@ -30,6 +30,7 @@
  },
  "actionable": [
   "After hours Wed (PT): Nvidia's board is reported to be preparing to remove CEO Jensen Huang after a second reported relationship with a company executive. NVDA closed $173.73 (+2.9%) and traded about 7–9% lower after hours. Nasdaq 100 futures −0.96% at 4:02 PM PT (session high earlier), SPY 756.41 after hours (−0.45%) at 4:22 PM PT.",
+  "Later after hours (PT): ES 7614.25 and NQ 28,231 at 8:35 PM (delayed ~10 min) — ES is below the 7625 pivot and above 7596–7600 support. Oppenheimer cut NVDA to Perform (7:43 PM); Asia-Pacific stocks opened lower on the Nvidia news; the US 2-year yield rose about 5 bp to 4.78%, a two-week high; the dollar hit a 19-month high on Fed-tightening bets; oil slipped about $1.",
   "Wednesday close: S&P 500 7,619.22 (+1.31%), Nasdaq 25,465.38 (+1.59%), Dow 52,465.11 (+0.45%). CoreWeave +24.7% after results; bond market closed for Veterans Day. ES tagged 7616, 7636 and 7650 during the session.",
   "Key levels Thu: pivot 7625. Above: 7650–55 (reclaim 7655 = strength). Below: 7596–7600. Targets only: 7687–90 and 7714 above, 7566 below (outside Thursday's implied band).",
   "Implied move Thu 11/12 (next expiry): SPY 752.72–761.82 (±0.60%); SPX 7564.59–7625.01 (±0.40%), so ES ≈ 7593.86–7654.28 (derived, SPX + 29.27). SPY weekly to Fri 11/13: 751.89–767.73.",

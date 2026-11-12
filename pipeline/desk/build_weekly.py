@@ -131,9 +131,9 @@ def charts_html():
         figs = _figs(plan, "charts/plan", have_plan)
         out.append(
             '<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
-            '<p>Week of <b>Nov 9–13</b> — cautious / bearish structure, countertrend squeeze. Amber = prior week actual; '
+            '<p>Week of <b>Nov 9–13</b> — neutral to bullish while ES holds 7596–7600 (pivot 7625); risks into Friday: the Nvidia CEO shock, hike pricing after the hot CPI and Friday\'s PPI. Amber = prior week actual; '
             'white = this week\'s actual 30m so far; empty day columns show the <b>bull (green) and bear (red) paths</b> only — no lines through candles. '
-            'Day tags: Tue CPI · Wed Veterans Day · Thu 30Y auction · Fri PPI. '
+            'Day tags: Tue CPI · Wed Veterans Day · Thu jobless claims and 30-year Treasury bond sale · Fri PPI. '
             'Purple ticks = PPI Fri 5:30 AM PT. Levels as right-edge ticks. Nasdaq charts show candles only: levels awaiting update. Tap to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')
     return "".join(out)
