@@ -1,5 +1,5 @@
 {
- "generated_pt": "2026-11-13 13:33 PT",
+ "generated_pt": "2026-11-13 13:46 PT",
  "session_for": "2026-11-16",
  "week_expiry": "2026-11-20",
  "method": "ATM straddle = call mid + put mid at strike nearest spot; bands = ref \u00b1 straddle; iv_move = spot*IV*sqrt(DTE/365); straddle_085 = 0.85\u00d7straddle (~1\u03c3)",
@@ -13,9 +13,9 @@
     "put_mid": 3.79,
     "straddle": 6.29,
     "straddle_085": 5.35,
-    "atm_iv": 0.152,
-    "dte_cal": 2.976,
-    "iv_move": 10.35,
+    "atm_iv": 0.1084,
+    "dte_cal": 2.968,
+    "iv_move": 7.37,
     "source": "indicative:SPY",
     "ref": 754.37,
     "ref_kind": "2026-11-13 regular close",
@@ -30,9 +30,9 @@
     "put_mid": 7.24,
     "straddle": 13.45,
     "straddle_085": 11.43,
-    "atm_iv": 0.1583,
-    "dte_cal": 6.976,
-    "iv_move": 16.5,
+    "atm_iv": 0.1602,
+    "dte_cal": 6.968,
+    "iv_move": 16.7,
     "source": "indicative:SPY",
     "ref": 754.37,
     "ref_kind": "prior Friday close",
@@ -54,7 +54,7 @@
     "straddle": 58.69,
     "straddle_085": 49.88,
     "atm_iv": null,
-    "dte_cal": 2.976,
+    "dte_cal": 2.968,
     "iv_move": null,
     "source": "indicative:SPXW",
     "ref": 7561.67,
@@ -71,7 +71,7 @@
     "straddle": 130.78,
     "straddle_085": 111.16,
     "atm_iv": null,
-    "dte_cal": 6.976,
+    "dte_cal": 6.968,
     "iv_move": null,
     "source": "indicative:SPXW",
     "ref": 7561.67,
@@ -93,9 +93,9 @@
     "put_mid": 6.04,
     "straddle": 10.06,
     "straddle_085": 8.55,
-    "atm_iv": 0.1794,
-    "dte_cal": 2.976,
-    "iv_move": 11.02,
+    "atm_iv": 0.1957,
+    "dte_cal": 2.968,
+    "iv_move": 12.0,
     "source": "indicative:QQQ",
     "ref": 679.89,
     "ref_kind": "2026-11-13 regular close",
@@ -110,9 +110,9 @@
     "put_mid": 11.91,
     "straddle": 22.13,
     "straddle_085": 18.81,
-    "atm_iv": 0.2907,
-    "dte_cal": 6.976,
-    "iv_move": 27.32,
+    "atm_iv": 0.2933,
+    "dte_cal": 6.968,
+    "iv_move": 27.56,
     "source": "indicative:QQQ",
     "ref": 679.89,
     "ref_kind": "prior Friday close",
@@ -481,7 +481,7 @@
    }
   },
   {
-   "generated_pt": "2026-11-13 13:33 PT",
+   "generated_pt": "2026-11-13 13:46 PT",
    "session_for": "2026-11-16",
    "week_expiry": "2026-11-20",
    "SPY": {
@@ -490,16 +490,16 @@
      "upper": 760.66,
      "lower": 748.08,
      "ref": 754.37,
-     "atm_iv": 0.152,
-     "iv_move": 10.35
+     "atm_iv": 0.1084,
+     "iv_move": 7.37
     },
     "weekly": {
      "straddle": 13.45,
      "upper": 767.82,
      "lower": 740.92,
      "ref": 754.37,
-     "atm_iv": 0.1583,
-     "iv_move": 16.5
+     "atm_iv": 0.1602,
+     "iv_move": 16.7
     }
    },
    "SPX": {
@@ -526,16 +526,16 @@
      "upper": 689.95,
      "lower": 669.83,
      "ref": 679.89,
-     "atm_iv": 0.1794,
-     "iv_move": 11.02
+     "atm_iv": 0.1957,
+     "iv_move": 12.0
     },
     "weekly": {
      "straddle": 22.13,
      "upper": 702.02,
      "lower": 657.76,
      "ref": 679.89,
-     "atm_iv": 0.2907,
-     "iv_move": 27.32
+     "atm_iv": 0.2933,
+     "iv_move": 27.56
     }
    }
   }
