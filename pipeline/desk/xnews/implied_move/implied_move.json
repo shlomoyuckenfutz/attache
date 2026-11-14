@@ -1,5 +1,5 @@
 {
- "generated_pt": "2026-11-13 19:49 PT",
+ "generated_pt": "2026-11-13 20:51 PT",
  "session_for": "2026-11-16",
  "week_expiry": "2026-11-20",
  "method": "ATM straddle = call mid + put mid at strike nearest spot; bands = ref \u00b1 straddle; iv_move = spot*IV*sqrt(DTE/365); straddle_085 = 0.85\u00d7straddle (~1\u03c3)",
@@ -14,8 +14,8 @@
     "straddle": 6.29,
     "straddle_085": 5.35,
     "atm_iv": 0.115,
-    "dte_cal": 2.716,
-    "iv_move": 7.49,
+    "dte_cal": 2.673,
+    "iv_move": 7.43,
     "source": "indicative:SPY",
     "ref": 754.37,
     "ref_kind": "2026-11-13 regular close",
@@ -31,8 +31,8 @@
     "straddle": 13.45,
     "straddle_085": 11.43,
     "atm_iv": 0.1612,
-    "dte_cal": 6.716,
-    "iv_move": 16.49,
+    "dte_cal": 6.673,
+    "iv_move": 16.44,
     "source": "indicative:SPY",
     "ref": 754.37,
     "ref_kind": "prior Friday close",
@@ -54,7 +54,7 @@
     "straddle": 58.69,
     "straddle_085": 49.88,
     "atm_iv": null,
-    "dte_cal": 2.716,
+    "dte_cal": 2.673,
     "iv_move": null,
     "source": "indicative:SPXW",
     "ref": 7561.67,
@@ -71,7 +71,7 @@
     "straddle": 130.78,
     "straddle_085": 111.16,
     "atm_iv": null,
-    "dte_cal": 6.716,
+    "dte_cal": 6.673,
     "iv_move": null,
     "source": "indicative:SPXW",
     "ref": 7561.67,
@@ -94,8 +94,8 @@
     "straddle": 10.06,
     "straddle_085": 8.55,
     "atm_iv": 0.1775,
-    "dte_cal": 2.716,
-    "iv_move": 10.41,
+    "dte_cal": 2.673,
+    "iv_move": 10.33,
     "source": "indicative:QQQ",
     "ref": 679.89,
     "ref_kind": "2026-11-13 regular close",
@@ -111,8 +111,8 @@
     "straddle": 22.13,
     "straddle_085": 18.81,
     "atm_iv": 0.2904,
-    "dte_cal": 6.716,
-    "iv_move": 26.79,
+    "dte_cal": 6.673,
+    "iv_move": 26.7,
     "source": "indicative:QQQ",
     "ref": 679.89,
     "ref_kind": "prior Friday close",
@@ -481,7 +481,7 @@
    }
   },
   {
-   "generated_pt": "2026-11-13 19:49 PT",
+   "generated_pt": "2026-11-13 20:51 PT",
    "session_for": "2026-11-16",
    "week_expiry": "2026-11-20",
    "SPY": {
@@ -491,7 +491,7 @@
      "lower": 748.08,
      "ref": 754.37,
      "atm_iv": 0.115,
-     "iv_move": 7.49
+     "iv_move": 7.43
     },
     "weekly": {
      "straddle": 13.45,
@@ -499,7 +499,7 @@
      "lower": 740.92,
      "ref": 754.37,
      "atm_iv": 0.1612,
-     "iv_move": 16.49
+     "iv_move": 16.44
     }
    },
    "SPX": {
@@ -527,7 +527,7 @@
      "lower": 669.83,
      "ref": 679.89,
      "atm_iv": 0.1775,
-     "iv_move": 10.41
+     "iv_move": 10.33
     },
     "weekly": {
      "straddle": 22.13,
@@ -535,7 +535,7 @@
      "lower": 657.76,
      "ref": 679.89,
      "atm_iv": 0.2904,
-     "iv_move": 26.79
+     "iv_move": 26.7
     }
    }
   }
