@@ -1,5 +1,5 @@
 {
- "generated_et": "2026-11-14 00:48 ET",
+ "generated_et": "2026-11-14 01:55 ET",
  "groups": [
   {
    "name": "INDICES",
@@ -622,14 +622,14 @@
      "status": "LIVE",
      "note": "",
      "q": {
-      "last": 593.5,
-      "prev": 582.5,
-      "chg": 11.0,
-      "pct": 1.888412,
+      "last": 593.25,
+      "prev": 584.25,
+      "chg": 9.0,
+      "pct": 1.540436,
       "hi": 600.0,
       "lo": 582.0,
       "flag": "",
-      "asof": "11/13 14:15",
+      "asof": "11/13 D",
       "stale": false
      }
     },
