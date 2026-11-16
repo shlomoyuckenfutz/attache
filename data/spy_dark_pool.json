@@ -4,28 +4,21 @@
   "updated": "2026-11-11",
   "asof_note": "Refreshed Wed 11/11 ~9 PM PT. Spot = SPY RTH close 759.81 (SPX 7619.38; after hours SPY 756.10 at 4:59 PM ET). No new dark-pool prints were posted on 11/11 after the 762.27 and 759.57 lines already on this list; prints from 11/9–11/10 were not captured. Earlier lines (dated) kept as posted.",
   "convert": {
-    "spy_per_spx": 0.099762,
-    "es_minus_spx": 23.08,
-    "asof": "2026-11-13",
+    "spy_per_spx": 0.099721,
+    "es_minus_spx": 29.27,
+    "asof": "2026-11-11",
     "closes": {
-      "SPY": 754.37,
-      "SPX": 7561.67,
-      "ES": 7584.75,
-      "asof": "2026-11-13"
+      "SPY": 759.81,
+      "SPX": 7619.38,
+      "ES": 7648.65,
+      "source": "public chart API",
+      "asof": "2026-11-11"
     },
     "prior": {
-      "spy_per_spx": 0.099721,
-      "es_minus_spx": 29.27,
-      "asof": "2026-11-11",
-      "closes": {
-        "SPY": 759.81,
-        "SPX": 7619.38,
-        "ES": 7648.65,
-        "source": "public chart API",
-        "asof": "2026-11-11"
-      }
+      "spy_per_spx": 0.099733,
+      "es_minus_spx": 39.38
     },
-    "note": "SPX = SPY ÷ 0.099762; ES = SPX + 23.08 (Fri 2026-11-13 official closes: SPY 754.37, SPX 7561.67, ES 7584.75)"
+    "note": "SPX = SPY ÷ 0.099721; ES = SPX + 29.27 (plan basis) (Wed 2026-11-11 RTH close: SPY 759.81, SPX 7619.38)"
   },
   "levels": [
     {
