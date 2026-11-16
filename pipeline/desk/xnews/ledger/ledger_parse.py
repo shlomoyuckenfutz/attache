@@ -9,8 +9,10 @@ HERE = Path(__file__).resolve().parent
 F = 0.099112  # ES-to-SPY factor: ES = SPY / F
 # next-session direction call per issue (UP / DOWN / FLAT); curated from each issue's take, heuristic fallback for new issues
 DIR = {"2026-10-07": "UP", "2026-10-08": "UP", "2026-10-09": "DOWN", "2026-10-12": "DOWN", "2026-10-13": "DOWN", "2026-10-14": "UP",
-       "2026-10-15": "FLAT", "2026-10-16": "UP", "2026-10-19": "UP", "2026-10-20": "DOWN", "2026-10-21": "DOWN", "2026-10-22": "UP", "2026-10-23": "UP", "2026-10-26": "FLAT", "2026-10-27": "DOWN", "2026-10-28": "DOWN", "2026-10-29": "DOWN", "2026-10-30": "DOWN", "2026-11-05": "UP", "2026-11-06": "DOWN", "2026-11-09": "FLAT", "2026-11-11": "DOWN"}
+       "2026-10-15": "FLAT", "2026-10-16": "UP", "2026-10-19": "UP", "2026-10-20": "DOWN", "2026-10-21": "DOWN", "2026-10-22": "UP", "2026-10-23": "UP", "2026-10-26": "FLAT", "2026-10-27": "DOWN", "2026-10-28": "DOWN", "2026-10-29": "DOWN", "2026-10-30": "DOWN", "2026-11-05": "UP", "2026-11-06": "DOWN", "2026-11-09": "FLAT", "2026-11-11": "DOWN", "2026-11-12": "DOWN", "2026-11-13": "FLAT"}
 BASE = {
+    '2026-11-13': 'No Monday lean — weekend news left the path up in the air; the big write-up comes Monday. Daily look is chop into monthly OpEx week, with the 100DMA and 20DMA now firm resistance after a third consecutive rejection. Holding the 10DMA is the line against a bigger bear scenario. Longer term: November may end with a whimper, with December looking spicier.',
+    '2026-11-12': 'Lean for tomorrow is down; how far depends on PPI. Bear case is a move back down toward the 200DMA by or before monthly OpEx. Bull case is a clean reclamation of the 100DMA, which only buys time and a sideways chop with a ceiling at 765. Need PPI before assessing a path forward.',
     "2026-11-11": "Leaning toward a hot PPI (corrected later: Friday, not Thursday) pushing yields and the DXY through a critical level, which stocks will not like. Base case: come back to close the gap and revisit 750, with a fight expected between 753 and 750. Dark pools at 733–733.13 by week’s end are not the base case but a higher-than-average probability. Pattern of the last three weeks: peak Wednesday, sell off Thursday. NVDA CEO-succession news is the bigger multi-week overhang versus the print.",
     "2026-11-09": "No lean today — it depends on CPI tomorrow. Hot or in-line CPI: come back to give the 200DMA an actual touch. Cool print: potential to send us up to 760 for a re-test of the 100DMA; a clean breakout that threatens to retake the 20DMA would be the tell to get bulled up. Treat every rally as suspect while the 20/50DMAs are in a bearish arrangement. Anecdotal expectation leans bearish, but do not play the print; wait for the data and position with the trend.",
     "2026-11-06": "Monday should not move much with CPI due Tuesday. Lean is a drift lower to pin around 733; alternative is reclaiming some dark-pool levels above, but not higher than 740 before CPI. Sit on hands until after CPI.",
@@ -36,6 +38,7 @@ def parse(p):
     for m in re.finditer(r"(?<![\d.$])(\d{3}(?:\.\d{1,2})?)(?![\d%])", t):
         v = float(m.group(1))
         if not 600 <= v <= 900: continue
+        if re.match(r"\s*(MLN|BLN|M\b|B\b)", t[m.end():m.end()+4]): continue
         ctx = t[max(0, m.start()-60):m.end()+40].lower()
         kind = ("DARK POOL" if "dark pool" in ctx else "GAMMA/GEX" if re.search(r"gex|gamma|vanna|charm", ctx) else "WALL" if "wall" in ctx
                 else "OI/MAGNET" if re.search(r"magnet|\boi\b|max pain|puts|calls", ctx) else "MA" if re.search(r"dma|ema", ctx) else "PRICE")
