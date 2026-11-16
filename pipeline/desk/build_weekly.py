@@ -116,15 +116,24 @@ def charts_html():
     if not have_prior and not have_plan:
         return ""
     out = []
-    if have_plan:   # charts/plan = the Nov 9-13 plan week, now complete -> shown as LAST WEEK
-        figs = _figs(plan, "charts/plan", have_plan)
+    if have_prior:
+        href = "charts/prior" if prior_dir == prior else "charts"
+        figs = _figs(prior_dir, href, have_prior)
         out.append(
             '<section class="sec" id="plan-charts"><h2>LAST WEEK · PLAN vs ACTUAL</h2>'
             '<p>Week of <b>Nov 9–13</b>: the plan levels and paths published for that week against the actual 30m candles. '
-            'Green/red bands = plan bull / bear zones. Levels as right-edge ticks. Tap a chart to enlarge.</p>'
+            'Amber = week before; white = that week\'s actual 30m. '
+            'Green/red bands = plan bull / bear zones. Levels as right-edge ticks. Each day labeled hi / lo / close. Tap a chart to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')
-    out.append('<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
-               '<p>Week of <b>Nov 16–20</b>: forward-path charts awaiting update. Levels, scenarios and triggers are in the plan above.</p></section>')
+    if have_plan:
+        figs = _figs(plan, "charts/plan", have_plan)
+        out.append(
+            '<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
+            '<p>Week of <b>Nov 16–20</b> — bearish to neutral while ES is under 7590 (daily pivot 7535–40); Nvidia earnings Tue after the close, '
+            'FOMC minutes Wed, monthly OpEx Fri. Amber = prior week actual; white = this week\'s actual 30m so far; '
+            'empty day columns show the <b>bull (green) and bear (red) paths</b> forward only — no lines through candles. '
+            'Nasdaq charts show levels only. Tap a chart to enlarge.</p>'
+            f'<div class="chg">{figs}</div></section>')
     return "".join(out)
 
 def card(title, secs):
