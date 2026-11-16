@@ -1,9 +1,9 @@
 {
  "symbol": "SPY",
- "date": "2026-11-15",
+ "date": "2026-11-16",
  "calc": true,
  "posted_pt": "CALC 12:59 PT",
- "asof": "2026-11-15 12:59 PT",
+ "asof": "2026-11-16 12:59 PT",
  "pivot": 754.08,
  "room_higher": 760.29,
  "resistance_break": 766.32,
