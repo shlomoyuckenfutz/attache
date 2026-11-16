@@ -1,0 +1,54 @@
+YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 16 to Fri Nov 20, 2026
+Plan only — not investment advice · updated Mon Nov 16, 6:30 AM PT (pre-market)
+Weekly implied move to Fri 11/20 (set Mon pre-open, each index in its own points; not guaranteed limits): SPX 7400.24–7723.12 (±2.13%) · SPY 732.66–767.04 (±2.29%) · QQQ 643.09–699.33 (±4.19%) · NDX 26878.17–29009.33 (±3.81%).
+Last week: Monday's short-covering rally from the 7380 Failed Breakdown, a hot CPI on Tuesday that held, a Wednesday gap-up that nearly retraced the Nov 5 selloff, then Friday's long liquidation erased Wednesday and Thursday. ES opened Friday near 7642, broke the 15-minute range short, tagged 7519–25 and closed near 7585 (SPY 754.25). Sunday futures bounced to 7615 and were sold. Monday pre-market: Nasdaq 100 futures down about 1%, NVDA down about 2%; ES swept 7524 and recovered about 20 points. SPY pre-market about 750.
+
+BIAS (WEEK)
+Bearish to neutral while ES is under 7590. Daily, weekly and monthly structure is still one-time-framing down after Friday's liquidation. SPY sits below its weekly gamma flip (757.29) and the Fri 11/20 board is negative gamma with no floor under price; the week-47 seasonal is soft (higher in 4 of the last 9 years). The big swing factors are Nvidia's earnings Tuesday after the close (options price about ±9%), the expected Anthropic IPO pulling liquidity, a 10-year yield above 5% with a firm dollar, tanker attacks in the Strait of Hormuz, FOMC minutes Wednesday and monthly OpEx Friday. A reclaim and hold of 7590 flips the lean to neutral; acceptance above 7642 is a bullish intraweek development.
+
+SCENARIOS
+- Bull: ES reclaims 7566–72, then holds above 7590 → 7615 → 7642 (Friday's open). Acceptance above 7642 opens 7740–7770 (targets only). SPY back above 753, then the 757.29 weekly flip, toward 767 and the 775 ceiling.
+- Bear: ES stays under 7590 and loses 7519–24 → 7502 (last week's value-area low, about a 5% correction). Acceptance below 7502 opens 7420–7390 (Nov 5 lows and the 200-day average; targets only). SPY under 747 and 745 → 740 weekly floor.
+- Neutral: two-sided chop between 7502 and 7590 into Nvidia Tuesday; fade the edges, skip the middle.
+
+KEY LEVELS
+
+/ES
+- Resistance: 7566–72 · 7615. Targets only: 7642 · 7740–70
+- Pivot: 7590
+- Support: 7540 · 7519–24 · 7502. Targets only below: 7420–7390
+
+SPY
+- Resistance: 753 · 757.29 (weekly gamma flip) · 767 (Fri 11/20 flip)
+- Pivot: 751 (Mon 0DTE flip)
+- Support: 747 · 745 · 740 (weekly floor)
+
+QQQ
+- Resistance: 680 (Fri 11/20 biggest level) · 690 · 695 (Fri 11/20 call wall)
+- Pivot: 680
+- Support: 670 (weekly floor) · 660.94 (Monday implied-move low)
+
+/NQ
+- Resistance: 28585 · 28700 · 28888
+- Pivot: 28065
+- Support: 27616 · 27343. Target only below: 26592
+
+DAY BY DAY
+- Mon Nov 16: Empire State manufacturing 5:30 AM PT · Fed Williams 6:05 AM PT · Fed Chair Warsh 9:00 AM PT. Earnings: Tyson, Aramark, XPeng, Baidu before the open; AECOM, Red Cat after the close.
+- Tue Nov 17: October retail sales and import/export prices 5:30 AM PT · Fed Waller 6:10 AM PT · industrial production 6:15 AM PT · Fed Hammack 6:30 AM PT · business inventories 7:00 AM PT · Fed Williams 11:25 AM PT · Nvidia earnings after the close.
+- Wed Nov 18: housing starts 5:30 AM PT · pending home sales 7:00 AM PT · 20-year bond auction 10:00 AM PT · FOMC minutes 11:00 AM PT. TJX before the open.
+- Thu Nov 19: jobless claims and Philadelphia Fed 5:30 AM PT · Fed Jefferson 6:25 AM PT · Fed Goolsbee 9:30 AM PT · 10-year auction 10:00 AM PT. US–China–Russia leaders' meeting. Ross Stores after the close.
+- Fri Nov 20: monthly options expiration · Fed Waller 5:30 AM PT · Michigan consumer sentiment (Nov) · Fed Cook 9:15 AM PT.
+- Anthropic IPO: expected this week; reported pricing dates differ (Tue 11/17 vs Thu 11/19).
+
+TRIGGERS / IF-THEN
+1. Hold above 7590 → 7615, then 7642; acceptance above 7642 opens 7740–70 (targets only).
+2. Stay under 7590 and lose 7519–24 → 7502; acceptance below 7502 opens 7420–7390 (targets only).
+3. Break and hold above 7664 with VIX under 18.24 = strength; break and hold below 7502 with VIX over 20.38 = weakness.
+4. SPY back above the 757.29 weekly flip restores the positive-gamma side; under 745, the 740 floor is next.
+
+SKIP
+- No new size into Nvidia's print Tuesday after the close; let Wednesday's open trade first.
+- Don't chase the overnight Nvidia and IPO headlines; trade the reaction at the levels.
+- Skip mid-range chop between 7540 and 7590.
+- Skip chasing and skip unplanned or unlimited-risk 0DTE exposure into Friday's OpEx.

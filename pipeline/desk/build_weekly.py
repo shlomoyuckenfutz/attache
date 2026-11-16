@@ -116,26 +116,15 @@ def charts_html():
     if not have_prior and not have_plan:
         return ""
     out = []
-    if have_prior:
-        href = "charts/prior" if prior_dir == prior else "charts"
-        figs = _figs(prior_dir, href, have_prior)
-        out.append(
-            '<section class="sec" id="plan-charts"><h2>LAST WEEK · PLAN vs ACTUAL</h2>'
-            '<p>Week of <b>Nov 2–6</b> mapped end-to-end. Amber = week before; '
-            'white = Mon–Thu actual 30m; <b>cyan = jobs Fri</b>. '
-            'Green/red bands = plan bull / bear zones. Purple ticks = jobs Fri 5:30 AM PT (edge only — no line through candles). '
-            'Dashed plan paths omitted on days with actuals (lines stay off candles). '
-            'Each day labeled hi / lo / close. Tap a chart to enlarge.</p>'
-            f'<div class="chg">{figs}</div></section>')
-    if have_plan:
+    if have_plan:   # charts/plan = the Nov 9-13 plan week, now complete -> shown as LAST WEEK
         figs = _figs(plan, "charts/plan", have_plan)
         out.append(
-            '<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
-            '<p>Week of <b>Nov 9–13</b> — neutral to bullish while ES holds 7596–7600 (pivot 7625); risks into Friday: the Nvidia CEO shock, hike pricing after the hot CPI and Friday\'s PPI. Amber = prior week actual; '
-            'white = this week\'s actual 30m so far; empty day columns show the <b>bull (green) and bear (red) paths</b> only — no lines through candles. '
-            'Day tags: Tue CPI · Wed Veterans Day · Thu jobless claims and 30-year Treasury bond sale · Fri PPI. '
-            'Purple ticks = PPI Fri 5:30 AM PT. Levels as right-edge ticks. Nasdaq charts show candles only: levels awaiting update. Tap to enlarge.</p>'
+            '<section class="sec" id="plan-charts"><h2>LAST WEEK · PLAN vs ACTUAL</h2>'
+            '<p>Week of <b>Nov 9–13</b>: the plan levels and paths published for that week against the actual 30m candles. '
+            'Green/red bands = plan bull / bear zones. Levels as right-edge ticks. Tap a chart to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')
+    out.append('<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
+               '<p>Week of <b>Nov 16–20</b>: forward-path charts awaiting update. Levels, scenarios and triggers are in the plan above.</p></section>')
     return "".join(out)
 
 def card(title, secs):

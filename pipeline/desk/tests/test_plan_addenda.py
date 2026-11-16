@@ -31,17 +31,19 @@ class Daily(unittest.TestCase):
 
 class Weekly(unittest.TestCase):
     def test_renders_for_week_with_every_figure(self):
-        t = txt(WB)
-        self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 9–13", WB)
-        for s in ["weekly close above SPY 758", "bias flips bullish", "759.81", "PPI Fri 5:30 AM PT",
-                  "board reported preparing to remove the CEO", "698.1 flip", "SPY 751.89–767.73", "−$8.0B (11/20 monthly opex)"]:
+        wb = A.weekly_block(DATA, "2026-11-16")
+        t = txt(wb)
+        self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 16–20", wb)
+        for s in ["reclaim and hold of 7590", "757.29 weekly flip", "earnings Tue after the close", "FOMC minutes Wed 11:00 AM PT",
+                  "Strait of Hormuz", "SPY 732.66–767.04", "SPX flip 7650, SPY flip 767", "monthly OpEx Fri"]:
             self.assertIn(s, t, s)
-        self.assertNotIn("backwardation", WB.lower()); self.assertNotIn("contango", WB.lower())
+        self.assertEqual(A.weekly_block(DATA, "2026-11-20"), wb)
+        self.assertNotIn("backwardation", wb.lower()); self.assertNotIn("contango", wb.lower())
 
     def test_hidden_outside_week(self):
-        self.assertEqual(A.weekly_block(DATA, "2026-11-16"), "")
+        self.assertEqual(A.weekly_block(DATA, "2026-11-13"), ""); self.assertEqual(A.weekly_block(DATA, "2026-11-23"), "")
         bad = json.loads(json.dumps(DATA)); bad["weekly"]["week_end"] = "2026-11-30"
-        self.assertEqual(A.weekly_block(bad, PD), "")
+        self.assertEqual(A.weekly_block(bad, "2026-11-16"), "")
 
 
 class Wording(unittest.TestCase):
@@ -75,7 +77,7 @@ class Hygiene(unittest.TestCase):
 
     def test_patch_idempotent_and_placed_before_positioning(self):
         import tempfile
-        for page, blk in (("daily", DB), ("weekly", WB)):
+        for page, blk in (("daily", DB), ("weekly", A.weekly_block(DATA, "2026-11-16"))):
             src = (ROOT / page / "index.html").read_text()
             with tempfile.TemporaryDirectory() as td:
                 p = Path(td) / "i.html"; p.write_text(src)

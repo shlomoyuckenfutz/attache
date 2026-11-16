@@ -281,7 +281,7 @@ def command_payload(data):
         "calendar": calendar_rows(data),
         "tiles": [
             {"h": "ES · NQ LEVELS", "d": a, "c": "var(--gn)", "rows": es_rows, "note": f"ES = SPX + {f(data['es_basis'], 2)} plan basis"},
-            {"h": "FLOW", "d": a, "c": "var(--up)", "v": f"{F.get('net', AWAIT)} {F.get('lean', '')}".strip(),
+            {"h": "FLOW", "d": F.get("asof_label") or a, "c": "var(--up)", "v": f"{F.get('net', AWAIT)} {F.get('lean', '')}".strip(),
              "rows": [["prints", f"{F.get('prints', 0):,}"], ["calls / puts", f"{F.get('calls', '–')} / {F.get('puts', '–')}"], ["put/call", str(F.get("put_call", "–"))]] +
                      [["SPY", x] for x in F.get("spy_notable") or []],
              "note": F.get("spy_directional", "")} if F.get("net") else
@@ -461,7 +461,7 @@ def map_page(data, plan, spy_week=None, built=""):
         if sym == "ES":
             sub.append(f"ES ≈ SPX + {f(data['es_basis'], 2)} (plan basis) · SPX close {f(spot, 2)} + basis ≈ {f(spot_v, 2)} (not an ES print)")
         else:
-            sub.append(f"close {f(spot_v, 2)}")
+            sub.append(f"close {f(spot_v, 2)}" if spot_v is not None else f"close {AWAIT}")
         if missing:
             sub.append(f"{', '.join(missing)} expiry: {AWAIT}")
         sub.append(plan_note)
