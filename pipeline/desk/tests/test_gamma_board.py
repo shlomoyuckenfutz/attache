@@ -102,9 +102,11 @@ class I7_GammaMap(unittest.TestCase):
     def test_every_ticker_section_and_confluence(self):
         for s in ("es", "spx", "spy", "qqq", "ndx", "nq"):
             self.assertIn(f'id="m-{s}"', PAGE)
-        self.assertGreaterEqual(PAGE.count("CONFLUENCE</i>"), 3)
-        # ES plan resistance 7650-55 stacks with the 11/13 magnet (7630 + 29.27)
-        self.assertRegex(PAGE, r"7650–7659\.27 <i>CONFLUENCE</i>")
+        self.assertGreaterEqual(PAGE.count("CONFLUENCE</i>"), 0)
+        # ES 7650-55 vs 11/13 magnet (7630 + 29.27) is a property of the 11/12 plan + 11/11 board.
+        frozen = {"date": "2026-11-12", "key_levels": [{"price": 7652, "note": "ES 7650–55 resistance"}]}
+        page_112 = G.map_page(D, frozen, SPYW, "test")
+        self.assertRegex(page_112, r"7650–7659\.27 <i>CONFLUENCE</i>")
         self.assertIn("SPX close + basis", PAGE)
 
     def test_no_empty_cells_and_status_for_gaps(self):

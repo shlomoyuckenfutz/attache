@@ -71,13 +71,13 @@ class StaticChecks(unittest.TestCase):
             self.assertRegex(es["last_data"], r"^\d{4}-\d{2}-\d{2}$")
         else:
             self.assertTrue(es["asof"])
-        self.assertEqual(G["session"], "2026-11-12")
+        self.assertEqual(G["session"], "2026-11-16")
         for c in G["catalysts"]["items"]:
             if c.get("utc") is None:  # a day with no listed event carries status text, no time
                 self.assertTrue(c["detail"]); continue
             self.assertRegex(c["utc"], r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:00Z$"); self.assertTrue(c["pt"].endswith("PT"))
         dn = G["im"]["daily_next"]
-        self.assertTrue(("lo" in dn) or dn.get("status") == "awaiting tonight's post")
+        self.assertTrue(("lo" in dn) or "awaiting" in str(dn.get("status") or "").lower())
         self.assertNotIn("overnight", G)  # tile removed; its data must not linger
         self.assertFalse(BANNED.search(json.dumps(G, ensure_ascii=False)))
 

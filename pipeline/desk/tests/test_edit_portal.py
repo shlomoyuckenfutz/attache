@@ -288,7 +288,8 @@ class EditSaveFlow(unittest.TestCase):
         o = json.loads(base64.b64decode(put["content"]))["overrides"]["lss.bearish"]
         self.assertEqual(o["text"], "Lose 7625 and 7596–7600 is next.")
         self.assertTrue(o["expires"] is None or re.match(r"^\d{4}-\d\d-\d\dT23:59:00-0[78]:00$", o["expires"]), o["expires"])
-        self.assertTrue(o["base"].startswith("Below 7625"), o["base"])
+        bear = json.loads((ROOT / "pipeline/inputs/plan.json").read_text())["long_story_short"]["bearish"]
+        self.assertTrue(o["base"].startswith(bear[:40]), o["base"])
         self.assertIn("Saved", self.saved)
         self.assertEqual(self.errs, [])
 

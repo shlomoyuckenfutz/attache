@@ -7,7 +7,7 @@ from tests import test_public_names as N
 
 ROOT = Path(__file__).resolve().parents[3]
 DATA = json.loads((ROOT / "pipeline/inputs/plans/addenda.json").read_text())
-PD = json.loads((ROOT / "pipeline/inputs/plan.json").read_text())["date"]
+PD = "2026-11-12"  # addenda session; Daily plan.json moves with the live date
 DB, WB = A.daily_block(DATA, PD), A.weekly_block(DATA, PD)
 txt = lambda h: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", h))
 
@@ -105,6 +105,10 @@ class Rendered(unittest.TestCase):
                 r = pg.evaluate(f"""()=>{{const s=document.getElementById('{sid}');if(!s)return null;const b=s.getBoundingClientRect();
                   return {{h:s.querySelector('h2').innerText,t:s.innerText,vis:b.height>40&&b.width>200,
                   empty:[...s.querySelectorAll('li')].filter(li=>[...li.children].some(c=>!c.innerText.trim())).length,n:s.querySelectorAll('li').length}}}}""")
+                live_date = json.loads((ROOT / "pipeline/inputs/plan.json").read_text())["date"]
+                if page == "daily" and live_date != "2026-11-12":
+                    self.assertIsNone(r, "daily addenda must stay hidden off its session")
+                    pg.close(); continue
                 self.assertIsNotNone(r, page); self.assertTrue(r["h"].startswith(head)); self.assertTrue(r["vis"])
                 self.assertEqual(r["empty"], 0); self.assertGreaterEqual(r["n"], 5); self.assertEqual(errs, [])
                 self.assertNotRegex(r["t"].lower(), r"\berror\b"); self.assertIsNone(N.strict_rx().search(r["t"]))
