@@ -1278,6 +1278,24 @@
       "net": null,
       "risk": 50.0,
       "equity": null
+    },
+    {
+      "date": "2026-11-18",
+      "sym": "SPX",
+      "root": null,
+      "inst": "Call",
+      "side": "Long",
+      "qty": 1,
+      "pts": null,
+      "pt_val": null,
+      "strike": 7330,
+      "entry": 5.95,
+      "q_out": 6.9,
+      "exit": null,
+      "q_out_pl": 95.0,
+      "net": null,
+      "risk": null,
+      "equity": null
     }
   ]
 }
