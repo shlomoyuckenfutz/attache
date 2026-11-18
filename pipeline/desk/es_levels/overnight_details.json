@@ -1,9 +1,9 @@
 {
- "generated_et": "2026-11-18 15:56 ET",
- "next_session": "Wed 11/18",
+ "generated_et": "2026-11-18 16:39 ET",
+ "next_session": "Thu 11/19",
  "on": {
   "ES": {
-   "last": 7346.0,
+   "last": 7348.25,
    "on_hi": 7434.75,
    "on_lo": 7305.25,
    "on_mid": 7370.0,
@@ -11,18 +11,18 @@
    "rth_hi": 7437.0,
    "rth_lo": 7308.0,
    "rth_date": "11/17",
-   "gap": -17.5,
-   "gap_pct": -0.238,
+   "gap": -15.25,
+   "gap_pct": -0.207,
    "pos": "OUTSIDE (L)",
-   "on_vol": 1819995,
+   "on_vol": 1981790,
    "avg_vol": 349567,
-   "vol_ratio": 5.21,
+   "vol_ratio": 5.67,
    "on_range": 129.5,
    "avg_range": 89.1,
    "range_pct": 145.3,
    "n_hist": 10,
-   "elapsed_h": 21.8,
-   "asof": "11/18 15:45",
+   "elapsed_h": 22.4,
+   "asof": "11/18 16:25",
    "sess_start": "11/17 18:00",
    "bars": [
     [
@@ -1848,14 +1848,70 @@
     [
      "11/18 15:45",
      7344.0,
-     7347.5,
-     7341.5,
-     7346.0
+     7347.75,
+     7340.25,
+     7342.5
+    ],
+    [
+     "11/18 15:50",
+     7342.5,
+     7349.75,
+     7335.75,
+     7348.5
+    ],
+    [
+     "11/18 15:55",
+     7348.5,
+     7353.5,
+     7338.5,
+     7340.25
+    ],
+    [
+     "11/18 16:00",
+     7340.0,
+     7340.25,
+     7332.0,
+     7334.0
+    ],
+    [
+     "11/18 16:05",
+     7334.0,
+     7339.25,
+     7333.5,
+     7338.5
+    ],
+    [
+     "11/18 16:10",
+     7338.5,
+     7339.75,
+     7337.0,
+     7338.0
+    ],
+    [
+     "11/18 16:15",
+     7338.0,
+     7349.5,
+     7337.75,
+     7349.0
+    ],
+    [
+     "11/18 16:20",
+     7349.0,
+     7350.0,
+     7344.75,
+     7345.75
+    ],
+    [
+     "11/18 16:25",
+     7345.75,
+     7349.0,
+     7344.75,
+     7348.25
     ]
    ]
   },
   "NQ": {
-   "last": 27176.0,
+   "last": 27250.0,
    "on_hi": 27609.75,
    "on_lo": 26921.75,
    "on_mid": 27265.75,
@@ -1863,18 +1919,18 @@
    "rth_hi": 27351.0,
    "rth_lo": 26658.5,
    "rth_date": "11/17",
-   "gap": 89.75,
-   "gap_pct": 0.331,
+   "gap": 163.75,
+   "gap_pct": 0.605,
    "pos": "OUTSIDE (H)",
-   "on_vol": 859344,
+   "on_vol": 900980,
    "avg_vol": 216093,
-   "vol_ratio": 3.98,
+   "vol_ratio": 4.17,
    "on_range": 688.0,
    "avg_range": 599.1,
    "range_pct": 114.8,
    "n_hist": 10,
-   "elapsed_h": 21.8,
-   "asof": "11/18 15:45",
+   "elapsed_h": 22.4,
+   "asof": "11/18 16:25",
    "sess_start": "11/17 18:00",
    "bars": [
     [
@@ -3700,9 +3756,65 @@
     [
      "11/18 15:45",
      27166.25,
-     27182.75,
+     27183.0,
      27156.25,
-     27176.0
+     27169.25
+    ],
+    [
+     "11/18 15:50",
+     27169.25,
+     27221.5,
+     27150.0,
+     27217.0
+    ],
+    [
+     "11/18 15:55",
+     27215.75,
+     27242.0,
+     27174.75,
+     27191.0
+    ],
+    [
+     "11/18 16:00",
+     27191.0,
+     27191.25,
+     27133.25,
+     27139.5
+    ],
+    [
+     "11/18 16:05",
+     27140.0,
+     27191.0,
+     27139.0,
+     27183.0
+    ],
+    [
+     "11/18 16:10",
+     27182.75,
+     27194.25,
+     27177.25,
+     27190.5
+    ],
+    [
+     "11/18 16:15",
+     27190.0,
+     27254.0,
+     27186.5,
+     27253.0
+    ],
+    [
+     "11/18 16:20",
+     27254.5,
+     27258.0,
+     27229.25,
+     27230.5
+    ],
+    [
+     "11/18 16:25",
+     27229.75,
+     27257.25,
+     27226.25,
+     27250.0
     ]
    ]
   }
@@ -3752,116 +3864,116 @@
  },
  "pulse": {
   "XLK": {
-   "last": 163.93,
-   "prev": 163.29,
-   "chg": 0.64,
-   "pct": 0.39,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 164.35,
+   "prev": 163.79,
+   "chg": 0.56,
+   "pct": 0.34,
+   "sess": "AH",
+   "asof": "11/18 16:20"
   },
   "XLF": {
-   "last": 56.49,
-   "prev": 57.08,
-   "chg": -0.59,
-   "pct": -1.03,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 56.4,
+   "prev": 56.43,
+   "chg": -0.03,
+   "pct": -0.05,
+   "sess": "AH",
+   "asof": "11/18 16:31"
   },
   "XLE": {
-   "last": 61.37,
-   "prev": 63.36,
-   "chg": -1.99,
-   "pct": -3.15,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 61.3,
+   "prev": 61.31,
+   "chg": -0.01,
+   "pct": -0.01,
+   "sess": "AH",
+   "asof": "11/18 16:31"
   },
   "XLV": {
-   "last": 181.38,
-   "prev": 185.28,
-   "chg": -3.9,
-   "pct": -2.11,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 181.37,
+   "prev": 181.16,
+   "chg": 0.21,
+   "pct": 0.12,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "XLY": {
-   "last": 119.38,
-   "prev": 117.13,
-   "chg": 2.25,
-   "pct": 1.92,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 119.22,
+   "prev": 119.2,
+   "chg": 0.02,
+   "pct": 0.02,
+   "sess": "AH",
+   "asof": "11/18 16:05"
   },
   "SMH": {
-   "last": 459.21,
-   "prev": 460.21,
-   "chg": -1.0,
-   "pct": -0.22,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 459.5,
+   "prev": 459.41,
+   "chg": 0.09,
+   "pct": 0.02,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "NVDA": {
-   "last": 150.79,
-   "prev": 155.47,
-   "chg": -4.68,
-   "pct": -3.01,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 150.37,
+   "prev": 150.87,
+   "chg": -0.5,
+   "pct": -0.33,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "AAPL": {
-   "last": 353.05,
-   "prev": 351.92,
-   "chg": 1.12,
-   "pct": 0.32,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 351.75,
+   "prev": 352.29,
+   "chg": -0.54,
+   "pct": -0.15,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "MSFT": {
-   "last": 508.32,
-   "prev": 506.3,
-   "chg": 2.02,
-   "pct": 0.4,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 507.36,
+   "prev": 508.33,
+   "chg": -0.97,
+   "pct": -0.19,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "AMZN": {
-   "last": 267.97,
-   "prev": 257.85,
-   "chg": 10.12,
-   "pct": 3.92,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 267.21,
+   "prev": 267.67,
+   "chg": -0.46,
+   "pct": -0.17,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "META": {
-   "last": 618.39,
-   "prev": 618.91,
-   "chg": -0.52,
-   "pct": -0.08,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 615.41,
+   "prev": 616.13,
+   "chg": -0.72,
+   "pct": -0.12,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "GOOGL": {
-   "last": 282.68,
-   "prev": 280.18,
-   "chg": 2.51,
-   "pct": 0.89,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 282.8,
+   "prev": 282.34,
+   "chg": 0.46,
+   "pct": 0.16,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "TSLA": {
-   "last": 384.73,
-   "prev": 380.14,
-   "chg": 4.59,
-   "pct": 1.21,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 382.35,
+   "prev": 383.54,
+   "chg": -1.19,
+   "pct": -0.31,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   },
   "AVGO": {
-   "last": 354.36,
-   "prev": 341.69,
-   "chg": 12.67,
-   "pct": 3.71,
-   "sess": "RTH",
-   "asof": "11/18 15:55"
+   "last": 353.95,
+   "prev": 354.07,
+   "chg": -0.12,
+   "pct": -0.03,
+   "sess": "AH",
+   "asof": "11/18 16:35"
   }
  },
  "earn": {},
@@ -3870,72 +3982,79 @@
   "econ": [
    {
     "time_pt": "05:30",
-    "title": "Building Permits",
-    "impact": "Low",
-    "fc": "1.38M",
-    "prev": "1.40M"
-   },
-   {
-    "time_pt": "05:30",
-    "title": "Housing Starts",
-    "impact": "Low",
-    "fc": "1.25M",
-    "prev": "1.22M"
+    "title": "Unemployment Claims",
+    "impact": "Medium",
+    "fc": "198K",
+    "prev": "200K"
    },
    {
     "time_pt": "07:00",
-    "title": "Pending Home Sales m/m",
+    "title": "CB Leading Index m/m",
     "impact": "Low",
-    "fc": "-2.0%",
-    "prev": "-7.3%"
+    "fc": "0.0%",
+    "prev": "0.0%"
+   },
+   {
+    "time_pt": "07:15",
+    "title": "Mortgage Delinquencies",
+    "impact": "Low",
+    "fc": "",
+    "prev": "4.37%"
    },
    {
     "time_pt": "07:30",
-    "title": "Crude Oil Inventories",
+    "title": "Natural Gas Storage",
     "impact": "Low",
-    "fc": "0.4M",
-    "prev": "4.7M"
-   },
-   {
-    "time_pt": "13:00",
-    "title": "TIC Long-Term Purchases",
-    "impact": "Low",
-    "fc": "160.7B",
-    "prev": "279.2B"
+    "fc": "25B",
+    "prev": "61B"
    }
   ],
   "fed": [
    {
-    "time_pt": "09:15",
-    "title": "FOMC Member Daly Speaks",
+    "time_pt": "05:30",
+    "title": "Philly Fed Manufacturing Index",
+    "impact": "Medium",
+    "fc": "20.6",
+    "prev": "20.9"
+   },
+   {
+    "time_pt": "05:50",
+    "title": "FOMC Member Hammack Speaks",
     "impact": "Low",
     "fc": "",
     "prev": ""
    },
    {
-    "time_pt": "10:35",
+    "time_pt": "06:25",
+    "title": "FOMC Member Jefferson Speaks",
+    "impact": "Low",
+    "fc": "",
+    "prev": ""
+   },
+   {
+    "time_pt": "09:30",
+    "title": "FOMC Member Goolsbee Speaks",
+    "impact": "Low",
+    "fc": "",
+    "prev": ""
+   },
+   {
+    "time_pt": "11:15",
     "title": "FOMC Member Barr Speaks",
     "impact": "Low",
     "fc": "",
     "prev": ""
    },
    {
-    "time_pt": "11:00",
-    "title": "FOMC Meeting Minutes",
-    "impact": "High",
-    "fc": "",
-    "prev": ""
-   },
-   {
-    "time_pt": "11:30",
-    "title": "FOMC Member Williams Speaks",
+    "time_pt": "13:00",
+    "title": "FOMC Member Barkin Speaks",
     "impact": "Low",
     "fc": "",
     "prev": ""
    },
    {
-    "time_pt": "13:15",
-    "title": "FOMC Member Kashkari Speaks",
+    "time_pt": "15:30",
+    "title": "FOMC Member Paulson Speaks",
     "impact": "Low",
     "fc": "",
     "prev": ""
@@ -3944,7 +4063,7 @@
   "auctions": [
    {
     "date": "Thu 11/19",
-    "next": false,
+    "next": true,
     "time_pt": "08:30",
     "term": "4-Week",
     "type": "Bill",
@@ -3953,7 +4072,7 @@
    },
    {
     "date": "Thu 11/19",
-    "next": false,
+    "next": true,
     "time_pt": "08:30",
     "term": "8-Week",
     "type": "Bill",
@@ -3962,7 +4081,7 @@
    },
    {
     "date": "Thu 11/19",
-    "next": false,
+    "next": true,
     "time_pt": "10:00",
     "term": "9-Year 8-Month",
     "type": "Note",
@@ -3971,7 +4090,7 @@
    },
    {
     "date": "Thu 11/19",
-    "next": false,
+    "next": true,
     "time_pt": "10:00",
     "term": "9-Day",
     "type": "Bill",
@@ -4040,31 +4159,34 @@
     "type": "Note",
     "reopen": false,
     "size": null
+   },
+   {
+    "date": "Wed 11/25",
+    "next": false,
+    "time_pt": "\u2014",
+    "term": "7-Year",
+    "type": "Note",
+    "reopen": false,
+    "size": null
    }
   ],
   "expiries": [
    {
-    "what": "VIX expiration (AM settle 06:30 PT)",
-    "date": "Wed 11/18",
-    "days": 0,
-    "today": true
-   },
-   {
     "what": "Monthly equity OPEX",
     "date": "Fri 11/20",
-    "days": 2,
+    "days": 1,
     "today": false
    },
    {
     "what": "VIX expiration (AM settle 06:30 PT)",
     "date": "Wed 12/16",
-    "days": 28,
+    "days": 27,
     "today": false
    },
    {
     "what": "Monthly equity OPEX",
     "date": "Fri 12/18",
-    "days": 30,
+    "days": 29,
     "today": false
    }
   ],
