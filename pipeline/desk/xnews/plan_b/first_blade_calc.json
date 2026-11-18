@@ -2,8 +2,8 @@
  "symbol": "SPY",
  "date": "2026-11-18",
  "calc": true,
- "posted_pt": "CALC 03:41 PT",
- "asof": "2026-11-18 03:41 PT",
+ "posted_pt": "CALC 04:50 PT",
+ "asof": "2026-11-18 04:50 PT",
  "pivot": 733.05,
  "room_higher": 739.09,
  "resistance_break": 745.81,
@@ -15,8 +15,8 @@
  "pdc": 732.38,
  "prior_day": "2026-11-17",
  "onh": 737.39,
- "onl": 733.09,
- "last": 735.47,
- "basis": "floor pivots from 2026-11-17 RTH H 739.76 / L 727.00 / C 732.38; pre-mkt 733.09\u2013737.39; last 735.47 @ 03:41 PT (delayed)",
+ "onl": 732.54,
+ "last": 733.11,
+ "basis": "floor pivots from 2026-11-17 RTH H 739.76 / L 727.00 / C 732.38; pre-mkt 732.54\u2013737.39; last 733.11 @ 04:50 PT (delayed)",
  "updates": []
 }
