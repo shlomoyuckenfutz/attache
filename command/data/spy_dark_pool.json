@@ -4,27 +4,26 @@
   "updated": "2026-10-31",
   "asof_note": "From Everett chart screenshot 2026-10-31; purple DP labels only",
   "convert": {
-    "spy_per_spx": 0.099762,
-    "es_minus_spx": 23.08,
-    "asof": "2026-11-13",
+    "spy_per_spx": 0.09978,
+    "es_minus_spx": 22.97,
+    "asof": "2026-11-17",
     "closes": {
-      "SPY": 754.37,
-      "SPX": 7561.67,
-      "ES": 7584.75,
-      "asof": "2026-11-13"
+      "SPY": 732.44,
+      "SPX": 7340.54,
+      "asof": "2026-11-17"
     },
     "prior": {
-      "spy_per_spx": 0.099698,
-      "es_minus_spx": 33.93,
-      "asof": "2026-10-30",
+      "spy_per_spx": 0.099762,
+      "es_minus_spx": 23.08,
+      "asof": "2026-11-13",
       "closes": {
-        "SPY": 755.72,
-        "SPX": 7580.07,
-        "ES": 7614.0,
-        "asof": "2026-10-30"
+        "SPY": 754.37,
+        "SPX": 7561.67,
+        "ES": 7584.75,
+        "asof": "2026-11-13"
       }
     },
-    "note": "SPX = SPY ÷ 0.099762; ES = SPX + 23.08 (Fri 2026-11-13 official closes: SPY 754.37, SPX 7561.67, ES 7584.75)"
+    "note": "SPX = SPY ÷ 0.099780; ES = SPX + 22.97 (Tue 2026-11-17 official closes: SPY 732.44, SPX 7340.54, ES 7363.50)"
   },
   "levels": [
     758.02,

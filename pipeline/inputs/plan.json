@@ -1,62 +1,63 @@
 {
-  "date": "2026-11-16",
-  "asof_pt": "2026-11-16 6:26 AM PT",
-  "asof": "2026-11-16 6:26 AM PT",
-  "session": "2026-11-16",
-  "title": "Yuckenfutz Tradez — Daily Plan — Mon Nov 16, 2026 (Warsh · expiration week)",
+  "date": "2026-11-18",
+  "asof_pt": "2026-11-17 8:14 PM PT",
+  "asof": "2026-11-17 8:14 PM PT",
+  "session": "2026-11-18",
+  "title": "Yuckenfutz Tradez — Daily Plan — Wed Nov 18, 2026 (VIX expiration · Fed minutes)",
   "bias": {
     "direction": "NEUTRAL",
-    "reason": "Monday opens at the 7535–40 pivot after the overnight session swept Friday's regular-session low (7519.25) down to 7520 and recovered. ES was 7538.50 at 6:16 AM PT, right at the pivot, still below Friday's 7584.75 close; the overnight high was 7614.25. The unpadded plan band is 7519.25–7643.50 (Friday regular session union Monday overnight), padded by 0.25 × today's implied move (SPX ±1.01%, about 76 points) down to about 7500 and up to about 7663. A reclaim and hold of 7535–40 opens 7549–51 (SPY 0DTE flip 751 ≈ ES 7551), then 7566, then 7572 (SPY 0DTE call wall 753 ≈ ES 7571). A hold of 7572 opens the 7585 Friday-close gap fill, then 7590–91 (SPX 0DTE flip 7568 ≈ ES 7591), then 7600 / 7614–15 as targets, with the SPX 0DTE call wall 7610 ≈ ES 7633 and Friday's 7643 high as stretch. Failure to reclaim 7540, or a break and hold below 7519–24, keeps downside pressure toward 7509–11 (SPY 0DTE put wall 747 ≈ ES 7511) and 7502; next referenced areas sit below the plan band (7492, then 7473). ES ≈ SPX + 23.08 from Friday's official closes (ES 7584.75, SPX 7561.67). This is monthly expiration week; Friday's close left a flat, chop-first posture. Empire State printed 7.8 versus 18.0 expected (prior 25.5). Fed Chair-nominee Warsh speaks at 9:00 AM PT."
+    "reason": "Wednesday opens just above the 7373 pivot after a two-day selloff. Monday was a trend day down (SPY −1.9%). Tuesday flushed ES to 7308–09, under the Nov 5 low at 7323, then recovered. ES closed 7363.50 (SPX 7340.54, SPY 732.44, right on the 200-day average). After the close Nvidia beat and raised; ES ran to 7434.75 before fading to 7376 at 8:02 PM PT, a few points above 7373. The structure is still bearish: negative gamma on every expiry through December, and no bounce counts as a structural reclaim until 7421, then 7455. A hold of 7373 opens 7390, then 7414 (weekly VWAP), then 7421. Failure of 7373 opens 7348, then 7316; acceptance below 7308–09 opens 7275, which sits below the plan band. The unpadded plan band is 7308–7437 (Tuesday regular session union the post-close range), padded by 0.25 × today's implied move (SPX ±1.06%, about 77 points) to about 7289–7456. ES ≈ SPX + 22.97 from Tuesday's official closes. Wednesday is VIX expiration (morning settlement); Fed minutes are at 11:00 AM PT."
   },
-  "overnight_bias": "Overnight swept Friday's low (7519.25) to 7520 and recovered into the 7535–40 pivot · ES 7538.50 at 6:16 AM PT, at the pivot · overnight high 7614.25 · Friday close 7584.75 still open",
+  "overnight_bias": "Nvidia beat and raised after the close · ES ran to 7434.75, then faded to 7376 at 8:02 PM PT, just above the 7373 pivot · Tuesday RTH 7308–7437, close 7363.50",
   "key_levels": [
     {
-      "price": 7591,
-      "note": "ES 7590–91 resistance — overnight map reference, in line with SPX 0DTE 7568 (ES ≈ 7591 at Friday's +23.08 basis); stretch only until 7535–40 and 7566 are reclaimed"
+      "price": 7455,
+      "note": "ES 7455 resistance — 11/18–19 call-wall zone (SPX 7432–7455); a hold with VIX under 23.72 is the strength tell; 7519 is a target only"
     },
     {
-      "price": 7566,
-      "note": "ES 7566 resistance — second reclaim; failure to get through leaves sellers in control"
+      "price": 7421,
+      "note": "ES 7421 resistance — key reclaim; no bounce counts as a structural reclaim until this level holds; acceptance opens 7455"
     },
     {
-      "price": 7550,
-      "note": "ES 7549–51 resistance — first target above 7535–40, in line with SPY 0DTE 751 (ES ≈ 7551 at Friday's 10.05 ES/SPY)"
+      "price": 7414,
+      "note": "ES 7414 resistance — weekly VWAP; next is the 7421 reclaim"
     },
     {
-      "price": 7538,
-      "note": "ES 7535–40 pivot — reclaim and hold for 7549–51 then 7566; failure to hold keeps sellers in control"
+      "price": 7373,
+      "note": "ES 7373 pivot — Tuesday's halfback, value-area high and 200-day average; equals SPX 7350 (11/18 biggest-gamma strike) at +22.97. Hold for 7390 then 7414; a break opens 7348"
     },
     {
-      "price": 7522,
-      "note": "ES 7519–24 support — Friday regular-session low 7519.25 / overnight low 7520; a break and hold below opens 7509–11"
+      "price": 7348,
+      "note": "ES 7348 support — first shelf under 7373; a break opens 7316"
     },
     {
-      "price": 7510,
-      "note": "ES 7509–11 support — next shelf under 7519–24, in line with the SPY 0DTE put wall 747 (ES ≈ 7511)"
+      "price": 7316,
+      "note": "ES 7316 support — Tuesday flush area, just above the 7308–09 low"
     },
     {
-      "price": 7502,
-      "note": "ES 7502 support — last referenced shelf inside the padded plan band (band pads to about 7500)"
+      "price": 7308,
+      "note": "ES 7308–09 support — Tuesday regular-session low (board 7308 / flush 7309), under the Nov 5 low at 7323 and recovered. Acceptance below opens 7275, which sits below the plan band"
     }
   ],
   "path": {
-    "bull": "Reclaim and hold 7535–40 → 7549–51 → 7566 → 7572 (SPY 0DTE call wall 753 ≈ ES 7571) → 7585 Friday-close gap fill → 7590–91; a hold of 7590–91 opens 7600 / 7614–15, then the SPX 0DTE call wall 7610 ≈ ES 7633 and Friday's 7643 high (targets only).",
-    "bear": "Failure to reclaim 7540, or a break and hold below 7519–24, keeps downside pressure → 7509–11 → 7502; next referenced areas sit below the plan band (7492, then the SPX 0DTE put wall 7450 ≈ ES 7473 — watch for traps)."
+    "bull": "Hold above 7373 → 7390 → 7414 (weekly VWAP) → 7421; acceptance above 7421 opens 7455, then 7519 (target only).",
+    "bear": "Fail 7373 → 7348 → 7316; acceptance below 7308–09 opens 7275, then SPX 7250 / 7220 / 7175 ≈ ES 7273 / 7243 / 7198 (targets only, below the plan band)."
   },
   "actionable": [
-    "Don't chase the overnight sweep of 7524/19. Trade the 7535–40 reaction after the 6:30 AM PT cash open.",
-    "13- and 26-week bill auctions 8:30 AM PT.",
-    "Fed Chair-nominee Warsh speaks 9:00 AM PT — the main event; size down on a headline gap.",
-    "Fed's Hammack speaks 11:15 AM PT.",
-    "Nvidia earnings tomorrow after the close (Tue 11/17). Monthly options expiration is Friday 11/20 — this is expiration week; Friday's close was a flat, chop-first setup."
+    "Don't chase the overnight Nvidia bounce. Trade the 7373 reaction after the 6:30 AM PT cash open. 7348–7390 is the chop zone — skip the middle.",
+    "TJX earnings before the open.",
+    "Housing starts and building permits 5:30 AM PT. VIX expiration, morning settlement.",
+    "Pending home sales 7:00 AM PT.",
+    "20-year bond sale 10:00 AM PT.",
+    "Fed minutes 11:00 AM PT — no new size into the print."
   ],
   "long_story_short": {
-    "for_session": "2026-11-16",
-    "headline": "Mon 11/16 — ES tests Friday's low · 7535–40 is the pivot · Warsh 9:00 AM PT",
-    "context": "Overnight sold to 7520 against Friday's regular-session low at 7519.25, then recovered. ES was 7538.50 at 6:16 AM PT, at the 7535–40 pivot. Cash open is 6:30 AM PT. The unpadded plan band is 7519.25–7643.50 (Friday regular session union Monday overnight), padded by 0.25 × today's implied move to about 7500–7663. ES ≈ SPX + 23.08 from Friday's official closes (ES 7584.75, SPX 7561.67). This is monthly expiration week; Friday's close left a flat, chop-first posture. Empire State printed 7.8 versus 18.0 expected (prior 25.5).",
-    "levels": "Pivot 7535–40. Above: 7549–51, 7566, 7590–91 (stretch: 7572, 7585 gap fill, 7600, 7614–15, 7633, 7643). Below: 7519–24, 7509–11, 7502. No invented levels.",
-    "bearish": "Failure to reclaim 7540, or acceptance below 7519–24, keeps downside pressure toward 7509–11 then 7502; next areas 7492 then 7473 sit below the plan band.",
-    "bullish": "Reclaim and hold 7535–40 → 7549–51 → 7566 → 7572 → 7585 → 7590–91; a hold of 7590–91 opens 7600 / 7614–15, then 7633 / 7643.",
-    "general": "Don't chase the 7524 sweep. Trade the 7535–40 reaction after the cash open. Warsh at 9:00 AM PT is the main event. Size down on headline gaps. Expiration week — expect chop."
+    "for_session": "2026-11-18",
+    "headline": "Wed 11/18 — 7373 is the pivot · VIX expiration · Fed minutes 11:00 AM PT",
+    "context": "Tuesday flushed ES to 7308–09, under the Nov 5 low at 7323, then recovered. Close 7363.50 (SPX 7340.54, SPY 732.44). After hours, Nvidia beat and raised; ES ran to 7434.75 and faded to 7376 at 8:02 PM PT, just above 7373. The unpadded plan band is 7308–7437 (Tuesday regular session union the post-close range), padded by 0.25 × today's implied move to about 7289–7456. ES ≈ SPX + 22.97 from Tuesday's official closes. Structure is still bearish until 7421, then 7455, are reclaimed. Wednesday is VIX expiration; Fed minutes are at 11:00 AM PT.",
+    "levels": "Pivot 7373. Above: 7414, 7421, 7455 (path: 7390; stretch: 7519). Below: 7348, 7316, 7308–09. 7275 sits below the plan band. No invented levels.",
+    "bearish": "Fail 7373 → 7348 → 7316; acceptance below 7308–09 opens 7275, then 7273 / 7243 / 7198 below the band. A lower high that rolls over by Thursday stays in play, with put positioning at SPY 725 / SPX 7300 into Friday's OpEx.",
+    "bullish": "Hold above 7373 → 7390 → 7414 → 7421; acceptance above 7421 opens 7455, then 7519 (target only).",
+    "general": "Don't chase the overnight Nvidia bounce. Trade the 7373 reaction after the cash open. Skip the 7348–7390 middle. No new size into Fed minutes at 11:00 AM PT. VIX expiration is in the morning."
   }
 }
