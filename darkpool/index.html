@@ -817,7 +817,7 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
  rt=setTimeout(()=>paintLadder(levelMetas, spot, near, candles, rowMeta), 120);
  });
  }).catch(e=>{
- document.getElementById('pos').innerHTML=`<div class="err">Failed to load data/spy_dark_pool.json (${e.message||e})</div>`;
+ document.getElementById('pos').innerHTML=`<div class="err">Failed to load dark-pool levels (${e.message||e})</div>`;
  document.getElementById('hdrMeta').textContent='load failed';
  });
 })();
