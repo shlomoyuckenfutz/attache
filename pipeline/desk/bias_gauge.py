@@ -13,8 +13,39 @@ def fnum(s):
     try: return float(re.sub(r"[^\d.\-]", "", str(s).split("–")[0]))
     except Exception: return None
 
+COLS = ["ts", "open", "high", "low", "close", "volume", "vwap"]
+
+def _free_1m():
+    """Free 1m SPY bars (extended hours) when no local parquet exists; vwap per bar = typical price."""
+    import logging, yfinance as yf
+    logging.getLogger("yfinance").setLevel(logging.CRITICAL)
+    h = yf.Ticker("SPY").history(period="5d", interval="1m", prepost=True, auto_adjust=False)
+    d = pd.DataFrame({"ts": h.index.tz_convert(ET), "open": h.Open.values, "high": h.High.values, "low": h.Low.values,
+                      "close": h.Close.values, "volume": h.Volume.values})
+    body_hi, body_lo = d[["open", "close"]].max(axis=1), d[["open", "close"]].min(axis=1)
+    d["high"] = d.high.clip(upper=body_hi * 1.003); d["low"] = d.low.clip(lower=body_lo * 0.997)  # thin ext-hours bad wicks
+    d["vwap"] = (d.high + d.low + d.close) / 3
+    return d
+
+def _base_bars():
+    """Newest 1m parquet (research ext or the Actions rolling cache, real volume/VWAP); the free 1m pull only
+    when no parquet exists or the parquet lags it by more than 30 minutes."""
+    best = None
+    for p in (RES / "python/data/SPY_1m_ext.parquet", RES / "equity_orb15/data/SPY_1m.parquet"):
+        try:
+            d = pd.read_parquet(p, columns=COLS)
+            if len(d) and (best is None or d.ts.max() > best.ts.max()): best = d
+        except Exception: pass
+    try:
+        f = _free_1m()
+        if len(f) and (best is None or pd.Timestamp(f.ts.max()) - pd.Timestamp(best.ts.max()) > pd.Timedelta(minutes=30)): best = f
+    except Exception as e: print("free 1m pull failed:", str(e)[:120], file=sys.stderr)
+    if best is None: raise SystemExit("bias_gauge: no bars; page left alone")
+    best = best.copy(); best["ts"] = pd.to_datetime(best.ts, utc=True).dt.tz_convert(ET)
+    return best
+
 def bars(live):
-    d = pd.read_parquet(RES / "python/data/SPY_1m_ext.parquet", columns=["ts", "open", "high", "low", "close", "volume", "vwap"])
+    d = _base_bars()
     d = d[d.ts >= d.ts.max() - pd.Timedelta(days=5)]
     src = "delayed"
     if live:
@@ -71,14 +102,23 @@ def thirds(px, lo, hi):
     if lo is None or hi is None or hi <= lo: return 0
     q = (px - lo) / (hi - lo); return 1 if q > 2 / 3 else -1 if q < 1 / 3 else 0
 
-def desk_parts(px):
+def fresh(s, day, days=4):
+    """True when a dated input (YYYY-MM-DD...) is within `days` calendar days of the bar date. Undated = stale."""
+    try: d = pd.Timestamp(str(s)[:10]).date()
+    except Exception: return False
+    return 0 <= (day - d).days <= days
+
+def desk_parts(px, day=None):
+    day = day or datetime.now().date()
     v = []; G = J(XN / "gamma.json") or {}
+    if not fresh(G.get("date"), day): G = {}  # stale consensus never votes as current
     cons = {s["symbol"]: s.get("consensus") or {} for s in G.get("symbols", [])}
     qqq = None
     try: qqq = float(pd.read_parquet(RES / "equity_orb15/data/QQQ_1m.parquet", columns=["close"]).close.iloc[-1])
-    except Exception: qqq = ((J(XN / "confluence.json") or {}).get("spot") or {}).get("QQQ")
+    except Exception: qqq = None
     try: import desk_bands as _db; DB = _db.load()
     except Exception: DB = {"gex": {}, "press": {}}
+    if (DB.get("meta") or {}).get("stale"): DB = {"gex": {}, "press": {}}
     dbf = lambda t: (((DB.get("gex") or {}).get(t) or {}).get("all") or {}).get("flip")
     fl = fnum(cons.get("SPY", {}).get("flip"))
     if fl: v.append(("GAMMA FLIP", "SPY price vs gamma flip consensus", 1 if px > fl else -1, f"{px:.2f} vs flip {fl}", 1.5))
@@ -92,14 +132,18 @@ def desk_parts(px):
     fx = fnum(cons.get("SPX", {}).get("flip")); spx = ((J(XN / "confluence.json") or {}).get("spot") or {}).get("SPX")
     if fx and spx: v.append(("FB · SPX", "SPX price vs flip", 1 if spx > fx else -1, f"{spx} vs {fx}", 1.0))
     import first_blade as _fb; sp = _fb.load() or {}
-    if sp.get("pivot"):
+    if sp.get("pivot") and fresh(sp.get("date"), day, 0):
         pv = float(sp["pivot"]); b = str(sp.get("bias", "")).lower()
         x = 1 if px > pv else -1
         v.append(("FB · SPY", "price vs First Blade pivot", x, f"{px:.2f} vs pivot {pv}", 1.0))
         tb = 1 if "bull" in b and "bear" not in b else -1 if "bear" in b and "bull" not in b else 0
         v.append(("FB · LEAN", "First Blade stated lean", tb, "bullish" if tb > 0 else "bearish" if tb < 0 else "neutral", 0.5))
-    esp = (J(ES / "summary.json") or {}).get("price")
+    S = J(ES / "summary.json") or {}; esp = S.get("price") if fresh(S.get("asof_et"), day, 1) else None
+    if not esp:
+        FG = J(ES / "free_gex/latest.json") or {}
+        esp = FG.get("es_ref") if fresh(FG.get("as_of_pt"), day, 1) and not FG.get("stale") else None
     M = (J(XN / "levels_a/levels_a.json") or {}).get("latest") or {}
+    if not fresh(M.get("date"), day): M = {}
     if esp:
         lv = sorted(set((M.get("supports") or []) + (M.get("resistances") or [])))
         near_s = [x for x in (M.get("supports") or []) if x <= esp]; near_r = [x for x in (M.get("resistances") or []) if x >= esp]
@@ -108,11 +152,13 @@ def desk_parts(px):
             x = 1 if r is None else -1 if s is None else thirds(esp, s, r)
             v.append(("IRON LADDER", "/ES vs nearest key support/resistance", x, f"ES {esp} · S {s} / R {r}", 1.0))
     dp = (J(ES / "darkpool_levels.json") or {}).get("levels") or []
+    if not fresh((J(RES.parent.parent / "data/spy_dark_pool.json") or {}).get("updated"), day): dp = []
     if dp:
         below = sum(1 for x in dp if px * 0.99 <= x < px); above = sum(1 for x in dp if px < x <= px * 1.01)
         x = 1 if below > above + 1 else -1 if above > below + 1 else 0
         v.append(("DARK POOL", "dark-pool levels holding below vs overhead (±1%)", x, f"{below} below / {above} above", 1.5))
-    C = ((J(XN / "confluence.json") or {}).get("symbols") or {}).get("SPY") or []
+    CF = J(XN / "confluence.json") or {}
+    C = ((CF.get("symbols") or {}).get("SPY") or []) if fresh(CF.get("date"), day) else []
     if C:
         b = sum(z["n_sources"] for z in C if px * 0.99 <= z["price"] < px); a = sum(z["n_sources"] for z in C if px < z["price"] <= px * 1.01)
         x = 1 if b > a * 1.3 else -1 if a > b * 1.3 else 0
@@ -131,19 +177,21 @@ def desk_parts(px):
         rt = (cp["C"] + 1) / (cp["P"] + 1); x = 1 if rt > 1.25 else -1 if rt < 0.8 else 0
         v.append(("RIPTIDE", "index options flow call vs put premium (2d)", x, f"C/P {rt:.2f}", 1.0))
     else: v.append(("RIPTIDE", "index options flow call vs put premium (2d)", 0, "no recent prints", 1.0))
-    P = J(XN / "plan.json") or {}; dr = ((P.get("bias") or {}).get("direction") or "").upper()
+    P = J(XN / "plan.json") or {}
+    if not fresh(P.get("date"), day, 1) and not (str(P.get("date") or "") >= str(day)): P = {}
+    dr = ((P.get("bias") or {}).get("direction") or "").upper()
     v.append(("NEWS", "news-plan bias", 1 if dr in ("LONG", "BULLISH") else -1 if dr in ("SHORT", "BEARISH") else 0, dr or "n/a", 1.0))
     return v, P
 
 def compute(live=False):
-    d, src = bars(live); px, now, pp = price_parts(d); dp, P = desk_parts(px)
+    d, src = bars(live); px, now, pp = price_parts(d); dp, P = desk_parts(px, now.date())
     allv = pp + dp; W = sum(x[4] for x in allv); raw = sum(x[2] * x[4] for x in allv)
     sc = round(100 * raw / W) if W else 0
     lab = "BULLISH" if sc >= 25 else "BEARISH" if sc <= -25 else "NEUTRAL"
     pt = now.tz_convert("America/Los_Angeles")
     news = (P.get("bias") or {})
     return {"score": sc, "label": lab, "px": round(px, 2), "asof": pt.strftime("%m-%d %H:%M PT"), "feed": src,
-            "built": datetime.now().strftime("%m-%d %H:%M PT"),
+            "built": datetime.now(timezone.utc).astimezone(__import__("zoneinfo").ZoneInfo("America/Los_Angeles")).strftime("%m-%d %H:%M PT"),
             "votes": [{"k": k, "d": dsc, "v": vv, "x": det, "w": w} for k, dsc, vv, det, w in allv],
             "news": {"dir": news.get("direction") or "NEUTRAL", "why": news.get("reason") or ""}}
 

@@ -3,6 +3,7 @@ inputs/orb/orb_status.json. Idempotent. Never moves the page backwards: if the p
 newer ORB session than the inputs, it is left alone. Usage: orb_status.py <command/index.html>"""
 import json, os, re, sys
 from datetime import date, datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 INP = Path(os.environ.get("ORB_INPUTS", Path(__file__).resolve().parent.parent / "inputs")) / "orb" / "orb_status.json"
@@ -48,11 +49,13 @@ def main(f):
     h = Path(f).read_text()
     i, n, D = payload(h)
     cur = ((D.get("orb") or {}).get("SPY") or {}).get("date") or ""
-    if cur > src["asof"]:
+    if cur > src["asof"] or (cur == src["asof"] and len(((D.get("orb") or {}).get("SPY") or {}).get("bars") or [])
+                                > len(((src.get("orb") or {}).get("SPY") or {}).get("bars") or [])):
         print(f"orb_status: page has {cur} > inputs {src['asof']}; left alone"); return
     orb = src["orb"]
     dow = date.fromisoformat(src["asof"]).strftime("%a")
-    D["built"] = datetime.now().strftime("%Y-%m-%d %H:%M PT")
+    at = f' {src["asof_t"]}' if src.get("asof_t") else ""  # intraday: session still in progress
+    D["built"] = datetime.now(ZoneInfo("America/Los_Angeles")).strftime("%Y-%m-%d %H:%M PT")
     D["orb"], D["hourly"], D["eq"] = orb, src["hourly"], src["eq"]
     b, bp = D.get("bot") or {}, src["bot"]
     D["bot"] = {"day": f"paused since {bp['paused_since']} · last session {bp['last_session']}",
@@ -67,7 +70,7 @@ def main(f):
     tape = "weak tape (lows kept giving way)" if dn > up else "strong tape (highs kept giving way)" if up > dn else "two-sided tape"
     take = (f"SPY: {cs[2]}/{cs[3]} hour lows broke later · {cs[1]}/{cs[3]} hour highs broke later · QQQ: {cq[2]}/{cq[3]} hour lows broke later · "
             f"{cq[1]}/{cq[3]} hour highs broke later — {tape}.")
-    sec = (f'<section class="zone" id="z-hr"><div class="zh"><b>HOURLY BREAKS</b><small>RTH hour hi/lo · later breaks · last data {dow} {src["asof"]} ET</small></div>\n'
+    sec = (f'<section class="zone" id="z-hr"><div class="zh"><b>HOURLY BREAKS</b><small>RTH hour hi/lo · later breaks · last data {dow} {src["asof"]}{at} ET</small></div>\n'
            f'<div class="hr-wrap">{cs[0]}{cq[0]}</div><div class="hr-take">{take}</div></section>')
     a = h.index('<section class="zone" id="z-hr"'); z = h.index("</section>", a) + len("</section>")
     h = h[:a] + sec + h[z:]

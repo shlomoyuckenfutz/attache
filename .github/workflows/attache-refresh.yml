@@ -4,10 +4,11 @@ on:
   schedule:
     # US market window every 15 min: 6:00 AM–1:15 PM PT Mon–Fri.
     # PST (UTC-8, after fall-back): 14:00–21:15 UTC. Re-bump to 13:00–20:15 UTC when PDT returns (spring forward).
-    - cron: '0,15,30,45 14-20 * * 1-5'   # 14:00–20:45 UTC = 6:00–12:45 PT (PST)
-    - cron: '0,15 21 * * 1-5'             # 21:00 and 21:15 UTC = 1:00 and 1:15 PM PT (PST)
+    # Off the :00/:15/:30/:45 marks on purpose: GitHub drops or delays many top-of-hour scheduled runs.
+    - cron: '2,17,32,47 14-20 * * 1-5'   # 14:02–20:47 UTC = 6:02–12:47 PT (PST)
+    - cron: '2,17 21 * * 1-5'             # 21:02 and 21:17 UTC = 1:02 and 1:17 PM PT (PST)
     # Hourly otherwise (nights, early morning, weekends). Overlaps market window; concurrency dedupes.
-    - cron: '5 * * * *'
+    - cron: '7 * * * *'
   workflow_dispatch:
 
 concurrency:
@@ -49,6 +50,7 @@ jobs:
           ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
           ATOUCHE_STUDY_PASSWORD: ${{ secrets.ATOUCHE_STUDY_PASSWORD }}
           ATOUCHE_HEAT_PASSWORD: ${{ secrets.ATOUCHE_HEAT_PASSWORD }}
+          JOURNAL_SHEET_ID: ${{ secrets.JOURNAL_SHEET_ID }}
         run: bash pipeline/refresh.sh
 
       - name: Commit & push if changed

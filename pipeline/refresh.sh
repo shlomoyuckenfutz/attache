@@ -42,6 +42,12 @@ run() { # label command...
 # 1) Rolling bars (Alpaca)
 run "bars_rolling" python3 equity_orb15/bars_rolling.py SPY QQQ
 
+# 1b) Intraday ORB15 + hourly breaks inputs from free 1m bars (never older than what is already there)
+run "orb_live" python3 orb_live.py
+
+# 1c) Journal Log tab -> inputs/journal/v2_log.json (public CSV view; sheet id from secret; never shrinks)
+run "journal_export" python3 journal_export.py
+
 # 2) First blade calc (uses bars)
 run "first_blade" python3 first_blade.py
 
@@ -87,6 +93,9 @@ run "plan_addenda" python3 plan_addenda.py --daily daily/index.html --weekly wee
 run "live_trades" python3 live_trades.py "$ORB_SITE/live-trades/index.html"
 
 run "orb_status" python3 orb_status.py "$ORB_SITE/command/index.html"
+# 11b) Command live blocks: gamma grid / undertow (free chain compute), glance ES price, bias gauge
+run "command_live" python3 command_live.py "$ORB_SITE/command/index.html"
+run "bias_gauge" python3 bias_gauge.py --patch "$ORB_SITE/command/index.html"
 
 # 12) Copy pages into site root
 mkdir -p "$ORB_SITE/overnight" "$ORB_SITE/weekly/charts/prior" "$ORB_SITE/weekly/charts/plan" \
