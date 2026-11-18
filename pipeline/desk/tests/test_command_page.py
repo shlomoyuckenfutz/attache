@@ -17,6 +17,15 @@ def glance_data():
 
 
 class StaticChecks(unittest.TestCase):
+    def test_no_source_counts_anywhere(self):
+        """'dont ever give away our sourses': no rendered or embedded count of sources on any public page."""
+        count = re.compile(r"(\$\{[^}]{1,60}\}|'\s*\+\s*[\w.]+\s*\+\s*'|\b\d+)\s*(sources?|srcs?)\b|\bsources agree|\$\{b\.n_sources\}|\"n_sources\"|'×'\+b\.n", re.I)
+        for rel in ("command", "overnight", "weekly", "daily", "gammamap", "darkpool", "exposure"):
+            p = ROOT / rel / "index.html"
+            if p.exists():
+                m = count.search(p.read_text())
+                self.assertIsNone(m, f"{rel}: {m and m.group(0)}")
+
     def test_brief_code_has_no_removed_tiles(self):
         t = PAGE.read_text()
         s = t.index("window.drawBrief=t=>{"); body = t[s:t.index("$('#brief').innerHTML", s)]
