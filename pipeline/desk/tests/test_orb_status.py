@@ -38,8 +38,10 @@ class OrbStatus(unittest.TestCase):
 
 class NavTabs(unittest.TestCase):
     def test_gamma_map_tab_everywhere(self):
-        for rel in ("command", "overnight", "weekly", "daily", "darkpool", "gammamap", "study"):
-            self.assertIn("gammamap/", (ROOT / rel / "index.html").read_text(), rel)
+        for rel in ("command", "overnight", "weekly", "daily", "darkpool", "gammamap", "study", "live-trades"):
+            html = (ROOT / rel / "index.html").read_text()
+            self.assertIn("gammamap/", html, rel)
+            self.assertIn("live-trades/", html, rel)
 
 
 if __name__ == "__main__":

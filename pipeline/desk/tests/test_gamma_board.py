@@ -118,6 +118,8 @@ class I7_GammaMap(unittest.TestCase):
         import ui_shell
         self.assertIn('href="../gammamap/"', ui_shell.bar("daily", "../"))
         self.assertIn("class=on>GAMMA MAP", ui_shell.bar("gammamap", "../"))
+        self.assertIn('href="../live-trades/"', ui_shell.bar("daily", "../"))
+        self.assertIn("class=on>LIVE TRADES", ui_shell.bar("livetrades", "../"))
 
 
 class I8_HeaderStamp(unittest.TestCase):

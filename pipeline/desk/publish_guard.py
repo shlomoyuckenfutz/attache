@@ -5,7 +5,8 @@ Compares the commit about to be pushed (HEAD) with origin (BASE) and refuses the
   * a changed file carries git conflict markers;
   * Command's ORB15 or Hourly session, the Daily plan date, or the Weekly plan date (page or Command card) is older
     than on BASE;
-  * a page that has the Gamma Map nav tab on BASE lost it.
+  * a page that has the Gamma Map or Live Trades nav tab on BASE lost it;
+  * the Live Trades as-of date would move backwards, or the page would disappear.
 Usage: publish_guard.py [--repo DIR] [--base origin/main] [--head HEAD]. Exit 0 = safe to push."""
 import argparse, fnmatch, json, re, subprocess, sys
 from datetime import datetime
@@ -19,7 +20,7 @@ OWNED = (
     "pipeline/desk/xnews/ledger/intraday_*.json",
     "pipeline/inputs/ledger/*",
 )
-NAV_PAGES = ("command", "overnight", "weekly", "daily", "gammamap", "darkpool", "study", "exposure", "project-b")
+NAV_PAGES = ("command", "overnight", "weekly", "daily", "gammamap", "darkpool", "study", "exposure", "project-b", "live-trades")
 MARKER = re.compile(r"^(<<<<<<< |>>>>>>> |=======$)", re.M)
 
 
@@ -64,8 +65,21 @@ def weekly_date(html):
     return m and _d(f"{m.group(1)}, {m.group(2)}", "%b %d, %Y")
 
 
+def _nav(html):
+    return re.findall(r"<nav\b.*?</nav>", html or "", re.S | re.I)
+
+
 def has_gamma_tab(html):
-    return any("gammamap/" in n for n in re.findall(r"<nav\b.*?</nav>", html or "", re.S | re.I))
+    return any("gammamap/" in n for n in _nav(html))
+
+
+def has_live_trades_tab(html):
+    return any("live-trades/" in n for n in _nav(html))
+
+
+def live_trades_asof(html):
+    m = re.search(r"as of \w{3} (\w{3} \d{1,2}, \d{4})", html or "")
+    return m and _d(m.group(1), "%b %d, %Y")
 
 
 def compare(base, head, changed):
@@ -84,6 +98,13 @@ def compare(base, head, changed):
         k = f"{p}/index.html"
         if has_gamma_tab(base.get(k)) and not has_gamma_tab(head.get(k)):
             bad.append(f"Gamma Map nav tab lost on {k}")
+        if has_live_trades_tab(base.get(k)) and not has_live_trades_tab(head.get(k)):
+            bad.append(f"Live Trades nav tab lost on {k}")
+    if base.get("live-trades/index.html") is not None and head.get("live-trades/index.html") is None:
+        bad.append("Live Trades page missing")
+    bv, hv = live_trades_asof(base.get("live-trades/index.html")), live_trades_asof(head.get("live-trades/index.html"))
+    if bv and (hv or "") < bv:
+        bad.append(f"Live Trades as-of would regress {bv} -> {hv}")
     return bad
 
 

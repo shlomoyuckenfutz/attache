@@ -1,6 +1,6 @@
 """ATTACHÉ shared UI shell: sticky top bar (wordmark, tabs)
 + shared design tokens, collapsible dense tables, mobile rules. Injected post-build into every page.
-usage: python3 ui_shell.py PAGE=FILE [PAGE=FILE ...]   PAGE in command|overnight|weekly|daily|study|studylock|exposure|exposurelock|darkpool|darkpoollock|projectb|projectblock|hub|hublock
+usage: python3 ui_shell.py PAGE=FILE [PAGE=FILE ...]   PAGE in command|overnight|weekly|daily|livetrades|study|studylock|exposure|exposurelock|darkpool|darkpoollock|projectb|projectblock|hub|hublock
 Note: DESK tab removed — site root redirects to /command/. Pass page=command for the merged Command page.
 Legacy page=desk is accepted as an alias for command (active tab) with root=./ for a root-level file.
 Ticker strip (SPY/QQQ sparklines, bias chip, market status, PT clock) removed 2026-10-31."""
@@ -97,7 +97,7 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
 
 def bar(page, root):
     # No DESK tab — root redirects to command/
-    tabs = [("command", "COMMAND CENTER", "command/"), ("overnight", "OVERNIGHT", "overnight/"), ("weekly", "WEEKLY", "weekly/"), ("daily", "DAILY", "daily/"), ("study", "STUDY", "study/"), ("exposure", "HEAT", "exposure/"), ("darkpool", "DARK POOL", "darkpool/"), ("gammamap", "GAMMA MAP", "gammamap/"), ("projectb", "PROJ B", "project-b/")]
+    tabs = [("command", "COMMAND CENTER", "command/"), ("overnight", "OVERNIGHT", "overnight/"), ("weekly", "WEEKLY", "weekly/"), ("daily", "DAILY", "daily/"), ("livetrades", "LIVE TRADES", "live-trades/"), ("study", "STUDY", "study/"), ("exposure", "HEAT", "exposure/"), ("darkpool", "DARK POOL", "darkpool/"), ("gammamap", "GAMMA MAP", "gammamap/"), ("projectb", "PROJ B", "project-b/")]
     cur = "study" if page in ("studylock", "study") else \
           "exposure" if page in ("exposurelock", "exposure") else \
           "darkpool" if page in ("darkpoollock", "darkpool") else \

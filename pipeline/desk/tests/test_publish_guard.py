@@ -1,5 +1,5 @@
 """Overnight publish job guards: owns only Overnight/Night Ledger files, never regresses Command ORB/Hourly,
-Daily/Weekly dates or the Gamma Map nav tab, never autostashes, cleans up a failed rebase, guards before push."""
+Daily/Weekly dates, the Gamma Map or Live Trades nav tab, or the Live Trades as-of date, never autostashes, cleans up a failed rebase, guards before push."""
 import json, os, re, subprocess, sys, tempfile, unittest
 from pathlib import Path
 
@@ -58,8 +58,9 @@ class Guard(unittest.TestCase):
         self.assertTrue(any("conflict" in x for x in G.compare(b, h, ["overnight/index.html"])))
 
     def test_tonights_stale_push_would_be_refused(self):
-        if subprocess.run(["git", "-C", str(ROOT), "cat-file", "-e", "b72628c48^{commit}"], capture_output=True).returncode:
-            self.skipTest("history not present")
+        for sha in ("b72628c48", "72f3d6e32"):
+            if subprocess.run(["git", "-C", str(ROOT), "cat-file", "-e", f"{sha}^{{commit}}"], capture_output=True).returncode:
+                self.skipTest("history not present")
         r = subprocess.run([sys.executable, str(ROOT / "pipeline/desk/publish_guard.py"), "--repo", str(ROOT),
                             "--base", "72f3d6e32", "--head", "b72628c48"], capture_output=True, text=True)
         self.assertEqual(r.returncode, 1)
@@ -108,6 +109,26 @@ class Script(unittest.TestCase):
             self.assertEqual(sh("git rev-parse HEAD", b).stdout, sh("git rev-parse origin/main", b).stdout)
 
 
+
+    def test_live_trades_tab_and_asof_guard(self):
+        live = '<nav><a href="../command/">C</a><a href="../gammamap/">GAMMA MAP</a><a href="../live-trades/">LIVE TRADES</a></nav>'
+        page = "MY LIVE TRADES as of Tue Nov 17, 2026"
+        b = pages()
+        b["overnight/index.html"] = f"{live}night"
+        b["live-trades/index.html"] = f"{live}{page}"
+        lost = dict(b, **{"overnight/index.html": f"{NAV}night"})
+        bad = G.compare(b, lost, ["overnight/index.html"])
+        self.assertTrue(any("Live Trades nav tab lost" in x for x in bad), bad)
+        gone = dict(b); gone["live-trades/index.html"] = None
+        bad = G.compare(b, gone, ["overnight/index.html"])
+        self.assertTrue(any("Live Trades page missing" in x for x in bad), bad)
+        older = dict(b, **{"live-trades/index.html": f"{live}MY LIVE TRADES as of Mon Nov 16, 2026"})
+        bad = G.compare(b, older, ["overnight/index.html"])
+        self.assertTrue(any("Live Trades as-of would regress" in x for x in bad), bad)
+        ok = dict(b, **{"overnight/index.html": f"{live}night 2"})
+        self.assertEqual(G.compare(b, ok, ["overnight/index.html"]), [])
+
+
 @unittest.skipUnless(WRAPPER.exists(), "local publish wrapper not on this machine")
 class Wrapper(unittest.TestCase):
     def test_wrapper_never_writes_sweep_pages(self):
@@ -121,7 +142,7 @@ class Wrapper(unittest.TestCase):
 
 class NoFeedOrFileNames(unittest.TestCase):
     def test_public_pages_clean(self):
-        for rel in ("command", "overnight", "weekly", "daily", "darkpool", "gammamap"):
+        for rel in ("command", "overnight", "weekly", "daily", "darkpool", "gammamap", "live-trades"):
             t = (ROOT / rel / "index.html").read_text()
             self.assertNotRegex(t, r"(?i)free feed|read-only local copy", rel)
             self.assertEqual(re.sub(r"new URL\('\.\./data/spy_dark_pool\.json'", "", t).count("spy_dark_pool"), 0, rel)

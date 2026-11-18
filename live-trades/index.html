@@ -1,0 +1,172 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ATTACHÉ | MY LIVE TRADES</title><link rel="icon" href="data:,">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--ln:#232323;--ln2:#333;--amb:#ffb000;--amb2:#a87400;--txt:#e6e0cc;--mut:#857d6a;--up:#3ddc5c;--dn:#ff4d4d;--cy:#22c7e8}
+*{box-sizing:border-box}body{margin:0;background:#000;color:var(--txt);font:13px/1.55 'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+main{max-width:1100px;margin:0 auto;padding:10px 12px 40px}h1{color:var(--amb);font-size:16px;letter-spacing:.12em;margin:8px 0 4px}
+.hd{color:var(--mut);font-size:12px;margin:0 0 10px}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 12px}
+.tile{border:1px solid var(--ln2);border-radius:6px;background:#070707;padding:8px 12px}
+.tile .lb{color:var(--mut);font-size:11px;letter-spacing:.12em;margin:0 0 4px}
+.tile .vv{font-size:20px;font-weight:700;color:var(--txt);letter-spacing:.02em}
+.tile .vv.up{color:var(--up)}.tile .vv.dn{color:var(--dn)}.tile .vv.eq{color:var(--amb)}
+.tw{overflow-x:auto;max-width:100%;border:1px solid var(--ln2);border-radius:6px;background:#070707}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{border-bottom:1px solid #1c1c1c;padding:6px 10px;text-align:left;white-space:nowrap}
+th{color:var(--mut);font-size:11px;letter-spacing:.08em;font-weight:600;background:#0c0c0c}
+td{color:var(--txt)}tr:last-child td{border-bottom:0}
+td.up{color:var(--up)}td.dn{color:var(--dn)}
+@media(max-width:800px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.tile .vv{font-size:18px}}
+@media(max-width:700px){body{font-size:13.5px}main{padding:10px 8px 40px}th,td{padding:6px 8px}}
+</style></head><body><!--UISHELL--><style id="uishell">
+:root{--bg:#000;--ln:#232323;--ln2:#333;--amb:#ffb000;--amb2:#a87400;--txt:#e6e0cc;--mut:#857d6a;--up:#3ddc5c;--dn:#ff4d4d;--acc:#22c7e8;--na:#6b6b6b;--rad:6px;--gap:10px}
+html,body{overflow-x:hidden;max-width:100%}
+#ub{position:sticky;top:0;z-index:999;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:6px 12px;background:rgba(0,0,0,.94);border-bottom:1px solid var(--amb2);font:12px/1.3 'DejaVu Sans Mono',Consolas,monospace;color:var(--txt);backdrop-filter:blur(4px)}
+#ub .ub-w{color:var(--amb);font-weight:700;letter-spacing:.18em;text-decoration:none;font-size:14px;flex:0 0 auto}
+/* tab SIZE = original (padding 4px 9px); keep horizontal scroll / wrap behavior from mobile-nav pass */
+#ub nav{display:flex;flex-wrap:nowrap;gap:4px;align-items:center;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;overscroll-behavior-x:contain;scroll-snap-type:x proximity}
+#ub nav a{color:var(--mut);text-decoration:none;padding:4px 9px;border:1px solid var(--ln2);border-radius:var(--rad);display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;flex:0 0 auto;white-space:nowrap;scroll-snap-align:center;line-height:1.2}
+#ub nav a:hover{color:var(--amb);border-color:var(--amb2)}#ub nav a.on{color:#000;background:var(--amb);border-color:var(--amb)}
+.chip{display:inline-flex;align-items:center;padding:2px 8px;border-radius:999px;border:1px solid currentColor;font:700 11px/1.4 'DejaVu Sans Mono',Consolas,monospace;text-decoration:none;letter-spacing:.04em}
+.chip.up{color:var(--up)}.chip.dn{color:var(--dn)}.chip.lv{color:var(--amb)}.chip.na{color:var(--na)}.chip.acc{color:var(--acc)}
+.pn,.dk,.card,.zone>.dk{border-radius:var(--rad)}
+.pn,.dk,.card{transition:border-color .15s,box-shadow .15s}.pn:hover,.dk:hover,.card:hover{border-color:var(--amb2)!important;box-shadow:0 0 0 1px rgba(255,176,0,.08)}
+.ux-more{display:block;width:100%;margin:4px 0 0;padding:6px;background:transparent;color:var(--amb);border:1px dashed var(--ln2);border-radius:var(--rad);font:11px 'DejaVu Sans Mono',Consolas,monospace;cursor:pointer}
+.ux-more:hover{border-color:var(--amb2)}tr.ux-h{display:none}
+.ux-tw{overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch}
+img,svg,canvas,video{max-width:100%;height:auto}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+/* Phone / narrow: real reflow — do not rely on overflow clip to "pass" width checks. Desktop unchanged. */
+@media(max-width:700px){
+html,body{-webkit-text-size-adjust:100%;text-size-adjust:100%;max-width:100%}
+body{font-size:13px!important;line-height:1.45;--fs:13px;--fs-s:12px;--fs-l:14px}
+#ub{gap:6px;padding:6px 10px;max-width:100%;box-sizing:border-box}
+#ub nav{width:100%;padding-bottom:2px}
+#ub nav a{flex:1;justify-content:center;min-height:40px;padding:4px 9px;font-size:12px}
+a,button,summary,.ux-more,nav.zl a{min-height:40px}
+nav.zl{display:flex;flex-wrap:nowrap;gap:4px;overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+nav.zl a{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;padding:4px 9px;font-size:12px}
+pre{white-space:pre-wrap;word-break:break-word;overflow-wrap:anywhere}
+.top{flex-wrap:wrap}
+main,body,#ub{max-width:100%;width:100%;box-sizing:border-box}
+main{grid-template-columns:minmax(0,1fr)!important}
+main>*,.zone,.pn,.dk,.card,.zg,.g,.g3,.brief,.scr,.ux-tw,.dpx,.tile,.w2,#biasG,.nw{min-width:0!important;max-width:100%;box-sizing:border-box}
+.zg,.g,.g3,.brief,.dk .dkg,.eqs,.oc,.il-g,.hr-wrap,.mc-g,.dpd-g,.gauges,.sp-g,#gtRow,#z-levels .zg,.nw ol{grid-template-columns:minmax(0,1fr)!important}
+.w2,.w3{grid-column:auto!important}
+/* Wire headlines wrap at sane size */
+.nw,.nw li,.nw li .h{font-size:13px!important}
+.nw li{grid-template-columns:40px 64px minmax(0,1fr)!important;gap:6px}
+.nw li .h,.nw li .t,.nw .nh{white-space:normal!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:anywhere;word-break:break-word}
+.nw li .s{display:none}
+/* Bias gauge */
+#biasG{font-size:13px!important;padding:8px;max-width:100%;overflow:visible}
+#biasG .bg-l{font-size:14px!important;padding:0 6px;letter-spacing:1px}
+#biasG .bg-s{font-size:14px!important}
+#biasG .bg-m{width:100%!important;max-width:100%;box-sizing:border-box;margin:10px 0 18px}
+#biasG .bg-h{flex-wrap:wrap;gap:6px 10px}
+#biasG .bg-h small{white-space:normal;overflow-wrap:anywhere;flex:1 1 100%}
+#biasG>div:not(.bg-h):not(.bg-m):not(.bg-nw){display:flex;flex-wrap:wrap;gap:4px;max-width:100%}
+#biasG .bg-c{display:inline-flex;flex:0 1 auto;white-space:normal;font-size:12px;max-width:100%}
+#biasG .bg-nw{white-space:normal!important;overflow-wrap:anywhere;word-break:break-word;font-size:13px!important;max-width:100%}
+#biasG .bg-nw b{font-size:13px!important}
+/* Futures chatter + generic note cells */
+#ftX table{font-size:13px!important;width:100%}
+#ftX th,#ftX td{font-size:13px!important;white-space:normal!important;overflow-wrap:anywhere;word-break:break-word;vertical-align:top}
+#ftX th:first-child,#ftX td:first-child{display:none} /* hide WHEN on phones */
+#ftX td.w,#ftX td:last-child{color:var(--txt);font-size:13px!important;font-weight:400}
+table{font-size:13px}
+th,td{font-size:inherit}
+.ux-tw td,.ux-tw th,.scr td,.scr th{white-space:nowrap}
+#ftX td,#ftX th,td.w{white-space:normal!important;overflow-wrap:anywhere}
+.ux-tw,.scr,.dk,.hr-card,.tbl-wrap,table.sheet{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+td.w{min-width:0!important;white-space:normal!important;overflow-wrap:anywhere}
+img,svg,canvas,video{max-width:100%!important;height:auto}
+.nt,p,li,.mut,small,.cap,.tile .s,.ph small{overflow-wrap:anywhere;word-break:break-word;white-space:normal}
+.lad{grid-template-columns:minmax(0,1fr)!important}
+/* Dark Pool level cards: keep original multi-col; scroll sideways if needed — do not stack to 1fr */
+.dpx{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:100%}
+.dpx .dg{grid-template-columns:repeat(auto-fill,minmax(110px,1fr))!important;min-width:0}
+}
+
+@media(max-width:430px){
+.brief,.eqs,.sp-g,.fb-lv,.vz-kp{grid-template-columns:minmax(0,1fr)!important}
+}
+@media(max-width:420px){
+#ub nav{flex-wrap:wrap;overflow-x:visible;scroll-snap-type:none;row-gap:4px}
+#ub nav a{flex:1 1 calc(33.33% - 4px);min-width:calc(33.33% - 4px);text-align:center;padding:4px 6px;min-height:40px;font-size:11px}
+}
+</style><header id="ub"><a class="ub-w" href="../command/">ATTACHÉ</a><nav><a href="../command/">COMMAND CENTER</a><a href="../overnight/">OVERNIGHT</a><a href="../weekly/">WEEKLY</a><a href="../daily/">DAILY</a><a href="../live-trades/" class=on>LIVE TRADES</a><a href="../study/">STUDY</a><a href="../exposure/">HEAT</a><a href="../darkpool/">DARK POOL</a><a href="../gammamap/">GAMMA MAP</a><a href="../project-b/">PROJ B</a></nav></header><script>(()=>{
+const nav=document.querySelector('#ub nav'),on=nav&&nav.querySelector('a.on');
+if(nav&&on&&nav.scrollWidth>nav.clientWidth){try{on.scrollIntoView({inline:'center',block:'nearest',behavior:'instant'})}catch(e){on.scrollIntoView(false)}}
+const run=()=>{document.querySelectorAll('table').forEach(tb=>{if(tb.closest('#ub')||tb.closest('.ux-tw'))return;const w=document.createElement('div');w.className='ux-tw';tb.parentNode.insertBefore(w,tb);w.appendChild(tb);
+const rs=[...(tb.tBodies[0]||tb).rows].filter(r=>!r.querySelector('th'));if(rs.length>10){const K=6;rs.slice(K).forEach(r=>r.classList.add('ux-h'));const b=document.createElement('button');b.className='ux-more';b.type='button';
+const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' rows)';L();b.onclick=()=>{b.dataset.o=b.dataset.o?'':'1';rs.slice(K).forEach(r=>r.classList.toggle('ux-h',!b.dataset.o));L()};w.after(b)}})};document.readyState=='loading'?document.addEventListener('DOMContentLoaded',run):setTimeout(run,0)})()</script><!--UISHELL-->
+<main>
+<h1>MY LIVE TRADES</h1>
+<p class="hd">59 trades · as of Tue Nov 17, 2026</p>
+<div class="tiles"><div class="tile"><div class="lb">Q OUT ONLY</div><div class="vv up">$7,442.67</div></div><div class="tile"><div class="lb">OPTIONS · FULL OUT</div><div class="vv up">$5,575.97</div></div><div class="tile"><div class="lb">FUTURES</div><div class="vv up">$12,500</div></div><div class="tile"><div class="lb">EQUITY</div><div class="vv eq">$18,075.97</div></div></div>
+<div class="tw"><table><thead><tr><th>Date</th><th>Contract</th><th>Side</th><th>Qty</th><th>Cost</th><th>Q Out</th><th>All Out</th><th>Net $</th><th>Net %</th></tr></thead><tbody>
+<tr><td>Nov 17, 2026</td><td>SPX 7320C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$260</td><td style="text-align:right">6.4</td><td style="text-align:right">10.4</td><td class="up" style="text-align:right">$780</td><td class="up" style="text-align:right">300%</td></tr>
+<tr><td>Nov 17, 2026</td><td>SPX 7290P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$530</td><td style="text-align:right">6.4</td><td style="text-align:right">6.4</td><td class="up" style="text-align:right">$110</td><td class="up" style="text-align:right">20.8%</td></tr>
+<tr><td>Nov 13, 2026</td><td>/ES</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">awaiting</td><td style="text-align:right">7,543</td><td style="text-align:right">7,553</td><td class="up" style="text-align:right">$1,000</td><td class="up" style="text-align:right">awaiting</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPX 7680C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$188</td><td style="text-align:right">3.3</td><td style="text-align:right">6.55</td><td class="up" style="text-align:right">$467</td><td class="up" style="text-align:right">248.4%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPX 7560C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$215</td><td style="text-align:right">5.4</td><td style="text-align:right">7.1</td><td class="up" style="text-align:right">$495</td><td class="up" style="text-align:right">230.2%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPX 7565C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$505</td><td style="text-align:right">6.5</td><td style="text-align:right">7.1</td><td class="up" style="text-align:right">$205</td><td class="up" style="text-align:right">40.6%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPX 7555C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$580</td><td style="text-align:right">7.2</td><td style="text-align:right">8</td><td class="up" style="text-align:right">$220</td><td class="up" style="text-align:right">37.9%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPX 7570C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$425</td><td style="text-align:right">5</td><td style="text-align:right">5.1</td><td class="up" style="text-align:right">$85</td><td class="up" style="text-align:right">20%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPX 7645C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$510</td><td style="text-align:right">2.55</td><td style="text-align:right">0</td><td class="dn" style="text-align:right">-$510</td><td class="dn" style="text-align:right">-100%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPX 7620C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$380</td><td style="text-align:right">1.9</td><td style="text-align:right">1.9</td><td class="dn" style="text-align:right">-$190</td><td class="dn" style="text-align:right">-50%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPX 7690C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$170</td><td style="text-align:right">0.85</td><td style="text-align:right">0.85</td><td class="dn" style="text-align:right">-$85</td><td class="dn" style="text-align:right">-50%</td></tr>
+<tr><td>Nov 13, 2026</td><td>LFTO</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$18.40</td><td style="text-align:right">20</td><td style="text-align:right">24</td><td class="up" style="text-align:right">$5.60</td><td class="up" style="text-align:right">30.4%</td></tr>
+<tr><td>Nov 13, 2026</td><td>FCUV</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$3.25</td><td style="text-align:right">7</td><td style="text-align:right">7</td><td class="up" style="text-align:right">$3.75</td><td class="up" style="text-align:right">115.4%</td></tr>
+<tr><td>Nov 13, 2026</td><td>HBUC</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$1.68</td><td style="text-align:right">2</td><td style="text-align:right">2.3</td><td class="up" style="text-align:right">$0.62</td><td class="up" style="text-align:right">36.9%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPY 755P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$187</td><td style="text-align:right">4.6</td><td style="text-align:right">4.6</td><td class="up" style="text-align:right">$273</td><td class="up" style="text-align:right">146%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SPY 780C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$433</td><td style="text-align:right">5</td><td style="text-align:right">5</td><td class="up" style="text-align:right">$67</td><td class="up" style="text-align:right">15.5%</td></tr>
+<tr><td>Nov 13, 2026</td><td>MU 790C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$51</td><td style="text-align:right">0.26</td><td style="text-align:right">0.26</td><td class="dn" style="text-align:right">-$25</td><td class="dn" style="text-align:right">-49%</td></tr>
+<tr><td>Nov 13, 2026</td><td>VIK 90C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$370</td><td style="text-align:right">4.2</td><td style="text-align:right">4.2</td><td class="up" style="text-align:right">$50</td><td class="up" style="text-align:right">13.5%</td></tr>
+<tr><td>Nov 13, 2026</td><td>AAPL 362.5C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$39</td><td style="text-align:right">0.6</td><td style="text-align:right">0.7</td><td class="up" style="text-align:right">$31</td><td class="up" style="text-align:right">79.5%</td></tr>
+<tr><td>Nov 13, 2026</td><td>TSLA 415C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$89</td><td style="text-align:right">0.45</td><td style="text-align:right">0.45</td><td class="dn" style="text-align:right">-$44</td><td class="dn" style="text-align:right">-49.4%</td></tr>
+<tr><td>Nov 13, 2026</td><td>CRBS 120C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$255</td><td style="text-align:right">1.28</td><td style="text-align:right">1.28</td><td class="dn" style="text-align:right">-$127</td><td class="dn" style="text-align:right">-49.8%</td></tr>
+<tr><td>Nov 13, 2026</td><td>IWM 277P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$51</td><td style="text-align:right">1</td><td style="text-align:right">1.34</td><td class="up" style="text-align:right">$83</td><td class="up" style="text-align:right">162.7%</td></tr>
+<tr><td>Nov 13, 2026</td><td>META 650C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$19</td><td style="text-align:right">0.5</td><td style="text-align:right">0.5</td><td class="up" style="text-align:right">$31</td><td class="up" style="text-align:right">163.2%</td></tr>
+<tr><td>Nov 13, 2026</td><td>META 640C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$50</td><td style="text-align:right">2</td><td style="text-align:right">2.5</td><td class="up" style="text-align:right">$200</td><td class="up" style="text-align:right">400%</td></tr>
+<tr><td>Nov 13, 2026</td><td>META 640C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$92</td><td style="text-align:right">2.24</td><td style="text-align:right">2.4</td><td class="up" style="text-align:right">$148</td><td class="up" style="text-align:right">160.9%</td></tr>
+<tr><td>Nov 13, 2026</td><td>NBIS 125C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$54</td><td style="text-align:right">0.27</td><td style="text-align:right">0.27</td><td class="dn" style="text-align:right">-$27</td><td class="dn" style="text-align:right">-50%</td></tr>
+<tr><td>Nov 13, 2026</td><td>NVDA 170C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$31</td><td style="text-align:right">0.16</td><td style="text-align:right">0.16</td><td class="dn" style="text-align:right">-$15</td><td class="dn" style="text-align:right">-48.4%</td></tr>
+<tr><td>Nov 13, 2026</td><td>APP 420C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$143</td><td style="text-align:right">2</td><td style="text-align:right">2</td><td class="up" style="text-align:right">$57</td><td class="up" style="text-align:right">39.9%</td></tr>
+<tr><td>Nov 13, 2026</td><td>NBIS 118C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$31</td><td style="text-align:right">1.1</td><td style="text-align:right">1.65</td><td class="up" style="text-align:right">$134</td><td class="up" style="text-align:right">432.3%</td></tr>
+<tr><td>Nov 13, 2026</td><td>QQQ 678C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$130</td><td style="text-align:right">2.2</td><td style="text-align:right">2.8</td><td class="up" style="text-align:right">$150</td><td class="up" style="text-align:right">115.4%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SNDK 900C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$83</td><td style="text-align:right">0.42</td><td style="text-align:right">0.42</td><td class="dn" style="text-align:right">-$41</td><td class="dn" style="text-align:right">-49.4%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SpaceX 140C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$52</td><td style="text-align:right">0.77</td><td style="text-align:right">0.77</td><td class="up" style="text-align:right">$25</td><td class="up" style="text-align:right">48.1%</td></tr>
+<tr><td>Nov 13, 2026</td><td>SpaceX 140C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$49</td><td style="text-align:right">0.8</td><td style="text-align:right">0.8</td><td class="up" style="text-align:right">$31</td><td class="up" style="text-align:right">63.3%</td></tr>
+<tr><td>Nov 13, 2026</td><td>TSLA 392.5C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$85</td><td style="text-align:right">1.1</td><td style="text-align:right">1.26</td><td class="up" style="text-align:right">$41</td><td class="up" style="text-align:right">48.2%</td></tr>
+<tr><td>Nov 11, 2026</td><td>QQQ 665P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$955</td><td style="text-align:right">11.7</td><td style="text-align:right">13</td><td class="up" style="text-align:right">$345</td><td class="up" style="text-align:right">36.1%</td></tr>
+<tr><td>Nov 11, 2026</td><td>SPY 755P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$942</td><td style="text-align:right">10.2</td><td style="text-align:right">11</td><td class="up" style="text-align:right">$158</td><td class="up" style="text-align:right">16.8%</td></tr>
+<tr><td>Nov 10, 2026</td><td>SPY 757C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$911</td><td style="text-align:right">12.25</td><td style="text-align:right">12.25</td><td class="up" style="text-align:right">$314</td><td class="up" style="text-align:right">34.5%</td></tr>
+<tr><td>Nov 10, 2026</td><td>QQQ 700C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$709</td><td style="text-align:right">11.05</td><td style="text-align:right">11.05</td><td class="up" style="text-align:right">$396</td><td class="up" style="text-align:right">55.9%</td></tr>
+<tr><td>Nov 10, 2026</td><td>SPY 757C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$897</td><td style="text-align:right">10</td><td style="text-align:right">10</td><td class="up" style="text-align:right">$103</td><td class="up" style="text-align:right">11.5%</td></tr>
+<tr><td>Nov 10, 2026</td><td>SPX 7570C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$295</td><td style="text-align:right">3.55</td><td style="text-align:right">8.8</td><td class="up" style="text-align:right">$585</td><td class="up" style="text-align:right">198.3%</td></tr>
+<tr><td>Nov 9, 2026</td><td>QQQ 650P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$942</td><td style="text-align:right">10.28</td><td style="text-align:right">11.05</td><td class="up" style="text-align:right">$163</td><td class="up" style="text-align:right">17.3%</td></tr>
+<tr><td>Nov 9, 2026</td><td>SPY 740P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$540</td><td style="text-align:right">5.95</td><td style="text-align:right">6</td><td class="up" style="text-align:right">$60</td><td class="up" style="text-align:right">11.1%</td></tr>
+<tr><td>Nov 6, 2026</td><td>SPX 7290P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$280</td><td style="text-align:right">3.7</td><td style="text-align:right">4.05</td><td class="up" style="text-align:right">$125</td><td class="up" style="text-align:right">44.6%</td></tr>
+<tr><td>Nov 5, 2026</td><td>/ES</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">awaiting</td><td style="text-align:right">7,465</td><td style="text-align:right">7,580</td><td class="up" style="text-align:right">$6,500</td><td class="up" style="text-align:right">awaiting</td></tr>
+<tr><td>Nov 5, 2026</td><td>/ES</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$250</td><td style="text-align:right">7,601</td><td style="text-align:right">7,601</td><td class="up" style="text-align:right">$500</td><td class="up" style="text-align:right">200%</td></tr>
+<tr><td>Nov 5, 2026</td><td>/ES</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$1,000</td><td style="text-align:right">7,502</td><td style="text-align:right">7,492</td><td class="dn" style="text-align:right">-$750</td><td class="dn" style="text-align:right">-75%</td></tr>
+<tr><td>Nov 5, 2026</td><td>SPX 7710C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$310</td><td style="text-align:right">1.55</td><td style="text-align:right">1.55</td><td class="dn" style="text-align:right">-$155</td><td class="dn" style="text-align:right">-50%</td></tr>
+<tr><td>Nov 5, 2026</td><td>QQQ 740C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$343</td><td style="text-align:right">3.7</td><td style="text-align:right">3.7</td><td class="up" style="text-align:right">$27</td><td class="up" style="text-align:right">7.9%</td></tr>
+<tr><td>Nov 4, 2026</td><td>SPY 745P</td><td>Short</td><td style="text-align:right">1</td><td style="text-align:right">$420</td><td style="text-align:right">5.1</td><td style="text-align:right">8.3</td><td class="up" style="text-align:right">$410</td><td class="up" style="text-align:right">97.6%</td></tr>
+<tr><td>Nov 3, 2026</td><td>SPX 7640C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$155</td><td style="text-align:right">0.77</td><td style="text-align:right">0.77</td><td class="dn" style="text-align:right">-$78</td><td class="dn" style="text-align:right">-50.3%</td></tr>
+<tr><td>Nov 2, 2026</td><td>/ES</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$250</td><td style="text-align:right">7,603</td><td style="text-align:right">7,605</td><td class="up" style="text-align:right">$750</td><td class="up" style="text-align:right">300%</td></tr>
+<tr><td>Nov 2, 2026</td><td>SPX 7600C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$228</td><td style="text-align:right">2.8</td><td style="text-align:right">3.74</td><td class="up" style="text-align:right">$146</td><td class="up" style="text-align:right">64%</td></tr>
+<tr><td>Nov 2, 2026</td><td>MU 865C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$128</td><td style="text-align:right">1.55</td><td style="text-align:right">1.55</td><td class="up" style="text-align:right">$27</td><td class="up" style="text-align:right">21.1%</td></tr>
+<tr><td>Nov 2, 2026</td><td>SPX 7635C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$208</td><td style="text-align:right">2.53</td><td style="text-align:right">3.5</td><td class="up" style="text-align:right">$142</td><td class="up" style="text-align:right">68.3%</td></tr>
+<tr><td>Nov 2, 2026</td><td>SPX 7660C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$188</td><td style="text-align:right">0.97</td><td style="text-align:right">0.97</td><td class="dn" style="text-align:right">-$91</td><td class="dn" style="text-align:right">-48.4%</td></tr>
+<tr><td>Nov 2, 2026</td><td>SPX 7670C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$193</td><td style="text-align:right">2.3</td><td style="text-align:right">2.3</td><td class="up" style="text-align:right">$37</td><td class="up" style="text-align:right">19.2%</td></tr>
+<tr><td>Nov 2, 2026</td><td>SPX 7680C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$168</td><td style="text-align:right">2.05</td><td style="text-align:right">3.4</td><td class="up" style="text-align:right">$172</td><td class="up" style="text-align:right">102.4%</td></tr>
+<tr><td>Nov 1, 2026</td><td>SPY 770C</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$179</td><td style="text-align:right">2.4</td><td style="text-align:right">2.4</td><td class="up" style="text-align:right">$61</td><td class="up" style="text-align:right">34.1%</td></tr>
+<tr><td>Nov 1, 2026</td><td>/ES</td><td>Long</td><td style="text-align:right">1</td><td style="text-align:right">$1,100</td><td style="text-align:right">7,625</td><td style="text-align:right">7,665</td><td class="up" style="text-align:right">$4,500</td><td class="up" style="text-align:right">409.1%</td></tr>
+</tbody></table></div>
+</main>
+</body></html>

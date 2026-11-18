@@ -80,10 +80,12 @@ mkdir -p overnight weekly/charts/prior weekly/charts/plan daily/charts
 run "build_overnight" python3 build_overnight.py
 run "build_weekly" python3 build_weekly.py --patch-desk "$ORB_SITE/command/index.html"
 run "build_daily" python3 build_daily.py --patch-desk "$ORB_SITE/command/index.html"
-mkdir -p "$ORB_SITE/gammamap"
+mkdir -p "$ORB_SITE/gammamap" "$ORB_SITE/live-trades"
 run "gamma_board" python3 gamma_board.py --patch-daily daily/index.html --patch-weekly weekly/index.html \
   --patch-command "$ORB_SITE/command/index.html" --page "$ORB_SITE/gammamap/index.html"
 run "plan_addenda" python3 plan_addenda.py --daily daily/index.html --weekly weekly/index.html
+run "live_trades" python3 live_trades.py "$ORB_SITE/live-trades/index.html"
+
 run "orb_status" python3 orb_status.py "$ORB_SITE/command/index.html"
 
 # 12) Copy pages into site root
@@ -104,7 +106,8 @@ run "ui_shell" python3 ui_shell.py \
   "overnight=$ORB_SITE/overnight/index.html" \
   "weekly=$ORB_SITE/weekly/index.html" \
   "daily=$ORB_SITE/daily/index.html" \
-  "gammamap=$ORB_SITE/gammamap/index.html"
+  "gammamap=$ORB_SITE/gammamap/index.html" \
+  "livetrades=$ORB_SITE/live-trades/index.html"
 
 # 14) Study re-encrypt (nav shell may change; payload from study_plain)
 if [ -f study_src/study_plain.html ] && [ -f "$ORB_SITE/study/index.html" ]; then
@@ -138,7 +141,7 @@ run "apply_overrides" python3 apply_overrides.py "$ORB_SITE"
 
 # 17) Sanitize (no trader/source names, no alpaca/yahoo, no ORB5/ORB30)
 PAGES=("$ORB_SITE/command/index.html")
-for p in overnight weekly daily darkpool gammamap exposure; do
+for p in overnight weekly daily darkpool gammamap exposure live-trades; do
   [ -f "$ORB_SITE/$p/index.html" ] && PAGES+=("$ORB_SITE/$p/index.html")
 done
 run "site_sanitize" python3 site_sanitize.py "${PAGES[@]}"
@@ -150,7 +153,7 @@ from pathlib import Path
 site = Path(__import__('os').environ['ORB_SITE'])
 # unlocked pages only
 files = [site/'command/index.html', site/'overnight/index.html', site/'weekly/index.html',
-         site/'daily/index.html', site/'darkpool/index.html', site/'gammamap/index.html', site/'exposure/index.html', site/'index.html']
+         site/'daily/index.html', site/'darkpool/index.html', site/'gammamap/index.html', site/'exposure/index.html', site/'live-trades/index.html', site/'index.html']
 rx = re.compile(r'(?i)\bpaper(?:\s+trading)?\b')
 orb = re.compile(r'(?i)\bORB\s*(?:5|30)\b')
 for f in files:
@@ -180,7 +183,7 @@ for name in ('handles.json','newswire_handles.json'):
 pat = r'yahoo|alpaca|first ?squawk|' + '|'.join(re.escape(h) for h in handles) + r'|voltick|\bvolts?\b|\bORB ?(5|30)\b|x\.com/|twitter\.com/|' + '|'.join(re.escape(n) for n in S.NAMES)
 rx = re.compile(pat, re.I)
 bad = []
-for rel in ('command/index.html','overnight/index.html','weekly/index.html','daily/index.html','darkpool/index.html','gammamap/index.html','exposure/index.html'):
+for rel in ('command/index.html','overnight/index.html','weekly/index.html','daily/index.html','darkpool/index.html','gammamap/index.html','exposure/index.html','live-trades/index.html'):
     f = site/rel
     if not f.exists(): continue
     t = f.read_text(encoding='utf-8', errors='replace')
