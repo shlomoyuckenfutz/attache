@@ -15,6 +15,8 @@ SKIP_PREFIX = ("pipeline/", ".git/", ".github/")
 EXACT = (
     "Plan only — not investment advice · rebuilt from plan.json on every sweep",
     "sources counted in plan",
+    "PIVOT SOURCES",
+    "bar height = source count",
 )
 COUNT_RX = re.compile(
     r"sources counted|\brebuilt from plan\.json\b|\b\d+\s+sources\b|\b0 feeds\b|Awaiting feed list",
