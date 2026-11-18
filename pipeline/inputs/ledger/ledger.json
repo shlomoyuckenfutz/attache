@@ -1,57 +1,99 @@
 {
- "date": "2026-11-11",
- "title": "Wednesday 11/11 SPY close review",
- "base": "Leaning toward a hot PPI (corrected later: Friday, not Thursday) pushing yields and the DXY through a critical level, which stocks will not like. Base case: come back to close the gap and revisit 750, with a fight expected between 753 and 750. Dark pools at 733\u2013733.13 by week\u2019s end are not the base case but a higher-than-average probability. Pattern of the last three weeks: peak Wednesday, sell off Thursday. NVDA CEO-succession news is the bigger multi-week overhang versus the print.",
- "alternative": "The alternative case is a cool PPI allows us to continue the rally, at which point I would expect us to touch the 50DMA tomorrow.",
+ "date": "2026-11-17",
+ "title": "Tuesday SPY close review",
+ "base": "Ripe for a bounce tomorrow after tagging the 200DMA, with NVDA holding after earnings. Target is the 739.72/739.73 dark-pool cluster, which would recapture the 733 and 738 clusters; stretch is a retest of the 10DMA within two sessions. Bounce is expected to be a lower high that rolls over, potentially by Thursday into 725 OpEx gamma. Will sell calls at the first hint of trouble.",
+ "alternative": "The alternative path is asia demolishes this after hours rally action and we break the 200DMA.",
  "trigger": "\u2014",
- "direction": "DOWN",
+ "direction": "UP",
  "levels": [
   {
-   "spy": 760.0,
-   "es": 7668.09,
+   "spy": 775.0,
+   "es": 7819.44,
+   "kind": "WALL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 758.48,
+   "es": 7652.76,
+   "kind": "PRICE",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 739.73,
+   "es": 7463.58,
+   "kind": "DARK POOL",
+   "n": 2,
+   "in_take": true
+  },
+  {
+   "spy": 739.72,
+   "es": 7463.48,
    "kind": "OI/MAGNET",
-   "n": 1,
-   "in_take": false
-  },
-  {
-   "spy": 754.51,
-   "es": 7612.7,
-   "kind": "DARK POOL",
-   "n": 1,
-   "in_take": false
-  },
-  {
-   "spy": 753.0,
-   "es": 7597.47,
-   "kind": "PRICE",
-   "n": 1,
+   "n": 2,
    "in_take": true
   },
   {
-   "spy": 750.0,
-   "es": 7567.2,
+   "spy": 738.0,
+   "es": 7446.12,
    "kind": "PRICE",
-   "n": 1,
-   "in_take": true
-  },
-  {
-   "spy": 733.13,
-   "es": 7396.99,
-   "kind": "DARK POOL",
    "n": 1,
    "in_take": true
   },
   {
    "spy": 733.0,
    "es": 7395.67,
-   "kind": "DARK POOL",
+   "kind": "PRICE",
    "n": 1,
    "in_take": true
   },
   {
-   "spy": 663.0,
-   "es": 6689.4,
+   "spy": 732.14,
+   "es": 7387.0,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 730.0,
+   "es": 7365.4,
+   "kind": "WALL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 729.26,
+   "es": 7357.94,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 725.0,
+   "es": 7314.96,
+   "kind": "WALL",
+   "n": 3,
+   "in_take": true
+  },
+  {
+   "spy": 720.0,
+   "es": 7264.51,
+   "kind": "WALL",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 710.0,
+   "es": 7163.61,
    "kind": "PRICE",
+   "n": 1,
+   "in_take": false
+  },
+  {
+   "spy": 700.0,
+   "es": 7062.72,
+   "kind": "WALL",
    "n": 1,
    "in_take": false
   }
@@ -229,18 +271,45 @@
   {
    "date": "2026-11-11",
    "call": "DOWN",
+   "next": "2026-11-12",
+   "pct": -0.35,
+   "hit": true
+  },
+  {
+   "date": "2026-11-12",
+   "call": "DOWN",
+   "next": "2026-11-13",
+   "pct": -0.36,
+   "hit": true
+  },
+  {
+   "date": "2026-11-13",
+   "call": "FLAT",
+   "next": "2026-11-16",
+   "pct": -1.91,
+   "hit": false
+  },
+  {
+   "date": "2026-11-16",
+   "call": "UP",
+   "next": "2026-11-17",
+   "pct": -1.01,
+   "hit": false
+  },
+  {
+   "date": "2026-11-17",
+   "call": "UP",
    "next": null,
    "pct": null,
    "hit": null
   }
  ],
  "hit_rate": {
-  "hits": 13,
-  "n": 24,
-  "rate": 54.2
+  "hits": 15,
+  "n": 28,
+  "rate": 53.6
  },
- "built": "2026-11-11",
+ "built": "2026-11-17",
  "intraday": [],
- "intraday_date": null,
- "curated": true
+ "intraday_date": null
 }
