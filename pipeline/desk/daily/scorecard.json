@@ -172,7 +172,7 @@
     "spy": {
       "high": 754.1728,
       "low": 713.1045,
-      "last": 729.9579,
+      "last": 729.86,
       "path": "CHOP / MIXED",
       "phase1": "HIT",
       "phase1_zone": [
@@ -204,11 +204,11 @@
           "date": "2026-11-18",
           "hi": 735.06,
           "lo": 726.79,
-          "last": 729.96,
+          "last": 729.86,
           "event": true
         }
       ],
-      "n_bars": 54
+      "n_bars": 56
     }
   },
   "note": "Prior week = Nov 9\u201313 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 16\u201320 actual so far + forward paths only on empty day columns."
