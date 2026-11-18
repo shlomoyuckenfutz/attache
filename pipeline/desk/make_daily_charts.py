@@ -97,43 +97,43 @@ PRIOR_DAY_NOTES = {
 PLAN_WEEK_FWD = [dt.date(2026, 11, 16), dt.date(2026, 11, 17), dt.date(2026, 11, 18),
                  dt.date(2026, 11, 19), dt.date(2026, 11, 20)]
 FWD_ZONES = {
-  "spy": {"bull": (753.0, 757.29), "bear": (747.0, 740.0),
-          "bull_lab": "753 → 757.29 weekly flip", "bear_lab": "below 747 → 740 floor"},
-  "es":  {"bull": (7566.0, 7590.0), "bear": (7522.0, 7502.0),
-          "bull_lab": "7566 → 7590 weekly pivot", "bear_lab": "below 7519–24 → 7502"},
+  "spy": {"bull": (736.0, 741.0), "bear": (727.0, 718.0),
+          "bull_lab": "736 → 741 first resistance", "bear_lab": "below 727 → 718 put wall"},
+  "es":  {"bull": (7390.0, 7421.0), "bear": (7348.0, 7316.0),
+          "bull_lab": "7390 → 7414–21", "bear_lab": "below 7348 → 7316"},
   "qqq": None,
   "nq":  None,
 }
 FWD_SPEC = {
- "es": dict(sym="ES=F", title="/ES  ·  week of Nov 16 (plan · Mon 11/16 levels)", fut=True, lv=[
-   (7642,"R","7642 target"),(7615,"R","7615 resistance"),(7590,"R","7590 weekly pivot"),(7566,"R","7566 reclaim"),
-   (7538,"P","7535–40 daily pivot"),(7522,"S","7519–24 support"),(7502,"S","7502 support")],
-   zones=[], bull=[7538,7566,7590], bear=[7538,7522,7502]),
+ "es": dict(sym="ES=F", title="/ES  ·  week of Nov 16 (Mon–Tue actual · Wed–Fri plan, Tue 11/17 levels)", fut=True, lv=[
+   (7455,"R","7455 target"),(7421,"R","7421 reclaim"),(7414,"R","7414 weekly VWAP"),(7390,"R","7390"),
+   (7373,"P","7373 Wed pivot"),(7348,"S","7348"),(7316,"S","7316 · 7309 Tue low"),(7275,"S","7275 target")],
+   zones=[], bull=[7373,7390,7421], bear=[7373,7348,7316]),
  "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 16 (levels · no paths)", fut=True, lv=[
-   (28585,"R","28585"),(28065,"P","28065 pivot"),(27616,"S","27616"),(27343,"S","27343")],
+   (28065,"R","28065"),(27616,"R","27616"),(27343,"R","27343"),(27222,"P","27222 Tue close"),(27093,"S","27093 Tue low")],
    zones=[], bull=[], bear=[]),
- "spy": dict(sym="SPY", title="SPY  ·  week of Nov 16 (plan · Mon 11/16 levels)", fut=False, lv=[
-   (767,"R","Fri 11/20 flip"),(757.29,"R","weekly gamma flip"),(753,"R","resistance"),
-   (751,"P","Mon 0DTE flip"),(747,"S","support"),(745,"S","support"),(740,"S","weekly floor")],
-   zones=[], bull=[751,753,757.29], bear=[751,747,740]),
+ "spy": dict(sym="SPY", title="SPY  ·  week of Nov 16 (Mon–Tue actual · Wed–Fri plan, Tue 11/17 levels)", fut=False, lv=[
+   (751,"R","750–751"),(747.8,"R","11/18 flip"),(745,"R","11/18 call wall"),(741,"R","741 resistance"),
+   (733,"P","733 pivot · 200-day"),(727,"S","727 Tue low"),(725,"S","725 weekly floor"),(718,"S","718 11/18 put wall")],
+   zones=[], bull=[733,736,741], bear=[733,727,718]),
  "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 16 (levels · no paths)", fut=False, lv=[
-   (695,"R","Fri 11/20 call wall"),(690,"R","resistance"),(680,"P","pivot"),(670,"S","weekly floor")],
+   (678,"R","11/18 call wall"),(671.88,"R","Wed EM high"),(662,"R","Fri 11/20 call wall"),(657,"P","pivot"),(650,"S","weekly floor")],
    zones=[], bull=[], bear=[]),
 }
-FWD_EVENT = {  # Nvidia earnings Tue after the close — edge ticks only
-  "day": dt.date(2026, 11, 17),
-  "label": "NVDA earnings Tue after close",
-  "frac_fut": 0.9, "frac_cash": 0.95,
+FWD_EVENT = {  # FOMC minutes Wed 11:00 AM PT — edge ticks only
+  "day": dt.date(2026, 11, 18),
+  "label": "FOMC minutes Wed 11:00 AM PT",
+  "frac_fut": 0.85, "frac_cash": 0.6,
 }
 FWD_DAY_NOTES = {
-  0: "Warsh",
-  1: "NVDA AMC",
-  2: "FOMC mins",
-  3: "Claims",
+  0: "trend dn",
+  1: "NVDA",
+  2: "FOMC",
+  3: "IPO",
   4: "OpEx",
 }
-FWD_BOX = ["bias: bearish to neutral under 7590 · daily pivot 7535–40",
-           "catalysts: Tue NVDA after close · Wed FOMC minutes 11:00 AM PT · Thu claims 5:30 AM PT · Fri OpEx"]
+FWD_BOX = ["bias: bearish structure under 7421 · Wed pivot 7373",
+           "catalysts: Wed FOMC minutes 11:00 AM PT · Thu claims 5:30 AM PT + Anthropic IPO · Fri OpEx"]
 
 def _download(sym):
     """Free free_data 30m with extended hours; clean seam/garbage-wick artifacts."""
