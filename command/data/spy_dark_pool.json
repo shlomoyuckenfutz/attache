@@ -4,26 +4,26 @@
   "updated": "2026-10-31",
   "asof_note": "From Everett chart screenshot 2026-10-31; purple DP labels only",
   "convert": {
-    "spy_per_spx": 0.09978,
-    "es_minus_spx": 22.97,
-    "asof": "2026-11-17",
+    "spy_per_spx": 0.099705,
+    "es_minus_spx": 19.5,
+    "asof": "2026-11-18",
     "closes": {
-      "SPY": 732.44,
-      "SPX": 7340.54,
-      "asof": "2026-11-17"
+      "SPY": 730.2,
+      "SPX": 7323.64,
+      "asof": "2026-11-18"
     },
     "prior": {
-      "spy_per_spx": 0.099762,
-      "es_minus_spx": 23.08,
-      "asof": "2026-11-13",
+      "spy_per_spx": 0.09978,
+      "es_minus_spx": 22.97,
+      "asof": "2026-11-17",
       "closes": {
-        "SPY": 754.37,
-        "SPX": 7561.67,
-        "ES": 7584.75,
-        "asof": "2026-11-13"
-      }
+        "SPY": 732.44,
+        "SPX": 7340.54,
+        "asof": "2026-11-17"
+      },
+      "note": "SPX = SPY ÷ 0.099780; ES = SPX + 22.97 (Tue 2026-11-17 official closes: SPY 732.44, SPX 7340.54, ES 7363.50)"
     },
-    "note": "SPX = SPY ÷ 0.099780; ES = SPX + 22.97 (Tue 2026-11-17 official closes: SPY 732.44, SPX 7340.54, ES 7363.50)"
+    "note": "SPX = SPY ÷ 0.099705; ES = SPX + 19.5 (Wed 2026-11-18 session-median plan basis). Official closes: SPY 730.20, SPX 7323.64. ES omitted from closes so the builder does not switch to the 3:59 print difference of +16.61."
   },
   "levels": [
     758.02,
@@ -776,9 +776,9 @@
     "bar_count": 2836,
     "definitions": {
       "touch": "5m bar high/low within $0.10 of level",
-      "bounce": "rejected and moved \u2265$0.50 away without closing through",
+      "bounce": "rejected and moved ≥$0.50 away without closing through",
       "break": "5m close through level and holds 2+ subsequent bars on through side",
-      "avg_bounce_reaction": "mean max excursion away from level after bounce (\u2265$0.50)",
+      "avg_bounce_reaction": "mean max excursion away from level after bounce (≥$0.50)",
       "avg_break_follow": "mean max excursion through level in ~1h after break holds"
     }
   },
@@ -800,7 +800,7 @@
       "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T15:35:00Z",
-      "cross_dir": "A\u2192B",
+      "cross_dir": "A→B",
       "above_min": 120,
       "below_min": 270,
       "pct_above": 30.8
@@ -822,7 +822,7 @@
       "side": "BELOW",
       "cross": true,
       "cross_t": "2026-10-30T16:45:00Z",
-      "cross_dir": "A\u2192B",
+      "cross_dir": "A→B",
       "above_min": 190,
       "below_min": 200,
       "pct_above": 48.7
@@ -844,7 +844,7 @@
       "side": "ABOVE",
       "cross": true,
       "cross_t": "2026-10-30T19:50:00Z",
-      "cross_dir": "B\u2192A",
+      "cross_dir": "B→A",
       "above_min": 250,
       "below_min": 140,
       "pct_above": 64.1
@@ -866,7 +866,7 @@
       "side": "ABOVE",
       "cross": true,
       "cross_t": "2026-10-30T19:50:00Z",
-      "cross_dir": "B\u2192A",
+      "cross_dir": "B→A",
       "above_min": 270,
       "below_min": 120,
       "pct_above": 69.2
@@ -888,7 +888,7 @@
       "side": "ABOVE",
       "cross": true,
       "cross_t": "2026-10-30T18:55:00Z",
-      "cross_dir": "B\u2192A",
+      "cross_dir": "B→A",
       "above_min": 380,
       "below_min": 10,
       "pct_above": 97.4
@@ -1207,7 +1207,7 @@
         ],
         "cross": true,
         "cross_t": "2026-10-30T15:35:00Z",
-        "cross_dir": "A\u2192B"
+        "cross_dir": "A→B"
       },
       {
         "spy": 757.0,
@@ -1252,7 +1252,7 @@
         ],
         "cross": true,
         "cross_t": "2026-10-30T16:45:00Z",
-        "cross_dir": "A\u2192B"
+        "cross_dir": "A→B"
       },
       {
         "spy": 755.28,
@@ -1297,7 +1297,7 @@
         ],
         "cross": true,
         "cross_t": "2026-10-30T19:50:00Z",
-        "cross_dir": "B\u2192A"
+        "cross_dir": "B→A"
       },
       {
         "spy": 754.6,
@@ -1342,7 +1342,7 @@
         ],
         "cross": true,
         "cross_t": "2026-10-30T19:50:00Z",
-        "cross_dir": "B\u2192A"
+        "cross_dir": "B→A"
       },
       {
         "spy": 751.04,
@@ -1387,7 +1387,7 @@
         ],
         "cross": true,
         "cross_t": "2026-10-30T18:55:00Z",
-        "cross_dir": "B\u2192A"
+        "cross_dir": "B→A"
       },
       {
         "spy": 750.16,
