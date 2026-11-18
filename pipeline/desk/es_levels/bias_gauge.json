@@ -1,58 +1,65 @@
 {
- "score": -21,
- "label": "NEUTRAL",
- "px": 757.12,
- "asof": "10-30 16:59 PT",
+ "score": -62,
+ "label": "BEARISH",
+ "px": 730.56,
+ "asof": "11-18 11:19 PT",
  "feed": "delayed",
- "built": "10-30 21:01 PT",
+ "built": "11-18 11:36 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
-   "v": 1,
-   "x": "757.12 vs 755.76",
+   "v": -1,
+   "x": "730.56 vs 731.02",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": 1,
-   "x": "9=756.68 21=756.41",
+   "v": -1,
+   "x": "9=731.62 21=731.65",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
-   "v": -1,
-   "x": "BELOW LOW 759.44\u2013761.46",
+   "v": 0,
+   "x": "INSIDE 730.24\u2013735.06",
    "w": 1.5
   },
   {
    "k": "ON RANGE",
    "d": "price vs overnight / pre-market high-low",
    "v": -1,
-   "x": "760.90\u2013769.97",
+   "x": "732.54\u2013737.39",
    "w": 1.0
   },
   {
    "k": "GAMMA FLIP",
-   "d": "SPY price vs gamma flip consensus",
+   "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "757.12 vs flip 770.87",
-   "w": 1.5
+   "x": "730.56 vs flip 746.7",
+   "w": 1.0
+  },
+  {
+   "k": "FB \u00b7 QQQ",
+   "d": "QQQ price vs desk gamma flip (all exp)",
+   "v": -1,
+   "x": "658.87 vs 667.35",
+   "w": 0.75
   },
   {
    "k": "DEALER DELTA",
    "d": "SPY dealer-pressure delta lean (\u22121\u2026+1; \u00b10.10 dead zone)",
    "v": -1,
-   "x": "-0.67",
+   "x": "-0.76",
    "w": 0.75
   },
   {
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
-   "v": 1,
-   "x": "757.12 vs pivot 755.84",
+   "v": -1,
+   "x": "730.56 vs pivot 733.05",
    "w": 1.0
   },
   {
@@ -63,31 +70,10 @@
    "w": 0.5
   },
   {
-   "k": "IRON LADDER",
-   "d": "/ES vs nearest key support/resistance",
-   "v": 1,
-   "x": "ES 7614.5 \u00b7 S 7585 / R 7625",
-   "w": 1.0
-  },
-  {
-   "k": "DARK POOL",
-   "d": "dark-pool levels holding below vs overhead (\u00b11%)",
-   "v": -1,
-   "x": "0 below / 4 above",
-   "w": 1.5
-  },
-  {
-   "k": "GAUNTLET",
-   "d": "confluence weight below vs above (\u00b11%)",
-   "v": 1,
-   "x": "5 below / 3 above",
-   "w": 1.0
-  },
-  {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
-   "v": -1,
-   "x": "761.37\u2013769.09",
+   "v": 0,
+   "x": "727.78\u2013732.76",
    "w": 1.0
   },
   {
@@ -100,13 +86,13 @@
   {
    "k": "NEWS",
    "d": "news-plan bias",
-   "v": -1,
-   "x": "SHORT",
+   "v": 0,
+   "x": "NEUTRAL",
    "w": 1.0
   }
  ],
  "news": {
-  "dir": "SHORT",
-  "why": "Fri Mode-1 red: ES lost 7677\u20137803 on 7703 failure; SPY lost 762.27 + 760 put wall into ~\u221217B short gamma. Regime bearish/neg-gamma. Mon bounce possible \u2014 fade into 7665/760 unless reclaimed and held."
+  "dir": "NEUTRAL",
+  "why": "Wednesday opens just above the 7373 pivot after a two-day selloff. Monday was a trend day down (SPY \u22121.9%). Tuesday flushed ES to 7308\u201309, under the Nov 5 low at 7323, then recovered. ES closed 7363.50 (SPX 7340.54, SPY 732.44, right on the 200-day average). After the close Nvidia beat and raised; ES ran to 7434.75 before fading to 7376 at 8:02 PM PT, a few points above 7373. The structure is still bearish: negative gamma on every expiry through December, and no bounce counts as a structural reclaim until 7421, then 7455. A hold of 7373 opens 7390, then 7414 (weekly VWAP), then 7421. Failure of 7373 opens 7348, then 7316; acceptance below 7308\u201309 opens 7275, which sits below the plan band. The unpadded plan band is 7308\u20137437 (Tuesday regular session union the post-close range), padded by 0.25 \u00d7 today's implied move (SPX \u00b11.06%, about 77 points) to about 7289\u20137456. ES \u2248 SPX + 22.97 from Tuesday's official closes. Wednesday is VIX expiration (morning settlement); Fed minutes are at 11:00 AM PT."
  }
 }
