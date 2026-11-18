@@ -1,23 +1,23 @@
 {
- "score": -12,
- "label": "NEUTRAL",
- "px": 730.76,
- "asof": "11-18 13:39 PT",
+ "score": -29,
+ "label": "BEARISH",
+ "px": 730.27,
+ "asof": "11-18 13:45 PT",
  "feed": "delayed",
- "built": "11-18 13:40 PT",
+ "built": "11-18 13:45 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "730.76 vs 729.94",
+   "x": "730.27 vs 729.94",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": 1,
-   "x": "9=730.74 21=730.67",
+   "v": -1,
+   "x": "9=730.60 21=730.61",
    "w": 1.0
   },
   {
@@ -38,14 +38,14 @@
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "730.76 vs flip 746.66",
+   "x": "730.27 vs flip 746.66",
    "w": 1.0
   },
   {
    "k": "FB \u00b7 QQQ",
    "d": "QQQ price vs desk gamma flip (all exp)",
    "v": -1,
-   "x": "659.61 vs 666.71",
+   "x": "659.61 vs 666.72",
    "w": 0.75
   },
   {
@@ -59,7 +59,7 @@
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
    "v": -1,
-   "x": "730.76 vs pivot 733.05",
+   "x": "730.27 vs pivot 733.05",
    "w": 1.0
   },
   {

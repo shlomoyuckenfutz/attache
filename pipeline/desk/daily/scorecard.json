@@ -131,7 +131,7 @@
     "es": {
       "high": 7570.75,
       "low": 7305.25,
-      "last": 7347.75,
+      "last": 7348.25,
       "path": "CHOP / MIXED",
       "phase1": "HIT",
       "phase1_zone": [
@@ -163,16 +163,16 @@
           "date": "2026-11-18",
           "hi": 7411.25,
           "lo": 7305.25,
-          "last": 7347.75,
+          "last": 7348.25,
           "event": true
         }
       ],
-      "n_bars": 120
+      "n_bars": 121
     },
     "spy": {
       "high": 754.1728,
       "low": 713.1045,
-      "last": 730.76,
+      "last": 730.27,
       "path": "CHOP / MIXED",
       "phase1": "HIT",
       "phase1_zone": [
@@ -204,7 +204,7 @@
           "date": "2026-11-18",
           "hi": 735.06,
           "lo": 726.79,
-          "last": 730.76,
+          "last": 730.27,
           "event": true
         }
       ],
