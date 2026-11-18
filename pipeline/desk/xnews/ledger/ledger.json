@@ -299,15 +299,15 @@
   {
    "date": "2026-11-17",
    "call": "UP",
-   "next": null,
-   "pct": null,
-   "hit": null
+   "next": "2026-11-18",
+   "pct": -0.15,
+   "hit": false
   }
  ],
  "hit_rate": {
   "hits": 15,
-  "n": 28,
-  "rate": 53.6
+  "n": 29,
+  "rate": 51.7
  },
  "built": "2026-11-18",
  "intraday": [],
