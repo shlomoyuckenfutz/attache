@@ -129,6 +129,22 @@ class CommandLive(unittest.TestCase):
             self.assertEqual(h.count(f'id="{sid}"'), 1)
         self.assertEqual(h.index('id="z-gg"') < h.index('id="z-ut"') < h.index('id="z-fills"'), True)
 
+    def test_quotes_update_and_never_go_backwards(self):
+        ts = pd.Timestamp("2999-01-02 10:00", tz=ET)
+        q = lambda s: {"last": 1.5, "ref": 1.0, "chg": 0.5, "chg_pct": 50.0, "ts": ts}
+        h = command_live.patch_quotes(self.PAGE, q)
+        D = [json.JSONDecoder().raw_decode(h[h.index("{", m.end() - 1):])[0] for m in re.finditer(r"const D=", h)]
+        D0 = [json.JSONDecoder().raw_decode(self.PAGE[self.PAGE.index("{", m.end() - 1):])[0] for m in re.finditer(r"const D=", self.PAGE)]
+        Dq = next(x for x in D if "quotes" in x)
+        self.assertEqual(Dq["quotes"]["SPY"]["last"], 1.5)
+        self.assertTrue(Dq["quotes"]["SPY"]["asof"].startswith("2999-01-02"))
+        self.assertTrue(all(o["last"] == 1.5 for o in Dq["fut"]["quotes"].values()))
+        for x, y in zip(D0, D):  # nothing else in the payloads moves
+            self.assertEqual({k: v for k, v in x.items() if k not in ("quotes", "fut")}, {k: v for k, v in y.items() if k not in ("quotes", "fut")})
+        old = lambda s: {"last": 9.0, "ref": 1.0, "chg": 8.0, "chg_pct": 800.0, "ts": ts - pd.Timedelta(days=1)}
+        self.assertEqual(command_live.patch_quotes(h, old), h)
+        self.assertEqual(command_live.patch_quotes(self.PAGE, lambda s: None), self.PAGE)
+
     def test_wired_after_orb_status(self):
         s = (ROOT / "pipeline" / "refresh.sh").read_text()
         self.assertLess(s.index("orb_status.py"), s.index("command_live.py"))

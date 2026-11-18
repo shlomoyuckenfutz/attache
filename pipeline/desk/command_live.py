@@ -4,6 +4,8 @@
     If that compute is missing or not from today, the sections are left exactly as they are.
   * At-a-glance ES price + its 'as of' time (ES vs pivot, next-level distances) from a free 1m ES quote,
     only while the glance plan session is today or upcoming, and only when the quote is newer than the one shown.
+  * Ticker strip (SPY / QQQ / SPX / ES) and the futures quote board (ES NQ RTY YM CL GC): last, change vs prior
+    close, and a per-quote 'as of' time. A symbol whose pull fails keeps its old value and its old date.
     Plan text, levels, catalysts and every other glance field stay as the nightly sweep wrote them.
 usage: python3 command_live.py <command/index.html>
 """
@@ -73,8 +75,64 @@ def patch_glance(h: str, quote=es_quote, now=None) -> str:
     return h[:m.start()] + m.group(1) + json.dumps(G, ensure_ascii=False).replace("</", "<\\/") + m.group(3) + h[m.end():]
 
 
+STRIP = {"SPY": "SPY", "QQQ": "QQQ", "SPX": "^GSPC", "ES": "ES=F"}
+
+
+def free_quote(sym):
+    """{'last', 'ref', 'chg', 'chg_pct', 'ts'} from free delayed 1m + daily bars, or None."""
+    import yfinance as yf
+    logging.getLogger("yfinance").setLevel(logging.CRITICAL)
+    try:
+        tk = yf.Ticker(sym)
+        m = tk.history(period="5d", interval="1m", prepost=True, auto_adjust=False)
+        d = tk.history(period="10d", interval="1d", auto_adjust=False)
+        if not len(m) or len(d) < 2:
+            return None
+        ts = m.index[-1].tz_convert(ET); last = float(m.Close.iloc[-1])
+        dd = [x.date() for x in d.index]
+        ref = float(d.Close.iloc[-2] if dd[-1] >= ts.date() else d.Close.iloc[-1])
+        return {"last": round(last, 2), "ref": round(ref, 2), "chg": round(last - ref, 2),
+                "chg_pct": round(100 * (last - ref) / ref, 2), "ts": ts}
+    except Exception as ex:
+        print(f"command_live: {sym} quote failed: {str(ex)[:60]}", file=sys.stderr); return None
+
+
+def _newer(old, ts):
+    return not old or not old.get("asof_iso") or old["asof_iso"] < ts.isoformat()
+
+
+def patch_quotes(h: str, quote=free_quote) -> str:
+    ms = list(re.finditer(r"const D=", h))
+    for m in reversed(ms):
+        i = h.index("{", m.end() - 1)
+        try:
+            D, n = json.JSONDecoder().raw_decode(h[i:])
+        except ValueError:
+            continue
+        if "quotes" not in D and "fut" not in D:
+            continue
+        ch = False
+        Q = D.get("quotes")
+        if isinstance(Q, dict):
+            for k, sym in STRIP.items():
+                q = quote(sym)
+                if q and _newer(Q.get(k), q["ts"]):
+                    Q[k] = {"last": q["last"], "chg": q["chg"], "chg_pct": q["chg_pct"],
+                            "asof": f"{q['ts']:%Y-%m-%d %H:%M} ET (delayed)", "asof_iso": q["ts"].isoformat()}; ch = True
+        F = (D.get("fut") or {}).get("quotes")
+        if isinstance(F, dict):
+            for k, o in F.items():
+                q = quote(o.get("sym") or "") if o.get("sym") else None
+                if q and _newer(o, q["ts"]):
+                    o.update(last=q["last"], ref=q["ref"], chg=q["chg"], chg_pct=q["chg_pct"],
+                             asof=f"{q['ts']:%m-%d %H:%M} ET", asof_iso=q["ts"].isoformat()); ch = True
+        if ch:
+            h = h[:i] + json.dumps(D, ensure_ascii=False, default=float).replace("</", "<\\/") + h[i + n:]
+    return h
+
+
 def main(f):
-    p = Path(f); h = p.read_text(encoding="utf-8"); n = patch_glance(patch_bands(h))
+    p = Path(f); h = p.read_text(encoding="utf-8"); n = patch_quotes(patch_glance(patch_bands(h)))
     if n != h:
         p.write_text(n, encoding="utf-8"); print("command_live: patched", f)
     else:
