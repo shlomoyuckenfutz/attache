@@ -300,14 +300,14 @@
    "date": "2026-11-17",
    "call": "UP",
    "next": "2026-11-18",
-   "pct": -0.05,
-   "hit": false
+   "pct": 0.1,
+   "hit": true
   }
  ],
  "hit_rate": {
-  "hits": 15,
+  "hits": 16,
   "n": 29,
-  "rate": 51.7
+  "rate": 55.2
  },
  "built": "2026-11-18",
  "intraday": [],
