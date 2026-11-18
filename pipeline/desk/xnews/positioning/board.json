@@ -1,39 +1,39 @@
 {
  "schema": 1,
- "asof": "2026-11-17",
- "asof_label": "Tue 11/17 close",
- "note": "Options positioning read at the Tue 11/17 close (15-min delayed board). Descriptive only, not a forecast. 'Magnet' = biggest gamma strike for that expiry. Regime = price vs that expiry's flip (NEG where no flip was shown: negative gamma the whole way). Weekly map (Nov 16–20): SPY floor 725 · flip 762.44 · ceiling 775; QQQ floor 650 · ceiling 694 (no flip shown); SPX floor 7300 · flip 7737.22 · ceiling 7800; NDX floor 27000 · ceiling 28800. Fri 11/20 is the weekly and monthly expiration. Put walls not shown on the board for some expiries are awaiting update. /ES levels are SPX levels converted with the Tue close basis.",
+ "asof": "2026-11-18",
+ "asof_label": "Wed 11/18 close",
+ "note": "Options positioning read at the Wed 11/18 close (15-min delayed board; open interest refreshes before the next open, so walls can move overnight). Descriptive only, not a forecast. 'Magnet' = biggest gamma strike for that expiry. Regime = price vs that expiry's flip (NEG where no flip was shown: negative gamma the whole way). Weekly map (Nov 16–20): SPY floor 730 · flip 755.68 · ceiling 775; QQQ floor 650 · ceiling 700 (no flip shown); SPX floor 7300 · flip 7641.7 · ceiling 7800. SPX 11/19 call wall 7310 sits below price (not a ceiling from here). Fri 11/20 is the weekly and monthly expiration. Put walls not shown for some expiries are awaiting update. /ES levels are SPX levels converted with the Wed session basis (ES − SPX median during the regular session).",
  "close": {
-  "SPX": 7340.54,
-  "SPY": 732.44,
-  "QQQ": 656.95,
-  "NDX": 27001.8
+  "SPX": 7323.64,
+  "SPY": 730.2,
+  "QQQ": 659.51,
+  "NDX": 27116.27
  },
  "basis": {
-  "ES_minus_SPX": 22.97,
+  "ES_minus_SPX": 19.5,
   "NQ_minus_NDX": null
  },
  "expiries": [
-  "2026-11-18",
+  "2026-11-19",
   "2026-11-20",
   "2026-12-18"
  ],
  "levels": {
   "SPX": {
-   "2026-11-18": {
-    "flip": 7629.3,
-    "magnet": 7350,
+   "2026-11-19": {
+    "flip": 7556.8,
+    "magnet": 7360,
     "put_wall": null,
-    "call_wall": 7410,
-    "net_gex": "-$7.8B",
+    "call_wall": 7310,
+    "net_gex": "-$4.3B",
     "regime": "NEG"
    },
    "2026-11-20": {
-    "flip": 7653.5,
-    "magnet": 7500,
-    "put_wall": null,
+    "flip": 7595.6,
+    "magnet": 7300,
+    "put_wall": 7300,
     "call_wall": 7700,
-    "net_gex": "-$33.2B",
+    "net_gex": "-$33.6B",
     "regime": "NEG"
    },
    "2026-12-18": {
@@ -41,147 +41,120 @@
     "magnet": 7300,
     "put_wall": 7300,
     "call_wall": 7800,
-    "net_gex": "-$12.8B",
+    "net_gex": "-$13.1B",
     "regime": "NEG"
    }
   },
   "SPY": {
-   "2026-11-18": {
-    "flip": 747.8,
-    "magnet": 718,
-    "put_wall": 718,
-    "call_wall": 745,
-    "net_gex": "-$766.7M",
+   "2026-11-19": {
+    "flip": 734.0,
+    "magnet": 707,
+    "put_wall": 707,
+    "call_wall": 738,
+    "net_gex": "-$245.6M",
     "regime": "NEG"
    },
    "2026-11-20": {
-    "flip": 766.2,
-    "magnet": 740,
-    "put_wall": null,
+    "flip": 759.0,
+    "magnet": 725,
+    "put_wall": 725,
     "call_wall": 770,
-    "net_gex": "-$8.3B",
+    "net_gex": "-$8.5B",
     "regime": "NEG"
    },
    "2026-12-18": {
-    "flip": 757.0,
+    "flip": 758.1,
     "magnet": 775,
     "put_wall": 735,
     "call_wall": 775,
-    "net_gex": "-$1.1B",
+    "net_gex": "-$1.2B",
     "regime": "NEG"
    }
   },
   "QQQ": {
-   "2026-11-18": {
-    "flip": 674.1,
-    "magnet": 650,
-    "put_wall": 650,
-    "call_wall": 678,
-    "net_gex": "-$316.2M",
+   "2026-11-19": {
+    "flip": 666.9,
+    "magnet": 664,
+    "put_wall": null,
+    "call_wall": 680,
+    "net_gex": "-$94.4M",
     "regime": "NEG"
    },
    "2026-11-20": {
-    "flip": null,
+    "flip": 689.3,
     "magnet": 680,
     "put_wall": null,
-    "call_wall": 662,
-    "net_gex": "-$1.7B",
+    "call_wall": 679,
+    "net_gex": "-$1.3B",
     "regime": "NEG"
    },
    "2026-12-18": {
     "flip": null,
     "magnet": 640,
     "put_wall": 640,
-    "call_wall": 700,
-    "net_gex": "-$908.0M",
+    "call_wall": 705,
+    "net_gex": "-$839.2M",
     "regime": "NEG"
    }
   },
   "NDX": {
-   "2026-11-18": {
-    "flip": 27241.1,
-    "magnet": 28000,
-    "put_wall": 25750,
-    "call_wall": 28000,
-    "net_gex": "-$81.5M",
+   "2026-11-19": {
+    "flip": 27238.0,
+    "magnet": 27650,
+    "put_wall": null,
+    "call_wall": 27700,
+    "net_gex": "-$16.4M",
     "regime": "NEG"
    },
    "2026-11-20": {
-    "flip": 28854.0,
+    "flip": 28130.7,
     "magnet": 27000,
     "put_wall": 27000,
     "call_wall": 28250,
-    "net_gex": "-$725.4M",
+    "net_gex": "-$729.2M",
     "regime": "NEG"
    },
    "2026-12-18": {
     "flip": null,
     "magnet": 27000,
     "put_wall": 27000,
-    "call_wall": 27350,
-    "net_gex": "-$1.2B",
+    "call_wall": 29000,
+    "net_gex": "-$1.1B",
     "regime": "NEG"
    }
   }
  },
  "weekly_em": {
   "expiry": "2026-11-20",
+  "asof_label": "Wed 11/18 close",
   "rows": [
    {
     "symbol": "SPX",
-    "pct": 2.35,
-    "lower": 7168.26,
-    "upper": 7512.82
+    "pct": 1.66,
+    "lower": 7201.81,
+    "upper": 7445.47
    },
    {
     "symbol": "SPY",
-    "pct": 2.59,
-    "lower": 713.5,
-    "upper": 751.38
+    "pct": 1.96,
+    "lower": 715.88,
+    "upper": 744.52
    },
    {
     "symbol": "QQQ",
-    "pct": 4.13,
-    "lower": 629.79,
-    "upper": 684.11
+    "pct": 3.21,
+    "lower": 638.33,
+    "upper": 680.69
    },
    {
     "symbol": "NDX",
-    "pct": 3.78,
-    "lower": 25979.96,
-    "upper": 28023.64
+    "pct": 2.76,
+    "lower": 26368.09,
+    "upper": 27864.45
    }
   ]
  },
  "calendar": [
-  {
-   "date": "2026-11-18",
-   "utc": "2026-11-18T13:30:00Z",
-   "pt": "5:30 AM PT",
-   "name": "Housing starts",
-   "detail": "October housing starts · TJX reports before the open"
-  },
-  {
-   "date": "2026-11-18",
-   "utc": "2026-11-18T15:00:00Z",
-   "pt": "7:00 AM PT",
-   "name": "Pending home sales",
-   "detail": "October pending home sales · VIX expiration settles this morning"
-  },
-  {
-   "date": "2026-11-18",
-   "utc": "2026-11-18T18:00:00Z",
-   "pt": "10:00 AM PT",
-   "name": "20-year bond auction",
-   "detail": "US Treasury 20-year bond auction"
-  },
-  {
-   "date": "2026-11-18",
-   "utc": "2026-11-18T19:00:00Z",
-   "pt": "11:00 AM PT",
-   "name": "FOMC minutes",
-   "detail": "FOMC minutes (last Fed meeting)"
-  },
   {
    "date": "2026-11-19",
    "utc": "2026-11-19T13:30:00Z",
@@ -201,7 +174,7 @@
    "utc": "2026-11-19T17:30:00Z",
    "pt": "9:30 AM PT",
    "name": "Fed Goolsbee",
-   "detail": "Fed Goolsbee speaks · Anthropic IPO expected; US–China–Russia leaders' meeting"
+   "detail": "Fed Goolsbee speaks · Anthropic IPO debut expected; US–China–Russia leaders' meeting"
   },
   {
    "date": "2026-11-19",
@@ -240,28 +213,28 @@
   }
  ],
  "flow": {
-  "scope": "options tape, all names, Tue 11/17 session",
-  "net": "+$6.4M",
+  "scope": "options tape, all names, Wed 11/18 session",
+  "net": "+$126M",
   "lean": "bullish",
-  "prints": 15544,
-  "calls": "$375M",
-  "puts": "$674M",
-  "put_call": 1.28,
+  "prints": 14099,
+  "calls": "$399M",
+  "puts": "$817M",
+  "put_call": 1.41,
   "spy_notable": [],
-  "spy_directional": "Largest prints by premium: NDX 28000 put Dec 18 $10.9M (sold) · QQQ 685 put Nov 27 $9.5M · QQQ 685 put Nov 20 $8.8M · SPY 730 put Nov 30 $6.1M (sold) · SPY 725 put Dec 11 $4.2M (bought)",
-  "asof_label": "Tue 11/17"
+  "spy_directional": "Largest prints by premium: SPX 7900 put Dec '27 $16.5M (sold, two blocks) · SPX 7400 put Jan '27 $15.9M · SPX 7400 call Jan '27 $13.8M (bought) · SPX 7500 put Dec '27 $12.5M (sold) · SPX 7650–55 puts Dec 18 $4.1–4.2M (bought) · SPX 7000 call Nov 20 $4.1M (bought)",
+  "asof_label": "Wed 11/18"
  },
  "seasonality": {
   "SPY": {
-   "week": "Week 47 (Nov 16–20): higher 4 of 9 years · median −0.27% · average −0.41% · this year so far −2.92%",
+   "week": "Week 47 (Nov 16–20): higher 4 of 9 years · median −0.27% · average −0.41% · this year so far −2.92% (history through Tue 11/17)",
    "month": "November: median +3.6% · higher 8 of 9 years"
   },
   "SPX": {
-   "week": "Week 47: higher 4 of 9 years · median −0.33% · average −0.44% · this year so far −2.92%",
-   "month": "awaiting update"
+   "week": "Week 47: higher 4 of 9 years · median −0.33% · average −0.44% · this year so far −2.92% (history through Tue 11/17)",
+   "month": "November: median +3.4% · higher 8 of 9 years"
   },
   "QQQ": {
-   "week": "Week 47: higher 5 of 10 years · median +0.28% · average −0.57% · this year so far −3.37%",
+   "week": "Week 47: higher 5 of 10 years · median +0.28% · average −0.57% · this year so far −3.37% (history through Tue 11/17)",
    "month": "November: median +3.0% · higher 8 of 10 years"
   }
  }

@@ -131,18 +131,18 @@
     "es": {
       "high": 7570.75,
       "low": 7305.25,
-      "last": 7346.75,
-      "path": "CHOP / MIXED",
+      "last": 7344.5,
+      "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
-        7390.0,
-        7421.0
+        7373.0,
+        7388.0
       ],
       "phase1_high": 7570.75,
       "phase2": "HIT",
       "phase2_zone": [
-        7348.0,
-        7316.0
+        7320.0,
+        7305.0
       ],
       "days": [
         {
@@ -163,27 +163,27 @@
           "date": "2026-11-18",
           "hi": 7411.25,
           "lo": 7305.25,
-          "last": 7346.75,
-          "event": true
+          "last": 7344.5,
+          "event": false
         }
       ],
-      "n_bars": 119
+      "n_bars": 120
     },
     "spy": {
       "high": 754.1728,
-      "low": 713.1045,
-      "last": 731.4328002929688,
-      "path": "CHOP / MIXED",
+      "low": 726.7949829101562,
+      "last": 730.82,
+      "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
-        736.0,
-        741.0
+        733.0,
+        737.0
       ],
       "phase1_high": 754.1728,
       "phase2": "HIT",
       "phase2_zone": [
         727.0,
-        718.0
+        725.0
       ],
       "days": [
         {
@@ -196,7 +196,7 @@
         {
           "date": "2026-11-17",
           "hi": 739.76,
-          "lo": 713.1,
+          "lo": 727.0,
           "last": 737.5,
           "event": false
         },
@@ -204,11 +204,11 @@
           "date": "2026-11-18",
           "hi": 735.06,
           "lo": 726.79,
-          "last": 731.43,
-          "event": true
+          "last": 730.82,
+          "event": false
         }
       ],
-      "n_bars": 52
+      "n_bars": 53
     }
   },
   "note": "Prior week = Nov 9\u201313 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 16\u201320 actual so far + forward paths only on empty day columns."

@@ -288,7 +288,7 @@ def command_payload(data):
             {"h": "FLOW", "d": a, "c": "var(--up)", "v": "—", "rows": [], "note": AWAIT},
             {"h": "SEASONALITY", "d": a, "c": "var(--pu)",
              "rows": [[f"{k} week", v.get("week", AWAIT).split(": ", 1)[-1]] for k, v in S.items()] + [[f"{k} Nov", v.get("month", AWAIT).split(": ", 1)[-1]] for k, v in S.items()],
-             "note": "Week 46 and November history · not a forecast"},
+             "note": f"Week {date.fromisoformat(data['asof']).isocalendar()[1]} and November history · not a forecast"},
         ],
         "gamma": {"h": f"GAMMA LEVELS · {a}", "html": table(data, data["expiries"])},
     }
@@ -455,7 +455,7 @@ def map_page(data, plan, spy_week=None, built=""):
         cl = clusters(its, tol)
         missing = [ex_label(ex) for ex in data["expiries"] if not data["levels"].get(src, {}).get(ex)]
         plan_note = {"ES": f"Plan = {day(pd) if pd else ''} ES plan levels", "SPX": f"Plan = {day(pd) if pd else ''} ES plan levels − {f(data['es_basis'], 2)}",
-                     "SPY": "Plan = this week's SPY plan levels (Tue SPY intraday levels awaiting update)" if spy_week else f"Plan: {AWAIT}",
+                     "SPY": "Plan = this week's SPY plan levels (daily SPY levels awaiting update)" if spy_week else f"Plan: {AWAIT}",
                      }.get(sym, f"Plan: {sym} plan levels {AWAIT}")
         sub = []
         if sym == "ES":

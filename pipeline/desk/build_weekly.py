@@ -129,8 +129,8 @@ def charts_html():
         figs = _figs(plan, "charts/plan", have_plan)
         out.append(
             '<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
-            '<p>Week of <b>Nov 16–20</b> — Mon and Tue are graded as actual (white candles); Wed–Fri paths start at the 7373 ES pivot. Bearish structure under 7421 / 7455 with a bounce setup after Nvidia; '
-            'FOMC minutes Wed, Anthropic IPO Thu, monthly OpEx Fri. Amber = prior week actual; white = this week\'s actual 30m so far; '
+            '<p>Week of <b>Nov 16–20</b> — Mon to Wed are graded as actual (white candles); Thu–Fri paths start at the 7348–52 ES pivot. Bearish structure under 7421, basing on two recovered sweeps of 7305–09; '
+            'Anthropic IPO Thu, Waller and monthly OpEx Fri. Amber = prior week actual; white = this week\'s actual 30m so far; '
             'empty day columns show the <b>bull (green) and bear (red) paths</b> forward only — no lines through candles. '
             'Nasdaq charts show levels only. Tap a chart to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')

@@ -97,33 +97,33 @@ PRIOR_DAY_NOTES = {
 PLAN_WEEK_FWD = [dt.date(2026, 11, 16), dt.date(2026, 11, 17), dt.date(2026, 11, 18),
                  dt.date(2026, 11, 19), dt.date(2026, 11, 20)]
 FWD_ZONES = {
-  "spy": {"bull": (736.0, 741.0), "bear": (727.0, 718.0),
-          "bull_lab": "736 → 741 first resistance", "bear_lab": "below 727 → 718 put wall"},
-  "es":  {"bull": (7390.0, 7421.0), "bear": (7348.0, 7316.0),
-          "bull_lab": "7390 → 7414–21", "bear_lab": "below 7348 → 7316"},
+  "spy": {"bull": (733.0, 737.0), "bear": (727.0, 725.0),
+          "bull_lab": "733 → 737", "bear_lab": "below 727 → 725 floor"},
+  "es":  {"bull": (7373.0, 7388.0), "bear": (7320.0, 7305.0),
+          "bull_lab": "7373 → 7388", "bear_lab": "below 7320 → 7305"},
   "qqq": None,
   "nq":  None,
 }
 FWD_SPEC = {
- "es": dict(sym="ES=F", title="/ES  ·  week of Nov 16 (Mon–Tue actual · Wed–Fri plan, Tue 11/17 levels)", fut=True, lv=[
-   (7455,"R","7455 target"),(7421,"R","7421 reclaim"),(7414,"R","7414 weekly VWAP"),(7390,"R","7390"),
-   (7373,"P","7373 Wed pivot"),(7348,"S","7348"),(7316,"S","7316 · 7309 Tue low"),(7275,"S","7275 target")],
-   zones=[], bull=[7373,7390,7421], bear=[7373,7348,7316]),
+ "es": dict(sym="ES=F", title="/ES  ·  week of Nov 16 (Mon–Wed actual · Thu–Fri plan, Wed 11/18 levels)", fut=True, lv=[
+   (7455,"R","7455 target"),(7421,"R","7421 bull/bear line"),(7388,"R","7388 Wed high"),(7373,"R","7372–73"),
+   (7350,"P","7348–52 Thu pivot"),(7320,"S","7320–23"),(7305,"S","7305–09 Tue/Wed lows"),(7275,"S","7275 target")],
+   zones=[], bull=[7350,7373,7388], bear=[7350,7320,7305]),
  "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 16 (levels · no paths)", fut=True, lv=[
-   (28065,"R","28065"),(27616,"R","27616"),(27343,"R","27343"),(27222,"P","27222 Tue close"),(27093,"S","27093 Tue low")],
+   (27616,"R","27616"),(27343,"R","27343"),(27326,"R","27326 Wed high"),(27190,"P","27190 Wed close"),(27093,"S","27093"),(26922,"S","26922 Wed low")],
    zones=[], bull=[], bear=[]),
- "spy": dict(sym="SPY", title="SPY  ·  week of Nov 16 (Mon–Tue actual · Wed–Fri plan, Tue 11/17 levels)", fut=False, lv=[
-   (751,"R","750–751"),(747.8,"R","11/18 flip"),(745,"R","11/18 call wall"),(741,"R","741 resistance"),
-   (733,"P","733 pivot · 200-day"),(727,"S","727 Tue low"),(725,"S","725 weekly floor"),(718,"S","718 11/18 put wall")],
-   zones=[], bull=[733,736,741], bear=[733,727,718]),
+ "spy": dict(sym="SPY", title="SPY  ·  week of Nov 16 (Mon–Wed actual · Thu–Fri plan, Wed 11/18 levels)", fut=False, lv=[
+   (741,"R","741"),(737,"R","737"),(735,"R","735 Wed high"),(732,"R","732 cap"),
+   (730.5,"P","730–731 pivot"),(727,"S","727 Tue/Wed lows"),(725,"S","725 floor · Fri put wall"),(720,"S","720")],
+   zones=[], bull=[730.5,733,737], bear=[730.5,727,725]),
  "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 16 (levels · no paths)", fut=False, lv=[
-   (678,"R","11/18 call wall"),(671.88,"R","Wed EM high"),(662,"R","Fri 11/20 call wall"),(657,"P","pivot"),(650,"S","weekly floor")],
+   (680,"R","Fri call wall 679–680"),(672.69,"R","Thu EM high"),(662.8,"R","Wed high"),(657,"P","pivot"),(653,"S","Wed low"),(650,"S","weekly floor")],
    zones=[], bull=[], bear=[]),
 }
-FWD_EVENT = {  # FOMC minutes Wed 11:00 AM PT — edge ticks only
-  "day": dt.date(2026, 11, 18),
-  "label": "FOMC minutes Wed 11:00 AM PT",
-  "frac_fut": 0.85, "frac_cash": 0.6,
+FWD_EVENT = {  # Thu: Anthropic IPO debut / Goolsbee 9:30 AM PT — edge ticks only
+  "day": dt.date(2026, 11, 19),
+  "label": "Anthropic IPO · Goolsbee Thu 9:30 AM PT",
+  "frac_fut": 0.8, "frac_cash": 0.45,
 }
 FWD_DAY_NOTES = {
   0: "trend dn",
@@ -132,8 +132,8 @@ FWD_DAY_NOTES = {
   3: "IPO",
   4: "OpEx",
 }
-FWD_BOX = ["bias: bearish structure under 7421 · Wed pivot 7373",
-           "catalysts: Wed FOMC minutes 11:00 AM PT · Thu claims 5:30 AM PT + Anthropic IPO · Fri OpEx"]
+FWD_BOX = ["bias: bearish structure under 7421 · Thu pivot 7348–52",
+           "catalysts: Thu claims 5:30 AM PT + Anthropic IPO · Fri Waller 5:30 AM PT + monthly OpEx"]
 
 def _download(sym):
     """Free free_data 30m with extended hours; clean seam/garbage-wick artifacts."""
@@ -200,6 +200,10 @@ def _clean_bars(df):
     bad_high = (upper > 3.5 * rmed) & (upper > 6 * (lower + 1e-9)) & (rng > 10 * rmed)
     if bad_high.any():
         df.loc[bad_high, "High"] = body_hi[bad_high]
+    # Garbage extended-hours low under a real after-hours high (e.g. SPY 11/17 AH bar 734.27/739.73/713.10/732.80):
+    # the lower wick is far beyond the local range and well over twice the upper wick -> clamp the low to the body.
+    bad_low2 = (lower > 8 * rmed) & (lower > 2 * upper) & ~bad_both
+    bad_low = bad_low | bad_low2
     n_repair = int((bad_low | bad_both | bad_high).sum())
     n_drop = int((bad_seam | bad_settle).sum())
     if n_repair:

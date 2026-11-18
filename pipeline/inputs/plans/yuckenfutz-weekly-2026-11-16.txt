@@ -1,53 +1,53 @@
 YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 16 to Fri Nov 20, 2026
-Plan only — not investment advice · updated Tue Nov 17, after the close (levels for Wed–Fri)
-Weekly implied move to Fri 11/20 (re-read at the Tue 11/17 close, each index in its own points; not guaranteed limits): SPX 7168.26–7512.82 (±2.35%) · SPY 713.50–751.38 (±2.59%) · QQQ 629.79–684.11 (±4.13%) · NDX 25979.96–28023.64 (±3.78%).
-Week so far: Monday was a trend day down. ES lost 7519–24 and 7502, then ran through the 7420–7390 targets to close near 7439 (SPY 739.95, −1.9%). Tuesday extended the selloff. ES flushed to 7309, under the Nov 5 low at 7323, then recovered (a Failed Breakdown). It closed near 7363 at 1:00 PM PT (SPX 7340.54, SPY 732.44, right on the 200-day average). Nvidia beat and raised after the close (revenue $115.8B vs about $109B expected, Q4 guide about $130B, $150B more buyback). The board said it will not reinstate Jensen Huang. NVDA traded about 4–5% higher after hours, and ES bounced toward 7421 before fading back near 7380.
+Plan only — not investment advice · updated Wed Nov 18, after the close (levels for Thu–Fri)
+Weekly implied move to Fri 11/20 (re-read at the Wed 11/18 close, each index in its own points; not guaranteed limits): SPX 7201.81–7445.47 (±1.66%) · SPY 715.88–744.52 (±1.96%) · QQQ 638.33–680.69 (±3.21%) · NDX 26368.09–27864.45 (±2.76%). Thursday's implied move: SPX 7275.87–7435.19 (±1.09%) · SPY 725.83–742.21 (±1.12%).
+Week so far: Monday was a trend day down. ES lost 7519–24 and 7502, then ran through the 7420–7390 targets to close near 7439 (SPY 739.95, −1.9%). Tuesday extended the selloff. ES flushed to 7309, under the Nov 5 low at 7323, then recovered (a Failed Breakdown). It closed near 7363 at 1:00 PM PT (SPX 7340.54, SPY 732.44, right on the 200-day average). Nvidia beat and raised after the close (revenue $115.8B vs about $109B expected, Q4 guide about $130B, $150B more buyback). The board said it will not reinstate Jensen Huang. NVDA traded about 4–5% higher after hours, and ES bounced toward 7421 before fading back near 7380. Wednesday faded the Nvidia bounce. ES opened near 7371 after an overnight high of 7434.75, topped at 7388.75 in the first minutes, then sold to 7305.25 by 8:21 AM PT, a second sweep of the 7309 low that recovered again. Fed Governor Waller called for rate hikes to take back the insurance cuts, and the FOMC minutes at 11:00 AM PT were hawkish (almost all see further hikes; a couple see more than 25bp in December as possible). SPY closed 730.20 (−0.31%), its first close under the 200-day average; SPX 7323.63, QQQ 659.51 (+0.36% for the Nasdaq). ES was near 7340 after the close. VIX 24.63.
 
 BIAS (WEEK)
-Bearish structure, with a bounce setup for Wednesday. Price is below every short-term average and the board is negative gamma on every expiry through December (no flip on SPX 12/18), so rallies are suspect until ES reclaims 7421 and then 7455. Supporting a bounce: VIX above 25 into Wednesday's VIX expiration, Tuesday's Failed Breakdown of 7323, and Nvidia's beat. Thursday adds the Anthropic IPO and the US–China–Russia leaders' meeting; Friday is monthly OpEx with the largest put positioning at SPX 7300 / SPY 725. A reclaim and hold of 7455 is the first bullish development; acceptance back above 7519 would retrace most of Monday.
+Bearish structure, now basing. Two sweeps of the 7309–05 area (Tue and Wed) both recovered, so 7320–23 is the shelf that matters into Friday's monthly OpEx. Rallies are still suspect: price is below every short-term average, SPY closed under its 200-day average, and the board is negative gamma on every expiry (Fri 11/20 SPX flip 7595.6, SPY 759), so moves stretch both ways. The biggest Friday put level is SPX 7300 / SPY 725. Rate-hike talk (Waller, hawkish minutes) is the headwind; the Anthropic IPO and the US–China–Russia leaders' meeting Thursday are the event risk. No structural reclaim until ES holds 7372, then 7421; acceptance under 7305 opens 7275 and the SPX 7250 area.
 
 SCENARIOS
-- Bull: ES holds above 7373 → 7390 → 7414 (weekly VWAP) → 7421; acceptance above 7421 opens 7455, then 7519 (targets only). SPY back above 741, then 745 (11/18 call wall) and 750–751.
-- Bear: ES fails at 7373 → 7348 → 7316 (Tuesday's flush zone, 7309 low). Acceptance below 7309 opens 7275, then the SPX 7300 put wall (ES ≈ 7323) gives way toward SPX 7250–7175 (targets only). SPY under 727 → 725 (Friday's put level) → 718–715.
-- Neutral: OpEx pinning between 7316 and 7421 into Friday; fade the edges, skip the middle.
+- Bull: ES holds 7323 → 7352 → 7372–73; acceptance above 7373 opens 7388 (Wed high), then 7421 (bull/bear line). 7455 and 7519 are targets only. SPY back above 733, then 737 and 741.
+- Bear: ES loses 7320 and accepts below 7305 → 7275, then SPX 7250 (ES ≈ 7268) toward SPX 7200 (targets only). SPY under 727 → 725 (floor) → 720.
+- Neutral: OpEx pin between 7305 and 7388 into Friday (SPY and SPX both sit on their 730 / 7300 floors); fade the edges, skip 7340–7360.
 
 KEY LEVELS
 
 /ES
-- Resistance: 7390 · 7414 · 7421. Targets only: 7455 · 7519
-- Pivot: 7373 (Wed) · see Daily
-- Support: 7348 · 7316 · 7309 (Tue low). Target only below: 7275
+- Resistance: 7352 · 7372–73 · 7388 (Wed high) · 7421 (bull/bear line). Targets only: 7455 · 7519
+- Pivot: 7348–52 (Wed midpoint shelf) · see Daily
+- Support: 7320–23 · 7305–09 (Tue/Wed lows). Target only below: 7275
 
 SPY
-- Resistance: 741 · 745 (11/18 call wall) · 747.8 (11/18 flip) · 750–751
-- Pivot: 733 (Tue close, 200-day average)
-- Support: 727 (Tue low) · 725 (weekly floor / Fri put level) · 718 (11/18 put wall)
+- Resistance: 732 · 735 (Wed high) · 737 · 741
+- Pivot: 730–731 (Wed close)
+- Support: 727 (Tue/Wed lows) · 725 (floor) · 720
 
 QQQ
-- Resistance: 662 (Fri 11/20 call wall) · 671.88 (Wed implied-move high) · 678 (11/18 call wall)
+- Resistance: 662.80 (Wed high) · 672.69 (Thu implied-move high) · 679–680 (Fri call wall)
 - Pivot: 657
-- Support: 650 (weekly floor) · 646.64 (Tue low)
+- Support: 653 (Wed low) · 650 · 646.64 (Tue low)
 
 /NQ
-- Resistance: 27343 · 27616 · 28065
-- Pivot: 27222 (Tue close)
-- Support: 27093 (Tue low). Target only below: 26592
+- Resistance: 27326 (Wed high) · 27343 · 27616
+- Pivot: 27190 (Wed close area)
+- Support: 27093 · 26922 (Wed low). Target only below: 26592
 
 DAY BY DAY
 - Mon Nov 16 (done): trend day down; SPY −1.9%, ES through 7420–7390.
 - Tue Nov 17 (done): flush to ES 7309 and recovery; SPY −1.0% to 732.44; Nvidia beat and raised after the close; CEO not reinstated.
-- Wed Nov 18: housing starts 5:30 AM PT · VIX expiration (morning settlement) · pending home sales 7:00 AM PT · 20-year bond auction 10:00 AM PT · FOMC minutes 11:00 AM PT. TJX before the open.
+- Wed Nov 18 (done): Nvidia bounce faded from 7388.75; second sweep of the lows to ES 7305 recovered; hawkish Fed minutes; SPY −0.3% to 730.20, first close under the 200-day average.
 - Thu Nov 19: jobless claims and Philadelphia Fed 5:30 AM PT · Fed Jefferson 6:25 AM PT · Fed Goolsbee 9:30 AM PT · 10-year auction 10:00 AM PT. US–China–Russia leaders' meeting. Anthropic IPO expected. Ross Stores after the close.
 - Fri Nov 20: monthly options expiration · Fed Waller 5:30 AM PT · Michigan consumer sentiment (Nov) · Fed Cook 9:15 AM PT.
 
 TRIGGERS / IF-THEN
-1. Hold above 7373 → 7390, 7414; acceptance above 7421 opens 7455, then 7519 (targets only).
-2. Fail at 7373 → 7348, 7316; acceptance below 7309 opens 7275 (target only).
-3. Break and hold above 7455 with VIX under 23.72 = strength; break and hold below 7275 with VIX over 27.20 = weakness.
-4. SPY back above 747.8 (the 11/18 flip) takes pressure off; under 725, 718–715 is next.
+1. Hold above 7323 and reclaim 7352 → 7372–73; acceptance above 7373 opens 7388, then 7421.
+2. Lose 7320 and accept below 7305 → 7275 (target only); SPY under 725 → 720.
+3. Break and hold above 7421 with VIX under 23 = strength; break and hold below 7275 with VIX over 27 = weakness.
+4. SPY back above 737 takes pressure off; under 725, 720 is next.
 
 SKIP
-- Don't chase the overnight Nvidia move; trade Wednesday's reaction at 7373.
-- Skip mid-range chop between 7348 and 7390.
-- No new size into FOMC minutes at 11:00 AM PT Wednesday or the Anthropic IPO Thursday.
+- Don't chase the first move after claims at 5:30 AM PT; trade the 7323 / 7352 reaction after the cash open.
+- Skip mid-range chop between 7340 and 7360.
+- No new size into the Anthropic IPO debut Thursday or Waller at 5:30 AM PT Friday.
 - Skip chasing and skip unplanned or unlimited-risk 0DTE exposure into Friday's OpEx.

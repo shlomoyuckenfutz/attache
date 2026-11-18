@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated_pt": "2026-11-17 8:14 PM PT",
+  "updated_pt": "2026-11-18 1:15 PM PT",
   "note": "SPY-scale implied bounds. Rows render only for the matching session / week.",
   "daily": [
     {
@@ -15,6 +15,13 @@
       "lower": 743.37,
       "upper": 756.33,
       "move_pct": 0.86
+    },
+    {
+      "symbol": "SPY",
+      "session": "2026-11-19",
+      "lower": 725.83,
+      "upper": 742.21,
+      "move_pct": 1.12
     }
   ],
   "weekly": [
@@ -29,9 +36,9 @@
       "symbol": "SPY",
       "week_start": "2026-11-16",
       "week_end": "2026-11-20",
-      "lower": 713.5,
-      "upper": 751.38,
-      "move_pct": 2.59
+      "lower": 715.88,
+      "upper": 744.52,
+      "move_pct": 1.96
     }
   ]
 }

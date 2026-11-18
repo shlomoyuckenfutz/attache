@@ -1,7 +1,7 @@
 {
  "date": "2026-11-17",
- "title": "Tuesday 11/17 SPY close review",
- "base": "Ripe for a bounce Wednesday: SPY touched the 200DMA and Nvidia held up after earnings, so the target is the 739.72\u2013739.73 dark pools, back above the 733 and 738 clusters; stretch is a 10DMA retest within two sessions. Expect it to be a lower high that rolls over, possibly by Thursday, with heavy put positioning at 725 for Friday's OpEx.",
+ "title": "Tuesday SPY close review",
+ "base": "Ripe for a bounce tomorrow after tagging the 200DMA, with NVDA holding after earnings. Target is the 739.72/739.73 dark-pool cluster, which would recapture the 733 and 738 clusters; stretch is a retest of the 10DMA within two sessions. Bounce is expected to be a lower high that rolls over, potentially by Thursday into 725 OpEx gamma. Will sell calls at the first hint of trouble.",
  "alternative": "The alternative path is asia demolishes this after hours rally action and we break the 200DMA.",
  "trigger": "\u2014",
  "direction": "UP",
@@ -299,17 +299,17 @@
   {
    "date": "2026-11-17",
    "call": "UP",
-   "next": "2026-11-18",
-   "pct": -0.16,
-   "hit": false
+   "next": null,
+   "pct": null,
+   "hit": null
   }
  ],
  "hit_rate": {
   "hits": 15,
-  "n": 29,
-  "rate": 51.7
+  "n": 28,
+  "rate": 53.6
  },
- "built": "2026-11-18",
+ "built": "2026-11-17",
  "intraday": [],
  "intraday_date": null
 }
