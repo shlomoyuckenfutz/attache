@@ -37,7 +37,7 @@ def section_html():
         '<h2 style="background:#a855f7;color:#fff">SPY Dark Pool levels</h2>'
         '<p>Purple <b style="color:#c084fc">Dark Pool</b> set on SPY. '
         'SPX = SPY ÷ <b>0.0997</b> · ES = SPX + <b>34.5</b> (Fri close basis). '
-        'Update via <code>data/spy_dark_pool.json</code> — see README.</p>'
+        '</p>'
         '<div class="dp-wrap"><table class="dp-tbl">'
         '<thead><tr><th>SPY</th><th>SPX</th><th>ES</th></tr></thead>'
         f'<tbody>{tr}</tbody></table></div></section>'

@@ -148,7 +148,7 @@ for h in srcs:
               "promo_pct": round(100 * promo / len(allp), 1) if allp else None, "posts_per_day": WR.get(h),
               "weight": srcs[h].get("weight"), "greyed": bool(t) and len(rs) / len(t) < 0.4})
 S.sort(key=lambda s: (s["hit_rate"] is None, -(s["hit_rate"] or 0)))
-SC = {"asof": conf["updated_pt"], "window_days": 5, "bars": "SPY 1m (free feed, RTH 09:30-16:00 ET), read-only local copy",
+SC = {"asof": conf["updated_pt"], "window_days": 5, "bars": "SPY 1m (RTH 09:30-16:00 ET)",
       "rules": "SPY levels auto-extracted from post text (promos/RTs skipped). Graded on the rest of that RTH session (or next session if posted outside RTH). touch = within $0.25; respected = moves ≥$1 back on the approach side within 30 min before a 1m close ≥$1 through; broken = closes ≥$1 through first. hit_rate = respected/touched.",
       "voltick_self_reported": {"2026-10-19": "Volt touched 577 of 1044 · Inside the expected range 1040 of 1043 · Closed between the walls 785 of 1044", "2026-10-20": "Volt touched 644 of 1070 · Inside the expected range 1058 of 1070 · Closed between the walls 829 of 1070"},
       "sources": S}

@@ -28,7 +28,17 @@ def clean(s):
     s = re.sub(r'(?i)(?:www\.)?(?:x|twitter)\.com/[^\s"\'<>`)]*', '#', s)
     s = re.sub(r'(?i)alpaca-indicative', 'indicative', s)
     s = re.sub(r'(?i)yahoo finance|yahoo', 'free data', s)
-    s = re.sub(r'(?i)alpaca', 'free feed', s)
+    s = re.sub(r'(?i)alpaca', '1m feed', s)
+    # no feed names or data file names in page text/data (Everett 2026-11-17). Never touches a fetch URL
+    # ('../data/spy_dark_pool.json' in the Dark Pool page JS must keep working).
+    s = re.sub(r'(?i)\(free feed, ', '(', s)
+    s = re.sub(r'(?i)\bfree feed(?: IEX)?', '1m feed', s)
+    s = re.sub(r'(?i)\s*Update via <code>(?:data/)?spy_dark_pool\.json</code>\s*(?:—|-)\s*see README\.', '', s)
+    s = re.sub(r'(?i)levels from (?:data/)?spy_dark_pool\.json', 'desk dark-pool levels', s)
+    s = re.sub(r'(?i)("levels_source": ")(?:data/)?spy_dark_pool\.json"', r'\1desk dark-pool levels"', s)
+    s = re.sub(r'(?i),?\s*read-only local copy', '', s)
+    s = re.sub(r'(?i)Single source of truth: <code>(?:data/)?spy_dark_pool\.json</code> on the Attaché site\.', '', s)
+    s = re.sub(r'(?i)Failed to load (?:data/)?spy_dark_pool\.json', 'Failed to load dark-pool levels', s)
     # JS property access (D.spartan) -> D["SRC D"] so renamed keys still resolve
     s = re.sub(r'(?<=[\w\)\]])\.(' + '|'.join(re.escape(n) for n in NAMES) + r')\b', lambda m: '["' + M[m.group(1).lower()] + '"]', s, flags=re.I)
     s = RX.sub(lambda m: M[m.group(1).lower()], s)
