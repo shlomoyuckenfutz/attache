@@ -4,7 +4,7 @@
  "px": 735.57,
  "asof": "11-18 16:59 PT",
  "feed": "delayed",
- "built": "11-18 18:55 PT",
+ "built": "11-18 19:59 PT",
  "votes": [
   {
    "k": "VWAP",
@@ -38,14 +38,14 @@
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "735.57 vs flip 746.66",
+   "x": "735.57 vs flip 746.65",
    "w": 1.0
   },
   {
    "k": "FB \u00b7 QQQ",
    "d": "QQQ price vs desk gamma flip (all exp)",
    "v": -1,
-   "x": "659.61 vs 667.5",
+   "x": "659.61 vs 667.57",
    "w": 0.75
   },
   {
