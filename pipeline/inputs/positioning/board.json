@@ -171,10 +171,17 @@
   },
   {
    "date": "2026-11-19",
+   "utc": "2026-11-19T14:30:00Z",
+   "pt": "6:30 AM PT",
+   "name": "Anthropic IPO debut",
+   "detail": "First trade TBD · cash open 6:30 AM PT · price $83.00, above the $70–78 range (as of 5:23 PM PT Wed 11/18) · 980,000,000 Class A shares offered (956,351,354 company / 23,648,646 selling stockholders; as of 5:23 PM PT Wed 11/18) · about $81 billion raised, upsized (as of 5:24 PM PT Wed 11/18) · implied valuation TBD (as of 5:26 PM PT Wed 11/18) · ticker ANT, Nasdaq Global Select Market (as of 5:23 PM PT Wed 11/18) · about $500 billion in orders (as of 7:18 AM PT Wed 11/18) · options expected Monday at the earliest, none Thursday (as of 1:30 PM PT Wed 11/18)"
+  },
+  {
+   "date": "2026-11-19",
    "utc": "2026-11-19T17:30:00Z",
    "pt": "9:30 AM PT",
    "name": "Fed Goolsbee",
-   "detail": "Fed Goolsbee speaks · Anthropic IPO debut expected; US–China–Russia leaders' meeting"
+   "detail": "Fed Goolsbee speaks · US–China–Russia leaders' meeting"
   },
   {
    "date": "2026-11-19",

@@ -6,7 +6,7 @@
   "title": "Yuckenfutz Tradez — Daily Plan — Thu Nov 19, 2026 (jobless claims · Philly Fed · 10-year bond sale)",
   "bias": {
     "direction": "BEARISH",
-    "reason": "Thursday's main pivot is 7373, the reclaim line; 7348–52 stays as the secondary pivot below it. Wednesday opened 7371 after an overnight high of 7434.75, topped 7388.75, then sold to 7305.25 — a second sweep of Tuesday's 7308–09 low — and recovered again through the 7320–23 / Nov 5 7323 zone. ES closed 7340.25 at 3:59 PM ET (SPX 7323.64, −0.23%; SPY 730.20, −0.31%, first close under the 200-day average; QQQ 659.51, +0.39%; VIX 24.63). After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high. The structure is still bearish unless 7373 holds as the reclaim. Holding 7373 targets 7390, then 7414 (VIX filter 22.76 for the 7414 upside case). Losing 7373 targets 7348–52. Losing 7348–52 targets 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 downside case). Two sweeps of 7305–09 both recovered, so 7320–23 remains the line into Friday's OpEx. Every expiry is negative gamma; SPY and SPX both sit on their weekly floors (730 / 7300). The unpadded plan band is 7305.25–7398 (Wednesday regular session 7305.25–7388.75 union the after-hours range 7332–7398). Padded by 0.25 × Thursday's implied move (SPX ±1.09%, about 80 points) to about 7285–7418. 7414 sits just inside the padded band; 7245 is below it. ES ≈ SPX + 19.5 from Wednesday's regular-session median. Jobless claims and Philly Fed are at 5:30 AM PT; Fed Jefferson 6:25 AM PT; Fed Goolsbee and the Anthropic debut around 9:30 AM PT — no new size into the IPO open; 10-year bond sale at 10:00 AM PT."
+    "reason": "Thursday's main pivot is 7373, the reclaim line; 7348–52 stays as the secondary pivot below it. Wednesday opened 7371 after an overnight high of 7434.75, topped 7388.75, then sold to 7305.25 — a second sweep of Tuesday's 7308–09 low — and recovered again through the 7320–23 / Nov 5 7323 zone. ES closed 7340.25 at 3:59 PM ET (SPX 7323.64, −0.23%; SPY 730.20, −0.31%, first close under the 200-day average; QQQ 659.51, +0.39%; VIX 24.63). After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high. The structure is still bearish unless 7373 holds as the reclaim. Holding 7373 targets 7390, then 7414 (VIX filter 22.76 for the 7414 upside case). Losing 7373 targets 7348–52. Losing 7348–52 targets 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 downside case). Two sweeps of 7305–09 both recovered, so 7320–23 remains the line into Friday's OpEx. Every expiry is negative gamma; SPY and SPX both sit on their weekly floors (730 / 7300). The unpadded plan band is 7305.25–7398 (Wednesday regular session 7305.25–7388.75 union the after-hours range 7332–7398). Padded by 0.25 × Thursday's implied move (SPX ±1.09%, about 80 points) to about 7285–7418. 7414 sits just inside the padded band; 7245 is below it. ES ≈ SPX + 19.5 from Wednesday's regular-session median. Jobless claims and Philly Fed are at 5:30 AM PT; Fed Jefferson 6:25 AM PT; Fed Goolsbee 9:30 AM PT; Anthropic debut first trade TBD · cash open 6:30 AM PT — no new size into the IPO open; 10-year bond sale at 10:00 AM PT."
   },
   "overnight_bias": "After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high · Wednesday RTH 7305.25–7388.75",
   "key_levels": [
@@ -45,7 +45,7 @@
     "Lose 7348–52 → 7320–23, 7305, then 7245. VIX filter 26.36 for the 7245 downside case. Acceptance below 7348–52 invalidates the 7373 reclaim.",
     "Jobless claims and Philly Fed 5:30 AM PT.",
     "Fed Jefferson 6:25 AM PT.",
-    "Fed Goolsbee 9:30 AM PT. Anthropic debut around the same time — no new size into the IPO open.",
+    "Fed Goolsbee 9:30 AM PT. Anthropic debut first trade TBD · cash open 6:30 AM PT — no new size into the IPO open.",
     "10-year bond sale 10:00 AM PT. Ross Stores after the close."
   ],
   "long_story_short": {
@@ -55,6 +55,6 @@
     "levels": "7414 / 7390 above; 7373 main pivot; 7348–52 secondary pivot; 7320–23 / 7305–09 below. 7245 is a path target only, below the plan band. VIX filter: 22.76 for the 7414 upside case, 26.36 for the 7245 downside case.",
     "bearish": "Lose 7373 → 7348–52. Lose 7348–52 → 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 case). Every expiry is negative gamma; SPY and SPX sit on their weekly floors.",
     "bullish": "Hold 7373 → 7390, then 7414 (VIX filter 22.76 for the 7414 case). After hours last 7393.75, above 7372–73 and above Wednesday's 7388.75 high.",
-    "general": "No new size into the Anthropic debut around 9:30 AM PT. Claims and Philly Fed 5:30 AM PT; 10-year bond sale 10:00 AM PT."
+    "general": "No new size into the Anthropic debut (first trade TBD · cash open 6:30 AM PT). Claims and Philly Fed 5:30 AM PT; 10-year bond sale 10:00 AM PT."
   }
 }

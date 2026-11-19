@@ -77,7 +77,11 @@ class I4_Calendar(unittest.TestCase):
             c = [r for r in rows if r["day"] == dy and r["name"] == name][0]; self.assertEqual(c["pt"], "5:30 AM PT")
             t = datetime.fromisoformat(c["utc"].replace("Z", "+00:00")).astimezone(pt)
             self.assertEqual((t.hour, t.minute), (5, 30))
-        self.assertEqual(sum(1 for r in rows if r["day"] == "Thu 11/19"), 4)  # claims, Jefferson, Goolsbee, 10-year auction; several events on one day each get a row
+        self.assertEqual(sum(1 for r in rows if r["day"] == "Thu 11/19"), 5)  # claims, Jefferson, Goolsbee, Anthropic IPO debut, 10-year auction; several events on one day each get a row
+        ipo = [r for r in rows if r["name"] == "Anthropic IPO debut"][0]
+        self.assertEqual(ipo["day"], "Thu 11/19")
+        self.assertEqual(ipo["pt"], "6:30 AM PT")
+        self.assertEqual(ipo["utc"], "2026-11-19T14:30:00Z")
         self.assertFalse(any(r["day"] in ("Mon 11/16", "Tue 11/17", "Wed 11/18") for r in rows))  # past days drop off the countdown
         self.assertTrue(any(r["day"] == "Fri 11/20" and r["name"] == "Monthly OpEx" for r in rows))
 
