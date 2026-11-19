@@ -1,48 +1,48 @@
 {
   "date": "2026-11-19",
-  "asof_pt": "2026-11-18 1:41 PM PT",
-  "asof": "2026-11-18 1:41 PM PT",
+  "asof_pt": "Wed Nov 18 5:04 PM PT",
+  "asof": "Wed Nov 18 5:04 PM PT",
   "session": "2026-11-19",
   "title": "Yuckenfutz Tradez — Daily Plan — Thu Nov 19, 2026 (jobless claims · Philly Fed · 10-year bond sale)",
   "bias": {
     "direction": "BEARISH",
-    "reason": "Thursday's pivot is 7348–52: Wednesday's midpoint (7388.75 / 7305.25 → 7347) and the 7351–52 shelf, the first target off the 7305–09 Failed Breakdown. The structure is still bearish and basing. Wednesday opened 7371 after an overnight high of 7434.75, topped 7388.75, then sold to 7305.25 — a second sweep of Tuesday's 7308–09 low — and recovered again through the 7320–23 / Nov 5 7323 zone. ES closed 7340.25 at 3:59 PM ET (SPX 7323.64, −0.23%; SPY 730.20, −0.31%, first close under the 200-day average; QQQ 659.51, +0.39%; VIX 24.63). After the close ES has traded 7332–7350 so far, last 7345.75 at 1:28 PM PT, still around the 7348–52 pivot. Two sweeps of 7305–09 both recovered, so 7320–23 is the line into Friday's OpEx. Every expiry is negative gamma; SPY and SPX both sit on their weekly floors (730 / 7300). A hold of 7348–52 and a reclaim of 7372–73 opens 7388, then 7421 (the bull/bear line, just outside the plan band). Acceptance above 7421 opens 7455. Lose 7320 and accept below 7305 (a lost Failed Breakdown) and the path is 7275, then SPX 7250 / ES ≈ 7270, both below the plan band. 7340–7360 is chop — skip the middle. The unpadded plan band is 7305.25–7388.75 (Wednesday regular session union the after-hours range so far, 7332–7350). Padded by 0.25 × Thursday's implied move (SPX ±1.09%, about 80 points) to about 7285–7409. ES ≈ SPX + 19.5 from Wednesday's regular-session median. Jobless claims and Philly Fed are at 5:30 AM PT; Fed Jefferson 6:25 AM PT; Fed Goolsbee and the Anthropic debut around 9:30 AM PT — no new size into the IPO open; 10-year bond sale at 10:00 AM PT."
+    "reason": "Thursday's main pivot is 7373, the reclaim line; 7348–52 stays as the secondary pivot below it. Wednesday opened 7371 after an overnight high of 7434.75, topped 7388.75, then sold to 7305.25 — a second sweep of Tuesday's 7308–09 low — and recovered again through the 7320–23 / Nov 5 7323 zone. ES closed 7340.25 at 3:59 PM ET (SPX 7323.64, −0.23%; SPY 730.20, −0.31%, first close under the 200-day average; QQQ 659.51, +0.39%; VIX 24.63). After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high. The structure is still bearish unless 7373 holds as the reclaim. Holding 7373 targets 7390, then 7414 (VIX filter 22.76 for the 7414 upside case). Losing 7373 targets 7348–52. Losing 7348–52 targets 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 downside case). Two sweeps of 7305–09 both recovered, so 7320–23 remains the line into Friday's OpEx. Every expiry is negative gamma; SPY and SPX both sit on their weekly floors (730 / 7300). The unpadded plan band is 7305.25–7398 (Wednesday regular session 7305.25–7388.75 union the after-hours range 7332–7398). Padded by 0.25 × Thursday's implied move (SPX ±1.09%, about 80 points) to about 7285–7418. 7414 sits just inside the padded band; 7245 is below it. ES ≈ SPX + 19.5 from Wednesday's regular-session median. Jobless claims and Philly Fed are at 5:30 AM PT; Fed Jefferson 6:25 AM PT; Fed Goolsbee and the Anthropic debut around 9:30 AM PT — no new size into the IPO open; 10-year bond sale at 10:00 AM PT."
   },
-  "overnight_bias": "After the 3:59 PM ET close at 7340.25, ES has traded 7332–7350 so far, last 7345.75 at 1:28 PM PT, still around the 7348–52 pivot · Wednesday RTH 7305.25–7388.75",
+  "overnight_bias": "After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high · Wednesday RTH 7305.25–7388.75",
   "key_levels": [
     {
-      "price": 7388,
-      "note": "ES 7388 resistance — Wednesday high; next on a reclaim of 7372–73, then 7421 (bull/bear line, just outside the plan band)"
+      "price": 7414,
+      "note": "ES 7414 resistance — upside target if 7373 holds and 7390 is cleared; VIX filter 22.76 for the 7414 upside case. Just inside the padded plan band."
     },
     {
-      "price": 7372,
-      "note": "ES 7372–73 resistance — must reclaim to work higher; Wednesday's first support and prior value. A hold opens 7388, then 7421"
+      "price": 7390,
+      "note": "ES 7390 resistance — first target if 7373 holds as the reclaim."
     },
     {
-      "price": 7363,
-      "note": "ES 7363 resistance — first target off the 7305–09 Failed Breakdown, already tagged on Wednesday's bounce"
+      "price": 7373,
+      "note": "ES 7373 main pivot — the reclaim line. Hold for 7390, then 7414; a loss opens the secondary pivot at 7348–52."
     },
     {
       "price": 7350,
-      "note": "ES 7348–52 pivot — Wednesday's midpoint (7388.75 / 7305.25 → 7347) and the 7351–52 shelf. Hold for 7372–73 then 7388; a break opens 7320–23"
+      "note": "ES 7348–52 secondary pivot — Wednesday's midpoint (7388.75 / 7305.25 → 7347) and the 7351–52 shelf, below the main 7373 pivot. Lose 7373 and this is the target; a loss here opens 7320–23, then 7305."
     },
     {
       "price": 7320,
-      "note": "ES 7320–23 support — the shelf traded all week and the Failed Breakdown zone (SPX 7300 put wall ≈ ES 7320). The line into Friday's OpEx; a break opens 7305–09"
+      "note": "ES 7320–23 support — the shelf traded all week and the Failed Breakdown zone (SPX 7300 put wall ≈ ES 7320). The line into Friday's OpEx; a break opens 7305–09."
     },
     {
       "price": 7305,
-      "note": "ES 7305–09 support — Tuesday and Wednesday lows, swept twice and recovered. Acceptance below (a lost Failed Breakdown) opens 7275, which sits just under the plan band, then SPX 7250 / ES ≈ 7270"
+      "note": "ES 7305–09 support — Tuesday and Wednesday lows, swept twice and recovered. Acceptance below opens 7245 (VIX filter 26.36 for the 7245 downside case), which sits below the plan band."
     }
   ],
   "path": {
-    "bull": "Hold 7348–52 and reclaim 7372–73 → 7388, then 7421; acceptance above 7421 opens 7455, then 7519 (targets only, outside the plan band).",
-    "bear": "Lose 7320 and accept below 7305 (a lost Failed Breakdown) → 7275, then SPX 7250 / ES ≈ 7270 (targets only, below the plan band)."
+    "bull": "Hold 7373 → 7390, then 7414 (VIX filter 22.76 for the 7414 upside case).",
+    "bear": "Lose 7373 → 7348–52. Lose 7348–52 → 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 downside case; 7245 is a path target only, below the plan band)."
   },
   "actionable": [
-    "Hold 7348–52 and reclaim 7372–73 for 7388, then 7421. Acceptance above 7421 opens 7455.",
-    "Lose 7320 and accept below 7305 (a lost Failed Breakdown) and the path is 7275, then SPX 7250 / ES ≈ 7270.",
-    "7340–7360 is chop — skip the middle.",
+    "Hold 7373 → 7390, then 7414. VIX filter 22.76 for the 7414 upside case.",
+    "Lose 7373 → 7348–52, the secondary pivot.",
+    "Lose 7348–52 → 7320–23, 7305, then 7245. VIX filter 26.36 for the 7245 downside case. Acceptance below 7348–52 invalidates the 7373 reclaim.",
     "Jobless claims and Philly Fed 5:30 AM PT.",
     "Fed Jefferson 6:25 AM PT.",
     "Fed Goolsbee 9:30 AM PT. Anthropic debut around the same time — no new size into the IPO open.",
@@ -50,11 +50,11 @@
   ],
   "long_story_short": {
     "for_session": "2026-11-19",
-    "headline": "Thu 11/19 — 7348–52 is the pivot · claims and Philly Fed 5:30 AM PT · 10-year bond sale 10:00 AM PT",
-    "context": "Wednesday sold from 7388.75 to 7305.25, a second sweep of Tuesday's 7308–09 low, then recovered through 7320–23. Close 7340.25 (SPX 7323.64, SPY 730.20, first close under the 200-day). After hours ES has traded 7332–7350 so far, last 7345.75 at 1:28 PM PT. The unpadded plan band is 7305.25–7388.75, padded by 0.25 × Thursday's implied move to about 7285–7409. ES ≈ SPX + 19.5 from Wednesday's regular-session median. Structure is still bearish until 7372–73, then 7388 and 7421, are reclaimed. 7320–23 is the line into Friday's OpEx.",
-    "levels": "7388 / 7372–73 / 7363 above; 7348–52 pivot; 7320–23 / 7305–09 below. 7421, 7455, 7275 and SPX 7250 / ES ≈ 7270 are path targets only, outside the plan band.",
-    "bearish": "Lose 7320 and accept below 7305 (a lost Failed Breakdown) → 7275, then SPX 7250 / ES ≈ 7270. Every expiry is negative gamma; SPY and SPX sit on their weekly floors.",
-    "bullish": "Hold 7348–52 and reclaim 7372–73 → 7388, then 7421. Acceptance above 7421 opens 7455. Two sweeps of 7305–09 both recovered.",
-    "general": "7340–7360 is chop — skip the middle. No new size into the Anthropic debut around 9:30 AM PT. Claims and Philly Fed 5:30 AM PT; 10-year bond sale 10:00 AM PT."
+    "headline": "Thu 11/19 — 7373 is the main pivot, 7348–52 the secondary · claims and Philly Fed 5:30 AM PT · 10-year bond sale 10:00 AM PT",
+    "context": "Wednesday sold from 7388.75 to 7305.25, a second sweep of Tuesday's 7308–09 low, then recovered through 7320–23. Close 7340.25 (SPX 7323.64, SPY 730.20, first close under the 200-day). After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high. The unpadded plan band is 7305.25–7398, padded by 0.25 × Thursday's implied move to about 7285–7418. ES ≈ SPX + 19.5 from Wednesday's regular-session median. 7373 is the main reclaim; 7348–52 is the secondary pivot below it.",
+    "levels": "7414 / 7390 above; 7373 main pivot; 7348–52 secondary pivot; 7320–23 / 7305–09 below. 7245 is a path target only, below the plan band. VIX filter: 22.76 for the 7414 upside case, 26.36 for the 7245 downside case.",
+    "bearish": "Lose 7373 → 7348–52. Lose 7348–52 → 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 case). Every expiry is negative gamma; SPY and SPX sit on their weekly floors.",
+    "bullish": "Hold 7373 → 7390, then 7414 (VIX filter 22.76 for the 7414 case). After hours last 7393.75, above 7372–73 and above Wednesday's 7388.75 high.",
+    "general": "No new size into the Anthropic debut around 9:30 AM PT. Claims and Philly Fed 5:30 AM PT; 10-year bond sale 10:00 AM PT."
   }
 }

@@ -37,7 +37,7 @@ DAY BY DAY
 - Mon Nov 16 (done): trend day down; SPY −1.9%, ES through 7420–7390.
 - Tue Nov 17 (done): flush to ES 7309 and recovery; SPY −1.0% to 732.44; Nvidia beat and raised after the close; CEO not reinstated.
 - Wed Nov 18 (done): Nvidia bounce faded from 7388.75; second sweep of the lows to ES 7305 recovered; hawkish Fed minutes; SPY −0.3% to 730.20, first close under the 200-day average.
-- Thu Nov 19: jobless claims and Philadelphia Fed 5:30 AM PT · Fed Jefferson 6:25 AM PT · Fed Goolsbee 9:30 AM PT · 10-year auction 10:00 AM PT. US–China–Russia leaders' meeting. Anthropic IPO expected. Ross Stores after the close.
+- Thu Nov 19: 7373 is the main ES pivot, 7348–52 the secondary. Hold 7373 → 7390, then 7414 (VIX filter 22.76). Lose 7373 → 7348–52. Lose 7348–52 → 7320–23, 7305, then 7245 (VIX filter 26.36). After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT. Jobless claims and Philadelphia Fed 5:30 AM PT · Fed Jefferson 6:25 AM PT · Fed Goolsbee 9:30 AM PT · 10-year bond sale 10:00 AM PT. US–China–Russia leaders' meeting. Anthropic IPO expected. Ross Stores after the close.
 - Fri Nov 20: monthly options expiration · Fed Waller 5:30 AM PT · Michigan consumer sentiment (Nov) · Fed Cook 9:15 AM PT.
 
 TRIGGERS / IF-THEN
