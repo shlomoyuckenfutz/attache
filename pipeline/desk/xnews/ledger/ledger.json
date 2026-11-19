@@ -1,104 +1,97 @@
 {
- "date": "2026-11-17",
- "title": "Tuesday SPY close review",
- "base": "Ripe for a bounce tomorrow after tagging the 200DMA, with NVDA holding after earnings. Target is the 739.72/739.73 dark-pool cluster, which would recapture the 733 and 738 clusters; stretch is a retest of the 10DMA within two sessions. Bounce is expected to be a lower high that rolls over, potentially by Thursday into 725 OpEx gamma. Will sell calls at the first hint of trouble.",
- "alternative": "The alternative path is asia demolishes this after hours rally action and we break the 200DMA.",
- "trigger": "\u2014",
+ "date": "2026-11-18",
+ "title": "Wednesday 11/18 SPY close review",
+ "base": "Expects the Anthropic IPO to give a decent pop Thursday that institutions holding pre-IPO shares sell into, so any rally may be short-lived. Likely peak is the 738.73/739.72 dark-pool cluster, stretch 744 (10DMA), and a rejection at one of them. 725 stays the magnet for Friday's monthly expiration (gamma, vanna and charm), or 725 pulls price down to pin at 730. SPY's first close under the 200DMA since April is the red flag; does not see more than a session or two above it. The 729.26 dark pool held again; a new $1.1B dark pool at 732.21, above the close and below the 200DMA, likely sells, next to 11/17's 732.14. Pre-IPO price action likely fake, after likely irrational.",
+ "alternative": "The IPO is a big enough success to retake the 10DMA (744), opening a larger, more violent rally with staying power, capped at 754.",
+ "trigger": "Retake of the 10DMA (744) flips to the larger-rally path.",
  "direction": "UP",
  "levels": [
   {
    "spy": 775.0,
-   "es": 7819.44,
+   "es": 7793.64,
    "kind": "WALL",
    "n": 1,
    "in_take": false
   },
   {
-   "spy": 758.48,
-   "es": 7652.76,
+   "spy": 754.0,
+   "es": 7582.46,
    "kind": "PRICE",
    "n": 1,
-   "in_take": false
+   "in_take": true
   },
   {
-   "spy": 739.73,
-   "es": 7463.58,
-   "kind": "DARK POOL",
-   "n": 2,
+   "spy": 744.0,
+   "es": 7481.9,
+   "kind": "MA",
+   "n": 1,
    "in_take": true
   },
   {
    "spy": 739.72,
-   "es": 7463.48,
-   "kind": "OI/MAGNET",
-   "n": 2,
-   "in_take": true
-  },
-  {
-   "spy": 738.0,
-   "es": 7446.12,
-   "kind": "PRICE",
+   "es": 7438.86,
+   "kind": "DARK POOL",
    "n": 1,
    "in_take": true
   },
   {
-   "spy": 733.0,
-   "es": 7395.67,
-   "kind": "PRICE",
+   "spy": 738.73,
+   "es": 7428.9,
+   "kind": "DARK POOL",
    "n": 1,
    "in_take": true
+  },
+  {
+   "spy": 732.21,
+   "es": 7363.33,
+   "kind": "DARK POOL",
+   "n": 1,
+   "in_take": false
   },
   {
    "spy": 732.14,
-   "es": 7387.0,
+   "es": 7362.63,
    "kind": "DARK POOL",
    "n": 1,
    "in_take": false
   },
   {
    "spy": 730.0,
-   "es": 7365.4,
+   "es": 7341.11,
    "kind": "WALL",
-   "n": 1,
-   "in_take": false
+   "n": 2,
+   "in_take": true
   },
   {
    "spy": 729.26,
-   "es": 7357.94,
+   "es": 7333.67,
    "kind": "DARK POOL",
    "n": 1,
    "in_take": false
   },
   {
    "spy": 725.0,
-   "es": 7314.96,
+   "es": 7290.83,
    "kind": "WALL",
-   "n": 3,
+   "n": 5,
    "in_take": true
   },
   {
    "spy": 720.0,
-   "es": 7264.51,
+   "es": 7240.55,
    "kind": "WALL",
-   "n": 1,
-   "in_take": false
-  },
-  {
-   "spy": 710.0,
-   "es": 7163.61,
-   "kind": "PRICE",
    "n": 1,
    "in_take": false
   },
   {
    "spy": 700.0,
-   "es": 7062.72,
+   "es": 7039.42,
    "kind": "WALL",
    "n": 1,
    "in_take": false
   }
  ],
- "factor": 0.099112,
+ "factor": 0.09944,
  "history": [
   {
    "date": "2026-10-07",
@@ -299,6 +292,13 @@
   {
    "date": "2026-11-17",
    "call": "UP",
+   "next": "2026-11-18",
+   "pct": -0.31,
+   "hit": false
+  },
+  {
+   "date": "2026-11-18",
+   "call": "UP",
    "next": null,
    "pct": null,
    "hit": null
@@ -306,10 +306,11 @@
  ],
  "hit_rate": {
   "hits": 15,
-  "n": 28,
-  "rate": 53.6
+  "n": 29,
+  "rate": 51.7
  },
- "built": "2026-11-17",
+ "built": "2026-11-18",
  "intraday": [],
- "intraday_date": null
+ "intraday_date": null,
+ "curated": true
 }
