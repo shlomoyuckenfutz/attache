@@ -1,23 +1,23 @@
 {
- "score": -73,
+ "score": -82,
  "label": "BEARISH",
- "px": 715.66,
- "asof": "11-19 14:53 PT",
+ "px": 714.96,
+ "asof": "11-19 15:47 PT",
  "feed": "delayed",
- "built": "11-19 14:53 PT",
+ "built": "11-19 15:47 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": -1,
-   "x": "715.66 vs 724.88",
+   "x": "714.96 vs 724.22",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": 0,
-   "x": "9=715.41 21=715.49",
+   "v": -1,
+   "x": "9=714.94 21=715.12",
    "w": 1.0
   },
   {
@@ -38,7 +38,7 @@
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
    "v": -1,
-   "x": "715.66 vs pivot 730.71",
+   "x": "714.96 vs pivot 730.71",
    "w": 1.0
   },
   {
@@ -52,7 +52,7 @@
    "k": "DARK POOL",
    "d": "dark-pool levels holding below vs overhead (\u00b11%)",
    "v": -1,
-   "x": "0 below / 4 above",
+   "x": "0 below / 3 above",
    "w": 1.5
   },
   {
