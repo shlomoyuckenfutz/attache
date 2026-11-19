@@ -1162,7 +1162,7 @@
       "qty": 1,
       "pts": null,
       "pt_val": null,
-      "strike": 7385,
+      "strike": 325,
       "entry": 0.37,
       "q_out": 0.78,
       "exit": 1.3,
@@ -1273,11 +1273,11 @@
       "strike": 7370,
       "entry": 0.98,
       "q_out": 1.27,
-      "exit": null,
+      "exit": 1.27,
       "q_out_pl": 29.0,
-      "net": null,
+      "net": 29.0,
       "risk": 50.0,
-      "equity": null
+      "equity": 18789.97
     },
     {
       "date": "2026-11-18",
@@ -1294,8 +1294,8 @@
       "exit": 6.9,
       "q_out_pl": 95.0,
       "net": 95.0,
-      "risk": null,
-      "equity": 18855.97
+      "risk": 250.0,
+      "equity": 18884.97
     },
     {
       "date": "2026-11-18",
@@ -1309,11 +1309,29 @@
       "strike": 7325,
       "entry": 5.45,
       "q_out": 6.7,
-      "exit": null,
+      "exit": 9.3,
       "q_out_pl": 125.0,
-      "net": null,
-      "risk": null,
-      "equity": null
+      "net": 385.0,
+      "risk": 400.0,
+      "equity": 19269.97
+    },
+    {
+      "date": "2026-11-18",
+      "sym": "/ES",
+      "root": "ES",
+      "inst": "Futures",
+      "side": "Long",
+      "qty": 1,
+      "pts": null,
+      "pt_val": 50,
+      "strike": 7338,
+      "entry": 7338,
+      "q_out": 7348,
+      "exit": 7383,
+      "q_out_pl": 500.0,
+      "net": 2250.0,
+      "risk": 500.0,
+      "equity": 21519.97
     }
   ]
 }

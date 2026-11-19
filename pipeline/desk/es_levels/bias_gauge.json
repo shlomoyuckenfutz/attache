@@ -1,23 +1,23 @@
 {
- "score": -62,
- "label": "BEARISH",
- "px": 730.63,
- "asof": "11-18 12:40 PT",
+ "score": -10,
+ "label": "NEUTRAL",
+ "px": 733.62,
+ "asof": "11-18 16:25 PT",
  "feed": "delayed",
- "built": "11-18 12:57 PT",
+ "built": "11-18 16:25 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
-   "v": -1,
-   "x": "730.63 vs 730.90",
+   "v": 1,
+   "x": "733.62 vs 729.94",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": 0,
-   "x": "9=730.42 21=730.63",
+   "v": 1,
+   "x": "9=733.58 21=732.92",
    "w": 1.0
   },
   {
@@ -30,50 +30,36 @@
   {
    "k": "ON RANGE",
    "d": "price vs overnight / pre-market high-low",
-   "v": -1,
-   "x": "732.54\u2013737.39",
+   "v": 0,
+   "x": "729.78\u2013739.58",
    "w": 1.0
   },
   {
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "730.63 vs flip 747.0",
+   "x": "733.62 vs flip 746.66",
    "w": 1.0
   },
   {
    "k": "FB \u00b7 QQQ",
    "d": "QQQ price vs desk gamma flip (all exp)",
    "v": -1,
-   "x": "659.30 vs 665.74",
+   "x": "665.80 vs 667.04",
    "w": 0.75
   },
   {
    "k": "DEALER DELTA",
    "d": "SPY dealer-pressure delta lean (\u22121\u2026+1; \u00b10.10 dead zone)",
    "v": -1,
-   "x": "-0.75",
+   "x": "-0.78",
    "w": 0.75
-  },
-  {
-   "k": "FB \u00b7 SPY",
-   "d": "price vs First Blade pivot",
-   "v": -1,
-   "x": "730.63 vs pivot 733.05",
-   "w": 1.0
-  },
-  {
-   "k": "FB \u00b7 LEAN",
-   "d": "First Blade stated lean",
-   "v": -1,
-   "x": "bearish",
-   "w": 0.5
   },
   {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
-   "v": -1,
-   "x": "730.04\u2013732.22",
+   "v": 0,
+   "x": "722.0\u2013744.0",
    "w": 1.0
   },
   {
@@ -86,13 +72,13 @@
   {
    "k": "NEWS",
    "d": "news-plan bias",
-   "v": 0,
-   "x": "NEUTRAL",
+   "v": -1,
+   "x": "BEARISH",
    "w": 1.0
   }
  ],
  "news": {
-  "dir": "NEUTRAL",
-  "why": "Wednesday opens just above the 7373 pivot after a two-day selloff. Monday was a trend day down (SPY \u22121.9%). Tuesday flushed ES to 7308\u201309, under the Nov 5 low at 7323, then recovered. ES closed 7363.50 (SPX 7340.54, SPY 732.44, right on the 200-day average). After the close Nvidia beat and raised; ES ran to 7434.75 before fading to 7376 at 8:02 PM PT, a few points above 7373. The structure is still bearish: negative gamma on every expiry through December, and no bounce counts as a structural reclaim until 7421, then 7455. A hold of 7373 opens 7390, then 7414 (weekly VWAP), then 7421. Failure of 7373 opens 7348, then 7316; acceptance below 7308\u201309 opens 7275, which sits below the plan band. The unpadded plan band is 7308\u20137437 (Tuesday regular session union the post-close range), padded by 0.25 \u00d7 today's implied move (SPX \u00b11.06%, about 77 points) to about 7289\u20137456. ES \u2248 SPX + 22.97 from Tuesday's official closes. Wednesday is VIX expiration (morning settlement); Fed minutes are at 11:00 AM PT."
+  "dir": "BEARISH",
+  "why": "Thursday's pivot is 7348\u201352: Wednesday's midpoint (7388.75 / 7305.25 \u2192 7347) and the 7351\u201352 shelf, the first target off the 7305\u201309 Failed Breakdown. The structure is still bearish and basing. Wednesday opened 7371 after an overnight high of 7434.75, topped 7388.75, then sold to 7305.25 \u2014 a second sweep of Tuesday's 7308\u201309 low \u2014 and recovered again through the 7320\u201323 / Nov 5 7323 zone. ES closed 7340.25 at 3:59 PM ET (SPX 7323.64, \u22120.23%; SPY 730.20, \u22120.31%, first close under the 200-day average; QQQ 659.51, +0.39%; VIX 24.63). After the close ES has traded 7332\u20137350 so far, last 7345.75 at 1:28 PM PT, still around the 7348\u201352 pivot. Two sweeps of 7305\u201309 both recovered, so 7320\u201323 is the line into Friday's OpEx. Every expiry is negative gamma; SPY and SPX both sit on their weekly floors (730 / 7300). A hold of 7348\u201352 and a reclaim of 7372\u201373 opens 7388, then 7421 (the bull/bear line, just outside the plan band). Acceptance above 7421 opens 7455. Lose 7320 and accept below 7305 (a lost Failed Breakdown) and the path is 7275, then SPX 7250 / ES \u2248 7270, both below the plan band. 7340\u20137360 is chop \u2014 skip the middle. The unpadded plan band is 7305.25\u20137388.75 (Wednesday regular session union the after-hours range so far, 7332\u20137350). Padded by 0.25 \u00d7 Thursday's implied move (SPX \u00b11.09%, about 80 points) to about 7285\u20137409. ES \u2248 SPX + 19.5 from Wednesday's regular-session median. Jobless claims and Philly Fed are at 5:30 AM PT; Fed Jefferson 6:25 AM PT; Fed Goolsbee and the Anthropic debut around 9:30 AM PT \u2014 no new size into the IPO open; 10-year bond sale at 10:00 AM PT."
  }
 }
