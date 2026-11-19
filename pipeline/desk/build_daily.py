@@ -234,7 +234,7 @@ def catalysts(plan):
     if re.search(r"FOMC", bias + " ".join(acts), re.I):
         out.append("FOMC decision <b>2:00</b> PM ET / <b>11:00</b> AM PT — first reaction often the trap; size light")
     for a in acts:
-        if re.search(r"MSFT|GOOG|FDX|INTC|AMZN|SNDK|earnings|GDP|PCE|Claims|ECI|CPI|PPI|auction|minutes|housing|permits|VIX|TJX|pending|bond sale", a, re.I):
+        if re.search(r"MSFT|GOOG|FDX|INTC|AMZN|SNDK|earnings|GDP|PCE|Claims|ECI|CPI|PPI|auction|minutes|housing|permits|VIX|TJX|pending|bond sale|Waller|Michigan|Cook|options expiration", a, re.I):
             out.append(sanitize_text(a))
     # dedupe
     seen, uniq = set(), []
@@ -299,7 +299,7 @@ def charts_html(site: Path, plan_date: str, score: dict | None):
     return (f'<section class="sec" id="plan-charts"><h2>PLAN ON THE CHART</h2>'
             f'<p>{mode}. Same weekly layout: last week of 30m bars with the plan levels drawn on. '
             f'Red = resistance, green = support, amber = pivot, shaded = key zones. '
-            f'Dashed lines = bull / bear paths across Mon to Fri; purple ticks = PPI Fri 5:30 AM PT (edge only). '
+            f'Dashed lines = bull / bear paths across Mon to Fri; purple ticks = event times (edge only). '
             f'Bright candles in the MON..FRI columns = actual price action since the plan was made.{arch} Tap a chart to enlarge.</p>'
             f'{sc_html}<div class="chg">{figs}</div></section>')
 

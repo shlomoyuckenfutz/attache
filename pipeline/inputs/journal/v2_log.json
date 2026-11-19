@@ -1316,7 +1316,7 @@
       "equity": 19269.97
     },
     {
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "sym": "/ES",
       "root": "ES",
       "inst": "Futures",
@@ -1546,7 +1546,7 @@
       "exit": 5.85,
       "q_out_pl": 55.0,
       "net": 130.0,
-      "risk": null,
+      "risk": 250.0,
       "equity": 24576.97
     },
     {
@@ -1564,7 +1564,7 @@
       "exit": 7338,
       "q_out_pl": 500.0,
       "net": 1500.0,
-      "risk": null,
+      "risk": 500.0,
       "equity": 26076.97
     },
     {
@@ -1582,7 +1582,7 @@
       "exit": 3.54,
       "q_out_pl": 42.0,
       "net": 145.0,
-      "risk": null,
+      "risk": 100.0,
       "equity": 26221.97
     },
     {
@@ -1600,7 +1600,7 @@
       "exit": 3.1,
       "q_out_pl": 75.0,
       "net": 75.0,
-      "risk": null,
+      "risk": 115.0,
       "equity": 26296.97
     },
     {
@@ -1618,7 +1618,7 @@
       "exit": 1.52,
       "q_out_pl": 46.0,
       "net": 65.0,
-      "risk": null,
+      "risk": 40.0,
       "equity": 26361.97
     },
     {
@@ -1636,7 +1636,7 @@
       "exit": 6.4,
       "q_out_pl": 85.0,
       "net": 85.0,
-      "risk": null,
+      "risk": 300.0,
       "equity": 26446.97
     },
     {
@@ -1654,7 +1654,7 @@
       "exit": 0.45,
       "q_out_pl": -105.0,
       "net": -150.0,
-      "risk": null,
+      "risk": 90.0,
       "equity": 26296.97
     },
     {
@@ -1672,7 +1672,7 @@
       "exit": 10.15,
       "q_out_pl": 80.0,
       "net": 515.0,
-      "risk": null,
+      "risk": 250.0,
       "equity": 26811.97
     },
     {
@@ -1690,7 +1690,7 @@
       "exit": 7287,
       "q_out_pl": 1250.0,
       "net": 2450.0,
-      "risk": null,
+      "risk": 500.0,
       "equity": 29261.97
     },
     {
@@ -1708,7 +1708,7 @@
       "exit": 21.7,
       "q_out_pl": 435.0,
       "net": 935.0,
-      "risk": null,
+      "risk": 300.0,
       "equity": 30196.97
     },
     {
@@ -1726,7 +1726,7 @@
       "exit": 8.65,
       "q_out_pl": 145.0,
       "net": 145.0,
-      "risk": null,
+      "risk": 350.0,
       "equity": 30341.97
     },
     {
@@ -1744,7 +1744,7 @@
       "exit": 7.75,
       "q_out_pl": 305.0,
       "net": 305.0,
-      "risk": null,
+      "risk": 265.0,
       "equity": 30646.97
     },
     {
@@ -1762,7 +1762,7 @@
       "exit": 6.2,
       "q_out_pl": 55.0,
       "net": 55.0,
-      "risk": null,
+      "risk": 375.0,
       "equity": 30701.97
     },
     {
@@ -1777,11 +1777,11 @@
       "strike": 7200,
       "entry": 3.05,
       "q_out": 3.7,
-      "exit": null,
+      "exit": 4.55,
       "q_out_pl": 65.0,
-      "net": null,
-      "risk": null,
-      "equity": null
+      "net": 150.0,
+      "risk": 305.0,
+      "equity": 30851.97
     }
   ]
 }

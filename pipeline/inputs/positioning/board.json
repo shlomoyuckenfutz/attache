@@ -1,208 +1,173 @@
 {
  "schema": 1,
- "asof": "2026-11-18",
- "asof_label": "Wed 11/18 close",
- "note": "Options positioning read at the Wed 11/18 close, re-read Wed evening ~5:15 PM PT on the same open interest (open interest refreshes before the next open, so walls can move overnight). Descriptive only, not a forecast. 'Magnet' = biggest gamma strike for that expiry. Regime = price at the close vs that expiry's flip (NEG where no flip was shown: negative gamma the whole way). All expiries combined: SPY floor moved 725 → 700 this evening (ceiling 775, flip 758.2); QQQ ceiling 679 (was 700), floor 650; SPX floor 7300, ceiling 7800. Weekly map (Nov 16–20): SPY floor 730 · flip 758.08 · ceiling 775; QQQ floor 650 · ceiling 679 (no flip shown); SPX floor 7300 · flip 7698.08 · ceiling 7800; VIX wall 30 (was 25). Call walls came down this evening (SPY Fri 770 → 755, QQQ Thu 680 → 665, SPX Fri 7700 → 7480). SPX 11/19 call wall 7310 sits below price (not a ceiling from here); SPX 11/27 put wall 7400 sits above price (not a floor). After hours SPY 735.67 traded above its Thu flip 734.9 and QQQ 668.66 sat at its Thu flip 668.9. Fri 11/20 is the weekly and monthly expiration. Put walls not shown for some expiries are awaiting update. /ES levels are SPX levels converted with the Wed session basis (ES − SPX median during the regular session).",
+ "asof": "2026-11-19",
+ "asof_label": "Thu 11/19 close",
+ "note": "Options positioning read at the Thu 11/19 close (board price held at the close after hours; open interest refreshes before the next open, so walls can move overnight). Descriptive only, not a forecast. 'Magnet' = biggest gamma strike for that expiry. Regime = price at the close vs that expiry's flip (NEG where no flip was shown: negative gamma the whole way). All expiries combined: SPY floor 700 (price about 2% above it), ceiling 765 (was 775), no flip; QQQ closed under its 650 level, ceiling 679; SPX biggest level moved 7300 → 7200 (price sits just under it), ceiling 7650 (was 7800), no flip. Weekly map (Nov 16–20): SPY floor 700 · ceiling 765; QQQ 650 · ceiling 679; SPX 7200 · ceiling 7650; no flips shown; VIX 28.48 sits on its 30 wall. Fri 11/20 is the weekly and monthly expiration: SPY put wall 715 (was 725) sits right at the close. SPX put walls not shown where the biggest negative-gamma strike is above price. /ES levels are SPX levels converted with the Thu session basis (ES − SPX median during the regular session).",
  "close": {
-  "SPX": 7323.64,
-  "SPY": 730.2,
-  "QQQ": 659.51,
-  "NDX": 27116.27
+  "SPX": 7175.84,
+  "SPY": 715.87,
+  "QQQ": 645.04,
+  "NDX": 26517.06
  },
  "basis": {
-  "ES_minus_SPX": 19.5,
+  "ES_minus_SPX": 19.1,
   "NQ_minus_NDX": null
  },
  "expiries": [
-  "2026-11-19",
   "2026-11-20",
+  "2026-11-23",
   "2026-12-18"
  ],
  "levels": {
   "SPX": {
-   "2026-11-19": {
-    "flip": 7558.1,
-    "magnet": 7360,
+   "2026-11-20": {
+    "flip": null,
+    "magnet": 7200,
     "put_wall": null,
-    "call_wall": 7310,
-    "net_gex": "-$4.4B",
+    "call_wall": 7625,
+    "net_gex": "-$37.7B",
     "regime": "NEG"
    },
-   "2026-11-20": {
-    "flip": 7593.1,
-    "magnet": 7300,
-    "put_wall": 7300,
-    "call_wall": 7480,
-    "net_gex": "-$33.9B",
+   "2026-11-23": {
+    "flip": 7520.5,
+    "magnet": 7250,
+    "put_wall": null,
+    "call_wall": 7500,
+    "net_gex": "-$3.6B",
     "regime": "NEG"
    },
    "2026-12-18": {
     "flip": null,
     "magnet": 7300,
-    "put_wall": 7300,
-    "call_wall": 7800,
-    "net_gex": "-$13.2B",
+    "put_wall": null,
+    "call_wall": 7325,
+    "net_gex": "-$15.3B",
     "regime": "NEG"
    }
   },
   "SPY": {
-   "2026-11-19": {
-    "flip": 734.9,
-    "magnet": 707,
-    "put_wall": 707,
-    "call_wall": 738,
-    "net_gex": "-$317.2M",
+   "2026-11-20": {
+    "flip": 756.1,
+    "magnet": 715,
+    "put_wall": 715,
+    "call_wall": 755,
+    "net_gex": "-$8.9B",
     "regime": "NEG"
    },
-   "2026-11-20": {
-    "flip": 758.6,
-    "magnet": 725,
-    "put_wall": 725,
-    "call_wall": 755,
-    "net_gex": "-$9.0B",
+   "2026-11-23": {
+    "flip": 735.7,
+    "magnet": 709,
+    "put_wall": 709,
+    "call_wall": 747,
+    "net_gex": "-$349.6M",
     "regime": "NEG"
    },
    "2026-12-18": {
-    "flip": 756.1,
-    "magnet": 775,
-    "put_wall": 735,
-    "call_wall": 775,
-    "net_gex": "-$1.2B",
+    "flip": null,
+    "magnet": 700,
+    "put_wall": 700,
+    "call_wall": 750,
+    "net_gex": "-$1.9B",
     "regime": "NEG"
    }
   },
   "QQQ": {
-   "2026-11-19": {
-    "flip": 668.9,
-    "magnet": 664,
-    "put_wall": null,
+   "2026-11-20": {
+    "flip": 683.2,
+    "magnet": 640,
+    "put_wall": 640,
     "call_wall": 665,
-    "net_gex": "-$110.9M",
+    "net_gex": "-$2.1B",
     "regime": "NEG"
    },
-   "2026-11-20": {
-    "flip": 689.6,
+   "2026-11-23": {
+    "flip": 672.4,
+    "magnet": 645,
+    "put_wall": 645,
+    "call_wall": 666,
+    "net_gex": "-$107.1M",
+    "regime": "NEG"
+   },
+   "2026-12-18": {
+    "flip": null,
     "magnet": 640,
     "put_wall": 640,
     "call_wall": 679,
     "net_gex": "-$1.2B",
     "regime": "NEG"
-   },
-   "2026-12-18": {
-    "flip": null,
-    "magnet": 640,
-    "put_wall": 640,
-    "call_wall": 705,
-    "net_gex": "-$801.7M",
-    "regime": "NEG"
    }
   },
   "NDX": {
-   "2026-11-19": {
-    "flip": 27236.6,
-    "magnet": 27650,
-    "put_wall": null,
-    "call_wall": 27700,
-    "net_gex": "-$17.0M",
+   "2026-11-20": {
+    "flip": 27987.7,
+    "magnet": 26200,
+    "put_wall": 26200,
+    "call_wall": 28250,
+    "net_gex": "-$1.1B",
     "regime": "NEG"
    },
-   "2026-11-20": {
-    "flip": 28101.6,
-    "magnet": 27000,
-    "put_wall": 27000,
-    "call_wall": 28250,
-    "net_gex": "-$743.6M",
+   "2026-11-23": {
+    "flip": null,
+    "magnet": 26500,
+    "put_wall": 26500,
+    "call_wall": 27225,
+    "net_gex": "-$116.4M",
     "regime": "NEG"
    },
    "2026-12-18": {
     "flip": null,
     "magnet": 27000,
-    "put_wall": 27000,
-    "call_wall": 29000,
-    "net_gex": "-$1.1B",
+    "put_wall": null,
+    "call_wall": 26775,
+    "net_gex": "-$1.3B",
     "regime": "NEG"
    }
   }
  },
  "weekly_em": {
   "expiry": "2026-11-20",
-  "asof_label": "Wed 11/18 close",
+  "asof_label": "Thu 11/19 close",
   "rows": [
    {
     "symbol": "SPX",
-    "pct": 1.64,
-    "lower": 7203.19,
-    "upper": 7444.09
+    "pct": 1.14,
+    "lower": 7093.8,
+    "upper": 7257.88
    },
    {
     "symbol": "SPY",
-    "pct": 1.96,
-    "lower": 715.88,
-    "upper": 744.52
+    "pct": 1.78,
+    "lower": 703.14,
+    "upper": 728.6
    },
    {
     "symbol": "QQQ",
-    "pct": 3.21,
-    "lower": 638.33,
-    "upper": 680.69
+    "pct": 2.66,
+    "lower": 627.89,
+    "upper": 662.19
    },
    {
     "symbol": "NDX",
-    "pct": 2.76,
-    "lower": 26368.09,
-    "upper": 27864.45
+    "pct": 1.71,
+    "lower": 26064.35,
+    "upper": 26969.77
    }
   ]
  },
  "calendar": [
   {
-   "date": "2026-11-19",
-   "utc": "2026-11-19T13:30:00Z",
-   "pt": "5:30 AM PT",
-   "name": "Jobless claims",
-   "detail": "Weekly initial claims · Philadelphia Fed index (Nov)"
-  },
-  {
-   "date": "2026-11-19",
-   "utc": "2026-11-19T14:25:00Z",
-   "pt": "6:25 AM PT",
-   "name": "Fed Jefferson",
-   "detail": "Fed Vice Chair Jefferson speaks"
-  },
-  {
-   "date": "2026-11-19",
-   "utc": "2026-11-19T14:30:00Z",
-   "pt": "6:30 AM PT",
-   "name": "Anthropic IPO debut",
-   "detail": "First trade TBD · cash open 6:30 AM PT · price $83.00, above the $70–78 range (as of 5:23 PM PT Wed 11/18) · 980,000,000 Class A shares offered (956,351,354 company / 23,648,646 selling stockholders; as of 5:23 PM PT Wed 11/18) · about $81 billion raised, upsized (as of 5:24 PM PT Wed 11/18) · implied valuation TBD (as of 5:26 PM PT Wed 11/18) · ticker ANT, Nasdaq Global Select Market (as of 5:23 PM PT Wed 11/18) · about $500 billion in orders (as of 7:18 AM PT Wed 11/18) · options expected Monday at the earliest, none Thursday (as of 1:30 PM PT Wed 11/18)"
-  },
-  {
-   "date": "2026-11-19",
-   "utc": "2026-11-19T17:30:00Z",
-   "pt": "9:30 AM PT",
-   "name": "Fed Goolsbee",
-   "detail": "Fed Goolsbee speaks · US–China–Russia leaders' meeting"
-  },
-  {
-   "date": "2026-11-19",
-   "utc": "2026-11-19T18:00:00Z",
-   "pt": "10:00 AM PT",
-   "name": "10-year auction",
-   "detail": "US Treasury 10-year auction · Ross Stores after the close"
-  },
-  {
    "date": "2026-11-20",
-   "utc": "2026-11-20T13:30:00Z",
-   "pt": "5:30 AM PT",
+   "utc": "2026-11-20T13:25:00Z",
+   "pt": "5:25 AM PT",
    "name": "Fed Waller",
-   "detail": "Fed Waller speaks · monthly options expiration today"
+   "detail": "Fed Governor Waller, welcoming remarks · monthly options expiration today"
   },
   {
    "date": "2026-11-20",
-   "utc": "2026-11-20T15:50:00Z",
-   "pt": "7:50 AM PT",
+   "utc": "2026-11-20T15:00:00Z",
+   "pt": "7:00 AM PT",
    "name": "Michigan sentiment",
-   "detail": "University of Michigan consumer sentiment (Nov)"
+   "detail": "University of Michigan consumer sentiment and inflation expectations, final (Nov)"
   },
   {
    "date": "2026-11-20",
@@ -220,16 +185,16 @@
   }
  ],
  "flow": {
-  "scope": "options tape, all names, Wed 11/18 session",
-  "net": "+$117M",
+  "scope": "options tape, all names, Thu 11/19 session",
+  "net": "+$21.2M",
   "lean": "bullish",
-  "prints": 14138,
-  "calls": "$390M",
-  "puts": "$823M",
-  "put_call": 1.43,
+  "prints": 17427,
+  "calls": "$438M",
+  "puts": "$1.3B",
+  "put_call": 1.83,
   "spy_notable": [],
-  "spy_directional": "Largest prints by premium: SPX 7900 put Dec '27 $16.5M (sold, two blocks) · SPX 7400 put Jan '27 $15.9M · SPX 7400 call Jan '27 $13.8M (bought) · SPX 7500 put Dec '27 $12.5M (sold) · SPX 7650–55 puts Dec 18 $4.1–4.2M (bought) · SPX 7000 call Nov 20 $4.1M (bought)",
-  "asof_label": "Wed 11/18"
+  "spy_directional": "Largest prints by premium: QQQ 705 put Nov 20 $82.2M · QQQ 710 puts Nov 20 $63.9M and $63.5M (sold) · QQQ 708 put Nov 20 $13.8M · SPX 4000 call Dec 18 $12.8M · QQQ 770 put Jan '27 $12.5M · SPY 740 puts Nov 24 / Nov 30 $6.9M / $6.5M (swept)",
+  "asof_label": "Thu 11/19"
  },
  "seasonality": {
   "SPY": {

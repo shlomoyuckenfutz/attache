@@ -103,33 +103,33 @@ PRIOR_DAY_NOTES = {
 PLAN_WEEK_FWD = [dt.date(2026, 11, 16), dt.date(2026, 11, 17), dt.date(2026, 11, 18),
                  dt.date(2026, 11, 19), dt.date(2026, 11, 20)]
 FWD_ZONES = {
-  "spy": {"bull": (733.0, 737.0), "bear": (727.0, 725.0),
-          "bull_lab": "733 → 737", "bear_lab": "below 727 → 725 floor"},
-  "es":  {"bull": (7373.0, 7388.0), "bear": (7320.0, 7305.0),
-          "bull_lab": "7373 → 7388", "bear_lab": "below 7320 → 7305"},
+  "spy": {"bull": (718.66, 725.0), "bear": (710.0, 703.14),
+          "bull_lab": "718.66 → 725", "bear_lab": "below 710 → 703.14 Fri range low"},
+  "es":  {"bull": (7240.0, 7270.0), "bear": (7168.0, 7126.0),
+          "bull_lab": "7240–45 → 7269–77", "bear_lab": "below 7168 → 7136–16"},
   "qqq": None,
   "nq":  None,
 }
 FWD_SPEC = {
- "es": dict(sym="ES=F", title="/ES  ·  week of Nov 16 (Mon–Wed actual · Thu–Fri plan, Wed 11/18 levels)", fut=True, lv=[
-   (7455,"R","7455 target"),(7421,"R","7421 bull/bear line"),(7388,"R","7388 Wed high"),(7373,"R","7372–73"),
-   (7350,"P","7348–52 Thu pivot"),(7320,"S","7320–23"),(7305,"S","7305–09 Tue/Wed lows"),(7275,"S","7275 target")],
-   zones=[], bull=[7350,7373,7388], bear=[7350,7320,7305]),
+ "es": dict(sym="ES=F", title="/ES  ·  week of Nov 16 (Mon–Thu actual · Fri plan, Thu 11/19 levels)", fut=True, lv=[
+   (7305,"R","7305–09 control line"),(7270,"R","7269–77"),(7240,"R","7240–45"),
+   (7215,"P","7210–20 Fri pivot"),(7192,"S","7192 Thu low"),(7168,"S","7168 after-hours low"),(7126,"S","7136–16")],
+   zones=[], bull=[7215,7240,7270], bear=[7215,7168,7126]),
  "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 16 (levels · no paths)", fut=True, lv=[
-   (27616,"R","27616"),(27343,"R","27343"),(27326,"R","27326 Wed high"),(27190,"P","27190 Wed close"),(27093,"S","27093"),(26922,"S","26922 Wed low")],
+   (26608.75,"R","26609 after-hours high"),(26589.25,"P","26589 Thu close"),(26436,"S","26436 after-hours low")],
    zones=[], bull=[], bear=[]),
- "spy": dict(sym="SPY", title="SPY  ·  week of Nov 16 (Mon–Wed actual · Thu–Fri plan, Wed 11/18 levels)", fut=False, lv=[
-   (741,"R","741"),(737,"R","737"),(735,"R","735 Wed high"),(732,"R","732 cap"),
-   (730.5,"P","730–731 pivot"),(727,"S","727 Tue/Wed lows"),(725,"S","725 floor · Fri put wall"),(720,"S","720")],
-   zones=[], bull=[730.5,733,737], bear=[730.5,727,725]),
+ "spy": dict(sym="SPY", title="SPY  ·  week of Nov 16 (Mon–Thu actual · Fri plan, Thu 11/19 levels)", fut=False, lv=[
+   (728.6,"R","728.60 Fri range high"),(725,"R","725"),(718.66,"R","718.66"),
+   (715.5,"P","715–716 Fri put wall · close"),(710,"S","710–708"),(703.14,"S","703.14 Fri range low"),(700,"S","700 floor")],
+   zones=[], bull=[715.5,718.66,725], bear=[715.5,710,703.14]),
  "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 16 (levels · no paths)", fut=False, lv=[
-   (680,"R","Fri call wall 679–680"),(672.69,"R","Thu EM high"),(662.8,"R","Wed high"),(657,"P","pivot"),(653,"S","Wed low"),(650,"S","weekly floor")],
+   (662.19,"R","Fri range high"),(650,"R","650 (now above price)"),(645,"P","645 Thu close"),(640,"S","640 Fri put wall"),(635,"S","635–632"),(627.89,"S","Fri range low")],
    zones=[], bull=[], bear=[]),
 }
-FWD_EVENT = {  # Thu: Anthropic IPO debut / Goolsbee 9:30 AM PT — edge ticks only
-  "day": dt.date(2026, 11, 19),
-  "label": "Anthropic IPO · Goolsbee Thu 9:30 AM PT",
-  "frac_fut": 0.8, "frac_cash": 0.45,
+FWD_EVENT = {  # Fri: Waller 5:25 AM PT / monthly OpEx — edge ticks only
+  "day": dt.date(2026, 11, 20),
+  "label": "Waller 5:25 AM PT · OpEx at the close",
+  "frac_fut": 0.55, "frac_cash": 0.1,
 }
 FWD_DAY_NOTES = {
   0: "trend dn",
@@ -138,8 +138,8 @@ FWD_DAY_NOTES = {
   3: "IPO",
   4: "OpEx",
 }
-FWD_BOX = ["bias: bearish structure under 7421 · Thu pivot 7348–52",
-           "catalysts: Thu claims 5:30 AM PT + Anthropic IPO · Fri Waller 5:30 AM PT + monthly OpEx"]
+FWD_BOX = ["bias: bearish under 7305–09 · Fri pivot 7210–20",
+           "catalysts: Fri Waller 5:25 AM PT · Michigan 7:00 AM PT · monthly OpEx at the close"]
 
 def _download(sym):
     """Free free_data 30m with extended hours; clean seam/garbage-wick artifacts."""

@@ -1,60 +1,64 @@
 {
-  "date": "2026-11-19",
-  "asof_pt": "Wed Nov 18 5:04 PM PT",
-  "asof": "Wed Nov 18 5:04 PM PT",
-  "session": "2026-11-19",
-  "title": "Yuckenfutz Tradez — Daily Plan — Thu Nov 19, 2026 (jobless claims · Philly Fed · 10-year bond sale)",
+  "date": "2026-11-20",
+  "asof_pt": "Thu Nov 19 2:45 PM PT",
+  "asof": "Thu Nov 19 2:45 PM PT",
+  "session": "2026-11-20",
+  "title": "Yuckenfutz Tradez — Daily Plan — Fri Nov 20, 2026 (monthly OpEx · Fed Waller · Michigan sentiment)",
   "bias": {
     "direction": "BEARISH",
-    "reason": "Thursday's main pivot is 7373, the reclaim line; 7348–52 stays as the secondary pivot below it. Wednesday opened 7371 after an overnight high of 7434.75, topped 7388.75, then sold to 7305.25 — a second sweep of Tuesday's 7308–09 low — and recovered again through the 7320–23 / Nov 5 7323 zone. ES closed 7340.25 at 3:59 PM ET (SPX 7323.64, −0.23%; SPY 730.20, −0.31%, first close under the 200-day average; QQQ 659.51, +0.39%; VIX 24.63). After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high. The structure is still bearish unless 7373 holds as the reclaim. Holding 7373 targets 7390, then 7414 (VIX filter 22.76 for the 7414 upside case). Losing 7373 targets 7348–52. Losing 7348–52 targets 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 downside case). Two sweeps of 7305–09 both recovered, so 7320–23 remains the line into Friday's OpEx. Every expiry is negative gamma; SPY and SPX both sit on their weekly floors (730 / 7300). The unpadded plan band is 7305.25–7398 (Wednesday regular session 7305.25–7388.75 union the after-hours range 7332–7398). Padded by 0.25 × Thursday's implied move (SPX ±1.09%, about 80 points) to about 7285–7418. 7414 sits just inside the padded band; 7245 is below it. ES ≈ SPX + 19.5 from Wednesday's regular-session median. Jobless claims and Philly Fed are at 5:30 AM PT; Fed Jefferson 6:25 AM PT; Fed Goolsbee 9:30 AM PT; Anthropic debut first trade TBD · cash open 6:30 AM PT — no new size into the IPO open; 10-year bond sale at 10:00 AM PT."
+    "reason": "Friday's pivot is 7210–20: Thursday's big intraday low area, with the biggest SPX gamma level for Friday's expiry, 7200, at about ES 7219. Thursday gapped up and failed: ES made an overnight high of 7440.5, opened 7411.5, topped 7436.5 at 6:34 AM PT, lost 7373 by 7:15 AM PT and 7305 by 7:37 AM PT, then sold to 7192 at 12:05 PM PT. Close 7194.25 at 12:59 PM PT (SPX 7175.84, −2.02%; SPY 715.87, −1.96%; QQQ 645.04, −2.19%; VIX 28.48, +15.9%). The S&P 500 fell for a sixth day. After hours ES traded 7167.75–7201, last 7182.50 at 1:59 PM PT, below 7192 (Thursday's regular-session low). Price is under the pivot, so the structure stays bearish until 7210–20 is recovered; 7305–09 (the Tue/Wed shelf of lows) is the line that would hand control back to bulls. Recovering 7210–20 targets 7240–45, then 7269–77. Failing under 7210–20 targets 7192, then 7168, then 7136–16 (SPY 710–708 and the bottom of Friday's expected range). Every expiry is negative gamma and SPX closed just under its 7200 level, so moves can stretch both ways; VIX 28.48 sits on its 30 wall, and a VIX break above 30 favours the downside case. The unpadded plan band is 7167.75–7436.5 (Thursday's regular session 7192–7436.5 plus the after-hours low). Friday's SPX expected range is 7093.80–7257.88 (±1.14%), about ES 7113–7277. ES ≈ SPX + 19.1 from Thursday's regular-session median. Fed Waller 5:25 AM PT; Michigan sentiment 7:00 AM PT; Fed Cook 9:15 AM PT; monthly options expiration at the 1:00 PM PT close."
   },
-  "overnight_bias": "After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high · Wednesday RTH 7305.25–7388.75",
+  "overnight_bias": "After hours ES traded 7167.75–7201, last 7182.50 at 1:59 PM PT, below 7192 (Thursday's regular-session low) · Thursday RTH 7192–7436.5 · overnight high 7440.5",
   "key_levels": [
     {
-      "price": 7414,
-      "note": "ES 7414 resistance — upside target if 7373 holds and 7390 is cleared; VIX filter 22.76 for the 7414 upside case. Just inside the padded plan band."
-    },
-    {
-      "price": 7390,
-      "note": "ES 7390 resistance — first target if 7373 holds as the reclaim."
-    },
-    {
-      "price": 7373,
-      "note": "ES 7373 main pivot — the reclaim line. Hold for 7390, then 7414; a loss opens the secondary pivot at 7348–52."
-    },
-    {
-      "price": 7350,
-      "note": "ES 7348–52 secondary pivot — Wednesday's midpoint (7388.75 / 7305.25 → 7347) and the 7351–52 shelf, below the main 7373 pivot. Lose 7373 and this is the target; a loss here opens 7320–23, then 7305."
-    },
-    {
-      "price": 7320,
-      "note": "ES 7320–23 support — the shelf traded all week and the Failed Breakdown zone (SPX 7300 put wall ≈ ES 7320). The line into Friday's OpEx; a break opens 7305–09."
-    },
-    {
       "price": 7305,
-      "note": "ES 7305–09 support — Tuesday and Wednesday lows, swept twice and recovered. Acceptance below opens 7245 (VIX filter 26.36 for the 7245 downside case), which sits below the plan band."
+      "note": "ES 7305–09 resistance — the Tue/Wed lows, lost Thursday at 7:37 AM PT. Recovering it is what would hand control back to bulls; SPX 7300 (the December monthly's biggest level) is about ES 7319."
+    },
+    {
+      "price": 7270,
+      "note": "ES 7269–77 resistance — SPX 7250 (Monday 11/23 expiry's biggest level) ≈ ES 7269, and the top of Friday's SPX expected range (7257.88) ≈ ES 7277. Second target if 7210–20 is recovered."
+    },
+    {
+      "price": 7240,
+      "note": "ES 7240–45 resistance — Thursday's 9:03 AM PT breakdown area and the first target above 7210–20."
+    },
+    {
+      "price": 7215,
+      "note": "ES 7210–20 pivot — Thursday's big low area (7210) and the 7220 shelf, with Friday's biggest SPX gamma level, 7200, at about ES 7219. Recover and hold for 7240–45; stay under it for 7192, then 7168."
+    },
+    {
+      "price": 7192,
+      "note": "ES 7192 support — Thursday's regular-session low (12:05 PM PT). SPY's Friday put wall 715 ≈ ES 7186 sits just below."
+    },
+    {
+      "price": 7168,
+      "note": "ES 7168 support — the after-hours low (1:48 PM PT). A loss opens 7136–16."
+    },
+    {
+      "price": 7126,
+      "note": "ES 7136–16 support — SPY 710–708 (SPY 709 is the Monday 11/23 put wall) and the bottom of Friday's SPX expected range (7093.80 ≈ ES 7113). SPY 700 (the all-expiry floor) ≈ ES 7036 is a target only, below the plan band."
     }
   ],
   "path": {
-    "bull": "Hold 7373 → 7390, then 7414 (VIX filter 22.76 for the 7414 upside case).",
-    "bear": "Lose 7373 → 7348–52. Lose 7348–52 → 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 downside case; 7245 is a path target only, below the plan band)."
+    "bull": "Recover 7210–20 → 7240–45, then 7269–77. Acceptance above 7277 opens 7305–09 (the control line).",
+    "bear": "Stay under 7210–20 → 7192, then 7168. Lose 7168 → 7136–16 (SPY 710–708). VIX above 30 favours this case; SPY 700 ≈ ES 7036 is a target only."
   },
   "actionable": [
-    "Hold 7373 → 7390, then 7414. VIX filter 22.76 for the 7414 upside case.",
-    "Lose 7373 → 7348–52, the secondary pivot.",
-    "Lose 7348–52 → 7320–23, 7305, then 7245. VIX filter 26.36 for the 7245 downside case. Acceptance below 7348–52 invalidates the 7373 reclaim.",
-    "Jobless claims and Philly Fed 5:30 AM PT.",
-    "Fed Jefferson 6:25 AM PT.",
-    "Fed Goolsbee 9:30 AM PT. Anthropic debut first trade TBD · cash open 6:30 AM PT — no new size into the IPO open.",
-    "10-year bond sale 10:00 AM PT. Ross Stores after the close."
+    "Recover and hold 7210–20 → 7240–45, then 7269–77.",
+    "Under 7210–20 → 7192, then 7168.",
+    "Lose 7168 → 7136–16 (SPY 710–708).",
+    "7305–09 is the control line; no bullish structure until it is recovered.",
+    "Fed Waller 5:25 AM PT.",
+    "Michigan sentiment (final Nov) 7:00 AM PT.",
+    "Fed Cook 9:15 AM PT. Monthly options expiration at the 1:00 PM PT close — no new unplanned 0DTE size into the close."
   ],
   "long_story_short": {
-    "for_session": "2026-11-19",
-    "headline": "Thu 11/19 — 7373 is the main pivot, 7348–52 the secondary · claims and Philly Fed 5:30 AM PT · 10-year bond sale 10:00 AM PT",
-    "context": "Wednesday sold from 7388.75 to 7305.25, a second sweep of Tuesday's 7308–09 low, then recovered through 7320–23. Close 7340.25 (SPX 7323.64, SPY 730.20, first close under the 200-day). After hours ES traded 7332–7398, last 7393.75 at 4:52 PM PT, above 7372–73 and above Wednesday's 7388.75 high. The unpadded plan band is 7305.25–7398, padded by 0.25 × Thursday's implied move to about 7285–7418. ES ≈ SPX + 19.5 from Wednesday's regular-session median. 7373 is the main reclaim; 7348–52 is the secondary pivot below it.",
-    "levels": "7414 / 7390 above; 7373 main pivot; 7348–52 secondary pivot; 7320–23 / 7305–09 below. 7245 is a path target only, below the plan band. VIX filter: 22.76 for the 7414 upside case, 26.36 for the 7245 downside case.",
-    "bearish": "Lose 7373 → 7348–52. Lose 7348–52 → 7320–23, 7305, then 7245 (VIX filter 26.36 for the 7245 case). Every expiry is negative gamma; SPY and SPX sit on their weekly floors.",
-    "bullish": "Hold 7373 → 7390, then 7414 (VIX filter 22.76 for the 7414 case). After hours last 7393.75, above 7372–73 and above Wednesday's 7388.75 high.",
-    "general": "No new size into the Anthropic debut (first trade TBD · cash open 6:30 AM PT). Claims and Philly Fed 5:30 AM PT; 10-year bond sale 10:00 AM PT."
+    "for_session": "2026-11-20",
+    "headline": "Fri 11/20 — 7210–20 is the pivot · monthly OpEx at the close · Waller 5:25 AM PT, Michigan sentiment 7:00 AM PT",
+    "context": "Thursday opened 7411.5 after an overnight high of 7440.5, topped 7436.5, then lost 7373, 7305 and 7245 and sold to 7192 at 12:05 PM PT. Close 7194.25 (SPX 7175.84, SPY 715.87, QQQ 645.04, VIX 28.48). After hours ES traded 7167.75–7201, last 7182.50 at 1:59 PM PT, below 7192 (Thursday's regular-session low). Anthropic opened at $111.50 on its debut and closed at $97.17, 17% above its $83 offering price, while the S&P 500 fell for a sixth day. Friday's SPX expected range is 7093.80–7257.88 (±1.14%), about ES 7113–7277. ES ≈ SPX + 19.1 from Thursday's regular-session median.",
+    "levels": "7305–09 / 7269–77 / 7240–45 above; 7210–20 pivot; 7192 / 7168 / 7136–16 below. SPY 700 ≈ ES 7036 is a target only, below the plan band.",
+    "bearish": "Under 7210–20 → 7192, then 7168. Lose 7168 → 7136–16. Every expiry is negative gamma; VIX 28.48 sits on its 30 wall.",
+    "bullish": "Recover 7210–20 → 7240–45, then 7269–77. 7305–09 is the control line.",
+    "general": "Monthly options expiration at the close. Fed Waller 5:25 AM PT; Michigan sentiment 7:00 AM PT; Fed Cook 9:15 AM PT."
   }
 }
