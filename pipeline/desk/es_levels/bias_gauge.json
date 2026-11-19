@@ -1,23 +1,23 @@
 {
- "score": -88,
+ "score": -67,
  "label": "BEARISH",
- "px": 727.83,
- "asof": "11-19 07:45 PT",
+ "px": 730.15,
+ "asof": "11-19 08:46 PT",
  "feed": "delayed",
- "built": "11-19 08:02 PT",
+ "built": "11-19 09:03 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": -1,
-   "x": "727.83 vs 733.93",
+   "x": "730.15 vs 732.26",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": -1,
-   "x": "9=730.49 21=733.41",
+   "v": 0,
+   "x": "9=729.63 21=730.61",
    "w": 1.0
   },
   {
@@ -38,28 +38,28 @@
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "727.83 vs flip 746.73",
+   "x": "730.15 vs flip 746.23",
    "w": 1.0
   },
   {
    "k": "FB \u00b7 QQQ",
    "d": "QQQ price vs desk gamma flip (all exp)",
    "v": -1,
-   "x": "659.10 vs 665.51",
+   "x": "663.07 vs 666.38",
    "w": 0.75
   },
   {
    "k": "DEALER DELTA",
    "d": "SPY dealer-pressure delta lean (\u22121\u2026+1; \u00b10.10 dead zone)",
    "v": -1,
-   "x": "-0.71",
+   "x": "-0.64",
    "w": 0.75
   },
   {
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
    "v": -1,
-   "x": "727.83 vs pivot 730.71",
+   "x": "730.15 vs pivot 730.71",
    "w": 1.0
   },
   {
@@ -72,15 +72,15 @@
   {
    "k": "DARK POOL",
    "d": "dark-pool levels holding below vs overhead (\u00b11%)",
-   "v": -1,
-   "x": "7 below / 10 above",
+   "v": 0,
+   "x": "9 below / 10 above",
    "w": 1.5
   },
   {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
-   "v": 0,
-   "x": "722.35\u2013734.68",
+   "v": 1,
+   "x": "714.81\u2013728.65",
    "w": 1.0
   },
   {
