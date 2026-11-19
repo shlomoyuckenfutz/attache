@@ -1,51 +1,51 @@
 {
- "score": 12,
+ "score": 22,
  "label": "NEUTRAL",
- "px": 735.57,
- "asof": "11-18 16:59 PT",
+ "px": 738.59,
+ "asof": "11-19 01:52 PT",
  "feed": "delayed",
- "built": "11-19 00:28 PT",
+ "built": "11-19 02:09 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "735.57 vs 730.24",
+   "x": "738.59 vs 737.57",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
    "v": 1,
-   "x": "9=735.02 21=734.06",
+   "x": "9=737.40 21=735.38",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
-   "v": 1,
-   "x": "ABOVE HIGH 730.24\u2013735.06",
+   "v": 0,
+   "x": "range not set",
    "w": 1.5
   },
   {
    "k": "ON RANGE",
    "d": "price vs overnight / pre-market high-low",
    "v": 0,
-   "x": "729.78\u2013739.58",
+   "x": "734.49\u2013738.78",
    "w": 1.0
   },
   {
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "735.57 vs flip 750.88",
+   "x": "738.59 vs flip 750.84",
    "w": 1.0
   },
   {
    "k": "FB \u00b7 QQQ",
    "d": "QQQ price vs desk gamma flip (all exp)",
    "v": -1,
-   "x": "659.61 vs 677.48",
+   "x": "672.77 vs 677.6",
    "w": 0.75
   },
   {
@@ -56,10 +56,24 @@
    "w": 0.75
   },
   {
+   "k": "FB \u00b7 SPY",
+   "d": "price vs First Blade pivot",
+   "v": 1,
+   "x": "738.59 vs pivot 730.71",
+   "w": 1.0
+  },
+  {
+   "k": "FB \u00b7 LEAN",
+   "d": "First Blade stated lean",
+   "v": 1,
+   "x": "bullish",
+   "w": 0.5
+  },
+  {
    "k": "DARK POOL",
    "d": "dark-pool levels holding below vs overhead (\u00b11%)",
-   "v": 0,
-   "x": "10 below / 9 above",
+   "v": 1,
+   "x": "11 below / 7 above",
    "w": 1.5
   },
   {
