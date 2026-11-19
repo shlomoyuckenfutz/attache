@@ -1,30 +1,30 @@
 {
- "score": -10,
+ "score": 4,
  "label": "NEUTRAL",
- "px": 733.62,
- "asof": "11-18 16:25 PT",
+ "px": 735.63,
+ "asof": "11-18 16:50 PT",
  "feed": "delayed",
- "built": "11-18 16:25 PT",
+ "built": "11-18 16:50 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "733.62 vs 729.94",
+   "x": "735.63 vs 729.94",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
    "v": 1,
-   "x": "9=733.58 21=732.92",
+   "x": "9=734.88 21=733.90",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
-   "v": 0,
-   "x": "INSIDE 730.24\u2013735.06",
+   "v": 1,
+   "x": "ABOVE HIGH 730.24\u2013735.06",
    "w": 1.5
   },
   {
@@ -38,7 +38,7 @@
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "733.62 vs flip 746.66",
+   "x": "735.63 vs flip 746.66",
    "w": 1.0
   },
   {
@@ -54,6 +54,13 @@
    "v": -1,
    "x": "-0.78",
    "w": 0.75
+  },
+  {
+   "k": "DARK POOL",
+   "d": "dark-pool levels holding below vs overhead (\u00b11%)",
+   "v": 0,
+   "x": "10 below / 9 above",
+   "w": 1.5
   },
   {
    "k": "BLAST RADIUS",
