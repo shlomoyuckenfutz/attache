@@ -1,198 +1,145 @@
 {
-  "date": "2026-11-05",
-  "updated_pt": "2026-11-05 20:40 PT",
-  "disagree_threshold": 1.0,
-  "symbols": [
+ "date": "2026-11-06",
+ "updated_pt": "2026-11-19 01:10 PT",
+ "symbols": [
+  {
+   "symbol": "SPY",
+   "sources": [
     {
-      "symbol": "SPY",
-      "sources": [
-        {
-          "handle": "CheddaFreeze",
-          "scope": "AH chart GEX lines",
-          "volt": null,
-          "flip": "736",
-          "call_wall": "740",
-          "put_wall": "720",
-          "king_node": "730",
-          "expected_move": null,
-          "net_gex": "negative (VIX 28)",
-          "regime": "negative gamma / trend",
-          "posted_pt": "2026-11-05 17:32",
-          "url": "#",
-          "note": "+DELTA/−GEX 740; −DELTA/+GEX 736; +GEX 730/726/720"
-        },
-        {
-          "handle": "SRC_LEDGER",
-          "scope": "night write-up",
-          "volt": null,
-          "flip": null,
-          "call_wall": "750",
-          "put_wall": null,
-          "king_node": null,
-          "expected_move": null,
-          "net_gex": null,
-          "regime": "bounce then reload",
-          "posted_pt": "2026-11-05 18:24",
-          "url": "#",
-          "note": "Bounce 740, stretch 750 gamma"
-        },
-        {
-          "handle": "QuantData",
-          "scope": "IV rank",
-          "volt": null,
-          "flip": null,
-          "call_wall": null,
-          "put_wall": null,
-          "king_node": null,
-          "expected_move": null,
-          "net_gex": null,
-          "regime": "SPY IV Rank 74.04%",
-          "posted_pt": "2026-11-05 19:58",
-          "url": "#",
-          "note": "IVR closed 74%"
-        }
-      ],
-      "consensus": {
-        "call_wall": "770",
-        "put_wall": "765",
-        "flip": "765",
-        "volt": "767",
-        "regime": "positive gamma (flipped from deeply negative Tue)",
-        "note": "Sources agree 767–770 is the magnet/ceiling cluster; flip zone ~758–765"
-      },
-      "em_note": "Cheddar ±5.75; Voltick pre-open ±6.36"
+     "handle": "VoltickIO",
+     "scope": "06:00 PT card + all-exp per-strike image",
+     "volt": "765",
+     "flip": "770.4",
+     "call_wall": "800",
+     "put_wall": "765",
+     "king_node": "765",
+     "expected_move": "±5.05",
+     "net_gex": "-$12.8B",
+     "regime": "negative gamma",
+     "posted_pt": "2026-10-30 06:00",
+     "url": "#",
+     "note": "Open 759.9 in 758.2-764.22; Volt today shifted to 760 at open. Scorecard Volt39/54 EM36/54 walls37/54 (112/162).",
+     "extra": "Text Volt 765 is today's expiration; image values are all expirations; put wall coincides with Volt at 765"
     },
     {
-      "symbol": "ES",
-      "sources": [
-        {
-          "handle": "SRC",
-          "scope": "public X intraday",
-          "volt": "7739",
-          "flip": null,
-          "call_wall": null,
-          "put_wall": null,
-          "king_node": "7739",
-          "expected_move": null,
-          "net_gex": null,
-          "regime": "ride runner after 7495 FBD",
-          "posted_pt": "2026-11-04 10:33",
-          "url": "#",
-          "note": "7739 final target tagged; next 7755/7771/7803; supports 7635/7626"
-        },
-        {
-          "handle": "QuantData",
-          "scope": "ES put wall",
-          "volt": null,
-          "flip": null,
-          "call_wall": null,
-          "put_wall": "7728",
-          "king_node": "7728",
-          "expected_move": null,
-          "net_gex": null,
-          "regime": null,
-          "posted_pt": "2026-11-04 10:42",
-          "url": "#",
-          "note": "Put wall 7728 held as reaction"
-        },
-        {
-          "handle": "smashelito",
-          "scope": "Nov 4 daily plan (Tue night)",
-          "volt": "7600",
-          "flip": null,
-          "call_wall": null,
-          "put_wall": null,
-          "king_node": "7600",
-          "expected_move": null,
-          "net_gex": null,
-          "regime": "inside-day plan traversed by overnight flush+rip",
-          "posted_pt": "2026-11-03 14:53",
-          "url": "#",
-          "note": "Smashlevel 7600; VPOC 7754; UT 7621/7648; DT 7575/7541"
-        }
-      ],
-      "consensus": {
-        "call_wall": null,
-        "put_wall": "7728",
-        "flip": null,
-        "volt": "7739",
-        "regime": "post-FBD runner",
-        "note": "7495 FBD → 7739 done; 7755/7771/7803 next"
-      },
-      "em_note": null
+     "handle": "CheddarFlow",
+     "scope": "all-exp GEX after put-wall break",
+     "volt": null,
+     "flip": null,
+     "call_wall": null,
+     "put_wall": "760",
+     "king_node": "760",
+     "expected_move": "±6.15 (max 765.18 / min 752.88)",
+     "net_gex": "-16.8B short gamma",
+     "regime": "short gamma",
+     "posted_pt": "2026-10-30 08:20",
+     "url": "#",
+     "note": "Lost 760 put wall (-2.8B); next big puts 755 (-1.7B) and 750 (-2.3B)"
     },
     {
-      "symbol": "QQQ",
-      "sources": [
-        {
-          "handle": "VoltickIO",
-          "scope": "free /levels/QQQ meta",
-          "volt": null,
-          "flip": null,
-          "call_wall": "715",
-          "put_wall": "680",
-          "king_node": null,
-          "expected_move": "±10.1",
-          "net_gex": null,
-          "regime": null,
-          "posted_pt": "2026-11-04 11:31 PT",
-          "url": "https://voltick.io/levels/QQQ",
-          "note": "Free page meta only (JS board needs browser)"
-        },
-        {
-          "handle": "CheddarFlow",
-          "scope": "flow",
-          "volt": null,
-          "flip": null,
-          "call_wall": null,
-          "put_wall": null,
-          "king_node": "720",
-          "expected_move": null,
-          "net_gex": null,
-          "regime": null,
-          "posted_pt": "2026-11-04 08:51",
-          "url": "#",
-          "note": "$23M+ Mar 2027 720C floor prints"
-        }
-      ],
-      "consensus": {
-        "call_wall": "715",
-        "put_wall": "680",
-        "flip": null,
-        "volt": null,
-        "regime": null,
-        "note": "Spot ~694 mid-range"
-      },
-      "em_note": "±10.1 free page"
+     "handle": "SRC_LEDGER",
+     "scope": "10/29 short note lean into 10/30",
+     "volt": null,
+     "flip": null,
+     "call_wall": null,
+     "put_wall": "762.27",
+     "king_node": "762.27",
+     "expected_move": null,
+     "net_gex": null,
+     "regime": null,
+     "posted_pt": "2026-10-29 15:06",
+     "url": "#",
+     "note": "Base: test DP 762.27 line in sand; alt pin 769.36. Intraday 10/30: DP 757.43 bounce setup; later 754.07/754.05 air pocket to 746.77"
     },
     {
-      "symbol": "SPX",
-      "sources": [
-        {
-          "handle": "VoltickIO",
-          "scope": "public X + free /levels/SPX",
-          "volt": null,
-          "flip": "7656",
-          "call_wall": "7800",
-          "put_wall": "7500",
-          "king_node": null,
-          "expected_move": "±59.9",
-          "net_gex": null,
-          "regime": null,
-          "posted_pt": "2026-11-04 08:00",
-          "url": "#",
-          "note": "Feb 19 7650P $51.4M below flip; spot ~7705"
-        }
-      ],
-      "consensus": {
-        "call_wall": "7800",
-        "put_wall": "7500",
-        "flip": "7656",
-        "volt": null,
-        "regime": null,
-        "note": "Above flip"
-      },
-      "em_note": "±59.9"
+     "handle": "QuantData",
+     "scope": "ES GEX nodes intraday 10/30",
+     "volt": null,
+     "flip": null,
+     "call_wall": null,
+     "put_wall": null,
+     "king_node": "7560",
+     "expected_move": null,
+     "net_gex": "neg node 7560 hit",
+     "regime": "negative gamma",
+     "posted_pt": "2026-10-30 11:38",
+     "url": "#",
+     "note": "ES 7610 target → 7584 zone → MVC 7574 → 7560 neg node hit; puts lead calls $23M+"
+    },
+    {
+     "handle": "GEXEdgeIO",
+     "scope": "SPY GEX Oct 29 (no fresh Oct30 table)",
+     "volt": null,
+     "flip": "771.33",
+     "call_wall": "772",
+     "put_wall": "770",
+     "king_node": "770",
+     "expected_move": null,
+     "net_gex": "-904M",
+     "regime": "under flip / all 3 mkts neg",
+     "posted_pt": "2026-10-29 08:45",
+     "url": "#",
+     "note": "Stale vs 10/30 tape; last published GEX update was Oct 29"
     }
-  ]
+   ],
+   "consensus": {
+    "flip": 770.87,
+    "call_wall": 786.0,
+    "put_wall": 763.63,
+    "em_lo": 752.88,
+    "em_hi": 765.18,
+    "spot": 730.28,
+    "regime": "negative gamma",
+    "regime_votes": {
+     "short gamma": 1,
+     "under flip / all 3 mkts neg": 1,
+     "negative gamma": 2
+    }
+   },
+   "em_note": "Cheddar 1D EM after 760 put-wall break; Voltick pre-open EM 758.2-764.22"
+  },
+  {
+   "symbol": "SPX",
+   "sources": [],
+   "consensus": {
+    "flip": null,
+    "call_wall": null,
+    "put_wall": null,
+    "em_lo": null,
+    "em_hi": null,
+    "spot": 7326.4,
+    "regime": null,
+    "regime_votes": {}
+   }
+  },
+  {
+   "symbol": "QQQ",
+   "sources": [],
+   "consensus": {
+    "flip": null,
+    "call_wall": null,
+    "put_wall": null,
+    "em_lo": null,
+    "em_hi": null,
+    "spot": 680.43,
+    "regime": null,
+    "regime_votes": {}
+   }
+  },
+  {
+   "symbol": "NQ",
+   "sources": [],
+   "consensus": {
+    "flip": null,
+    "call_wall": null,
+    "put_wall": null,
+    "em_lo": null,
+    "em_hi": null,
+    "spot": null,
+    "regime": null,
+    "regime_votes": {}
+   }
+  }
+ ],
+ "disagree_threshold": 1.0
 }

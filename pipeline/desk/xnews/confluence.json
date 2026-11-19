@@ -1,153 +1,1116 @@
 {
-  "date": "2026-11-05",
-  "updated_pt": "2026-11-05 20:40 PT",
-  "spot": {
-    "SPY": 733.0,
-    "SPX": 7353.73,
-    "QQQ": 647.05,
-    "asof_et": "2026-11-05 16:00 ET close"
-  },
-  "ratios": {
-    "SPX": 10.032,
-    "QQQ": 0.883,
-    "SPY": 1.0
-  },
-  "band_half_width": {
-    "SPY": 0.5,
-    "QQQ": 0.5,
-    "SPX": 5.0,
-    "NQ": 25.0
-  },
-  "note": "Bands = levels within ±half-width. Thu flush: SPY 740/750 overhead, 726–730 support.",
-  "symbols": {
-    "SPY": {
-      "bands": [
-        {
-          "center": 770.0,
-          "members": [
-            {
-              "handle": "CheddarFlow",
-              "raw": 770,
-              "kind": "Call wall"
-            },
-            {
-              "handle": "GEXEdgeIO",
-              "raw": 770,
-              "kind": "GEX cluster"
-            },
-            {
-              "handle": "SRC",
-              "raw": 770,
-              "kind": "0DTE no-puts"
-            },
-            {
-              "handle": "VoltickIO",
-              "raw": 770,
-              "kind": "free-page call meta"
-            }
-          ],
-          "n": 4
-        },
-        {
-          "center": 767.0,
-          "members": [
-            {
-              "handle": "VoltickIO",
-              "raw": 767,
-              "kind": "Volt"
-            },
-            {
-              "handle": "GEXEdgeIO",
-              "raw": 767,
-              "kind": "Pin"
-            },
-            {
-              "handle": "QuantData",
-              "raw": 767.12,
-              "kind": "Dark pool"
-            }
-          ],
-          "n": 3
-        },
-        {
-          "center": 765.0,
-          "members": [
-            {
-              "handle": "VoltickIO",
-              "raw": 765.3,
-              "kind": "Flip"
-            },
-            {
-              "handle": "GEXEdgeIO",
-              "raw": 765,
-              "kind": "Put wall lost"
-            },
-            {
-              "handle": "CheddarFlow",
-              "raw": 765,
-              "kind": "OI node"
-            }
-          ],
-          "n": 3
-        },
-        {
-          "center": 760.0,
-          "members": [
-            {
-              "handle": "GEXEdgeIO",
-              "raw": 760,
-              "kind": "Floor"
-            },
-            {
-              "handle": "VoltickIO",
-              "raw": 750,
-              "kind": "Floor distal"
-            }
-          ],
-          "n": 2
-        }
-      ]
-    },
-    "QQQ": {
-      "bands": [
-        {
-          "center": 700.0,
-          "members": [
-            {
-              "handle": "CheddarFlow",
-              "raw": 720,
-              "kind": "Mar27 call flow distal"
-            }
-          ],
-          "n": 1
-        }
-      ]
-    },
-    "SPX": {
-      "bands": [
-        {
-          "center": 7705.0,
-          "members": [
-            {
-              "handle": "VoltickIO",
-              "raw": 7656,
-              "kind": "Flip below spot"
-            }
-          ],
-          "n": 1
-        }
-      ]
-    }
-  },
-  "native_only": {
-    "NQ": {
-      "levels": [
-        {
-          "handle": "VoltickIO",
-          "raw": 28549,
-          "kind": "Flip"
-        }
-      ]
-    }
-  }
+ "date": "2026-11-06",
+ "updated_pt": "2026-11-19 01:10 PT",
+ "spot": {
+  "SPY": 730.28,
+  "SPX": 7326.4,
+  "QQQ": 680.43,
+  "asof_et": "2026-11-18 15:59:00-05:00"
+ },
+ "ratios": {
+  "SPY": 1.0,
+  "SPX": 10.03227,
+  "QQQ": 0.93174
+ },
+ "band_half_width": {
+  "SPY": 0.5,
+  "QQQ": 0.5,
+  "SPX": 5.0,
+  "NQ": 25.0
+ },
+ "note": "Bands = levels within ±half-width (SPY/QQQ ±0.50, SPX ±5). ≈ = converted from another symbol with the posted same-time ratio. NQ levels are native only.",
+ "symbols": {
+  "SPY": [
+   {
+    "price": 758.14,
+    "lo": 758.14,
+    "hi": 758.14,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "758.14",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 750.0,
+    "lo": 750.0,
+    "hi": 750.54,
+    "n_sources": 3,
+    "weight": 1.8,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "market_sleuth",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Shallow recovery zone 748–752",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:51",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Gamma stretch / reload puts",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:24",
+      "age_days": 1
+     },
+     {
+      "handle": "Basssem666",
+      "raw_price": "750.54",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 748.23,
+    "lo": 748.23,
+    "hi": 748.23,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "748.23",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 741.45,
+    "lo": 741.36,
+    "hi": 741.54,
+    "n_sources": 2,
+    "weight": 1.4,
+    "types": [
+     "DP",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "741.36",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "741.54",
+      "native": "SPY",
+      "converted": false,
+      "kind": "DP $115.5M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 740.0,
+    "lo": 740.0,
+    "hi": 740.0,
+    "n_sources": 2,
+    "weight": 1.1,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "740",
+      "native": "SPY",
+      "converted": false,
+      "kind": "+DELTA / −GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "740",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Bounce target",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:24",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 737.23,
+    "lo": 737.23,
+    "hi": 737.23,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "737.23",
+      "native": "SPY",
+      "converted": false,
+      "kind": "DP $66.6M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 735.7,
+    "lo": 735.41,
+    "hi": 736.0,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "735.41",
+      "native": "SPY",
+      "converted": false,
+      "kind": "DP $941.9M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "736",
+      "native": "SPY",
+      "converted": false,
+      "kind": "−DELTA / +GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": [
+     "CheddaFreeze: 735.41, 736"
+    ]
+   },
+   {
+    "price": 730.0,
+    "lo": 730.0,
+    "hi": 730.0,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "730",
+      "native": "SPY",
+      "converted": false,
+      "kind": "+GEX support",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 726.2,
+    "lo": 726.0,
+    "hi": 726.4,
+    "n_sources": 2,
+    "weight": 1.4,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "726",
+      "native": "SPY",
+      "converted": false,
+      "kind": "+GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "Basssem666",
+      "raw_price": "726.4",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Support (AH low 727.41)",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 720.0,
+    "lo": 720.0,
+    "hi": 720.0,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "720",
+      "native": "SPY",
+      "converted": false,
+      "kind": "+GEX (monthly 50MA zone)",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 718.32,
+    "lo": 718.32,
+    "hi": 718.32,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "718.32",
+      "native": "SPY",
+      "converted": false,
+      "kind": "Support",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 716.0,
+    "lo": 716.0,
+    "hi": 716.0,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "market_sleuth",
+      "raw_price": "716",
+      "native": "SPY",
+      "converted": false,
+      "kind": "August low target",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:51",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   }
+  ],
+  "QQQ": [
+   {
+    "price": 706.39,
+    "lo": 706.39,
+    "hi": 706.39,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "758.14",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 698.81,
+    "lo": 698.81,
+    "hi": 699.31,
+    "n_sources": 3,
+    "weight": 1.8,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "market_sleuth",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Shallow recovery zone 748–752",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:51",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Gamma stretch / reload puts",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:24",
+      "age_days": 1
+     },
+     {
+      "handle": "Basssem666",
+      "raw_price": "750.54",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 697.16,
+    "lo": 697.16,
+    "hi": 697.16,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "748.23",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 690.84,
+    "lo": 690.75,
+    "hi": 690.92,
+    "n_sources": 2,
+    "weight": 1.4,
+    "types": [
+     "DP",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "741.36",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "741.54",
+      "native": "SPY",
+      "converted": true,
+      "kind": "DP $115.5M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 689.49,
+    "lo": 689.49,
+    "hi": 689.49,
+    "n_sources": 2,
+    "weight": 1.1,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "740",
+      "native": "SPY",
+      "converted": true,
+      "kind": "+DELTA / −GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "740",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Bounce target",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:24",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 686.91,
+    "lo": 686.91,
+    "hi": 686.91,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "737.23",
+      "native": "SPY",
+      "converted": true,
+      "kind": "DP $66.6M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 685.49,
+    "lo": 685.21,
+    "hi": 685.76,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "735.41",
+      "native": "SPY",
+      "converted": true,
+      "kind": "DP $941.9M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "736",
+      "native": "SPY",
+      "converted": true,
+      "kind": "−DELTA / +GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": [
+     "CheddaFreeze: 735.41, 736"
+    ]
+   },
+   {
+    "price": 680.17,
+    "lo": 680.17,
+    "hi": 680.17,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "730",
+      "native": "SPY",
+      "converted": true,
+      "kind": "+GEX support",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 676.63,
+    "lo": 676.44,
+    "hi": 676.82,
+    "n_sources": 2,
+    "weight": 1.4,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "726",
+      "native": "SPY",
+      "converted": true,
+      "kind": "+GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "Basssem666",
+      "raw_price": "726.4",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Support (AH low 727.41)",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 670.85,
+    "lo": 670.85,
+    "hi": 670.85,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "720",
+      "native": "SPY",
+      "converted": true,
+      "kind": "+GEX (monthly 50MA zone)",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 669.29,
+    "lo": 669.29,
+    "hi": 669.29,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "718.32",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Support",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 667.13,
+    "lo": 667.13,
+    "hi": 667.13,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "market_sleuth",
+      "raw_price": "716",
+      "native": "SPY",
+      "converted": true,
+      "kind": "August low target",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:51",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   }
+  ],
+  "SPX": [
+   {
+    "price": 7605.87,
+    "lo": 7605.87,
+    "hi": 7605.87,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "758.14",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7524.2,
+    "lo": 7524.2,
+    "hi": 7529.62,
+    "n_sources": 3,
+    "weight": 1.8,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "market_sleuth",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Shallow recovery zone 748–752",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:51",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "750",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Gamma stretch / reload puts",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:24",
+      "age_days": 1
+     },
+     {
+      "handle": "Basssem666",
+      "raw_price": "750.54",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7506.45,
+    "lo": 7506.45,
+    "hi": 7506.45,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "748.23",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7438.43,
+    "lo": 7437.52,
+    "hi": 7439.33,
+    "n_sources": 2,
+    "weight": 1.4,
+    "types": [
+     "DP",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "741.36",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Resistance",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "741.54",
+      "native": "SPY",
+      "converted": true,
+      "kind": "DP $115.5M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7423.88,
+    "lo": 7423.88,
+    "hi": 7423.88,
+    "n_sources": 2,
+    "weight": 1.1,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "740",
+      "native": "SPY",
+      "converted": true,
+      "kind": "+DELTA / −GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "SRC_LEDGER",
+      "raw_price": "740",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Bounce target",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:24",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7396.09,
+    "lo": 7396.09,
+    "hi": 7396.09,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "DP"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "737.23",
+      "native": "SPY",
+      "converted": true,
+      "kind": "DP $66.6M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7380.79,
+    "lo": 7377.83,
+    "hi": 7383.75,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "DP",
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "735.41",
+      "native": "SPY",
+      "converted": true,
+      "kind": "DP $941.9M",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "736",
+      "native": "SPY",
+      "converted": true,
+      "kind": "−DELTA / +GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": [
+     "CheddaFreeze: 735.41, 736"
+    ]
+   },
+   {
+    "price": 7323.56,
+    "lo": 7323.56,
+    "hi": 7323.56,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "730",
+      "native": "SPY",
+      "converted": true,
+      "kind": "+GEX support",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7285.43,
+    "lo": 7283.43,
+    "hi": 7287.44,
+    "n_sources": 2,
+    "weight": 1.4,
+    "types": [
+     "GEX",
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "726",
+      "native": "SPY",
+      "converted": true,
+      "kind": "+GEX",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     },
+     {
+      "handle": "Basssem666",
+      "raw_price": "726.4",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Support (AH low 727.41)",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7223.23,
+    "lo": 7223.23,
+    "hi": 7223.23,
+    "n_sources": 1,
+    "weight": 0.6,
+    "types": [
+     "GEX"
+    ],
+    "sources": [
+     {
+      "handle": "CheddaFreeze",
+      "raw_price": "720",
+      "native": "SPY",
+      "converted": true,
+      "kind": "+GEX (monthly 50MA zone)",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 17:32",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7206.38,
+    "lo": 7206.38,
+    "hi": 7206.38,
+    "n_sources": 1,
+    "weight": 0.8,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "Basssem666",
+      "raw_price": "718.32",
+      "native": "SPY",
+      "converted": true,
+      "kind": "Support",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 19:27",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   },
+   {
+    "price": 7183.11,
+    "lo": 7183.11,
+    "hi": 7183.11,
+    "n_sources": 1,
+    "weight": 0.5,
+    "types": [
+     "TA"
+    ],
+    "sources": [
+     {
+      "handle": "market_sleuth",
+      "raw_price": "716",
+      "native": "SPY",
+      "converted": true,
+      "kind": "August low target",
+      "scope": "near",
+      "post_url": "#",
+      "posted_pt": "2026-11-05 18:51",
+      "age_days": 1
+     }
+    ],
+    "conflicts": []
+   }
+  ]
+ },
+ "native_only": {
+  "NQ": []
+ }
 }
