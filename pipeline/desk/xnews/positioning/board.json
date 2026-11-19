@@ -2,7 +2,7 @@
  "schema": 1,
  "asof": "2026-11-18",
  "asof_label": "Wed 11/18 close",
- "note": "Options positioning read at the Wed 11/18 close (15-min delayed board; open interest refreshes before the next open, so walls can move overnight). Descriptive only, not a forecast. 'Magnet' = biggest gamma strike for that expiry. Regime = price vs that expiry's flip (NEG where no flip was shown: negative gamma the whole way). Weekly map (Nov 16–20): SPY floor 730 · flip 755.68 · ceiling 775; QQQ floor 650 · ceiling 700 (no flip shown); SPX floor 7300 · flip 7641.7 · ceiling 7800. SPX 11/19 call wall 7310 sits below price (not a ceiling from here). Fri 11/20 is the weekly and monthly expiration. Put walls not shown for some expiries are awaiting update. /ES levels are SPX levels converted with the Wed session basis (ES − SPX median during the regular session).",
+ "note": "Options positioning read at the Wed 11/18 close, re-read Wed evening ~5:15 PM PT on the same open interest (open interest refreshes before the next open, so walls can move overnight). Descriptive only, not a forecast. 'Magnet' = biggest gamma strike for that expiry. Regime = price at the close vs that expiry's flip (NEG where no flip was shown: negative gamma the whole way). All expiries combined: SPY floor moved 725 → 700 this evening (ceiling 775, flip 758.2); QQQ ceiling 679 (was 700), floor 650; SPX floor 7300, ceiling 7800. Weekly map (Nov 16–20): SPY floor 730 · flip 758.08 · ceiling 775; QQQ floor 650 · ceiling 679 (no flip shown); SPX floor 7300 · flip 7698.08 · ceiling 7800; VIX wall 30 (was 25). Call walls came down this evening (SPY Fri 770 → 755, QQQ Thu 680 → 665, SPX Fri 7700 → 7480). SPX 11/19 call wall 7310 sits below price (not a ceiling from here); SPX 11/27 put wall 7400 sits above price (not a floor). After hours SPY 735.67 traded above its Thu flip 734.9 and QQQ 668.66 sat at its Thu flip 668.9. Fri 11/20 is the weekly and monthly expiration. Put walls not shown for some expiries are awaiting update. /ES levels are SPX levels converted with the Wed session basis (ES − SPX median during the regular session).",
  "close": {
   "SPX": 7323.64,
   "SPY": 730.2,
@@ -21,19 +21,19 @@
  "levels": {
   "SPX": {
    "2026-11-19": {
-    "flip": 7556.8,
+    "flip": 7558.1,
     "magnet": 7360,
     "put_wall": null,
     "call_wall": 7310,
-    "net_gex": "-$4.3B",
+    "net_gex": "-$4.4B",
     "regime": "NEG"
    },
    "2026-11-20": {
-    "flip": 7595.6,
+    "flip": 7593.1,
     "magnet": 7300,
     "put_wall": 7300,
-    "call_wall": 7700,
-    "net_gex": "-$33.6B",
+    "call_wall": 7480,
+    "net_gex": "-$33.9B",
     "regime": "NEG"
    },
    "2026-12-18": {
@@ -41,29 +41,29 @@
     "magnet": 7300,
     "put_wall": 7300,
     "call_wall": 7800,
-    "net_gex": "-$13.1B",
+    "net_gex": "-$13.2B",
     "regime": "NEG"
    }
   },
   "SPY": {
    "2026-11-19": {
-    "flip": 734.0,
+    "flip": 734.9,
     "magnet": 707,
     "put_wall": 707,
     "call_wall": 738,
-    "net_gex": "-$245.6M",
+    "net_gex": "-$317.2M",
     "regime": "NEG"
    },
    "2026-11-20": {
-    "flip": 759.0,
+    "flip": 758.6,
     "magnet": 725,
     "put_wall": 725,
-    "call_wall": 770,
-    "net_gex": "-$8.5B",
+    "call_wall": 755,
+    "net_gex": "-$9.0B",
     "regime": "NEG"
    },
    "2026-12-18": {
-    "flip": 758.1,
+    "flip": 756.1,
     "magnet": 775,
     "put_wall": 735,
     "call_wall": 775,
@@ -73,19 +73,19 @@
   },
   "QQQ": {
    "2026-11-19": {
-    "flip": 666.9,
+    "flip": 668.9,
     "magnet": 664,
     "put_wall": null,
-    "call_wall": 680,
-    "net_gex": "-$94.4M",
+    "call_wall": 665,
+    "net_gex": "-$110.9M",
     "regime": "NEG"
    },
    "2026-11-20": {
-    "flip": 689.3,
-    "magnet": 680,
-    "put_wall": null,
+    "flip": 689.6,
+    "magnet": 640,
+    "put_wall": 640,
     "call_wall": 679,
-    "net_gex": "-$1.3B",
+    "net_gex": "-$1.2B",
     "regime": "NEG"
    },
    "2026-12-18": {
@@ -93,25 +93,25 @@
     "magnet": 640,
     "put_wall": 640,
     "call_wall": 705,
-    "net_gex": "-$839.2M",
+    "net_gex": "-$801.7M",
     "regime": "NEG"
    }
   },
   "NDX": {
    "2026-11-19": {
-    "flip": 27238.0,
+    "flip": 27236.6,
     "magnet": 27650,
     "put_wall": null,
     "call_wall": 27700,
-    "net_gex": "-$16.4M",
+    "net_gex": "-$17.0M",
     "regime": "NEG"
    },
    "2026-11-20": {
-    "flip": 28130.7,
+    "flip": 28101.6,
     "magnet": 27000,
     "put_wall": 27000,
     "call_wall": 28250,
-    "net_gex": "-$729.2M",
+    "net_gex": "-$743.6M",
     "regime": "NEG"
    },
    "2026-12-18": {
@@ -130,9 +130,9 @@
   "rows": [
    {
     "symbol": "SPX",
-    "pct": 1.66,
-    "lower": 7201.81,
-    "upper": 7445.47
+    "pct": 1.64,
+    "lower": 7203.19,
+    "upper": 7444.09
    },
    {
     "symbol": "SPY",
@@ -214,27 +214,27 @@
  ],
  "flow": {
   "scope": "options tape, all names, Wed 11/18 session",
-  "net": "+$126M",
+  "net": "+$117M",
   "lean": "bullish",
-  "prints": 14099,
-  "calls": "$399M",
-  "puts": "$817M",
-  "put_call": 1.41,
+  "prints": 14138,
+  "calls": "$390M",
+  "puts": "$823M",
+  "put_call": 1.43,
   "spy_notable": [],
   "spy_directional": "Largest prints by premium: SPX 7900 put Dec '27 $16.5M (sold, two blocks) · SPX 7400 put Jan '27 $15.9M · SPX 7400 call Jan '27 $13.8M (bought) · SPX 7500 put Dec '27 $12.5M (sold) · SPX 7650–55 puts Dec 18 $4.1–4.2M (bought) · SPX 7000 call Nov 20 $4.1M (bought)",
   "asof_label": "Wed 11/18"
  },
  "seasonality": {
   "SPY": {
-   "week": "Week 47 (Nov 16–20): higher 4 of 9 years · median −0.27% · average −0.41% · this year so far −2.92% (history through Tue 11/17)",
+   "week": "Week 47 (Nov 16–20): higher 4 of 9 years · median −0.27% · average −0.41% · this year so far −3.18% (history through Wed 11/18)",
    "month": "November: median +3.6% · higher 8 of 9 years"
   },
   "SPX": {
-   "week": "Week 47: higher 4 of 9 years · median −0.33% · average −0.44% · this year so far −2.92% (history through Tue 11/17)",
+   "week": "Week 47: higher 4 of 9 years · median −0.33% · average −0.44% · this year so far −3.15% (history through Wed 11/18)",
    "month": "November: median +3.4% · higher 8 of 9 years"
   },
   "QQQ": {
-   "week": "Week 47: higher 5 of 10 years · median +0.28% · average −0.57% · this year so far −3.37% (history through Tue 11/17)",
+   "week": "Week 47: higher 5 of 10 years · median +0.28% · average −0.57% · this year so far −3.00% (history through Wed 11/18)",
    "month": "November: median +3.0% · higher 8 of 10 years"
   }
  }

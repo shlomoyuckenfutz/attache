@@ -21,10 +21,10 @@ NEXT_DAY_BANDS = ["7275.87", "7435.19", "649.55", "26501.92", "27787.34"]  # Wed
 class I1_GammaLevels(unittest.TestCase):
     def test_values_and_regimes_per_expiry_board(self):
         L = D["levels"]
-        self.assertEqual((L["SPX"]["2026-11-19"]["flip"], L["SPX"]["2026-11-19"]["magnet"], L["SPX"]["2026-11-19"]["regime"]), (7556.8, 7360, "NEG"))
+        self.assertEqual((L["SPX"]["2026-11-19"]["flip"], L["SPX"]["2026-11-19"]["magnet"], L["SPX"]["2026-11-19"]["regime"]), (7558.1, 7360, "NEG"))
         self.assertEqual(L["SPY"]["2026-12-18"]["regime"], "NEG")
         self.assertEqual(L["SPX"]["2026-11-20"]["regime"], "NEG")
-        self.assertEqual(L["SPX"]["2026-11-20"]["net_gex"], "-$33.6B")
+        self.assertEqual(L["SPX"]["2026-11-20"]["net_gex"], "-$33.9B")
         self.assertEqual(L["NDX"]["2026-11-20"]["call_wall"], 28250)
 
     def test_tables_cover_every_ticker_and_expiry(self):
@@ -46,7 +46,7 @@ class I1_GammaLevels(unittest.TestCase):
 class I2_EsNqConversion(unittest.TestCase):
     def test_es_is_spx_plus_plan_basis(self):
         self.assertEqual(D["es_basis"], 19.5)
-        self.assertIn("<td>7576.30</td>", DAILY)  # 7556.8 + 19.5
+        self.assertIn("<td>7577.60</td>", DAILY)  # 7558.1 + 19.5
         self.assertIn("<td>7379.50</td>", DAILY)  # 7360 + 19.5
         es = [r for r in CMD["tiles"] if r["h"].startswith("ES")][0]
         self.assertIn("magnet 7319.50", es["rows"][1][1])  # 7300 + 19.5
@@ -61,7 +61,7 @@ class I3_WeeklyExpectedMove(unittest.TestCase):
     def test_weekly_rows_shown_next_day_bands_not(self):
         line = G.em_line(D)
         self.assertTrue(line.startswith("Weekly expected move to Fri 11/20 (Wed 11/18 close)"))
-        for s in ("SPX 7201.81–7445.47", "SPY 715.88–744.52", "QQQ 638.33–680.69", "NDX 26368.09–27864.45"):
+        for s in ("SPX 7203.19–7444.09", "SPY 715.88–744.52", "QQQ 638.33–680.69", "NDX 26368.09–27864.45"):
             self.assertIn(s, line)
         for v in NEXT_DAY_BANDS:
             self.assertNotIn(v, ALL)
@@ -85,8 +85,8 @@ class I4_Calendar(unittest.TestCase):
 class I5_Flow(unittest.TestCase):
     def test_flow_figures(self):
         f = [r for r in CMD["tiles"] if r["h"] == "FLOW"][0]
-        self.assertEqual(f["v"], "+$126M bullish"); self.assertEqual(f["d"], "Wed 11/18")  # flow carries its own session date
-        self.assertIn(["prints", "14,099"], f["rows"])
+        self.assertEqual(f["v"], "+$117M bullish"); self.assertEqual(f["d"], "Wed 11/18")  # flow carries its own session date
+        self.assertIn(["prints", "14,138"], f["rows"])
         self.assertIn("Largest prints by premium", f["note"])
 
 

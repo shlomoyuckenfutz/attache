@@ -53,8 +53,14 @@ def _load_dp():
     return []
 DARK_POOL_SPY = _load_dp()
 DP_COLOR = "#c084fc"
-SPY_PER_SPX = 0.0997
-ES_MINUS_SPX = 34.5
+def _load_dp_convert():
+    """SPY->SPX factor and ES-SPX basis from data/spy_dark_pool.json (same numbers as the Dark Pool tables)."""
+    import json
+    from pathlib import Path as _P
+    f = _P(__file__).resolve().parent.parent.parent / "data" / "spy_dark_pool.json"
+    c = json.loads(f.read_text()).get("convert", {}) if f.exists() else {}
+    return float(c.get("spy_per_spx", 0.0997)), float(c.get("es_minus_spx", 34.5))
+SPY_PER_SPX, ES_MINUS_SPX = _load_dp_convert()
 
 # ── Week of Nov 9 (last week) — PLAN vs ACTUAL (same levels as published for that week) ──
 PRIOR_WEEK = [dt.date(2026, 11, 9), dt.date(2026, 11, 10), dt.date(2026, 11, 11),

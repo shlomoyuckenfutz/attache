@@ -34,8 +34,8 @@ class Weekly(unittest.TestCase):
         wb = A.weekly_block(DATA, "2026-11-16")
         t = txt(wb)
         self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 16–20", wb)
-        for s in ["reclaim and hold of 7372–73, then 7421", "734 (11/19 flip)", "second sweep of the lows to 7305 recovered", "FOMC minutes hawkish",
-                  "Anthropic IPO debut", "SPY 715.88–744.52", "flip SPX 7595.6 / SPY 759", "monthly OpEx Fri"]:
+        for s in ["reclaim and hold of 7372–73, then 7421", "734.9 (11/19 flip)", "second sweep of the lows to 7305 recovered", "FOMC minutes hawkish",
+                  "Anthropic IPO debut", "SPY 715.88–744.52", "flip SPX 7593.1 / SPY 758.6", "monthly OpEx Fri"]:
             self.assertIn(s, t, s)
         self.assertEqual(A.weekly_block(DATA, "2026-11-20"), wb)
         self.assertNotIn("backwardation", wb.lower()); self.assertNotIn("contango", wb.lower())

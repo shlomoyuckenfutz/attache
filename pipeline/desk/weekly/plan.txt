@@ -4,7 +4,7 @@ Weekly implied move to Fri 11/20 (re-read at the Wed 11/18 close, each index in 
 Week so far: Monday was a trend day down. ES lost 7519–24 and 7502, then ran through the 7420–7390 targets to close near 7439 (SPY 739.95, −1.9%). Tuesday extended the selloff. ES flushed to 7309, under the Nov 5 low at 7323, then recovered (a Failed Breakdown). It closed near 7363 at 1:00 PM PT (SPX 7340.54, SPY 732.44, right on the 200-day average). Nvidia beat and raised after the close (revenue $115.8B vs about $109B expected, Q4 guide about $130B, $150B more buyback). The board said it will not reinstate Jensen Huang. NVDA traded about 4–5% higher after hours, and ES bounced toward 7421 before fading back near 7380. Wednesday faded the Nvidia bounce. ES opened near 7371 after an overnight high of 7434.75, topped at 7388.75 in the first minutes, then sold to 7305.25 by 8:21 AM PT, a second sweep of the 7309 low that recovered again. Fed Governor Waller called for rate hikes to take back the insurance cuts, and the FOMC minutes at 11:00 AM PT were hawkish (almost all see further hikes; a couple see more than 25bp in December as possible). SPY closed 730.20 (−0.31%), its first close under the 200-day average; SPX 7323.63, QQQ 659.51 (+0.36% for the Nasdaq). ES was near 7340 after the close. VIX 24.63. After hours ES rallied to 7391 by 4:36 PM PT, back above 7372–73 and at Wednesday's 7388 high (NQ about +1.3% from Wednesday's close), as Anthropic raised $81.31B in an upsized IPO (Nasdaq debut Thursday) and cybersecurity names rose after Palo Alto's results.
 
 BIAS (WEEK)
-Bearish structure, now basing. Two sweeps of the 7309–05 area (Tue and Wed) both recovered, so 7320–23 is the shelf that matters into Friday's monthly OpEx. Rallies are still suspect: price is below every short-term average, SPY closed under its 200-day average, and the board is negative gamma on every expiry (Fri 11/20 SPX flip 7595.6, SPY 759), so moves stretch both ways. The biggest Friday put level is SPX 7300 / SPY 725. Rate-hike talk (Waller, hawkish minutes) is the headwind; the Anthropic IPO and the US–China–Russia leaders' meeting Thursday are the event risk. No structural reclaim until ES holds 7372, then 7421; acceptance under 7305 opens 7275 and the SPX 7250 area.
+Bearish structure, now basing. Two sweeps of the 7309–05 area (Tue and Wed) both recovered, so 7320–23 is the shelf that matters into Friday's monthly OpEx. Rallies are still suspect: price is below every short-term average, SPY closed under its 200-day average, and the board is negative gamma on every expiry (Fri 11/20 SPX flip 7593.1, SPY 758.6), so moves stretch both ways. The biggest Friday put level is SPX 7300 / SPY 725; across all expiries the SPY floor slipped to 700 in the evening re-read, and call walls came down (SPY Fri 755, QQQ Thu 665, SPX Fri 7480). Weekly VIX wall is now 30 (was 25). Rate-hike talk (Waller, hawkish minutes) is the headwind; the Anthropic IPO and the US–China–Russia leaders' meeting Thursday are the event risk. No structural reclaim until ES holds 7372, then 7421; acceptance under 7305 opens 7275 and the SPX 7250 area.
 
 SCENARIOS
 - Bull: ES holds 7323 → 7352 → 7372–73; acceptance above 7373 opens 7388 (Wed high), then 7421 (bull/bear line). 7455 and 7519 are targets only. SPY back above 733, then 737 and 741.
@@ -19,12 +19,12 @@ KEY LEVELS
 - Support: 7320–23 · 7305–09 (Tue/Wed lows). Target only below: 7275
 
 SPY
-- Resistance: 732 · 735 (Wed high) · 737 · 741
+- Resistance: 732 · 735 (Wed high; Thu flip 734.9) · 737–738 (Thu call wall 738) · 741
 - Pivot: 730–731 (Wed close)
 - Support: 727 (Tue/Wed lows) · 725 (floor) · 720
 
 QQQ
-- Resistance: 662.80 (Wed high) · 672.69 (Thu implied-move high) · 679–680 (Fri call wall)
+- Resistance: 662.80 (Wed high) · 665 (Thu call wall) · 668.9 (Thu flip) · 672.69 (Thu implied-move high) · 679 (Fri call wall, weekly ceiling)
 - Pivot: 657
 - Support: 653 (Wed low) · 650 · 646.64 (Tue low)
 

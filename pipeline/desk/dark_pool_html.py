@@ -22,6 +22,9 @@ def load():
 def section_html():
     d = load()
     rows = d.get("rows") or []
+    conv = d.get("convert") or {}
+    asof = conv.get("asof") or (conv.get("closes") or {}).get("asof")
+    basis_lbl = f" ({html.escape(_md(asof))} basis)" if asof else ""
     if not rows and d.get("levels"):
         for spy in d["levels"]:
             spx = round(spy / SPY_PER_SPX, 2)
@@ -36,12 +39,22 @@ def section_html():
         '<section class="sec" id="spy-dark-pool-levels">'
         '<h2 style="background:#a855f7;color:#fff">SPY Dark Pool levels</h2>'
         '<p>Purple <b style="color:#c084fc">Dark Pool</b> set on SPY. '
-        'SPX = SPY ÷ <b>0.0997</b> · ES = SPX + <b>34.5</b> (Fri close basis). '
+        f'SPX = SPY ÷ <b>{_g(conv.get("spy_per_spx", SPY_PER_SPX))}</b> · ES = SPX + <b>{_g(conv.get("es_minus_spx", ES_MINUS_SPX))}</b>{basis_lbl}. '
         '</p>'
         '<div class="dp-wrap"><table class="dp-tbl">'
         '<thead><tr><th>SPY</th><th>SPX</th><th>ES</th></tr></thead>'
         f'<tbody>{tr}</tbody></table></div></section>'
     )
+
+def _g(x):
+    return html.escape(f"{float(x):g}")
+
+def _md(iso):
+    try:
+        y, m, dd = str(iso).split("-")
+        return f"{int(m)}/{int(dd)}"
+    except ValueError:
+        return str(iso)
 
 def _fmt(x):
     try:
