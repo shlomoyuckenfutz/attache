@@ -1,14 +1,14 @@
 {
- "generated_pt": "2026-11-18 21:07 PT",
+ "generated_pt": "2026-11-18 22:10 PT",
  "sync_timestamp_et": "2026-11-18 16:00:00-05:00",
  "prices": {
   "ES=F": 7340.25,
-  "SPY": 730.3300170898438
+  "SPY": 730.3250122070312
  },
  "feed": "yfinance",
  "factors": {
-  "spy_per_es": 0.09949661347908365,
-  "es_per_spy": 10.050593332105938
+  "spy_per_es": 0.09949593163816373,
+  "es_per_spy": 10.050662208347314
  },
  "method": "Convert posted ES levels (+ pinned Iron Ladder) to SPY only. Free delayed data only.\nSPY = ES * factor, factor = SPY_close / ES_close at a synchronized timestamp (last 5m bar ending <= 16:00 ET of latest session).",
  "levels_a": {
@@ -17,7 +17,7 @@
    {
     "es": 7690,
     "es_pct": 4.765,
-    "spy": 765.13,
+    "spy": 765.12,
     "role": "R"
    },
    {
@@ -29,19 +29,19 @@
    {
     "es": 7650,
     "es_pct": 4.22,
-    "spy": 761.15,
+    "spy": 761.14,
     "role": "SRK"
    },
    {
     "es": 7636,
     "es_pct": 4.029,
-    "spy": 759.76,
+    "spy": 759.75,
     "role": "R"
    },
    {
     "es": 7616,
     "es_pct": 3.757,
-    "spy": 757.77,
+    "spy": 757.76,
     "role": "R"
    },
    {
@@ -53,7 +53,7 @@
    {
     "es": 7535,
     "es_pct": 2.653,
-    "spy": 749.71,
+    "spy": 749.7,
     "role": "K"
    }
   ]
@@ -62,7 +62,7 @@
   {
    "es": 7887,
    "es_pct": 7.449,
-   "spy": 784.73,
+   "spy": 784.72,
    "role": "resistance"
   },
   {
@@ -74,7 +74,7 @@
   {
    "es": 7870,
    "es_pct": 7.217,
-   "spy": 783.04,
+   "spy": 783.03,
    "role": "resistance"
   },
   {
@@ -86,13 +86,13 @@
   {
    "es": 7847,
    "es_pct": 6.904,
-   "spy": 780.75,
+   "spy": 780.74,
    "role": "resistance"
   },
   {
    "es": 7834,
    "es_pct": 6.727,
-   "spy": 779.46,
+   "spy": 779.45,
    "role": "resistance"
   },
   {
@@ -122,7 +122,7 @@
   {
    "es": 7729,
    "es_pct": 5.296,
-   "spy": 769.01,
+   "spy": 769.0,
    "role": "support"
   },
   {
