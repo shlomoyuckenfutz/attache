@@ -1,44 +1,44 @@
 {
- "score": -68,
+ "score": -59,
  "label": "BEARISH",
- "px": 708.11,
- "asof": "11-20 07:48 PT",
+ "px": 693.82,
+ "asof": "11-20 13:40 PT",
  "feed": "delayed",
- "built": "11-20 08:06 PT",
+ "built": "11-20 13:40 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": -1,
-   "x": "708.11 vs 712.30",
+   "x": "693.82 vs 702.95",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": -1,
-   "x": "9=710.27 21=711.28",
+   "v": 0,
+   "x": "9=693.26 21=693.54",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
    "v": -1,
-   "x": "BELOW LOW 711.72\u2013714.16 \u00b7 confirmed break (\u00d73)",
-   "w": 4.5
+   "x": "BELOW LOW 711.72\u2013714.16",
+   "w": 1.5
   },
   {
    "k": "ON RANGE",
    "d": "price vs overnight / pre-market high-low",
-   "v": 0,
-   "x": "692.15\u2013714.96",
+   "v": -1,
+   "x": "707.32\u2013717.65",
    "w": 1.0
   },
   {
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
    "v": -1,
-   "x": "708.11 vs pivot 723.8",
+   "x": "693.82 vs pivot 723.8",
    "w": 1.0
   },
   {
@@ -59,7 +59,7 @@
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
    "v": 0,
-   "x": "698.98\u2013713.32",
+   "x": "672.96\u2013706.66",
    "w": 1.0
   },
   {
