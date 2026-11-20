@@ -407,7 +407,7 @@ def _place_edge_labels(ax, labels, *, xe, D, lo, hi):
 
 
 def chart(key, sp, plan_week, zones, event, out_path, day_notes=None,
-          mode="actual", box_title=None):
+          mode="actual", box_title=None, frozen_sc=None):
     raw = _download(sp["sym"])
     plan_start, plan_end = plan_week[0], plan_week[-1]
     event_day = event["day"]
@@ -659,7 +659,8 @@ def chart(key, sp, plan_week, zones, event, out_path, day_notes=None,
 
     sc = None
     if not actual.empty and z and sp["bull"] and sp["bear"]:
-        sc = _scorecard(actual, key, sp, zones, event_day)
+        # frozen_sc: keep the last published scorecard (forecast zones are never graded before they trade)
+        sc = frozen_sc or _scorecard(actual, key, sp, zones, event_day)
         if sc:
             day_lines = []
             for d in sc["days"]:
@@ -771,13 +772,21 @@ def main():
     # 2) This week PLAN (Nov 16–20) — actual candles so far + forward paths on empty days
     print("=== FORWARD WEEK (Nov 16–20) PLAN ===")
     fwd_scores = {}
+    # FREEZE_SCORECARD=1: re-draw levels/paths but keep the published plan-week scorecard as-is
+    frozen = {}
+    if os.environ.get("FREEZE_SCORECARD") == "1":
+        try:
+            frozen = json.loads((SITE / "daily" / "scorecard.json").read_text(encoding="utf-8")).get("symbols_plan") or {}
+        except (OSError, ValueError):
+            frozen = {}
     for k, sp in FWD_SPEC.items():
         try:
             p, sc = chart(k, sp, PLAN_WEEK_FWD, FWD_ZONES, FWD_EVENT,
                           out_path=str(plan_dir / f"{k}.png"),
                           day_notes=FWD_DAY_NOTES,
                           mode="plan",
-                          box_title="Nov 16–20 · week plan")
+                          box_title="Nov 16–20 · week plan",
+                          frozen_sc=frozen.get(k))
             print("plan", p)
             shutil.copy(p, Path(OUT) / f"{k}.png")  # daily page = this week's chart (new candles)
             shutil.copy(p, arch / f"{k}.png")
