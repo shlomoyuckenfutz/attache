@@ -105,16 +105,16 @@ PLAN_WEEK_FWD = [dt.date(2026, 11, 16), dt.date(2026, 11, 17), dt.date(2026, 11,
 FWD_ZONES = {
   "spy": {"bull": (718.66, 725.0), "bear": (710.0, 703.14),
           "bull_lab": "718.66 → 725", "bear_lab": "below 710 → 703.14 Fri range low"},
-  "es":  {"bull": (7240.0, 7270.0), "bear": (7168.0, 7126.0),
-          "bull_lab": "7240–45 → 7269–77", "bear_lab": "below 7168 → 7136–16"},
+  "es":  {"bull": (7240.0, 7270.0), "bear": (7086.0, 7000.0),
+          "bull_lab": "above 7211–23 → 7240–45 / 7269–77", "bear_lab": "lose 7182 trap door → 7086, then 7000"},
   "qqq": None,
   "nq":  None,
 }
 FWD_SPEC = {
  "es": dict(sym="ES=F", title="/ES  ·  week of Nov 16 (Mon–Thu actual · Fri plan, Thu 11/19 levels)", fut=True, lv=[
    (7305,"R","7305–09 control line"),(7270,"R","7269–77"),(7240,"R","7240–45"),
-   (7215,"P","7210–20 Fri pivot"),(7192,"S","7192 Thu low"),(7168,"S","7168 after-hours low"),(7126,"S","7136–16")],
-   zones=[], bull=[7215,7240,7270], bear=[7215,7168,7126]),
+   (7217,"R","7211–23 prior highs · biggest resistance"),(7192,"S","7192 Thu low"),(7182,"P","7182 trap door"),(7086,"S","7086"),(7000,"S","7000 deeper test")],
+   zones=[], bull=[7182,7217,7240], bear=[7182,7086,7000]),
  "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 16 (levels · no paths)", fut=True, lv=[
    (26608.75,"R","26609 after-hours high"),(26589.25,"P","26589 Thu close"),(26436,"S","26436 after-hours low")],
    zones=[], bull=[], bear=[]),
@@ -138,7 +138,7 @@ FWD_DAY_NOTES = {
   3: "IPO",
   4: "OpEx",
 }
-FWD_BOX = ["bias: bearish under 7305–09 · Fri pivot 7210–20",
+FWD_BOX = ["bias: bearish under 7211–23 (prior highs) · 7182 trap door → 7086, then 7000",
            "catalysts: Fri Waller 5:25 AM PT · Michigan 7:00 AM PT · monthly OpEx at the close"]
 
 def _download(sym):
