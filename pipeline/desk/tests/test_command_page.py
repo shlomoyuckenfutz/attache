@@ -102,6 +102,20 @@ class Builder(unittest.TestCase):
         self.assertEqual(section_ids(h), [s for s in ORDER])
         self.assertIn("awaiting update", h); self.assertNotRegex(h, r"(?i)\berror\b")
 
+    def test_expected_move_never_steps_back(self):
+        """After hours the chain fetch can fail and leave an older expected-move file; the page keeps its newer snapshot."""
+        with tempfile.TemporaryDirectory() as td:
+            out = pathlib.Path(td) / "index.html"; out.write_text(PAGE.read_text())
+            pim = CC.prior_im(out)
+            self.assertTrue(pim and pim.get("symbols"))
+            old = CC.load; S0 = old()
+            try:
+                CC.load = lambda: {**S0, "im": {"generated_pt": "2000-01-01 00:00 PT", "symbols": {}}}
+                CC.main(["x", str(out)])
+            finally:
+                CC.load = old
+            self.assertEqual(CC.prior_im(out)["generated_pt"], pim["generated_pt"])
+
     def test_countdown_never_empty(self):
         C = CC.Ctx(CC.load())
         ev = CC.events(C)

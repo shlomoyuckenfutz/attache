@@ -447,6 +447,8 @@ def build(S, now=None):
     js = ('<script>if(innerWidth>700)document.getElementById("railw").open=true;(()=>{const ev=' + json.dumps(ev) + ''';const f=()=>{const now=Date.now();const n=ev.find(e=>Date.parse(e.t)>now);const a=document.getElementById('cdn'),b=document.getElementById('cdw'),c=document.getElementById('cdl');
 if(!n){a.textContent='next sweep';b.textContent='calendar awaiting update';c.textContent='';return}let s=Math.floor((Date.parse(n.t)-now)/1000);const d=Math.floor(s/86400);s%=86400;const h=Math.floor(s/3600);s%=3600;const m=Math.floor(s/60);s%=60;
 a.textContent=(d?d+'d ':'')+h+'h '+String(m).padStart(2,'0')+'m '+String(s).padStart(2,'0')+'s';b.textContent=n.n;const r=ev.filter(e=>Date.parse(e.t)>Date.parse(n.t)).slice(0,3).map(e=>e.pt);c.textContent=n.pt+(r.length?' · then '+r.join(' · '):'')};f();setInterval(f,1000)})()</script>''')
+    imx = {k: v for k, v in (S["im"] or {}).items() if k in ("generated_pt", "session_for", "week_expiry", "symbols")}
+    im_tag = ('<script id="cc-im" type="application/json">' + json.dumps(imx, ensure_ascii=False).replace("</", "<\\/") + "</script>") if imx.get("symbols") else ""
     orb_js = "<script>const D=" + json.dumps(D, ensure_ascii=False, default=float).replace("</", "<\\/") + ";\n" + ORB_JS + "</script>"
 
     page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -455,7 +457,7 @@ a.textContent=(d?d+'d ':'')+h+'h '+String(m).padStart(2,'0')+'m '+String(s).padS
 <div class="top"><span class="brand">ATTACHÉ COMMAND CENTER</span><div class="jump"><a href="#now">NOW</a><a href="#ladder">ES MAP</a><a href="#scen">SCENARIOS</a><a href="#pos">POSITIONING</a><a href="#tape">TAPE</a><a href="#reads">READS</a><a href="#topics">SWEEP DESK</a><a href="#z-orb">ORB</a><a href="#acct">ACCOUNT</a></div></div>
 {rail}{hero}{ladder}{scen}{pos}{tape}{reads}{topics}{orb_sec}{acct}{ctx}
 <footer>Research only. Not financial advice. Expected-move bands are not guaranteed limits. Futures quotes delayed. Built {E(built)}.</footer>
-</main>{js}{orb_js}</body></html>'''
+</main>{js}{orb_js}{im_tag}</body></html>'''
     return page
 
 
@@ -681,10 +683,23 @@ def prior_bot(out):
         return None
 
 
+def prior_im(out):
+    """Expected-move snapshot the published page was built from (the chain fetch can fail after hours and leave an older file)."""
+    try:
+        h = out.read_text(encoding="utf-8")
+        m = re.search(r'<script id="cc-im" type="application/json">(.*?)</script>', h, re.S)
+        return json.loads(m.group(1)) if m else None
+    except Exception:
+        return None
+
+
 def main(argv):
     out = Path(argv[1]) if len(argv) > 1 else DESK.parent.parent / "command" / "index.html"
     S = load()
     S["prior_bot"] = prior_bot(out)
+    pim = prior_im(out)
+    if pim and str(pim.get("generated_pt", "")) > str(S["im"].get("generated_pt", "")):
+        S["im"] = pim  # never step back to an older expected-move snapshot
     page = build(S)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
