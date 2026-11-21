@@ -23,7 +23,8 @@ copy_if "$IN/xlevels/week_raw_posts.json" "$DESK/xnews/week_raw/posts.json"
 # THE WIRE raw X pulls (bot writes; Actions runs newswire_fetch.py)
 copy_if "$IN/newswire_raw.json"     "$DESK/xnews/newswire/newswire_raw.json"
 copy_if "$IN/plan_b/plan_b.json" "$DESK/xnews/plan_b/plan_b.json"
-copy_if "$IN/implied_move/implied_move.json" "$DESK/xnews/implied_move/implied_move.json"
+# expected-move snapshot: only move forward in time (an old inputs copy must never replace a newer working file)
+python3 "$DESK/keep_newest_im.py" "$IN/implied_move/implied_move.json" "$DESK/xnews/implied_move/implied_move.json" || true
 copy_if "$IN/implied_move/sourced_im.json" "$DESK/xnews/implied_move/sourced_im.json"
 copy_if "$IN/positioning/board.json" "$DESK/xnews/positioning/board.json"
 copy_if "$IN/darkpool_levels.json"  "$DESK/es_levels/darkpool_levels.json"

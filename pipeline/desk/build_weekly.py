@@ -121,7 +121,7 @@ def charts_html():
         figs = _figs(prior_dir, href, have_prior)
         out.append(
             '<section class="sec" id="plan-charts"><h2>LAST WEEK · PLAN vs ACTUAL</h2>'
-            '<p>Week of <b>Nov 9–13</b>: the plan levels and paths published for that week against the actual 30m candles. '
+            '<p>Week of <b>Nov 16–20</b>: the plan levels and paths published for that week (Friday\'s plan, posted Thu 11/19) against the actual 30m candles. '
             'Amber = week before; white = that week\'s actual 30m. '
             'Green/red bands = plan bull / bear zones. Levels as right-edge ticks. Each day labeled hi / lo / close. Tap a chart to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')
@@ -129,8 +129,8 @@ def charts_html():
         figs = _figs(plan, "charts/plan", have_plan)
         out.append(
             '<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
-            '<p>Week of <b>Nov 16–20</b> — Mon to Thu are graded as actual (white candles); the Friday paths start at the 7210–20 ES pivot. Bearish under 7305–09 after Thursday\'s failed gap-up; '
-            'Waller, Michigan sentiment and monthly OpEx Fri. Amber = prior week actual; white = this week\'s actual 30m so far; '
+            '<p>Week of <b>Nov 23–27</b> (Thanksgiving: Thu closed, Fri half day) — paths start at the 6960–66 ES pivot. Bearish under 7120–25 and 7211–23 after Friday\'s drop to 6898; '
+            'PCE, GDP and claims Wed 5:30 AM PT. Amber = prior week actual; white = this week\'s actual 30m so far; '
             'empty day columns show the <b>bull (green) and bear (red) paths</b> forward only — no lines through candles. '
             'Nasdaq charts show levels only. Tap a chart to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')

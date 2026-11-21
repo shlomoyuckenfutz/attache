@@ -1,52 +1,52 @@
-YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 16 to Fri Nov 20, 2026
-Plan only — not investment advice · updated Thu Nov 19, after the close (levels for Fri)
-Weekly implied move to Fri 11/20 (re-read at the Thu 11/19 close, each index in its own points; not guaranteed limits): SPX 7093.80–7257.88 (±1.14%) · SPY 703.14–728.60 (±1.78%) · QQQ 627.89–662.19 (±2.66%) · NDX 26064.35–26969.77 (±1.71%). This is Friday's remaining range; the week opened at SPX 7203.19–7444.09 (±1.64%).
-Week so far: Monday was a trend day down. ES lost 7519–24 and 7502, then ran through the 7420–7390 targets to close near 7439 (SPY 739.95, −1.9%). Tuesday extended the selloff. ES flushed to 7309, under the Nov 5 low at 7323, then recovered (a Failed Breakdown). It closed near 7363 at 1:00 PM PT (SPX 7340.54, SPY 732.44, right on the 200-day average). Nvidia beat and raised after the close (revenue $115.8B vs about $109B expected, Q4 guide about $130B, $150B more buyback). The board said it will not reinstate Jensen Huang. NVDA traded about 4–5% higher after hours, and ES bounced toward 7421 before fading back near 7380. Wednesday faded the Nvidia bounce. ES opened near 7371 after an overnight high of 7434.75, topped at 7388.75 in the first minutes, then sold to 7305.25 by 8:21 AM PT, a second sweep of the 7309 low that recovered again. Fed Governor Waller called for rate hikes to take back the insurance cuts, and the FOMC minutes at 11:00 AM PT were hawkish (almost all see further hikes; a couple see more than 25bp in December as possible). SPY closed 730.20 (−0.31%), its first close under the 200-day average; SPX 7323.63, QQQ 659.51 (+0.36% for the Nasdaq). ES was near 7340 after the close. VIX 24.63. Thursday gapped up and failed. ES made an overnight high of 7440.5 (3:55 AM PT) after Anthropic's IPO raised about $81B, opened 7411.5 and topped 7436.5 at 6:34 AM PT, then lost 7373 by 7:15 AM PT and 7305 by 7:37 AM PT and sold to 7192 at 12:05 PM PT. Anthropic opened at $111.50 at 8:48 AM PT and closed at $97.17, 17% above its $83 offering price. The S&P 500 fell for a sixth day: SPX 7175.84 (−2.02%), SPY 715.87 (−1.96%), QQQ 645.04 (−2.19%), VIX 28.48 (+15.9%). ES closed 7194.25 and traded 7167.75–7201 after hours.
+YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 23 to Fri Nov 27, 2026 (Thanksgiving week)
+Plan only — not investment advice · updated Sat Nov 21, 11:00 AM PT (Fri 11/20 close)
+Weekly implied move to Fri 11/27 (read at the Fri 11/20 close, each index in its own points; not guaranteed limits): SPX 6562.72–7258.08 (±5.03%) · SPY 654.65–724.97 (±5.10%) · QQQ 566.50–650.40 (±6.89%) · NDX 23307.24–26750.74 (±6.88%). Monday alone: SPX 6704.09–7116.71 (±2.99%), about ES 6721–7133.
+Last week: the S&P 500 fell every day, seven straight losses, its worst week since the April 2025 tariff selloff. Monday was a trend day down; Tuesday flushed to ES 7309 and recovered; Wednesday swept 7305 again on hawkish Fed minutes; Thursday's gap-up to 7440.5 failed and lost the 7305–09 shelf. Friday ES rallied to 7216.75 at 7:00 AM PT, was rejected right at the 7211–23 prior highs, lost the 7182 trap door at 7:10 AM PT, 7086 at 8:02 AM PT and 7000 at 11:24 AM PT, and sold to 6898 at 12:56 PM PT. ES closed 6935 and traded 6924.5–6979.75 after the bell. SPX 6910.40 (−3.70%), SPY 689.81 (−3.64%), QQQ 608.45 (−5.67%), NDX 25028.99 (−5.61%, more than 20% off its high), VIX 35.90 (+26.1%). A December Fed hike is still priced; a 50bp move is off the table.
 
 BIAS (WEEK)
-Bearish. Thursday's failed gap-up broke the 7305–09 shelf that held Tuesday and Wednesday, and SPX closed just under its 7200 gamma level. Every expiry is negative gamma, with no flips left on the all-expiry boards, so moves stretch both ways into Friday's monthly OpEx. SPY's Friday put wall moved down to 715, right at the close, and the all-expiry SPY floor is 700. VIX 28.48 sits on its 30 wall. Friday's pivot is ES 7210–20; no bullish structure until 7305–09 is recovered.
+Bearish, but very stretched. Bears control below 7120–25 and 7211–23, and the bigger line is 7305–09: no bullish structure until it is back. Every index board is negative gamma with no flip, so moves stretch both ways. SPX's biggest strike for the week moved down to 6500 (≈ ES 6516) and its call wall (6835) is now below price; SPY's biggest strike, 700 (≈ ES 7029), now sits above price; VIX 35.90 sits under its 40 wall. Short-term momentum is the most oversold since early 2020 and Thanksgiving week has been higher in 8 of the last 9 years, so sharp short-covering rallies are likely; sell them at resistance rather than chase lows.
 
 SCENARIOS
-- Bull: ES recovers 7210–20 → 7240–45, then 7269–77 (top of Friday's range ≈ 7277). Acceptance above opens 7305–09. SPY back above 718.66, then 725.
-- Bear: ES stays under 7210–20 → 7192, then 7168; a loss opens 7136–16 (SPY 710–708, bottom of Friday's range ≈ 7113). SPY 700 ≈ ES 7036 is a target only.
-- Neutral: OpEx pin around SPX 7200 / SPY 715 (ES about 7186–7219); fade the edges.
+- Bull: ES holds 6897 and reclaims 6960–66 → 7025–29 (SPY 700), then 7086. A 7120–25 reclaim opens 7211–23, the first place to sell a bounce. 7305–09 is the control line.
+- Bear: ES stays under 6960–66 → 6897–98 (Friday's low). Lose it → 6841–51 (SPX 6825, Monday's put wall), then 6770 and 6721 (bottom of Monday's range). SPX 6500 ≈ ES 6516 is a target only.
+- Neutral: two-way swings between 6897 and 7029 into Wednesday's 5:30 AM PT data; fade the edges.
 
 KEY LEVELS
 
 /ES
-- Resistance: 7240–45 · 7269–77 · 7305–09 (control line)
-- Pivot: 7210–20 (Thu big low; SPX 7200 ≈ ES 7219) · see Daily
-- Support: 7192 (Thu low) · 7168 (after-hours low) · 7136–16. Target only below: 7036 (SPY 700)
+- Resistance: 7025–29 (SPY 700) · 7086 · 7120–25 · 7211–23 (prior highs) · 7305–09 (control line)
+- Pivot: 6960–66 (SPX 6950 ≈ 6966) · see Daily
+- Support: 6897–98 (Fri low) · 6841–51 (SPX 6825/6835) · 6770 · 6721 (Mon range low). Target only below: 6516 (SPX 6500)
 
 SPY
-- Resistance: 718.66 · 725 · 728.60 (Fri range high)
-- Pivot: 715–716 (Fri put wall 715; Thu close 715.87)
-- Support: 710–708 (709 = Mon put wall) · 703.14 (Fri range low) · 700 (floor)
+- Resistance: 700 (biggest strike, above price) · 710.90 (Mon range high) · 721 (ceiling) · 724.97 (week range high)
+- Pivot: 695 (Monday's biggest strike) / 689.81 close
+- Support: 686.75 (Fri low) · 680 · 675 (heavy Nov 27 / Dec 4 put buying) · 668.72 (Mon range low) · 654.65 (week range low)
 
 QQQ
-- Resistance: 650 (now above price) · 662.19 (Fri range high) · 665 (Fri call wall)
-- Pivot: 645 (Thu close)
-- Support: 640 (Fri put wall) · 635–632 · 627.89 (Fri range low)
+- Resistance: 624 (Mon call wall) · 634.35 (Mon range high) · 644 (Fri 11/27 call wall)
+- Pivot: 608.45 close
+- Support: 606.23 (Fri low) · 600 (biggest strike and put wall) · 582.55 (Mon range low)
 
 /NQ
-- Resistance: 26609 (after-hours high)
-- Pivot: 26589 (Thu close)
-- Support: 26436 (after-hours low)
+- Resistance: 26504 (Fri regular-session high)
+- Pivot: 25126.5 (Fri close)
+- Support: 24976.5 (Fri low)
 
 DAY BY DAY
-- Mon Nov 16 (done): trend day down; SPY −1.9%, ES through 7420–7390.
-- Tue Nov 17 (done): flush to ES 7309 and recovery; SPY −1.0% to 732.44; Nvidia beat and raised after the close; CEO not reinstated.
-- Wed Nov 18 (done): Nvidia bounce faded from 7388.75; second sweep of the lows to ES 7305 recovered; hawkish Fed minutes; SPY −0.3% to 730.20, first close under the 200-day average.
-- Thu Nov 19 (done): gapped up to 7440.5 overnight and failed at 7436.5; lost 7373 and 7305 and sold to 7192; Anthropic debuted at $111.50 and closed $97.17; SPY −1.96% to 715.87, the sixth straight S&P 500 loss.
-- Fri Nov 20: 7210–20 is the ES pivot. Recover it → 7240–45, then 7269–77. Under it → 7192, 7168, then 7136–16. Fed Waller 5:25 AM PT · Michigan sentiment (final Nov) 7:00 AM PT · Fed Cook 9:15 AM PT · monthly options expiration at the 1:00 PM PT close.
+- Mon Nov 23: 6960–66 is the first line. Reclaim it → 7025–29, then 7086. Under it → 6897–98; lose that → 6841–51. Flash PMIs 6:45 AM PT · Fed Williams 1:00 PM PT.
+- Tue Nov 24: Case-Shiller 6:00 AM PT · Conference Board consumer confidence and Richmond Fed 7:00 AM PT.
+- Wed Nov 25: the big data day — PCE prices and personal income/spending (Oct), GDP second estimate (Q3), jobless claims and durable goods all at 5:30 AM PT · new home sales 7:00 AM PT · Fed Beige Book 11:00 AM PT.
+- Thu Nov 26: Thanksgiving — US stock market closed.
+- Fri Nov 27: half day; stocks close at 10:00 AM PT (1:00 PM ET), weekly options expiration. Goods trade balance 5:30 AM PT.
 
 TRIGGERS / IF-THEN
-1. Recover and hold 7210–20 → 7240–45, then 7269–77; acceptance above 7277 opens 7305–09.
-2. Stay under 7210–20 → 7192, then 7168; lose 7168 → 7136–16.
-3. VIX above its 30 wall with ES under 7168 = weakness.
-4. SPY back above 718.66 takes pressure off; under 710, 703 is next.
+1. Reclaim and hold 6960–66 → 7025–29, then 7086; a 7120–25 reclaim opens 7211–23 (sell the first test).
+2. Stay under 6960–66 → 6897–98; lose 6897 → 6841–51, then 6770 and 6721.
+3. VIX back over its 40 wall with ES under 6897 = weakness; VIX back under 30 with ES over 7029 = relief.
+4. SPY back over 700 takes pressure off; under 686.75, 680 then 675 are next.
 
 SKIP
-- Don't chase the first move after Waller at 5:25 AM PT or Michigan at 7:00 AM PT; trade the 7210–20 reaction.
-- Skip chop between 7192 and 7210.
-- Skip chasing and skip unplanned or unlimited-risk 0DTE exposure into Friday's OpEx close.
+- Don't chase Wednesday's 5:30 AM PT data burst; trade the reaction at a level.
+- Skip chop between 6897 and 6966.
+- Size down with VIX near 36; skip unplanned 0DTE size into Friday's 10:00 AM PT early close.

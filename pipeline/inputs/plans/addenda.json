@@ -1,1 +1,91 @@
-{"schema": 1, "daily": {"session": "2026-11-12", "title": "After hours, catalysts & SPY levels", "rows": [{"k": "res", "lb": "After hours", "t": "Wed: Nvidia board reported preparing to remove its CEO · NVDA ~7–9% lower after a $173.73 close; Oppenheimer cut NVDA to Perform (7:43 PM PT) · NQ −0.96% (4:02 PM PT) · ES 7614.25 and NQ 28,231 at 8:35 PM PT (delayed), ES below the 7625 pivot · SPY 756.41, −0.45% (4:22 PM PT)"}, {"k": "", "lb": "Close Wed", "t": "S&P 500 7,619.22 (+1.31%) · Nasdaq 25,465.38 (+1.59%) · SPY 759.81 · QQQ 690.38"}, {"k": "piv", "lb": "Claims", "t": "Thu 5:30 AM PT · weekly initial jobless claims"}, {"k": "", "lb": "EIA", "t": "Thu 9:00 AM PT · weekly petroleum report (moved for Veterans Day)"}, {"k": "", "lb": "Bond sale", "t": "Thu 10:00 AM PT · $25B 30-year Treasury bond sale results"}, {"k": "", "lb": "Earnings", "t": "Thu: Nebius before the open · Cisco and Applied Materials after the close"}, {"k": "piv", "lb": "PPI", "t": "Fri 5:30 AM PT · October producer prices"}, {"k": "", "lb": "Implied Thu", "t": "SPY 752.72–761.82 (±0.60%) · ES ≈ 7593.86–7654.28 (derived from SPX 7564.59–7625.01 + 29.27)"}, {"k": "res", "lb": "Resistance", "t": "SPY 762.27 dark-pool line · 767.73 remaining-week bound"}, {"k": "piv", "lb": "Decision", "t": "SPY 758.3 all-expiration flip · Thu-expiry magnet 759, flip 753.3"}, {"k": "sup", "lb": "Support", "t": "SPY 759.57 dark-pool line (held Wed) · 755 · 750 all-expiration floor"}, {"k": "res", "lb": "Macro", "t": "Fed official: inflation report 'borderline disturbing' · December hike priced · US 2-year yield +5 bp to 4.78% (two-week high), 10-year 4.99% · dollar at a 19-month high · oil about $1 lower on Mideast peace hopes · Asia-Pacific stocks lower on the Nvidia news · US envoys meet Putin Thu, no ceasefire"}, {"k": "res", "lb": "Nasdaq", "t": "NQ 28,231 (8:35 PM PT, delayed) · NDX 28,888 is the line in the sand, above 29,000 = bullish · NQ daily close under 27,400 = bearish (target only, outside the band)"}]}, "weekly": {"week_start": "2026-11-16", "week_end": "2026-11-20", "title": "Week bias & volatility", "rows": [{"k": "piv", "lb": "Bias flip", "t": "ES recovery of 7210–20, then 7305–09 (the Tue/Wed shelf lost Thursday) = first bullish development · SPY back above 718.66, then 725 takes pressure off"}, {"k": "res", "lb": "Fed", "t": "Waller called for hikes to take back the insurance cuts; FOMC minutes hawkish (almost all see further hikes, a couple see more than 25bp in December possible)"}, {"k": "res", "lb": "Thursday", "t": "Gap-up to ES 7440.5 failed at 7436.5; sold to 7192; Anthropic opened $111.50 and closed $97.17 (+17% vs $83); SPY 715.87 (−1.96%), sixth straight S&P 500 loss; VIX 28.48"}, {"k": "res", "lb": "Friday", "t": "Waller 5:25 AM PT · Michigan sentiment 7:00 AM PT · Cook 9:15 AM PT · monthly OpEx at the 1:00 PM PT close"}, {"k": "sup", "lb": "Week EM", "t": "to Fri 11/20 (Thu close): SPX 7093.80–7257.88 · SPY 703.14–728.60 · QQQ 627.89–662.19 · NDX 26064.35–26969.77"}, {"k": "sup", "lb": "Gamma", "t": "negative gamma on every expiry, no all-expiry flips; SPX closed just under its 7200 level (ceiling 7650); SPY floor 700, ceiling 765; Fri 11/20 put wall SPY 715, call wall SPY 755 / SPX 7625; VIX 28.48 on its 30 wall"}]}}
+{
+ "schema": 1,
+ "daily": {
+  "session": "2026-11-23",
+  "title": "Weekend, catalysts & SPY levels",
+  "rows": [
+   {
+    "k": "",
+    "lb": "Close Fri",
+    "t": "SPX 6,910.40 (−3.70%) · SPY 689.81 (−3.64%) · QQQ 608.45 (−5.67%) · NDX 25,028.99 (−5.61%) · VIX 35.90 (+26.1%) · ES 6935 at 1:59 PM PT"
+   },
+   {
+    "k": "res",
+    "lb": "After hours",
+    "t": "ES 6924.5–6979.75 Friday after the bell · futures reopen Sun 3:00 PM PT"
+   },
+   {
+    "k": "piv",
+    "lb": "PMIs",
+    "t": "Mon 6:45 AM PT · S&P Global flash manufacturing and services PMIs (Nov)"
+   },
+   {
+    "k": "",
+    "lb": "Fed",
+    "t": "Mon 1:00 PM PT · New York Fed President Williams, keynote"
+   },
+   {
+    "k": "",
+    "lb": "Implied Mon",
+    "t": "SPY 668.72–710.90 (±3.06%) · SPX 6704.09–7116.71 (±2.99%) · ES ≈ 6721–7133 (SPX + 16.5)"
+   },
+   {
+    "k": "res",
+    "lb": "Resistance",
+    "t": "SPY 700 (biggest strike, above price) · 710.90 Mon range high · 718.66 nearest dark-pool line · 721 ceiling"
+   },
+   {
+    "k": "piv",
+    "lb": "Decision",
+    "t": "SPY 695 (Monday expiry's biggest strike) · no flip on any expiry except Mon (734.8)"
+   },
+   {
+    "k": "sup",
+    "lb": "Support",
+    "t": "SPY 686.75 Fri low · 680 · 675 (heavy Nov 27 / Dec 4 put buying) · 668.72 Mon range low"
+   },
+   {
+    "k": "res",
+    "lb": "Macro",
+    "t": "December Fed hike still priced; a 50bp move is off the table · Cook: high inflation leaves no room to delay · Nasdaq-100 more than 20% off its high · Bitcoin under $60,000"
+   }
+  ]
+ },
+ "weekly": {
+  "week_start": "2026-11-23",
+  "week_end": "2026-11-27",
+  "title": "Week bias & volatility",
+  "rows": [
+   {
+    "k": "piv",
+    "lb": "Bias flip",
+    "t": "ES reclaim of 7120–25, then 7211–23 = first bullish development; 7305–09 hands control back · SPY back over 700 takes pressure off"
+   },
+   {
+    "k": "res",
+    "lb": "Volatility",
+    "t": "VIX 35.90 under its 40 wall (put wall 18) · every index board negative gamma, no flip"
+   },
+   {
+    "k": "",
+    "lb": "Data",
+    "t": "Wed 5:30 AM PT: PCE, GDP (2nd), claims, durables · 7:00 AM PT new home sales · 11:00 AM PT Beige Book"
+   },
+   {
+    "k": "",
+    "lb": "Holiday",
+    "t": "Thu 11/26 closed · Fri 11/27 stocks close 10:00 AM PT (weekly expiration)"
+   },
+   {
+    "k": "sup",
+    "lb": "Seasonality",
+    "t": "Thanksgiving week higher 8 of the last 9 years for SPY (median +1.18%) · history, not a forecast"
+   },
+   {
+    "k": "",
+    "lb": "Week range",
+    "t": "SPX 6562.72–7258.08 (±5.03%) · SPY 654.65–724.97 · ES ≈ 6579–7275"
+   }
+  ]
+ }
+}

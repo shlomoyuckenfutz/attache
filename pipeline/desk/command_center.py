@@ -578,6 +578,8 @@ def tape_section(C, plan):
     tone = "weak tape, lows kept giving way" if dn > up else "strong tape, highs kept giving way" if up > dn else "two-sided tape"
     grade = ""
     es = orb.get("ES") or {}
+    if plan.get("for_session") != day:  # the sweep has posted the next plan: grade the session against the plan written for it
+        plan = next((q for q in (C.S["sweep"].get("prior_plans") or []) if q.get("for_session") == day), plan)
     if plan.get("for_session") == day and es.get("bars"):
         b = es["bars"]
         lv = sorted({L["es"]: L["label"] for L in plan.get("levels") or []}.items(), key=lambda kv: -kv[0])

@@ -1,0 +1,52 @@
+YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 23 to Fri Nov 27, 2026 (Thanksgiving week)
+Plan only — not investment advice · updated Sat Nov 21, 11:00 AM PT (Fri 11/20 close)
+Weekly implied move to Fri 11/27 (read at the Fri 11/20 close, each index in its own points; not guaranteed limits): SPX 6562.72–7258.08 (±5.03%) · SPY 654.65–724.97 (±5.10%) · QQQ 566.50–650.40 (±6.89%) · NDX 23307.24–26750.74 (±6.88%). Monday alone: SPX 6704.09–7116.71 (±2.99%), about ES 6721–7133.
+Last week: the S&P 500 fell every day, seven straight losses, its worst week since the April 2025 tariff selloff. Monday was a trend day down; Tuesday flushed to ES 7309 and recovered; Wednesday swept 7305 again on hawkish Fed minutes; Thursday's gap-up to 7440.5 failed and lost the 7305–09 shelf. Friday ES rallied to 7216.75 at 7:00 AM PT, was rejected right at the 7211–23 prior highs, lost the 7182 trap door at 7:10 AM PT, 7086 at 8:02 AM PT and 7000 at 11:24 AM PT, and sold to 6898 at 12:56 PM PT. ES closed 6935 and traded 6924.5–6979.75 after the bell. SPX 6910.40 (−3.70%), SPY 689.81 (−3.64%), QQQ 608.45 (−5.67%), NDX 25028.99 (−5.61%, more than 20% off its high), VIX 35.90 (+26.1%). A December Fed hike is still priced; a 50bp move is off the table.
+
+BIAS (WEEK)
+Bearish, but very stretched. Bears control below 7120–25 and 7211–23, and the bigger line is 7305–09: no bullish structure until it is back. Every index board is negative gamma with no flip, so moves stretch both ways. SPX's biggest strike for the week moved down to 6500 (≈ ES 6516) and its call wall (6835) is now below price; SPY's biggest strike, 700 (≈ ES 7029), now sits above price; VIX 35.90 sits under its 40 wall. Short-term momentum is the most oversold since early 2020 and Thanksgiving week has been higher in 8 of the last 9 years, so sharp short-covering rallies are likely; sell them at resistance rather than chase lows.
+
+SCENARIOS
+- Bull: ES holds 6897 and reclaims 6960–66 → 7025–29 (SPY 700), then 7086. A 7120–25 reclaim opens 7211–23, the first place to sell a bounce. 7305–09 is the control line.
+- Bear: ES stays under 6960–66 → 6897–98 (Friday's low). Lose it → 6841–51 (SPX 6825, Monday's put wall), then 6770 and 6721 (bottom of Monday's range). SPX 6500 ≈ ES 6516 is a target only.
+- Neutral: two-way swings between 6897 and 7029 into Wednesday's 5:30 AM PT data; fade the edges.
+
+KEY LEVELS
+
+/ES
+- Resistance: 7025–29 (SPY 700) · 7086 · 7120–25 · 7211–23 (prior highs) · 7305–09 (control line)
+- Pivot: 6960–66 (SPX 6950 ≈ 6966) · see Daily
+- Support: 6897–98 (Fri low) · 6841–51 (SPX 6825/6835) · 6770 · 6721 (Mon range low). Target only below: 6516 (SPX 6500)
+
+SPY
+- Resistance: 700 (biggest strike, above price) · 710.90 (Mon range high) · 721 (ceiling) · 724.97 (week range high)
+- Pivot: 695 (Monday's biggest strike) / 689.81 close
+- Support: 686.75 (Fri low) · 680 · 675 (heavy Nov 27 / Dec 4 put buying) · 668.72 (Mon range low) · 654.65 (week range low)
+
+QQQ
+- Resistance: 624 (Mon call wall) · 634.35 (Mon range high) · 644 (Fri 11/27 call wall)
+- Pivot: 608.45 close
+- Support: 606.23 (Fri low) · 600 (biggest strike and put wall) · 582.55 (Mon range low)
+
+/NQ
+- Resistance: 26504 (Fri regular-session high)
+- Pivot: 25126.5 (Fri close)
+- Support: 24976.5 (Fri low)
+
+DAY BY DAY
+- Mon Nov 23: 6960–66 is the first line. Reclaim it → 7025–29, then 7086. Under it → 6897–98; lose that → 6841–51. Flash PMIs 6:45 AM PT · Fed Williams 1:00 PM PT.
+- Tue Nov 24: Case-Shiller 6:00 AM PT · Conference Board consumer confidence and Richmond Fed 7:00 AM PT.
+- Wed Nov 25: the big data day — PCE prices and personal income/spending (Oct), GDP second estimate (Q3), jobless claims and durable goods all at 5:30 AM PT · new home sales 7:00 AM PT · Fed Beige Book 11:00 AM PT.
+- Thu Nov 26: Thanksgiving — US stock market closed.
+- Fri Nov 27: half day; stocks close at 10:00 AM PT (1:00 PM ET), weekly options expiration. Goods trade balance 5:30 AM PT.
+
+TRIGGERS / IF-THEN
+1. Reclaim and hold 6960–66 → 7025–29, then 7086; a 7120–25 reclaim opens 7211–23 (sell the first test).
+2. Stay under 6960–66 → 6897–98; lose 6897 → 6841–51, then 6770 and 6721.
+3. VIX back over its 40 wall with ES under 6897 = weakness; VIX back under 30 with ES over 7029 = relief.
+4. SPY back over 700 takes pressure off; under 686.75, 680 then 675 are next.
+
+SKIP
+- Don't chase Wednesday's 5:30 AM PT data burst; trade the reaction at a level.
+- Skip chop between 6897 and 6966.
+- Size down with VIX near 36; skip unplanned 0DTE size into Friday's 10:00 AM PT early close.

@@ -40,7 +40,7 @@ def expiries(now):
         daily=d+dt.timedelta(1)
         while daily.weekday()>=5: daily+=dt.timedelta(1)
     fri=d+dt.timedelta((4-d.weekday())%7)
-    if d.weekday()>=5 or (d.weekday()==4 and after): fri+=dt.timedelta(7)
+    if d.weekday()==4 and after: fri+=dt.timedelta(7)   # weekends already land on next Friday
     return daily,fri
 
 def alpaca_chain(t,exp,spot):
@@ -107,6 +107,8 @@ def run():
     out={"generated_pt":dt.datetime.now(PT).strftime("%Y-%m-%d %H:%M PT"),"session_for":dexp.isoformat(),"week_expiry":wexp.isoformat(),
          "method":"ATM straddle = call mid + put mid at strike nearest spot; bands = ref ± straddle; iv_move = spot*IV*sqrt(DTE/365); straddle_085 = 0.85×straddle (~1σ)","symbols":res}
     old=json.load(open(OUT)) if os.path.exists(OUT) else {}
+    if not any("straddle" in (r.get("daily") or {}) for r in res.values()) and any("straddle" in ((r or {}).get("daily") or {}) for r in (old.get("symbols") or {}).values()):
+        print("calc_im: no chain this run; keeping the newer snapshot from "+str(old.get("generated_pt"))); return old   # never step back
     hist=[h for h in old.get("history",[]) if not (h["session_for"]==out["session_for"] and h["generated_pt"][:10]==out["generated_pt"][:10])]
     hist.append({"generated_pt":out["generated_pt"],"session_for":out["session_for"],"week_expiry":out["week_expiry"],
                  **{t:{k:{x:v.get(x) for x in ("straddle","upper","lower","ref","atm_iv","iv_move")} for k,v in r.items() if isinstance(v,dict)} for t,r in res.items() if "daily" in r}})

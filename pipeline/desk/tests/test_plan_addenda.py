@@ -7,49 +7,49 @@ from tests import test_public_names as N
 
 ROOT = Path(__file__).resolve().parents[3]
 DATA = json.loads((ROOT / "pipeline/inputs/plans/addenda.json").read_text())
-PD = "2026-11-12"  # addenda session; Daily plan.json moves with the live date
+PD = "2026-11-23"  # addenda session; Daily plan.json moves with the live date
 DB, WB = A.daily_block(DATA, PD), A.weekly_block(DATA, PD)
 txt = lambda h: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", h))
 
 
 class Daily(unittest.TestCase):
-    def test_renders_for_thu_with_every_figure(self):
-        self.assertEqual(PD, "2026-11-12")
+    def test_renders_for_mon_with_every_figure(self):
+        self.assertEqual(PD, "2026-11-23")
         t = txt(DB)
-        self.assertIn("AFTER HOURS, CATALYSTS &amp; SPY LEVELS · THU 11/12", DB)
-        for s in ["Nvidia board reported preparing to remove its CEO", "$173.73", "NQ −0.96% (4:02 PM PT)", "SPY 756.41, −0.45% (4:22 PM PT)",
-                  "7,619.22 (+1.31%)", "Thu 5:30 AM PT · weekly initial jobless claims", "Thu 9:00 AM PT", "Fri 5:30 AM PT · October producer prices",
-                  "SPY 752.72–761.82 (±0.60%)", "7593.86–7654.28", "762.27 dark-pool line", "758.3 all-expiration flip",
-                  "759.57 dark-pool line", "750 all-expiration floor", "borderline disturbing"]:
+        self.assertIn("WEEKEND, CATALYSTS &amp; SPY LEVELS · MON 11/23", DB)
+        for s in ["SPX 6,910.40 (−3.70%)", "SPY 689.81 (−3.64%)", "ES 6935 at 1:59 PM PT", "ES 6924.5–6979.75",
+                  "futures reopen Sun 3:00 PM PT", "Mon 6:45 AM PT", "Mon 1:00 PM PT", "SPY 668.72–710.90 (±3.06%)",
+                  "SPX 6704.09–7116.71 (±2.99%)", "718.66 nearest dark-pool line", "SPY 695 (Monday expiry", "686.75 Fri low"]:
             self.assertIn(s, t, s)
 
     def test_hidden_on_other_sessions(self):
-        self.assertEqual(A.daily_block(DATA, "2026-11-13"), "")
+        self.assertEqual(A.daily_block(DATA, "2026-11-24"), "")
         self.assertEqual(A.daily_block({}, PD), "")
         self.assertEqual(A.daily_block(DATA, None), "")
 
 
 class Weekly(unittest.TestCase):
     def test_renders_for_week_with_every_figure(self):
-        wb = A.weekly_block(DATA, "2026-11-16")
+        wb = A.weekly_block(DATA, "2026-11-23")
         t = txt(wb)
-        self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 16–20", wb)
-        for s in ["ES recovery of 7210–20, then 7305–09", "SPY back above 718.66", "sold to 7192", "FOMC minutes hawkish",
-                  "closed $97.17", "SPY 703.14–728.60", "no all-expiry flips", "monthly OpEx at the 1:00 PM PT close"]:
+        self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 23–27", wb)
+        for s in ["ES reclaim of 7120–25, then 7211–23", "SPY back over 700", "VIX 35.90 under its 40 wall",
+                  "Wed 5:30 AM PT: PCE, GDP", "Thu 11/26 closed", "stocks close 10:00 AM PT", "8 of the last 9 years",
+                  "SPX 6562.72–7258.08 (±5.03%)"]:
             self.assertIn(s, t, s)
-        self.assertEqual(A.weekly_block(DATA, "2026-11-20"), wb)
+        self.assertEqual(A.weekly_block(DATA, "2026-11-27"), wb)
         self.assertNotIn("backwardation", wb.lower()); self.assertNotIn("contango", wb.lower())
 
     def test_hidden_outside_week(self):
-        self.assertEqual(A.weekly_block(DATA, "2026-11-13"), ""); self.assertEqual(A.weekly_block(DATA, "2026-11-23"), "")
-        bad = json.loads(json.dumps(DATA)); bad["weekly"]["week_end"] = "2026-11-30"
-        self.assertEqual(A.weekly_block(bad, "2026-11-16"), "")
+        self.assertEqual(A.weekly_block(DATA, "2026-11-20"), ""); self.assertEqual(A.weekly_block(DATA, "2026-11-30"), "")
+        bad = json.loads(json.dumps(DATA)); bad["weekly"]["week_end"] = "2026-12-04"
+        self.assertEqual(A.weekly_block(bad, "2026-11-23"), "")
 
 
 class Wording(unittest.TestCase):
-    def test_750_is_gamma_floor_not_put_wall(self):
+    def test_biggest_strike_not_called_a_put_wall(self):
         t = txt(DB)
-        self.assertIn("750 all-expiration floor", t); self.assertNotRegex(t, r"750 put wall|put wall[^·]*750")
+        self.assertIn("SPY 700 (biggest strike", t); self.assertNotRegex(t, r"700 put wall|put wall[^·]*\b700\b")
 
     def test_stale_spy_awaiting_line_gone_from_source_and_page(self):
         import build_daily
@@ -77,7 +77,7 @@ class Hygiene(unittest.TestCase):
 
     def test_patch_idempotent_and_placed_before_positioning(self):
         import tempfile
-        for page, blk in (("daily", DB), ("weekly", A.weekly_block(DATA, "2026-11-16"))):
+        for page, blk in (("daily", DB), ("weekly", A.weekly_block(DATA, "2026-11-23"))):
             src = (ROOT / page / "index.html").read_text()
             with tempfile.TemporaryDirectory() as td:
                 p = Path(td) / "i.html"; p.write_text(src)
@@ -100,7 +100,7 @@ class Rendered(unittest.TestCase):
         base = os.environ.get("SITE_URL")
         with sync_playwright() as p:
             b = p.chromium.launch(executable_path="/usr/bin/google-chrome", args=["--no-sandbox"])
-            for page, sid, head in (("daily", "cpi-spy-levels", "AFTER HOURS, CATALYSTS & SPY LEVELS"), ("weekly", "week-bias-vol", "WEEK BIAS & VOLATILITY")):
+            for page, sid, head in (("daily", "cpi-spy-levels", "CATALYSTS & SPY LEVELS"), ("weekly", "week-bias-vol", "WEEK BIAS & VOLATILITY")):
                 pg = b.new_page(viewport={"width": 1200, "height": 900})
                 errs = []; pg.on("pageerror", lambda e: errs.append(str(e)))
                 pg.goto(f"{base}{page}/?cb=1" if base else (ROOT / page / "index.html").as_uri(), wait_until="load")
@@ -108,10 +108,10 @@ class Rendered(unittest.TestCase):
                   return {{h:s.querySelector('h2').innerText,t:s.innerText,vis:b.height>40&&b.width>200,
                   empty:[...s.querySelectorAll('li')].filter(li=>[...li.children].some(c=>!c.innerText.trim())).length,n:s.querySelectorAll('li').length}}}}""")
                 live_date = json.loads((ROOT / "pipeline/inputs/plan.json").read_text())["date"]
-                if page == "daily" and live_date != "2026-11-12":
+                if page == "daily" and live_date != DATA["daily"]["session"]:
                     self.assertIsNone(r, "daily addenda must stay hidden off its session")
                     pg.close(); continue
-                self.assertIsNotNone(r, page); self.assertTrue(r["h"].startswith(head)); self.assertTrue(r["vis"])
+                self.assertIsNotNone(r, page); self.assertIn(head, r["h"]); self.assertTrue(r["vis"])
                 self.assertEqual(r["empty"], 0); self.assertGreaterEqual(r["n"], 5); self.assertEqual(errs, [])
                 self.assertNotRegex(r["t"].lower(), r"\berror\b"); self.assertIsNone(N.strict_rx().search(r["t"]))
                 pg.close()

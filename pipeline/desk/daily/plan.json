@@ -1,68 +1,77 @@
 {
-  "date": "2026-11-20",
-  "asof_pt": "Thu Nov 19 2:45 PM PT",
-  "asof": "Thu Nov 19 2:45 PM PT",
-  "session": "2026-11-20",
-  "title": "Yuckenfutz Tradez — Daily Plan — Fri Nov 20, 2026 (monthly OpEx · Fed Waller · Michigan sentiment)",
+  "date": "2026-11-23",
+  "asof_pt": "Sat Nov 21 11:00 AM PT",
+  "asof": "Sat Nov 21 11:00 AM PT",
+  "session": "2026-11-23",
+  "title": "Yuckenfutz Tradez — Daily Plan — Mon Nov 23, 2026 (flash PMIs · Fed Williams · Thanksgiving week)",
   "bias": {
     "direction": "BEARISH",
-    "reason": "7211–23, the prior highs, is the biggest resistance. It lines up with Thursday's big intraday low area (7210–20) and Friday's biggest SPX gamma level, 7200, at about ES 7219. 7182 is the trap door: a prior range ES traded a while back. Lose 7182 and there is a good chance of a drop to 7086; below 7086 there is little support until a deeper test of 7000. Thursday gapped up and failed: ES made an overnight high of 7440.5, opened 7411.5, topped 7436.5 at 6:34 AM PT, lost 7373 by 7:15 AM PT and 7305 by 7:37 AM PT, then sold to 7192 at 12:05 PM PT. Close 7194.25 at 12:59 PM PT (SPX 7175.84, −2.02%; SPY 715.87, −1.96%; QQQ 645.04, −2.19%; VIX 28.48, +15.9%). The S&P 500 fell for a sixth day. After hours ES traded 7167.75–7201, last 7182.50 at 1:59 PM PT, below 7192 (Thursday's regular-session low). Price is under the pivot, so the structure stays bearish until 7210–20 is recovered; 7305–09 (the Tue/Wed shelf of lows) is the line that would hand control back to bulls. Recovering 7210–20 targets 7240–45, then 7269–77. Failing under 7210–20 targets 7192, then 7168, then 7136–16 (SPY 710–708 and the bottom of Friday's expected range). Every expiry is negative gamma and SPX closed just under its 7200 level, so moves can stretch both ways; VIX 28.48 sits on its 30 wall, and a VIX break above 30 favours the downside case. The unpadded plan band is 7167.75–7436.5 (Thursday's regular session 7192–7436.5 plus the after-hours low). Friday's SPX expected range is 7093.80–7257.88 (±1.14%), about ES 7113–7277. ES ≈ SPX + 19.1 from Thursday's regular-session median. Fed Waller 5:25 AM PT; Michigan sentiment 7:00 AM PT; Fed Cook 9:15 AM PT; monthly options expiration at the 1:00 PM PT close."
+    "reason": "Bears control below 7120–25 and the 7211–23 prior highs, and the bigger line is still 7305–09. Friday: ES opened 7168.75, rallied to 7216.75 at 7:00 AM PT and was rejected right at the 7211–23 prior highs, then lost the 7182 trap door at 7:10 AM PT, 7086 at 8:02 AM PT and 7000 at 11:24 AM PT, and sold to 6898 at 12:56 PM PT. ES closed 6935 at 1:59 PM PT and traded 6924.5–6979.75 after the bell. SPX 6910.40 (−3.70%), SPY 689.81 (−3.64%), QQQ 608.45 (−5.67%), NDX 25028.99 (−5.61%), VIX 35.90 (+26.1%). Seventh straight S&P 500 loss; the Nasdaq-100 is down more than 20% from its high. Thursday's trap-door call played out in full: 7182 gave way, 7086 and 7000 followed, and the low came in at 6898. Monday's first job is 6960–66: it is the line to reclaim for a bounce to 7025–29 (SPY 700, now the biggest strike above price), then 7086 and 7120–25. A 7120–25 reclaim opens 7211–23, the first place to sell a bounce. Under 6960–66, 6897–98 (Friday's low) is the big support; lose it and 6841–51 (SPX 6825, Monday's biggest strike and put wall, and SPX 6835) is next, then 6770 and 6720 (the low of Monday's expected range). Every board is negative gamma with no flip, so moves stretch both ways. Price is very stretched: VIX closed 35.90 under its 40 wall, and short-term momentum is the most oversold since early 2020, so sharp short-covering rallies are likely inside the downtrend. Monday's SPX expected range is 6704.09–7116.71 (±2.99%), about ES 6721–7133. ES ≈ SPX + 16.5 from Friday's regular-session median. Flash PMIs 6:45 AM PT; Fed Williams 1:00 PM PT."
   },
-  "overnight_bias": "After hours ES traded 7167.75–7201, last 7182.50 at 1:59 PM PT, below 7192 (Thursday's regular-session low) · Thursday RTH 7192–7436.5 · overnight high 7440.5",
+  "overnight_bias": "After hours Friday ES traded 6924.5–6979.75, last 6935 at 1:59 PM PT · Friday RTH 6898–7216.75 · Globex reopens Sun 3:00 PM PT",
   "key_levels": [
     {
       "price": 7305,
-      "note": "ES 7305–09 resistance — the Tue/Wed lows, lost Thursday at 7:37 AM PT. Recovering it is what would hand control back to bulls; SPX 7300 (the December monthly's biggest level) is about ES 7319."
-    },
-    {
-      "price": 7270,
-      "note": "ES 7269–77 resistance — SPX 7250 (Monday 11/23 expiry's biggest level) ≈ ES 7269, and the top of Friday's SPX expected range (7257.88) ≈ ES 7277. Second target if 7211–23 is recovered."
-    },
-    {
-      "price": 7240,
-      "note": "ES 7240–45 resistance — Thursday's 9:03 AM PT breakdown area and the first target above 7211–23."
+      "note": "ES 7305–09 resistance — the Tue/Wed lows lost Thursday. Bears keep full control below it; SPX 7300 (December's biggest strike) ≈ ES 7316."
     },
     {
       "price": 7217,
-      "note": "ES 7211–23 resistance — the prior highs, the biggest resistance on the board; Thursday's 7210 big low and 7220 shelf, with Friday's biggest SPX gamma level, 7200, at about ES 7219. Recover and hold for 7240–45; stay under it and the downside levels stay in play."
+      "note": "ES 7211–23 resistance — the prior highs, still the biggest resistance on the board. Friday's 7:00 AM PT high of 7216.75 was rejected right here. First place to sell a bounce."
     },
     {
-      "price": 7192,
-      "note": "ES 7192 support — Thursday's regular-session low (12:05 PM PT). SPY's Friday put wall 715 ≈ ES 7186 sits just below, right above the 7182 trap door."
-    },
-    {
-      "price": 7182,
-      "note": "ES 7182 support — the trap door: a prior range traded a while back. Lose 7182 and there is a good chance of a drop to 7086."
+      "price": 7122,
+      "note": "ES 7120–25 resistance — Friday's failed-breakdown level, lost at 7:25 AM PT. Reclaim it and 7211–23 opens. The top of Monday's SPX expected range (7116.71) ≈ ES 7133."
     },
     {
       "price": 7086,
-      "note": "ES 7086 support — the trap-door target if 7182 is lost, below Friday's SPX expected-range low (7093.80 ≈ ES 7113). Below 7086 there is little support until a deeper test of 7000."
+      "note": "ES 7086 resistance — the old trap-door target, lost Friday at 8:02 AM PT. Now overhead."
     },
     {
-      "price": 7000,
-      "note": "ES 7000 support — the deeper-test level if 7086 gives way; SPY 700 (the all-expiry floor) ≈ ES 7036 sits just above it."
+      "price": 7027,
+      "note": "ES 7025–29 resistance — Friday's 7025 line, lost at 9:38 AM PT, and SPY 700, the biggest SPY strike (all expiries and Fri 11/27), about ES 7029."
+    },
+    {
+      "price": 6963,
+      "note": "ES 6960–66 pivot — the line to reclaim first; SPX 6950 (Wednesday's biggest strike) ≈ ES 6966. Above it, 7025–29 is the first target; below it, Friday's low is next."
+    },
+    {
+      "price": 6898,
+      "note": "ES 6897–98 support — Friday's low (12:56 PM PT) and the big support under price. A loss opens 6841–51."
+    },
+    {
+      "price": 6846,
+      "note": "ES 6841–51 support — SPX 6825 (Monday's biggest strike and put wall) ≈ ES 6841 and SPX 6835 ≈ ES 6851."
+    },
+    {
+      "price": 6770,
+      "note": "ES 6770 support — next support below 6841–51."
+    },
+    {
+      "price": 6721,
+      "note": "ES 6721 support — the low of Monday's SPX expected range (6704.09). SPX 6500 (the all-expiry and weekly biggest strike) ≈ ES 6516 is a target only, far below."
     }
   ],
   "path": {
-    "bull": "Recover 7211–23 (the prior highs, the biggest resistance) → 7240–45, then 7269–77. Acceptance above 7277 opens 7305–09 (the control line).",
-    "bear": "Stay under 7211–23 → 7192, then the 7182 trap door. Lose 7182 → a good chance of a drop to 7086; below 7086 there is little support until a deeper test of 7000. VIX above 30 favours this case."
+    "bull": "Reclaim 6960–66 → 7025–29 (SPY 700), then 7086. A 7120–25 reclaim opens 7211–23 — sell there first.",
+    "bear": "Stay under 6960–66 → 6897–98 (Friday's low). Lose it → 6841–51 (SPX 6825), then 6770 and 6721 (the expected-range low)."
   },
   "actionable": [
-    "7211–23 (prior highs) is the biggest resistance. Recover and hold it → 7240–45, then 7269–77.",
-    "Under 7211–23 → 7192, then 7182.",
-    "7182 is the trap door: lose it → good chance of 7086. Below 7086, little support until a deeper test of 7000.",
-    "7305–09 is the control line; no bullish structure until it is recovered.",
-    "Fed Waller 5:25 AM PT.",
-    "Michigan sentiment (final Nov) 7:00 AM PT.",
-    "Fed Cook 9:15 AM PT. Monthly options expiration at the 1:00 PM PT close — no new unplanned 0DTE size into the close."
+    "Reclaim and hold 6960–66 → 7025–29, then 7086.",
+    "7120–25 reclaim → 7211–23; sell the first test there.",
+    "Under 6960–66 → 6897–98, Friday's low.",
+    "Lose 6897 → 6841–51, then 6770 and 6721.",
+    "7305–09 is the control line; no bullish structure until it is back.",
+    "Flash PMIs 6:45 AM PT. Fed Williams 1:00 PM PT.",
+    "Rest of the week: Wed 5:30 AM PT GDP, PCE, claims and durable goods; Beige Book 11:00 AM PT. Thanksgiving: Thu closed, Fri closes 10:00 AM PT.",
+    "VIX 35.90 with every board negative gamma: size down; expect 100-point swings both ways."
   ],
   "long_story_short": {
-    "for_session": "2026-11-20",
-    "headline": "Fri 11/20 — 7211–23 is the biggest resistance · 7182 is the trap door to 7086 · monthly OpEx at the close · Waller 5:25 AM PT",
-    "context": "Thursday opened 7411.5 after an overnight high of 7440.5, topped 7436.5, then lost 7373, 7305 and 7245 and sold to 7192 at 12:05 PM PT. Close 7194.25 (SPX 7175.84, SPY 715.87, QQQ 645.04, VIX 28.48). After hours ES traded 7167.75–7201, last 7182.50 at 1:59 PM PT, below 7192 (Thursday's regular-session low). Anthropic opened at $111.50 on its debut and closed at $97.17, 17% above its $83 offering price, while the S&P 500 fell for a sixth day. Friday's SPX expected range is 7093.80–7257.88 (±1.14%), about ES 7113–7277. ES ≈ SPX + 19.1 from Thursday's regular-session median.",
-    "levels": "7305–09 / 7269–77 / 7240–45 above; 7211–23 (prior highs) the biggest resistance; 7192 / 7182 trap door / 7086 / 7000 below.",
-    "bearish": "Under 7211–23 → 7192, then 7182. Lose the 7182 trap door → good chance of 7086; below 7086 little support until a deeper test of 7000. Every expiry is negative gamma; VIX 28.48 sits on its 30 wall.",
-    "bullish": "Recover 7211–23 → 7240–45, then 7269–77. 7305–09 is the control line.",
-    "general": "Monthly options expiration at the close. Fed Waller 5:25 AM PT; Michigan sentiment 7:00 AM PT; Fed Cook 9:15 AM PT."
+    "for_session": "2026-11-23",
+    "headline": "Mon 11/23 — 6960–66 is the first line · 6897 Friday low is the big support · 7211–23 is where to sell a bounce",
+    "context": "Friday: ES opened 7168.75, rallied to 7216.75 at 7:00 AM PT and was rejected right at the 7211–23 prior highs, then lost the 7182 trap door at 7:10 AM PT, 7086 at 8:02 AM PT and 7000 at 11:24 AM PT, and sold to 6898 at 12:56 PM PT. ES closed 6935 at 1:59 PM PT and traded 6924.5–6979.75 after the bell. SPX 6910.40 (−3.70%), SPY 689.81 (−3.64%), QQQ 608.45 (−5.67%), NDX 25028.99 (−5.61%), VIX 35.90 (+26.1%). Seventh straight S&P 500 loss; the Nasdaq-100 is down more than 20% from its high. Monday's SPX expected range is 6704.09–7116.71 (±2.99%), about ES 6721–7133. ES ≈ SPX + 16.5 from Friday's regular-session median. Thanksgiving week: PCE, GDP, claims and durables all land Wed 5:30 AM PT; markets are closed Thursday and close early (10:00 AM PT) on Friday.",
+    "levels": "7305–09 / 7211–23 / 7120–25 / 7086 / 7025–29 above; 6960–66 pivot; 6897–98 / 6841–51 / 6770 / 6721 below.",
+    "bearish": "Under 6960–66 → 6897–98. Lose it → 6841–51, then 6770 and 6721. Every board is negative gamma with no flip.",
+    "bullish": "Reclaim 6960–66 → 7025–29, then 7086; 7120–25 reclaim opens 7211–23. Deeply oversold, so bounces can be fast.",
+    "general": "Flash PMIs 6:45 AM PT; Fed Williams 1:00 PM PT. VIX 35.90 sits under its 40 wall. Thanksgiving week has been higher in 8 of the last 9 years."
   }
 }

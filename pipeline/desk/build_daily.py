@@ -234,7 +234,7 @@ def catalysts(plan):
     if re.search(r"FOMC", bias + " ".join(acts), re.I):
         out.append("FOMC decision <b>2:00</b> PM ET / <b>11:00</b> AM PT — first reaction often the trap; size light")
     for a in acts:
-        if re.search(r"MSFT|GOOG|FDX|INTC|AMZN|SNDK|earnings|GDP|PCE|Claims|ECI|CPI|PPI|auction|minutes|housing|permits|VIX|TJX|pending|bond sale|Waller|Michigan|Cook|options expiration", a, re.I):
+        if re.search(r"MSFT|GOOG|FDX|INTC|AMZN|SNDK|earnings|GDP|PCE|Claims|ECI|CPI|PPI|auction|minutes|housing|permits|VIX|TJX|pending|bond sale|Waller|Michigan|Cook|options expiration|PMI|Williams|Beige|Thanksgiving", a, re.I):
             out.append(sanitize_text(a))
     # dedupe
     seen, uniq = set(), []
