@@ -1,10 +1,10 @@
 {
- "score": -59,
+ "score": -41,
  "label": "BEARISH",
  "px": 697.49,
  "asof": "11-20 16:59 PT",
  "feed": "delayed",
- "built": "11-20 18:32 PT",
+ "built": "11-20 19:56 PT",
  "votes": [
   {
    "k": "VWAP",
@@ -58,8 +58,8 @@
   {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
-   "v": -1,
-   "x": "722.0\u2013744.0",
+   "v": 1,
+   "x": "672.96\u2013706.66",
    "w": 1.0
   },
   {
