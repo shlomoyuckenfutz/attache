@@ -135,7 +135,7 @@ class Rendered(unittest.TestCase):
         "lss.bearish": {"text": "Lose 7625 and the 7596–7600 shelf is next.", "set_at": NOW.isoformat()},
         "daily.gameplan": {"text": "Wait for the open.\n**Long** a 7625 hold.\nFlat into PPI.", "set_at": NOW.isoformat()},
         "weekly.bias": {"text": "Manual weekly bias line.", "set_at": NOW.isoformat(), "expires": (NOW + timedelta(days=2)).isoformat()},
-        "command.tile.flow": {"text": "Manual flow note.", "set_at": NOW.isoformat()},
+        "command.now.context": {"text": "Manual flow note.", "set_at": NOW.isoformat()},
         "overnight.ledger.base": {"text": "Manual base case.", "set_at": NOW.isoformat()},
         "daily.bias": {"text": "Expired text must not show.", "set_at": NOW.isoformat(), "expires": (NOW - timedelta(hours=1)).isoformat()},
     }
@@ -186,8 +186,8 @@ class Rendered(unittest.TestCase):
         self.assertIn("Manual weekly bias line.", self.R["weekly"]["t"])
         self.assertIn("BASE CASE Manual base case.", self.R["overnight"]["t"].replace("\n", " "))
         c = self.R["command"]
-        self.assertIn("Manual flow note.", c["t"]); self.assertIn("Lose 7625 and the 7596–7600 shelf is next.", c["t"])
-        self.assertEqual(c["tiles"], 7)
+        self.assertIn("Manual flow note.", c["t"])  # Command Center NOW context line
+        self.assertNotIn("Lose 7625 and the 7596–7600", c["t"])  # Long story short lives on Daily only now
 
     def test_ov_off_shows_pipeline_text(self):
         self.assertNotIn("Manual flow note.", self.R["command_off"]["t"])

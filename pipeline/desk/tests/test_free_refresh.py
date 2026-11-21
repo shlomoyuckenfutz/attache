@@ -102,7 +102,9 @@ PREV_J = json.loads((ROOT / "pipeline" / "inputs" / "journal" / "v2_log.json").r
 
 
 class CommandLive(unittest.TestCase):
-    PAGE = (ROOT / "command" / "index.html").read_text()
+    # command_live.py patches the legacy Command layout; /command/ is now rebuilt whole by command_center.py,
+    # so these unit checks run against a frozen copy of the legacy page.
+    PAGE = (DESK / "tests" / "fixtures" / "command_legacy.html").read_text()
 
     def glance(self, h):
         return json.loads(re.search(r'<script id="glance-data" type="application/json">(.*?)</script>', h, re.S).group(1))
@@ -145,10 +147,14 @@ class CommandLive(unittest.TestCase):
         self.assertEqual(command_live.patch_quotes(h, old), h)
         self.assertEqual(command_live.patch_quotes(self.PAGE, lambda s: None), self.PAGE)
 
-    def test_wired_after_orb_status(self):
+    def test_command_center_wired(self):
         s = (ROOT / "pipeline" / "refresh.sh").read_text()
-        self.assertLess(s.index("orb_status.py"), s.index("command_live.py"))
-        self.assertLess(s.index("bias_gauge.py --patch"), s.index('"ui_shell"'))
+        self.assertLess(s.index("orb_live.py"), s.index("command_center.py"))
+        self.assertLess(s.index("bias_gauge.py"), s.index("command_center.py"))
+        self.assertLess(s.index("command_center.py"), s.index("orb_status.py"))
+        self.assertLess(s.index("orb_status.py"), s.index('"ui_shell"'))
+        for legacy in ("command_live.py", "--patch-command", "--patch-desk", "bias_gauge.py --patch"):
+            self.assertNotIn(legacy, s)  # nothing patches the old layout back into /command/
 
 
 class BiasFreshness(unittest.TestCase):

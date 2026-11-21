@@ -72,8 +72,9 @@ def main(f):
             f"{cq[1]}/{cq[3]} hour highs broke later — {tape}.")
     sec = (f'<section class="zone" id="z-hr"><div class="zh"><b>HOURLY BREAKS</b><small>RTH hour hi/lo · later breaks · last data {dow} {src["asof"]}{at} ET</small></div>\n'
            f'<div class="hr-wrap">{cs[0]}{cq[0]}</div><div class="hr-take">{take}</div></section>')
-    a = h.index('<section class="zone" id="z-hr"'); z = h.index("</section>", a) + len("</section>")
-    h = h[:a] + sec + h[z:]
+    if '<section class="zone" id="z-hr"' in h:  # legacy layout; the Command Center builder renders hourly breaks itself
+        a = h.index('<section class="zone" id="z-hr"'); z = h.index("</section>", a) + len("</section>")
+        h = h[:a] + sec + h[z:]
     Path(f).write_text(h)
     print("orb_status:", f, src["asof"], {k: v.get("R") for k, v in orb.items()})
 

@@ -121,7 +121,7 @@ class I7_GammaMap(unittest.TestCase):
 
 class I8_HeaderStamp(unittest.TestCase):
     def test_stamp_set_and_stable_until_content_changes(self):
-        src = (ROOT / "command/index.html").read_text()
+        src = (ROOT / "pipeline/desk/tests/fixtures/command_legacy.html").read_text()  # patch_command targets the legacy layout
         with tempfile.TemporaryDirectory() as td:
             p = Path(td) / "c.html"; p.write_text(src)
             G.patch_command(p, D); g1 = self._gl(p)

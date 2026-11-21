@@ -10,11 +10,10 @@
  "sections": [
   {
    "id": "lss.headline",
-   "group": "Daily · Long story short (also on Command)",
+   "group": "Daily · Long story short",
    "label": "Headline",
    "pages": [
-    "daily",
-    "command"
+    "daily"
    ],
    "steps": [
     {
@@ -31,11 +30,10 @@
   },
   {
    "id": "lss.context",
-   "group": "Daily · Long story short (also on Command)",
+   "group": "Daily · Long story short",
    "label": "Context line",
    "pages": [
-    "daily",
-    "command"
+    "daily"
    ],
    "steps": [
     {
@@ -51,11 +49,10 @@
   },
   {
    "id": "lss.bearish",
-   "group": "Daily · Long story short (also on Command)",
+   "group": "Daily · Long story short",
    "label": "Bearish lean",
    "pages": [
-    "daily",
-    "command"
+    "daily"
    ],
    "steps": [
     {
@@ -75,11 +72,10 @@
   },
   {
    "id": "lss.bullish",
-   "group": "Daily · Long story short (also on Command)",
+   "group": "Daily · Long story short",
    "label": "Bullish lean",
    "pages": [
-    "daily",
-    "command"
+    "daily"
    ],
    "steps": [
     {
@@ -99,11 +95,10 @@
   },
   {
    "id": "lss.general",
-   "group": "Daily · Long story short (also on Command)",
+   "group": "Daily · Long story short",
    "label": "General lean",
    "pages": [
-    "daily",
-    "command"
+    "daily"
    ],
    "steps": [
     {
@@ -120,6 +115,53 @@
    "mode": "text",
    "keep_label": true,
    "expiry": "day"
+  },
+  {
+   "id": "command.now.headline",
+   "group": "Command",
+   "label": "NOW · headline",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#now h1"
+    }
+   ],
+   "mode": "text",
+   "inline": true,
+   "expiry": "day"
+  },
+  {
+   "id": "command.now.context",
+   "group": "Command",
+   "label": "NOW · context line",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#now .h-ctx"
+    }
+   ],
+   "mode": "text",
+   "expiry": "day"
+  },
+  {
+   "id": "command.reads",
+   "group": "Command",
+   "label": "POST-MARKET READS · bullets",
+   "pages": [
+    "command"
+   ],
+   "steps": [
+    {
+     "sel": "#reads .pr"
+    }
+   ],
+   "mode": "list",
+   "expiry": "day",
+   "hint": "One bullet per line."
   },
   {
    "id": "daily.bias",
@@ -347,197 +389,6 @@
    ],
    "mode": "text",
    "expiry": "week"
-  },
-  {
-   "id": "command.daily_card",
-   "group": "Command",
-   "label": "Daily plan card · summary",
-   "pages": [
-    "command"
-   ],
-   "steps": [
-    {
-     "sel": "a[href=\"../daily/\"]",
-     "has": {
-      "sel": ":scope > span",
-      "starts": "DAILY PLAN"
-     }
-    },
-    {
-     "sel": ":scope > div"
-    }
-   ],
-   "mode": "text",
-   "inline": true,
-   "expiry": "day"
-  },
-  {
-   "id": "command.weekly_card",
-   "group": "Command",
-   "label": "Weekly plan card · summary",
-   "pages": [
-    "command"
-   ],
-   "steps": [
-    {
-     "sel": "a[href=\"../weekly/\"]",
-     "has": {
-      "sel": ":scope > span",
-      "starts": "WEEKLY PLAN"
-     }
-    },
-    {
-     "sel": ":scope > div"
-    }
-   ],
-   "mode": "text",
-   "inline": true,
-   "expiry": "week"
-  },
-  {
-   "id": "command.tile.implied_move",
-   "group": "Command",
-   "label": "IMPLIED MOVE tile · note line",
-   "pages": [
-    "command"
-   ],
-   "steps": [
-    {
-     "sel": "#brief .tile",
-     "has": {
-      "sel": "h4",
-      "starts": "IMPLIED MOVE"
-     }
-    },
-    {
-     "sel": ":scope > .st"
-    }
-   ],
-   "mode": "text",
-   "inline": true,
-   "dynamic": true,
-   "expiry": "day"
-  },
-  {
-   "id": "command.tile.catalysts",
-   "group": "Command",
-   "label": "CATALYSTS tile · note line",
-   "pages": [
-    "command"
-   ],
-   "steps": [
-    {
-     "sel": "#brief .tile",
-     "has": {
-      "sel": "h4",
-      "starts": "CATALYSTS"
-     }
-    },
-    {
-     "sel": ":scope > .st"
-    }
-   ],
-   "mode": "text",
-   "inline": true,
-   "dynamic": true,
-   "expiry": "day"
-  },
-  {
-   "id": "command.tile.es_nq_levels",
-   "group": "Command",
-   "label": "ES · NQ LEVELS tile · note line",
-   "pages": [
-    "command"
-   ],
-   "steps": [
-    {
-     "sel": "#brief .tile",
-     "has": {
-      "sel": "h4",
-      "starts": "ES · NQ LEVELS"
-     }
-    },
-    {
-     "sel": ":scope > .st"
-    }
-   ],
-   "mode": "text",
-   "inline": true,
-   "dynamic": true,
-   "expiry": "day"
-  },
-  {
-   "id": "command.tile.flow",
-   "group": "Command",
-   "label": "FLOW tile · note line",
-   "pages": [
-    "command"
-   ],
-   "steps": [
-    {
-     "sel": "#brief .tile",
-     "has": {
-      "sel": "h4",
-      "starts": "FLOW"
-     }
-    },
-    {
-     "sel": ":scope > .st"
-    }
-   ],
-   "mode": "text",
-   "inline": true,
-   "dynamic": true,
-   "expiry": "day"
-  },
-  {
-   "id": "command.tile.seasonality",
-   "group": "Command",
-   "label": "SEASONALITY tile · note line",
-   "pages": [
-    "command"
-   ],
-   "steps": [
-    {
-     "sel": "#brief .tile",
-     "has": {
-      "sel": "h4",
-      "starts": "SEASONALITY"
-     }
-    },
-    {
-     "sel": ":scope > .st"
-    }
-   ],
-   "mode": "text",
-   "inline": true,
-   "dynamic": true,
-   "expiry": "day",
-   "optional": true
-  },
-  {
-   "id": "command.tile.gamma_levels",
-   "group": "Command",
-   "label": "GAMMA LEVELS tile · note line",
-   "pages": [
-    "command"
-   ],
-   "steps": [
-    {
-     "sel": "#brief .tile",
-     "has": {
-      "sel": "h4",
-      "starts": "GAMMA LEVELS"
-     }
-    },
-    {
-     "sel": ":scope > .st"
-    }
-   ],
-   "mode": "text",
-   "inline": true,
-   "dynamic": true,
-   "expiry": "day"
   },
   {
    "id": "overnight.ledger.heading",

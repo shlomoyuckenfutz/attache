@@ -23,8 +23,14 @@ class OrbStatus(unittest.TestCase):
             self.assertGreaterEqual(D["orb"][sym]["date"], INP["asof"], sym)
         self.assertEqual(D["eq"]["SPY"]["d"][-1], INP["eq"]["SPY"]["d"][-1])
         self.assertEqual(D["bot"]["v"]["status"], "PAUSED")
-        hr = re.search(r'<section class="zone" id="z-hr">.*?</section>', PAGE.read_text(), re.S).group(0)
-        self.assertIn(f"last data", hr); self.assertIn(INP["asof"], hr)
+        h = PAGE.read_text()
+        orb = re.search(r'<section class="z" id="z-orb">.*?</section>', h, re.S).group(0)  # ORB STATUS carried over
+        for el in ("orbSPY", "orbQQQ", "orbES", "orbSPX", "eqB", "botB"):
+            self.assertIn(f'id="{el}"', orb)
+        self.assertLess(h.index('id="z-orb"'), h.index('id="acct"'))  # sits right above the P&L / Account section
+        tape = re.search(r'<section class="z" id="tape">.*?</section>', h, re.S).group(0)  # hourly breaks live in TAPE CHECK
+        d = __import__("datetime").date.fromisoformat(INP["asof"])
+        self.assertIn(f"{d:%a} {d.month}/{d.day}", tape); self.assertIn("HOURLY BREAKS", tape)
 
     def test_idempotent_and_never_backwards(self):
         with tempfile.TemporaryDirectory() as d:

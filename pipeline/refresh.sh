@@ -84,18 +84,21 @@ python3 make_daily_charts.py
 mkdir -p overnight weekly/charts/prior weekly/charts/plan daily/charts
 
 run "build_overnight" python3 build_overnight.py
-run "build_weekly" python3 build_weekly.py --patch-desk "$ORB_SITE/command/index.html"
-run "build_daily" python3 build_daily.py --patch-desk "$ORB_SITE/command/index.html"
+run "build_weekly" python3 build_weekly.py
+run "build_daily" python3 build_daily.py
 mkdir -p "$ORB_SITE/gammamap" "$ORB_SITE/live-trades"
 run "gamma_board" python3 gamma_board.py --patch-daily daily/index.html --patch-weekly weekly/index.html \
-  --patch-command "$ORB_SITE/command/index.html" --page "$ORB_SITE/gammamap/index.html"
+  --page "$ORB_SITE/gammamap/index.html"
 run "plan_addenda" python3 plan_addenda.py --daily daily/index.html --weekly weekly/index.html
 run "live_trades" python3 live_trades.py "$ORB_SITE/live-trades/index.html"
 
+# 11b) Bias gauge data (feeds the Command Center bias chip)
+run "bias_gauge" python3 bias_gauge.py
+# 11c) COMMAND CENTER: rebuild the whole /command/ page from data every run (layout lives in command_center.py;
+#      the legacy Command patchers no longer touch the page, and their data files stay where they are)
+run "command_center" python3 command_center.py "$ORB_SITE/command/index.html"
+# 11d) ORB STATUS section on Command: same ORB15 builder as before, now patching the Command Center page
 run "orb_status" python3 orb_status.py "$ORB_SITE/command/index.html"
-# 11b) Command live blocks: gamma grid / undertow (free chain compute), glance ES price, bias gauge
-run "command_live" python3 command_live.py "$ORB_SITE/command/index.html"
-run "bias_gauge" python3 bias_gauge.py --patch "$ORB_SITE/command/index.html"
 
 # 12) Copy pages into site root
 mkdir -p "$ORB_SITE/overnight" "$ORB_SITE/weekly/charts/prior" "$ORB_SITE/weekly/charts/plan" \
