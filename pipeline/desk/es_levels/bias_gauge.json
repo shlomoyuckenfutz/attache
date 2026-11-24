@@ -1,36 +1,36 @@
 {
- "score": 5,
+ "score": 23,
  "label": "NEUTRAL",
- "px": 719.07,
- "asof": "11-23 06:12 PT",
+ "px": 724.18,
+ "asof": "11-23 16:59 PT",
  "feed": "delayed",
- "built": "11-23 06:29 PT",
+ "built": "11-23 17:38 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "719.07 vs 712.27",
+   "x": "724.18 vs 722.36",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
    "v": 1,
-   "x": "9=713.70 21=710.81",
+   "x": "9=723.41 21=723.08",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
    "v": 0,
-   "x": "range not set",
+   "x": "INSIDE 713.53\u2013724.80",
    "w": 1.5
   },
   {
    "k": "ON RANGE",
    "d": "price vs overnight / pre-market high-low",
-   "v": 0,
+   "v": 1,
    "x": "704.06\u2013720.92",
    "w": 1.0
   },
@@ -38,7 +38,7 @@
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
    "v": 1,
-   "x": "719.07 vs pivot 698.62",
+   "x": "724.18 vs pivot 698.62",
    "w": 1.0
   },
   {
@@ -52,13 +52,13 @@
    "k": "DARK POOL",
    "d": "dark-pool levels holding below vs overhead (\u00b11%)",
    "v": -1,
-   "x": "0 below / 8 above",
+   "x": "5 below / 8 above",
    "w": 1.5
   },
   {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
-   "v": -1,
+   "v": 0,
    "x": "713.51\u2013732.93",
    "w": 1.0
   },
