@@ -36,7 +36,7 @@
           "date": "2026-11-16",
           "hi": 7570.75,
           "lo": 7414.75,
-          "last": 7429.0,
+          "last": 7429.25,
           "event": false
         },
         {
@@ -50,14 +50,14 @@
           "date": "2026-11-18",
           "hi": 7425.5,
           "lo": 7305.25,
-          "last": 7423.25,
+          "last": 7423.5,
           "event": false
         },
         {
           "date": "2026-11-19",
           "hi": 7440.5,
           "lo": 7144.5,
-          "last": 7169.5,
+          "last": 7169.25,
           "event": false
         },
         {
@@ -130,7 +130,7 @@
     "es": {
       "high": 7313.25,
       "low": 7082.5,
-      "last": 7167.5,
+      "last": 7209.75,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -155,16 +155,16 @@
           "date": "2026-11-24",
           "hi": 7271.5,
           "lo": 7144.75,
-          "last": 7167.5,
+          "last": 7209.75,
           "event": false
         }
       ],
-      "n_bars": 58
+      "n_bars": 76
     },
     "spy": {
       "high": 728.6713,
-      "low": 713.530029296875,
-      "last": 724.18,
+      "low": 712.1400146484375,
+      "last": 717.95,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -182,11 +182,18 @@
           "date": "2026-11-23",
           "hi": 728.67,
           "lo": 713.53,
-          "last": 724.18,
+          "last": 721.98,
+          "event": false
+        },
+        {
+          "date": "2026-11-24",
+          "hi": 722.11,
+          "lo": 712.14,
+          "last": 717.95,
           "event": false
         }
       ],
-      "n_bars": 21
+      "n_bars": 38
     }
   },
   "note": "Prior week = Nov 16\u201320 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 23\u201327 (Thu 11/26 closed) actual so far + forward paths only on empty day columns."
