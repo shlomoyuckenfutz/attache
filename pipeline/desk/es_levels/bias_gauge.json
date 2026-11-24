@@ -4,13 +4,13 @@
  "px": 724.18,
  "asof": "11-23 16:59 PT",
  "feed": "delayed",
- "built": "11-23 17:38 PT",
+ "built": "11-23 18:10 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "724.18 vs 722.36",
+   "x": "724.18 vs 723.17",
    "w": 1.5
   },
   {
