@@ -1,10 +1,10 @@
 {
- "score": -26,
- "label": "BEARISH",
+ "score": -12,
+ "label": "NEUTRAL",
  "px": 716.37,
  "asof": "11-24 16:59 PT",
  "feed": "delayed",
- "built": "11-24 19:57 PT",
+ "built": "11-25 00:21 PT",
  "votes": [
   {
    "k": "VWAP",
@@ -35,24 +35,10 @@
    "w": 1.0
   },
   {
-   "k": "FB \u00b7 SPY",
-   "d": "price vs First Blade pivot",
-   "v": -1,
-   "x": "716.37 vs pivot 721.31",
-   "w": 1.0
-  },
-  {
-   "k": "FB \u00b7 LEAN",
-   "d": "First Blade stated lean",
-   "v": -1,
-   "x": "bearish",
-   "w": 0.5
-  },
-  {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
    "v": 0,
-   "x": "710.5\u2013727.06",
+   "x": "709.35\u2013725.83",
    "w": 1.0
   },
   {
