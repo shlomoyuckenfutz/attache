@@ -36,7 +36,7 @@
           "date": "2026-11-16",
           "hi": 7570.75,
           "lo": 7414.75,
-          "last": 7429.25,
+          "last": 7429.0,
           "event": false
         },
         {
@@ -50,14 +50,14 @@
           "date": "2026-11-18",
           "hi": 7425.5,
           "lo": 7305.25,
-          "last": 7423.5,
+          "last": 7423.25,
           "event": false
         },
         {
           "date": "2026-11-19",
           "hi": 7440.5,
           "lo": 7144.5,
-          "last": 7169.25,
+          "last": 7169.5,
           "event": false
         },
         {
@@ -129,8 +129,8 @@
   "symbols_plan": {
     "es": {
       "high": 7313.25,
-      "low": 7082.5,
-      "last": 7146.25,
+      "low": 7001.5,
+      "last": 7187.0,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -155,23 +155,23 @@
           "date": "2026-11-24",
           "hi": 7271.5,
           "lo": 7120.5,
-          "last": 7141.75,
+          "last": 7142.0,
           "event": false
         },
         {
           "date": "2026-11-25",
-          "hi": 7152.25,
-          "lo": 7139.75,
-          "last": 7146.25,
+          "hi": 7211.0,
+          "lo": 7001.5,
+          "last": 7187.0,
           "event": true
         }
       ],
-      "n_bars": 94
+      "n_bars": 116
     },
     "spy": {
       "high": 728.6713,
-      "low": 712.1400146484375,
-      "last": 716.37,
+      "low": 695.469970703125,
+      "last": 717.60498046875,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
@@ -196,11 +196,18 @@
           "date": "2026-11-24",
           "hi": 722.11,
           "lo": 712.14,
-          "last": 716.37,
+          "last": 716.72,
           "event": false
+        },
+        {
+          "date": "2026-11-25",
+          "hi": 718.18,
+          "lo": 695.47,
+          "last": 717.6,
+          "event": true
         }
       ],
-      "n_bars": 41
+      "n_bars": 49
     }
   },
   "note": "Prior week = Nov 16\u201320 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 23\u201327 (Thu 11/26 closed) actual so far + forward paths only on empty day columns."

@@ -1,44 +1,58 @@
 {
- "score": -12,
- "label": "NEUTRAL",
- "px": 716.37,
- "asof": "11-24 16:59 PT",
+ "score": 76,
+ "label": "BULLISH",
+ "px": 717.7,
+ "asof": "11-25 10:53 PT",
  "feed": "delayed",
- "built": "11-25 00:21 PT",
+ "built": "11-25 11:11 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
-   "v": 0,
-   "x": "716.37 vs 716.37",
+   "v": 1,
+   "x": "717.70 vs 703.97",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": 0,
-   "x": "9=716.41 21=716.71",
+   "v": 1,
+   "x": "9=715.10 21=711.86",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
-   "v": 0,
-   "x": "INSIDE 712.14\u2013717.84",
-   "w": 1.5
+   "v": 1,
+   "x": "ABOVE HIGH 696.00\u2013703.70 \u00b7 confirmed break (\u00d73)",
+   "w": 4.5
   },
   {
    "k": "ON RANGE",
    "d": "price vs overnight / pre-market high-low",
-   "v": 0,
-   "x": "673.97\u2013728.67",
+   "v": 1,
+   "x": "703.06\u2013714.24",
    "w": 1.0
+  },
+  {
+   "k": "FB \u00b7 SPY",
+   "d": "price vs First Blade pivot",
+   "v": 1,
+   "x": "717.70 vs pivot 717.29",
+   "w": 1.0
+  },
+  {
+   "k": "FB \u00b7 LEAN",
+   "d": "First Blade stated lean",
+   "v": 1,
+   "x": "bullish",
+   "w": 0.5
   },
   {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
    "v": 0,
-   "x": "709.35\u2013725.83",
+   "x": "713.4\u2013722.02",
    "w": 1.0
   },
   {
@@ -51,13 +65,13 @@
   {
    "k": "NEWS",
    "d": "news-plan bias",
-   "v": -1,
-   "x": "BEARISH",
+   "v": 0,
+   "x": "n/a",
    "w": 1.0
   }
  ],
  "news": {
-  "dir": "BEARISH",
-  "why": "Bears control below 7120\u201325 and the 7211\u201323 prior highs, and the bigger line is still 7305\u201309. Friday: ES opened 7168.75, rallied to 7216.75 at 7:00 AM PT and was rejected right at the 7211\u201323 prior highs, then lost the 7182 trap door at 7:10 AM PT, 7086 at 8:02 AM PT and 7000 at 11:24 AM PT, and sold to 6898 at 12:56 PM PT. ES closed 6935 at 1:59 PM PT and traded 6924.5\u20136979.75 after the bell. SPX 6910.40 (\u22123.70%), SPY 689.81 (\u22123.64%), QQQ 608.45 (\u22125.67%), NDX 25028.99 (\u22125.61%), VIX 35.90 (+26.1%). Seventh straight S&P 500 loss; the Nasdaq-100 is down more than 20% from its high. Thursday's trap-door call played out in full: 7182 gave way, 7086 and 7000 followed, and the low came in at 6898. Monday's first job is 6960\u201366: it is the line to reclaim for a bounce to 7025\u201329 (SPY 700, now the biggest strike above price), then 7086 and 7120\u201325. A 7120\u201325 reclaim opens 7211\u201323, the first place to sell a bounce. Under 6960\u201366, 6897\u201398 (Friday's low) is the big support; lose it and 6841\u201351 (SPX 6825, Monday's biggest strike and put wall, and SPX 6835) is next, then 6770 and 6720 (the low of Monday's expected range). Every board is negative gamma with no flip, so moves stretch both ways. Price is very stretched: VIX closed 35.90 under its 40 wall, and short-term momentum is the most oversold since early 2020, so sharp short-covering rallies are likely inside the downtrend. Monday's SPX expected range is 6704.09\u20137116.71 (\u00b12.99%), about ES 6721\u20137133. ES \u2248 SPX + 16.5 from Friday's regular-session median. Flash PMIs 6:45 AM PT; Fed Williams 1:00 PM PT."
+  "dir": "NEUTRAL",
+  "why": ""
  }
 }
