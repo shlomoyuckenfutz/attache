@@ -1,53 +1,53 @@
 {
  "schema": 1,
  "daily": {
-  "session": "2026-11-23",
-  "title": "Weekend, catalysts & SPY levels",
+  "session": "2026-11-27",
+  "title": "Holiday close, catalysts & SPY levels",
   "rows": [
    {
-    "k": "",
-    "lb": "Close Fri",
-    "t": "SPX 6,910.40 (−3.70%) · SPY 689.81 (−3.64%) · QQQ 608.45 (−5.67%) · NDX 25,028.99 (−5.61%) · VIX 35.90 (+26.1%) · ES 6935 at 1:59 PM PT"
+    "k": "close",
+    "lb": "As of Wed 11:28 AM PT",
+    "t": "SPX 7,185.16 · SPY 716.99 · QQQ 632.99 · NDX 26,008.65 · VIX 27.97 · ES 7197"
    },
    {
-    "k": "res",
-    "lb": "After hours",
-    "t": "ES 6924.5–6979.75 Friday after the bell · futures reopen Sun 3:00 PM PT"
+    "k": "week",
+    "lb": "This week so far",
+    "t": "Monday ES high 7313.25 (tagged 7305–09), close 7268.50; Tuesday 7152–7240, SPX 7201.09 (+4.21% vs Friday). Wednesday low ES 6982.50 at 6:45 AM PT, high 7211 at 10:50 AM PT."
    },
    {
-    "k": "piv",
-    "lb": "PMIs",
-    "t": "Mon 6:45 AM PT · S&P Global flash manufacturing and services PMIs (Nov)"
+    "k": "data",
+    "lb": "Wednesday data",
+    "t": "GDP 4.3% vs 3.5% expected · core PCE 3.3% year-on-year vs 3.2% · claims 189k vs 200k · durable goods 0.2% vs 0.7%. Beige Book: employment rose slightly, prices increased moderately."
    },
    {
-    "k": "",
-    "lb": "Fed",
-    "t": "Mon 1:00 PM PT · New York Fed President Williams, keynote"
+    "k": "holiday",
+    "lb": "Holiday",
+    "t": "Thursday closed · Friday stocks close 10:00 AM PT (weekly expiration)"
    },
    {
-    "k": "",
-    "lb": "Implied Mon",
-    "t": "SPY 668.72–710.90 (±3.06%) · SPX 6704.09–7116.71 (±2.99%) · ES ≈ 6721–7133 (SPX + 16.5)"
+    "k": "implied",
+    "lb": "Implied (11:10 AM PT chain)",
+    "t": "Remaining Wednesday SPY 713.40–722.02 (±0.60%) from 717.71 — the session already traded 695.45–718.18. Original week from Friday close: SPX 6562.72–7258.08 · SPY 654.65–724.97 (price is near the top). Remaining-week straddle from Monday open: SPY 713.65–735.01, SPX 7120.82–7334."
    },
    {
     "k": "res",
     "lb": "Resistance",
-    "t": "SPY 700 (biggest strike, above price) · 710.90 Mon range high · 718.66 nearest dark-pool line · 721 ceiling"
+    "t": "SPY 718.66 nearest dark-pool line · 721–724 · 724.97 original week high"
    },
    {
-    "k": "piv",
+    "k": "dec",
     "lb": "Decision",
-    "t": "SPY 695 (Monday expiry's biggest strike) · no flip on any expiry except Mon (734.8)"
+    "t": "SPY 700 (put wall as posted Wednesday morning) · 698–696 area maps to ES 6982–6966"
    },
    {
     "k": "sup",
     "lb": "Support",
-    "t": "SPY 686.75 Fri low · 680 · 675 (heavy Nov 27 / Dec 4 put buying) · 668.72 Mon range low"
+    "t": "SPY 695.45 Wednesday low · 686.75 Friday 11/20 low · 675"
    },
    {
-    "k": "res",
-    "lb": "Macro",
-    "t": "December Fed hike still priced; a 50bp move is off the table · Cook: high inflation leaves no room to delay · Nasdaq-100 more than 20% off its high · Bitcoin under $60,000"
+    "k": "macro",
+    "lb": "Next week",
+    "t": "ISM manufacturing and JOLTS Tue 7:00 AM PT · ADP Wed 5:15 AM PT · ISM services Thu 7:00 AM PT · jobs report Fri Dec 4 5:30 AM PT · FOMC Dec 8–9"
    }
   ]
  },
@@ -57,34 +57,34 @@
   "title": "Week bias & volatility",
   "rows": [
    {
-    "k": "piv",
+    "k": "flip",
     "lb": "Bias flip",
-    "t": "ES reclaim of 7120–25, then 7211–23 = first bullish development; 7305–09 hands control back · SPY back over 700 takes pressure off"
+    "t": "ES accepted over 7211–23, then 7240–45, opens a 7305–09 retest · a loss of 6982–93 brings 6960–66 and 6897 back"
    },
    {
-    "k": "res",
+    "k": "vol",
     "lb": "Volatility",
-    "t": "VIX 35.90 under its 40 wall (put wall 18) · every index board negative gamma, no flip"
+    "t": "VIX 27.97 as of 11:13 AM PT Wednesday (high 34.95 at 6:45 AM PT) · last posted walls were Friday's 40 / 18 — not current"
    },
    {
-    "k": "",
-    "lb": "Data",
-    "t": "Wed 5:30 AM PT: PCE, GDP (2nd), claims, durables · 7:00 AM PT new home sales · 11:00 AM PT Beige Book"
+    "k": "data",
+    "lb": "Data in",
+    "t": "Wed 5:30 AM PT: GDP 4.3%, core PCE 3.3% year-on-year, claims 189k, durable goods 0.2% · Beige Book 11:00 AM PT"
    },
    {
-    "k": "",
+    "k": "holiday",
     "lb": "Holiday",
     "t": "Thu 11/26 closed · Fri 11/27 stocks close 10:00 AM PT (weekly expiration)"
    },
    {
-    "k": "sup",
+    "k": "season",
     "lb": "Seasonality",
-    "t": "Thanksgiving week higher 8 of the last 9 years for SPY (median +1.18%) · history, not a forecast"
+    "t": "Thanksgiving week higher 8 of the last 9 years for SPY (median +1.18%) · this week is already up more than 4% from Friday's close · history, not a forecast"
    },
    {
-    "k": "",
+    "k": "range",
     "lb": "Week range",
-    "t": "SPX 6562.72–7258.08 (±5.03%) · SPY 654.65–724.97 · ES ≈ 6579–7275"
+    "t": "Original from Friday close: SPX 6562.72–7258.08 (±5.03%) · SPY 654.65–724.97 · price is near the top of that band"
    }
   ]
  }

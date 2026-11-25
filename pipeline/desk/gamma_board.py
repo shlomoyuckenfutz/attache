@@ -74,7 +74,8 @@ def validate(d) -> dict:
         lo, hi = _num(r.get("lower")), _num(r.get("upper"))
         if r.get("symbol") in SYMS and lo and hi and lo < hi and hi / lo < 1.25:
             rows.append({"symbol": r["symbol"], "lower": lo, "upper": hi, "pct": _num(r.get("pct"))})
-    out["weekly_em"] = {"expiry": em.get("expiry") if _iso(em.get("expiry")) else None, "rows": rows}
+    out["weekly_em"] = {"expiry": em.get("expiry") if _iso(em.get("expiry")) else None, "rows": rows,
+                         "asof_label": em["asof_label"] if isinstance(em.get("asof_label"), str) else None}
     out["close"] = {s: _num((d.get("close") or {}).get(s)) for s in SYMS}
     return out
 
@@ -161,7 +162,7 @@ def em_rows(data):
     d = _iso(em.get("expiry") or "")
     if not d or not em.get("rows"):
         return f"Weekly expected move: {AWAIT}", []
-    lab = f"Weekly expected move to Fri {d.month}/{d.day} ({data['asof_label']})"
+    lab = f"Weekly expected move to Fri {d.month}/{d.day} ({em.get('asof_label') or data['asof_label']})"
     return lab, [(r["symbol"], f"{f(r['lower'], 2)}–{f(r['upper'], 2)}" + (f" (±{r['pct']:.2f}%)" if r.get("pct") else "")) for r in em["rows"]]
 
 

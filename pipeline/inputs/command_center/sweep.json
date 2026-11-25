@@ -1,171 +1,164 @@
 {
  "_about": "Curated Command Center sweep content. Written by the nightly sweep; the 15-minute refresh only reads it. Every block carries the session it is for; the page dims a block once that session has traded. No names, handles, counts or file names in any text here.",
  "plan": {
-  "for_session": "2026-11-23",
-  "asof_label": "plan posted Sat 11/21 11:00 AM PT (Fri 11/20 close)",
-  "bias": "BEARISH",
-  "headline": "Bears control under 7120–25. <span class=\"amb\">6897 is the big support</span> — Friday's low. Reclaim 6960–66 for a bounce; 7211–23 is where to sell it.",
-  "context": "Friday: ES rallied to 7216.75 at 7:00 AM PT and was rejected at the 7211–23 prior highs, then lost the 7182 trap door (7:10 AM PT), 7086 (8:02 AM PT) and 7000 (11:24 AM PT) and sold to 6898 at 12:56 PM PT; closed 6935 (SPX 6910.40 −3.70%, SPY 689.81 −3.64%, QQQ 608.45 −5.67%, VIX 35.90 +26.1%). Seventh straight S&P 500 loss; the Nasdaq-100 is down more than 20% from its high.",
+  "for_session": "2026-11-27",
+  "asof_label": "Wed 11/25 11:28 AM PT · Thursday closed, Friday early close",
+  "bias": "TWO-SIDED",
+  "headline": "Fri 11/27 — 6982–93 is the line · 7211–23 caps a bounce · 7305–09 is still the control line · early close 10:00 AM PT",
+  "context": "The Monday plan's bull path played out: 7025 was reclaimed Sunday and ES ran to 7313.25 Monday, tagging 7305–09, then sold off. Wednesday flushed to 6982.50 at 6:45 AM PT on the 5:30 AM PT data and ripped to 7211 at 10:50 AM PT. 6960–66 and 6897 were not tagged. Thursday is closed; Friday closes 10:00 AM PT.",
   "above": {
-   "label": "6960–66",
-   "es": 6963,
-   "note": "reclaim for the bounce",
-   "then": "then 7025–29 · 7086 · 7120–25 · 7211–23"
+   "label": "7211–23",
+   "es": 7217,
+   "note": "Wednesday's high — first place to sell a bounce",
+   "then": "then 7240–45 · 7305–09"
   },
   "below": {
-   "label": "6897",
-   "es": 6898,
-   "note": "Friday's low, the big support",
-   "then": "then 6841–51 · 6770 · 6721"
+   "label": "7120–25",
+   "es": 7122,
+   "note": "held Monday and Tuesday; lost and reclaimed Wednesday",
+   "then": "then 7086 · 7025–29 · 6982–93"
   },
   "levels": [
    {
     "es": 7305,
     "kind": "L",
     "label": "7305–09",
-    "note": "Control line — Tue/Wed shelf lost Thursday. Bears keep full control below it.",
+    "note": "Control line — Monday's high 7313.25 at 7:32 AM PT was tagged and sold.",
     "tags": [
-     "SPX 7300 Dec strike ≈ 7316"
+     "control"
     ]
+   },
+   {
+    "es": 7240,
+    "kind": "L",
+    "label": "7240–45",
+    "note": "Tuesday's regular-session high 7240.75 at 7:00 AM PT. Reclaim opens a 7305–09 retest.",
+    "tags": []
    },
    {
     "es": 7217,
     "kind": "L",
     "label": "7211–23",
-    "note": "Prior highs — still the biggest resistance. Friday's 7:00 AM PT high (7216.75) was rejected here. First place to sell a bounce.",
+    "note": "Prior highs and Wednesday's 10:50 AM PT high of 7211 — exact test. First place to sell a bounce.",
     "tags": []
    },
    {
     "es": 7122,
     "kind": "L",
     "label": "7120–25",
-    "note": "Friday's failed-breakdown level. Reclaim it to open 7211–23.",
-    "tags": [
-     "Mon range top ≈ 7133"
-    ]
+    "note": "Held Monday and Tuesday; lost in the Wednesday flush; reclaimed 9:17 AM PT.",
+    "tags": []
    },
    {
     "es": 7086,
     "kind": "L",
     "label": "7086",
-    "note": "Old trap-door target, lost 8:02 AM PT Friday. Now overhead.",
+    "note": "Mid-range; lost and reclaimed Wednesday morning.",
     "tags": []
    },
    {
     "es": 7027,
     "kind": "L",
     "label": "7025–29",
-    "note": "Friday's 7025 support (lost 9:38 AM PT); SPY 700, its biggest strike, ≈ 7029.",
-    "tags": [
-     "gamma"
-    ]
+    "note": "Sunday's reclaim started the bounce; lost and recovered Wednesday. SPY 700 ≈ 7017 at the 13.5 basis.",
+    "tags": []
+   },
+   {
+    "es": 6982,
+    "kind": "L",
+    "label": "6982–93",
+    "note": "Wednesday's 6982.50 low at 6:45 AM PT and the 6992–93 Sunday overnight low that failed and recovered.",
+    "tags": []
    },
    {
     "es": 6963,
     "kind": "L",
     "label": "6960–66",
-    "note": "First line to reclaim. SPX 6950 (Wed expiry's biggest strike) ≈ 6966.",
-    "tags": [
-     "gamma"
-    ]
+    "note": "Monday's pivot; not tagged this week. Next under 6982.",
+    "tags": []
    },
    {
     "es": 6898,
     "kind": "L",
     "label": "6897–98",
-    "note": "Big support — Friday's low (12:56 PM PT). Lose it and 6841–51 is next.",
+    "note": "Friday 11/20's low. Not revisited this week.",
     "tags": []
    },
    {
     "es": 6846,
     "kind": "L",
     "label": "6841–51",
-    "note": "SPX 6825 (Monday's biggest strike and put wall) ≈ 6841; SPX 6835 ≈ 6851.",
-    "tags": [
-     "gamma"
-    ]
-   },
-   {
-    "es": 6770,
-    "kind": "L",
-    "label": "6770",
-    "note": "Next support below 6841–51.",
+    "note": "Next support under 6897–98.",
     "tags": []
-   },
-   {
-    "es": 6721,
-    "kind": "L",
-    "label": "6721",
-    "note": "Low of Monday's expected range (SPX 6704.09). SPX 6500, the biggest strike for the week, ≈ 6516.",
-    "tags": [
-     "range low"
-    ]
    }
   ]
  },
  "scenarios": {
-  "for_session": "2026-11-23",
-  "asof_label": "Sat 11/21 11:00 AM PT (Fri 11/20 close)",
+  "for_session": "2026-11-27",
+  "asof_label": "Wed 11/25 11:28 AM PT",
   "cards": [
    {
-    "cls": "dnb",
-    "title": "BEAR · base case",
-    "steps": [
-     "Stay under 6960–66 → retest 6897–98, Friday's low.",
-     "<b>Lose 6897</b> → 6841–51 (SPX 6825 put wall).",
-     "Then 6770, and 6721 at the bottom of Monday's expected range."
-    ],
-    "targets": [
-     6898,
-     6846,
-     6770,
-     6721
-    ],
-    "dir": "down",
-    "confirm": "Confirms: ES accepted under 6897 with VIX back over 40 (its wall)."
-   },
-   {
     "cls": "upb",
-    "title": "BULL · oversold bounce",
+    "title": "BULL · hold the low, retake 7211–23",
     "steps": [
-     "Hold 6897 and reclaim 6960–66 → 7025–29 (SPY 700).",
-     "Then 7086; a 7120–25 reclaim opens 7211–23.",
-     "7211–23 is the first place to sell a bounce; 7305–09 stays the control line."
+     "Hold 6982–93 and reclaim 7211–23 → 7240–45.",
+     "A 7240–45 reclaim opens a 7305–09 retest of the control line."
     ],
     "targets": [
-     6966,
-     7029,
-     7086,
-     7217
+     7217,
+     7240,
+     7305
     ],
     "dir": "up",
-    "confirm": "Confirms: ES over 7029 (SPY back over 700) with VIX falling toward 30."
+    "confirm": "Confirms: ES accepted over 7211–23 after the holiday, with 6982 still holding."
    },
    {
-    "cls": "",
-    "title": "HOLIDAY WEEK · rules",
-    "bullets": [
-     "Every index board is negative gamma with no flip — expect 100-point swings both ways; size down.",
-     "Wed 5:30 AM PT: PCE, GDP, claims and durables all at once. Thu closed. Fri closes 10:00 AM PT (weekly expiration).",
-     "Thanksgiving week was higher in 8 of the last 9 years, and short-term momentum is the most oversold since early 2020 — don't press shorts into support."
-    ]
+    "cls": "dnb",
+    "title": "BEAR · lose 6982–93",
+    "steps": [
+     "Fail 6982–93 → 6960–66, the unused Monday pivot.",
+     "Lose 6960–66 → 6897–98 (Friday 11/20 low), then 6841–51."
+    ],
+    "targets": [
+     6963,
+     6898,
+     6846
+    ],
+    "dir": "down",
+    "confirm": "Confirms: ES accepted under 6982 after the Thursday close."
+   },
+   {
+    "cls": "mid",
+    "title": "NEUTRAL · holiday chop",
+    "steps": [
+     "Two-way swings between 6982 and 7211 into Friday's 10:00 AM PT early close.",
+     "Fade the edges; size down on a half-day weekly expiration."
+    ],
+    "targets": [
+     6982,
+     7217
+    ],
+    "dir": "both",
+    "confirm": "Base case for a short Friday session after a 230-point Wednesday range."
    }
   ]
  },
  "reads": {
-  "for_session": "2026-11-23",
-  "asof_label": "Fri 11/20 close through Sat 11/21 10:00 AM PT · weekend ES plan Sat 5:42 AM PT",
+  "for_session": "2026-11-27",
+  "asof_label": "Sat 11/21 through Wed 11/25 11:28 AM PT",
   "bullets": [
-   "<b>Weekend ES plan:</b> 6897 is the big support. A 7125 reclaim sees 7223, then a 7309 backtest — sell there. 6770 below. For the Sunday open: reclaim 6960, then 7025.",
-   "<b>Structure:</b> the August–November megaphone broke at 7309 and ES lost its April 2025 trendline. Bears control below 7306–09; bulls need 7306–09, 7421 and 7519 back before anyone talks about a bottom.",
-   "<b>Positioning:</b> every board is negative gamma with no flip. SPX's biggest strike moved 7200 → 6500; SPY's 700 is now above price; VIX's wall moved 30 → 40.",
-   "<b>Tape:</b> net −$466M, put/call 1.72, led by SPY Nov 27 / Dec 4 put buying (675 Dec 4 $175M, 700 Nov 27 $91.2M, 680 Nov 27 $80.0M). SPY IV rank hit 100%; Fear & Greed 14.",
-   "<b>Oversold:</b> SPY hourly RSI 12, the lowest since February 2020; several reads look for a sharp counter-rally (one 2018 analog points to SPY 740s), others see a 2000/2008-style unwind. December rate hike still priced; a 50bp move is off the table."
+   "<b>Week vs the Monday plan:</b> the bull path played out in full — 7025 was reclaimed Sunday, and ES ran through 7086, 7120–25 and 7211–23 to tag 7305–09 at 7313.25 Monday. The bear path to 6897 never triggered; Wednesday's 6982.50 low held the 6960–66 pivot.",
+   "<b>Wednesday data:</b> GDP 4.3% vs 3.5% expected (prior 3.4%); core PCE 0.3% month-on-month (in line) and 3.3% year-on-year vs 3.2% expected; claims 189k vs 200k; durable goods 0.2% vs 0.7%. ES sold to 6982.50 at 6:45 AM PT, then ripped to 7211. Beige Book: employment rose slightly, prices increased moderately.",
+   "<b>Intraday plan that was posted:</b> the long was the 6992–93 Sunday overnight low as a failed breakdown, with 7025 as a lower-quality reclaim. Targets 7039 / 7052 / 7072, then 7087, 7105, 7150, 7223 and a 7305–09 retest. Price reached 7211 by 10:50 AM PT.",
+   "<b>Auction read:</b> Tuesday rejected Monday's value and filled Monday's excess low; the weekly profile is a double distribution. Buyers' next job is a 7240 reclaim.",
+   "<b>Positioning:</b> the last full options board is Friday 11/20's close and is not current. A Wednesday morning print noted SPY 700 as a put wall still overhead. No new dark-pool lines were posted.",
+   "<b>2018 analog:</b> the week started ahead of that path after Monday's rip; by Wednesday morning QQQ was sitting on it (path 616 vs about 618 pre-market).",
+   "<b>Holiday:</b> Thursday closed. Friday closes 10:00 AM PT, weekly expiration. Thanksgiving week has been higher in 8 of the last 9 years — this week is already sharply higher from Friday's close."
   ]
  },
  "darkpool": {
-  "asof": "2026-11-20",
-  "asof_label": "lines as of Thu 11/19 · no new prints posted Fri",
+  "asof": "2026-11-19",
+  "asof_label": "lines as of Thu 11/19 · no new prints posted through Wed 11/25",
   "lines": [
    {
     "spy": 739.72,
@@ -196,7 +189,7 @@
  },
  "gamma": {
   "asof": "2026-11-20",
-  "asof_label": "Fri 11/20 close",
+  "asof_label": "Fri 11/20 close — last full board; no new full board as of Wed 11/25 11:28 AM PT",
   "cards": {
    "SPX": {
     "price": "6,910.40",
@@ -286,14 +279,14 @@
  },
  "vix": {
   "asof": "2026-11-20",
-  "asof_label": "Fri 11/20 close",
+  "asof_label": "Fri 11/20 close — last posted walls; VIX is 27.97 as of 11:13 AM PT Wednesday (high 34.95 at 6:45 AM PT)",
   "put_wall": 18,
   "wall": 40,
-  "note": "VIX positive gamma; 40 is also its biggest strike (was 30 Thursday). Breadth: 791 of 1,550 boards in positive gamma. SMH sits on its 400 floor."
+  "note": "Last posted Friday: wall 40 and put wall 18, VIX in positive gamma. Those walls have not been refreshed. Wednesday VIX is 27.97 after a 34.95 spike at the 6:45 AM PT low."
  },
  "flow": {
   "asof": "2026-11-20",
-  "asof_label": "Fri 11/20",
+  "asof_label": "Fri 11/20 — last full session tape; no Wednesday net posted",
   "prev_put_call": 1.83,
   "prints": [
    "SPY 675 put · Dec 4 · $175M (bought above ask)",
@@ -353,236 +346,201 @@
   "sector_note": "money left financials and tech"
  },
  "topics": {
-  "asof": "2026-11-20",
-  "asof_label": "sweep reads Thu 11/19 1:00 PM PT through Sat 11/21 10:00 AM PT",
+  "asof": "2026-11-25",
+  "asof_label": "sweep reads Sat 11/21 through Wed 11/25 11:28 AM PT",
   "items": [
    {
     "group": "levels",
     "name": "ES levels plan",
     "status": "fresh",
-    "text": "Weekend: 6897 big support. 7125 reclaim sees 7223, then a 7309 backtest — sell there. 6770 below. Sunday open: 6960 reclaim, then 7025.",
+    "text": "Weekend through Wednesday: 6992–93 Sunday overnight low was the failed-breakdown long; 7025 reclaim ran to 7087, 7105, 7150, then 7211 (7223 was next) and a 7305–09 retest. 6982.50 was Wednesday's low. 7240 is the buyers' reclaim.",
     "where": "Plan · Ladder"
    },
    {
     "group": "levels",
     "name": "ES auction plan",
-    "status": "awaiting",
-    "text": "Monday plan not posted yet. Friday's drop ran 300+ points off its key line.",
+    "status": "fresh",
+    "text": "Tuesday rejected Monday's value and filled Monday's excess low; the week is a double distribution. Buyers need to reclaim 7240. Friday is a half day.",
     "where": "Scenarios"
    },
    {
     "group": "levels",
     "name": "Post-market SPY write-up",
     "status": "awaiting",
-    "text": "Friday write-up not out yet. Intraday: SPY hourly RSI 12.2 (lowest since Feb 2020); hourly 13-count buy at the 697.84 January high; −$2.2B gamma at the 700 put wall.",
+    "text": "No midweek write-up in the inbox as of 11:28 AM PT Wednesday. A later note said one was still coming.",
     "where": "Reads"
    },
    {
     "group": "levels",
     "name": "SPY / QQQ pivot grids",
     "status": "quiet",
-    "text": "Friday grid (pivot 710, support 700) traded through. No Monday grid yet.",
+    "text": "No new midweek grid posted.",
     "where": "Topics"
    },
    {
     "group": "levels",
     "name": "SPY call / put trigger levels",
     "status": "quiet",
-    "text": "Friday's put triggers (710 → 700) hit. No Monday triggers yet.",
+    "text": "No new midweek triggers posted.",
     "where": "Topics"
    },
    {
     "group": "levels",
     "name": "Next-day radar & pivot grid",
     "status": "quiet",
-    "text": "Friday SPY pivot 710.36 failed; winners were index and NVDA puts. No Monday radar yet.",
+    "text": "No Friday radar posted yet.",
     "where": "Topics"
    },
    {
     "group": "gamma",
     "name": "Dealer gamma board",
-    "status": "fresh",
-    "text": "Every index negative gamma, no flip. SPX biggest strike 7200 → 6500; SPY 700 now above price; VIX wall 30 → 40.",
+    "status": "stale",
+    "text": "Last full board is Friday 11/20 (every index negative gamma, no flip). Not current. A Wednesday morning print still had SPY 700 as a put wall.",
     "where": "Positioning"
    },
    {
     "group": "gamma",
     "name": "SPX gamma by strike",
     "status": "awaiting",
-    "text": "No posts since the last sweep.",
+    "text": "No midweek strike board posted.",
     "where": "Positioning"
    },
    {
     "group": "gamma",
     "name": "Intraday net GEX · pin & trap levels",
-    "status": "quiet",
-    "text": "Friday: SPY 707 was the trap door with dealers short gamma everywhere. No weekend update.",
+    "status": "stale",
+    "text": "Friday board is not current. No complete Wednesday net was posted.",
     "where": "Positioning"
    },
    {
     "group": "gamma",
     "name": "GEX-level backtests",
     "status": "quiet",
-    "text": "Recap and promo posts; no new level.",
+    "text": "Promo and recap posts; no new map.",
     "where": "Topics"
    },
    {
     "group": "gamma",
     "name": "Dealer-positioning lessons",
     "status": "quiet",
-    "text": "Recap posts and a warning not to time the bottom.",
+    "text": "Recap posts; no new midweek lesson.",
     "where": "Topics"
    },
    {
     "group": "flow",
     "name": "Options flow & reaction levels",
     "status": "fresh",
-    "text": "SPY IV rank hit 100%; Fear & Greed 14. SPX 7000's positive delta flipped negative as it broke. Money rotated out of big tech into healthcare, staples, energy and utilities.",
+    "text": "Wednesday morning: SPY 12/11 685 puts, 16 hits, $54.8M, 24× open interest, 2% out of the money, one-sided, under the 700 put wall.",
     "where": "Flow · Ladder"
    },
    {
     "group": "flow",
     "name": "Unusual options trades",
     "status": "fresh",
-    "text": "Heavy QQQ Dec 625 put buying ($35M+ in 3 minutes). SPX 7000 carried −$5B of gamma before it broke. Active-manager exposure fell 21.7 points to 51.2.",
+    "text": "A $51M single print in MU February 730 calls on Tuesday (8,750 contracts vs 171 open). Wednesday: $4.4M buy-to-open in QQQ puts about 2% out of the money, 9 days to expiry.",
     "where": "Flow"
    },
    {
     "group": "flow",
     "name": "Dark-pool prints & clusters",
-    "status": "fresh",
-    "text": "Downside print clusters cleared overnight and intraday; SPY's 700–695 gamma range traded through.",
+    "status": "stale",
+    "text": "No new lines posted since Thursday 11/19. Spot 716.99 is just under the 718.66 line.",
     "where": "Dark pool"
    },
    {
     "group": "flow",
     "name": "Algo convergence signals",
-    "status": "fresh",
-    "text": "Puts plus a bearish cross worked all day; the SPY expiry pointed to 695 and hit it.",
+    "status": "quiet",
+    "text": "No midweek signal post.",
     "where": "Topics"
    },
    {
     "group": "flow",
     "name": "Headline flow & IPO color",
     "status": "fresh",
-    "text": "ANT fell 6% premarket with the AI selloff. Citi sees Fed cuts only in 2027.",
+    "text": "Nvidia: S&P placed the AA rating on CreditWatch negative. Vance said the board's decision brought the CEO back and that no pardon is needed. Anthropic's CEO pushed back on a report about AI and free will.",
     "where": "Context"
    },
    {
     "group": "macro",
     "name": "Market wire & earnings",
     "status": "fresh",
-    "text": "S&P 500 −3.7%, Nasdaq −5.3%. Cook: high inflation leaves no room to delay. Treasury pushed back on a bigger hike. AI-chip export licensing tightened.",
+    "text": "Wednesday 5:30 AM PT: GDP 4.3% vs 3.5% expected; core PCE 3.3% year-on-year vs 3.2%; claims 189k vs 200k; durable goods 0.2% vs 0.7%. Atlanta Fed GDPNow Q4 2.9% (was 3.21%).",
     "where": "Context"
    },
    {
     "group": "macro",
     "name": "Policy & geopolitics",
-    "status": "quiet",
-    "text": "One AI-selloff headline; nothing new on policy.",
+    "status": "fresh",
+    "text": "Beige Book: employment rose slightly, prices increased moderately. Hassett: PCE shows the shock is waning; more 4% growth quarters expected.",
     "where": "Context"
    },
    {
     "group": "macro",
     "name": "Breadth, divergence & gap fills",
     "status": "fresh",
-    "text": "SPY fell from 775.6 (Nov 4) to 686.75 in 13 sessions. No options with VIX over 30; expects a sharp multi-day rally once the washout ends.",
+    "text": "A mid-morning note called a gap fill that worked. VIX 27.97 after a 34.95 spike at 6:45 AM PT.",
     "where": "Context"
    },
    {
     "group": "macro",
     "name": "Historical stats & crash analogs",
     "status": "fresh",
-    "text": "1987 vs 2026 overlay; valuation ratios look like 2000; panic bottoms come at volatility 40 or 80.",
+    "text": "2018 overlay: the week started ahead of that path after Monday's rip; Wednesday morning QQQ was sitting on it (path 616 vs about 618 pre-market).",
     "where": "Context"
    },
    {
     "group": "macro",
     "name": "Correction math & analogs",
     "status": "fresh",
-    "text": "SPX 7000 / SPY 687 target hit; gap fill 660–670; VIX rarely stays over 35 for long.",
+    "text": "From Friday's SPX 6910 close, Tuesday was 7201 (+4.21%). Wednesday traded 6970–7197 and was last 7185.",
     "where": "Context"
    },
    {
     "group": "macro",
     "name": "Hedge structure & 200DMA thesis",
-    "status": "fresh",
-    "text": "7000/6800 hedge into next week; the last OPEX after a drawdown brought a 2.5% rally.",
-    "where": "Context"
+    "status": "quiet",
+    "text": "No new midweek hedge post.",
+    "where": "Topics"
    },
    {
     "group": "swing",
     "name": "Wave count & macro structure",
     "status": "fresh",
-    "text": "Tracking 2018: this date was the late-November low before a sharp rally (SPY 740s, QQQ 660s).",
+    "text": "2018 path still in focus: a midweek update had QQQ back on that line after running ahead Monday.",
     "where": "Topics"
    },
    {
     "group": "swing",
     "name": "Swing timing & bounce watch",
     "status": "fresh",
-    "text": "Calls an interim bottom near; 130M SPY shares into the close read as capitulation.",
+    "text": "Monday's bounce was the short-covering rally the weekend read allowed for; 7305–09 was tagged and rejected.",
     "where": "Topics"
    },
    {
     "group": "swing",
     "name": "Heatmap & gap read",
     "status": "fresh",
-    "text": "Was wrong about a bounce this week; weekly outlook due Sunday.",
+    "text": "A Wednesday gap-fill was called and filled. No weekly heatmap update.",
     "where": "Topics"
    },
    {
     "group": "swing",
     "name": "Chart patterns",
-    "status": "awaiting",
-    "text": "No posts since the last sweep.",
+    "status": "quiet",
+    "text": "No new midweek pattern post.",
     "where": "Topics"
    },
    {
     "group": "swing",
     "name": "Live-session chatter",
-    "status": "quiet",
-    "text": "VIX 35 target hit; \"don't buy things going down.\"",
+    "status": "fresh",
+    "text": "One desk went net short mid-day Wednesday and flagged one-day volatility ripping on the rally.",
     "where": "Topics"
    }
   ]
  },
  "events": [
-  {
-   "utc": "2026-11-22T23:00:00Z",
-   "name": "Futures reopen",
-   "pt": "Sun 3:00 PM PT"
-  },
-  {
-   "utc": "2026-11-23T14:45:00Z",
-   "name": "Flash PMIs (Nov)",
-   "pt": "Mon 6:45 AM PT"
-  },
-  {
-   "utc": "2026-11-23T21:00:00Z",
-   "name": "Fed Williams keynote",
-   "pt": "Mon 1:00 PM PT"
-  },
-  {
-   "utc": "2026-11-24T15:00:00Z",
-   "name": "Consumer confidence (Nov)",
-   "pt": "Tue 7:00 AM PT"
-  },
-  {
-   "utc": "2026-11-25T13:30:00Z",
-   "name": "PCE · GDP · claims · durables",
-   "pt": "Wed 5:30 AM PT"
-  },
-  {
-   "utc": "2026-11-25T15:00:00Z",
-   "name": "New home sales (Oct)",
-   "pt": "Wed 7:00 AM PT"
-  },
-  {
-   "utc": "2026-11-25T19:00:00Z",
-   "name": "Fed Beige Book",
-   "pt": "Wed 11:00 AM PT"
-  },
   {
    "utc": "2026-11-27T13:30:00Z",
    "name": "Goods trade balance (Oct)",
@@ -592,87 +550,115 @@
    "utc": "2026-11-27T18:00:00Z",
    "name": "Early close · weekly expiration",
    "pt": "Fri 10:00 AM PT"
+  },
+  {
+   "utc": "2026-11-30T14:45:00Z",
+   "name": "Chicago PMI (Nov)",
+   "pt": "Mon 6:45 AM PT"
+  },
+  {
+   "utc": "2026-12-01T15:00:00Z",
+   "name": "ISM manufacturing · JOLTS",
+   "pt": "Tue 7:00 AM PT"
+  },
+  {
+   "utc": "2026-12-02T13:15:00Z",
+   "name": "ADP employment",
+   "pt": "Wed 5:15 AM PT"
+  },
+  {
+   "utc": "2026-12-03T13:30:00Z",
+   "name": "Jobless claims",
+   "pt": "Thu 5:30 AM PT"
+  },
+  {
+   "utc": "2026-12-03T15:00:00Z",
+   "name": "ISM services · factory orders",
+   "pt": "Thu 7:00 AM PT"
+  },
+  {
+   "utc": "2026-12-04T13:30:00Z",
+   "name": "Employment situation (Nov)",
+   "pt": "Fri 5:30 AM PT"
+  },
+  {
+   "utc": "2026-12-04T15:00:00Z",
+   "name": "Michigan sentiment (prelim)",
+   "pt": "Fri 7:00 AM PT"
+  },
+  {
+   "utc": "2026-12-08T00:00:00Z",
+   "name": "FOMC meeting begins",
+   "pt": "Tue Dec 8"
   }
  ],
  "prior_plans": [
   {
-   "for_session": "2026-11-20",
-   "asof_label": "plan posted Thu 11/19 after the close",
+   "for_session": "2026-11-25",
+   "asof_label": "week levels from the Mon 11/23 plan, used to grade Wednesday's session",
    "levels": [
     {
      "es": 7305,
      "kind": "L",
      "label": "7305–09",
-     "note": "Control line — Tue/Wed lows lost Thu 7:37 AM PT. No bullish structure until it is back.",
-     "tags": [
-      "SPX 7300 Dec gamma ≈ 7319",
-      "dark pool 729.26 ≈ 7329"
-     ]
-    },
-    {
-     "es": 7269,
-     "kind": "L",
-     "label": "7269–77",
-     "note": "SPX 7250 (Mon 11/23 expiry's biggest strike) ≈ 7269.",
-     "tags": [
-      "gamma"
-     ]
+     "note": "Control line — tagged Monday, not reached Wednesday.",
+     "tags": []
     },
     {
      "es": 7240,
      "kind": "L",
      "label": "7240–45",
-     "note": "Thursday's 9:03 AM PT breakdown area; first target over 7211–23.",
+     "note": "Tuesday's high; not reached Wednesday.",
      "tags": []
     },
     {
      "es": 7217,
      "kind": "L",
      "label": "7211–23",
-     "note": "Prior highs — the biggest resistance. Recover and hold it for 7240–45.",
-     "tags": [
-      "SPX 7200 Fri biggest strike ≈ 7219",
-      "dark pool 718.66 ≈ 7223"
-     ]
-    },
-    {
-     "es": 7192,
-     "kind": "L",
-     "label": "7192",
-     "note": "Thursday's regular-session low (12:05 PM PT). SPY's Fri put wall 715 ≈ 7186.",
+     "note": "Wednesday's 10:50 AM PT high of 7211.",
      "tags": []
     },
     {
-     "es": 7182,
-     "kind": "T",
-     "label": "7182",
-     "note": "TRAP DOOR — a prior range traded a while back. Lose it and there is a good chance of 7086.",
+     "es": 7122,
+     "kind": "L",
+     "label": "7120–25",
+     "note": "Lost in the flush; reclaimed 9:17 AM PT.",
      "tags": []
     },
     {
      "es": 7086,
      "kind": "L",
      "label": "7086",
-     "note": "Trap-door target. Below it, little support until a deeper test of 7000.",
+     "note": "Traded in the Wednesday flush and reclaim.",
      "tags": []
     },
     {
-     "es": 7036,
+     "es": 7027,
      "kind": "L",
-     "label": "7036",
-     "note": "SPY 700 — SPY's biggest strike and all-expiry floor.",
-     "tags": [
-      "gamma"
-     ]
+     "label": "7025–29",
+     "note": "Traded 6:34–6:36 AM PT.",
+     "tags": []
     },
     {
-     "es": 7000,
+     "es": 6982,
      "kind": "L",
-     "label": "7000",
-     "note": "Deeper test.",
-     "tags": [
-      "SPX 6975 (11/27 put wall) ≈ 6994"
-     ]
+     "label": "6982–93",
+     "note": "Wednesday's 6982.50 low at 6:45 AM PT.",
+     "tags": []
+    },
+    {
+     "es": 6963,
+     "kind": "L",
+     "label": "6960–66",
+     "note": "Not reached.",
+     "tags": []
+    },
+    {
+     "es": 6898,
+     "kind": "L",
+     "label": "6897–98",
+     "note": "Not reached.",
+     "tags": []
     }
    ]
   }

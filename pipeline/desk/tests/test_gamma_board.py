@@ -71,12 +71,12 @@ class I4_Calendar(unittest.TestCase):
     def test_holiday_week_pt_times(self):
         pt = timezone(timedelta(hours=-8))
         rows = G.calendar_rows(D)
-        c = [r for r in rows if r["day"] == "Wed 11/25" and r["name"] == "PCE · GDP · claims"][0]; self.assertEqual(c["pt"], "5:30 AM PT")
-        t = datetime.fromisoformat(c["utc"].replace("Z", "+00:00")).astimezone(pt)
-        self.assertEqual((t.hour, t.minute), (5, 30))
-        self.assertFalse(any(r["day"] in ("Thu 11/19", "Fri 11/20") for r in rows))  # past days drop off the countdown
+        self.assertFalse(any(r["day"] in ("Thu 11/19", "Fri 11/20", "Wed 11/25") for r in rows))  # past days drop off the countdown
         self.assertTrue(any(r["day"] == "Thu 11/26" and r["name"] == "Thanksgiving" for r in rows))
         e = [r for r in rows if r["day"] == "Fri 11/27" and r["name"] == "Early close"][0]; self.assertEqual(e["pt"], "10:00 AM PT")
+        g = [r for r in rows if r["day"] == "Fri 11/27" and r["name"] == "Goods trade"][0]; self.assertEqual(g["pt"], "5:30 AM PT")
+        t = datetime.fromisoformat(g["utc"].replace("Z", "+00:00")).astimezone(pt)
+        self.assertEqual((t.hour, t.minute), (5, 30))
 
 
 class I5_Flow(unittest.TestCase):

@@ -129,8 +129,8 @@ def charts_html():
         figs = _figs(plan, "charts/plan", have_plan)
         out.append(
             '<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
-            '<p>Week of <b>Nov 23–27</b> (Thanksgiving: Thu closed, Fri half day) — paths start at the 6960–66 ES pivot. Bearish under 7120–25 and 7211–23 after Friday\'s drop to 6898; '
-            'PCE, GDP and claims Wed 5:30 AM PT. Amber = prior week actual; white = this week\'s actual 30m so far; '
+            '<p>Week of <b>Nov 23–27</b> (Thanksgiving: Thu closed, Fri half day) — midweek update Wed 11/25 11:28 AM PT. Two-sided: 6982–93 is the line, 7211–23 caps a bounce, 7305–09 is still the control line. '
+            'Wednesday flushed to 6982.50 on the 5:30 AM PT data and ripped to 7211. Amber = prior week actual; white = this week\'s actual 30m so far; '
             'empty day columns show the <b>bull (green) and bear (red) paths</b> forward only — no lines through candles. '
             'Nasdaq charts show levels only. Tap a chart to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')

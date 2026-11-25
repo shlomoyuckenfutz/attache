@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-27",
   "prior_week": [
     "2026-11-16",
     "2026-11-17",
@@ -42,7 +42,7 @@
         {
           "date": "2026-11-17",
           "hi": 7456.0,
-          "lo": 7316.75,
+          "lo": 7308.0,
           "last": 7403.5,
           "event": false
         },
@@ -129,19 +129,19 @@
   "symbols_plan": {
     "es": {
       "high": 7313.25,
-      "low": 7001.5,
-      "last": 7187.0,
+      "low": 6982.5,
+      "last": 7201.5,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
-        7120.0,
-        7217.0
+        7211.0,
+        7305.0
       ],
       "phase1_high": 7313.25,
       "phase2": "MISSED",
       "phase2_zone": [
-        6846.0,
-        6770.0
+        6982.0,
+        6898.0
       ],
       "days": [
         {
@@ -160,29 +160,29 @@
         },
         {
           "date": "2026-11-25",
-          "hi": 7211.0,
-          "lo": 7001.5,
-          "last": 7187.0,
+          "hi": 7213.75,
+          "lo": 6982.5,
+          "last": 7201.5,
           "event": true
         }
       ],
-      "n_bars": 116
+      "n_bars": 117
     },
     "spy": {
       "high": 728.6713,
       "low": 695.469970703125,
-      "last": 717.60498046875,
+      "last": 715.6701049804688,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
-        700.0,
-        710.9
+        718.66,
+        727.98
       ],
       "phase1_high": 728.6713,
       "phase2": "MISSED",
       "phase2_zone": [
-        680.0,
-        668.72
+        695.45,
+        686.75
       ],
       "days": [
         {
@@ -201,13 +201,13 @@
         },
         {
           "date": "2026-11-25",
-          "hi": 718.18,
+          "hi": 718.43,
           "lo": 695.47,
-          "last": 717.6,
+          "last": 715.67,
           "event": true
         }
       ],
-      "n_bars": 49
+      "n_bars": 50
     }
   },
   "note": "Prior week = Nov 16\u201320 PLAN vs ACTUAL (cleaned free_data bars). Plan week = Nov 23\u201327 (Thu 11/26 closed) actual so far + forward paths only on empty day columns."

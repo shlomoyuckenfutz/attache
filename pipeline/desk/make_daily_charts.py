@@ -108,27 +108,30 @@ PRIOR_DAY_NOTES = {
 PLAN_WEEK_FWD = [dt.date(2026, 11, 23), dt.date(2026, 11, 24), dt.date(2026, 11, 25),
                  dt.date(2026, 11, 27)]
 FWD_ZONES = {
-  "spy": {"bull": (700.0, 710.9), "bear": (680.0, 668.72),
-          "bull_lab": "back over 700 → 710.90 Mon range high", "bear_lab": "below 686.75 → 680 / 668.72 Mon range low"},
-  "es":  {"bull": (7120.0, 7217.0), "bear": (6846.0, 6770.0),
-          "bull_lab": "reclaim 7120–25 → 7211–23 (sell zone)", "bear_lab": "lose 6897 → 6841–51, then 6770"},
+  "spy": {"bull": (718.66, 727.98), "bear": (695.45, 686.75),
+          "bull_lab": "over 718.66 → Monday high 727.98", "bear_lab": "below 695.45 → 686.75 Friday 11/20 low"},
+  "es":  {"bull": (7211.0, 7305.0), "bear": (6982.0, 6898.0),
+          "bull_lab": "reclaim 7211–23 → 7240, then 7305–09", "bear_lab": "lose 6982–93 → 6960–66, then 6897"},
   "qqq": None,
   "nq":  None,
 }
 FWD_SPEC = {
- "es": dict(sym="ES=F", title="/ES  ·  week of Nov 23 (plan · Fri 11/20 close levels)", fut=True, lv=[
-   (7305,"R","7305–09 control line"),(7217,"R","7211–23 prior highs"),(7122,"R","7120–25"),(7086,"R","7086"),
-   (7027,"R","7025–29 · SPY 700"),(6963,"P","6960–66 pivot"),(6898,"S","6897–98 Fri low · big support"),(6846,"S","6841–51"),(6770,"S","6770"),(6721,"S","6721 Mon range low")],
-   zones=[], bull=[6963,7027,7122,7217], bear=[6963,6898,6846,6770]),
+ "es": dict(sym="ES=F", title="/ES  ·  week of Nov 23 (midweek update · Wed 11/25 11:28 AM PT)", fut=True, lv=[
+   (7305,"R","7305–09 control · Mon high 7313"),(7240,"R","7240–45 Tue high"),(7217,"R","7211–23 · Wed high 7211"),
+   (7122,"R","7120–25"),(7086,"R","7086"),(7027,"R","7025–29"),
+   (6982,"S","6982–93 Wed low / Sunday FB"),(6963,"P","6960–66 unused pivot"),(6898,"S","6897–98 Fri 11/20 low"),(6846,"S","6841–51")],
+   zones=[], bull=[7217,7240,7305], bear=[6982,6963,6898]),
  "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 23 (levels · no paths)", fut=True, lv=[
-   (26504.25,"R","26504 Fri high"),(25126.5,"P","25126.5 Fri close"),(24976.5,"S","24976.5 Fri low")],
+   (27137,"R","27137 Mon high"),(26509.75,"R","26510 Tue high"),(26061,"P","26061 Wed last"),
+   (25027.5,"S","25027 Wed low"),(24976.5,"S","24976.5 Fri 11/20 low")],
    zones=[], bull=[], bear=[]),
- "spy": dict(sym="SPY", title="SPY  ·  week of Nov 23 (plan · Fri 11/20 close levels)", fut=False, lv=[
-   (724.97,"R","724.97 week range high"),(710.9,"R","710.90 Mon range high"),(700,"R","700 biggest strike"),
-   (695,"P","695 Mon biggest strike"),(686.75,"S","686.75 Fri low"),(680,"S","680"),(675,"S","675"),(668.72,"S","668.72 Mon range low")],
-   zones=[], bull=[695,700,710.9], bear=[695,686.75,675]),
+ "spy": dict(sym="SPY", title="SPY  ·  week of Nov 23 (midweek update · Wed 11/25 11:28 AM PT)", fut=False, lv=[
+   (727.98,"R","727.98 Mon high"),(724.97,"R","724.97 original week high"),(718.66,"R","718.66 dark-pool line"),
+   (716.99,"P","716.99 Wed last"),(700,"R","700 put wall (Wed morning)"),(695.45,"S","695.45 Wed low"),(686.75,"S","686.75 Fri 11/20 low"),(675,"S","675")],
+   zones=[], bull=[716.99,718.66,727.98], bear=[716.99,695.45,686.75]),
  "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 23 (levels · no paths)", fut=False, lv=[
-   (634.35,"R","Mon range high"),(624,"R","624 Mon call wall"),(608.45,"P","608.45 Fri close"),(606.23,"S","606.23 Fri low"),(600,"S","600 put wall"),(582.55,"S","Mon range low")],
+   (657.53,"R","657.53 Mon high"),(634.66,"R","634.66 Wed high"),(632.99,"P","632.99 Wed last"),
+   (607.76,"S","607.76 Wed low"),(606.23,"S","606.23 Fri 11/20 low"),(600,"S","600")],
    zones=[], bull=[], bear=[]),
 }
 FWD_EVENT = {  # Wed: PCE · GDP · claims 5:30 AM PT — edge ticks only
@@ -142,8 +145,8 @@ FWD_DAY_NOTES = {
   2: "PCE·GDP",
   3: "½ day",
 }
-FWD_BOX = ["bias: bearish under 7120–25 · 6897 Fri low is the big support · sell 7211–23 on a bounce",
-           "catalysts: Wed 5:30 AM PT PCE · GDP · claims · Thu closed · Fri closes 10:00 AM PT"]
+FWD_BOX = ["bias: two-sided · 6982–93 is the line · 7211–23 caps a bounce · 7305–09 is still the control line",
+           "catalysts: Thu closed · Fri closes 10:00 AM PT (weekly expiration) · jobs report Fri Dec 4"]
 
 def _download(sym):
     """Free free_data 30m with extended hours; clean seam/garbage-wick artifacts."""
@@ -193,8 +196,14 @@ def _clean_bars(df):
     prev_c = df.Close.shift(1)
     open_jump = (df.Open - prev_c).abs()
 
+    # Wick clamps are for extended-hours / seam artifacts only.
+    # Never rewrite a regular-session high or low (Wed 11/25 6:45 AM PT ES 6982.50
+    # is a real flush, not a garbage wick).
+    mins = df.index.hour * 60 + df.index.minute
+    rth = (mins >= 6 * 60 + 30) & (mins < 13 * 60)
+
     # Garbage AH/reference low: huge lower wick, almost no upper wick
-    bad_low = (lower > 3.5 * rmed) & (lower > 6 * (upper + 1e-9))
+    bad_low = (~rth) & (lower > 3.5 * rmed) & (lower > 6 * (upper + 1e-9))
     # Session-seam / settle spike: open jumps to prior close area, range enormous
     bad_seam = prev_c.notna() & (open_jump > 5 * rmed) & (rng > 6 * rmed)
     # Classic free_data artifact: Open==High far above Close with huge range
@@ -202,17 +211,17 @@ def _clean_bars(df):
 
     # Garbage print on both sides (e.g. SPY after-hours bar 746.69 / 691.53 around a 735-736 body):
     # range > 10x local median with both wicks huge -> clamp the wicks to the body.
-    bad_both = (rng > 10 * rmed) & (lower > 3.5 * rmed) & (upper > 3.5 * rmed)
+    bad_both = (~rth) & (rng > 10 * rmed) & (lower > 3.5 * rmed) & (upper > 3.5 * rmed)
     if bad_both.any():
         df.loc[bad_both, "Low"] = body_lo[bad_both]
         df.loc[bad_both, "High"] = body_hi[bad_both]
     # Mirror of bad_low: garbage high far above the body with almost no lower wick
-    bad_high = (upper > 3.5 * rmed) & (upper > 6 * (lower + 1e-9)) & (rng > 10 * rmed)
+    bad_high = (~rth) & (upper > 3.5 * rmed) & (upper > 6 * (lower + 1e-9)) & (rng > 10 * rmed)
     if bad_high.any():
         df.loc[bad_high, "High"] = body_hi[bad_high]
     # Garbage extended-hours low under a real after-hours high (e.g. SPY 11/17 AH bar 734.27/739.73/713.10/732.80):
     # the lower wick is far beyond the local range and well over twice the upper wick -> clamp the low to the body.
-    bad_low2 = (lower > 8 * rmed) & (lower > 2 * upper) & ~bad_both
+    bad_low2 = (~rth) & (lower > 8 * rmed) & (lower > 2 * upper) & ~bad_both
     bad_low = bad_low | bad_low2
     n_repair = int((bad_low | bad_both | bad_high).sum())
     n_drop = int((bad_seam | bad_settle).sum())

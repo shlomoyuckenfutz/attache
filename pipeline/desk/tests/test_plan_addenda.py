@@ -7,23 +7,24 @@ from tests import test_public_names as N
 
 ROOT = Path(__file__).resolve().parents[3]
 DATA = json.loads((ROOT / "pipeline/inputs/plans/addenda.json").read_text())
-PD = "2026-11-23"  # addenda session; Daily plan.json moves with the live date
+PD = "2026-11-27"  # addenda session; Daily plan.json moves with the live date
 DB, WB = A.daily_block(DATA, PD), A.weekly_block(DATA, PD)
 txt = lambda h: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", h))
 
 
 class Daily(unittest.TestCase):
     def test_renders_for_mon_with_every_figure(self):
-        self.assertEqual(PD, "2026-11-23")
+        self.assertEqual(PD, "2026-11-27")
         t = txt(DB)
-        self.assertIn("WEEKEND, CATALYSTS &amp; SPY LEVELS · MON 11/23", DB)
-        for s in ["SPX 6,910.40 (−3.70%)", "SPY 689.81 (−3.64%)", "ES 6935 at 1:59 PM PT", "ES 6924.5–6979.75",
-                  "futures reopen Sun 3:00 PM PT", "Mon 6:45 AM PT", "Mon 1:00 PM PT", "SPY 668.72–710.90 (±3.06%)",
-                  "SPX 6704.09–7116.71 (±2.99%)", "718.66 nearest dark-pool line", "SPY 695 (Monday expiry", "686.75 Fri low"]:
+        self.assertIn("HOLIDAY CLOSE, CATALYSTS &amp; SPY LEVELS · FRI 11/27", DB)
+        for s in ["SPX 7,185.16", "SPY 716.99", "QQQ 632.99", "ES 7197", "VIX 27.97",
+                  "Monday ES high 7313.25", "Wednesday low ES 6982.50", "GDP 4.3%", "core PCE 3.3%",
+                  "Thursday closed", "Friday stocks close 10:00 AM PT", "718.66 nearest dark-pool line",
+                  "SPY 695.45 Wednesday low", "686.75 Friday 11/20 low", "jobs report Fri Dec 4"]:
             self.assertIn(s, t, s)
 
     def test_hidden_on_other_sessions(self):
-        self.assertEqual(A.daily_block(DATA, "2026-11-24"), "")
+        self.assertEqual(A.daily_block(DATA, "2026-11-25"), "")
         self.assertEqual(A.daily_block({}, PD), "")
         self.assertEqual(A.daily_block(DATA, None), "")
 
@@ -33,8 +34,8 @@ class Weekly(unittest.TestCase):
         wb = A.weekly_block(DATA, "2026-11-23")
         t = txt(wb)
         self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 23–27", wb)
-        for s in ["ES reclaim of 7120–25, then 7211–23", "SPY back over 700", "VIX 35.90 under its 40 wall",
-                  "Wed 5:30 AM PT: PCE, GDP", "Thu 11/26 closed", "stocks close 10:00 AM PT", "8 of the last 9 years",
+        for s in ["ES accepted over 7211–23, then 7240–45", "VIX 27.97", "last posted walls were Friday",
+                  "Wed 5:30 AM PT: GDP 4.3%", "Thu 11/26 closed", "stocks close 10:00 AM PT", "8 of the last 9 years",
                   "SPX 6562.72–7258.08 (±5.03%)"]:
             self.assertIn(s, t, s)
         self.assertEqual(A.weekly_block(DATA, "2026-11-27"), wb)
@@ -49,7 +50,8 @@ class Weekly(unittest.TestCase):
 class Wording(unittest.TestCase):
     def test_biggest_strike_not_called_a_put_wall(self):
         t = txt(DB)
-        self.assertIn("SPY 700 (biggest strike", t); self.assertNotRegex(t, r"700 put wall|put wall[^·]*\b700\b")
+        self.assertIn("SPY 700 (put wall as posted Wednesday morning)", t)
+        self.assertNotRegex(t, r"Friday.{0,40}700 put wall|Fri 11/20.{0,40}put wall 700")
 
     def test_stale_spy_awaiting_line_gone_from_source_and_page(self):
         import build_daily

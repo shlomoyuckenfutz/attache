@@ -1,77 +1,78 @@
 {
-  "date": "2026-11-23",
-  "asof_pt": "Sat Nov 21 11:00 AM PT",
-  "asof": "Sat Nov 21 11:00 AM PT",
-  "session": "2026-11-23",
-  "title": "Yuckenfutz Tradez — Daily Plan — Mon Nov 23, 2026 (flash PMIs · Fed Williams · Thanksgiving week)",
+  "date": "2026-11-27",
+  "asof_pt": "Wed Nov 25 11:28 AM PT",
+  "asof": "Wed Nov 25 11:28 AM PT",
+  "session": "2026-11-27",
+  "title": "Fri Nov 27, 2026 — early close · weekly expiration",
   "bias": {
-    "direction": "BEARISH",
-    "reason": "Bears control below 7120–25 and the 7211–23 prior highs, and the bigger line is still 7305–09. Friday: ES opened 7168.75, rallied to 7216.75 at 7:00 AM PT and was rejected right at the 7211–23 prior highs, then lost the 7182 trap door at 7:10 AM PT, 7086 at 8:02 AM PT and 7000 at 11:24 AM PT, and sold to 6898 at 12:56 PM PT. ES closed 6935 at 1:59 PM PT and traded 6924.5–6979.75 after the bell. SPX 6910.40 (−3.70%), SPY 689.81 (−3.64%), QQQ 608.45 (−5.67%), NDX 25028.99 (−5.61%), VIX 35.90 (+26.1%). Seventh straight S&P 500 loss; the Nasdaq-100 is down more than 20% from its high. Thursday's trap-door call played out in full: 7182 gave way, 7086 and 7000 followed, and the low came in at 6898. Monday's first job is 6960–66: it is the line to reclaim for a bounce to 7025–29 (SPY 700, now the biggest strike above price), then 7086 and 7120–25. A 7120–25 reclaim opens 7211–23, the first place to sell a bounce. Under 6960–66, 6897–98 (Friday's low) is the big support; lose it and 6841–51 (SPX 6825, Monday's biggest strike and put wall, and SPX 6835) is next, then 6770 and 6720 (the low of Monday's expected range). Every board is negative gamma with no flip, so moves stretch both ways. Price is very stretched: VIX closed 35.90 under its 40 wall, and short-term momentum is the most oversold since early 2020, so sharp short-covering rallies are likely inside the downtrend. Monday's SPX expected range is 6704.09–7116.71 (±2.99%), about ES 6721–7133. ES ≈ SPX + 16.5 from Friday's regular-session median. Flash PMIs 6:45 AM PT; Fed Williams 1:00 PM PT."
+    "direction": "TWO-SIDED",
+    "reason": "Two-sided into Friday's early close. 7305–09 is still the control line: Monday tagged it (ES high 7313.25 at 7:32 AM PT) and sold off. Tuesday held 7152–7240. Wednesday's 5:30 AM PT data (GDP 4.3% vs 3.5% expected, core PCE 3.3% year-on-year vs 3.2% expected, claims 189k vs 200k, durable goods 0.2% vs 0.7%) flushed ES to 6982.50 at 6:45 AM PT — just above the 6960–66 Monday pivot and a slight undercut of the 6992–93 Sunday overnight low — then ripped to 7211 at 10:50 AM PT, an exact test of the 7211–23 prior highs. As of 11:28 AM PT: ES 7197, SPX 7185, SPY 716.99, QQQ 632.99, NDX 26008.65, VIX 27.97 (Wednesday high 34.95 at 6:45 AM PT). Tuesday closes were SPX 7201.09 (+4.21% vs Friday), SPY 718.78, QQQ 638.10, VIX 26.36. The Monday plan's bull path played out in full and then some: 7025 was reclaimed Sunday, and price ran through 7086, 7120–25 and 7211–23 to tag 7305–09. The bear path to 6897 never triggered; Wednesday's 6982.50 low held the 6960–66 pivot. Friday is a half day (stocks close 10:00 AM PT) and weekly expiration. ES ≈ SPX + 13.5 (Wednesday regular-session median through 11:18 AM PT; the session is still open). The last full options board is Friday's close — not current."
   },
-  "overnight_bias": "After hours Friday ES traded 6924.5–6979.75, last 6935 at 1:59 PM PT · Friday RTH 6898–7216.75 · Globex reopens Sun 3:00 PM PT",
+  "overnight_bias": "Thursday is closed. Friday opens after the holiday; size down into a 10:00 AM PT close.",
   "key_levels": [
     {
       "price": 7305,
-      "note": "ES 7305–09 resistance — the Tue/Wed lows lost Thursday. Bears keep full control below it; SPX 7300 (December's biggest strike) ≈ ES 7316."
+      "note": "ES 7305–09 resistance — the control line. Monday's regular-session high was 7313.25 at 7:32 AM PT; it was tagged and sold. No lasting bullish structure until it is accepted."
+    },
+    {
+      "price": 7240,
+      "note": "ES 7240–45 resistance — Tuesday's regular-session high (7240.75 at 7:00 AM PT). A reclaim is the first step toward a 7305–09 retest."
     },
     {
       "price": 7217,
-      "note": "ES 7211–23 resistance — the prior highs, still the biggest resistance on the board. Friday's 7:00 AM PT high of 7216.75 was rejected right here. First place to sell a bounce."
+      "note": "ES 7211–23 resistance — the prior highs and Wednesday's 10:50 AM PT high of 7211, an exact test. First place to sell a bounce; acceptance opens 7240–45."
     },
     {
       "price": 7122,
-      "note": "ES 7120–25 resistance — Friday's failed-breakdown level, lost at 7:25 AM PT. Reclaim it and 7211–23 opens. The top of Monday's SPX expected range (7116.71) ≈ ES 7133."
+      "note": "ES 7120–25 — held as support Monday (low 7167) and Tuesday (low 7152), lost in Wednesday's data flush, reclaimed at 9:17 AM PT."
     },
     {
       "price": 7086,
-      "note": "ES 7086 resistance — the old trap-door target, lost Friday at 8:02 AM PT. Now overhead."
+      "note": "ES 7086 — mid-range, lost and reclaimed Wednesday morning."
     },
     {
       "price": 7027,
-      "note": "ES 7025–29 resistance — Friday's 7025 line, lost at 9:38 AM PT, and SPY 700, the biggest SPY strike (all expiries and Fri 11/27), about ES 7029."
+      "note": "ES 7025–29 — Sunday's reclaim started the bounce; lost and recovered in Wednesday's flush. SPY 700 is about ES 7017 at today's 13.5 basis."
+    },
+    {
+      "price": 6982,
+      "note": "ES 6982–93 support — Wednesday's 5:30 AM PT data low (6982.50 at 6:45 AM PT) and the 6992–93 Sunday overnight low that failed and recovered. The line for Friday."
     },
     {
       "price": 6963,
-      "note": "ES 6960–66 pivot — the line to reclaim first; SPX 6950 (Wednesday's biggest strike) ≈ ES 6966. Above it, 7025–29 is the first target; below it, Friday's low is next."
+      "note": "ES 6960–66 support — Monday's pivot. Not tagged this week; Wednesday's low held 16–28 points above it."
     },
     {
       "price": 6898,
-      "note": "ES 6897–98 support — Friday's low (12:56 PM PT) and the big support under price. A loss opens 6841–51."
+      "note": "ES 6897–98 support — Friday 11/20's low (12:56 PM PT). Not revisited this week. A loss of 6982 and 6960–66 opens it."
     },
     {
       "price": 6846,
-      "note": "ES 6841–51 support — SPX 6825 (Monday's biggest strike and put wall) ≈ ES 6841 and SPX 6835 ≈ ES 6851."
-    },
-    {
-      "price": 6770,
-      "note": "ES 6770 support — next support below 6841–51."
-    },
-    {
-      "price": 6721,
-      "note": "ES 6721 support — the low of Monday's SPX expected range (6704.09). SPX 6500 (the all-expiry and weekly biggest strike) ≈ ES 6516 is a target only, far below."
+      "note": "ES 6841–51 support — next zone under 6897–98."
     }
   ],
   "path": {
-    "bull": "Reclaim 6960–66 → 7025–29 (SPY 700), then 7086. A 7120–25 reclaim opens 7211–23 — sell there first.",
-    "bear": "Stay under 6960–66 → 6897–98 (Friday's low). Lose it → 6841–51 (SPX 6825), then 6770 and 6721 (the expected-range low)."
+    "bull": "Hold 6982–93 and reclaim 7211–23 → 7240–45, then a 7305–09 retest of the control line. Deep midweek dip already recovered once; bounces can still be fast.",
+    "bear": "Fail 6982–93 → 6960–66 (Monday's unused pivot). Lose that → 6897–98 (Friday 11/20's low), then 6841–51."
   },
   "actionable": [
-    "Reclaim and hold 6960–66 → 7025–29, then 7086.",
-    "7120–25 reclaim → 7211–23; sell the first test there.",
-    "Under 6960–66 → 6897–98, Friday's low.",
-    "Lose 6897 → 6841–51, then 6770 and 6721.",
-    "7305–09 is the control line; no bullish structure until it is back.",
-    "Flash PMIs 6:45 AM PT. Fed Williams 1:00 PM PT.",
-    "Rest of the week: Wed 5:30 AM PT GDP, PCE, claims and durable goods; Beige Book 11:00 AM PT. Thanksgiving: Thu closed, Fri closes 10:00 AM PT.",
-    "VIX 35.90 with every board negative gamma: size down; expect 100-point swings both ways."
+    "Hold 6982–93 and reclaim 7211–23 → 7240–45, then 7305–09.",
+    "A 7211–23 rejection, like Wednesday's 10:50 AM PT high of 7211, is the first place to sell a bounce.",
+    "Lose 6982–93 → 6960–66; lose that → 6897–98, then 6841–51.",
+    "7305–09 is still the control line; Monday tagged it at 7313.25 and sold off.",
+    "Thursday closed. Friday stocks close 10:00 AM PT; weekly expiration. Size down.",
+    "Wednesday's 5:30 AM PT data: GDP 4.3% vs 3.5% expected, core PCE 3.3% year-on-year vs 3.2%, claims 189k vs 200k, durable goods 0.2% vs 0.7%. Beige Book: employment rose slightly, prices increased moderately.",
+    "Next week: ISM manufacturing and JOLTS Tue 7:00 AM PT, ADP Wed 5:15 AM PT, ISM services Thu 7:00 AM PT, jobs report Fri Dec 4 5:30 AM PT. FOMC Dec 8–9.",
+    "VIX 27.97 after a 34.95 spike at 6:45 AM PT. The last full options board is Friday 11/20's close — not current."
   ],
   "long_story_short": {
-    "for_session": "2026-11-23",
-    "headline": "Mon 11/23 — 6960–66 is the first line · 6897 Friday low is the big support · 7211–23 is where to sell a bounce",
-    "context": "Friday: ES opened 7168.75, rallied to 7216.75 at 7:00 AM PT and was rejected right at the 7211–23 prior highs, then lost the 7182 trap door at 7:10 AM PT, 7086 at 8:02 AM PT and 7000 at 11:24 AM PT, and sold to 6898 at 12:56 PM PT. ES closed 6935 at 1:59 PM PT and traded 6924.5–6979.75 after the bell. SPX 6910.40 (−3.70%), SPY 689.81 (−3.64%), QQQ 608.45 (−5.67%), NDX 25028.99 (−5.61%), VIX 35.90 (+26.1%). Seventh straight S&P 500 loss; the Nasdaq-100 is down more than 20% from its high. Monday's SPX expected range is 6704.09–7116.71 (±2.99%), about ES 6721–7133. ES ≈ SPX + 16.5 from Friday's regular-session median. Thanksgiving week: PCE, GDP, claims and durables all land Wed 5:30 AM PT; markets are closed Thursday and close early (10:00 AM PT) on Friday.",
-    "levels": "7305–09 / 7211–23 / 7120–25 / 7086 / 7025–29 above; 6960–66 pivot; 6897–98 / 6841–51 / 6770 / 6721 below.",
-    "bearish": "Under 6960–66 → 6897–98. Lose it → 6841–51, then 6770 and 6721. Every board is negative gamma with no flip.",
-    "bullish": "Reclaim 6960–66 → 7025–29, then 7086; 7120–25 reclaim opens 7211–23. Deeply oversold, so bounces can be fast.",
-    "general": "Flash PMIs 6:45 AM PT; Fed Williams 1:00 PM PT. VIX 35.90 sits under its 40 wall. Thanksgiving week has been higher in 8 of the last 9 years."
+    "for_session": "2026-11-27",
+    "headline": "Fri 11/27 — 6982–93 is the line · 7211–23 caps a bounce · 7305–09 is still the control line · early close 10:00 AM PT",
+    "friday": "Friday 11/20 closed ES 6935, SPX 6910.40 (−3.70%), VIX 35.90. This week bounced hard: Monday ES opened 7277, high 7313.25 at 7:32 AM PT (tagged 7305–09), low 7167, close 7268.50; SPX 7237.17. Tuesday ES 7152–7240, close 7215.75; SPX 7201.09 (+4.21% vs Friday). Wednesday flushed to ES 6982.50 at 6:45 AM PT on the 5:30 AM PT data, then ripped to 7211 at 10:50 AM PT.",
+    "levels": "7305–09 / 7240–45 / 7211–23 above; 7120–25 / 7086 / 7025–29 mid; 6982–93 / 6960–66 / 6897–98 / 6841–51 below.",
+    "bearish": "Lose 6982–93 → 6960–66. Lose that → 6897–98, then 6841–51.",
+    "bullish": "Hold 6982–93 and reclaim 7211–23 → 7240–45, then 7305–09. Monday already tagged the control line and sold it.",
+    "general": "Thursday closed. Friday closes 10:00 AM PT, weekly expiration; size down. ES ≈ SPX + 13.5 as of 11:18 AM PT Wednesday (session still open).",
+    "context": "Friday 11/20 closed ES 6935, SPX 6910.40 (−3.70%), VIX 35.90. This week bounced hard: Monday ES opened 7277, high 7313.25 at 7:32 AM PT (tagged 7305–09), low 7167, close 7268.50; SPX 7237.17. Tuesday ES 7152–7240, close 7215.75; SPX 7201.09 (+4.21% vs Friday). Wednesday flushed to ES 6982.50 at 6:45 AM PT on the 5:30 AM PT data, then ripped to 7211 at 10:50 AM PT."
   }
 }

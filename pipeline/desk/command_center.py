@@ -348,8 +348,10 @@ def build(S, now=None):
             iv = f' · {v["atm_iv"] * 100:.0f}% IV' if v.get("atm_iv") else ""
             em_rows += (f'<div class="em"><b>{s}</b><div class="bar"><i style="left:{max(0, min(100, pos)):.1f}%"></i></div><span class="r">{v["lower"]:,.2f}</span>'
                         f'<span class="r">{v["upper"]:,.2f}</span><span class="r">±{v["move_pct"]:.2f}%</span><span class="r mut">±{v["straddle"]:,.2f}{iv}</span></div>')
-    em_note = (f'Bands from ATM straddles at the {E(dlab(C.tape_day))} close (SPX {fnum(C.im_spot("SPX"))} · SPY {fnum(C.im_spot("SPY"))} · QQQ {fnum(C.im_spot("QQQ"))}). '
-               f'Not a guaranteed limit.') if C.im_ok else "Expected-move bands awaiting update."
+    im_asof = (C.S.get("im") or {}).get("generated_pt") or ""
+    range_when = (im_asof + " · session still open") if (C.tape_live and im_asof) else (f"{dlab(C.tape_day)} close" if C.tape_day else "awaiting update")
+    em_note = (f'Bands from ATM straddles as of {E(range_when)} (SPX {fnum(C.im_spot("SPX"))} · SPY {fnum(C.im_spot("SPY"))} · QQQ {fnum(C.im_spot("QQQ"))}). '
+               f'Remaining-day bands are from that snapshot, not a full-day range. Not a guaranteed limit.') if C.im_ok else "Expected-move bands awaiting update."
     vx = sw.get("vix") or {}
     vv = C.vix["last"] if C.vix else None
     if vv is not None and vx.get("wall"):
@@ -377,10 +379,10 @@ def build(S, now=None):
  <div class="card">{vix_box}{tape_box}<ul class="pr">{prints}</ul></div>
 </div>
 ''' + (f'<div class="card" style="margin-top:10px"><h3>SECTOR NET FLOW · {E(fx.get("asof_label", ""))} ($M) · {E(fx.get("sector_note", ""))}</h3><div class="sbs">{sect}</div></div>' if sect else ""),
-      f'gamma {bd.get("asof_label", "awaiting update")} · ranges {dlab(C.tape_day) if C.im_ok else "awaiting update"} close · VIX {C.vix["label"] if C.vix else "awaiting update"}',
+      f'gamma {bd.get("asof_label", "awaiting update")} · ranges {range_when if C.im_ok else "awaiting update"} · VIX {C.vix["label"] if C.vix else "awaiting update"}',
       old=g_old, oldnote=(f"Gamma walls, flow and sector reads are from the {bd.get('asof_label', 'last')} board — the next sweep refreshes them. Prices, expected ranges and VIX above are current.") if g_old else "")
     fresh.append(("Gamma board · flow", bd.get("asof_label", "awaiting update"), "old" if g_old else "ok"))
-    fresh.append(("Expected ranges", (f"{dlab(C.tape_day)} close" if C.im_ok else "awaiting update"), "ok" if C.im_ok else "old"))
+    fresh.append(("Expected ranges", (range_when if C.im_ok else "awaiting update"), "ok" if C.im_ok else "old"))
 
     # ---- TAPE
     tape, tday = tape_section(C, plan)
@@ -517,7 +519,9 @@ def gcard(C, t):
     nx = [e for e in sorted(lv) if not C.next_session or e >= C.next_session]
     spot = C.im_spot(t) if t != "NDX" else None
     px = f"{spot:,.2f}" if spot else (f'{(bd.get("close") or {}).get(t):,.2f}' if (bd.get("close") or {}).get(t) else "—")
-    px_l = f"{dlab(C.tape_day)} close" if spot else bd.get("asof_label", "")
+    im_asof = (C.S.get("im") or {}).get("generated_pt") or ""
+    px_when = (im_asof + " · session still open") if (C.tape_live and im_asof) else (f"{dlab(C.tape_day)} close" if C.tape_day else "")
+    px_l = px_when if spot else bd.get("asof_label", "")
     d = lambda a: (f'<b>{E(str(a[0]))}</b>' + (f' <s>{E(str(a[1]))}</s>' if a[0] != a[1] else ' <em>=</em>')) if isinstance(a, list) else f"<b>{E(str(a))}</b>"
     if cur:
         rows = (f'<tr><td>biggest strike</td><td>{d(cur["strike"])}</td></tr><tr><td>call wall</td><td>{d(cur["call_wall"])}</td></tr><tr><td>put wall</td><td><b>{E(cur["put_wall"])}</b></td></tr>'
