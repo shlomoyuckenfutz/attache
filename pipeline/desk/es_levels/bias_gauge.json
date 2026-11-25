@@ -1,30 +1,30 @@
 {
- "score": 5,
- "label": "NEUTRAL",
- "px": 717.95,
- "asof": "11-24 15:27 PT",
+ "score": -26,
+ "label": "BEARISH",
+ "px": 716.37,
+ "asof": "11-24 16:59 PT",
  "feed": "delayed",
- "built": "11-24 15:28 PT",
+ "built": "11-24 19:57 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
-   "v": 1,
-   "x": "717.95 vs 716.37",
+   "v": 0,
+   "x": "716.37 vs 716.37",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
    "v": 0,
-   "x": "9=718.18 21=718.17",
+   "x": "9=716.41 21=716.71",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
-   "v": 1,
-   "x": "ABOVE HIGH 712.14\u2013717.84",
+   "v": 0,
+   "x": "INSIDE 712.14\u2013717.84",
    "w": 1.5
   },
   {
@@ -38,7 +38,7 @@
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
    "v": -1,
-   "x": "717.95 vs pivot 721.31",
+   "x": "716.37 vs pivot 721.31",
    "w": 1.0
   },
   {
