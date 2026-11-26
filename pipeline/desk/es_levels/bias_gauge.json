@@ -4,7 +4,7 @@
  "px": 720.43,
  "asof": "11-25 16:59 PT",
  "feed": "delayed",
- "built": "11-26 04:18 PT",
+ "built": "11-26 14:17 PT",
  "votes": [
   {
    "k": "VWAP",
@@ -38,7 +38,7 @@
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
    "v": 1,
-   "x": "713.4\u2013722.02",
+   "x": "706.76\u2013726.64",
    "w": 1.0
   },
   {

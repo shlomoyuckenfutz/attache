@@ -1,6 +1,6 @@
 {
- "generated_et": "2026-11-26 07:17 ET",
- "next_session": "Thu 11/26",
+ "generated_et": "2026-11-26 17:16 ET",
+ "next_session": "Fri 11/27",
  "on": {
   "ES": {
    "last": 7247.75,
@@ -1223,11 +1223,18 @@
  "cal": {
   "econ": [
    {
-    "time_pt": "05:00",
-    "title": "Bank Holiday",
-    "impact": "Holiday",
-    "fc": "",
-    "prev": ""
+    "time_pt": "05:30",
+    "title": "Goods Trade Balance",
+    "impact": "Low",
+    "fc": "-135.9B",
+    "prev": "-134.9B"
+   },
+   {
+    "time_pt": "05:30",
+    "title": "Prelim Wholesale Inventories m/m",
+    "impact": "Low",
+    "fc": "0.5%",
+    "prev": "0.6%"
    }
   ],
   "fed": [],
@@ -1264,13 +1271,13 @@
    {
     "what": "VIX expiration (AM settle 06:30 PT)",
     "date": "Wed 12/16",
-    "days": 20,
+    "days": 19,
     "today": false
    },
    {
     "what": "Monthly equity OPEX",
     "date": "Fri 12/18",
-    "days": 22,
+    "days": 21,
     "today": false
    }
   ],
