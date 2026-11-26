@@ -1,23 +1,23 @@
 {
- "score": 5,
- "label": "NEUTRAL",
- "px": 716.03,
- "asof": "11-25 15:00 PT",
+ "score": 58,
+ "label": "BULLISH",
+ "px": 720.43,
+ "asof": "11-25 16:59 PT",
  "feed": "delayed",
- "built": "11-25 15:03 PT",
+ "built": "11-25 18:47 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "716.03 vs 704.60",
+   "x": "720.43 vs 704.60",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": 0,
-   "x": "9=716.36 21=716.32",
+   "v": 1,
+   "x": "9=720.00 21=719.13",
    "w": 1.0
   },
   {
@@ -37,8 +37,8 @@
   {
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
-   "v": -1,
-   "x": "716.03 vs pivot 717.29",
+   "v": 1,
+   "x": "720.43 vs pivot 717.29",
    "w": 1.0
   },
   {
@@ -51,7 +51,7 @@
   {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
-   "v": -1,
+   "v": 1,
    "x": "713.4\u2013722.02",
    "w": 1.0
   },
