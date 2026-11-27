@@ -1,74 +1,83 @@
 {
- "schema": 1,
- "updated_pt": "2026-11-25 11:10 PT",
- "note": "SPY-scale implied bounds from the chain snapshot at 11:10 AM PT Wednesday, plus earlier session rows. Remaining-week bands are not Friday-only limits.",
- "daily": [
-  {
-   "symbol": "SPY",
-   "session": "2026-11-12",
-   "lower": 752.72,
-   "upper": 761.82
-  },
-  {
-   "symbol": "SPY",
-   "session": "2026-11-16",
-   "lower": 743.37,
-   "upper": 756.33,
-   "move_pct": 0.86
-  },
-  {
-   "symbol": "SPY",
-   "session": "2026-11-19",
-   "lower": 721.99,
-   "upper": 738.38,
-   "move_pct": 1.12
-  },
-  {
-   "symbol": "SPY",
-   "session": "2026-11-20",
-   "lower": 703.14,
-   "upper": 728.6,
-   "move_pct": 1.78
-  },
-  {
-   "symbol": "SPY",
-   "session": "2026-11-23",
-   "lower": 668.72,
-   "upper": 710.9,
-   "move_pct": 3.06
-  },
-  {
-   "symbol": "SPY",
-   "session": "2026-11-25",
-   "lower": 713.4,
-   "upper": 722.02,
-   "move_pct": 0.6,
-   "note": "remaining-day straddle as of 11:10 AM PT, ref 717.71 — the cash session already traded 695.45–718.18"
-  }
- ],
- "weekly": [
-  {
-   "symbol": "SPY",
-   "week_start": "2026-11-09",
-   "week_end": "2026-11-13",
-   "lower": 713.24,
-   "upper": 757.34
-  },
-  {
-   "symbol": "SPY",
-   "week_start": "2026-11-16",
-   "week_end": "2026-11-20",
-   "lower": 715.88,
-   "upper": 744.52,
-   "move_pct": 1.96
-  },
-  {
-   "symbol": "SPY",
-   "week_start": "2026-11-23",
-   "week_end": "2026-11-27",
-   "lower": 654.65,
-   "upper": 724.97,
-   "move_pct": 5.1
-  }
- ]
+  "schema": 1,
+  "updated_pt": "2026-11-26 16:04 PT",
+  "note": "Friday session SPY band from the 2026-11-26 14:55 PT snapshot. Week-to-Friday bands are the Wed 11/25 close read to Fri 11/27. Remaining-week bands are not Friday-only limits.",
+  "daily": [
+    {
+      "symbol": "SPY",
+      "session": "2026-11-12",
+      "lower": 752.72,
+      "upper": 761.82
+    },
+    {
+      "symbol": "SPY",
+      "session": "2026-11-16",
+      "lower": 743.37,
+      "upper": 756.33,
+      "move_pct": 0.86
+    },
+    {
+      "symbol": "SPY",
+      "session": "2026-11-19",
+      "lower": 721.99,
+      "upper": 738.38,
+      "move_pct": 1.12
+    },
+    {
+      "symbol": "SPY",
+      "session": "2026-11-20",
+      "lower": 703.14,
+      "upper": 728.6,
+      "move_pct": 1.78
+    },
+    {
+      "symbol": "SPY",
+      "session": "2026-11-23",
+      "lower": 668.72,
+      "upper": 710.9,
+      "move_pct": 3.06
+    },
+    {
+      "symbol": "SPY",
+      "session": "2026-11-25",
+      "lower": 713.4,
+      "upper": 722.02,
+      "move_pct": 0.6,
+      "note": "remaining-day straddle as of 11:10 AM PT, ref 717.71 — the cash session already traded 695.45–718.18"
+    },
+    {
+      "symbol": "SPY",
+      "session": "2026-11-27",
+      "lower": 706.76,
+      "upper": 726.64,
+      "move_pct": 1.39,
+      "note": "2026-11-26 14:55 PT snapshot, ref 716.70 (Wednesday close)"
+    }
+  ],
+  "weekly": [
+    {
+      "symbol": "SPY",
+      "week_start": "2026-11-09",
+      "week_end": "2026-11-13",
+      "lower": 713.24,
+      "upper": 757.34
+    },
+    {
+      "symbol": "SPY",
+      "week_start": "2026-11-16",
+      "week_end": "2026-11-20",
+      "lower": 715.88,
+      "upper": 744.52,
+      "move_pct": 1.96
+    },
+    {
+      "symbol": "SPY",
+      "week_start": "2026-11-23",
+      "week_end": "2026-11-27",
+      "lower": 704.35,
+      "upper": 729.05,
+      "move_pct": 1.72,
+      "note": "Wed 11/25 close read to Fri 11/27"
+    }
+  ]
 }

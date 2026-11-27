@@ -1,29 +1,29 @@
 {
   "label": "Dark Pool",
   "symbol": "SPY",
-  "updated": "2026-11-19",
-  "asof_note": "Spot and conversion refreshed Wed 11/25 11:28 AM PT (SPY 716.99, SPX 7185.16, ES +13.5). No new lines were posted through Wednesday; every line is still dated as posted (last prints Thu 11/19). Nearest line is 718.66, about $1.67 above spot. Touch/bounce stats use the same baked window.",
+  "updated": "2026-11-25",
+  "asof_note": "Spot is the Wednesday 11/25 regular-session close (SPY 716.70, SPX 7182.78, ES 7196.75). Conversion ES = SPX + 13.5 (Wed 11/25 regular-session median through 11:18 AM PT). Thirteen lines below 718.66 were added and are current through Wed 11/25 close. 718.66 remains the nearest line above spot. Nearest line overall is 715.02, $1.68 below spot. Touch/bounce stats for the new lines are not yet baked; older lines keep their prior window.",
   "convert": {
     "spy_per_spx": 0.099788,
     "es_minus_spx": 13.5,
     "asof": "2026-11-25",
     "closes": {
-      "SPY": 716.99,
-      "SPX": 7185.16,
-      "asof": "2026-11-25 11:28 PT"
+      "SPY": 716.7,
+      "SPX": 7182.78,
+      "asof": "2026-11-25 close"
     },
     "prior": {
-      "spy_per_spx": 0.099822,
-      "es_minus_spx": 16.5,
-      "asof": "2026-11-20",
+      "spy_per_spx": 0.099788,
+      "es_minus_spx": 13.5,
+      "asof": "2026-11-25",
       "closes": {
-        "SPY": 689.81,
-        "SPX": 6910.4,
-        "asof": "2026-11-20"
+        "SPY": 716.99,
+        "SPX": 7185.16,
+        "asof": "2026-11-25 11:28 PT"
       },
-      "note": "SPX = SPY ÷ 0.099822; ES = SPX + 16.5 (Fri 2026-11-20 regular-session median basis). Official closes: SPY 689.81, SPX 6910.40."
+      "note": "SPX = SPY ÷ 0.099788; ES = SPX + 13.5 (Wed 2026-11-25 regular-session median through 11:18 AM PT; session still open). Last: SPY 716.99, SPX 7185.16."
     },
-    "note": "SPX = SPY ÷ 0.099788; ES = SPX + 13.5 (Wed 2026-11-25 regular-session median through 11:18 AM PT; session still open). Last: SPY 716.99, SPX 7185.16."
+    "note": "SPX = SPY ÷ 0.099788; ES = SPX + 13.5 (Wed 2026-11-25 regular-session median through 11:18 AM PT). Official closes: SPY 716.70, SPX 7182.78, ES 7196.75 (ES−SPX +13.97 at the close; conversions use the 13.5 snapshot)."
   },
   "levels": [
     {
@@ -494,6 +494,97 @@
       "color": "purple",
       "source_date": "2026-11-19",
       "note": "reaction level Thu 11/19 · price traded at it on the second leg down (9:17 AM PT)"
+    },
+    {
+      "spy": 715.02,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 714.14,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 711.4,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 710.21,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 708.52,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 706.18,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 704.03,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 701.75,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 699.92,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 695.21,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 694.06,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 691.9,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
+    },
+    {
+      "spy": 690.36,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close"
     }
   ],
   "rows": [
@@ -1165,6 +1256,136 @@
       "note": "reaction level Thu 11/19 · price traded at it on the second leg down (9:17 AM PT)",
       "spx": 7201.87,
       "es": 7215.37,
+      "type": "current"
+    },
+    {
+      "spy": 715.02,
+      "spx": 7165.39,
+      "es": 7178.89,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 714.14,
+      "spx": 7156.57,
+      "es": 7170.07,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 711.4,
+      "spx": 7129.11,
+      "es": 7142.61,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 710.21,
+      "spx": 7117.19,
+      "es": 7130.69,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 708.52,
+      "spx": 7100.25,
+      "es": 7113.75,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 706.18,
+      "spx": 7076.8,
+      "es": 7090.3,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 704.03,
+      "spx": 7055.26,
+      "es": 7068.76,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 701.75,
+      "spx": 7032.41,
+      "es": 7045.91,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 699.92,
+      "spx": 7014.07,
+      "es": 7027.57,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 695.21,
+      "spx": 6966.87,
+      "es": 6980.37,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 694.06,
+      "spx": 6955.35,
+      "es": 6968.85,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 691.9,
+      "spx": 6933.7,
+      "es": 6947.2,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
+      "type": "current"
+    },
+    {
+      "spy": 690.36,
+      "spx": 6918.27,
+      "es": 6931.77,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-25",
+      "note": "line current through Wed 11/25 close",
       "type": "current"
     }
   ],
@@ -2489,9 +2710,9 @@
       }
     ]
   },
-  "spot": 716.99,
-  "spot_asof": "2026-11-25 11:28 PT",
-  "spot_note": "Wednesday 11/25 last (session still open)",
+  "spot": 716.7,
+  "spot_asof": "2026-11-25 close",
+  "spot_note": "Wednesday 11/25 regular-session close",
   "stats_window": {
     "symbol": "SPY",
     "timeframe": "5Min",
@@ -2514,7 +2735,7 @@
       "es": 7793.79,
       "type": "current",
       "status": "current",
-      "dist": -59.39,
+      "dist": -59.68,
       "side": "BELOW",
       "note": "Wed 11/4 chart overlay — top DP line above HOD wick zone",
       "cross": false,
@@ -2540,7 +2761,7 @@
       "avg_break_follow": 1.59,
       "last_touch": "2026-10-28T18:35:00Z",
       "note": "Wed 11/4 chart overlay — overhead",
-      "dist": -56.39,
+      "dist": -56.68,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2565,7 +2786,7 @@
       "avg_break_follow": 1.59,
       "last_touch": "2026-10-28T19:50:00Z",
       "note": "Wed 11/4 chart overlay — overhead",
-      "dist": -55.43,
+      "dist": -55.72,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2590,7 +2811,7 @@
       "avg_break_follow": 2.1,
       "last_touch": "2026-10-28T19:30:00Z",
       "note": "Wed 11/4 chart overlay — overhead cluster",
-      "dist": -54.23,
+      "dist": -54.52,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2615,7 +2836,7 @@
       "avg_break_follow": 1.83,
       "last_touch": "2026-10-29T15:30:00Z",
       "note": "Wed 11/4 chart overlay — overhead cluster",
-      "dist": -53.34,
+      "dist": -53.63,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2640,7 +2861,7 @@
       "avg_break_follow": 1.72,
       "last_touch": "2026-10-29T16:55:00Z",
       "note": "Wed 11/4 chart overlay — overhead cluster",
-      "dist": -52.74,
+      "dist": -53.03,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2655,7 +2876,7 @@
       "es": 7725.35,
       "type": "current",
       "status": "current",
-      "dist": -52.56,
+      "dist": -52.85,
       "side": "BELOW",
       "note": "Fri DP — furthest 0DTE make called Wed AM; overhead",
       "cross": false,
@@ -2681,7 +2902,7 @@
       "avg_break_follow": 1.72,
       "last_touch": "2026-10-29T19:55:00Z",
       "note": "prior-week desk seed / command dp array",
-      "dist": -52.46,
+      "dist": -52.75,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2706,7 +2927,7 @@
       "avg_break_follow": 1.76,
       "last_touch": "2026-10-29T19:50:00Z",
       "note": "Wed 11/4 — rejected repeatedly; ceiling into close (unable to hold above)",
-      "dist": -51.62,
+      "dist": -51.91,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2731,7 +2952,7 @@
       "avg_break_follow": 2.13,
       "last_touch": "2026-10-29T18:00:00Z",
       "note": "Wed 11/4 — AH/session tag near close zone",
-      "dist": -50.42,
+      "dist": -50.71,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2756,7 +2977,7 @@
       "avg_break_follow": 2.4,
       "last_touch": "2026-10-29T19:10:00Z",
       "note": "Wed 11/4 — retested afternoon; magnet into close / AH",
-      "dist": -50.13,
+      "dist": -50.42,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2781,7 +3002,7 @@
       "avg_break_follow": 1.75,
       "last_touch": "2026-10-27T14:00:00Z",
       "note": "Wed 11/4 chart overlay — support under close",
-      "dist": -48.6,
+      "dist": -48.89,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2806,7 +3027,7 @@
       "avg_break_follow": 1.92,
       "last_touch": "2026-10-27T14:15:00Z",
       "note": "prior-week desk seed / command dp array",
-      "dist": -48.41,
+      "dist": -48.7,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2831,7 +3052,7 @@
       "avg_break_follow": 2.12,
       "last_touch": "2026-10-26T19:00:00Z",
       "note": "Wed 11/4 chart overlay — support",
-      "dist": -47.38,
+      "dist": -47.67,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2856,7 +3077,7 @@
       "avg_break_follow": 2.87,
       "last_touch": "2026-10-26T13:40:00Z",
       "note": "Wed 11/4 chart overlay — support (prior liquidity drain note earlier week)",
-      "dist": -45.28,
+      "dist": -45.57,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2881,7 +3102,7 @@
       "avg_break_follow": 1.3,
       "last_touch": "2026-10-30T14:35:00Z",
       "note": "Wed 11/4 chart overlay — support",
-      "dist": -42.58,
+      "dist": -42.87,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2906,7 +3127,7 @@
       "avg_break_follow": 2.31,
       "last_touch": "2026-10-30T16:40:00Z",
       "note": "Nov 2–6 plan (5d5d234); also prior-week seed 2026-10-26",
-      "dist": -41.03,
+      "dist": -41.32,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2931,7 +3152,7 @@
       "avg_break_follow": 2.6,
       "last_touch": "2026-10-30T16:00:00Z",
       "note": "double dark pool bounce/reclaim",
-      "dist": -40.44,
+      "dist": -40.73,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2956,7 +3177,7 @@
       "avg_break_follow": 2.72,
       "last_touch": "2026-10-30T16:45:00Z",
       "note": "prior-week desk seed / command dp array",
-      "dist": -40.13,
+      "dist": -40.42,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -2981,7 +3202,7 @@
       "avg_break_follow": 2.49,
       "last_touch": "2026-10-30T16:35:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -40.01,
+      "dist": -40.3,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3006,7 +3227,7 @@
       "avg_break_follow": 2.19,
       "last_touch": "2026-10-30T19:50:00Z",
       "note": "everett-named; appeared as 21-EMA in bias gauge, not in DP arrays",
-      "dist": -39.42,
+      "dist": -39.71,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3021,7 +3242,7 @@
       "es": 7592.87,
       "type": "current",
       "status": "current",
-      "dist": -39.34,
+      "dist": -39.63,
       "side": "BELOW",
       "note": "Tue 11/3 hit (public X) — add to book",
       "cross": false,
@@ -3047,7 +3268,7 @@
       "avg_break_follow": 1.77,
       "last_touch": "2026-10-30T19:50:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -38.29,
+      "dist": -38.58,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3072,7 +3293,7 @@
       "avg_break_follow": 1.1,
       "last_touch": "2026-10-30T19:50:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -37.61,
+      "dist": -37.9,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3097,7 +3318,7 @@
       "avg_break_follow": 2.44,
       "last_touch": "2026-10-30T19:45:00Z",
       "note": "double dark pool; fail → air pocket",
-      "dist": -37.08,
+      "dist": -37.37,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3122,7 +3343,7 @@
       "avg_break_follow": 1.98,
       "last_touch": "2026-10-30T18:45:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -34.05,
+      "dist": -34.34,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3147,7 +3368,7 @@
       "avg_break_follow": 2.31,
       "last_touch": "2026-09-16T19:20:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -33.17,
+      "dist": -33.46,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3172,7 +3393,7 @@
       "avg_break_follow": 2.53,
       "last_touch": "2026-07-31T19:40:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -31.18,
+      "dist": -31.47,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3197,7 +3418,7 @@
       "avg_break_follow": 2.7,
       "last_touch": "2026-07-31T19:55:00Z",
       "note": "air pocket target (DP-typed in confluence)",
-      "dist": -29.78,
+      "dist": -30.07,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3222,7 +3443,7 @@
       "avg_break_follow": 1.88,
       "last_touch": "2026-07-31T17:45:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -28.48,
+      "dist": -28.77,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3247,7 +3468,7 @@
       "avg_break_follow": 3.69,
       "last_touch": "2026-07-31T16:20:00Z",
       "note": "Wed overnight pump print (public X); still on Nov plan ladder",
-      "dist": -27.37,
+      "dist": -27.66,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3272,7 +3493,7 @@
       "avg_break_follow": 3.35,
       "last_touch": "2026-07-31T15:50:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -25.29,
+      "dist": -25.58,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3288,7 +3509,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 DP print — filled",
-      "dist": -24.84,
+      "dist": -25.13,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3304,7 +3525,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 $115.5M DP",
-      "dist": -24.55,
+      "dist": -24.84,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3329,7 +3550,7 @@
       "avg_break_follow": 3.67,
       "last_touch": "2026-07-31T15:45:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -24.27,
+      "dist": -24.56,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3354,7 +3575,7 @@
       "avg_break_follow": 3.12,
       "last_touch": "2026-07-31T15:30:00Z",
       "note": "$1.4B print Tue 11/17 · with 739.72 forms the 11/16–11/17 cluster (named as Thursday's likely bounce peak)",
-      "dist": -22.74,
+      "dist": -23.03,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3379,7 +3600,7 @@
       "avg_break_follow": 3.17,
       "last_touch": "2026-07-31T15:30:00Z",
       "note": "$2.3B print Mon 11/16 · 11/16–11/17 cluster",
-      "dist": -22.73,
+      "dist": -23.02,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3404,7 +3625,7 @@
       "avg_break_follow": 3.21,
       "last_touch": "2026-07-31T14:15:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -22.12,
+      "dist": -22.41,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3429,7 +3650,7 @@
       "avg_break_follow": 3.06,
       "last_touch": "2026-07-31T14:15:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -20.65,
+      "dist": -20.94,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3445,7 +3666,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 $66.6M DP",
-      "dist": -20.24,
+      "dist": -20.53,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3461,7 +3682,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 DP print — filled",
-      "dist": -20.11,
+      "dist": -20.4,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3477,7 +3698,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 DP print — filled",
-      "dist": -19.5,
+      "dist": -19.79,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3493,7 +3714,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 $941.9M DP — largest print; overhead pivot",
-      "dist": -18.42,
+      "dist": -18.71,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3509,7 +3730,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 DP print — filled",
-      "dist": -17.38,
+      "dist": -17.67,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3534,7 +3755,7 @@
       "avg_break_follow": 2.95,
       "last_touch": "2026-07-29T19:30:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -17.17,
+      "dist": -17.46,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3550,7 +3771,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 DP — close zone",
-      "dist": -16.1,
+      "dist": -16.39,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3575,7 +3796,7 @@
       "avg_break_follow": 3.63,
       "last_touch": "2026-07-29T19:35:00Z",
       "note": "$1.1B print Wed 11/18 · above the close and below the 200DMA, likely sells",
-      "dist": -15.22,
+      "dist": -15.51,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3600,7 +3821,7 @@
       "avg_break_follow": 2.88,
       "last_touch": "2026-07-29T19:45:00Z",
       "note": "$1.3B print Tue 11/17",
-      "dist": -15.15,
+      "dist": -15.44,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3616,7 +3837,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 AH DP filled",
-      "dist": -15.06,
+      "dist": -15.35,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3641,7 +3862,7 @@
       "avg_break_follow": 3.57,
       "last_touch": "2026-07-29T19:45:00Z",
       "note": "late-registered print Thu 11/19 (shows as the 12:50 PM PT wick on SPY)",
-      "dist": -14.86,
+      "dist": -15.15,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3657,7 +3878,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 AH DP filled",
-      "dist": -14.79,
+      "dist": -15.08,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3682,7 +3903,7 @@
       "avg_break_follow": 3.39,
       "last_touch": "2026-07-29T19:35:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -14.59,
+      "dist": -14.88,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3698,7 +3919,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 AH DP filled (+GEX 730)",
-      "dist": -13.03,
+      "dist": -13.32,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3723,7 +3944,7 @@
       "avg_break_follow": 4.56,
       "last_touch": "2026-07-29T19:55:00Z",
       "note": "older (July) line · held Tue 11/17 and Wed 11/18, called the last line of defense",
-      "dist": -12.27,
+      "dist": -12.56,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3739,7 +3960,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 AH DP filled",
-      "dist": -12.09,
+      "dist": -12.38,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3755,7 +3976,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 AH DP filled",
-      "dist": -11.75,
+      "dist": -12.04,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3771,7 +3992,7 @@
       "type": "current",
       "status": "current",
       "note": "Thu 11/5 AH DP filled (near AH low 727.41)",
-      "dist": -11.06,
+      "dist": -11.35,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3787,7 +4008,7 @@
       "type": "current",
       "status": "current",
       "note": "Next unfilled downside DP",
-      "dist": -10.84,
+      "dist": -11.13,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3803,7 +4024,7 @@
       "type": "current",
       "status": "current",
       "note": "Unfilled downside DP",
-      "dist": -8.98,
+      "dist": -9.27,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3828,7 +4049,7 @@
       "avg_break_follow": 5.65,
       "last_touch": "2026-06-26T19:55:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -8.5,
+      "dist": -8.79,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3844,7 +4065,7 @@
       "type": "current",
       "status": "current",
       "note": "Unfilled downside DP",
-      "dist": -7.51,
+      "dist": -7.8,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3869,7 +4090,7 @@
       "avg_break_follow": 1.41,
       "last_touch": "2026-06-26T19:55:00Z",
       "note": "Nov 2–6 plan (5d5d234)",
-      "dist": -6.62,
+      "dist": -6.91,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3885,7 +4106,7 @@
       "type": "current",
       "status": "current",
       "note": "Unfilled downside DP",
-      "dist": -5.58,
+      "dist": -5.87,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3910,7 +4131,7 @@
       "avg_break_follow": 2.06,
       "last_touch": "2026-06-26T19:55:00Z",
       "note": "everett-named; not found as DP in git (gamma-grid digit collision)",
-      "dist": -4.77,
+      "dist": -5.06,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
@@ -3926,7 +4147,7 @@
       "type": "current",
       "status": "current",
       "note": "Unfilled DP — monthly 50MA zone",
-      "dist": -3.7,
+      "dist": -3.99,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3942,7 +4163,7 @@
       "type": "current",
       "status": "current",
       "note": "Unfilled DP (+GEX 720)",
-      "dist": -2.88,
+      "dist": -3.17,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
@@ -3967,12 +4188,220 @@
       "avg_break_follow": null,
       "last_touch": "2026-06-26T19:55:00Z",
       "note": "reaction level Thu 11/19 · price traded at it on the second leg down (9:17 AM PT)",
-      "dist": -1.67,
+      "dist": -1.96,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
       "below_min": 390,
       "pct_above": 0.0,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 715.02,
+      "spx": 7165.39,
+      "es": 7178.89,
+      "type": "current",
+      "status": "current",
+      "dist": 1.68,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 714.14,
+      "spx": 7156.57,
+      "es": 7170.07,
+      "type": "current",
+      "status": "current",
+      "dist": 2.56,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 711.4,
+      "spx": 7129.11,
+      "es": 7142.61,
+      "type": "current",
+      "status": "current",
+      "dist": 5.3,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 710.21,
+      "spx": 7117.19,
+      "es": 7130.69,
+      "type": "current",
+      "status": "current",
+      "dist": 6.49,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 708.52,
+      "spx": 7100.25,
+      "es": 7113.75,
+      "type": "current",
+      "status": "current",
+      "dist": 8.18,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 706.18,
+      "spx": 7076.8,
+      "es": 7090.3,
+      "type": "current",
+      "status": "current",
+      "dist": 10.52,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 704.03,
+      "spx": 7055.26,
+      "es": 7068.76,
+      "type": "current",
+      "status": "current",
+      "dist": 12.67,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 701.75,
+      "spx": 7032.41,
+      "es": 7045.91,
+      "type": "current",
+      "status": "current",
+      "dist": 14.95,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 699.92,
+      "spx": 7014.07,
+      "es": 7027.57,
+      "type": "current",
+      "status": "current",
+      "dist": 16.78,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 695.21,
+      "spx": 6966.87,
+      "es": 6980.37,
+      "type": "current",
+      "status": "current",
+      "dist": 21.49,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 694.06,
+      "spx": 6955.35,
+      "es": 6968.85,
+      "type": "current",
+      "status": "current",
+      "dist": 22.64,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 691.9,
+      "spx": 6933.7,
+      "es": 6947.2,
+      "type": "current",
+      "status": "current",
+      "dist": 24.8,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null
+    },
+    {
+      "spy": 690.36,
+      "spx": 6918.27,
+      "es": 6931.77,
+      "type": "current",
+      "status": "current",
+      "dist": 26.34,
+      "side": "ABOVE",
+      "note": "line current through Wed 11/25 close",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
       "cross_t": null,
       "cross_dir": null
     }
@@ -3988,7 +4417,7 @@
         "spx": 7780.29,
         "es": 7793.79,
         "type": "current",
-        "dist": -59.39,
+        "dist": -59.68,
         "side": "BELOW"
       },
       {
@@ -3996,7 +4425,7 @@
         "spx": 7750.23,
         "es": 7763.73,
         "type": "current",
-        "dist": -56.39,
+        "dist": -56.68,
         "side": "BELOW"
       },
       {
@@ -4004,7 +4433,7 @@
         "spx": 7740.61,
         "es": 7754.11,
         "type": "current",
-        "dist": -55.43,
+        "dist": -55.72,
         "side": "BELOW"
       },
       {
@@ -4012,7 +4441,7 @@
         "spx": 7728.58,
         "es": 7742.08,
         "type": "current",
-        "dist": -54.23,
+        "dist": -54.52,
         "side": "BELOW"
       },
       {
@@ -4020,7 +4449,7 @@
         "spx": 7719.67,
         "es": 7733.17,
         "type": "current",
-        "dist": -53.34,
+        "dist": -53.63,
         "side": "BELOW"
       },
       {
@@ -4028,7 +4457,7 @@
         "spx": 7713.65,
         "es": 7727.15,
         "type": "current",
-        "dist": -52.74,
+        "dist": -53.03,
         "side": "BELOW"
       },
       {
@@ -4036,7 +4465,7 @@
         "spx": 7711.85,
         "es": 7725.35,
         "type": "current",
-        "dist": -52.56,
+        "dist": -52.85,
         "side": "BELOW"
       },
       {
@@ -4044,7 +4473,7 @@
         "spx": 7710.85,
         "es": 7724.35,
         "type": "prior",
-        "dist": -52.46,
+        "dist": -52.75,
         "side": "BELOW"
       },
       {
@@ -4052,7 +4481,7 @@
         "spx": 7702.43,
         "es": 7715.93,
         "type": "current",
-        "dist": -51.62,
+        "dist": -51.91,
         "side": "BELOW"
       },
       {
@@ -4060,7 +4489,7 @@
         "spx": 7690.4,
         "es": 7703.9,
         "type": "current",
-        "dist": -50.42,
+        "dist": -50.71,
         "side": "BELOW"
       },
       {
@@ -4068,7 +4497,7 @@
         "spx": 7687.5,
         "es": 7701.0,
         "type": "current",
-        "dist": -50.13,
+        "dist": -50.42,
         "side": "BELOW"
       },
       {
@@ -4076,7 +4505,7 @@
         "spx": 7672.16,
         "es": 7685.66,
         "type": "current",
-        "dist": -48.6,
+        "dist": -48.89,
         "side": "BELOW"
       },
       {
@@ -4084,7 +4513,7 @@
         "spx": 7670.26,
         "es": 7683.76,
         "type": "current",
-        "dist": -48.41,
+        "dist": -48.7,
         "side": "BELOW"
       },
       {
@@ -4092,7 +4521,7 @@
         "spx": 7659.94,
         "es": 7673.44,
         "type": "current",
-        "dist": -47.38,
+        "dist": -47.67,
         "side": "BELOW"
       },
       {
@@ -4100,7 +4529,7 @@
         "spx": 7638.89,
         "es": 7652.39,
         "type": "current",
-        "dist": -45.28,
+        "dist": -45.57,
         "side": "BELOW"
       },
       {
@@ -4108,7 +4537,7 @@
         "spx": 7611.84,
         "es": 7625.34,
         "type": "current",
-        "dist": -42.58,
+        "dist": -42.87,
         "side": "BELOW"
       },
       {
@@ -4116,7 +4545,7 @@
         "spx": 7596.3,
         "es": 7609.8,
         "type": "current",
-        "dist": -41.03,
+        "dist": -41.32,
         "side": "BELOW"
       },
       {
@@ -4124,7 +4553,7 @@
         "spx": 7590.39,
         "es": 7603.89,
         "type": "prior",
-        "dist": -40.44,
+        "dist": -40.73,
         "side": "BELOW"
       },
       {
@@ -4132,7 +4561,7 @@
         "spx": 7587.29,
         "es": 7600.79,
         "type": "prior",
-        "dist": -40.13,
+        "dist": -40.42,
         "side": "BELOW"
       },
       {
@@ -4140,7 +4569,7 @@
         "spx": 7586.08,
         "es": 7599.58,
         "type": "current",
-        "dist": -40.01,
+        "dist": -40.3,
         "side": "BELOW"
       },
       {
@@ -4148,7 +4577,7 @@
         "spx": 7580.17,
         "es": 7593.67,
         "type": "prior",
-        "dist": -39.42,
+        "dist": -39.71,
         "side": "BELOW"
       },
       {
@@ -4156,7 +4585,7 @@
         "spx": 7579.37,
         "es": 7592.87,
         "type": "current",
-        "dist": -39.34,
+        "dist": -39.63,
         "side": "BELOW"
       },
       {
@@ -4164,7 +4593,7 @@
         "spx": 7568.85,
         "es": 7582.35,
         "type": "current",
-        "dist": -38.29,
+        "dist": -38.58,
         "side": "BELOW"
       },
       {
@@ -4172,7 +4601,7 @@
         "spx": 7562.03,
         "es": 7575.53,
         "type": "current",
-        "dist": -37.61,
+        "dist": -37.9,
         "side": "BELOW"
       },
       {
@@ -4180,7 +4609,7 @@
         "spx": 7556.72,
         "es": 7570.22,
         "type": "prior",
-        "dist": -37.08,
+        "dist": -37.37,
         "side": "BELOW"
       },
       {
@@ -4188,7 +4617,7 @@
         "spx": 7526.36,
         "es": 7539.86,
         "type": "current",
-        "dist": -34.05,
+        "dist": -34.34,
         "side": "BELOW"
       },
       {
@@ -4196,7 +4625,7 @@
         "spx": 7517.54,
         "es": 7531.04,
         "type": "current",
-        "dist": -33.17,
+        "dist": -33.46,
         "side": "BELOW"
       },
       {
@@ -4204,7 +4633,7 @@
         "spx": 7497.59,
         "es": 7511.09,
         "type": "current",
-        "dist": -31.18,
+        "dist": -31.47,
         "side": "BELOW"
       },
       {
@@ -4212,7 +4641,7 @@
         "spx": 7483.57,
         "es": 7497.07,
         "type": "prior",
-        "dist": -29.78,
+        "dist": -30.07,
         "side": "BELOW"
       },
       {
@@ -4220,7 +4649,7 @@
         "spx": 7470.54,
         "es": 7484.04,
         "type": "current",
-        "dist": -28.48,
+        "dist": -28.77,
         "side": "BELOW"
       },
       {
@@ -4228,7 +4657,7 @@
         "spx": 7459.41,
         "es": 7472.91,
         "type": "current",
-        "dist": -27.37,
+        "dist": -27.66,
         "side": "BELOW"
       },
       {
@@ -4236,7 +4665,7 @@
         "spx": 7438.57,
         "es": 7452.07,
         "type": "current",
-        "dist": -25.29,
+        "dist": -25.58,
         "side": "BELOW"
       },
       {
@@ -4244,7 +4673,7 @@
         "spx": 7434.06,
         "es": 7447.56,
         "type": "current",
-        "dist": -24.84,
+        "dist": -25.13,
         "side": "BELOW"
       },
       {
@@ -4252,7 +4681,7 @@
         "spx": 7431.15,
         "es": 7444.65,
         "type": "current",
-        "dist": -24.55,
+        "dist": -24.84,
         "side": "BELOW"
       },
       {
@@ -4260,7 +4689,7 @@
         "spx": 7428.35,
         "es": 7441.85,
         "type": "current",
-        "dist": -24.27,
+        "dist": -24.56,
         "side": "BELOW"
       },
       {
@@ -4268,7 +4697,7 @@
         "spx": 7413.02,
         "es": 7426.52,
         "type": "current",
-        "dist": -22.74,
+        "dist": -23.03,
         "side": "BELOW"
       },
       {
@@ -4276,7 +4705,7 @@
         "spx": 7412.92,
         "es": 7426.42,
         "type": "current",
-        "dist": -22.73,
+        "dist": -23.02,
         "side": "BELOW"
       },
       {
@@ -4284,7 +4713,7 @@
         "spx": 7406.8,
         "es": 7420.3,
         "type": "current",
-        "dist": -22.12,
+        "dist": -22.41,
         "side": "BELOW"
       },
       {
@@ -4292,7 +4721,7 @@
         "spx": 7392.07,
         "es": 7405.57,
         "type": "current",
-        "dist": -20.65,
+        "dist": -20.94,
         "side": "BELOW"
       },
       {
@@ -4300,7 +4729,7 @@
         "spx": 7387.96,
         "es": 7401.46,
         "type": "current",
-        "dist": -20.24,
+        "dist": -20.53,
         "side": "BELOW"
       },
       {
@@ -4308,7 +4737,7 @@
         "spx": 7386.66,
         "es": 7400.16,
         "type": "current",
-        "dist": -20.11,
+        "dist": -20.4,
         "side": "BELOW"
       },
       {
@@ -4316,7 +4745,7 @@
         "spx": 7380.55,
         "es": 7394.05,
         "type": "current",
-        "dist": -19.5,
+        "dist": -19.79,
         "side": "BELOW"
       },
       {
@@ -4324,7 +4753,7 @@
         "spx": 7369.72,
         "es": 7383.22,
         "type": "current",
-        "dist": -18.42,
+        "dist": -18.71,
         "side": "BELOW"
       },
       {
@@ -4332,7 +4761,7 @@
         "spx": 7359.3,
         "es": 7372.8,
         "type": "current",
-        "dist": -17.38,
+        "dist": -17.67,
         "side": "BELOW"
       },
       {
@@ -4340,7 +4769,7 @@
         "spx": 7357.2,
         "es": 7370.7,
         "type": "current",
-        "dist": -17.17,
+        "dist": -17.46,
         "side": "BELOW"
       },
       {
@@ -4348,7 +4777,7 @@
         "spx": 7346.47,
         "es": 7359.97,
         "type": "current",
-        "dist": -16.1,
+        "dist": -16.39,
         "side": "BELOW"
       },
       {
@@ -4356,7 +4785,7 @@
         "spx": 7337.66,
         "es": 7351.16,
         "type": "current",
-        "dist": -15.22,
+        "dist": -15.51,
         "side": "BELOW"
       },
       {
@@ -4364,7 +4793,7 @@
         "spx": 7336.95,
         "es": 7350.45,
         "type": "current",
-        "dist": -15.15,
+        "dist": -15.44,
         "side": "BELOW"
       },
       {
@@ -4372,7 +4801,7 @@
         "spx": 7336.05,
         "es": 7349.55,
         "type": "current",
-        "dist": -15.06,
+        "dist": -15.35,
         "side": "BELOW"
       },
       {
@@ -4380,7 +4809,7 @@
         "spx": 7334.05,
         "es": 7347.55,
         "type": "current",
-        "dist": -14.86,
+        "dist": -15.15,
         "side": "BELOW"
       },
       {
@@ -4388,7 +4817,7 @@
         "spx": 7333.35,
         "es": 7346.85,
         "type": "current",
-        "dist": -14.79,
+        "dist": -15.08,
         "side": "BELOW"
       },
       {
@@ -4396,7 +4825,7 @@
         "spx": 7331.34,
         "es": 7344.84,
         "type": "current",
-        "dist": -14.59,
+        "dist": -14.88,
         "side": "BELOW"
       },
       {
@@ -4404,7 +4833,7 @@
         "spx": 7315.71,
         "es": 7329.21,
         "type": "current",
-        "dist": -13.03,
+        "dist": -13.32,
         "side": "BELOW"
       },
       {
@@ -4412,7 +4841,7 @@
         "spx": 7308.09,
         "es": 7321.59,
         "type": "current",
-        "dist": -12.27,
+        "dist": -12.56,
         "side": "BELOW"
       },
       {
@@ -4420,7 +4849,7 @@
         "spx": 7306.29,
         "es": 7319.79,
         "type": "current",
-        "dist": -12.09,
+        "dist": -12.38,
         "side": "BELOW"
       },
       {
@@ -4428,7 +4857,7 @@
         "spx": 7302.88,
         "es": 7316.38,
         "type": "current",
-        "dist": -11.75,
+        "dist": -12.04,
         "side": "BELOW"
       },
       {
@@ -4436,7 +4865,7 @@
         "spx": 7295.97,
         "es": 7309.47,
         "type": "current",
-        "dist": -11.06,
+        "dist": -11.35,
         "side": "BELOW"
       },
       {
@@ -4444,7 +4873,7 @@
         "spx": 7293.76,
         "es": 7307.26,
         "type": "current",
-        "dist": -10.84,
+        "dist": -11.13,
         "side": "BELOW"
       },
       {
@@ -4452,7 +4881,7 @@
         "spx": 7275.12,
         "es": 7288.62,
         "type": "current",
-        "dist": -8.98,
+        "dist": -9.27,
         "side": "BELOW"
       },
       {
@@ -4460,7 +4889,7 @@
         "spx": 7270.31,
         "es": 7283.81,
         "type": "current",
-        "dist": -8.5,
+        "dist": -8.79,
         "side": "BELOW"
       },
       {
@@ -4468,7 +4897,7 @@
         "spx": 7260.39,
         "es": 7273.89,
         "type": "current",
-        "dist": -7.51,
+        "dist": -7.8,
         "side": "BELOW"
       },
       {
@@ -4476,7 +4905,7 @@
         "spx": 7251.47,
         "es": 7264.97,
         "type": "current",
-        "dist": -6.62,
+        "dist": -6.91,
         "side": "BELOW"
       },
       {
@@ -4484,7 +4913,7 @@
         "spx": 7241.05,
         "es": 7254.55,
         "type": "current",
-        "dist": -5.58,
+        "dist": -5.87,
         "side": "BELOW"
       },
       {
@@ -4492,7 +4921,7 @@
         "spx": 7232.93,
         "es": 7246.43,
         "type": "prior",
-        "dist": -4.77,
+        "dist": -5.06,
         "side": "BELOW"
       },
       {
@@ -4500,7 +4929,7 @@
         "spx": 7222.21,
         "es": 7235.71,
         "type": "current",
-        "dist": -3.7,
+        "dist": -3.99,
         "side": "BELOW"
       },
       {
@@ -4508,7 +4937,7 @@
         "spx": 7213.99,
         "es": 7227.49,
         "type": "current",
-        "dist": -2.88,
+        "dist": -3.17,
         "side": "BELOW"
       },
       {
@@ -4516,8 +4945,112 @@
         "spx": 7201.87,
         "es": 7215.37,
         "type": "current",
-        "dist": -1.67,
+        "dist": -1.96,
         "side": "BELOW"
+      },
+      {
+        "spy": 715.02,
+        "spx": 7165.39,
+        "es": 7178.89,
+        "type": "current",
+        "dist": 1.68,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 714.14,
+        "spx": 7156.57,
+        "es": 7170.07,
+        "type": "current",
+        "dist": 2.56,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 711.4,
+        "spx": 7129.11,
+        "es": 7142.61,
+        "type": "current",
+        "dist": 5.3,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 710.21,
+        "spx": 7117.19,
+        "es": 7130.69,
+        "type": "current",
+        "dist": 6.49,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 708.52,
+        "spx": 7100.25,
+        "es": 7113.75,
+        "type": "current",
+        "dist": 8.18,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 706.18,
+        "spx": 7076.8,
+        "es": 7090.3,
+        "type": "current",
+        "dist": 10.52,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 704.03,
+        "spx": 7055.26,
+        "es": 7068.76,
+        "type": "current",
+        "dist": 12.67,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 701.75,
+        "spx": 7032.41,
+        "es": 7045.91,
+        "type": "current",
+        "dist": 14.95,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 699.92,
+        "spx": 7014.07,
+        "es": 7027.57,
+        "type": "current",
+        "dist": 16.78,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 695.21,
+        "spx": 6966.87,
+        "es": 6980.37,
+        "type": "current",
+        "dist": 21.49,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 694.06,
+        "spx": 6955.35,
+        "es": 6968.85,
+        "type": "current",
+        "dist": 22.64,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 691.9,
+        "spx": 6933.7,
+        "es": 6947.2,
+        "type": "current",
+        "dist": 24.8,
+        "side": "ABOVE"
+      },
+      {
+        "spy": 690.36,
+        "spx": 6918.27,
+        "es": 6931.77,
+        "type": "current",
+        "dist": 26.34,
+        "side": "ABOVE"
       }
     ]
   },
@@ -4712,6 +5245,19 @@
     721.76,
     720.69,
     719.87,
-    718.66
+    718.66,
+    715.02,
+    714.14,
+    711.4,
+    710.21,
+    708.52,
+    706.18,
+    704.03,
+    701.75,
+    699.92,
+    695.21,
+    694.06,
+    691.9,
+    690.36
   ]
 }

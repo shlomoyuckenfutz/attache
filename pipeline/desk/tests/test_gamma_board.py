@@ -21,34 +21,33 @@ NEXT_DAY_BANDS = ["6704.09", "7116.71"]  # Fri 11/20 next-expiry (Mon) SPX bands
 class I1_GammaLevels(unittest.TestCase):
     def test_values_and_regimes_per_expiry_board(self):
         L = D["levels"]
-        self.assertEqual((L["SPX"]["2026-11-23"]["flip"], L["SPX"]["2026-11-23"]["magnet"], L["SPX"]["2026-11-23"]["regime"]), (None, 6825, "NEG"))
+        self.assertEqual((L["SPX"]["2026-11-27"]["flip"], L["SPX"]["2026-11-27"]["magnet"], L["SPX"]["2026-11-27"]["regime"]), (7259, 7150, "NEG"))
         self.assertEqual(L["SPY"]["2026-12-18"]["regime"], "NEG")
-        self.assertEqual(L["SPX"]["2026-11-27"]["regime"], "NEG")
-        self.assertEqual(L["SPX"]["2026-11-27"]["net_gex"], "-$6.2B")
-        self.assertEqual(L["NDX"]["2026-11-27"]["call_wall"], 26700)
+        self.assertEqual(L["SPX"]["2026-11-27"]["net_gex"], "-$5.0B")
+        self.assertEqual(L["NDX"]["2026-11-27"]["call_wall"], 26000)
 
     def test_tables_cover_every_ticker_and_expiry(self):
         for s in G.SYMS:
-            for ex in ("11/23", "11/27", "12/18"):
+            for ex in ("11/27", "12/4", "12/18"):
                 self.assertRegex(WEEKLY, rf"<td>{s}</td><td>{ex}</td>")
         self.assertIn("awaiting update", WEEKLY)
         for s in G.SYMS:
-            self.assertRegex(DAILY, rf"<td>{s}</td><td>11/23</td>")
-        self.assertIn("Fri 11/20 close", DAILY); self.assertIn("FRI 11/20 CLOSE", WEEKLY); self.assertIn("Fri 11/20 close", CMD["gamma"]["h"])
+            self.assertRegex(DAILY, rf"<td>{s}</td><td>11/27</td>")
+        self.assertIn("Wed 11/25 close", DAILY); self.assertIn("WED 11/25 CLOSE", WEEKLY); self.assertIn("Wed 11/25 close", CMD["gamma"]["h"])
 
     def test_bad_input_is_dropped_not_rendered(self):
-        r = copy.deepcopy(RAW); r["levels"]["SPX"]["2026-11-23"] = {"flip": "x", "magnet": float("nan")}
-        d = G.validate(r); self.assertIsNone(d["levels"]["SPX"]["2026-11-23"])
+        r = copy.deepcopy(RAW); r["levels"]["SPX"]["2026-11-27"] = {"flip": "x", "magnet": float("nan")}
+        d = G.validate(r); self.assertIsNone(d["levels"]["SPX"]["2026-11-27"])
         self.assertEqual(G.validate({"asof": "bad"}), {})
         self.assertIn("awaiting update", G.daily_section({}))
 
 
 class I2_EsNqConversion(unittest.TestCase):
     def test_es_is_spx_plus_plan_basis(self):
-        self.assertEqual(D["es_basis"], 16.5)
-        self.assertIn("<td>6841.50</td>", DAILY)  # SPX 11/23 6825 + 16.5
+        self.assertEqual(D["es_basis"], 13.5)
+        self.assertIn("<td>7163.50</td>", DAILY)  # SPX 11/27 7150 + 13.5
         es = [r for r in CMD["tiles"] if r["h"].startswith("ES")][0]
-        self.assertIn("magnet 6516.50", es["rows"][1][1])  # 11/27 6500 + 16.5
+        self.assertIn("magnet 7163.50", es["rows"][0][1])  # 11/27 7150 + 13.5
 
     def test_nq_awaits_without_sourced_basis_and_no_equity_es(self):
         self.assertIsNone(D["nq_basis"])
@@ -59,12 +58,12 @@ class I2_EsNqConversion(unittest.TestCase):
 class I3_WeeklyExpectedMove(unittest.TestCase):
     def test_weekly_rows_shown_next_day_bands_not(self):
         line = G.em_line(D)
-        self.assertTrue(line.startswith("Weekly expected move to Fri 11/27 (Fri 11/20 close)"))
-        for s in ("SPX 6562.72–7258.08", "SPY 654.65–724.97", "QQQ 566.50–650.40", "NDX 23307.24–26750.74"):
+        self.assertTrue(line.startswith("Weekly expected move to Fri 11/27 (Wed 11/25 close)"))
+        for s in ("SPX 7066.71–7298.85", "SPY 704.35–729.05", "QQQ 617.22–650.64", "NDX 25110.11–26568.49"):
             self.assertIn(s, line)
         for v in NEXT_DAY_BANDS:
             self.assertNotIn(v, ALL)
-        self.assertEqual(list(CMD["im_extra"]["rows"][1]), ["SPY", "654.65–724.97 (±5.10%)"])
+        self.assertEqual(list(CMD["im_extra"]["rows"][1]), ["SPY", "704.35–729.05 (±1.72%)"])
 
 
 class I4_Calendar(unittest.TestCase):
@@ -82,8 +81,8 @@ class I4_Calendar(unittest.TestCase):
 class I5_Flow(unittest.TestCase):
     def test_flow_figures(self):
         f = [r for r in CMD["tiles"] if r["h"] == "FLOW"][0]
-        self.assertEqual(f["v"], "−$466M bearish"); self.assertEqual(f["d"], "Fri 11/20")  # flow carries its own session date
-        self.assertIn(["put/call", "1.72"], f["rows"])
+        self.assertEqual(f["v"], "+$4.8M bullish"); self.assertEqual(f["d"], "Wed 11/25")  # flow carries its own session date
+        self.assertIn(["put/call", "1.05"], f["rows"])
         self.assertIn("Largest prints by premium", f["note"])
 
 
@@ -101,8 +100,8 @@ class I7_GammaMap(unittest.TestCase):
         for s in ("es", "spx", "spy", "qqq", "ndx", "nq"):
             self.assertIn(f'id="m-{s}"', PAGE)
         self.assertGreaterEqual(PAGE.count("CONFLUENCE</i>"), 3)
-        # QQQ 600: Mon 11/23 put wall + magnet stack with the 12/18 put wall
-        self.assertRegex(PAGE, r">600 <i>CONFLUENCE</i>")
+        # SPY 700: Friday put wall stacks with the 12/04 and 12/18 put walls
+        self.assertRegex(PAGE, r">700 <i>CONFLUENCE</i>")
         self.assertIn("SPX close + basis", PAGE)
 
     def test_no_empty_cells_and_status_for_gaps(self):
@@ -117,6 +116,8 @@ class I7_GammaMap(unittest.TestCase):
         self.assertIn("class=on>GAMMA MAP", ui_shell.bar("gammamap", "../"))
         self.assertIn('href="../live-trades/"', ui_shell.bar("daily", "../"))
         self.assertIn("class=on>LIVE TRADES", ui_shell.bar("livetrades", "../"))
+        self.assertNotIn("project-b", ui_shell.bar("daily", "../"))
+        self.assertNotIn("PROJ B", ui_shell.bar("command", "../"))
 
 
 class I8_HeaderStamp(unittest.TestCase):

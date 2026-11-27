@@ -1,16 +1,16 @@
 {
- "score": 62,
+ "score": 37,
  "label": "BULLISH",
  "px": 720.43,
  "asof": "11-25 16:59 PT",
  "feed": "delayed",
- "built": "11-26 14:56 PT",
+ "built": "11-26 16:14 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "720.43 vs 704.60",
+   "x": "720.43 vs 707.74",
    "w": 1.5
   },
   {
@@ -33,6 +33,13 @@
    "v": 0,
    "x": "693.57\u2013722.11",
    "w": 1.0
+  },
+  {
+   "k": "DARK POOL",
+   "d": "dark-pool levels holding below vs overhead (\u00b11%)",
+   "v": -1,
+   "x": "1 below / 7 above",
+   "w": 1.5
   },
   {
    "k": "BLAST RADIUS",
@@ -58,6 +65,6 @@
  ],
  "news": {
   "dir": "TWO-SIDED",
-  "why": "Two-sided into Friday's early close. 7305\u201309 is still the control line: Monday tagged it (ES high 7313.25 at 7:32 AM PT) and sold off. Tuesday held 7152\u20137240. Wednesday's 5:30 AM PT data (GDP 4.3% vs 3.5% expected, core PCE 3.3% year-on-year vs 3.2% expected, claims 189k vs 200k, durable goods 0.2% vs 0.7%) flushed ES to 6982.50 at 6:45 AM PT \u2014 just above the 6960\u201366 Monday pivot and a slight undercut of the 6992\u201393 Sunday overnight low \u2014 then ripped to 7211 at 10:50 AM PT, an exact test of the 7211\u201323 prior highs. As of 11:28 AM PT: ES 7197, SPX 7185, SPY 716.99, QQQ 632.99, NDX 26008.65, VIX 27.97 (Wednesday high 34.95 at 6:45 AM PT). Tuesday closes were SPX 7201.09 (+4.21% vs Friday), SPY 718.78, QQQ 638.10, VIX 26.36. The Monday plan's bull path played out in full and then some: 7025 was reclaimed Sunday, and price ran through 7086, 7120\u201325 and 7211\u201323 to tag 7305\u201309. The bear path to 6897 never triggered; Wednesday's 6982.50 low held the 6960\u201366 pivot. Friday is a half day (stocks close 10:00 AM PT) and weekly expiration. ES \u2248 SPX + 13.5 (Wednesday regular-session median through 11:18 AM PT; the session is still open). The last full options board is Friday's close \u2014 not current."
+  "why": "Two-sided into Friday's early close and weekly expiration. Cash was closed Thursday; the working close is Wednesday: SPX 7182.78, SPY 716.70, QQQ 633.93, NDX 25,839.30, VIX 26.81, ES 7196.75 at 12:59 PM PT (regular-session high 7214 at 12:56 PM PT, low 6982.50 at 6:45 AM PT). 7305\u201309 is still the control line (Monday high 7313.25). 7211\u201323 was tested Wednesday (high 7214) and is now the first upside / first support \u2014 the Friday 7200 call wall sits at about ES 7213.5. A 7240\u201345 reclaim remains the buyers' next job; 7272\u201378 (Friday flip \u2248 7272.5) then 7305\u201309 are next. Just under the close, 7160\u201365 is the nearby line: Friday's 7150 put wall and biggest strike convert to about ES 7163.5. Lose that and 7120\u201325 / 7086 come back into view. 6982\u201393 (Wednesday's 6982.50 data low and the Sunday 6992\u201393 failed-breakdown) is still the week's bigger line. The Monday plan's bull path already played out to 7305\u201309; Wednesday flushed to 6982.50 and closed 7196.75. Friday stocks close 10:00 AM PT. Size down. ES conversions use SPX + 13.5 (Wednesday regular-session median through 11:18 AM PT)."
  }
 }

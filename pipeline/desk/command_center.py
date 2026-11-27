@@ -335,7 +335,27 @@ def build(S, now=None):
     g_old = bd.get("asof", "") < (C.tape_day or "") if bd.get("asof") else True
     gcards = "".join(gcard(C, t) for t in ("SPX", "SPY", "QQQ", "NDX"))
     em_rows = ""
+    wem = bd.get("weekly_em") or {}
+    # Friday session bands from the chain snapshot; week bands prefer the Wed close board read to Fri 11/27.
     for key, title in (("daily", "NEXT SESSION"), ("weekly", "WEEK")):
+        if key == "weekly" and wem.get("rows"):
+            ex = wem.get("expiry")
+            lab = wem.get("asof_label") or ""
+            em_rows += f'<p class="sm amb" style="margin:6px 0 0">{title} · to {dlab(ex) if ex else ""}{" · " + E(lab) if lab else ""}</p>'
+            close = bd.get("close") or {}
+            for r in wem["rows"]:
+                sname = r.get("symbol")
+                if sname not in ("SPX", "SPY", "QQQ", "NDX"):
+                    continue
+                lo, hi = r.get("lower"), r.get("upper")
+                if not (lo and hi and hi > lo):
+                    continue
+                spot = close.get(sname) or (C.im_spot(sname) if sname != "NDX" else None)
+                pos = ((spot - lo) / ((hi - lo) or 1) * 100) if spot is not None else 50
+                pct = f'±{r["pct"]:.2f}%' if r.get("pct") is not None else ""
+                em_rows += (f'<div class="em"><b>{sname}</b><div class="bar"><i style="left:{max(0, min(100, pos)):.1f}%"></i></div><span class="r">{lo:,.2f}</span>'
+                            f'<span class="r">{hi:,.2f}</span><span class="r">{pct}</span><span class="r mut"></span></div>')
+            continue
         ex = ((im.get("SPX") or {}).get(key) or {}).get("expiry")
         if C.im_ok and ex:
             em_rows += f'<p class="sm amb" style="margin:6px 0 0">{title} · to {dlab(ex)}</p>'
@@ -349,9 +369,9 @@ def build(S, now=None):
             em_rows += (f'<div class="em"><b>{s}</b><div class="bar"><i style="left:{max(0, min(100, pos)):.1f}%"></i></div><span class="r">{v["lower"]:,.2f}</span>'
                         f'<span class="r">{v["upper"]:,.2f}</span><span class="r">±{v["move_pct"]:.2f}%</span><span class="r mut">±{v["straddle"]:,.2f}{iv}</span></div>')
     im_asof = (C.S.get("im") or {}).get("generated_pt") or ""
-    range_when = (im_asof + " · session still open") if (C.tape_live and im_asof) else (f"{dlab(C.tape_day)} close" if C.tape_day else "awaiting update")
-    em_note = (f'Bands from ATM straddles as of {E(range_when)} (SPX {fnum(C.im_spot("SPX"))} · SPY {fnum(C.im_spot("SPY"))} · QQQ {fnum(C.im_spot("QQQ"))}). '
-               f'Remaining-day bands are from that snapshot, not a full-day range. Not a guaranteed limit.') if C.im_ok else "Expected-move bands awaiting update."
+    range_when = (im_asof + " · session still open") if (C.tape_live and im_asof) else ((wem.get("asof_label") or (f"{dlab(C.tape_day)} close" if C.tape_day else "awaiting update")))
+    em_note = (f'Week bands are the Wed 11/25 close read to Fri 11/27. Friday session bands are from the {E(im_asof) or "chain"} snapshot '
+               f'(SPX {fnum(C.im_spot("SPX"))} · SPY {fnum(C.im_spot("SPY"))} · QQQ {fnum(C.im_spot("QQQ"))}). Not a guaranteed limit.') if (C.im_ok or wem.get("rows")) else "Expected-move bands awaiting update."
     vx = sw.get("vix") or {}
     vv = C.vix["last"] if C.vix else None
     if vv is not None and vx.get("wall"):

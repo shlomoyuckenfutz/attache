@@ -108,30 +108,33 @@ PRIOR_DAY_NOTES = {
 PLAN_WEEK_FWD = [dt.date(2026, 11, 23), dt.date(2026, 11, 24), dt.date(2026, 11, 25),
                  dt.date(2026, 11, 27)]
 FWD_ZONES = {
-  "spy": {"bull": (718.66, 727.98), "bear": (695.45, 686.75),
-          "bull_lab": "over 718.66 → Monday high 727.98", "bear_lab": "below 695.45 → 686.75 Friday 11/20 low"},
+  "spy": {"bull": (718.0, 727.98), "bear": (695.45, 686.75),
+          "bull_lab": "over 718 call wall → Monday high 727.98", "bear_lab": "below 695.45 → 686.75 Friday 11/20 low"},
   "es":  {"bull": (7211.0, 7305.0), "bear": (6982.0, 6898.0),
-          "bull_lab": "reclaim 7211–23 → 7240, then 7305–09", "bear_lab": "lose 6982–93 → 6960–66, then 6897"},
+          "bull_lab": "reclaim 7211–23 → 7240, 7272–78, then 7305–09", "bear_lab": "lose 7160–65, then 6982–93 → 6897"},
   "qqq": None,
   "nq":  None,
 }
 FWD_SPEC = {
- "es": dict(sym="ES=F", title="/ES  ·  week of Nov 23 (midweek update · Wed 11/25 11:28 AM PT)", fut=True, lv=[
-   (7305,"R","7305–09 control · Mon high 7313"),(7240,"R","7240–45 Tue high"),(7217,"R","7211–23 · Wed high 7211"),
-   (7122,"R","7120–25"),(7086,"R","7086"),(7027,"R","7025–29"),
+ "es": dict(sym="ES=F", title="/ES  ·  week of Nov 23 (Wed 11/25 close · Thu 11/26 4:04 PM PT)", fut=True, lv=[
+   (7305,"R","7305–09 control · Mon high 7313"),(7277,"R","7272–78 Friday flip ≈ 7272.5"),(7240,"R","7240–45 Tue high"),
+   (7217,"R","7211–23 · Wed high 7214 · call wall ≈ 7213.5"),(7163,"S","7160–65 Friday 7150 wall ≈ 7163.5"),
+   (7122,"S","7120–25"),(7086,"S","7086"),(7027,"S","7025–29"),
    (6982,"S","6982–93 Wed low / Sunday FB"),(6963,"P","6960–66 unused pivot"),(6898,"S","6897–98 Fri 11/20 low"),(6846,"S","6841–51")],
-   zones=[], bull=[7217,7240,7305], bear=[6982,6963,6898]),
+   zones=[], bull=[7217,7240,7277,7305], bear=[7163,6982,6963,6898]),
  "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 23 (levels · no paths)", fut=True, lv=[
-   (27137,"R","27137 Mon high"),(26509.75,"R","26510 Tue high"),(26061,"P","26061 Wed last"),
+   (27137,"R","27137 Mon high"),(26509.75,"R","26510 Tue high"),
    (25027.5,"S","25027 Wed low"),(24976.5,"S","24976.5 Fri 11/20 low")],
    zones=[], bull=[], bear=[]),
- "spy": dict(sym="SPY", title="SPY  ·  week of Nov 23 (midweek update · Wed 11/25 11:28 AM PT)", fut=False, lv=[
-   (727.98,"R","727.98 Mon high"),(724.97,"R","724.97 original week high"),(718.66,"R","718.66 dark-pool line"),
-   (716.99,"P","716.99 Wed last"),(700,"R","700 put wall (Wed morning)"),(695.45,"S","695.45 Wed low"),(686.75,"S","686.75 Fri 11/20 low"),(675,"S","675")],
-   zones=[], bull=[716.99,718.66,727.98], bear=[716.99,695.45,686.75]),
+ "spy": dict(sym="SPY", title="SPY  ·  week of Nov 23 (Wed 11/25 close · Thu 11/26 4:04 PM PT)", fut=False, lv=[
+   (727.98,"R","727.98 Mon high"),(721.5,"R","721.5 Friday flip"),(718.66,"R","718.66 dark-pool line"),
+   (718,"R","718 Friday call wall / biggest strike"),(716.70,"P","716.70 Wed close"),
+   (715.02,"S","715.02 nearest dark-pool line"),(700,"S","700 put wall"),(695.45,"S","695.45 Wed low"),(686.75,"S","686.75 Fri 11/20 low")],
+   zones=[], bull=[716.70,718,727.98], bear=[716.70,700,686.75]),
  "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 23 (levels · no paths)", fut=False, lv=[
-   (657.53,"R","657.53 Mon high"),(634.66,"R","634.66 Wed high"),(632.99,"P","632.99 Wed last"),
-   (607.76,"S","607.76 Wed low"),(606.23,"S","606.23 Fri 11/20 low"),(600,"S","600")],
+   (657.53,"R","657.53 Mon high"),(650,"R","650 Friday call wall"),(647.7,"R","647.7 Friday flip"),
+   (640,"R","640 biggest strike"),(633.93,"P","633.93 Wed close"),
+   (607.76,"S","607.76 Wed low"),(606.23,"S","606.23 Fri 11/20 low")],
    zones=[], bull=[], bear=[]),
 }
 FWD_EVENT = {  # Wed: PCE · GDP · claims 5:30 AM PT — edge ticks only
@@ -145,7 +148,7 @@ FWD_DAY_NOTES = {
   2: "PCE·GDP",
   3: "½ day",
 }
-FWD_BOX = ["bias: two-sided · 6982–93 is the line · 7211–23 caps a bounce · 7305–09 is still the control line",
+FWD_BOX = ["bias: two-sided · 7160–65 is the nearby line · 7211–23 first upside · 7305–09 is still the control line",
            "catalysts: Thu closed · Fri closes 10:00 AM PT (weekly expiration) · jobs report Fri Dec 4"]
 
 def _download(sym):

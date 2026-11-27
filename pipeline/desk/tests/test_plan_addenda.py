@@ -17,10 +17,10 @@ class Daily(unittest.TestCase):
         self.assertEqual(PD, "2026-11-27")
         t = txt(DB)
         self.assertIn("HOLIDAY CLOSE, CATALYSTS &amp; SPY LEVELS · FRI 11/27", DB)
-        for s in ["SPX 7,185.16", "SPY 716.99", "QQQ 632.99", "ES 7197", "VIX 27.97",
-                  "Monday ES high 7313.25", "Wednesday low ES 6982.50", "GDP 4.3%", "core PCE 3.3%",
-                  "Thursday closed", "Friday stocks close 10:00 AM PT", "718.66 nearest dark-pool line",
-                  "SPY 695.45 Wednesday low", "686.75 Friday 11/20 low", "jobs report Fri Dec 4"]:
+        for s in ["SPX 7,182.78", "SPY 716.70", "QQQ 633.93", "ES 7196.75", "VIX 26.81",
+                  "Monday ES high 7313.25", "flushed to 6982.50", "GDP 4.3%", "core PCE 3.3%",
+                  "Thursday closed", "Friday stocks close 10:00 AM PT", "715.02 nearest dark-pool line",
+                  "695.45 Wednesday low", "686.75 Friday 11/20 low", "jobs report Fri Dec 4"]:
             self.assertIn(s, t, s)
 
     def test_hidden_on_other_sessions(self):
@@ -34,9 +34,9 @@ class Weekly(unittest.TestCase):
         wb = A.weekly_block(DATA, "2026-11-23")
         t = txt(wb)
         self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 23–27", wb)
-        for s in ["ES accepted over 7211–23, then 7240–45", "VIX 27.97", "last posted walls were Friday",
+        for s in ["ES accepted over 7211–23, then 7240–45", "VIX 26.81",
                   "Wed 5:30 AM PT: GDP 4.3%", "Thu 11/26 closed", "stocks close 10:00 AM PT", "8 of the last 9 years",
-                  "SPX 6562.72–7258.08 (±5.03%)"]:
+                  "SPX 7066.71–7298.85 (±1.62%)"]:
             self.assertIn(s, t, s)
         self.assertEqual(A.weekly_block(DATA, "2026-11-27"), wb)
         self.assertNotIn("backwardation", wb.lower()); self.assertNotIn("contango", wb.lower())
@@ -50,7 +50,7 @@ class Weekly(unittest.TestCase):
 class Wording(unittest.TestCase):
     def test_biggest_strike_not_called_a_put_wall(self):
         t = txt(DB)
-        self.assertIn("SPY 700 (put wall as posted Wednesday morning)", t)
+        self.assertIn("700 put wall", t)
         self.assertNotRegex(t, r"Friday.{0,40}700 put wall|Fri 11/20.{0,40}put wall 700")
 
     def test_stale_spy_awaiting_line_gone_from_source_and_page(self):
