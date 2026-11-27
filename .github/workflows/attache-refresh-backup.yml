@@ -1,0 +1,55 @@
+name: attache-refresh-backup
+
+# Backup trigger for attache-refresh. GitHub drops or delays many scheduled runs (11/26–11/27: about one in ten
+# fired, often ~50 minutes late), so this watchdog does not rely on firing often: each run stays up for almost six
+# hours and every 5 minutes checks when attache-refresh last started. When that is too old it dispatches
+# attache-refresh (dispatches are not dropped like schedules):
+#   - more than 25 minutes during the US market window (6:00 AM–1:30 PM PT, Mon–Fri)
+#   - more than 75 minutes otherwise
+# It never refreshes anything itself; the refresh runs in attache-refresh (its own concurrency group, no overlap).
+# Several sparse schedules so at least one start lands each day; a start while one is alive just waits its turn.
+on:
+  schedule:
+    - cron: '23 1,7,13,19 * * *'
+    - cron: '43 4,10,16,22 * * *'
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+concurrency:
+  group: attache-refresh-backup
+  cancel-in-progress: false
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - name: Dispatch attache-refresh whenever its last run is stale
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -uo pipefail
+          end=$(( $(date -u +%s) + 345*60 ))
+          while [ "$(date -u +%s)" -lt "$end" ]; do
+            last=$(gh run list -R "$REPO" --workflow attache-refresh.yml --limit 1 --json createdAt -q '.[0].createdAt // ""' 2>/dev/null || echo "")
+            busy=$(gh run list -R "$REPO" --workflow attache-refresh.yml --limit 5 --json status \
+                   -q '[.[] | select(.status=="queued" or .status=="in_progress" or .status=="waiting" or .status=="pending")] | length' 2>/dev/null || echo 0)
+            now=$(date -u +%s)
+            if [ -n "$last" ]; then age=$(( now - $(date -u -d "$last" +%s) )); else age=999999; fi
+            dow=$(TZ=America/Los_Angeles date +%u); hm=$((10#$(TZ=America/Los_Angeles date +%H%M)))
+            if [ "$dow" -le 5 ] && [ "$hm" -ge 600 ] && [ "$hm" -le 1330 ]; then max=1500; else max=4500; fi
+            if [ "${busy:-0}" -eq 0 ] && [ "$age" -gt "$max" ]; then
+              if gh workflow run attache-refresh.yml -R "$REPO" --ref main; then
+                echo "$(date -u +%FT%TZ) dispatched attache-refresh (last run ${last:-none}, ${age}s old, limit ${max}s)"
+              else
+                echo "$(date -u +%FT%TZ) dispatch refused; will retry"
+              fi
+            else
+              echo "$(date -u +%FT%TZ) ok (last run ${last:-none}, ${age}s old, limit ${max}s, active ${busy:-0})"
+            fi
+            sleep 300
+          done

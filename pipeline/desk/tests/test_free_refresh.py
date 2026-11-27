@@ -30,9 +30,11 @@ def frames(day, n):
 
 class OrbLive(unittest.TestCase):
     DAY = PREV["asof"]
+    # the morning after the published session (was a fixed 11/18 date, which broke once the inputs moved past it)
+    AFTER = datetime.combine(date.fromisoformat(PREV["asof"]) + timedelta(days=1), datetime.min.time(), ET).replace(hour=6)
 
     def test_full_session_reproduces_nightly_rebuild(self):
-        new = orb_live.build(frames(self.DAY, 390), copy.deepcopy(PREV), datetime(2026, 11, 18, 6, 0, tzinfo=ET))
+        new = orb_live.build(frames(self.DAY, 390), copy.deepcopy(PREV), self.AFTER)
         for k in ("SPY", "QQQ", "ES", "SPX"):
             for f in ("H", "L", "status", "entry", "stop", "target", "R", "result", "exits"):
                 self.assertEqual(new["orb"][k].get(f), PREV["orb"][k].get(f), (k, f))
@@ -64,7 +66,7 @@ class OrbLive(unittest.TestCase):
         for s in ("SPY", "QQQ"):  # pretend the last published day is the one before
             prev["eq"][s]["d"].pop(); prev["eq"][s]["r"].pop()
         prev["asof"] = "2026-11-16"
-        new = orb_live.build(frames(self.DAY, 390), prev, datetime(2026, 11, 18, 6, 0, tzinfo=ET))
+        new = orb_live.build(frames(self.DAY, 390), prev, self.AFTER)
         self.assertEqual(new["eq"], PREV["eq"])
         self.assertEqual(new["eq"]["SPY"]["stats"]["tot_r"], PREV["eq"]["SPY"]["stats"]["tot_r"])
 

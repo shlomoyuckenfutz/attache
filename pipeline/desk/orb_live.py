@@ -15,6 +15,9 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from market_calendar import close_minute  # noqa: E402
+
 ET = ZoneInfo("America/New_York")
 RTH0, RTH1 = 570, 960          # 09:30 and 16:00 ET in minutes
 ENTRY_LAST, EXIT_LAST = 331, 380
@@ -148,7 +151,7 @@ def build(frames, prev, now=None):
     if not days:
         return None
     day = days[-1]
-    complete = day < now.date() or now.hour * 60 + now.minute >= RTH1 + 5
+    complete = day < now.date() or now.hour * 60 + now.minute >= close_minute(day) + 5  # 1:05 PM ET on early-close days
     orb = {}
     for _, label, key in SYMS:
         bars = session_bars(frames.get(key), day)

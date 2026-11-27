@@ -4,11 +4,13 @@ on:
   schedule:
     # US market window every 15 min: 6:00 AM–1:15 PM PT Mon–Fri.
     # PST (UTC-8, after fall-back): 14:00–21:15 UTC. Re-bump to 13:00–20:15 UTC when PDT returns (spring forward).
-    # Off the :00/:15/:30/:45 marks on purpose: GitHub drops or delays many top-of-hour scheduled runs.
-    - cron: '2,17,32,47 14-20 * * 1-5'   # 14:02–20:47 UTC = 6:02–12:47 PT (PST)
-    - cron: '2,17 21 * * 1-5'             # 21:02 and 21:17 UTC = 1:02 and 1:17 PM PT (PST)
+    # Well off the :00/:15/:30/:45 marks: GitHub drops or delays many scheduled runs near the top of the hour
+    # (11/26–11/27: about one in ten scheduled runs fired, often ~50 min late). Backup: attache-refresh-backup.yml
+    # dispatches this workflow whenever the last run is older than its window.
+    - cron: '11,26,41,56 14-20 * * 1-5'  # 14:11–20:56 UTC = 6:11 AM–12:56 PM PT (PST)
+    - cron: '11,26 21 * * 1-5'            # 21:11 and 21:26 UTC = 1:11 and 1:26 PM PT (PST)
     # Hourly otherwise (nights, early morning, weekends). Overlaps market window; concurrency dedupes.
-    - cron: '7 * * * *'
+    - cron: '37 * * * *'
   workflow_dispatch:
 
 concurrency:

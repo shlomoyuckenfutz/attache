@@ -60,10 +60,41 @@ def fetch_json(url, headers=None, timeout=30):
             last = e; time.sleep(1.2 + i)
     raise last
 
+# Free fallback (sweep 2026-11-27): CBOE's delayed-quotes CDN has refused the runners (HTTP 403) since 11/19. When it does,
+# build the same payload from Yahoo's free chains (free_gex.fetch_yf) for a limited board and the nearest expiries only,
+# so the run fits the 15-minute refresh. Chips outside this set stay "unavailable" until CBOE answers again.
+YF_SYM = {"SPXW": "^SPX", "SPX": "^SPX", "NDXP": "^NDX", "NDX": "^NDX"}
+YF_BOARD = ["SPY", "QQQ", "SPXW", "IWM", "NDXP", "DIA", "SMH", "TLT", "GLD", "IBIT", "NVDA", "AAPL", "TSLA",
+            "MSFT", "AMZN", "META", "GOOGL", "AVGO", "AMD", "PLTR", "SPX"]
+YF_EXPS = int(os.environ.get("YF_EXPS", "6"))
+YF_DAYS = int(os.environ.get("YF_DAYS", "45"))
+CBOE_DOWN = {"why": None}
+
+
+def _fetch_yf(sym, root):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    import free_gex
+    ys = YF_SYM.get(sym, sym)
+    if root == "SPX":  # AM-settled monthlies only list on the third Friday
+        return free_gex.fetch_yf(sym, max_days=60, ysym=ys, only={next_monthly(datetime.now(ET).date())})
+    return free_gex.fetch_yf(sym, max_days=YF_DAYS, ysym=ys, max_exps=YF_EXPS)
+
+
 def fetch_chain(sym: str):
     path, root = cboe_key(sym)
-    raw = fetch_json(URL.format(path))
-    return raw, root
+    if not CBOE_DOWN["why"]:
+        try:
+            req = urllib.request.Request(URL.format(path), headers={"User-Agent": "Mozilla/5.0 (compatible; AttacheDesk/1.0)"})
+            return json.loads(urllib.request.urlopen(req, timeout=20).read()), root
+        except Exception as e:
+            if getattr(e, "code", None) in (401, 403, 429):
+                CBOE_DOWN["why"] = str(e)  # refused: stop asking for the rest of this run
+            cboe = e
+    else:
+        cboe = CBOE_DOWN["why"]
+    if sym not in YF_BOARD:
+        raise RuntimeError(f"cboe: {cboe}; not in the free fallback board")
+    return _fetch_yf(sym, root), root
 
 def norm_pdf(x): return math.exp(-0.5*x*x)/math.sqrt(2*math.pi)
 def norm_cdf(x): return 0.5*(1+math.erf(x/math.sqrt(2)))
@@ -368,12 +399,18 @@ def compute_symbol(sym: str, now: datetime):
     }
     return pack
 
+def _close_minute(day):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from market_calendar import close_minute
+    return close_minute(day)
+
 def market_state(now):
     e=now.astimezone(ET); d=e.weekday(); t=e.hour*60+e.minute
     if d>=5: return "closed"
-    if 570<=t<960: return "open"
+    cm=_close_minute(e.date())  # 13:00 ET on early-close days
+    if 570<=t<cm: return "open"
     if 240<=t<570: return "pre"
-    if 960<=t<1200: return "ah"
+    if cm<=t<1200: return "ah"
     return "closed"
 
 def fetch_bars(sym, key, sec, timeframe="5Min", limit=100):
@@ -672,7 +709,7 @@ def main():
         },
         "board": BOARD,
         "trinity": trinity,
-        "errors": errors,
+        "errors": {k: "unavailable" for k in errors},  # details go to the job log only
         "histories": prior_hist,
         "spots": {s: results[s]["spot"] for s in results},
         "summaries": {

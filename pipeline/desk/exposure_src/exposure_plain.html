@@ -469,7 +469,7 @@ table.hm tr.em-bound td.stk{color:var(--amb)}
         <span class="tagpill">Beach Ball</span><span class="tagpill">Rainbow Road</span> Else <b>NO CLEAR SETUP</b>.
       </p>
       <h3>Views</h3>
-      <p><b>Heatmap</b> · <b>Attaché</b> · <b>Scanner</b> · <b>Recap</b>. Data ~15-min delayed · CBOE. SPXW/NDXP = weekly roots. Attaché charts use <b>America/New_York (ET)</b> session times.</p>
+      <p><b>Heatmap</b> · <b>Attaché</b> · <b>Scanner</b> · <b>Recap</b>. Data ~15-min delayed · free option chains; the board covers the major index, ETF and mega-cap names. SPXW/NDXP = weekly roots. Attaché charts use <b>America/New_York (ET)</b> session times.</p>
     </div>
   </section>
 
@@ -650,7 +650,7 @@ table.hm tr.em-bound td.stk{color:var(--amb)}
           $('hmSetupD').textContent='CBOE CORS OK for '+sym+', but live client compute is not enabled in TEST. Ask collector to add this ticker on demand.';
           $('loadNote').textContent='Free-text: CBOE reachable · run collector for '+sym+' to materialize a pack.';
         }catch(e2){
-          $('hmSetupD').textContent='Ticker not in board · CBOE client fetch unavailable ('+e2.message+'). Run collector on demand to add it.';
+          $('hmSetupD').textContent='Ticker not in board right now · it appears after the next data update that covers it.';
           $('loadNote').textContent='Free-text unavailable (CORS/network). Collector on-demand required.';
         }
         state.pack=null; return;

@@ -27,22 +27,26 @@ def fetch(t):
     except Exception as ex:
         raise RuntimeError(f"cboe: {last}; yahoo: {ex}")
 YF = {"SPY": "SPY", "QQQ": "QQQ", "SPX": "^SPX"}
-EARLY_CLOSE = {date(2026, 11, 27), date(2026, 12, 24), date(2027, 11, 26), date(2027, 12, 24)}  # 1:00 PM ET closes
-def fetch_yf(t, max_days=35):
+sys.path.insert(0, str(RES))
+from market_calendar import EARLY_CLOSE, close_minute  # noqa: E402  (1:00 PM ET closes, NYSE calendar)
+def fetch_yf(t, max_days=35, ysym=None, max_exps=None, only=None):
     """Same shape as the CBOE payload (data.current_price + data.options[] with OCC symbols, OI, IV, greeks),
     built from Yahoo's free option chains. Greeks are Black-Scholes from Yahoo's IV (r=0)."""
     import logging, yfinance as yf
     logging.getLogger("yfinance").setLevel(logging.CRITICAL)
-    tk = yf.Ticker(YF[t]); h = tk.history(period="5d", interval="1d")
+    tk = yf.Ticker(ysym or YF[t]); h = tk.history(period="5d", interval="1d")
     S = float(h["Close"].iloc[-1]); prev_c = float(h["Close"].iloc[-2]) if len(h) > 1 else S
-    today = datetime.now(ET).date(); opts = []
+    today = datetime.now(ET).date(); opts = []; used = 0
     for e in tk.options:
         ex = datetime.strptime(e, "%Y-%m-%d").date()
         if ex < today or (ex - today).days > max_days: continue
+        if only is not None and ex not in only: continue
+        if max_exps and used >= max_exps: break
         ch = tk.option_chain(e)
         nm = datetime.now(ET).hour * 60 + datetime.now(ET).minute
-        if ex == today and nm >= (13 * 60 + 5 if today in EARLY_CLOSE else 16 * 60 + 5):
+        if ex == today and nm >= close_minute(today) + 5:
             continue  # today's expiry has settled; Yahoo keeps stale quotes on it after the close
+        used += 1
         T = max((datetime.combine(ex, datetime.min.time(), ET).replace(hour=16) - datetime.now(ET)).total_seconds(), 1800) / (365 * 86400)
         for df, cp in ((ch.calls, "C"), (ch.puts, "P")):
             df = df.fillna({"bid": 0, "ask": 0, "lastPrice": 0, "change": 0, "volume": 0, "openInterest": 0, "impliedVolatility": 0})

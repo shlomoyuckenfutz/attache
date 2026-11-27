@@ -8,7 +8,9 @@ from __future__ import annotations
 import html, json, os, re, shutil, subprocess, sys
 from pathlib import Path
 import dark_pool_html as _dp
-from datetime import datetime
+from datetime import date, datetime
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from market_calendar import is_fomc_decision_day  # noqa: E402
 from zoneinfo import ZoneInfo
 
 PT = ZoneInfo("America/Los_Angeles")
@@ -231,7 +233,16 @@ def catalysts(plan):
     acts = plan.get("actionable") or []
     out = []
     bias = (plan.get("bias") or {}).get("reason") or ""
-    if re.search(r"FOMC", bias + " ".join(acts), re.I):
+    # The generic decision line is for decision day only. A plan that merely mentions the next meeting
+    # ("FOMC Dec 8–9") must not get it (sweep 2026-11-27: Mon 11/30 showed a false decision line).
+    try:
+        pday = date.fromisoformat(str(plan.get("date"))[:10])
+    except ValueError:
+        pday = None
+    fomc = is_fomc_decision_day(pday)
+    if fomc is None:  # past the known calendar: only an explicit same-day mention counts
+        fomc = bool(re.search(r"FOMC (decision )?(today|day)\b|today'?s FOMC|Fed decision today", bias + " ".join(acts), re.I))
+    if fomc:
         out.append("FOMC decision <b>2:00</b> PM ET / <b>11:00</b> AM PT — first reaction often the trap; size light")
     for a in acts:
         if re.search(r"MSFT|GOOG|FDX|INTC|AMZN|SNDK|earnings|GDP|PCE|Claims|ECI|CPI|PPI|auction|minutes|housing|permits|VIX|TJX|pending|bond sale|Waller|Michigan|Cook|options expiration|PMI|Williams|Beige|Thanksgiving|jobs report|Employment situation|ISM|ADP", a, re.I):

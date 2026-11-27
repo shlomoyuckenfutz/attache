@@ -13,9 +13,12 @@ HERE=os.path.dirname(os.path.abspath(__file__)); OUT=os.path.join(HERE,"implied_
 # Accept ALPACA_SECRET_KEY as alias for ALPACA_API_SECRET.
 if os.environ.get("ALPACA_SECRET_KEY") and not os.environ.get("ALPACA_API_SECRET"):
     os.environ["ALPACA_API_SECRET"] = os.environ["ALPACA_SECRET_KEY"]
-if not os.environ.get("ALPACA_API_KEY") or not (os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")):
-    raise SystemExit("ALPACA_API_KEY and ALPACA_SECRET_KEY (or ALPACA_API_SECRET) required")
-H={"APCA-API-KEY-ID":os.environ["ALPACA_API_KEY"],"APCA-API-SECRET-KEY":os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")}
+# sweep 2026-11-27: keys are optional; without them (or when the indicative feed has no two-sided quotes) the free
+# Yahoo option chains are used, same as free_gex.py.
+_KEY=os.environ.get("ALPACA_API_KEY"); _SEC=os.environ.get("ALPACA_API_SECRET") or os.environ.get("ALPACA_SECRET_KEY")
+H={"APCA-API-KEY-ID":_KEY,"APCA-API-SECRET-KEY":_SEC} if (_KEY and _SEC) else None
+import sys; sys.path.insert(0,os.path.abspath(os.path.join(HERE,"..","..")))
+from market_calendar import close_minute
 D="https://data.alpaca.markets"; UA={"User-Agent":"Mozilla/5.0"}
 YSYM={"SPY":"SPY","QQQ":"QQQ","SPX":"^SPX"}; OROOT={"SPY":["SPY"],"QQQ":["QQQ"],"SPX":["SPXW","SPX"]}
 
@@ -26,7 +29,7 @@ def yahoo_chart(sym,rng="10d"):
 
 def spot_and_bars(t):
     last,bars=yahoo_chart(YSYM[t])
-    if t!="SPX":
+    if t!="SPX" and H:
         try:
             s=requests.get(f"{D}/v2/stocks/{t}/snapshot",headers=H,params={"feed":"iex"},timeout=15).json()
             last=s["latestTrade"]["p"]
@@ -34,7 +37,7 @@ def spot_and_bars(t):
     return float(last),bars
 
 def expiries(now):
-    d=now.date(); after=now.hour>=16
+    d=now.date(); after=now.hour*60+now.minute>=close_minute(d)
     daily=d if not after and d.weekday()<5 else None
     if daily is None:
         daily=d+dt.timedelta(1)
@@ -44,6 +47,7 @@ def expiries(now):
     return daily,fri
 
 def alpaca_chain(t,exp,spot):
+    if not H: return None,None
     w=max(spot*0.01,2)
     for root in OROOT[t]:
         snaps={};tok=None
@@ -62,16 +66,25 @@ def alpaca_chain(t,exp,spot):
     return None,None
 
 def yahoo_chain(t,exp,spot):
-    s=requests.Session(); s.headers.update(UA); s.get("https://fc.yahoo.com",timeout=10)
-    crumb=s.get("https://query1.finance.yahoo.com/v1/test/getcrumb",timeout=10).text
-    ts=int(dt.datetime(exp.year,exp.month,exp.day,tzinfo=dt.timezone.utc).timestamp())
-    o=s.get(f"https://query2.finance.yahoo.com/v7/finance/options/{YSYM[t]}",params={"date":ts,"crumb":crumb},timeout=15).json()["optionChain"]["result"][0]["options"][0]
-    rows={}
-    for cp,L in (("C",o["calls"]),("P",o["puts"])):
-        for x in L:
-            if x.get("bid") and x.get("ask"): rows.setdefault(x["strike"],{})[cp]={"mid":(x["bid"]+x["ask"])/2,"bid":x["bid"],"ask":x["ask"],"iv":x.get("impliedVolatility")}
+    """Free Yahoo chain for one expiry (yfinance). Mid = (bid+ask)/2; when a side has no quote (Yahoo zeroes them on
+    some expiries outside the session) the last trade stands in, so a straddle is still read from real prints."""
+    import logging, yfinance as yf
+    logging.getLogger("yfinance").setLevel(logging.CRITICAL)
+    tk=yf.Ticker(YSYM[t]); e=exp.isoformat()
+    if e not in tk.options: return None,None
+    ch=tk.option_chain(e); rows={}; last_used=False
+    for cp,df in (("C",ch.calls),("P",ch.puts)):
+        df=df.fillna({"bid":0,"ask":0,"lastPrice":0,"impliedVolatility":0})
+        for x in df.itertuples():
+            if t=="SPX" and not str(x.contractSymbol).startswith("SPXW"): continue
+            if abs(x.strike-spot)>max(spot*0.02,3): continue
+            if x.bid>0 and x.ask>0: mid=(x.bid+x.ask)/2
+            elif x.lastPrice>0: mid=float(x.lastPrice); last_used=True
+            else: continue
+            iv=float(x.impliedVolatility) if x.impliedVolatility>0.01 else None
+            rows.setdefault(float(x.strike),{})[cp]={"mid":mid,"bid":float(x.bid),"ask":float(x.ask),"iv":iv}
     rows={k:x for k,x in rows.items() if "C" in x and "P" in x}
-    return (rows,"fallback") if rows else (None,None)
+    return (rows,"free chain"+(" (last trade)" if last_used else "")) if rows else (None,None)
 
 def straddle(t,exp,spot,now):
     rows,src=None,None
@@ -82,7 +95,7 @@ def straddle(t,exp,spot,now):
         except Exception as e: return {"error":f"no chain ({src}; free_data {e})"}
     if not rows: return {"error":f"no two-sided ATM quotes for {exp} ({src})"}
     k=min(rows,key=lambda s:abs(s-spot)); c,p=rows[k]["C"],rows[k]["P"]; st=c["mid"]+p["mid"]
-    close=dt.datetime(exp.year,exp.month,exp.day,16,tzinfo=ET); dte=max((close-now).total_seconds()/86400,1/24)
+    cm=close_minute(exp); close=dt.datetime(exp.year,exp.month,exp.day,cm//60,cm%60,tzinfo=ET); dte=max((close-now).total_seconds()/86400,1/24)
     ivs=[x for x in (c["iv"],p["iv"]) if x]; iv=sum(ivs)/len(ivs) if ivs else None
     return {"expiry":exp.isoformat(),"strike":k,"call_mid":round(c["mid"],2),"put_mid":round(p["mid"],2),"straddle":round(st,2),
             "straddle_085":round(0.85*st,2),"atm_iv":round(iv,4) if iv else None,"dte_cal":round(dte,3),
@@ -94,7 +107,7 @@ def run():
         try: spot,bars=spot_and_bars(t)
         except Exception as e: res[t]={"error":f"spot {e}"}; continue
         rk="spot at calc"
-        if (now.hour>=16 or now.weekday()>=5) and bars and bars[-1][0]<=now.date():
+        if (now.hour*60+now.minute>=close_minute(now.date()) or now.weekday()>=5) and bars and bars[-1][0]<=now.date():
             spot=bars[-1][2]; rk=f"{bars[-1][0]} regular close"   # after the bell: anchor on the close, like posted levels
         d=straddle(t,dexp,spot,now); w=straddle(t,wexp,spot,now)
         if "straddle" in d: d.update(ref=round(spot,2),ref_kind=rk,upper=round(spot+d["straddle"],2),lower=round(spot-d["straddle"],2),move_pct=round(100*d["straddle"]/spot,3))
