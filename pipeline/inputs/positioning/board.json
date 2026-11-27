@@ -1,265 +1,250 @@
 {
   "schema": 1,
-  "asof": "2026-11-25",
-  "asof_label": "Wed 11/25 close",
-  "note": "Options positioning read at the Wed 11/25 close (US cash market closed Thu 11/26 for Thanksgiving). Descriptive only, not a forecast. 'Biggest strike' = the heaviest-gamma strike for that expiry. Regime = price at the close vs that expiry's flip (NEG where no flip was shown: negative gamma the whole way). All expiries combined: SPX, SPY and QQQ are negative gamma with no all-dates flip. SPX all-dates net GEX −$53.5B, biggest strike 7000 (leans on the 12/18 expiry; without that expiry the strongest magnet is 7150 on 11/27), call wall 7650. SPX 11/27: call wall 7200, put wall and biggest strike 7150, flip 7259 (price below). SPY all-dates net −$7.9B, biggest strike and put wall 700, call wall 750, flip 741. SPY 11/27: call wall and biggest strike 718, put wall 700, flip 721.5. QQQ all-dates net −$4.3B, biggest strike 640, call wall 642. QQQ 11/27: call wall 650, biggest strike 640, flip 647.7, put wall 640. NDX 11/27 net −$68.8M, call wall 26000, biggest strike 26025, flip 26301.3. NDX 12/04 is positive gamma (price above its 25577 flip). VIX closed 26.81 in positive gamma; biggest strike and call wall 30, boxed 18–30. ES has no index board; ES levels are SPX + 13.5 (Wed 11/25 regular-session median through 11:18 AM PT). Official ES regular-session close was 7196.75 (SPX +13.97 at the close).",
+  "asof": "2026-11-27",
+  "asof_label": "Fri 11/27 close",
+  "note": "Options positioning read from free delayed option chains after the Fri 11/27 early close (open interest as last published; it refreshes before Monday's open, so walls can move). Descriptive only, not a forecast. 'Biggest strike' = the heaviest-gamma strike for that expiry. Put wall = heaviest put-gamma strike at or below price. Regime = dealer gamma at the close price (NEG = negative). All expiries combined: SPX, SPY and QQQ are still negative gamma, with price under every all-dates flip. SPX all-dates net −$20.9B, biggest strike 7400, call wall 7600, flip ≈ 7457.5. Monday 11/30: call wall 7300, put wall 7275, flip ≈ 7340. Week (12/04): call wall 7300, flip ≈ 7412.6. SPY all-dates net −$1.6B, call wall 730, put wall 720, flip ≈ 738.3. Monday: call wall and biggest strike 730, put wall 724, flip ≈ 737.3. Week (12/04): call wall 730, put wall 720, flip ≈ 732.5. QQQ all-dates net −$666M, call wall and biggest strike 650, put wall 640, flip ≈ 661.7. Monday: call 650, put 640, flip ≈ 651.7 (price just under). VIX closed 23.81; December open interest still boxes it 18–30 (biggest call 30, biggest puts 17–18). ES has no index board; ES levels are SPX + 11.75 (Fri 11/27 regular-session median). ES closed 7308.25 at 10:15 AM PT.",
   "close": {
-    "SPX": 7182.78,
-    "SPY": 716.7,
-    "QQQ": 633.93,
-    "NDX": 25839.3
+    "SPX": 7297.49,
+    "SPY": 728.32,
+    "QQQ": 650.99,
+    "NDX": 26726.39
   },
   "basis": {
-    "ES_minus_SPX": 13.5,
+    "ES_minus_SPX": 11.75,
     "NQ_minus_NDX": null
   },
   "expiries": [
-    "2026-11-27",
+    "2026-11-30",
     "2026-12-04",
     "2026-12-18"
   ],
   "levels": {
     "SPX": {
-      "2026-11-27": {
-        "flip": 7259,
-        "magnet": 7150,
-        "put_wall": 7150,
-        "call_wall": 7200,
-        "net_gex": "-$5.0B",
+      "2026-11-30": {
+        "flip": 7340.2,
+        "magnet": 7400.0,
+        "put_wall": 7275.0,
+        "call_wall": 7300.0,
+        "net_gex": "-$945.1M",
         "regime": "NEG"
       },
       "2026-12-04": {
-        "flip": 7391.2,
-        "magnet": 6950,
-        "put_wall": 6950,
-        "call_wall": 7600,
-        "net_gex": "-$2.3B",
+        "flip": 7412.6,
+        "magnet": 7550.0,
+        "put_wall": 7000.0,
+        "call_wall": 7300.0,
+        "net_gex": "-$1.8B",
         "regime": "NEG"
       },
       "2026-12-18": {
         "flip": null,
-        "magnet": 7000,
-        "put_wall": 7000,
-        "call_wall": 7095,
-        "net_gex": "-$13.5B",
-        "regime": "NEG"
+        "magnet": 7400.0,
+        "put_wall": 6800.0,
+        "call_wall": 7600.0,
+        "net_gex": "-$16.3B",
+        "regime": "NEG",
+        "flip_note": "no flip in range: negative gamma the whole way"
       }
     },
     "SPY": {
-      "2026-11-27": {
-        "flip": 721.5,
-        "magnet": 718,
-        "put_wall": 700,
-        "call_wall": 718,
-        "net_gex": "-$343.0M",
+      "2026-11-30": {
+        "flip": 737.3,
+        "magnet": 730.0,
+        "put_wall": 724.0,
+        "call_wall": 730.0,
+        "net_gex": "-$649.1M",
         "regime": "NEG"
       },
       "2026-12-04": {
-        "flip": 731.1,
-        "magnet": 700,
-        "put_wall": 700,
-        "call_wall": 722,
-        "net_gex": "-$318.9M",
+        "flip": 732.5,
+        "magnet": 730.0,
+        "put_wall": 720.0,
+        "call_wall": 730.0,
+        "net_gex": "-$78.1M",
         "regime": "NEG"
       },
       "2026-12-18": {
-        "flip": null,
-        "magnet": 700,
-        "put_wall": 700,
-        "call_wall": 750,
-        "net_gex": "-$1.7B",
+        "flip": 749.1,
+        "magnet": 740.0,
+        "put_wall": 720.0,
+        "call_wall": 745.0,
+        "net_gex": "-$1.1B",
         "regime": "NEG"
       }
     },
     "QQQ": {
-      "2026-11-27": {
-        "flip": 647.7,
-        "magnet": 640,
-        "put_wall": 640,
-        "call_wall": 650,
-        "net_gex": "-$497.7M",
+      "2026-11-30": {
+        "flip": 651.7,
+        "magnet": 650.0,
+        "put_wall": 640.0,
+        "call_wall": 650.0,
+        "net_gex": "-$18.6M",
+        "regime": "NEG"
+      },
+      "2026-12-04": {
+        "flip": 651.9,
+        "magnet": 670.0,
+        "put_wall": 630.0,
+        "call_wall": 670.0,
+        "net_gex": "-$6.5M",
+        "regime": "NEG"
+      },
+      "2026-12-18": {
+        "flip": 676.0,
+        "magnet": 600.0,
+        "put_wall": 650.0,
+        "call_wall": 680.0,
+        "net_gex": "-$773.5M",
+        "regime": "NEG"
+      }
+    },
+    "NDX": {
+      "2026-11-30": {
+        "flip": 27730.4,
+        "magnet": 27000.0,
+        "put_wall": 26700.0,
+        "call_wall": 27000.0,
+        "net_gex": "-$381.0M",
         "regime": "NEG"
       },
       "2026-12-04": {
         "flip": null,
-        "magnet": 635,
-        "put_wall": null,
-        "call_wall": 665,
-        "net_gex": "-$332.3M",
-        "regime": "NEG",
-        "put_wall_note": "not posted"
+        "magnet": 25400.0,
+        "put_wall": 25600.0,
+        "call_wall": 25400.0,
+        "net_gex": "+$91.9M",
+        "regime": "POS",
+        "flip_note": "no flip in range: positive gamma the whole way"
       },
       "2026-12-18": {
-        "flip": null,
-        "magnet": 640,
-        "put_wall": null,
-        "call_wall": 679,
-        "net_gex": "-$1.3B",
-        "regime": "NEG",
-        "put_wall_note": "not posted"
-      }
-    },
-    "NDX": {
-      "2026-11-27": {
-        "flip": 26301.3,
-        "magnet": 26025,
-        "put_wall": null,
-        "call_wall": 26000,
-        "net_gex": "-$68.8M",
-        "regime": "NEG",
-        "put_wall_note": "not posted"
-      },
-      "2026-12-04": {
-        "flip": 25577.0,
-        "magnet": 26300,
-        "put_wall": 25600,
-        "call_wall": 26300,
-        "net_gex": null,
-        "regime": "POS"
-      },
-      "2026-12-18": {
-        "flip": null,
-        "magnet": 25850,
-        "put_wall": 27000,
-        "call_wall": 25850,
-        "net_gex": "-$914.4M",
+        "flip": 26955.8,
+        "magnet": 25850.0,
+        "put_wall": 26200.0,
+        "call_wall": 25850.0,
+        "net_gex": "-$108.9M",
         "regime": "NEG"
       }
     }
   },
   "weekly_em": {
-    "expiry": "2026-11-27",
-    "asof_label": "Wed 11/25 close",
+    "expiry": "2026-12-04",
+    "asof_label": "Fri 11/27 close",
     "rows": [
       {
         "symbol": "SPX",
-        "pct": 1.62,
-        "lower": 7066.71,
-        "upper": 7298.85
+        "pct": 2.4,
+        "lower": 7122.59,
+        "upper": 7472.39
       },
       {
         "symbol": "SPY",
-        "pct": 1.72,
-        "lower": 704.35,
-        "upper": 729.05
+        "pct": 2.42,
+        "lower": 710.71,
+        "upper": 745.93
       },
       {
         "symbol": "QQQ",
-        "pct": 2.64,
-        "lower": 617.22,
-        "upper": 650.64
+        "pct": 3.61,
+        "lower": 627.48,
+        "upper": 674.5
       },
       {
         "symbol": "NDX",
-        "pct": 2.82,
-        "lower": 25110.11,
-        "upper": 26568.49
+        "pct": 3.58,
+        "lower": 25770.64,
+        "upper": 27682.14
       }
     ]
   },
   "calendar": [
     {
-      "date": "2026-11-26",
-      "utc": "2026-11-26T08:00:00Z",
-      "pt": "all day",
-      "name": "Thanksgiving",
-      "detail": "US stock market closed"
-    },
-    {
-      "date": "2026-11-27",
-      "utc": "2026-11-27T13:30:00Z",
-      "pt": "5:30 AM PT",
-      "name": "Goods trade",
-      "detail": "Advance goods trade balance and inventories (Oct)"
-    },
-    {
-      "date": "2026-11-27",
-      "utc": "2026-11-27T18:00:00Z",
-      "pt": "10:00 AM PT",
-      "name": "Early close",
-      "detail": "Stocks close early at 10:00 AM PT (1:00 PM ET); weekly options expiration"
-    },
-    {
       "date": "2026-11-30",
       "utc": "2026-11-30T14:45:00Z",
       "pt": "6:45 AM PT",
       "name": "Chicago PMI",
-      "detail": "Chicago PMI (Nov)"
+      "detail": "Chicago PMI (Nov) · forecast 54.6, prior 55.3 · month-end close"
     },
     {
       "date": "2026-12-01",
       "utc": "2026-12-01T15:00:00Z",
       "pt": "7:00 AM PT",
       "name": "ISM manufacturing · JOLTS",
-      "detail": "ISM manufacturing PMI and JOLTS job openings (Oct)"
+      "detail": "ISM manufacturing PMI (Nov) forecast 55.0, prior 55.5 · JOLTS job openings (Oct) forecast 7.45M, prior 7.52M · construction spending"
     },
     {
       "date": "2026-12-02",
       "utc": "2026-12-02T13:15:00Z",
       "pt": "5:15 AM PT",
       "name": "ADP employment",
-      "detail": "ADP employment change (Nov)"
+      "detail": "ADP employment change (Nov) · forecast 80K, prior 86K"
     },
     {
       "date": "2026-12-03",
       "utc": "2026-12-03T13:30:00Z",
       "pt": "5:30 AM PT",
       "name": "Jobless claims",
-      "detail": "Weekly initial jobless claims"
+      "detail": "Weekly initial jobless claims · forecast about 193K, prior 189K"
     },
     {
       "date": "2026-12-03",
       "utc": "2026-12-03T15:00:00Z",
       "pt": "7:00 AM PT",
-      "name": "ISM services",
-      "detail": "ISM services PMI and factory orders"
+      "name": "ISM services · factory orders",
+      "detail": "ISM services PMI (Nov) forecast 54.5, prior 54.5 · factory orders (Oct)"
     },
     {
       "date": "2026-12-04",
       "utc": "2026-12-04T13:30:00Z",
       "pt": "5:30 AM PT",
       "name": "Employment situation",
-      "detail": "November jobs report (nonfarm payrolls, unemployment, hourly earnings)"
+      "detail": "November jobs report · payrolls forecast 90K (prior 165K) · unemployment 4.1% · hourly earnings 0.3%"
     },
     {
       "date": "2026-12-04",
       "utc": "2026-12-04T15:00:00Z",
       "pt": "7:00 AM PT",
       "name": "Michigan sentiment",
-      "detail": "University of Michigan consumer sentiment, preliminary (Dec)"
+      "detail": "University of Michigan consumer sentiment, preliminary (Dec) · forecast 52.6, prior 51.5"
     },
     {
       "date": "2026-12-08",
       "utc": "2026-12-08T00:00:00Z",
       "pt": "all day",
       "name": "FOMC begins",
-      "detail": "FOMC meeting Dec 8–9"
+      "detail": "FOMC meeting Dec 8–9 (Fed quiet period from Sat 11/28)"
+    },
+    {
+      "date": "2026-12-10",
+      "utc": "2026-12-10T13:30:00Z",
+      "pt": "5:30 AM PT",
+      "name": "CPI",
+      "detail": "Consumer price index (Nov)"
     }
   ],
   "flow": {
-    "scope": "options tape, all names, Wed 11/25 session",
-    "net": "+$4.8M",
+    "scope": "options tape, Fri 11/27 half-day session",
+    "net": "+$367.5M",
     "lean": "bullish",
-    "prints": 10925,
-    "calls": "$390M",
-    "puts": "$1.2B",
-    "put_call": 1.05,
-    "asof_label": "Wed 11/25",
+    "prints": null,
+    "calls": "$338.9M",
+    "puts": "−$28.6M",
+    "put_call": 0.46,
+    "asof_label": "Fri 11/27",
     "spy_notable": [],
-    "spy_directional": "Largest prints by premium (all blocks): QQQ 735 put Dec 18 $65.8M · QQQ 720 put Dec 4 $37.1M · QQQ 745 put Dec 18 $31.9M · QQQ 750 put Dec 18 $30.8M · QQQ 700 put Nov 30 $30.2M · SPX 6300 call Dec 18 $27.8M (call buy) · GLD 425 put Jan 15 $24.4M"
+    "spy_directional": "Calls led puts across the whole market from about 7:15 AM PT and finished about +$367M net. SPY near-dated put/call premium 0.46. Notable prints: SPX Feb 19 6225 puts $11.2M across six prints (about 3× open interest), AAPL Feb '27 400 calls $3.9M on one print ($7M in 30 minutes), SPY 705 puts $616K, SPX 7800 calls $414K."
   },
   "seasonality": {
     "SPY": {
-      "week": "Week 48 (Nov 23–27): higher 8 of 9 years · median +1.18% · average +1.71% · this year so far +3.82% (3 sessions, through Wed 11/25 close)",
-      "month": "November: median +3.6% · higher 8 of 9 years"
+      "week": "Week 49 (Nov 30–Dec 4): higher 8 of the last 10 years · median +0.37% · average +0.29% · history, not a forecast",
+      "month": "December: median +1.62% · higher 7 of the last 10 years"
     },
     "SPX": {
-      "week": "Week 48: higher 8 of 9 years · median +1.13% · average +1.68% (history through Fri 11/20)",
-      "month": "November: median +3.4% · higher 8 of 9 years"
+      "week": "Week 49: higher 8 of 10 years · median +0.33% · average +0.26%",
+      "month": "December: median +1.40% · higher 6 of 10 years"
     },
     "QQQ": {
-      "week": "Week 48: higher 7 of 10 years · median +1.20% · average +1.30% (history through Fri 11/20)",
-      "month": "November: median +3.0% · higher 8 of 10 years"
+      "week": "Week 49: higher 7 of 10 years · median +0.79% · average +0.60%",
+      "month": "December: median +0.87% · higher 7 of 10 years"
     }
   }
 }

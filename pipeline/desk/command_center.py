@@ -69,6 +69,17 @@ def quote(on, code):
     return None
 
 
+
+def _zone(p, lab):
+    """(low, high) of a plan label: '7211–23' -> (7211, 7223); a single number -> (p, p)."""
+    m = re.match(r"\s*(\d{3,5})(?:\.\d+)?\s*[–-]\s*(\d{1,5})(?:\.\d+)?\b", str(lab or ""))
+    if not m:
+        return p, p
+    a, z = m.group(1), m.group(2)
+    hi = float(a[:len(a) - len(z)] + z) if len(z) < len(a) else float(z)
+    lo = float(a)
+    return (min(lo, hi), max(lo, hi)) if abs(hi - lo) <= 100 else (p, p)
+
 # ------------------------------------------------------------------ context
 class Ctx:
     def __init__(self, S, now=None):
@@ -370,7 +381,7 @@ def build(S, now=None):
                         f'<span class="r">{v["upper"]:,.2f}</span><span class="r">±{v["move_pct"]:.2f}%</span><span class="r mut">±{v["straddle"]:,.2f}{iv}</span></div>')
     im_asof = (C.S.get("im") or {}).get("generated_pt") or ""
     range_when = (im_asof + " · session still open") if (C.tape_live and im_asof) else ((wem.get("asof_label") or (f"{dlab(C.tape_day)} close" if C.tape_day else "awaiting update")))
-    em_note = (f'Week bands are the Wed 11/25 close read to Fri 11/27. Friday session bands are from the {E(im_asof) or "chain"} snapshot '
+    em_note = (f'Week bands are the Fri 11/27 close read to Fri 12/4. Monday session bands are from the {E(im_asof) or "chain"} snapshot '
                f'(SPX {fnum(C.im_spot("SPX"))} · SPY {fnum(C.im_spot("SPY"))} · QQQ {fnum(C.im_spot("QQQ"))}). Not a guaranteed limit.') if (C.im_ok or wem.get("rows")) else "Expected-move bands awaiting update."
     vx = sw.get("vix") or {}
     vv = C.vix["last"] if C.vix else None
@@ -386,7 +397,7 @@ def build(S, now=None):
     pc_prev = f'<s>{fx["prev_put_call"]}</s>' if fx.get("prev_put_call") and fx.get("asof") == bd.get("asof") else ""
     tape_box = (f'<h3 style="margin-top:10px">OPTIONS TAPE · {E(fl.get("asof_label", ""))}</h3><div class="flow"><div><small>net</small><b class="{"up" if str(fl.get("net", "")).startswith("+") else "dn"}">{E(str(fl.get("net", "—")))}</b></div>'
                 f'<div><small>calls</small><b>{E(str(fl.get("calls", "—")))}</b></div><div><small>puts</small><b class="dn">{E(str(fl.get("puts", "—")))}</b></div>'
-                f'<div><small>put/call</small><b class="dn">{E(str(fl.get("put_call", "—")))}</b>{pc_prev}</div><div><small>prints</small><b>{fl.get("prints", 0):,}</b></div></div>') if fl else ""
+                f'<div><small>put/call</small><b class="dn">{E(str(fl.get("put_call", "—")))}</b>{pc_prev}</div><div><small>prints</small><b>{(format(fl["prints"], ",") if isinstance(fl.get("prints"), (int, float)) else "—")}</b></div></div>') if fl else ""
     prints = "".join(f"<li>{E(p)}</li>" for p in (fx.get("prints") or [])) if fx.get("asof") == bd.get("asof") else ""
     secs = fx.get("sectors") or []
     mx = max([abs(v) for _, v in secs] or [1]) or 1
@@ -608,10 +619,11 @@ def tape_section(C, plan):
         b = es["bars"]
         lv = sorted({L["es"]: L["label"] for L in plan.get("levels") or []}.items(), key=lambda kv: -kv[0])
         for p, lab in lv:
-            ix = next((x[0] for x in b if x[3] <= p <= x[2]), None)
+            lo, hi = _zone(p, lab)  # a zone such as '7211–23' is reached when price trades anywhere inside it
+            ix = next((x[0] for x in b if x[3] <= hi and x[2] >= lo), None)
             if ix is None:
-                above = b[0][1] > p
-                reached = (min(x[3] for x in b) <= p) if above else (max(x[2] for x in b) >= p)
+                above = b[0][1] > hi
+                reached = (min(x[3] for x in b) <= hi) if above else (max(x[2] for x in b) >= lo)
                 note = "opened through it" if reached else "not reached in the regular session"
                 grade += f"<tr><td>{E(lab)}</td><td>—</td><td class='mut'>{note}</td></tr>"
             else:

@@ -121,7 +121,7 @@ def charts_html():
         figs = _figs(prior_dir, href, have_prior)
         out.append(
             '<section class="sec" id="plan-charts"><h2>LAST WEEK · PLAN vs ACTUAL</h2>'
-            '<p>Week of <b>Nov 16–20</b>: the plan levels and paths published for that week (Friday\'s plan, posted Thu 11/19) against the actual 30m candles. '
+            '<p>Week of <b>Nov 23–27</b> (Thanksgiving: Thu closed, Fri half day): the plan levels published for that week (Friday\'s plan, posted Thu 11/26) against the actual 30m candles. '
             'Amber = week before; white = that week\'s actual 30m. '
             'Green/red bands = plan bull / bear zones. Levels as right-edge ticks. Each day labeled hi / lo / close. Tap a chart to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')
@@ -129,8 +129,8 @@ def charts_html():
         figs = _figs(plan, "charts/plan", have_plan)
         out.append(
             '<section class="sec" id="plan-forward"><h2>THIS WEEK · PLAN</h2>'
-            '<p>Week of <b>Nov 23–27</b> (Thanksgiving: Thu closed, Fri half day) — update Thu 11/26 4:04 PM PT from the Wednesday close. Two-sided: 7160–65 is the nearby line, 7211–23 is first upside, 7305–09 is still the control line. '
-            'Wednesday flushed to 6982.50, ripped to 7214, and closed 7196.75. Amber = prior week actual; white = this week\'s actual 30m so far; '
+            '<p>Week of <b>Nov 30–Dec 4</b> (month-end Monday, jobs report Fri 5:30 AM PT) — update Fri 11/27 1:15 PM PT from the Friday close. Lean bullish while 7305–09 holds: 7320–23 and 7334 are first upside, 7362–65 then 7405–12 above; 7286–87, 7272–78 and 7250–52 are the supports. '
+            'Friday dipped to 7222.75, reclaimed 7250–52, and ran to 7320.75 into the 10:00 AM PT close. Amber = prior week actual; white = this week\'s actual 30m so far; '
             'empty day columns show the <b>bull (green) and bear (red) paths</b> forward only — no lines through candles. '
             'Nasdaq charts show levels only. Tap a chart to enlarge.</p>'
             f'<div class="chg">{figs}</div></section>')

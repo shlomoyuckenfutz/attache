@@ -1,89 +1,91 @@
 {
-  "date": "2026-11-27",
-  "asof_pt": "Thu 11/26 4:04 PM PT",
-  "asof": "Thu 11/26 4:04 PM PT",
-  "session": "2026-11-27",
-  "title": "Fri Nov 27, 2026 — early close · weekly expiration",
+  "date": "2026-11-30",
+  "asof_pt": "Fri 11/27 1:15 PM PT",
+  "asof": "Fri 11/27 1:15 PM PT",
+  "session": "2026-11-30",
+  "title": "Mon Nov 30, 2026 — month-end · Chicago PMI",
   "bias": {
-    "direction": "TWO-SIDED",
-    "reason": "Two-sided into Friday's early close and weekly expiration. Cash was closed Thursday; the working close is Wednesday: SPX 7182.78, SPY 716.70, QQQ 633.93, NDX 25,839.30, VIX 26.81, ES 7196.75 at 12:59 PM PT (regular-session high 7214 at 12:56 PM PT, low 6982.50 at 6:45 AM PT). 7305–09 is still the control line (Monday high 7313.25). 7211–23 was tested Wednesday (high 7214) and is now the first upside / first support — the Friday 7200 call wall sits at about ES 7213.5. A 7240–45 reclaim remains the buyers' next job; 7272–78 (Friday flip ≈ 7272.5) then 7305–09 are next. Just under the close, 7160–65 is the nearby line: Friday's 7150 put wall and biggest strike convert to about ES 7163.5. Lose that and 7120–25 / 7086 come back into view. 6982–93 (Wednesday's 6982.50 data low and the Sunday 6992–93 failed-breakdown) is still the week's bigger line. The Monday plan's bull path already played out to 7305–09; Wednesday flushed to 6982.50 and closed 7196.75. Friday stocks close 10:00 AM PT. Size down. ES conversions use SPX + 13.5 (Wednesday regular-session median through 11:18 AM PT)."
+    "direction": "LEAN BULLISH",
+    "reason": "Lean bullish while ES holds 7305–09. Friday's half day dipped to 7222.75 at 7:05 AM PT, held 7211–23, swept and reclaimed 7250–52, and closed back above the 7305–09 control line at 7308.25 (regular-session high 7320.75 into the close). Closes: SPX 7297.49 (+1.60%), SPY 728.32, QQQ 650.99, NDX 26,726.39, VIX 23.81; the week was SPX +5.60%. First upside is 7320–23, then 7334 (SPY's 200-day ≈ 7336) and 7352 (Monday SPX flip ≈ 7340); 7362–65 and the 7405–12 gateway are the bigger targets. Monday's SPX call wall 7300 sits on the control line (≈ 7311.75) and its 7275 put wall maps to about 7286.75. Every all-dates board is still negative gamma, so a 7305–09 loss can travel: 7272–78 and 7250–52 come first, then 7240–45. Monday is month-end; Chicago PMI 6:45 AM PT. ES conversions use SPX + 11.75 (Friday regular-session median)."
   },
-  "overnight_bias": "Thursday was closed. Friday opens after the holiday; size down into a 10:00 AM PT close and weekly expiration.",
+  "overnight_bias": "Sunday's 3:00 PM PT open follows a +5.6% week and a close back above 7305–09. Hold 7305–09 overnight and 7320–23 / 7334 are first; lose it and 7286 / 7272–78 come first.",
   "key_levels": [
     {
-      "price": 7305,
-      "note": "ES 7305–09 resistance — the control line. Monday's regular-session high was 7313.25 at 7:32 AM PT; it was tagged and sold. A second test is the bullish target; no lasting bullish structure until it is accepted."
+      "price": 7408,
+      "note": "ES 7405–12 resistance — the next major gateway above. SPX 7400 is the biggest strike on the all-dates board and the 12/18 expiry (≈ ES 7411.75). The week's bigger bull target."
     },
     {
-      "price": 7277,
-      "note": "ES 7272–78 resistance — Friday's SPX flip 7259 converts to about 7272.5 at the 13.5 basis. A 7240–45 reclaim opens this zone, then 7305–09."
+      "price": 7363,
+      "note": "ES 7362–65 resistance — the next upside target after 7334 on the ES levels plan."
     },
     {
-      "price": 7240,
-      "note": "ES 7240–45 resistance — Tuesday's regular-session high (7240.75). Buyers' reclaim; acceptance is the first step toward 7272–78 and a 7305–09 retest."
+      "price": 7352,
+      "note": "ES 7352 — Monday's SPX flip ≈ 7340 converts to about 7352. Above it Monday's board turns positive gamma."
+    },
+    {
+      "price": 7334,
+      "note": "ES 7334 resistance — next target on the ES levels plan; SPY's 200-day (730.98) maps to about ES 7336."
+    },
+    {
+      "price": 7321,
+      "note": "ES 7320–23 — Friday's regular-session high 7320.75, printed into the 10:00 AM PT close."
+    },
+    {
+      "price": 7307,
+      "note": "ES 7305–09 pivot — the control line. Tagged Monday (7313.25) and sold; reclaimed Friday and closed above at 7308.25. Monday's SPX 7300 call wall ≈ 7311.75. Bulls keep the ball while it holds."
+    },
+    {
+      "price": 7287,
+      "note": "ES 7286–87 support — Monday's SPX 7275 put wall converts to about 7286.75."
+    },
+    {
+      "price": 7275,
+      "note": "ES 7272–78 support — last week's 7272–78 zone; a 7305–09 loss tests it first."
+    },
+    {
+      "price": 7251,
+      "note": "ES 7250–52 support — Friday's dip swept and reclaimed this support on the ES levels plan."
+    },
+    {
+      "price": 7242,
+      "note": "ES 7240–45 support — last Tuesday's high and the buyers' reclaim line."
     },
     {
       "price": 7217,
-      "note": "ES 7211–23 — Wednesday's regular-session high 7214 at 12:56 PM PT and the Friday 7200 call wall (≈ 7213.5). First place to sell a bounce if it fails; first support if it holds (7216/23)."
+      "note": "ES 7211–23 support — Friday's 7222.75 low at 7:05 AM PT held inside this zone."
     },
     {
       "price": 7163,
-      "note": "ES 7160–65 support — the nearby line into Friday. SPX 7150 is the Friday put wall and biggest strike (≈ ES 7163.5). Acceptance below 7160 invites 7120–25."
+      "note": "ES 7160–65 support — next under 7211–23."
     },
     {
-      "price": 7122,
-      "note": "ES 7120–25 — held as support Monday and Tuesday, lost in Wednesday's data flush, reclaimed 9:17 AM PT. Next under 7160–65."
-    },
-    {
-      "price": 7086,
-      "note": "ES 7086 — mid-range, lost and reclaimed Wednesday morning."
-    },
-    {
-      "price": 7027,
-      "note": "ES 7025–29 — Sunday's reclaim started the bounce; lost and recovered in Wednesday's flush. SPY 700 (put wall) is about ES 7013.5 at the 13.5 basis; all-dates biggest strike 7000 is about ES 7013.5."
-    },
-    {
-      "price": 6982,
-      "note": "ES 6982–93 support — Wednesday's 5:30 AM PT data low (6982.50 at 6:45 AM PT) and the 6992–93 Sunday overnight low that failed and recovered. The week's bigger line."
-    },
-    {
-      "price": 6963,
-      "note": "ES 6960–66 support — Monday's pivot. Not tagged this week; Wednesday's low held 16–28 points above it."
-    },
-    {
-      "price": 6898,
-      "note": "ES 6897–98 support — Friday 11/20's low. Not revisited this week. A loss of 6982 and 6960–66 opens it."
-    },
-    {
-      "price": 6846,
-      "note": "ES 6841–51 support — next zone under 6897–98."
+      "price": 6987,
+      "note": "ES 6982–93 — Wednesday's 6982.50 data low and failed-breakdown. The bigger line for the month."
     }
   ],
   "path": {
-    "bull": "Hold 7160–65 and reclaim 7211–23 → 7240–45, then 7272–78 and a 7305–09 retest of the control line.",
-    "bear": "Fail 7160–65 → 7120–25, then 7086. A loss of 6982–93 opens 6960–66, then 6897–98 and 6841–51.",
-    "neutral": "Two-way swings between 7160–65 and 7211–23 into Friday's 10:00 AM PT early close; fade the edges and size down on a half-day expiration."
+    "bull": "Hold 7305–09 → 7320–23, 7334, then 7352 and 7362–65; the 7405–12 gateway is the week's bigger target.",
+    "bear": "Lose 7305–09 → 7286–87, 7272–78, then 7250–52. A loss of 7240–45 opens 7211–23 and 7160–65.",
+    "neutral": "Month-end two-way trade between 7272–78 and 7334; fade the edges and respect late-session month-end flows."
   },
   "actionable": [
-    "Hold 7160–65 and reclaim 7211–23 → 7240–45, then 7272–78 and 7305–09.",
-    "A 7211–23 rejection, after Wednesday's 7214 high, is the first place to sell a bounce.",
-    "Lose 7160–65 → 7120–25, then 7086. Lose 6982–93 → 6960–66, then 6897–98.",
-    "7305–09 is still the control line; Monday tagged it at 7313.25 and sold off.",
-    "Thursday closed. Friday stocks close 10:00 AM PT; weekly expiration. Size down.",
-    "Wednesday close: SPX 7182.78, SPY 716.70, QQQ 633.93, VIX 26.81, ES 7196.75 (high 7214, low 6982.50).",
-    "Friday expiry walls at the 13.5 basis: ES call ≈ 7213.5, put wall and biggest strike ≈ 7163.5, flip ≈ 7272.5. All-dates biggest strike 7000 ≈ 7013.5, call wall 7650 ≈ 7663.5.",
-    "Nearest dark-pool line under the close is SPY 715.02 (≈ ES 7178.7); 718.66 remains the nearest line above.",
-    "Next week: Chicago PMI Mon 6:45 AM PT, ISM manufacturing and JOLTS Tue 7:00 AM PT, ADP Wed 5:15 AM PT, ISM services Thu 7:00 AM PT, jobs report Fri Dec 4 5:30 AM PT. FOMC Dec 8–9.",
-    "VIX closed 26.81, boxed 18–30, in positive gamma. The Wednesday board is the close read — current through the holiday."
+    "Hold 7305–09 → 7320–23, 7334, then 7352 and 7362–65.",
+    "Lose 7305–09 → 7286–87, 7272–78, then 7250–52; lose 7240–45 → 7211–23.",
+    "Friday's dip to 7222.75 held 7211–23 and 7250–52 was swept and reclaimed; that's the buyers' footprint to defend.",
+    "Monday is month-end; Chicago PMI 6:45 AM PT. ISM manufacturing and JOLTS Tuesday 7:00 AM PT.",
+    "Friday close: SPX 7297.49, SPY 728.32, QQQ 650.99, VIX 23.81, ES 7308.25 (regular session 7222.75–7320.75).",
+    "Monday board at the 11.75 basis: ES call ≈ 7311.75, put wall ≈ 7286.75, flip ≈ 7352. All-dates biggest strike 7400 ≈ 7411.75, call wall 7600 ≈ 7611.75.",
+    "SPY sits between dark-pool lines 728.05 and 728.74; 730 is Monday's call wall and 730.98 the 200-day.",
+    "This week: ADP Wed 5:15 AM PT, claims Thu 5:30 AM PT, ISM services Thu 7:00 AM PT, jobs report Fri Dec 4 5:30 AM PT. Fed decision Wed Dec 9 (meeting Dec 8–9)."
   ],
   "long_story_short": {
-    "for_session": "2026-11-27",
-    "headline": "Fri 11/27 — 7160–65 is the nearby line · 7211–23 first upside · 7305–09 is still the control line · early close 10:00 AM PT",
-    "context": "Wednesday closed ES 7196.75, SPX 7182.78, SPY 716.70, VIX 26.81 after a 6982.50 data-flush and a rip to 7214. Thursday was closed. 7211–23 was tested (high 7214) and is the first upside; 7160–65 (Friday 7150 wall, ≈ 7163.5) is the nearby support. 6982–93 remains the week's bigger line. 7305–09 is still the control line.",
-    "friday": "Wednesday closed ES 7196.75, SPX 7182.78 (−0.01), SPY 716.70, QQQ 633.93, NDX 25,839.30, VIX 26.81. Regular-session high 7214 at 12:56 PM PT, low 6982.50 at 6:45 AM PT. Thursday was closed.",
-    "levels": "7305–09 / 7272–78 / 7240–45 / 7211–23 above; 7160–65 nearby; 7120–25 / 7086 / 7025–29 mid; 6982–93 / 6960–66 / 6897–98 / 6841–51 below.",
-    "bearish": "Lose 7160–65 → 7120–25, then 7086. Lose 6982–93 → 6960–66, then 6897–98.",
-    "bullish": "Hold 7160–65 and reclaim 7211–23 → 7240–45, then 7272–78 and 7305–09.",
-    "general": "Thursday closed. Friday closes 10:00 AM PT, weekly expiration; size down. ES ≈ SPX + 13.5 (Wed 11/25 snapshot through 11:18 AM PT). Official ES close 7196.75."
+    "for_session": "2026-11-30",
+    "headline": "Mon 11/30 — 7305–09 is the line · 7320–23 / 7334 first upside · 7272–78 / 7250–52 below · month-end",
+    "context": "Friday closed ES 7308.25, back above the 7305–09 control line, after a 7222.75 dip held 7211–23. The week was SPX +5.60%. Above: 7320–23, 7334, 7352, 7362–65, then the 7405–12 gateway. Below: 7286–87, 7272–78, 7250–52, 7240–45.",
+    "friday": "Friday closed SPX 7297.49 (+1.60%), SPY 728.32, QQQ 650.99, NDX 26,726.39, VIX 23.81, ES 7308.25. Regular-session low 7222.75 at 7:05 AM PT, high 7320.75 into the 10:00 AM PT close.",
+    "levels": "7405–12 / 7362–65 / 7352 / 7334 / 7320–23 above; 7305–09 pivot; 7286–87 / 7272–78 / 7250–52 / 7240–45 / 7211–23 below; 7160–65 / 6982–93 deeper.",
+    "bearish": "Lose 7305–09 → 7286–87, 7272–78, then 7250–52. Lose 7240–45 → 7211–23, then 7160–65.",
+    "bullish": "Hold 7305–09 → 7320–23 and 7334, then 7352 and 7362–65; 7405–12 is the week's bigger target.",
+    "general": "Month-end Monday; Chicago PMI 6:45 AM PT. Jobs report Friday 5:30 AM PT. ES ≈ SPX + 11.75 (Friday regular-session median)."
   }
 }

@@ -15,39 +15,39 @@ PAGE = G.map_page(D, PLAN, SPYW, "test")
 DAILY, WEEKLY = G.daily_section(D), G.weekly_section(D)
 CMD = G.command_payload(D)
 ALL = PAGE + DAILY + WEEKLY + json.dumps(CMD, ensure_ascii=False)
-NEXT_DAY_BANDS = ["6704.09", "7116.71"]  # Fri 11/20 next-expiry (Mon) SPX bands stay off the board
+NEXT_DAY_BANDS = ["7211.04", "7383.94"]  # Fri 11/27 next-expiry (Mon 11/30) SPX bands stay off the board
 
 
 class I1_GammaLevels(unittest.TestCase):
     def test_values_and_regimes_per_expiry_board(self):
         L = D["levels"]
-        self.assertEqual((L["SPX"]["2026-11-27"]["flip"], L["SPX"]["2026-11-27"]["magnet"], L["SPX"]["2026-11-27"]["regime"]), (7259, 7150, "NEG"))
+        self.assertEqual((L["SPX"]["2026-11-30"]["flip"], L["SPX"]["2026-11-30"]["magnet"], L["SPX"]["2026-11-30"]["regime"]), (7340.2, 7400, "NEG"))
         self.assertEqual(L["SPY"]["2026-12-18"]["regime"], "NEG")
-        self.assertEqual(L["SPX"]["2026-11-27"]["net_gex"], "-$5.0B")
-        self.assertEqual(L["NDX"]["2026-11-27"]["call_wall"], 26000)
+        self.assertEqual(L["SPX"]["2026-11-30"]["net_gex"], "-$945.1M")
+        self.assertEqual(L["NDX"]["2026-11-30"]["call_wall"], 27000)
 
     def test_tables_cover_every_ticker_and_expiry(self):
         for s in G.SYMS:
-            for ex in ("11/27", "12/4", "12/18"):
+            for ex in ("11/30", "12/4", "12/18"):
                 self.assertRegex(WEEKLY, rf"<td>{s}</td><td>{ex}</td>")
         self.assertIn("awaiting update", WEEKLY)
         for s in G.SYMS:
-            self.assertRegex(DAILY, rf"<td>{s}</td><td>11/27</td>")
-        self.assertIn("Wed 11/25 close", DAILY); self.assertIn("WED 11/25 CLOSE", WEEKLY); self.assertIn("Wed 11/25 close", CMD["gamma"]["h"])
+            self.assertRegex(DAILY, rf"<td>{s}</td><td>11/30</td>")
+        self.assertIn("Fri 11/27 close", DAILY); self.assertIn("FRI 11/27 CLOSE", WEEKLY); self.assertIn("Fri 11/27 close", CMD["gamma"]["h"])
 
     def test_bad_input_is_dropped_not_rendered(self):
-        r = copy.deepcopy(RAW); r["levels"]["SPX"]["2026-11-27"] = {"flip": "x", "magnet": float("nan")}
-        d = G.validate(r); self.assertIsNone(d["levels"]["SPX"]["2026-11-27"])
+        r = copy.deepcopy(RAW); r["levels"]["SPX"]["2026-11-30"] = {"flip": "x", "magnet": float("nan")}
+        d = G.validate(r); self.assertIsNone(d["levels"]["SPX"]["2026-11-30"])
         self.assertEqual(G.validate({"asof": "bad"}), {})
         self.assertIn("awaiting update", G.daily_section({}))
 
 
 class I2_EsNqConversion(unittest.TestCase):
     def test_es_is_spx_plus_plan_basis(self):
-        self.assertEqual(D["es_basis"], 13.5)
-        self.assertIn("<td>7163.50</td>", DAILY)  # SPX 11/27 7150 + 13.5
+        self.assertEqual(D["es_basis"], 11.75)
+        self.assertIn("<td>7411.75</td>", DAILY)  # SPX 11/30 magnet 7400 + 11.75
         es = [r for r in CMD["tiles"] if r["h"].startswith("ES")][0]
-        self.assertIn("magnet 7163.50", es["rows"][0][1])  # 11/27 7150 + 13.5
+        self.assertIn("magnet 7411.75", es["rows"][0][1])  # 11/30 7400 + 11.75
 
     def test_nq_awaits_without_sourced_basis_and_no_equity_es(self):
         self.assertIsNone(D["nq_basis"])
@@ -58,22 +58,22 @@ class I2_EsNqConversion(unittest.TestCase):
 class I3_WeeklyExpectedMove(unittest.TestCase):
     def test_weekly_rows_shown_next_day_bands_not(self):
         line = G.em_line(D)
-        self.assertTrue(line.startswith("Weekly expected move to Fri 11/27 (Wed 11/25 close)"))
-        for s in ("SPX 7066.71–7298.85", "SPY 704.35–729.05", "QQQ 617.22–650.64", "NDX 25110.11–26568.49"):
+        self.assertTrue(line.startswith("Weekly expected move to Fri 12/4 (Fri 11/27 close)"))
+        for s in ("SPX 7122.59–7472.39", "SPY 710.71–745.93", "QQQ 627.48–674.50", "NDX 25770.64–27682.14"):
             self.assertIn(s, line)
         for v in NEXT_DAY_BANDS:
             self.assertNotIn(v, ALL)
-        self.assertEqual(list(CMD["im_extra"]["rows"][1]), ["SPY", "704.35–729.05 (±1.72%)"])
+        self.assertEqual(list(CMD["im_extra"]["rows"][1]), ["SPY", "710.71–745.93 (±2.42%)"])
 
 
 class I4_Calendar(unittest.TestCase):
     def test_holiday_week_pt_times(self):
         pt = timezone(timedelta(hours=-8))
         rows = G.calendar_rows(D)
-        self.assertFalse(any(r["day"] in ("Thu 11/19", "Fri 11/20", "Wed 11/25") for r in rows))  # past days drop off the countdown
-        self.assertTrue(any(r["day"] == "Thu 11/26" and r["name"] == "Thanksgiving" for r in rows))
-        e = [r for r in rows if r["day"] == "Fri 11/27" and r["name"] == "Early close"][0]; self.assertEqual(e["pt"], "10:00 AM PT")
-        g = [r for r in rows if r["day"] == "Fri 11/27" and r["name"] == "Goods trade"][0]; self.assertEqual(g["pt"], "5:30 AM PT")
+        self.assertFalse(any(r["day"] in ("Wed 11/25", "Thu 11/26", "Fri 11/27") for r in rows))  # past days drop off the countdown
+        self.assertTrue(any(r["day"] == "Mon 11/30" and r["name"] == "Chicago PMI" and r["pt"] == "6:45 AM PT" for r in rows))
+        e = [r for r in rows if r["day"] == "Wed 12/2" and r["name"] == "ADP employment"][0]; self.assertEqual(e["pt"], "5:15 AM PT")
+        g = [r for r in rows if r["day"] == "Fri 12/4" and r["name"] == "Employment situation"][0]; self.assertEqual(g["pt"], "5:30 AM PT")
         t = datetime.fromisoformat(g["utc"].replace("Z", "+00:00")).astimezone(pt)
         self.assertEqual((t.hour, t.minute), (5, 30))
 
@@ -81,18 +81,20 @@ class I4_Calendar(unittest.TestCase):
 class I5_Flow(unittest.TestCase):
     def test_flow_figures(self):
         f = [r for r in CMD["tiles"] if r["h"] == "FLOW"][0]
-        self.assertEqual(f["v"], "+$4.8M bullish"); self.assertEqual(f["d"], "Wed 11/25")  # flow carries its own session date
-        self.assertIn(["put/call", "1.05"], f["rows"])
-        self.assertIn("Largest prints by premium", f["note"])
+        self.assertEqual(f["v"], "+$367.5M bullish"); self.assertEqual(f["d"], "Fri 11/27")  # flow carries its own session date
+        self.assertIn(["put/call", "0.46"], f["rows"])
+        self.assertIn(["prints", "—"], f["rows"])  # no count posted: a dash, never 0 or a crash
+        self.assertIn("Notable prints", f["note"])
 
 
 class I6_Seasonality(unittest.TestCase):
     def test_spx_qqq_week_and_month(self):
         s = [r for r in CMD["tiles"] if r["h"] == "SEASONALITY"][0]
         keys = [k for k, _ in s["rows"]]
-        self.assertEqual(keys, ["SPY week", "SPX week", "QQQ week", "SPY Nov", "SPX Nov", "QQQ Nov"])
-        self.assertIn("median +3.6%", s["rows"][3][1]); self.assertIn("median +3.4%", s["rows"][4][1]); self.assertIn("median +3.0%", s["rows"][5][1]); self.assertIn("not a forecast", s["note"])
-        self.assertIn("higher 8 of 9 years", s["rows"][0][1]); self.assertIn("Week 48", WEEKLY)
+        self.assertEqual(keys, ["SPY week", "SPX week", "QQQ week", "SPY Dec", "SPX Dec", "QQQ Dec"])  # month label follows the data
+        self.assertIn("median +1.62%", s["rows"][3][1]); self.assertIn("median +1.40%", s["rows"][4][1]); self.assertIn("median +0.87%", s["rows"][5][1]); self.assertIn("not a forecast", s["note"])
+        self.assertIn("Week 49 and December history", s["note"])
+        self.assertIn("higher 8 of the last 10 years", s["rows"][0][1]); self.assertIn("Week 49", WEEKLY)
 
 
 class I7_GammaMap(unittest.TestCase):
@@ -100,8 +102,8 @@ class I7_GammaMap(unittest.TestCase):
         for s in ("es", "spx", "spy", "qqq", "ndx", "nq"):
             self.assertIn(f'id="m-{s}"', PAGE)
         self.assertGreaterEqual(PAGE.count("CONFLUENCE</i>"), 3)
-        # SPY 700: Friday put wall stacks with the 12/04 and 12/18 put walls
-        self.assertRegex(PAGE, r">700 <i>CONFLUENCE</i>")
+        # SPY 730: Monday call wall stacks with the 12/04 call wall
+        self.assertRegex(PAGE, r">730 <i>CONFLUENCE</i>")
         self.assertIn("SPX close + basis", PAGE)
 
     def test_no_empty_cells_and_status_for_gaps(self):

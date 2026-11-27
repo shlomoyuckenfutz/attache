@@ -1,0 +1,70 @@
+YUCKENFUTZ TRADEZ — WEEKLY PLAN — Mon Nov 30 to Fri Dec 4, 2026 (month-end Monday · jobs report Friday)
+Plan only — not investment advice · updated Fri Nov 27, 1:15 PM PT (Friday early close)
+
+Weekly expected move to Fri 12/4 (read at the Fri 11/27 close; not guaranteed limits): SPX 7122.59–7472.39 (±2.40%) · SPY 710.71–745.93 (±2.42%) · QQQ 627.48–674.50 (±3.61%) · NDX 25,770.64–27,682.14 (±3.58%) · ES ≈ 7134–7484.
+
+Last week vs the plan: the bull path played out. Monday tagged the 7305–09 control line (7313.25) and sold off; Wednesday's 5:30 AM PT data flushed ES to 6982.50, which held the 6982–93 line and reversed; Friday's half day dipped to 7222.75 at 7:05 AM PT, held 7211–23, and closed back above 7305–09 at 7308.25 (regular-session high 7320.75 into the 10:00 AM PT close). The bear path to 6897 never triggered. Closes Fri 11/27: SPX 7297.49 (+1.60%), SPY 728.32, QQQ 650.99 (+2.69%), NDX 26,726.39, VIX 23.81. Week: SPX +5.60%, SPY +5.58%, QQQ +6.99%; VIX 35.90 → 23.81.
+
+BIAS (WEEK)
+Lean bullish while ES holds 7305–09, the control line it closed back above on Friday. 7320–23 (Friday high) and 7334 are the first upside; 7362–65 and the 7405–12 gateway (SPX 7400 biggest strike ≈ 7411.75) are the week's bigger targets. Every index board is still negative gamma with price under its all-dates flip, so moves can extend both ways. Monday is month-end; Friday is the November jobs report. Lose 7305–09 and the week turns two-sided back to 7272–78 and 7250–52; lose 7240–45 and 7211–23 / 7160–65 come back. ES conversions use SPX + 11.75 (Friday regular-session median).
+
+SCENARIOS
+- Bull: Hold 7305–09 → 7320–23, 7334, then 7362–65 and the 7405–12 gateway; acceptance over 7412 opens 7424 (week flip ≈ 7424).
+- Bear: Lose 7305–09 → 7286–87, 7272–78, then 7250–52; lose 7240–45 → 7211–23, then 7160–65.
+- Neutral: month-end and pre-jobs chop between 7250–52 and 7334; fade the edges until Friday's 5:30 AM PT print.
+
+KEY LEVELS
+/ES
+RESISTANCE
+7320–23 (Friday high 7320.75) · 7334 (SPY 200-day ≈ 7336) · 7352 (Monday SPX flip 7340 ≈ 7352) · 7362–65 · 7405–12 (gateway · SPX 7400 biggest strike ≈ 7411.75) · 7424 (week SPX flip ≈ 7424)
+PIVOT
+7305–09 (control line, reclaimed Friday · Monday SPX 7300 call wall ≈ 7311.75)
+SUPPORT
+7286–87 (Monday SPX 7275 put wall) · 7272–78 · 7250–52 (Friday dip swept and reclaimed) · 7240–45 · 7211–23 (Friday low 7222.75) · 7160–65 · 7120–25 · 6982–93
+
+SPY
+RESISTANCE
+728.74 · 729.26 (dark-pool lines) · 729.15 (Friday high) · 730 (Monday and week call wall, Monday biggest strike) · 730.98 (200-day) · 731.85 (dark-pool line) · 732.5 (week flip) · 737.3 (Monday flip)
+PIVOT
+728.32 (Friday close) · 727.98 (last Monday's high)
+SUPPORT
+728.05 · 727.83 (dark-pool lines) · 725.97 · 724 (Monday put wall) · 722.57 · 720 (week put wall) · 719.62 (Friday low) · 718.66
+
+QQQ
+RESISTANCE
+651.34 (Friday high) · 651.7 (Monday flip) · 657.53 (last Monday's high) · 661.7 (all-dates flip) · 670 (week call wall)
+PIVOT
+650 (Monday call wall and biggest strike)
+SUPPORT
+640 (Monday put wall) · 636.72 (Friday low) · 630 (week put wall)
+
+DAY BY DAY
+- Mon Nov 30: month-end close · Chicago PMI 6:45 AM PT (forecast 54.6, prior 55.3). SPY's 10-month average is about 729.7 and its 200-day 730.98, both just over Friday's 728.32 close.
+- Tue Dec 1: ISM manufacturing (forecast 55.0, prior 55.5) and JOLTS (forecast 7.45M, prior 7.52M) 7:00 AM PT.
+- Wed Dec 2: ADP employment 5:15 AM PT (forecast 80K, prior 86K).
+- Thu Dec 3: jobless claims 5:30 AM PT (about 193K, prior 189K) · ISM services 7:00 AM PT (forecast 54.5, prior 54.5) · factory orders.
+- Fri Dec 4: November jobs report 5:30 AM PT (payrolls forecast 90K, prior 165K; unemployment 4.1%; hourly earnings 0.3%) · Michigan sentiment 7:00 AM PT · weekly expiration.
+
+TRIGGERS / IF-THEN
+1. Hold 7305–09 → 7320–23, 7334, then 7362–65 and 7405–12.
+2. Lose 7305–09 → 7286–87, 7272–78, then 7250–52; lose 7240–45 → 7211–23, then 7160–65.
+3. Monday is month-end: expect late-session flows; don't read the 12:50 PM PT print as a trend.
+4. Size down into Friday's 5:30 AM PT jobs report. FOMC is Dec 8–9 (Fed quiet period from Sat 11/28); CPI Thu Dec 10.
+
+SKIP
+- Don't chase Monday's open after a +5.6% week; trade the reaction at 7305–09.
+- Don't hold size through Friday's 5:30 AM PT jobs report.
+
+WEEK BIAS & VOLATILITY · NOV 30–DEC 4
+BIAS FLIP
+ES holding 7305–09 keeps 7334, 7362–65 and 7405–12 in play · a loss of 7305–09 brings 7272–78 and 7250–52 · a loss of 7240–45 brings 7211–23 and 7160–65 back
+VOLATILITY
+VIX 23.81 at the Friday close (down from 35.90 a week earlier) · December open interest still boxes it 18–30
+DATA
+Mon Chicago PMI · Tue ISM manufacturing and JOLTS · Wed ADP · Thu claims and ISM services · Fri jobs report 5:30 AM PT
+FED
+FOMC Dec 8–9 · quiet period from Sat 11/28 · CPI Thu Dec 10
+SEASONALITY
+Week 49 higher 8 of the last 10 years for SPY (median +0.37%) · December higher 7 of 10 (median +1.62%) · history, not a forecast
+WEEK RANGE
+Fri close read to Fri 12/4: SPX 7122.59–7472.39 (±2.40%) · SPY 710.71–745.93 (±2.42%) · QQQ 627.48–674.50 · NDX 25,770.64–27,682.14 · ES ≈ 7134–7484

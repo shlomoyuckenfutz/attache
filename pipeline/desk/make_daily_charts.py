@@ -62,52 +62,10 @@ def _load_dp_convert():
     return float(c.get("spy_per_spx", 0.0997)), float(c.get("es_minus_spx", 34.5))
 SPY_PER_SPX, ES_MINUS_SPX = _load_dp_convert()
 
-# ── Week of Nov 16 (last week) — PLAN vs ACTUAL (Friday's plan levels as published Thu 11/19) ──
-PRIOR_WEEK = [dt.date(2026, 11, 16), dt.date(2026, 11, 17), dt.date(2026, 11, 18),
-              dt.date(2026, 11, 19), dt.date(2026, 11, 20)]
+# ── Week of Nov 23 (last week) — PLAN vs ACTUAL (Friday's plan levels as published Thu 11/26) ──
+PRIOR_WEEK = [dt.date(2026, 11, 23), dt.date(2026, 11, 24), dt.date(2026, 11, 25),
+              dt.date(2026, 11, 27)]
 PRIOR_ZONES = {
-  "spy": {"bull": (718.66, 725.0), "bear": (710.0, 703.14),
-          "bull_lab": "718.66 → 725", "bear_lab": "below 710 → 703.14 Fri range low"},
-  "es":  {"bull": (7240.0, 7270.0), "bear": (7086.0, 7000.0),
-          "bull_lab": "above 7211–23 → 7240–45 / 7269–77", "bear_lab": "lose 7182 trap door → 7086, then 7000"},
-  "qqq": None,
-  "nq":  None,
-}
-PRIOR_SPEC = {
- "es": dict(sym="ES=F", title="/ES  ·  week of Nov 16 (plan vs actual · Fri plan levels)", fut=True, lv=[
-   (7305,"R","7305–09 control line"),(7270,"R","7269–77"),(7240,"R","7240–45"),
-   (7217,"R","7211–23 prior highs · biggest resistance"),(7192,"S","7192 Thu low"),(7182,"P","7182 trap door"),(7086,"S","7086"),(7000,"S","7000 deeper test")],
-   zones=[], bull=[7182,7217,7240], bear=[7182,7086,7000]),
- "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 16 (levels · no paths)", fut=True, lv=[
-   (26608.75,"R","26609 after-hours high"),(26589.25,"P","26589 Thu close"),(26436,"S","26436 after-hours low")],
-   zones=[], bull=[], bear=[]),
- "spy": dict(sym="SPY", title="SPY  ·  week of Nov 16 (plan vs actual · Fri plan levels)", fut=False, lv=[
-   (728.6,"R","728.60 Fri range high"),(725,"R","725"),(718.66,"R","718.66"),
-   (715.5,"P","715–716 Fri put wall · close"),(710,"S","710–708"),(703.14,"S","703.14 Fri range low"),(700,"S","700 floor")],
-   zones=[], bull=[715.5,718.66,725], bear=[715.5,710,703.14]),
- "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 16 (levels · no paths)", fut=False, lv=[
-   (662.19,"R","Fri range high"),(650,"R","650"),(645,"P","645 Thu close"),(640,"S","640 Fri put wall"),(635,"S","635–632"),(627.89,"S","Fri range low")],
-   zones=[], bull=[], bear=[]),
-}
-PRIOR_EVENT = {  # Fri: monthly OpEx — edge ticks only
-  "day": dt.date(2026, 11, 20),
-  "label": "OpEx Fri",
-  "frac_fut": 0.55, "frac_cash": 0.1,
-}
-PRIOR_DAY_NOTES = {
-  0: "trend dn",
-  1: "NVDA",
-  2: "FOMC",
-  3: "IPO",
-  4: "OpEx",
-}
-
-
-# ── Week of Nov 23 (this week, Thanksgiving: Thu closed, Fri half day) — forward PLAN ──
-# Sourced levels only (weekly plan + Mon Daily pivot). Paths start at the Mon pivot and move forward only.
-PLAN_WEEK_FWD = [dt.date(2026, 11, 23), dt.date(2026, 11, 24), dt.date(2026, 11, 25),
-                 dt.date(2026, 11, 27)]
-FWD_ZONES = {
   "spy": {"bull": (718.0, 727.98), "bear": (695.45, 686.75),
           "bull_lab": "over 718 call wall → Monday high 727.98", "bear_lab": "below 695.45 → 686.75 Friday 11/20 low"},
   "es":  {"bull": (7211.0, 7305.0), "bear": (6982.0, 6898.0),
@@ -115,10 +73,10 @@ FWD_ZONES = {
   "qqq": None,
   "nq":  None,
 }
-FWD_SPEC = {
- "es": dict(sym="ES=F", title="/ES  ·  week of Nov 23 (Wed 11/25 close · Thu 11/26 4:04 PM PT)", fut=True, lv=[
-   (7305,"R","7305–09 control · Mon high 7313"),(7277,"R","7272–78 Friday flip ≈ 7272.5"),(7240,"R","7240–45 Tue high"),
-   (7217,"R","7211–23 · Wed high 7214 · call wall ≈ 7213.5"),(7163,"S","7160–65 Friday 7150 wall ≈ 7163.5"),
+PRIOR_SPEC = {
+ "es": dict(sym="ES=F", title="/ES  ·  week of Nov 23 (plan vs actual · Fri plan levels)", fut=True, lv=[
+   (7305,"R","7305–09 control · Mon high 7313"),(7277,"R","7272–78"),(7240,"R","7240–45 Tue high"),
+   (7217,"R","7211–23 · Wed high 7214"),(7163,"S","7160–65"),
    (7122,"S","7120–25"),(7086,"S","7086"),(7027,"S","7025–29"),
    (6982,"S","6982–93 Wed low / Sunday FB"),(6963,"P","6960–66 unused pivot"),(6898,"S","6897–98 Fri 11/20 low"),(6846,"S","6841–51")],
    zones=[], bull=[7217,7240,7277,7305], bear=[7163,6982,6963,6898]),
@@ -126,10 +84,10 @@ FWD_SPEC = {
    (27137,"R","27137 Mon high"),(26509.75,"R","26510 Tue high"),
    (25027.5,"S","25027 Wed low"),(24976.5,"S","24976.5 Fri 11/20 low")],
    zones=[], bull=[], bear=[]),
- "spy": dict(sym="SPY", title="SPY  ·  week of Nov 23 (Wed 11/25 close · Thu 11/26 4:04 PM PT)", fut=False, lv=[
+ "spy": dict(sym="SPY", title="SPY  ·  week of Nov 23 (plan vs actual · Fri plan levels)", fut=False, lv=[
    (727.98,"R","727.98 Mon high"),(721.5,"R","721.5 Friday flip"),(718.66,"R","718.66 dark-pool line"),
-   (718,"R","718 Friday call wall / biggest strike"),(716.70,"P","716.70 Wed close"),
-   (715.02,"S","715.02 nearest dark-pool line"),(700,"S","700 put wall"),(695.45,"S","695.45 Wed low"),(686.75,"S","686.75 Fri 11/20 low")],
+   (718,"R","718 Friday call wall"),(716.70,"P","716.70 Wed close"),
+   (715.02,"S","715.02 dark-pool line"),(700,"S","700 put wall"),(695.45,"S","695.45 Wed low"),(686.75,"S","686.75 Fri 11/20 low")],
    zones=[], bull=[716.70,718,727.98], bear=[716.70,700,686.75]),
  "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 23 (levels · no paths)", fut=False, lv=[
    (657.53,"R","657.53 Mon high"),(650,"R","650 Friday call wall"),(647.7,"R","647.7 Friday flip"),
@@ -137,19 +95,64 @@ FWD_SPEC = {
    (607.76,"S","607.76 Wed low"),(606.23,"S","606.23 Fri 11/20 low")],
    zones=[], bull=[], bear=[]),
 }
-FWD_EVENT = {  # Wed: PCE · GDP · claims 5:30 AM PT — edge ticks only
+PRIOR_EVENT = {  # Wed: PCE · GDP · claims 5:30 AM PT — edge ticks only
   "day": dt.date(2026, 11, 25),
   "label": "PCE · GDP · claims Wed 5:30 AM PT",
   "frac_fut": 0.6, "frac_cash": 0.05,
 }
-FWD_DAY_NOTES = {
-  0: "PMIs",
+PRIOR_DAY_NOTES = {
+  0: "7313 tag",
   1: "Conf Bd",
   2: "PCE·GDP",
   3: "½ day",
 }
-FWD_BOX = ["bias: two-sided · 7160–65 is the nearby line · 7211–23 first upside · 7305–09 is still the control line",
-           "catalysts: Thu closed · Fri closes 10:00 AM PT (weekly expiration) · jobs report Fri Dec 4"]
+
+
+# ── Week of Nov 30 (this week: month-end Monday, jobs report Friday) — forward PLAN ──
+# Sourced levels only (weekly plan + Mon Daily pivot). Paths start at the Mon pivot and move forward only.
+PLAN_WEEK_FWD = [dt.date(2026, 11, 30), dt.date(2026, 12, 1), dt.date(2026, 12, 2),
+                 dt.date(2026, 12, 3), dt.date(2026, 12, 4)]
+FWD_ZONES = {
+  "spy": {"bull": (730.0, 737.3), "bear": (724.0, 719.62),
+          "bull_lab": "over 730 call wall / 730.98 200-day → 737.3 Monday flip", "bear_lab": "below 724 put wall → 720 / 719.62 Friday low"},
+  "es":  {"bull": (7321.0, 7408.0), "bear": (7287.0, 7242.0),
+          "bull_lab": "hold 7305–09 → 7320–23, 7334, 7362–65, then 7405–12", "bear_lab": "lose 7305–09 → 7286, 7272–78, 7250–52, then 7240–45"},
+  "qqq": None,
+  "nq":  None,
+}
+FWD_SPEC = {
+ "es": dict(sym="ES=F", title="/ES  ·  week of Nov 30 (Fri 11/27 close · 1:15 PM PT)", fut=True, lv=[
+   (7408,"R","7405–12 gateway · SPX 7400 ≈ 7411.75"),(7363,"R","7362–65"),(7352,"R","7352 Monday flip ≈"),(7334,"R","7334 · SPY 200-day ≈"),
+   (7321,"R","7320–23 Friday high"),(7307,"P","7305–09 control line"),(7287,"S","7286–87 Monday put wall ≈"),
+   (7275,"S","7272–78"),(7251,"S","7250–52 swept / reclaimed"),(7242,"S","7240–45"),(7217,"S","7211–23 Friday low 7222.75"),(7163,"S","7160–65")],
+   zones=[], bull=[7307,7321,7334,7363,7408], bear=[7307,7287,7275,7251,7242]),
+ "nq": dict(sym="NQ=F", title="/NQ  ·  week of Nov 30 (levels · no paths)", fut=True, lv=[
+   (26816,"R","26816 Friday high"),(26765,"P","26765 Friday close"),(26208.5,"S","26208.5 Friday low"),(25027.5,"S","25027 Wed low")],
+   zones=[], bull=[], bear=[]),
+ "spy": dict(sym="SPY", title="SPY  ·  week of Nov 30 (Fri 11/27 close · 1:15 PM PT)", fut=False, lv=[
+   (737.3,"R","737.3 Monday flip"),(732.5,"R","732.5 week flip"),(731.85,"R","731.85 dark-pool line"),(730.98,"R","730.98 200-day"),
+   (730,"R","730 call wall"),(729.26,"R","729.26 dark-pool line"),(728.32,"P","728.32 Fri close"),
+   (727.83,"S","727.83 dark-pool line"),(724,"S","724 Monday put wall"),(720,"S","720 week put wall"),(719.62,"S","719.62 Fri low"),(718.66,"S","718.66")],
+   zones=[], bull=[728.32,730,732.5,737.3], bear=[728.32,724,720,718.66]),
+ "qqq": dict(sym="QQQ", title="QQQ  ·  week of Nov 30 (levels · no paths)", fut=False, lv=[
+   (670,"R","670 week call wall"),(661.7,"R","661.7 all-dates flip"),(657.53,"R","657.53 last Mon high"),(651.7,"R","651.7 Monday flip"),
+   (650,"P","650 call wall / biggest"),(640,"S","640 Monday put wall"),(636.72,"S","636.72 Fri low"),(630,"S","630 week put wall")],
+   zones=[], bull=[], bear=[]),
+}
+FWD_EVENT = {  # Fri: jobs report 5:30 AM PT — edge ticks only
+  "day": dt.date(2026, 12, 4),
+  "label": "Jobs report Fri 5:30 AM PT",
+  "frac_fut": 0.6, "frac_cash": 0.05,
+}
+FWD_DAY_NOTES = {
+  0: "month-end",
+  1: "ISM·JOLTS",
+  2: "ADP",
+  3: "ISM svcs",
+  4: "NFP",
+}
+FWD_BOX = ["bias: lean bullish while 7305–09 holds · 7320–23 / 7334 first upside · 7272–78 / 7250–52 below",
+           "catalysts: Mon month-end · Tue ISM · JOLTS · Wed ADP · Thu ISM services · Fri jobs report 5:30 AM PT"]
 
 def _download(sym):
     """Free free_data 30m with extended hours; clean seam/garbage-wick artifacts."""
@@ -768,15 +771,15 @@ def main():
 
     scores = {}
     failures = []
-    # 1) Last week PLAN vs ACTUAL (Nov 16–20)
-    print("=== PRIOR WEEK (Nov 16–20) PLAN vs ACTUAL ===")
+    # 1) Last week PLAN vs ACTUAL (Nov 23–27)
+    print("=== PRIOR WEEK (Nov 23–27) PLAN vs ACTUAL ===")
     for k, sp in PRIOR_SPEC.items():
         try:
             p, sc = chart(k, sp, PRIOR_WEEK, PRIOR_ZONES, PRIOR_EVENT,
                           out_path=str(prior_dir / f"{k}.png"),
                           day_notes=PRIOR_DAY_NOTES,
                           mode="actual",
-                          box_title="Nov 16–20 · plan vs actual")
+                          box_title="Nov 23–27 · plan vs actual")
             print("prior", p)
             shutil.copy(p, wdir / f"{k}.png")  # default weekly charts = last week actual
             if sc:
@@ -786,8 +789,8 @@ def main():
             print(msg, flush=True)
             failures.append(msg)
 
-    # 2) This week PLAN (Nov 23–27) — actual candles so far + forward paths on empty days
-    print("=== FORWARD WEEK (Nov 23–27) PLAN ===")
+    # 2) This week PLAN (Nov 30–Dec 4) — actual candles so far + forward paths on empty days
+    print("=== FORWARD WEEK (Nov 30–Dec 4) PLAN ===")
     fwd_scores = {}
     # FREEZE_SCORECARD=1: re-draw levels/paths but keep the published plan-week scorecard as-is
     frozen = {}
@@ -802,7 +805,7 @@ def main():
                           out_path=str(plan_dir / f"{k}.png"),
                           day_notes=FWD_DAY_NOTES,
                           mode="plan",
-                          box_title="Nov 23–27 · week plan",
+                          box_title="Nov 30–Dec 4 · week plan",
                           frozen_sc=frozen.get(k))
             print("plan", p)
             shutil.copy(p, Path(OUT) / f"{k}.png")  # daily page = this week's chart (new candles)
@@ -821,8 +824,8 @@ def main():
         "have_actual": bool(scores),
         "symbols_prior": scores,
         "symbols_plan": fwd_scores,
-        "note": "Prior week = Nov 16–20 PLAN vs ACTUAL (cleaned free_data bars). "
-                "Plan week = Nov 23–27 (Thu 11/26 closed) actual so far + forward paths only on empty day columns.",
+        "note": "Prior week = Nov 23–27 PLAN vs ACTUAL (cleaned free_data bars). "
+                "Plan week = Nov 30–Dec 4 actual so far + forward paths only on empty day columns.",
     }, indent=2), encoding="utf-8")
     try:
         (Path(__file__).resolve().parent.parent / "cache").mkdir(parents=True, exist_ok=True); Path(__file__).resolve().parent.parent.joinpath("cache/fomc_zone_status.json").write_text(
@@ -830,7 +833,7 @@ def main():
     except Exception:
         pass
     print("daily/weekly charts ->", OUT, "archive", arch)
-    print("weekly/charts (prior actual) + weekly/charts/plan (Nov 23 forward)")
+    print("weekly/charts (prior actual) + weekly/charts/plan (Nov 30 forward)")
     if failures:
         print("ERROR: chart build failed for:", "; ".join(failures), flush=True)
         raise SystemExit(1)

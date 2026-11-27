@@ -658,8 +658,8 @@ table.hm tr.em-bound td.stk{color:var(--amb)}
       chipRow.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on', c.dataset.sym===sym));
       renderHeatmap();
     }catch(e){
-      $('hmSetup').textContent='load error';
-      $('hmSetupD').textContent=String(e);
+      $('hmSetup').textContent='heatmap unavailable';
+      $('hmSetupD').textContent='awaiting the next data update';
     }
   }
 

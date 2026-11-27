@@ -1,65 +1,72 @@
 {
- "score": -32,
- "label": "BEARISH",
- "px": 721.9,
- "asof": "11-27 06:40 PT",
+ "score": 30,
+ "label": "BULLISH",
+ "px": 729.6,
+ "asof": "11-27 12:24 PT",
  "feed": "delayed",
- "built": "11-27 06:58 PT",
+ "built": "11-27 12:25 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
-   "v": -1,
-   "x": "721.90 vs 723.64",
+   "v": 1,
+   "x": "729.60 vs 724.43",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
-   "v": -1,
-   "x": "9=724.62 21=726.27",
+   "v": 1,
+   "x": "9=729.14 21=728.74",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
-   "v": 0,
-   "x": "range not set",
-   "w": 1.5
+   "v": 1,
+   "x": "ABOVE HIGH 720.92\u2013726.09 \u00b7 confirmed break (\u00d73)",
+   "w": 4.5
   },
   {
    "k": "ON RANGE",
    "d": "price vs overnight / pre-market high-low",
+   "v": 0,
+   "x": "726.77\u2013731.49",
+   "w": 1.0
+  },
+  {
+   "k": "GAMMA FLIP",
+   "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "725.84\u2013731.49",
+   "x": "729.60 vs flip 738.29",
    "w": 1.0
   },
   {
-   "k": "FB \u00b7 SPY",
-   "d": "price vs First Blade pivot",
-   "v": 1,
-   "x": "721.90 vs pivot 710.21",
-   "w": 1.0
+   "k": "FB \u00b7 QQQ",
+   "d": "QQQ price vs desk gamma flip (all exp)",
+   "v": -1,
+   "x": "650.99 vs 661.71",
+   "w": 0.75
   },
   {
-   "k": "FB \u00b7 LEAN",
-   "d": "First Blade stated lean",
-   "v": 1,
-   "x": "bullish",
-   "w": 0.5
+   "k": "DEALER DELTA",
+   "d": "SPY dealer-pressure delta lean (\u22121\u2026+1; \u00b10.10 dead zone)",
+   "v": -1,
+   "x": "-0.12",
+   "w": 0.75
   },
   {
    "k": "DARK POOL",
    "d": "dark-pool levels holding below vs overhead (\u00b11%)",
-   "v": -1,
-   "x": "3 below / 9 above",
+   "v": 0,
+   "x": "9 below / 9 above",
    "w": 1.5
   },
   {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
    "v": 0,
-   "x": "716.26\u2013725.66",
+   "x": "719.67\u2013736.97",
    "w": 1.0
   },
   {
@@ -73,12 +80,12 @@
    "k": "NEWS",
    "d": "news-plan bias",
    "v": 0,
-   "x": "TWO-SIDED",
+   "x": "LEAN BULLISH",
    "w": 1.0
   }
  ],
  "news": {
-  "dir": "TWO-SIDED",
-  "why": "Two-sided into Friday's early close and weekly expiration. Cash was closed Thursday; the working close is Wednesday: SPX 7182.78, SPY 716.70, QQQ 633.93, NDX 25,839.30, VIX 26.81, ES 7196.75 at 12:59 PM PT (regular-session high 7214 at 12:56 PM PT, low 6982.50 at 6:45 AM PT). 7305\u201309 is still the control line (Monday high 7313.25). 7211\u201323 was tested Wednesday (high 7214) and is now the first upside / first support \u2014 the Friday 7200 call wall sits at about ES 7213.5. A 7240\u201345 reclaim remains the buyers' next job; 7272\u201378 (Friday flip \u2248 7272.5) then 7305\u201309 are next. Just under the close, 7160\u201365 is the nearby line: Friday's 7150 put wall and biggest strike convert to about ES 7163.5. Lose that and 7120\u201325 / 7086 come back into view. 6982\u201393 (Wednesday's 6982.50 data low and the Sunday 6992\u201393 failed-breakdown) is still the week's bigger line. The Monday plan's bull path already played out to 7305\u201309; Wednesday flushed to 6982.50 and closed 7196.75. Friday stocks close 10:00 AM PT. Size down. ES conversions use SPX + 13.5 (Wednesday regular-session median through 11:18 AM PT)."
+  "dir": "LEAN BULLISH",
+  "why": "Lean bullish while ES holds 7305\u201309. Friday's half day dipped to 7222.75 at 7:05 AM PT, held 7211\u201323, swept and reclaimed 7250\u201352, and closed back above the 7305\u201309 control line at 7308.25 (regular-session high 7320.75 into the close). Closes: SPX 7297.49 (+1.60%), SPY 728.32, QQQ 650.99, NDX 26,726.39, VIX 23.81; the week was SPX +5.60%. First upside is 7320\u201323, then 7334 (SPY's 200-day \u2248 7336) and 7352 (Monday SPX flip \u2248 7340); 7362\u201365 and the 7405\u201312 gateway are the bigger targets. Monday's SPX call wall 7300 sits on the control line (\u2248 7311.75) and its 7275 put wall maps to about 7286.75. Every all-dates board is still negative gamma, so a 7305\u201309 loss can travel: 7272\u201378 and 7250\u201352 come first, then 7240\u201345. Monday is month-end; Chicago PMI 6:45 AM PT. ES conversions use SPX + 11.75 (Friday regular-session median)."
  }
 }

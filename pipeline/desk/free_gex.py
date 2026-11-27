@@ -22,7 +22,50 @@ def fetch(t):
             return json.loads(urllib.request.urlopen(r, timeout=20).read())
         except Exception as ex:
             last = ex; time.sleep(2)
-    raise last
+    try:  # sweep 2026-11-27: CBOE's delayed-quotes CDN returns 403 to the runners since 11/19; fall back to Yahoo's free chains
+        return fetch_yf(t)
+    except Exception as ex:
+        raise RuntimeError(f"cboe: {last}; yahoo: {ex}")
+YF = {"SPY": "SPY", "QQQ": "QQQ", "SPX": "^SPX"}
+EARLY_CLOSE = {date(2026, 11, 27), date(2026, 12, 24), date(2027, 11, 26), date(2027, 12, 24)}  # 1:00 PM ET closes
+def fetch_yf(t, max_days=35):
+    """Same shape as the CBOE payload (data.current_price + data.options[] with OCC symbols, OI, IV, greeks),
+    built from Yahoo's free option chains. Greeks are Black-Scholes from Yahoo's IV (r=0)."""
+    import logging, yfinance as yf
+    logging.getLogger("yfinance").setLevel(logging.CRITICAL)
+    tk = yf.Ticker(YF[t]); h = tk.history(period="5d", interval="1d")
+    S = float(h["Close"].iloc[-1]); prev_c = float(h["Close"].iloc[-2]) if len(h) > 1 else S
+    today = datetime.now(ET).date(); opts = []
+    for e in tk.options:
+        ex = datetime.strptime(e, "%Y-%m-%d").date()
+        if ex < today or (ex - today).days > max_days: continue
+        ch = tk.option_chain(e)
+        nm = datetime.now(ET).hour * 60 + datetime.now(ET).minute
+        if ex == today and nm >= (13 * 60 + 5 if today in EARLY_CLOSE else 16 * 60 + 5):
+            continue  # today's expiry has settled; Yahoo keeps stale quotes on it after the close
+        T = max((datetime.combine(ex, datetime.min.time(), ET).replace(hour=16) - datetime.now(ET)).total_seconds(), 1800) / (365 * 86400)
+        for df, cp in ((ch.calls, "C"), (ch.puts, "P")):
+            df = df.fillna({"bid": 0, "ask": 0, "lastPrice": 0, "change": 0, "volume": 0, "openInterest": 0, "impliedVolatility": 0})
+            near = df[(df.strike >= 0.95 * S) & (df.strike <= 1.05 * S) & (df.impliedVolatility > 0.01)]
+            iv_fill = float(near.impliedVolatility.median()) if len(near) else 0.0  # Yahoo zeroes IV on some strikes after the close
+            for r in df.itertuples():
+                K = float(r.strike); iv = float(r.impliedVolatility or 0)
+                if iv <= 0.01: iv = iv_fill
+                if not (0.7 * S <= K <= 1.3 * S): continue
+                g = bs_gamma(S, K, T, iv) if iv > 0.01 else 0.0
+                if iv > 0.01:
+                    d1 = (math.log(S / K) + 0.5 * iv * iv * T) / (iv * math.sqrt(T)); nd = 0.5 * (1 + math.erf(d1 / math.sqrt(2)))
+                    dl = nd if cp == "C" else nd - 1; vg = S * math.exp(-d1 * d1 / 2) / math.sqrt(2 * math.pi) * math.sqrt(T) / 100
+                else:
+                    dl = vg = 0.0
+                oi = r.openInterest if r.openInterest == r.openInterest else 0
+                vol = r.volume if r.volume == r.volume else 0
+                opts.append({"option": r.contractSymbol, "open_interest": float(oi or 0), "gamma": g, "iv": iv, "volume": float(vol or 0),
+                             "delta": dl, "vega": vg, "bid": float(r.bid or 0), "ask": float(r.ask or 0),
+                             "last_trade_price": float(r.lastPrice or 0), "change": float(r.change or 0)})
+    if not opts: raise RuntimeError("yahoo: empty chain")
+    return {"timestamp": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"), "source": "yahoo",
+            "data": {"current_price": S, "price_change": S - prev_c, "price_change_percent": 100 * (S - prev_c) / prev_c, "options": opts}}
 def third_friday(y, m):
     d = date(y, m, 15); return d + timedelta((4 - d.weekday()) % 7)
 def next_monthly(d):

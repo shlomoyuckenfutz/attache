@@ -1,96 +1,91 @@
 {
-  "schema": 1,
-  "daily": {
-    "session": "2026-11-27",
-    "title": "Holiday close, catalysts & SPY levels",
-    "rows": [
-      {
-        "k": "close",
-        "lb": "Wed 11/25 close",
-        "t": "SPX 7,182.78 · SPY 716.70 · QQQ 633.93 · NDX 25,839.30 · VIX 26.81 · ES 7196.75 (high 7214, low 6982.50). Thursday closed."
-      },
-      {
-        "k": "week",
-        "lb": "This week so far",
-        "t": "Monday ES high 7313.25 (tagged 7305–09), close 7268.50. Tuesday 7152–7240, SPX 7201.09. Wednesday flushed to 6982.50 and closed 7196.75. SPY is +3.82% through Wednesday (3 sessions)."
-      },
-      {
-        "k": "board",
-        "lb": "Wednesday board",
-        "t": "Friday SPX: call wall 7200, put wall and biggest strike 7150, flip 7259. SPY Friday: call and biggest 718, put 700, flip 721.5. QQQ Friday: call 650, biggest 640, flip 647.7. All-dates SPX net −$53.5B, biggest strike 7000, call wall 7650, no flip."
-      },
-      {
-        "k": "holiday",
-        "lb": "Holiday",
-        "t": "Thursday closed · Friday stocks close 10:00 AM PT (weekly expiration)"
-      },
-      {
-        "k": "data",
-        "lb": "Data in",
-        "t": "Wed 5:30 AM PT: GDP 4.3%, core PCE 3.3% year-on-year, claims 189k, durable goods 0.2% · Beige Book 11:00 AM PT · Friday goods trade 5:30 AM PT"
-      },
-      {
-        "k": "implied",
-        "lb": "Expected range to Fri 11/27 (Wed close)",
-        "t": "SPX 7066.71–7298.85 (±1.62%) · SPY 704.35–729.05 (±1.72%) · QQQ 617.22–650.64 (±2.64%) · NDX 25,110.11–26,568.49 (±2.82%)."
-      },
-      {
-        "k": "res",
-        "lb": "Resistance",
-        "t": "SPY 718 (Friday call wall and biggest strike) · 718.66 dark-pool line · 721.5 Friday flip · 724.97 original week high"
-      },
-      {
-        "k": "dec",
-        "lb": "Decision",
-        "t": "SPY 715.02 nearest dark-pool line under the close · 700 put wall · 7160–65 ES maps to the Friday 7150 wall"
-      },
-      {
-        "k": "sup",
-        "lb": "Support",
-        "t": "SPY 715.02 · 700 · 695.45 Wednesday low · 686.75 Friday 11/20 low"
-      },
-      {
-        "k": "macro",
-        "lb": "Next week",
-        "t": "ISM manufacturing and JOLTS Tue 7:00 AM PT · ADP Wed 5:15 AM PT · ISM services Thu 7:00 AM PT · jobs report Fri Dec 4 5:30 AM PT · FOMC Dec 8–9"
-      }
-    ]
-  },
-  "weekly": {
-    "week_start": "2026-11-23",
-    "week_end": "2026-11-27",
-    "title": "Week bias & volatility",
-    "rows": [
-      {
-        "k": "flip",
-        "lb": "Bias flip",
-        "t": "ES accepted over 7211–23, then 7240–45, opens 7272–78 and a 7305–09 retest · a loss of 7160–65 brings 7120–25; a loss of 6982–93 brings 6960–66 and 6897 back"
-      },
-      {
-        "k": "vol",
-        "lb": "Volatility",
-        "t": "VIX 26.81 at the Wednesday close (high 34.95 at 6:45 AM PT) · boxed 18–30, positive gamma, biggest strike and call wall 30"
-      },
-      {
-        "k": "data",
-        "lb": "Data in",
-        "t": "Wed 5:30 AM PT: GDP 4.3%, core PCE 3.3% year-on-year, claims 189k, durable goods 0.2% · Beige Book 11:00 AM PT · Friday goods trade 5:30 AM PT"
-      },
-      {
-        "k": "holiday",
-        "lb": "Holiday",
-        "t": "Thu 11/26 closed · Fri 11/27 stocks close 10:00 AM PT (weekly expiration)"
-      },
-      {
-        "k": "season",
-        "lb": "Seasonality",
-        "t": "Thanksgiving week higher 8 of the last 9 years for SPY (median +1.18%) · this year is already +3.82% through Wednesday (3 sessions) · history, not a forecast"
-      },
-      {
-        "k": "range",
-        "lb": "Week range",
-        "t": "Wed close read to Fri 11/27: SPX 7066.71–7298.85 (±1.62%) · SPY 704.35–729.05 (±1.72%) · QQQ 617.22–650.64 · NDX 25,110.11–26,568.49"
-      }
-    ]
-  }
+ "schema": 1,
+ "daily": {
+  "session": "2026-11-30",
+  "title": "Month-end, catalysts & SPY levels",
+  "rows": [
+   {
+    "k": "close",
+    "lb": "Fri 11/27 close",
+    "t": "SPX 7,297.49 (+1.60%) · SPY 728.32 · QQQ 650.99 (+2.69%) · NDX 26,726.39 · VIX 23.81 · ES 7308.25 (regular session 7222.75–7320.75)"
+   },
+   {
+    "k": "week",
+    "lb": "Last week",
+    "t": "SPX +5.60%, SPY +5.58%, QQQ +6.99%. ES tagged 7305–09 Monday, flushed to 6982.50 Wednesday, and closed back above 7305–09 Friday."
+   },
+   {
+    "k": "board",
+    "lb": "Friday board",
+    "t": "Monday SPX: call wall 7300, put wall 7275, flip ≈ 7340. SPY Monday: call wall and biggest strike 730, put wall 724, flip ≈ 737.3. QQQ Monday: call wall 650, put wall 640, flip ≈ 651.7. Every all-dates board negative gamma."
+   },
+   {
+    "k": "data",
+    "lb": "Data",
+    "t": "Mon 6:45 AM PT Chicago PMI · month-end close · Tue 7:00 AM PT ISM manufacturing and JOLTS"
+   },
+   {
+    "k": "implied",
+    "lb": "Expected range Mon 11/30 (Fri close)",
+    "t": "SPY 719.67–736.97 (±1.19%) · SPX ≈ 7211–7384 · QQQ 639.19–662.79 (±1.81%) · ES ≈ 7223–7396"
+   },
+   {
+    "k": "res",
+    "lb": "Resistance",
+    "t": "SPY 728.74 / 729.26 dark-pool lines · 729.15 Friday high · 730 call wall · 730.98 200-day · 731.85 dark-pool line"
+   },
+   {
+    "k": "dec",
+    "lb": "Decision",
+    "t": "SPY 728.32 Friday close · 7305–09 ES control line ≈ SPY 729"
+   },
+   {
+    "k": "sup",
+    "lb": "Support",
+    "t": "SPY 728.05 / 727.83 dark-pool lines · 724 Monday put wall · 720 week put wall · 719.62 Friday low"
+   },
+   {
+    "k": "macro",
+    "lb": "This week",
+    "t": "ADP Wed 5:15 AM PT · claims Thu 5:30 AM PT · ISM services Thu 7:00 AM PT · jobs report Fri Dec 4 5:30 AM PT · FOMC Dec 8–9"
+   }
+  ]
+ },
+ "weekly": {
+  "week_start": "2026-11-30",
+  "week_end": "2026-12-04",
+  "title": "Week bias & volatility",
+  "rows": [
+   {
+    "k": "flip",
+    "lb": "Bias flip",
+    "t": "ES holding 7305–09 keeps 7334, 7362–65 and 7405–12 in play · a loss of 7305–09 brings 7272–78 and 7250–52 · a loss of 7240–45 brings 7211–23 and 7160–65 back"
+   },
+   {
+    "k": "vol",
+    "lb": "Volatility",
+    "t": "VIX 23.81 at the Friday close (35.90 a week earlier) · December open interest boxes it 18–30"
+   },
+   {
+    "k": "data",
+    "lb": "Data",
+    "t": "Mon Chicago PMI · Tue ISM manufacturing and JOLTS · Wed ADP · Thu claims and ISM services · Fri jobs report 5:30 AM PT"
+   },
+   {
+    "k": "holiday",
+    "lb": "Fed",
+    "t": "FOMC Dec 8–9 · quiet period from Sat 11/28 · CPI Thu Dec 10"
+   },
+   {
+    "k": "season",
+    "lb": "Seasonality",
+    "t": "Week 49 higher 8 of the last 10 years for SPY (median +0.37%) · December higher 7 of 10 (median +1.62%) · history, not a forecast"
+   },
+   {
+    "k": "range",
+    "lb": "Week range",
+    "t": "Fri close read to Fri 12/4: SPX 7122.59–7472.39 (±2.40%) · SPY 710.71–745.93 (±2.42%) · QQQ 627.48–674.50 · NDX 25,770.64–27,682.14"
+   }
+  ]
+ }
 }

@@ -250,6 +250,22 @@ def patch_section(path: Path, section: str, anchor='<div class="ft">'):
 
 
 # ---------------- command payload ----------------
+def _mon(txt, full=False):
+    """Month name from a seasonality line such as 'December: median …' (labels follow the data, not the calendar)."""
+    m = re.match(r"\s*([A-Z][a-z]+)\b", str(txt or ""))
+    if not m:
+        return "" if full else "month"
+    return m.group(1) if full else m.group(1)[:3]
+
+
+def _wk(S, asof):
+    for v in S.values():
+        m = re.search(r"Week (\d+)", str(v.get("week") or ""))
+        if m:
+            return m.group(1)
+    return date.fromisoformat(asof).isocalendar()[1]
+
+
 def command_payload(data):
     if not data:
         return {"board": None}
@@ -283,13 +299,13 @@ def command_payload(data):
         "tiles": [
             {"h": "ES · NQ LEVELS", "d": a, "c": "var(--gn)", "rows": es_rows, "note": f"ES = SPX + {f(data['es_basis'], 2)} plan basis"},
             {"h": "FLOW", "d": F.get("asof_label") or a, "c": "var(--up)", "v": f"{F.get('net', AWAIT)} {F.get('lean', '')}".strip(),
-             "rows": [["prints", f"{F.get('prints', 0):,}"], ["calls / puts", f"{F.get('calls', '–')} / {F.get('puts', '–')}"], ["put/call", str(F.get("put_call", "–"))]] +
+             "rows": [["prints", (format(F["prints"], ",") if isinstance(F.get("prints"), (int, float)) else "—")], ["calls / puts", f"{F.get('calls', '–')} / {F.get('puts', '–')}"], ["put/call", str(F.get("put_call", "–"))]] +
                      [["SPY", x] for x in F.get("spy_notable") or []],
              "note": F.get("spy_directional", "")} if F.get("net") else
             {"h": "FLOW", "d": a, "c": "var(--up)", "v": "—", "rows": [], "note": AWAIT},
             {"h": "SEASONALITY", "d": a, "c": "var(--pu)",
-             "rows": [[f"{k} week", v.get("week", AWAIT).split(": ", 1)[-1]] for k, v in S.items()] + [[f"{k} Nov", v.get("month", AWAIT).split(": ", 1)[-1]] for k, v in S.items()],
-             "note": f"Week {date.fromisoformat(data['asof']).isocalendar()[1]} and November history · not a forecast"},
+             "rows": [[f"{k} week", v.get("week", AWAIT).split(": ", 1)[-1]] for k, v in S.items()] + [[f"{k} {_mon(v.get('month'))}", v.get("month", AWAIT).split(": ", 1)[-1]] for k, v in S.items()],
+             "note": f"Week {_wk(S, data['asof'])} and {_mon(next((v.get('month') for v in S.values() if v.get('month')), ''), full=True) or 'month'} history · not a forecast"},
         ],
         "gamma": {"h": f"GAMMA LEVELS · {a}", "html": table(data, data["expiries"])},
     }

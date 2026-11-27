@@ -7,51 +7,50 @@ from tests import test_public_names as N
 
 ROOT = Path(__file__).resolve().parents[3]
 DATA = json.loads((ROOT / "pipeline/inputs/plans/addenda.json").read_text())
-PD = "2026-11-27"  # addenda session; Daily plan.json moves with the live date
+PD = "2026-11-30"  # addenda session; Daily plan.json moves with the live date
 DB, WB = A.daily_block(DATA, PD), A.weekly_block(DATA, PD)
 txt = lambda h: re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", h))
 
 
 class Daily(unittest.TestCase):
     def test_renders_for_mon_with_every_figure(self):
-        self.assertEqual(PD, "2026-11-27")
+        self.assertEqual(PD, "2026-11-30")
         t = txt(DB)
-        self.assertIn("HOLIDAY CLOSE, CATALYSTS &amp; SPY LEVELS · FRI 11/27", DB)
-        for s in ["SPX 7,182.78", "SPY 716.70", "QQQ 633.93", "ES 7196.75", "VIX 26.81",
-                  "Monday ES high 7313.25", "flushed to 6982.50", "GDP 4.3%", "core PCE 3.3%",
-                  "Thursday closed", "Friday stocks close 10:00 AM PT", "715.02 nearest dark-pool line",
-                  "695.45 Wednesday low", "686.75 Friday 11/20 low", "jobs report Fri Dec 4"]:
+        self.assertIn("MONTH-END, CATALYSTS &amp; SPY LEVELS · MON 11/30", DB)
+        for s in ["SPX 7,297.49", "SPY 728.32", "QQQ 650.99", "ES 7308.25", "VIX 23.81",
+                  "SPX +5.60%", "flushed to 6982.50", "call wall 7300, put wall 7275", "Chicago PMI",
+                  "ISM manufacturing and JOLTS", "SPY 719.67–736.97", "728.74 / 729.26 dark-pool lines",
+                  "724 Monday put wall", "719.62 Friday low", "jobs report Fri Dec 4"]:
             self.assertIn(s, t, s)
 
     def test_hidden_on_other_sessions(self):
-        self.assertEqual(A.daily_block(DATA, "2026-11-25"), "")
+        self.assertEqual(A.daily_block(DATA, "2026-11-27"), "")
         self.assertEqual(A.daily_block({}, PD), "")
         self.assertEqual(A.daily_block(DATA, None), "")
 
 
 class Weekly(unittest.TestCase):
     def test_renders_for_week_with_every_figure(self):
-        wb = A.weekly_block(DATA, "2026-11-23")
+        wb = A.weekly_block(DATA, "2026-11-30")
         t = txt(wb)
-        self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 23–27", wb)
-        for s in ["ES accepted over 7211–23, then 7240–45", "VIX 26.81",
-                  "Wed 5:30 AM PT: GDP 4.3%", "Thu 11/26 closed", "stocks close 10:00 AM PT", "8 of the last 9 years",
-                  "SPX 7066.71–7298.85 (±1.62%)"]:
+        self.assertIn("WEEK BIAS &amp; VOLATILITY · NOV 30–DEC 4", wb)
+        for s in ["ES holding 7305–09", "VIX 23.81", "Fri jobs report 5:30 AM PT", "FOMC Dec 8–9",
+                  "8 of the last 10 years", "SPX 7122.59–7472.39 (±2.40%)"]:
             self.assertIn(s, t, s)
-        self.assertEqual(A.weekly_block(DATA, "2026-11-27"), wb)
+        self.assertEqual(A.weekly_block(DATA, "2026-12-04"), wb)
         self.assertNotIn("backwardation", wb.lower()); self.assertNotIn("contango", wb.lower())
 
     def test_hidden_outside_week(self):
-        self.assertEqual(A.weekly_block(DATA, "2026-11-20"), ""); self.assertEqual(A.weekly_block(DATA, "2026-11-30"), "")
-        bad = json.loads(json.dumps(DATA)); bad["weekly"]["week_end"] = "2026-12-04"
-        self.assertEqual(A.weekly_block(bad, "2026-11-23"), "")
+        self.assertEqual(A.weekly_block(DATA, "2026-11-27"), ""); self.assertEqual(A.weekly_block(DATA, "2026-12-07"), "")
+        bad = json.loads(json.dumps(DATA)); bad["weekly"]["week_end"] = "2026-12-11"
+        self.assertEqual(A.weekly_block(bad, "2026-11-30"), "")
 
 
 class Wording(unittest.TestCase):
     def test_biggest_strike_not_called_a_put_wall(self):
         t = txt(DB)
-        self.assertIn("700 put wall", t)
-        self.assertNotRegex(t, r"Friday.{0,40}700 put wall|Fri 11/20.{0,40}put wall 700")
+        self.assertIn("720 week put wall", t); self.assertIn("call wall and biggest strike 730", t)
+        self.assertNotRegex(t, r"put wall 730\b|730 put wall")
 
     def test_stale_spy_awaiting_line_gone_from_source_and_page(self):
         import build_daily
@@ -79,7 +78,7 @@ class Hygiene(unittest.TestCase):
 
     def test_patch_idempotent_and_placed_before_positioning(self):
         import tempfile
-        for page, blk in (("daily", DB), ("weekly", A.weekly_block(DATA, "2026-11-23"))):
+        for page, blk in (("daily", DB), ("weekly", A.weekly_block(DATA, "2026-11-30"))):
             src = (ROOT / page / "index.html").read_text()
             with tempfile.TemporaryDirectory() as td:
                 p = Path(td) / "i.html"; p.write_text(src)
