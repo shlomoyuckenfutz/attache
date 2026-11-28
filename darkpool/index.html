@@ -245,21 +245,10 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
  </section>
 
  <section class="sec">
- <h2>MAJOR DARK POOLS</h2>
- <p class="sub" id="convNote">Primary levels · SPX = SPY ÷ ratio · ES = SPX + basis (see Conversion)</p>
+ <h2>LEVEL TABLE · SPY / SPX / ES</h2>
+ <p class="sub" id="convNote">SPX = SPY ÷ ratio · ES = SPX + basis (see Conversion)</p>
  <div class="tbl-wrap">
- <table class="lv" id="tblMajor">
- <thead><tr><th>#</th><th>SPY</th><th>STATUS</th><th>SPX</th><th>ES</th><th>SIDE</th><th>Δ SPY</th><th>Δ %</th></tr></thead>
- <tbody></tbody>
- </table>
- </div>
- </section>
-
- <section class="sec">
- <h2>MINOR</h2>
- <p class="sub" id="minorNote">Additional levels, with near-duplicates merged. Same conversion as Major.</p>
- <div class="tbl-wrap">
- <table class="lv" id="tblMinor">
+ <table class="lv" id="tbl">
  <thead><tr><th>#</th><th>SPY</th><th>STATUS</th><th>SPX</th><th>ES</th><th>SIDE</th><th>Δ SPY</th><th>Δ %</th></tr></thead>
  <tbody></tbody>
  </table>
@@ -334,7 +323,7 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
  <div class="note">
  Levels load from the site Dark Pool data file.
  <ol>
- <li>Edit the <code>levels</code> array (SPY prices, high → low). Tag each row <code>tier</code> <b style="color:var(--pu2)">major</b> or <b style="color:var(--pu2)">minor</b>. Label them Dark Pool only — no source names.</li>
+ <li>Edit the <code>levels</code> array (SPY prices, high → low). Label them <b style="color:var(--pu2)">Dark Pool</b> only.</li>
  <li>Recompute <code>rows</code> from <code>convert.spy_per_spx</code> and <code>convert.es_minus_spx</code> (stored with asof + public data closes).</li>
  <li>Refresh baked <code>bars.candles</code> (exchange 30m bars resampled to RTH <b>4H</b>, ~3m; y-range fits candles, off-chart levels listed in chips) and <code>level_stats</code> from Desk, then push JSON. Tag levels with <code>status</code> current|prior and <code>color</code>.</li>
  <li>This page reads the JSON at runtime — push the JSON and reload.</li>
@@ -394,8 +383,7 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
  status: x.status||'current',
  color: x.color|| (x.status==='prior'?'purple-dim':'purple'),
  source_date: x.source_date||x.sourceDate||'',
- note: x.note||'',
- tier: x.tier||''
+ note: x.note||''
  };
  }
  return null;
@@ -428,11 +416,9 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
  };
  };
 
- const paintTable=(sel, rows, spot, near)=>{
- const tb=document.querySelector(sel+' tbody');
- if(!tb) return;
+ const paintTable=(rows, spot, near)=>{
+ const tb=document.querySelector('#tbl tbody');
  const nb=near.below, na=near.above;
- if(!rows.length){ tb.innerHTML='<tr><td colspan="8" class="mut" style="text-align:left">none</td></tr>'; return; }
  tb.innerHTML=rows.map((r,i)=>{
  const spy=r.spy, side=spot>spy?'ABOVE':'BELOW';
  const d=+(spot-spy).toFixed(2), pct=+((spot-spy)/spy*100).toFixed(3);
@@ -756,15 +742,11 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
  spy:Number(r.spy),spx:Number(r.spx),es:Number(r.es),
  status:r.status||((X.bySpy[Number(r.spy)]||{}).status)||'current',
  color:r.color||((X.bySpy[Number(r.spy)]||{}).color)||'purple',
- source_date:r.source_date||'', note:r.note||'',
- tier:r.tier||((X.bySpy[Number(r.spy)]||{}).tier)||''
+ source_date:r.source_date||'', note:r.note||''
  }))
- :levelMetas.slice().sort((a,b)=>b.spy-a.spy).map(m=>{const spx=m.spy/k;return {spy:m.spy,spx,es:spx+esOff,status:m.status,color:m.color,source_date:m.source_date,note:m.note,tier:m.tier||''}});
+ :levelMetas.slice().sort((a,b)=>b.spy-a.spy).map(m=>{const spx=m.spy/k;return {spy:m.spy,spx,es:spx+esOff,status:m.status,color:m.color,source_date:m.source_date,note:m.note}});
  rows.sort((a,b)=>b.spy-a.spy);
- const majorRows=rows.filter(r=>r.tier==='major');
- const minorRows=rows.filter(r=>r.tier==='minor');
- paintTable('#tblMajor', (majorRows.length||minorRows.length)?majorRows:rows, spot, {below:X.near_below, above:X.near_above});
- paintTable('#tblMinor', minorRows, spot, {below:X.near_below, above:X.near_above});
+ paintTable(rows, spot, {below:X.near_below, above:X.near_above});
 
  const conv=J.convert||{};
  document.getElementById('convNote').textContent =
@@ -825,11 +807,8 @@ const L=()=>b.textContent=b.dataset.o?'less ▲':'more ▼ ('+(rs.length-K)+' ro
  updated = m?m[0]:J.asof_note;
  }
  if(!updated) updated='(see JSON asof_note)';
- const nMaj=levelMetas.filter(m=>m.tier==='major').length;
- const nMin=levelMetas.filter(m=>m.tier==='minor').length;
- const split=nMaj||nMin?` · ${nMaj} major / ${nMin} minor`:'';
  document.getElementById('hdrMeta').innerHTML =
- `levels last updated <b>${updated}</b> · ${levels.length} levels${split} (${levelMetas.filter(m=>m.status==='current').length} current / ${levelMetas.filter(m=>m.status==='prior').length} prior) · spot <b>${fmt(spot)}</b> (${asof})`;
+ `levels last updated <b>${updated}</b> · ${levels.length} levels (${levelMetas.filter(m=>m.status==='current').length} current / ${levelMetas.filter(m=>m.status==='prior').length} prior) · spot <b>${fmt(spot)}</b> (${asof})`;
 
  // redraw ladder on resize for correct label layout
  let rt=null;

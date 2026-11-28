@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-25",
+  "as_of": "2026-11-27",
   "trades": [
     {
       "date": "2026-11-01",
@@ -1888,7 +1888,7 @@
       "exit": 7234,
       "q_out_pl": 500.0,
       "net": 500.0,
-      "risk": null,
+      "risk": 500.0,
       "equity": 32643.97
     },
     {
@@ -1906,7 +1906,7 @@
       "exit": 7085,
       "q_out_pl": 500.0,
       "net": 500.0,
-      "risk": null,
+      "risk": 500.0,
       "equity": 33143.97
     },
     {
@@ -1924,7 +1924,7 @@
       "exit": 14,
       "q_out_pl": 0.0,
       "net": 850.0,
-      "risk": null,
+      "risk": 300.0,
       "equity": 33993.97
     },
     {
@@ -1942,7 +1942,7 @@
       "exit": 18,
       "q_out_pl": 290.0,
       "net": 1240.0,
-      "risk": null,
+      "risk": 275.0,
       "equity": 35233.97
     },
     {
@@ -1960,7 +1960,7 @@
       "exit": 22,
       "q_out_pl": 70.0,
       "net": 1660.0,
-      "risk": null,
+      "risk": 220.0,
       "equity": 36893.97
     },
     {
@@ -1978,7 +1978,7 @@
       "exit": 4.82,
       "q_out_pl": 281.0,
       "net": 281.0,
-      "risk": null,
+      "risk": 100.0,
       "equity": 37174.97
     },
     {
@@ -1996,7 +1996,7 @@
       "exit": 5.05,
       "q_out_pl": 253.0,
       "net": 263.0,
-      "risk": null,
+      "risk": 120.0,
       "equity": 37437.97
     },
     {
@@ -2010,11 +2010,11 @@
       "pt_val": null,
       "strike": 615,
       "entry": 4.51,
-      "q_out": null,
+      "q_out": 3.89,
       "exit": null,
-      "q_out_pl": null,
+      "q_out_pl": -62.0,
       "net": null,
-      "risk": null,
+      "risk": 250.0,
       "equity": null
     },
     {
@@ -2028,12 +2028,30 @@
       "pt_val": null,
       "strike": 510,
       "entry": 4.69,
-      "q_out": null,
+      "q_out": 3.7,
       "exit": null,
-      "q_out_pl": null,
+      "q_out_pl": -99.0,
       "net": null,
-      "risk": null,
+      "risk": 250.0,
       "equity": null
+    },
+    {
+      "date": "2026-11-27",
+      "sym": "SPX",
+      "root": null,
+      "inst": "Call",
+      "side": "Long",
+      "qty": 1,
+      "pts": null,
+      "pt_val": null,
+      "strike": 7295,
+      "entry": 5.05,
+      "q_out": 6.2,
+      "exit": 10.5,
+      "q_out_pl": 115.0,
+      "net": 545.0,
+      "risk": 300.0,
+      "equity": 37982.97
     }
   ]
 }

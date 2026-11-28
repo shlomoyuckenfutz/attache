@@ -43,7 +43,7 @@
           "date": "2026-11-24",
           "hi": 7271.5,
           "lo": 7120.5,
-          "last": 7141.75,
+          "last": 7142.0,
           "event": false
         },
         {
@@ -64,16 +64,16 @@
       "n_bars": 140
     },
     "spy": {
-      "high": 731.04,
+      "high": 731.3,
       "low": 694.2311,
-      "last": 730.75,
+      "last": 731.3,
       "path": "BULL",
       "phase1": "HIT",
       "phase1_zone": [
         718.0,
         727.98
       ],
-      "phase1_high": 731.04,
+      "phase1_high": 731.3,
       "phase2": "HIT",
       "phase2_zone": [
         695.45,
@@ -103,13 +103,13 @@
         },
         {
           "date": "2026-11-27",
-          "hi": 731.04,
+          "hi": 731.3,
           "lo": 694.23,
-          "last": 730.75,
+          "last": 731.3,
           "event": false
         }
       ],
-      "n_bars": 70
+      "n_bars": 73
     }
   },
   "symbols_plan": {},

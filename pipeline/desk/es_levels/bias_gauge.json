@@ -1,65 +1,65 @@
 {
- "score": 27,
- "label": "BULLISH",
- "px": 730.51,
- "asof": "11-27 12:38 PT",
+ "score": 19,
+ "label": "NEUTRAL",
+ "px": 731.3,
+ "asof": "11-27 13:59 PT",
  "feed": "delayed",
- "built": "11-27 12:55 PT",
+ "built": "11-27 19:01 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "730.51 vs 725.61",
+   "x": "731.30 vs 724.43",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
    "v": 1,
-   "x": "9=729.61 21=729.08",
+   "x": "9=730.71 21=730.37",
    "w": 1.0
   },
   {
    "k": "ORB15",
    "d": "price vs today's 15-min opening range",
    "v": 1,
-   "x": "ABOVE HIGH 720.92\u2013726.09 \u00b7 confirmed break (\u00d73)",
-   "w": 4.5
+   "x": "ABOVE HIGH 720.92\u2013726.09",
+   "w": 1.5
   },
   {
    "k": "ON RANGE",
    "d": "price vs overnight / pre-market high-low",
    "v": 0,
-   "x": "725.84\u2013731.49",
+   "x": "726.77\u2013731.49",
    "w": 1.0
   },
   {
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "730.51 vs flip 738.3",
+   "x": "731.30 vs flip 738.18",
    "w": 1.0
   },
   {
    "k": "FB \u00b7 QQQ",
    "d": "QQQ price vs desk gamma flip (all exp)",
    "v": -1,
-   "x": "650.99 vs 661.71",
+   "x": "650.60 vs 661.64",
    "w": 0.75
   },
   {
    "k": "DEALER DELTA",
    "d": "SPY dealer-pressure delta lean (\u22121\u2026+1; \u00b10.10 dead zone)",
    "v": -1,
-   "x": "-0.12",
+   "x": "-0.13",
    "w": 0.75
   },
   {
    "k": "FB \u00b7 SPY",
    "d": "price vs First Blade pivot",
    "v": 1,
-   "x": "730.51 vs pivot 710.21",
+   "x": "731.30 vs pivot 710.21",
    "w": 1.0
   },
   {
@@ -73,13 +73,13 @@
    "k": "DARK POOL",
    "d": "dark-pool levels holding below vs overhead (\u00b11%)",
    "v": -1,
-   "x": "9 below / 11 above",
+   "x": "8 below / 11 above",
    "w": 1.5
   },
   {
    "k": "BLAST RADIUS",
    "d": "position inside daily implied-move band (thirds)",
-   "v": 0,
+   "v": 1,
    "x": "719.69\u2013736.95",
    "w": 1.0
   },
