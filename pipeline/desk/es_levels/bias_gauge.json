@@ -4,20 +4,20 @@
  "px": 731.3,
  "asof": "11-27 13:59 PT",
  "feed": "delayed",
- "built": "11-27 19:30 PT",
+ "built": "11-27 20:47 PT",
  "votes": [
   {
    "k": "VWAP",
    "d": "price vs session VWAP",
    "v": 1,
-   "x": "731.30 vs 724.43",
+   "x": "731.30 vs 725.05",
    "w": 1.5
   },
   {
    "k": "EMA",
    "d": "9 vs 21 EMA on 5m + slope",
    "v": 1,
-   "x": "9=730.71 21=730.37",
+   "x": "9=730.72 21=730.37",
    "w": 1.0
   },
   {
@@ -38,7 +38,7 @@
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "731.30 vs flip 738.18",
+   "x": "731.30 vs flip 738.19",
    "w": 1.0
   },
   {
