@@ -2,7 +2,7 @@
   "label": "Dark Pool",
   "symbol": "SPY",
   "updated": "2026-11-27",
-  "asof_note": "Spot is the Friday 11/27 close (SPY 728.32, SPX 7297.49, ES 7308.25). Conversion ES = SPX + 11.75 (Friday regular-session median). No new lines were posted after Wednesday; every line is unchanged and current through the Friday close. Nearest line above is 728.74 ($0.42); nearest below is 728.05 ($0.27). Touch/bounce stats keep their prior window.",
+  "asof_note": "Spot is the Friday 11/27 close (SPY 728.32, SPX 7297.49, ES 7308.25). Conversion ES = SPX + 11.75 (Friday regular-session median). The level list is split into Major and Minor, with near-duplicate lines merged (latest date, largest print kept). Two Major lines that were on the November ladders but missing from the table were added (747.13 and 757.84). Nearest line above is 728.74 ($0.42); nearest below is 728.05 ($0.27). Touch/bounce stats keep their prior window; newly added lines have no baked stats yet.",
   "convert": {
     "spy_per_spx": 0.099804,
     "es_minus_spx": 11.75,
@@ -21,9 +21,9 @@
         "SPX": 7182.78,
         "asof": "2026-11-25 close"
       },
-      "note": "SPX = SPY ÷ 0.099788; ES = SPX + 13.5 (Wed 2026-11-25 regular-session median through 11:18 AM PT). Official closes: SPY 716.70, SPX 7182.78, ES 7196.75 (ES−SPX +13.97 at the close; conversions use the 13.5 snapshot)."
+      "note": "SPX = SPY \u00f7 0.099788; ES = SPX + 13.5 (Wed 2026-11-25 regular-session median through 11:18 AM PT). Official closes: SPY 716.70, SPX 7182.78, ES 7196.75 (ES\u2212SPX +13.97 at the close; conversions use the 13.5 snapshot)."
     },
-    "note": "SPX = SPY ÷ 0.099804; ES = SPX + 11.75 (Fri 2026-11-27 regular-session median). Closes: SPY 728.32, SPX 7297.49, ES 7308.25 (10:15 AM PT)."
+    "note": "SPX = SPY \u00f7 0.099804; ES = SPX + 11.75 (Fri 2026-11-27 regular-session median). Closes: SPY 728.32, SPX 7297.49, ES 7308.25 (10:15 AM PT)."
   },
   "levels": [
     {
@@ -31,560 +31,592 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — top DP line above HOD wick zone"
+      "note": "top line above the 11/4 high wick",
+      "tier": "major"
     },
     {
       "spy": 773.38,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead"
+      "note": "overhead",
+      "tier": "major"
     },
     {
       "spy": 772.42,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead"
+      "note": "overhead",
+      "tier": "major"
     },
     {
       "spy": 771.22,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead cluster"
+      "note": "overhead cluster",
+      "tier": "major"
     },
     {
       "spy": 770.33,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead cluster"
+      "note": "overhead cluster",
+      "tier": "major"
     },
     {
       "spy": 769.73,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead cluster"
+      "note": "overhead cluster",
+      "tier": "major"
     },
     {
       "spy": 769.55,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Fri DP — furthest 0DTE make called Wed AM; overhead"
-    },
-    {
-      "spy": 769.45,
-      "status": "prior",
-      "color": "purple-dim",
-      "source_date": "2026-10-27",
-      "note": "prior-week desk seed / command dp array"
+      "note": "furthest 0DTE make from the 11/4 overlay \u00b7 also the prior-week 769.45 desk seed",
+      "tier": "minor"
     },
     {
       "spy": 768.61,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 — rejected repeatedly; ceiling into close (unable to hold above)"
+      "note": "rejected repeatedly 11/4; ceiling into the close",
+      "tier": "major"
     },
     {
       "spy": 767.41,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 — AH/session tag near close zone"
+      "note": "11/4 session / AH tag near the close zone",
+      "tier": "minor"
     },
     {
       "spy": 767.12,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 — retested afternoon; magnet into close / AH"
+      "note": "retested the 11/4 afternoon; magnet into the close / AH",
+      "tier": "major"
     },
     {
       "spy": 765.59,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — support under close"
+      "note": "support under the 11/4 close",
+      "tier": "major"
     },
     {
       "spy": 765.4,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "prior-week desk seed / command dp array"
+      "note": "prior-week desk seed",
+      "tier": "minor"
     },
     {
       "spy": 764.37,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — support"
+      "source_date": "2026-11-13",
+      "note": "support; still on the 11/13 ladder",
+      "tier": "major"
     },
     {
       "spy": 762.27,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — support (prior liquidity drain note earlier week)"
+      "source_date": "2026-11-13",
+      "note": "support; traded 11/11, still on the 11/13 ladder",
+      "tier": "major"
     },
     {
       "spy": 759.57,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — support"
+      "source_date": "2026-11-13",
+      "note": "held as support 11/11; still on the 11/13 ladder",
+      "tier": "major"
     },
     {
       "spy": 758.02,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan; also prior-week seed 2026-10-26"
+      "note": "Nov 2\u20136 plan ladder; also a prior-week seed",
+      "tier": "minor"
+    },
+    {
+      "spy": 757.84,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-13",
+      "note": "on the 11/4 and 11/13 ladders",
+      "tier": "major"
     },
     {
       "spy": 757.43,
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
-      "note": "double dark pool bounce/reclaim"
-    },
-    {
-      "spy": 757.12,
-      "status": "prior",
-      "color": "green",
-      "source_date": "2026-10-26",
-      "note": "prior-week desk seed / command dp array"
+      "note": "double bounce / reclaim (prior)",
+      "tier": "minor"
     },
     {
       "spy": 757.0,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
-    },
-    {
-      "spy": 756.41,
-      "status": "prior",
-      "color": "green",
-      "source_date": "2026-10-31",
-      "note": "desk line; also the 21-EMA"
+      "note": "Nov 2\u20136 plan ladder; also the prior-week 757.12 desk seed",
+      "tier": "minor"
     },
     {
       "spy": 756.33,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-03",
-      "note": "Tue 11/3 hit"
+      "source_date": "2026-11-12",
+      "note": "hit 11/3; traded again 11/12",
+      "tier": "major"
     },
     {
       "spy": 755.28,
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "note": "Nov 2\u20136 plan ladder",
+      "tier": "minor"
     },
     {
       "spy": 754.6,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-16",
+      "note": "held 11/3; still on the mid-November ladder",
+      "tier": "major"
     },
     {
       "spy": 754.07,
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
-      "note": "double dark pool; fail → air pocket"
+      "note": "double print; fail opens an air pocket (prior)",
+      "tier": "minor"
     },
     {
       "spy": 751.04,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-16",
+      "note": "hit 11/5; still on the mid-November ladder",
+      "tier": "major"
     },
     {
       "spy": 750.16,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-16",
+      "note": "on the mid-November ladder",
+      "tier": "major"
     },
     {
       "spy": 748.17,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-16",
+      "note": "held 11/10 and 11/13; still on the mid-November ladder",
+      "tier": "major"
+    },
+    {
+      "spy": 747.13,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-16",
+      "note": "tested 11/10; rejected 11/16",
+      "tier": "major"
     },
     {
       "spy": 746.77,
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
-      "note": "air pocket target (DP-typed in confluence)"
+      "note": "air-pocket target (prior)",
+      "tier": "minor"
     },
     {
       "spy": 745.47,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-16",
+      "note": "held 11/10; still on the mid-November ladder",
+      "tier": "major"
     },
     {
       "spy": 744.36,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-04",
-      "note": "Wed overnight print; still on Nov plan ladder"
+      "source_date": "2026-11-16",
+      "note": "pump off it 11/4; bounce 11/16",
+      "tier": "major"
     },
     {
       "spy": 742.28,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-17",
+      "note": "on the mid-November ladder",
+      "tier": "major"
     },
     {
       "spy": 741.83,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP print — filled"
+      "note": "11/5 print \u2014 filled",
+      "tier": "minor"
     },
     {
       "spy": 741.54,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 $115.5M DP"
+      "note": "11/5 $115.5M print",
+      "tier": "minor"
     },
     {
       "spy": 741.26,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
-    },
-    {
-      "spy": 739.73,
-      "status": "current",
-      "color": "purple",
       "source_date": "2026-11-17",
-      "note": "$1.4B print Tue 11/17 · with 739.72 forms the 11/16–11/17 cluster (named as Thursday's likely bounce peak)"
+      "note": "on the mid-November ladder",
+      "tier": "major"
     },
     {
       "spy": 739.72,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-16",
-      "note": "$2.3B print Mon 11/16 · 11/16–11/17 cluster"
+      "source_date": "2026-11-17",
+      "note": "$2.3B print 11/16 and $1.4B print 11/17 (1\u00a2 cluster)",
+      "tier": "minor"
     },
     {
       "spy": 739.11,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-19",
+      "note": "support 11/16; rejected 11/19",
+      "tier": "major"
     },
     {
       "spy": 737.64,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-16",
+      "note": "next level down with 739.11 on 11/16",
+      "tier": "major"
     },
     {
       "spy": 737.23,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 $66.6M DP"
-    },
-    {
-      "spy": 737.1,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP print — filled"
+      "note": "11/5 $66.6M print \u00b7 also the filled 737.10 print",
+      "tier": "minor"
     },
     {
       "spy": 736.49,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP print — filled"
+      "note": "11/5 print \u2014 filled",
+      "tier": "minor"
     },
     {
       "spy": 735.41,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 $941.9M DP — largest print; overhead pivot"
+      "note": "11/5 $941.9M print \u2014 largest that session; overhead pivot",
+      "tier": "minor"
     },
     {
       "spy": 734.37,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP print — filled"
+      "note": "11/5 print \u2014 filled",
+      "tier": "minor"
     },
     {
       "spy": 734.16,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-18",
+      "note": "held the 11/6 open; resistance 11/17\u201311/18",
+      "tier": "major"
     },
     {
       "spy": 733.09,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP — close zone"
+      "note": "11/5 close-zone print",
+      "tier": "minor"
     },
     {
       "spy": 732.21,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-18",
-      "note": "$1.1B print Wed 11/18 · above the close and below the 200DMA, likely sells"
-    },
-    {
-      "spy": 732.14,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-17",
-      "note": "$1.3B print Tue 11/17"
-    },
-    {
-      "spy": 732.05,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled"
+      "note": "$1.3B print 11/17 and $1.1B print 11/18 (above the close and below the 200-day, likely sells) \u00b7 also an 11/5 AH fill at 732.05",
+      "tier": "minor"
     },
     {
       "spy": 731.85,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-19",
-      "note": "late-registered print Thu 11/19 (shows as the 12:50 PM PT wick on SPY)"
-    },
-    {
-      "spy": 731.78,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled"
+      "note": "late-registered print 11/19 (12:50 PM PT wick) \u00b7 also an 11/5 AH fill at 731.78",
+      "tier": "minor"
     },
     {
       "spy": 731.58,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-17",
+      "note": "hit 11/17",
+      "tier": "major"
     },
     {
       "spy": 730.02,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled (+GEX 730)"
+      "note": "11/5 AH print filled (near the 730 gamma zone)",
+      "tier": "minor"
     },
     {
       "spy": 729.26,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-17",
-      "note": "older (July) line · held Tue 11/17 and Wed 11/18, called the last line of defense"
+      "note": "older (July) line \u00b7 held 11/17 and 11/18, last line of defense that week",
+      "tier": "minor"
     },
     {
       "spy": 729.08,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled"
+      "note": "11/5 AH print filled",
+      "tier": "minor"
     },
     {
       "spy": 728.74,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled"
+      "note": "11/5 AH print filled",
+      "tier": "minor"
     },
     {
       "spy": 728.05,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled (near AH low 727.41)"
+      "note": "11/5 AH print filled (near the AH low 727.41)",
+      "tier": "minor"
     },
     {
       "spy": 727.83,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Next unfilled downside DP"
+      "note": "next unfilled downside print",
+      "tier": "minor"
     },
     {
       "spy": 725.97,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Unfilled downside DP"
+      "note": "unfilled downside print",
+      "tier": "minor"
     },
     {
       "spy": 725.49,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-24",
+      "note": "on the 11/6 and 11/24 ladders",
+      "tier": "major"
     },
     {
       "spy": 724.5,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Unfilled downside DP"
+      "note": "unfilled downside print",
+      "tier": "minor"
     },
     {
       "spy": 723.61,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan"
+      "source_date": "2026-11-24",
+      "note": "on the 11/24 ladder",
+      "tier": "major"
     },
     {
       "spy": 722.57,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Unfilled downside DP"
+      "note": "unfilled downside print",
+      "tier": "minor"
     },
     {
       "spy": 721.76,
       "status": "prior",
       "color": "teal",
       "source_date": "2026-10-31",
-      "note": "desk line"
+      "note": "desk line",
+      "tier": "minor"
     },
     {
-      "spy": 720.69,
+      "spy": 720.66,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-05",
-      "note": "Unfilled DP — monthly 50MA zone"
+      "source_date": "2026-11-24",
+      "note": "rejected and retested 11/24; mark this line",
+      "tier": "major"
     },
     {
       "spy": 719.87,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Unfilled DP (+GEX 720)"
+      "note": "unfilled print (near the 720 gamma / monthly 50-day zone)",
+      "tier": "minor"
     },
     {
       "spy": 718.66,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-19",
-      "note": "reaction level Thu 11/19 · price traded at it on the second leg down (9:17 AM PT)"
+      "source_date": "2026-11-24",
+      "note": "traded 11/19 on the second leg down; still on the 11/24 ladder",
+      "tier": "major"
     },
     {
       "spy": 715.02,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/24 and 11/25 ladders",
+      "tier": "major"
     },
     {
       "spy": 714.14,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/24 and 11/25 ladders",
+      "tier": "major"
     },
     {
       "spy": 711.4,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/24 and 11/25 ladders",
+      "tier": "major"
     },
     {
       "spy": 710.21,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "traded 11/25; on the 11/24 and 11/25 ladders",
+      "tier": "major"
     },
     {
       "spy": 708.52,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     },
     {
       "spy": 706.18,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     },
     {
       "spy": 704.03,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     },
     {
       "spy": 701.75,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     },
     {
       "spy": 699.92,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     },
     {
       "spy": 695.21,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     },
     {
       "spy": 694.06,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     },
     {
       "spy": 691.9,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     },
     {
       "spy": 690.36,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close"
+      "note": "on the 11/25 ladder",
+      "tier": "major"
     }
   ],
   "rows": [
@@ -595,8 +627,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — top DP line above HOD wick zone",
-      "type": "current"
+      "note": "top line above the 11/4 high wick",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 773.38,
@@ -605,8 +638,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead",
-      "type": "current"
+      "note": "overhead",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 772.42,
@@ -615,8 +649,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead",
-      "type": "current"
+      "note": "overhead",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 771.22,
@@ -625,8 +660,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead cluster",
-      "type": "current"
+      "note": "overhead cluster",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 770.33,
@@ -635,8 +671,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead cluster",
-      "type": "current"
+      "note": "overhead cluster",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 769.73,
@@ -645,8 +682,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — overhead cluster",
-      "type": "current"
+      "note": "overhead cluster",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 769.55,
@@ -655,18 +693,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Fri DP — furthest 0DTE make called Wed AM; overhead",
-      "type": "current"
-    },
-    {
-      "spy": 769.45,
-      "spx": 7709.61,
-      "es": 7721.36,
-      "status": "prior",
-      "color": "purple-dim",
-      "source_date": "2026-10-27",
-      "note": "prior-week desk seed / command dp array",
-      "type": "prior"
+      "note": "furthest 0DTE make from the 11/4 overlay \u00b7 also the prior-week 769.45 desk seed",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 768.61,
@@ -675,8 +704,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 — rejected repeatedly; ceiling into close (unable to hold above)",
-      "type": "current"
+      "note": "rejected repeatedly 11/4; ceiling into the close",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 767.41,
@@ -685,8 +715,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 — AH/session tag near close zone",
-      "type": "current"
+      "note": "11/4 session / AH tag near the close zone",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 767.12,
@@ -695,8 +726,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 — retested afternoon; magnet into close / AH",
-      "type": "current"
+      "note": "retested the 11/4 afternoon; magnet into the close / AH",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 765.59,
@@ -705,8 +737,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — support under close",
-      "type": "current"
+      "note": "support under the 11/4 close",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 765.4,
@@ -715,8 +748,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-04",
-      "note": "prior-week desk seed / command dp array",
-      "type": "current"
+      "note": "prior-week desk seed",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 764.37,
@@ -724,9 +758,10 @@
       "es": 7670.46,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — support",
-      "type": "current"
+      "source_date": "2026-11-13",
+      "note": "support; still on the 11/13 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 762.27,
@@ -734,9 +769,10 @@
       "es": 7649.42,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — support (prior liquidity drain note earlier week)",
-      "type": "current"
+      "source_date": "2026-11-13",
+      "note": "support; traded 11/11, still on the 11/13 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 759.57,
@@ -744,9 +780,10 @@
       "es": 7622.37,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-04",
-      "note": "Wed 11/4 chart overlay — support",
-      "type": "current"
+      "source_date": "2026-11-13",
+      "note": "held as support 11/11; still on the 11/13 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 758.02,
@@ -755,8 +792,20 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan; also prior-week seed 2026-10-26",
-      "type": "current"
+      "note": "Nov 2\u20136 plan ladder; also a prior-week seed",
+      "type": "current",
+      "tier": "minor"
+    },
+    {
+      "spy": 757.84,
+      "spx": 7593.28,
+      "es": 7605.03,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-13",
+      "note": "on the 11/4 and 11/13 ladders",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 757.43,
@@ -765,18 +814,9 @@
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
-      "note": "double dark pool bounce/reclaim",
-      "type": "prior"
-    },
-    {
-      "spy": 757.12,
-      "spx": 7586.07,
-      "es": 7597.82,
-      "status": "prior",
-      "color": "green",
-      "source_date": "2026-10-26",
-      "note": "prior-week desk seed / command dp array",
-      "type": "prior"
+      "note": "double bounce / reclaim (prior)",
+      "type": "prior",
+      "tier": "minor"
     },
     {
       "spy": 757.0,
@@ -785,18 +825,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
-    },
-    {
-      "spy": 756.41,
-      "spx": 7578.95,
-      "es": 7590.7,
-      "status": "prior",
-      "color": "green",
-      "source_date": "2026-10-31",
-      "note": "desk line; also the 21-EMA",
-      "type": "prior"
+      "note": "Nov 2\u20136 plan ladder; also the prior-week 757.12 desk seed",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 756.33,
@@ -804,9 +835,10 @@
       "es": 7589.9,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-03",
-      "note": "Tue 11/3 hit",
-      "type": "current"
+      "source_date": "2026-11-12",
+      "note": "hit 11/3; traded again 11/12",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 755.28,
@@ -815,8 +847,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "note": "Nov 2\u20136 plan ladder",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 754.6,
@@ -824,9 +857,10 @@
       "es": 7572.57,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-16",
+      "note": "held 11/3; still on the mid-November ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 754.07,
@@ -835,8 +869,9 @@
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
-      "note": "double dark pool; fail → air pocket",
-      "type": "prior"
+      "note": "double print; fail opens an air pocket (prior)",
+      "type": "prior",
+      "tier": "minor"
     },
     {
       "spy": 751.04,
@@ -844,9 +879,10 @@
       "es": 7536.9,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-16",
+      "note": "hit 11/5; still on the mid-November ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 750.16,
@@ -854,9 +890,10 @@
       "es": 7528.08,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-16",
+      "note": "on the mid-November ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 748.17,
@@ -864,9 +901,21 @@
       "es": 7508.14,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-16",
+      "note": "held 11/10 and 11/13; still on the mid-November ladder",
+      "type": "current",
+      "tier": "major"
+    },
+    {
+      "spy": 747.13,
+      "spx": 7485.97,
+      "es": 7497.72,
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-16",
+      "note": "tested 11/10; rejected 11/16",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 746.77,
@@ -875,8 +924,9 @@
       "status": "prior",
       "color": "purple-dim",
       "source_date": "2026-10-30",
-      "note": "air pocket target (DP-typed in confluence)",
-      "type": "prior"
+      "note": "air-pocket target (prior)",
+      "type": "prior",
+      "tier": "minor"
     },
     {
       "spy": 745.47,
@@ -884,9 +934,10 @@
       "es": 7481.09,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-16",
+      "note": "held 11/10; still on the mid-November ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 744.36,
@@ -894,9 +945,10 @@
       "es": 7469.97,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-04",
-      "note": "Wed overnight print; still on Nov plan ladder",
-      "type": "current"
+      "source_date": "2026-11-16",
+      "note": "pump off it 11/4; bounce 11/16",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 742.28,
@@ -904,9 +956,10 @@
       "es": 7449.13,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-17",
+      "note": "on the mid-November ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 741.83,
@@ -915,8 +968,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP print — filled",
-      "type": "current"
+      "note": "11/5 print \u2014 filled",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 741.54,
@@ -925,8 +979,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 $115.5M DP",
-      "type": "current"
+      "note": "11/5 $115.5M print",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 741.26,
@@ -934,29 +989,21 @@
       "es": 7438.91,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
-    },
-    {
-      "spy": 739.73,
-      "status": "current",
-      "color": "purple",
       "source_date": "2026-11-17",
-      "note": "$1.4B print Tue 11/17 · with 739.72 forms the 11/16–11/17 cluster (named as Thursday's likely bounce peak)",
-      "spx": 7411.83,
-      "es": 7423.58,
-      "type": "current"
+      "note": "on the mid-November ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 739.72,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-16",
-      "note": "$2.3B print Mon 11/16 · 11/16–11/17 cluster",
       "spx": 7411.73,
       "es": 7423.48,
-      "type": "current"
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-17",
+      "note": "$2.3B print 11/16 and $1.4B print 11/17 (1\u00a2 cluster)",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 739.11,
@@ -964,9 +1011,10 @@
       "es": 7417.37,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-19",
+      "note": "support 11/16; rejected 11/19",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 737.64,
@@ -974,9 +1022,10 @@
       "es": 7402.64,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-16",
+      "note": "next level down with 739.11 on 11/16",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 737.23,
@@ -985,18 +1034,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 $66.6M DP",
-      "type": "current"
-    },
-    {
-      "spy": 737.1,
-      "spx": 7385.48,
-      "es": 7397.23,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP print — filled",
-      "type": "current"
+      "note": "11/5 $66.6M print \u00b7 also the filled 737.10 print",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 736.49,
@@ -1005,8 +1045,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP print — filled",
-      "type": "current"
+      "note": "11/5 print \u2014 filled",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 735.41,
@@ -1015,8 +1056,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 $941.9M DP — largest print; overhead pivot",
-      "type": "current"
+      "note": "11/5 $941.9M print \u2014 largest that session; overhead pivot",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 734.37,
@@ -1025,8 +1067,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP print — filled",
-      "type": "current"
+      "note": "11/5 print \u2014 filled",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 734.16,
@@ -1034,9 +1077,10 @@
       "es": 7367.77,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-18",
+      "note": "held the 11/6 open; resistance 11/17\u201311/18",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 733.09,
@@ -1045,58 +1089,31 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 DP — close zone",
-      "type": "current"
+      "note": "11/5 close-zone print",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 732.21,
+      "spx": 7336.48,
+      "es": 7348.23,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-18",
-      "note": "$1.1B print Wed 11/18 · above the close and below the 200DMA, likely sells",
-      "spx": 7336.48,
-      "es": 7348.23,
-      "type": "current"
-    },
-    {
-      "spy": 732.14,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-17",
-      "note": "$1.3B print Tue 11/17",
-      "spx": 7335.78,
-      "es": 7347.53,
-      "type": "current"
-    },
-    {
-      "spy": 732.05,
-      "spx": 7334.88,
-      "es": 7346.63,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled",
-      "type": "current"
+      "note": "$1.3B print 11/17 and $1.1B print 11/18 (above the close and below the 200-day, likely sells) \u00b7 also an 11/5 AH fill at 732.05",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 731.85,
+      "spx": 7332.87,
+      "es": 7344.62,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-19",
-      "note": "late-registered print Thu 11/19 (shows as the 12:50 PM PT wick on SPY)",
-      "spx": 7332.87,
-      "es": 7344.62,
-      "type": "current"
-    },
-    {
-      "spy": 731.78,
-      "spx": 7332.17,
-      "es": 7343.92,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled",
-      "type": "current"
+      "note": "late-registered print 11/19 (12:50 PM PT wick) \u00b7 also an 11/5 AH fill at 731.78",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 731.58,
@@ -1104,9 +1121,10 @@
       "es": 7341.92,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-17",
+      "note": "hit 11/17",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 730.02,
@@ -1115,18 +1133,20 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled (+GEX 730)",
-      "type": "current"
+      "note": "11/5 AH print filled (near the 730 gamma zone)",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 729.26,
+      "spx": 7306.92,
+      "es": 7318.67,
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-17",
-      "note": "older (July) line · held Tue 11/17 and Wed 11/18, called the last line of defense",
-      "spx": 7306.92,
-      "es": 7318.67,
-      "type": "current"
+      "note": "older (July) line \u00b7 held 11/17 and 11/18, last line of defense that week",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 729.08,
@@ -1135,8 +1155,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled",
-      "type": "current"
+      "note": "11/5 AH print filled",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 728.74,
@@ -1145,8 +1166,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled",
-      "type": "current"
+      "note": "11/5 AH print filled",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 728.05,
@@ -1155,8 +1177,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Thu 11/5 AH DP filled (near AH low 727.41)",
-      "type": "current"
+      "note": "11/5 AH print filled (near the AH low 727.41)",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 727.83,
@@ -1165,8 +1188,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Next unfilled downside DP",
-      "type": "current"
+      "note": "next unfilled downside print",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 725.97,
@@ -1175,8 +1199,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Unfilled downside DP",
-      "type": "current"
+      "note": "unfilled downside print",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 725.49,
@@ -1184,9 +1209,10 @@
       "es": 7280.9,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-24",
+      "note": "on the 11/6 and 11/24 ladders",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 724.5,
@@ -1195,8 +1221,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Unfilled downside DP",
-      "type": "current"
+      "note": "unfilled downside print",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 723.61,
@@ -1204,9 +1231,10 @@
       "es": 7262.06,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-10-31",
-      "note": "Nov 2–6 plan",
-      "type": "current"
+      "source_date": "2026-11-24",
+      "note": "on the 11/24 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 722.57,
@@ -1215,8 +1243,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Unfilled downside DP",
-      "type": "current"
+      "note": "unfilled downside print",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 721.76,
@@ -1226,17 +1255,19 @@
       "color": "teal",
       "source_date": "2026-10-31",
       "note": "desk line",
-      "type": "prior"
+      "type": "prior",
+      "tier": "minor"
     },
     {
-      "spy": 720.69,
-      "spx": 7221.05,
-      "es": 7232.8,
+      "spy": 720.66,
+      "spx": 7220.75,
+      "es": 7232.5,
       "status": "current",
       "color": "purple",
-      "source_date": "2026-11-05",
-      "note": "Unfilled DP — monthly 50MA zone",
-      "type": "current"
+      "source_date": "2026-11-24",
+      "note": "rejected and retested 11/24; mark this line",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 719.87,
@@ -1245,18 +1276,20 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-05",
-      "note": "Unfilled DP (+GEX 720)",
-      "type": "current"
+      "note": "unfilled print (near the 720 gamma / monthly 50-day zone)",
+      "type": "current",
+      "tier": "minor"
     },
     {
       "spy": 718.66,
-      "status": "current",
-      "color": "purple",
-      "source_date": "2026-11-19",
-      "note": "reaction level Thu 11/19 · price traded at it on the second leg down (9:17 AM PT)",
       "spx": 7200.71,
       "es": 7212.46,
-      "type": "current"
+      "status": "current",
+      "color": "purple",
+      "source_date": "2026-11-24",
+      "note": "traded 11/19 on the second leg down; still on the 11/24 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 715.02,
@@ -1265,8 +1298,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/24 and 11/25 ladders",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 714.14,
@@ -1275,8 +1309,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/24 and 11/25 ladders",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 711.4,
@@ -1285,8 +1320,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/24 and 11/25 ladders",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 710.21,
@@ -1295,8 +1331,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "traded 11/25; on the 11/24 and 11/25 ladders",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 708.52,
@@ -1305,8 +1342,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 706.18,
@@ -1315,8 +1353,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 704.03,
@@ -1325,8 +1364,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 701.75,
@@ -1335,8 +1375,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 699.92,
@@ -1345,8 +1386,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 695.21,
@@ -1355,8 +1397,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 694.06,
@@ -1365,8 +1408,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 691.9,
@@ -1375,8 +1419,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     },
     {
       "spy": 690.36,
@@ -1385,8 +1430,9 @@
       "status": "current",
       "color": "purple",
       "source_date": "2026-11-25",
-      "note": "line current through Wed 11/25 close",
-      "type": "current"
+      "note": "on the 11/25 ladder",
+      "type": "current",
+      "tier": "major"
     }
   ],
   "bars": {
@@ -1394,7 +1440,7 @@
     "timeframe": "4H",
     "feed": "iex",
     "session": "through 2026-11-25 11:28 PT",
-    "note": "exchange 30m bars resampled to RTH 4H buckets (09:30–13:30, 13:30–16:00 ET) · 10/30→11/11 candles from 1m bars, same buckets · 11/11→11/20 candles from 1m bars, same buckets",
+    "note": "exchange 30m bars resampled to RTH 4H buckets (09:30\u201313:30, 13:30\u201316:00 ET) \u00b7 10/30\u219211/11 candles from 1m bars, same buckets \u00b7 11/11\u219211/20 candles from 1m bars, same buckets",
     "candles": [
       {
         "t": "2026-08-03T09:30:00-04:00",
@@ -2722,9 +2768,9 @@
     "bar_count": 10842,
     "definitions": {
       "touch": "5m bar high/low within $0.10 of level",
-      "bounce": "rejected and moved ≥$0.50 away without closing through",
+      "bounce": "rejected and moved \u2265$0.50 away without closing through",
       "break": "5m close through level and holds 2+ subsequent bars on through side",
-      "avg_bounce_reaction": "mean max excursion away from level after bounce (≥$0.50)",
+      "avg_bounce_reaction": "mean max excursion away from level after bounce (\u2265$0.50)",
       "avg_break_follow": "mean max excursion through level in ~1h after break holds"
     }
   },
@@ -2737,13 +2783,14 @@
       "status": "current",
       "dist": -48.06,
       "side": "BELOW",
-      "note": "Wed 11/4 chart overlay — top DP line above HOD wick zone",
+      "note": "top line above the 11/4 high wick",
       "cross": false,
       "above_min": 0,
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 773.38,
@@ -2760,7 +2807,7 @@
       "avg_bounce_reaction": 1.35,
       "avg_break_follow": 1.59,
       "last_touch": "2026-10-28T18:35:00Z",
-      "note": "Wed 11/4 chart overlay — overhead",
+      "note": "overhead",
       "dist": -45.06,
       "side": "BELOW",
       "cross": false,
@@ -2768,7 +2815,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 772.42,
@@ -2785,7 +2833,7 @@
       "avg_bounce_reaction": 2.05,
       "avg_break_follow": 1.59,
       "last_touch": "2026-10-28T19:50:00Z",
-      "note": "Wed 11/4 chart overlay — overhead",
+      "note": "overhead",
       "dist": -44.1,
       "side": "BELOW",
       "cross": false,
@@ -2793,7 +2841,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 771.22,
@@ -2810,7 +2859,7 @@
       "avg_bounce_reaction": 1.63,
       "avg_break_follow": 2.1,
       "last_touch": "2026-10-28T19:30:00Z",
-      "note": "Wed 11/4 chart overlay — overhead cluster",
+      "note": "overhead cluster",
       "dist": -42.9,
       "side": "BELOW",
       "cross": false,
@@ -2818,7 +2867,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 770.33,
@@ -2835,7 +2885,7 @@
       "avg_bounce_reaction": 1.74,
       "avg_break_follow": 1.83,
       "last_touch": "2026-10-29T15:30:00Z",
-      "note": "Wed 11/4 chart overlay — overhead cluster",
+      "note": "overhead cluster",
       "dist": -42.01,
       "side": "BELOW",
       "cross": false,
@@ -2843,7 +2893,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 769.73,
@@ -2860,7 +2911,7 @@
       "avg_bounce_reaction": 1.83,
       "avg_break_follow": 1.72,
       "last_touch": "2026-10-29T16:55:00Z",
-      "note": "Wed 11/4 chart overlay — overhead cluster",
+      "note": "overhead cluster",
       "dist": -41.41,
       "side": "BELOW",
       "cross": false,
@@ -2868,7 +2919,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 769.55,
@@ -2876,22 +2928,6 @@
       "es": 7722.36,
       "type": "current",
       "status": "current",
-      "dist": -41.23,
-      "side": "BELOW",
-      "note": "Fri DP — furthest 0DTE make called Wed AM; overhead",
-      "cross": false,
-      "above_min": 0,
-      "below_min": 390,
-      "pct_above": 0.0,
-      "cross_t": null,
-      "cross_dir": null
-    },
-    {
-      "spy": 769.45,
-      "spx": 7709.61,
-      "es": 7721.36,
-      "type": "prior",
-      "status": "prior",
       "touches": 91,
       "bounces": 45,
       "breaks": 28,
@@ -2901,15 +2937,16 @@
       "avg_bounce_reaction": 1.63,
       "avg_break_follow": 1.72,
       "last_touch": "2026-10-29T19:55:00Z",
-      "note": "prior-week desk seed / command dp array",
-      "dist": -41.13,
+      "note": "furthest 0DTE make from the 11/4 overlay \u00b7 also the prior-week 769.45 desk seed",
+      "dist": -41.23,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
       "spy": 768.61,
@@ -2926,7 +2963,7 @@
       "avg_bounce_reaction": 1.43,
       "avg_break_follow": 1.76,
       "last_touch": "2026-10-29T19:50:00Z",
-      "note": "Wed 11/4 — rejected repeatedly; ceiling into close (unable to hold above)",
+      "note": "rejected repeatedly 11/4; ceiling into the close",
       "dist": -40.29,
       "side": "BELOW",
       "cross": false,
@@ -2934,7 +2971,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 767.41,
@@ -2951,7 +2989,7 @@
       "avg_bounce_reaction": 1.99,
       "avg_break_follow": 2.13,
       "last_touch": "2026-10-29T18:00:00Z",
-      "note": "Wed 11/4 — AH/session tag near close zone",
+      "note": "11/4 session / AH tag near the close zone",
       "dist": -39.09,
       "side": "BELOW",
       "cross": false,
@@ -2959,7 +2997,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
       "spy": 767.12,
@@ -2976,7 +3015,7 @@
       "avg_bounce_reaction": 1.97,
       "avg_break_follow": 2.4,
       "last_touch": "2026-10-29T19:10:00Z",
-      "note": "Wed 11/4 — retested afternoon; magnet into close / AH",
+      "note": "retested the 11/4 afternoon; magnet into the close / AH",
       "dist": -38.8,
       "side": "BELOW",
       "cross": false,
@@ -2984,7 +3023,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 765.59,
@@ -3001,7 +3041,7 @@
       "avg_bounce_reaction": 1.58,
       "avg_break_follow": 1.75,
       "last_touch": "2026-10-27T14:00:00Z",
-      "note": "Wed 11/4 chart overlay — support under close",
+      "note": "support under the 11/4 close",
       "dist": -37.27,
       "side": "BELOW",
       "cross": false,
@@ -3009,7 +3049,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 765.4,
@@ -3026,7 +3067,7 @@
       "avg_bounce_reaction": 1.86,
       "avg_break_follow": 1.92,
       "last_touch": "2026-10-27T14:15:00Z",
-      "note": "prior-week desk seed / command dp array",
+      "note": "prior-week desk seed",
       "dist": -37.08,
       "side": "BELOW",
       "cross": false,
@@ -3034,7 +3075,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
       "spy": 764.37,
@@ -3051,7 +3093,7 @@
       "avg_bounce_reaction": 2.07,
       "avg_break_follow": 2.12,
       "last_touch": "2026-10-26T19:00:00Z",
-      "note": "Wed 11/4 chart overlay — support",
+      "note": "support; still on the 11/13 ladder",
       "dist": -36.05,
       "side": "BELOW",
       "cross": false,
@@ -3059,7 +3101,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 762.27,
@@ -3076,7 +3119,7 @@
       "avg_bounce_reaction": 1.78,
       "avg_break_follow": 2.87,
       "last_touch": "2026-10-26T13:40:00Z",
-      "note": "Wed 11/4 chart overlay — support (prior liquidity drain note earlier week)",
+      "note": "support; traded 11/11, still on the 11/13 ladder",
       "dist": -33.95,
       "side": "BELOW",
       "cross": false,
@@ -3084,7 +3127,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 759.57,
@@ -3101,7 +3145,7 @@
       "avg_bounce_reaction": 2.09,
       "avg_break_follow": 1.3,
       "last_touch": "2026-10-30T14:35:00Z",
-      "note": "Wed 11/4 chart overlay — support",
+      "note": "held as support 11/11; still on the 11/13 ladder",
       "dist": -31.25,
       "side": "BELOW",
       "cross": false,
@@ -3109,7 +3153,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 758.02,
@@ -3126,7 +3171,7 @@
       "avg_bounce_reaction": 1.65,
       "avg_break_follow": 2.31,
       "last_touch": "2026-10-30T16:40:00Z",
-      "note": "Nov 2–6 plan; also prior-week seed 2026-10-26",
+      "note": "Nov 2\u20136 plan ladder; also a prior-week seed",
       "dist": -29.7,
       "side": "BELOW",
       "cross": false,
@@ -3134,7 +3179,25 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
+    },
+    {
+      "spy": 757.84,
+      "spx": 7593.28,
+      "es": 7605.03,
+      "type": "current",
+      "status": "current",
+      "dist": -29.52,
+      "side": "BELOW",
+      "note": "on the 11/4 and 11/13 ladders \u00b7 no touch in the baked window",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 757.43,
@@ -3151,7 +3214,7 @@
       "avg_bounce_reaction": 2.1,
       "avg_break_follow": 2.6,
       "last_touch": "2026-10-30T16:00:00Z",
-      "note": "double dark pool bounce/reclaim",
+      "note": "double bounce / reclaim (prior)",
       "dist": -29.11,
       "side": "BELOW",
       "cross": false,
@@ -3159,32 +3222,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
-    },
-    {
-      "spy": 757.12,
-      "spx": 7586.07,
-      "es": 7597.82,
-      "type": "prior",
-      "status": "prior",
-      "touches": 25,
-      "bounces": 8,
-      "breaks": 10,
-      "events": 18,
-      "bounce_pct": 44.4,
-      "break_pct": 55.6,
-      "avg_bounce_reaction": 1.23,
-      "avg_break_follow": 2.72,
-      "last_touch": "2026-10-30T16:45:00Z",
-      "note": "prior-week desk seed / command dp array",
-      "dist": -28.8,
-      "side": "BELOW",
-      "cross": false,
-      "cross_t": null,
-      "cross_dir": null,
-      "above_min": 0,
-      "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
       "spy": 757.0,
@@ -3201,7 +3240,7 @@
       "avg_bounce_reaction": 1.55,
       "avg_break_follow": 2.49,
       "last_touch": "2026-10-30T16:35:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "Nov 2\u20136 plan ladder; also the prior-week 757.12 desk seed",
       "dist": -28.68,
       "side": "BELOW",
       "cross": false,
@@ -3209,14 +3248,15 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
-      "spy": 756.41,
-      "spx": 7578.95,
-      "es": 7590.7,
-      "type": "prior",
-      "status": "prior",
+      "spy": 756.33,
+      "spx": 7578.15,
+      "es": 7589.9,
+      "type": "current",
+      "status": "current",
       "touches": 27,
       "bounces": 18,
       "breaks": 6,
@@ -3226,31 +3266,16 @@
       "avg_bounce_reaction": 1.5,
       "avg_break_follow": 2.19,
       "last_touch": "2026-10-30T19:50:00Z",
-      "note": "desk line; also the 21-EMA",
-      "dist": -28.09,
+      "note": "hit 11/3; traded again 11/12",
+      "dist": -28.01,
       "side": "BELOW",
       "cross": false,
       "cross_t": null,
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
-    },
-    {
-      "spy": 756.33,
-      "spx": 7578.15,
-      "es": 7589.9,
-      "type": "current",
-      "status": "current",
-      "dist": -28.01,
-      "side": "BELOW",
-      "note": "Tue 11/3 hit",
-      "cross": false,
-      "above_min": 0,
-      "below_min": 390,
       "pct_above": 0.0,
-      "cross_t": null,
-      "cross_dir": null
+      "tier": "major"
     },
     {
       "spy": 755.28,
@@ -3267,7 +3292,7 @@
       "avg_bounce_reaction": 2.16,
       "avg_break_follow": 1.77,
       "last_touch": "2026-10-30T19:50:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "Nov 2\u20136 plan ladder",
       "dist": -26.96,
       "side": "BELOW",
       "cross": false,
@@ -3275,7 +3300,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
       "spy": 754.6,
@@ -3292,7 +3318,7 @@
       "avg_bounce_reaction": 1.06,
       "avg_break_follow": 1.1,
       "last_touch": "2026-10-30T19:50:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "held 11/3; still on the mid-November ladder",
       "dist": -26.28,
       "side": "BELOW",
       "cross": false,
@@ -3300,7 +3326,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 754.07,
@@ -3317,7 +3344,7 @@
       "avg_bounce_reaction": 1.48,
       "avg_break_follow": 2.44,
       "last_touch": "2026-10-30T19:45:00Z",
-      "note": "double dark pool; fail → air pocket",
+      "note": "double print; fail opens an air pocket (prior)",
       "dist": -25.75,
       "side": "BELOW",
       "cross": false,
@@ -3325,7 +3352,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
       "spy": 751.04,
@@ -3342,7 +3370,7 @@
       "avg_bounce_reaction": 2.55,
       "avg_break_follow": 1.98,
       "last_touch": "2026-10-30T18:45:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "hit 11/5; still on the mid-November ladder",
       "dist": -22.72,
       "side": "BELOW",
       "cross": false,
@@ -3350,7 +3378,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 750.16,
@@ -3367,7 +3396,7 @@
       "avg_bounce_reaction": 2.41,
       "avg_break_follow": 2.31,
       "last_touch": "2026-09-16T19:20:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "on the mid-November ladder",
       "dist": -21.84,
       "side": "BELOW",
       "cross": false,
@@ -3375,7 +3404,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 748.17,
@@ -3392,7 +3422,7 @@
       "avg_bounce_reaction": 2.29,
       "avg_break_follow": 2.53,
       "last_touch": "2026-07-31T19:40:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "held 11/10 and 11/13; still on the mid-November ladder",
       "dist": -19.85,
       "side": "BELOW",
       "cross": false,
@@ -3400,7 +3430,25 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
+    },
+    {
+      "spy": 747.13,
+      "spx": 7485.97,
+      "es": 7497.72,
+      "type": "current",
+      "status": "current",
+      "dist": -18.81,
+      "side": "BELOW",
+      "note": "tested 11/10; rejected 11/16 \u00b7 no touch in the baked window",
+      "cross": false,
+      "above_min": null,
+      "below_min": null,
+      "pct_above": null,
+      "cross_t": null,
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 746.77,
@@ -3417,7 +3465,7 @@
       "avg_bounce_reaction": 2.7,
       "avg_break_follow": 2.7,
       "last_touch": "2026-07-31T19:55:00Z",
-      "note": "air pocket target (DP-typed in confluence)",
+      "note": "air-pocket target (prior)",
       "dist": -18.45,
       "side": "BELOW",
       "cross": false,
@@ -3425,7 +3473,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
       "spy": 745.47,
@@ -3442,7 +3491,7 @@
       "avg_bounce_reaction": 2.22,
       "avg_break_follow": 1.88,
       "last_touch": "2026-07-31T17:45:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "held 11/10; still on the mid-November ladder",
       "dist": -17.15,
       "side": "BELOW",
       "cross": false,
@@ -3450,7 +3499,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 744.36,
@@ -3467,7 +3517,7 @@
       "avg_bounce_reaction": 2.64,
       "avg_break_follow": 3.69,
       "last_touch": "2026-07-31T16:20:00Z",
-      "note": "Wed overnight print; still on Nov plan ladder",
+      "note": "pump off it 11/4; bounce 11/16",
       "dist": -16.04,
       "side": "BELOW",
       "cross": false,
@@ -3475,7 +3525,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 742.28,
@@ -3492,7 +3543,7 @@
       "avg_bounce_reaction": 2.4,
       "avg_break_follow": 3.35,
       "last_touch": "2026-07-31T15:50:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "on the mid-November ladder",
       "dist": -13.96,
       "side": "BELOW",
       "cross": false,
@@ -3500,7 +3551,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 741.83,
@@ -3508,7 +3560,7 @@
       "es": 7444.62,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 DP print — filled",
+      "note": "11/5 print \u2014 filled",
       "dist": -13.51,
       "side": "BELOW",
       "cross": false,
@@ -3516,7 +3568,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 741.54,
@@ -3524,7 +3577,7 @@
       "es": 7441.71,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 $115.5M DP",
+      "note": "11/5 $115.5M print",
       "dist": -13.22,
       "side": "BELOW",
       "cross": false,
@@ -3532,7 +3585,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 741.26,
@@ -3549,7 +3603,7 @@
       "avg_bounce_reaction": 2.23,
       "avg_break_follow": 3.67,
       "last_touch": "2026-07-31T15:45:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "on the mid-November ladder",
       "dist": -12.94,
       "side": "BELOW",
       "cross": false,
@@ -3557,32 +3611,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
-    },
-    {
-      "spy": 739.73,
-      "spx": 7411.83,
-      "es": 7423.58,
-      "type": "current",
-      "status": "current",
-      "touches": 82,
-      "bounces": 48,
-      "breaks": 17,
-      "events": 65,
-      "bounce_pct": 73.8,
-      "break_pct": 26.2,
-      "avg_bounce_reaction": 2.77,
-      "avg_break_follow": 3.12,
-      "last_touch": "2026-07-31T15:30:00Z",
-      "note": "$1.4B print Tue 11/17 · with 739.72 forms the 11/16–11/17 cluster (named as Thursday's likely bounce peak)",
-      "dist": -11.41,
-      "side": "BELOW",
-      "cross": false,
-      "above_min": 0,
-      "below_min": 390,
       "pct_above": 0.0,
-      "cross_t": null,
-      "cross_dir": null
+      "tier": "major"
     },
     {
       "spy": 739.72,
@@ -3599,7 +3629,7 @@
       "avg_bounce_reaction": 2.73,
       "avg_break_follow": 3.17,
       "last_touch": "2026-07-31T15:30:00Z",
-      "note": "$2.3B print Mon 11/16 · 11/16–11/17 cluster",
+      "note": "$2.3B print 11/16 and $1.4B print 11/17 (1\u00a2 cluster)",
       "dist": -11.4,
       "side": "BELOW",
       "cross": false,
@@ -3607,7 +3637,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 739.11,
@@ -3624,7 +3655,7 @@
       "avg_bounce_reaction": 2.64,
       "avg_break_follow": 3.21,
       "last_touch": "2026-07-31T14:15:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "support 11/16; rejected 11/19",
       "dist": -10.79,
       "side": "BELOW",
       "cross": false,
@@ -3632,7 +3663,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 737.64,
@@ -3649,7 +3681,7 @@
       "avg_bounce_reaction": 2.84,
       "avg_break_follow": 3.06,
       "last_touch": "2026-07-31T14:15:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "next level down with 739.11 on 11/16",
       "dist": -9.32,
       "side": "BELOW",
       "cross": false,
@@ -3657,7 +3689,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 737.23,
@@ -3665,7 +3698,7 @@
       "es": 7398.53,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 $66.6M DP",
+      "note": "11/5 $66.6M print \u00b7 also the filled 737.10 print",
       "dist": -8.91,
       "side": "BELOW",
       "cross": false,
@@ -3673,23 +3706,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
-    },
-    {
-      "spy": 737.1,
-      "spx": 7385.48,
-      "es": 7397.23,
-      "type": "current",
-      "status": "current",
-      "note": "Thu 11/5 DP print — filled",
-      "dist": -8.78,
-      "side": "BELOW",
-      "cross": false,
-      "above_min": 0,
-      "below_min": 390,
-      "pct_above": 0.0,
-      "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 736.49,
@@ -3697,7 +3715,7 @@
       "es": 7391.11,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 DP print — filled",
+      "note": "11/5 print \u2014 filled",
       "dist": -8.17,
       "side": "BELOW",
       "cross": false,
@@ -3705,7 +3723,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 735.41,
@@ -3713,7 +3732,7 @@
       "es": 7380.29,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 $941.9M DP — largest print; overhead pivot",
+      "note": "11/5 $941.9M print \u2014 largest that session; overhead pivot",
       "dist": -7.09,
       "side": "BELOW",
       "cross": false,
@@ -3721,7 +3740,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 734.37,
@@ -3729,7 +3749,7 @@
       "es": 7369.87,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 DP print — filled",
+      "note": "11/5 print \u2014 filled",
       "dist": -6.05,
       "side": "BELOW",
       "cross": false,
@@ -3737,7 +3757,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 734.16,
@@ -3754,7 +3775,7 @@
       "avg_bounce_reaction": 2.67,
       "avg_break_follow": 2.95,
       "last_touch": "2026-07-29T19:30:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "held the 11/6 open; resistance 11/17\u201311/18",
       "dist": -5.84,
       "side": "BELOW",
       "cross": false,
@@ -3762,7 +3783,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 733.09,
@@ -3770,7 +3792,7 @@
       "es": 7357.05,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 DP — close zone",
+      "note": "11/5 close-zone print",
       "dist": -4.77,
       "side": "BELOW",
       "cross": false,
@@ -3778,37 +3800,13 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 732.21,
       "spx": 7336.48,
       "es": 7348.23,
-      "type": "current",
-      "status": "current",
-      "touches": 53,
-      "bounces": 31,
-      "breaks": 10,
-      "events": 41,
-      "bounce_pct": 75.6,
-      "break_pct": 24.4,
-      "avg_bounce_reaction": 3.55,
-      "avg_break_follow": 3.63,
-      "last_touch": "2026-07-29T19:35:00Z",
-      "note": "$1.1B print Wed 11/18 · above the close and below the 200DMA, likely sells",
-      "dist": -3.89,
-      "side": "BELOW",
-      "cross": false,
-      "above_min": 0,
-      "below_min": 390,
-      "pct_above": 0.0,
-      "cross_t": null,
-      "cross_dir": null
-    },
-    {
-      "spy": 732.14,
-      "spx": 7335.78,
-      "es": 7347.53,
       "type": "current",
       "status": "current",
       "touches": 55,
@@ -3820,31 +3818,16 @@
       "avg_bounce_reaction": 3.77,
       "avg_break_follow": 2.88,
       "last_touch": "2026-07-29T19:45:00Z",
-      "note": "$1.3B print Tue 11/17",
-      "dist": -3.82,
+      "note": "$1.3B print 11/17 and $1.1B print 11/18 (above the close and below the 200-day, likely sells) \u00b7 also an 11/5 AH fill at 732.05",
+      "dist": -3.89,
       "side": "BELOW",
       "cross": false,
       "above_min": 0,
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
-    },
-    {
-      "spy": 732.05,
-      "spx": 7334.88,
-      "es": 7346.63,
-      "type": "current",
-      "status": "current",
-      "note": "Thu 11/5 AH DP filled",
-      "dist": -3.73,
-      "side": "BELOW",
-      "cross": false,
-      "above_min": 0,
-      "below_min": 390,
-      "pct_above": 0.0,
-      "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 731.85,
@@ -3861,7 +3844,7 @@
       "avg_bounce_reaction": 3.35,
       "avg_break_follow": 3.57,
       "last_touch": "2026-07-29T19:45:00Z",
-      "note": "late-registered print Thu 11/19 (shows as the 12:50 PM PT wick on SPY)",
+      "note": "late-registered print 11/19 (12:50 PM PT wick) \u00b7 also an 11/5 AH fill at 731.78",
       "dist": -3.53,
       "side": "BELOW",
       "cross": false,
@@ -3869,23 +3852,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
-    },
-    {
-      "spy": 731.78,
-      "spx": 7332.17,
-      "es": 7343.92,
-      "type": "current",
-      "status": "current",
-      "note": "Thu 11/5 AH DP filled",
-      "dist": -3.46,
-      "side": "BELOW",
-      "cross": false,
-      "above_min": 0,
-      "below_min": 390,
-      "pct_above": 0.0,
-      "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 731.58,
@@ -3902,7 +3870,7 @@
       "avg_bounce_reaction": 3.53,
       "avg_break_follow": 3.39,
       "last_touch": "2026-07-29T19:35:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "hit 11/17",
       "dist": -3.26,
       "side": "BELOW",
       "cross": false,
@@ -3910,7 +3878,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 730.02,
@@ -3918,7 +3887,7 @@
       "es": 7326.29,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 AH DP filled (+GEX 730)",
+      "note": "11/5 AH print filled (near the 730 gamma zone)",
       "dist": -1.7,
       "side": "BELOW",
       "cross": false,
@@ -3926,7 +3895,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 729.26,
@@ -3943,7 +3913,7 @@
       "avg_bounce_reaction": 3.64,
       "avg_break_follow": 4.56,
       "last_touch": "2026-07-29T19:55:00Z",
-      "note": "older (July) line · held Tue 11/17 and Wed 11/18, called the last line of defense",
+      "note": "older (July) line \u00b7 held 11/17 and 11/18, last line of defense that week",
       "dist": -0.94,
       "side": "BELOW",
       "cross": false,
@@ -3951,7 +3921,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 729.08,
@@ -3959,7 +3930,7 @@
       "es": 7316.87,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 AH DP filled",
+      "note": "11/5 AH print filled",
       "dist": -0.76,
       "side": "BELOW",
       "cross": false,
@@ -3967,7 +3938,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 728.74,
@@ -3975,7 +3947,7 @@
       "es": 7313.46,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 AH DP filled",
+      "note": "11/5 AH print filled",
       "dist": -0.42,
       "side": "BELOW",
       "cross": false,
@@ -3983,7 +3955,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 728.05,
@@ -3991,7 +3964,7 @@
       "es": 7306.55,
       "type": "current",
       "status": "current",
-      "note": "Thu 11/5 AH DP filled (near AH low 727.41)",
+      "note": "11/5 AH print filled (near the AH low 727.41)",
       "dist": 0.27,
       "side": "ABOVE",
       "cross": false,
@@ -3999,7 +3972,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 727.83,
@@ -4007,7 +3981,7 @@
       "es": 7304.34,
       "type": "current",
       "status": "current",
-      "note": "Next unfilled downside DP",
+      "note": "next unfilled downside print",
       "dist": 0.49,
       "side": "ABOVE",
       "cross": false,
@@ -4015,7 +3989,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 725.97,
@@ -4023,7 +3998,7 @@
       "es": 7285.71,
       "type": "current",
       "status": "current",
-      "note": "Unfilled downside DP",
+      "note": "unfilled downside print",
       "dist": 2.35,
       "side": "ABOVE",
       "cross": false,
@@ -4031,7 +4006,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 725.49,
@@ -4048,7 +4024,7 @@
       "avg_bounce_reaction": 7.03,
       "avg_break_follow": 5.65,
       "last_touch": "2026-06-26T19:55:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "on the 11/6 and 11/24 ladders",
       "dist": 2.83,
       "side": "ABOVE",
       "cross": false,
@@ -4056,7 +4032,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 724.5,
@@ -4064,7 +4041,7 @@
       "es": 7270.98,
       "type": "current",
       "status": "current",
-      "note": "Unfilled downside DP",
+      "note": "unfilled downside print",
       "dist": 3.82,
       "side": "ABOVE",
       "cross": false,
@@ -4072,7 +4049,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 723.61,
@@ -4089,7 +4067,7 @@
       "avg_bounce_reaction": 7.01,
       "avg_break_follow": 1.41,
       "last_touch": "2026-06-26T19:55:00Z",
-      "note": "Nov 2–6 plan",
+      "note": "on the 11/24 ladder",
       "dist": 4.71,
       "side": "ABOVE",
       "cross": false,
@@ -4097,7 +4075,8 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "major"
     },
     {
       "spy": 722.57,
@@ -4105,7 +4084,7 @@
       "es": 7251.64,
       "type": "current",
       "status": "current",
-      "note": "Unfilled downside DP",
+      "note": "unfilled downside print",
       "dist": 5.75,
       "side": "ABOVE",
       "cross": false,
@@ -4113,7 +4092,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 721.76,
@@ -4138,23 +4118,25 @@
       "cross_dir": null,
       "above_min": 0,
       "below_min": 390,
-      "pct_above": 0.0
+      "pct_above": 0.0,
+      "tier": "minor"
     },
     {
-      "spy": 720.69,
-      "spx": 7221.05,
-      "es": 7232.8,
+      "spy": 720.66,
+      "spx": 7220.75,
+      "es": 7232.5,
       "type": "current",
       "status": "current",
-      "note": "Unfilled DP — monthly 50MA zone",
-      "dist": 7.63,
+      "note": "rejected and retested 11/24; mark this line",
+      "dist": 7.66,
       "side": "ABOVE",
       "cross": false,
       "above_min": 0,
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 719.87,
@@ -4162,7 +4144,7 @@
       "es": 7224.59,
       "type": "current",
       "status": "current",
-      "note": "Unfilled DP (+GEX 720)",
+      "note": "unfilled print (near the 720 gamma / monthly 50-day zone)",
       "dist": 8.45,
       "side": "ABOVE",
       "cross": false,
@@ -4170,7 +4152,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "minor"
     },
     {
       "spy": 718.66,
@@ -4187,7 +4170,7 @@
       "avg_bounce_reaction": 5.44,
       "avg_break_follow": null,
       "last_touch": "2026-06-26T19:55:00Z",
-      "note": "reaction level Thu 11/19 · price traded at it on the second leg down (9:17 AM PT)",
+      "note": "traded 11/19 on the second leg down; still on the 11/24 ladder",
       "dist": 9.66,
       "side": "ABOVE",
       "cross": false,
@@ -4195,7 +4178,8 @@
       "below_min": 390,
       "pct_above": 0.0,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 715.02,
@@ -4205,13 +4189,14 @@
       "status": "current",
       "dist": 13.3,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/24 and 11/25 ladders",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 714.14,
@@ -4221,13 +4206,14 @@
       "status": "current",
       "dist": 14.18,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/24 and 11/25 ladders",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 711.4,
@@ -4237,13 +4223,14 @@
       "status": "current",
       "dist": 16.92,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/24 and 11/25 ladders",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 710.21,
@@ -4253,13 +4240,14 @@
       "status": "current",
       "dist": 18.11,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "traded 11/25; on the 11/24 and 11/25 ladders",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 708.52,
@@ -4269,13 +4257,14 @@
       "status": "current",
       "dist": 19.8,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 706.18,
@@ -4285,13 +4274,14 @@
       "status": "current",
       "dist": 22.14,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 704.03,
@@ -4301,13 +4291,14 @@
       "status": "current",
       "dist": 24.29,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 701.75,
@@ -4317,13 +4308,14 @@
       "status": "current",
       "dist": 26.57,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 699.92,
@@ -4333,13 +4325,14 @@
       "status": "current",
       "dist": 28.4,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 695.21,
@@ -4349,13 +4342,14 @@
       "status": "current",
       "dist": 33.11,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 694.06,
@@ -4365,13 +4359,14 @@
       "status": "current",
       "dist": 34.26,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 691.9,
@@ -4381,13 +4376,14 @@
       "status": "current",
       "dist": 36.42,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     },
     {
       "spy": 690.36,
@@ -4397,13 +4393,14 @@
       "status": "current",
       "dist": 37.96,
       "side": "ABOVE",
-      "note": "line current through Wed 11/25 close",
+      "note": "on the 11/25 ladder",
       "cross": false,
       "above_min": null,
       "below_min": null,
       "pct_above": null,
       "cross_t": null,
-      "cross_dir": null
+      "cross_dir": null,
+      "tier": "major"
     }
   ],
   "session_time": {
@@ -4418,7 +4415,8 @@
         "es": 7790.8,
         "type": "current",
         "dist": -48.06,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 773.38,
@@ -4426,7 +4424,8 @@
         "es": 7760.74,
         "type": "current",
         "dist": -45.06,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 772.42,
@@ -4434,7 +4433,8 @@
         "es": 7751.12,
         "type": "current",
         "dist": -44.1,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 771.22,
@@ -4442,7 +4442,8 @@
         "es": 7739.1,
         "type": "current",
         "dist": -42.9,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 770.33,
@@ -4450,7 +4451,8 @@
         "es": 7730.18,
         "type": "current",
         "dist": -42.01,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 769.73,
@@ -4458,7 +4460,8 @@
         "es": 7724.17,
         "type": "current",
         "dist": -41.41,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 769.55,
@@ -4466,15 +4469,8 @@
         "es": 7722.36,
         "type": "current",
         "dist": -41.23,
-        "side": "BELOW"
-      },
-      {
-        "spy": 769.45,
-        "spx": 7709.61,
-        "es": 7721.36,
-        "type": "prior",
-        "dist": -41.13,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 768.61,
@@ -4482,7 +4478,8 @@
         "es": 7712.94,
         "type": "current",
         "dist": -40.29,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 767.41,
@@ -4490,7 +4487,8 @@
         "es": 7700.92,
         "type": "current",
         "dist": -39.09,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 767.12,
@@ -4498,7 +4496,8 @@
         "es": 7698.02,
         "type": "current",
         "dist": -38.8,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 765.59,
@@ -4506,7 +4505,8 @@
         "es": 7682.69,
         "type": "current",
         "dist": -37.27,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 765.4,
@@ -4514,7 +4514,8 @@
         "es": 7680.78,
         "type": "current",
         "dist": -37.08,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 764.37,
@@ -4522,7 +4523,8 @@
         "es": 7670.46,
         "type": "current",
         "dist": -36.05,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 762.27,
@@ -4530,7 +4532,8 @@
         "es": 7649.42,
         "type": "current",
         "dist": -33.95,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 759.57,
@@ -4538,7 +4541,8 @@
         "es": 7622.37,
         "type": "current",
         "dist": -31.25,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 758.02,
@@ -4546,7 +4550,17 @@
         "es": 7606.84,
         "type": "current",
         "dist": -29.7,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
+      },
+      {
+        "spy": 757.84,
+        "spx": 7593.28,
+        "es": 7605.03,
+        "type": "current",
+        "dist": -29.52,
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 757.43,
@@ -4554,15 +4568,8 @@
         "es": 7600.92,
         "type": "prior",
         "dist": -29.11,
-        "side": "BELOW"
-      },
-      {
-        "spy": 757.12,
-        "spx": 7586.07,
-        "es": 7597.82,
-        "type": "prior",
-        "dist": -28.8,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 757.0,
@@ -4570,15 +4577,8 @@
         "es": 7596.62,
         "type": "current",
         "dist": -28.68,
-        "side": "BELOW"
-      },
-      {
-        "spy": 756.41,
-        "spx": 7578.95,
-        "es": 7590.7,
-        "type": "prior",
-        "dist": -28.09,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 756.33,
@@ -4586,7 +4586,8 @@
         "es": 7589.9,
         "type": "current",
         "dist": -28.01,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 755.28,
@@ -4594,7 +4595,8 @@
         "es": 7579.38,
         "type": "current",
         "dist": -26.96,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 754.6,
@@ -4602,7 +4604,8 @@
         "es": 7572.57,
         "type": "current",
         "dist": -26.28,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 754.07,
@@ -4610,7 +4613,8 @@
         "es": 7567.26,
         "type": "prior",
         "dist": -25.75,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 751.04,
@@ -4618,7 +4622,8 @@
         "es": 7536.9,
         "type": "current",
         "dist": -22.72,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 750.16,
@@ -4626,7 +4631,8 @@
         "es": 7528.08,
         "type": "current",
         "dist": -21.84,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 748.17,
@@ -4634,7 +4640,17 @@
         "es": 7508.14,
         "type": "current",
         "dist": -19.85,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
+      },
+      {
+        "spy": 747.13,
+        "spx": 7485.97,
+        "es": 7497.72,
+        "type": "current",
+        "dist": -18.81,
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 746.77,
@@ -4642,7 +4658,8 @@
         "es": 7494.12,
         "type": "prior",
         "dist": -18.45,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 745.47,
@@ -4650,7 +4667,8 @@
         "es": 7481.09,
         "type": "current",
         "dist": -17.15,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 744.36,
@@ -4658,7 +4676,8 @@
         "es": 7469.97,
         "type": "current",
         "dist": -16.04,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 742.28,
@@ -4666,7 +4685,8 @@
         "es": 7449.13,
         "type": "current",
         "dist": -13.96,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 741.83,
@@ -4674,7 +4694,8 @@
         "es": 7444.62,
         "type": "current",
         "dist": -13.51,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 741.54,
@@ -4682,7 +4703,8 @@
         "es": 7441.71,
         "type": "current",
         "dist": -13.22,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 741.26,
@@ -4690,15 +4712,8 @@
         "es": 7438.91,
         "type": "current",
         "dist": -12.94,
-        "side": "BELOW"
-      },
-      {
-        "spy": 739.73,
-        "spx": 7411.83,
-        "es": 7423.58,
-        "type": "current",
-        "dist": -11.41,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 739.72,
@@ -4706,7 +4721,8 @@
         "es": 7423.48,
         "type": "current",
         "dist": -11.4,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 739.11,
@@ -4714,7 +4730,8 @@
         "es": 7417.37,
         "type": "current",
         "dist": -10.79,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 737.64,
@@ -4722,7 +4739,8 @@
         "es": 7402.64,
         "type": "current",
         "dist": -9.32,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 737.23,
@@ -4730,15 +4748,8 @@
         "es": 7398.53,
         "type": "current",
         "dist": -8.91,
-        "side": "BELOW"
-      },
-      {
-        "spy": 737.1,
-        "spx": 7385.48,
-        "es": 7397.23,
-        "type": "current",
-        "dist": -8.78,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 736.49,
@@ -4746,7 +4757,8 @@
         "es": 7391.11,
         "type": "current",
         "dist": -8.17,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 735.41,
@@ -4754,7 +4766,8 @@
         "es": 7380.29,
         "type": "current",
         "dist": -7.09,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 734.37,
@@ -4762,7 +4775,8 @@
         "es": 7369.87,
         "type": "current",
         "dist": -6.05,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 734.16,
@@ -4770,7 +4784,8 @@
         "es": 7367.77,
         "type": "current",
         "dist": -5.84,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 733.09,
@@ -4778,7 +4793,8 @@
         "es": 7357.05,
         "type": "current",
         "dist": -4.77,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 732.21,
@@ -4786,23 +4802,8 @@
         "es": 7348.23,
         "type": "current",
         "dist": -3.89,
-        "side": "BELOW"
-      },
-      {
-        "spy": 732.14,
-        "spx": 7335.78,
-        "es": 7347.53,
-        "type": "current",
-        "dist": -3.82,
-        "side": "BELOW"
-      },
-      {
-        "spy": 732.05,
-        "spx": 7334.88,
-        "es": 7346.63,
-        "type": "current",
-        "dist": -3.73,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 731.85,
@@ -4810,15 +4811,8 @@
         "es": 7344.62,
         "type": "current",
         "dist": -3.53,
-        "side": "BELOW"
-      },
-      {
-        "spy": 731.78,
-        "spx": 7332.17,
-        "es": 7343.92,
-        "type": "current",
-        "dist": -3.46,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 731.58,
@@ -4826,7 +4820,8 @@
         "es": 7341.92,
         "type": "current",
         "dist": -3.26,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "major"
       },
       {
         "spy": 730.02,
@@ -4834,7 +4829,8 @@
         "es": 7326.29,
         "type": "current",
         "dist": -1.7,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 729.26,
@@ -4842,7 +4838,8 @@
         "es": 7318.67,
         "type": "current",
         "dist": -0.94,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 729.08,
@@ -4850,7 +4847,8 @@
         "es": 7316.87,
         "type": "current",
         "dist": -0.76,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 728.74,
@@ -4858,7 +4856,8 @@
         "es": 7313.46,
         "type": "current",
         "dist": -0.42,
-        "side": "BELOW"
+        "side": "BELOW",
+        "tier": "minor"
       },
       {
         "spy": 728.05,
@@ -4866,7 +4865,8 @@
         "es": 7306.55,
         "type": "current",
         "dist": 0.27,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "minor"
       },
       {
         "spy": 727.83,
@@ -4874,7 +4874,8 @@
         "es": 7304.34,
         "type": "current",
         "dist": 0.49,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "minor"
       },
       {
         "spy": 725.97,
@@ -4882,7 +4883,8 @@
         "es": 7285.71,
         "type": "current",
         "dist": 2.35,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "minor"
       },
       {
         "spy": 725.49,
@@ -4890,7 +4892,8 @@
         "es": 7280.9,
         "type": "current",
         "dist": 2.83,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 724.5,
@@ -4898,7 +4901,8 @@
         "es": 7270.98,
         "type": "current",
         "dist": 3.82,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "minor"
       },
       {
         "spy": 723.61,
@@ -4906,7 +4910,8 @@
         "es": 7262.06,
         "type": "current",
         "dist": 4.71,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 722.57,
@@ -4914,7 +4919,8 @@
         "es": 7251.64,
         "type": "current",
         "dist": 5.75,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "minor"
       },
       {
         "spy": 721.76,
@@ -4922,15 +4928,17 @@
         "es": 7243.52,
         "type": "prior",
         "dist": 6.56,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "minor"
       },
       {
-        "spy": 720.69,
-        "spx": 7221.05,
-        "es": 7232.8,
+        "spy": 720.66,
+        "spx": 7220.75,
+        "es": 7232.5,
         "type": "current",
-        "dist": 7.63,
-        "side": "ABOVE"
+        "dist": 7.66,
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 719.87,
@@ -4938,7 +4946,8 @@
         "es": 7224.59,
         "type": "current",
         "dist": 8.45,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "minor"
       },
       {
         "spy": 718.66,
@@ -4946,7 +4955,8 @@
         "es": 7212.46,
         "type": "current",
         "dist": 9.66,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 715.02,
@@ -4954,7 +4964,8 @@
         "es": 7175.99,
         "type": "current",
         "dist": 13.3,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 714.14,
@@ -4962,7 +4973,8 @@
         "es": 7167.17,
         "type": "current",
         "dist": 14.18,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 711.4,
@@ -4970,7 +4982,8 @@
         "es": 7139.72,
         "type": "current",
         "dist": 16.92,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 710.21,
@@ -4978,7 +4991,8 @@
         "es": 7127.8,
         "type": "current",
         "dist": 18.11,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 708.52,
@@ -4986,7 +5000,8 @@
         "es": 7110.86,
         "type": "current",
         "dist": 19.8,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 706.18,
@@ -4994,7 +5009,8 @@
         "es": 7087.42,
         "type": "current",
         "dist": 22.14,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 704.03,
@@ -5002,7 +5018,8 @@
         "es": 7065.88,
         "type": "current",
         "dist": 24.29,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 701.75,
@@ -5010,7 +5027,8 @@
         "es": 7043.03,
         "type": "current",
         "dist": 26.57,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 699.92,
@@ -5018,7 +5036,8 @@
         "es": 7024.7,
         "type": "current",
         "dist": 28.4,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 695.21,
@@ -5026,7 +5045,8 @@
         "es": 6977.5,
         "type": "current",
         "dist": 33.11,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 694.06,
@@ -5034,7 +5054,8 @@
         "es": 6965.98,
         "type": "current",
         "dist": 34.26,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 691.9,
@@ -5042,7 +5063,8 @@
         "es": 6944.34,
         "type": "current",
         "dist": 36.42,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       },
       {
         "spy": 690.36,
@@ -5050,7 +5072,8 @@
         "es": 6928.91,
         "type": "current",
         "dist": 37.96,
-        "side": "ABOVE"
+        "side": "ABOVE",
+        "tier": "major"
       }
     ]
   },
@@ -5058,11 +5081,48 @@
     "gap": 1.0,
     "zones": [
       [
+        690.36
+      ],
+      [
+        691.9
+      ],
+      [
+        694.06
+      ],
+      [
+        695.21
+      ],
+      [
+        699.92
+      ],
+      [
+        701.75
+      ],
+      [
+        704.03
+      ],
+      [
+        706.18
+      ],
+      [
+        708.52
+      ],
+      [
+        710.21
+      ],
+      [
+        711.4
+      ],
+      [
+        714.14,
+        715.02
+      ],
+      [
         718.66
       ],
       [
         719.87,
-        720.69
+        720.66
       ],
       [
         721.76,
@@ -5084,10 +5144,7 @@
       ],
       [
         731.58,
-        731.78,
         731.85,
-        732.05,
-        732.14,
         732.21,
         733.09
       ],
@@ -5100,14 +5157,12 @@
       ],
       [
         736.49,
-        737.1,
         737.23,
         737.64
       ],
       [
         739.11,
-        739.72,
-        739.73
+        739.72
       ],
       [
         741.26,
@@ -5122,7 +5177,8 @@
         745.47
       ],
       [
-        746.77
+        746.77,
+        747.13
       ],
       [
         748.17
@@ -5138,10 +5194,9 @@
       ],
       [
         756.33,
-        756.41,
         757.0,
-        757.12,
         757.43,
+        757.84,
         758.02
       ],
       [
@@ -5163,7 +5218,6 @@
       ],
       [
         768.61,
-        769.45,
         769.55,
         769.73,
         770.33,
@@ -5186,7 +5240,6 @@
     770.33,
     769.73,
     769.55,
-    769.45,
     768.61,
     767.41,
     767.12,
@@ -5196,10 +5249,9 @@
     762.27,
     759.57,
     758.02,
+    757.84,
     757.43,
-    757.12,
     757.0,
-    756.41,
     756.33,
     755.28,
     754.6,
@@ -5207,6 +5259,7 @@
     751.04,
     750.16,
     748.17,
+    747.13,
     746.77,
     745.47,
     744.36,
@@ -5214,22 +5267,17 @@
     741.83,
     741.54,
     741.26,
-    739.73,
     739.72,
     739.11,
     737.64,
     737.23,
-    737.1,
     736.49,
     735.41,
     734.37,
     734.16,
     733.09,
     732.21,
-    732.14,
-    732.05,
     731.85,
-    731.78,
     731.58,
     730.02,
     729.26,
@@ -5243,7 +5291,7 @@
     723.61,
     722.57,
     721.76,
-    720.69,
+    720.66,
     719.87,
     718.66,
     715.02,
