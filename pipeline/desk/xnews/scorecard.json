@@ -1,5 +1,5 @@
 {
- "asof": "2026-11-28 14:49 PT",
+ "asof": "2026-11-28 16:04 PT",
  "window_days": 5,
  "bars": "SPY 1m (RTH 09:30-16:00 ET)",
  "rules": "SPY levels auto-extracted from post text (promos/RTs skipped). Graded on the rest of that RTH session (or next session if posted outside RTH). touch = within $0.25; respected = moves ≥$1 back on the approach side within 30 min before a 1m close ≥$1 through; broken = closes ≥$1 through first. hit_rate = respected/touched.",
@@ -11,29 +11,15 @@
   {
    "handle": "Basssem666",
    "levels_posted": 38,
-   "touched": 5,
-   "respected": 5,
+   "touched": 3,
+   "respected": 3,
    "broken": 0,
    "hit_rate": 1.0,
-   "touch_rate": 0.132,
-   "avg_reaction_pts": 2.32,
+   "touch_rate": 0.079,
+   "avg_reaction_pts": 2.16,
    "promo_pct": 0.0,
    "posts_per_day": 14,
    "weight": 0.8,
-   "greyed": false
-  },
-  {
-   "handle": "TraderJonesy",
-   "levels_posted": 17,
-   "touched": 1,
-   "respected": 1,
-   "broken": 0,
-   "hit_rate": 1.0,
-   "touch_rate": 0.059,
-   "avg_reaction_pts": 4.46,
-   "promo_pct": 0.0,
-   "posts_per_day": 10,
-   "weight": 1.0,
    "greyed": false
   },
   {
@@ -76,6 +62,20 @@
    "promo_pct": 0.0,
    "posts_per_day": 48,
    "weight": 0.5,
+   "greyed": false
+  },
+  {
+   "handle": "TraderJonesy",
+   "levels_posted": 17,
+   "touched": 0,
+   "respected": 0,
+   "broken": 0,
+   "hit_rate": null,
+   "touch_rate": 0.0,
+   "avg_reaction_pts": null,
+   "promo_pct": 0.0,
+   "posts_per_day": 10,
+   "weight": 1.0,
    "greyed": false
   },
   {
