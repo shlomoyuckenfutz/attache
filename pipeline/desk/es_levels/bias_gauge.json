@@ -4,7 +4,7 @@
  "px": 731.3,
  "asof": "11-27 13:59 PT",
  "feed": "delayed",
- "built": "11-28 01:49 PT",
+ "built": "11-28 03:04 PT",
  "votes": [
   {
    "k": "VWAP",
@@ -38,7 +38,7 @@
    "k": "GAMMA FLIP",
    "d": "SPY price vs desk gamma flip (all exp; no consensus)",
    "v": -1,
-   "x": "731.30 vs flip 738.23",
+   "x": "731.30 vs flip 738.24",
    "w": 1.0
   },
   {
